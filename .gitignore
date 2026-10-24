@@ -1,0 +1,6 @@
+data/firecrawl/raw/
+__pycache__/
+*.pyc
+.DS_Store
+.firecrawl/
+.env

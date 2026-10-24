@@ -1,0 +1,7216 @@
+{
+ "arcinspirations": {
+  "brand": "Arc Inspirations",
+  "website": "https://www.arcinspirations.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/arc-inspirations/"
+  ],
+  "food_terms": [
+   "drink",
+   "drinks",
+   "food",
+   "meat"
+  ],
+  "excl_terms": [
+   "bar group"
+  ],
+  "uk_signal": true,
+  "score": 4,
+  "description": "ARC Inspirations is a high performing, commercially successful bar group in the North of England operating 3 brands with 18 venues in total. ARC lives to inspire our teams to bring our guests the best drinks, food and to create memorable experiences for them in our venues for all occasions."
+ },
+ "artisanalspiritscompany": {
+  "brand": "Artisanal Spirits Company",
+  "website": "https://www.artisanal-spirits.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/artisanal-spirits-company/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "meat",
+   "spirits",
+   "whisky"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "The Artisanal Spirits Company (ASC) is the owner of The Scotch Malt Whisky Society (SMWS), the leading curator and provider of premium single cask Scotch malt whisky to a global customer base of subscribers. Founded in 1983, SMWS commands a membership of 28,000 members, across 30 countries."
+ },
+ "belladuke": {
+  "brand": "Bella & Duke",
+  "website": "https://www.bellaandduke.com/",
+  "funds": [
+   "BGF",
+   "Gresham House Ventures"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/bella-and-duke/",
+   "https://greshamhouseventures.com/portfolio/bella-duke/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "pet food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Bella & Duke was founded in 2016 by Mark Scott and Tony Ottley – two friends who agreed that existing mainstream pet food products did not give dogs and cats the best chance of enjoying long, healthy lives. Bella & Duke’s raw, natural petfood provides notable health benefits to pets, with over 92% o"
+ },
+ "bobberts": {
+  "brand": "Bob & Berts",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/bob-and-berts/"
+  ],
+  "food_terms": [
+   "coffee",
+   "drink",
+   "food",
+   "meat"
+  ],
+  "excl_terms": [
+   "coffee shops"
+  ],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Known for its quality offering and community-focused approach, Bob & Berts operates a chain of coffee shops across Northern Ireland, Scotland and England, with plans to grow to 100 sites by 2030."
+ },
+ "cooplands": {
+  "brand": "Cooplands",
+  "website": "https://cooplands-bakery.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/cooplands/"
+  ],
+  "food_terms": [
+   "cakes",
+   "drink",
+   "food",
+   "meat"
+  ],
+  "excl_terms": [
+   "cafes"
+  ],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Founded in 1885, the fourth-generation company delivers traditionally-made, high-quality produce including breads, sandwiches, pies, pasties and cakes to more than 140 Cooplands shops, 11 cafes and 28 sandwich vans."
+ },
+ "currentbody": {
+  "brand": "CurrentBody",
+  "website": "https://www.currentbody.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/currentbody/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "CurrentBody is the world's largest supplier of beauty devices. Its product range includes anti-ageing and acne treatment devices, facial cleansers, and hair removal devices, incorporating clinically-proven technologies as they found a niche in providing professional results at home."
+ },
+ "datum360": {
+  "brand": "Datum360",
+  "website": "https://www.datum360.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/datum360/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Founded in 2009, the Teesside-based connected data company Datum360 has grown to have a global footprint. It was acquired by Autodesk in 2024."
+ },
+ "duncanandtodd": {
+  "brand": "Duncan and Todd",
+  "website": "https://duncanandtodd.com",
+  "funds": [
+   "BGF",
+   "LDC"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/duncan-and-todd/",
+   "https://www.ldc.co.uk/portfolio/duncan-todd-regional-expansion-through-buy-and-build/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Duncan and Todd owns and operates a chain of opticians in Scotland, with shops stretching from Fife to the Highlands. The business also manufactures its own lenses at its laboratory in North East Scotland."
+ },
+ "emmabridgewater": {
+  "brand": "Emma Bridgewater",
+  "website": "https://www.emmabridgewater.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/emma-bridgewater/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Founded in 1984, Emma Bridgewater designs and manufactures hand-decorated pottery and a wide selection of home products. Its products are handmade in a renovated 19th Century factory in Stoke-on-Trent and are sold through its website, own stores, as well as wholesale customers such as John Lewis and"
+ },
+ "environmentalessentials": {
+  "brand": "Environmental Essentials",
+  "website": "https://www.environmentalessentials.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/environmental-essentials/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Environmental Essentials provides key compliance services, including asbestos management, water hygiene, and fire risk management."
+ },
+ "fluorok": {
+  "brand": "FluoRok",
+  "website": "https://www.fluorok.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/fluorok/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "BGF-backed startup FluoRok has developed an innovative method for safe and environmentally friendly access to fluorochemicals."
+ },
+ "furniturevillage": {
+  "brand": "Furniture Village",
+  "website": "https://www.furniturevillage.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/furniture-village/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Furniture Village is a major UK retailer of leading sofa and bed brands, selling through its stores and growing online presence. Positioned at the top end of the volume furniture market, its product range is largely sourced from the within the UK."
+ },
+ "hyble": {
+  "brand": "hyble",
+  "website": "https://www.hyble.tech/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/hyble/"
+  ],
+  "food_terms": [
+   "drinks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "BGF has invested significant growth capital into Edinburgh-based hyble, an industry-leading marketing technology (martech) company."
+ },
+ "itsfresh": {
+  "brand": "It’s Fresh!",
+  "website": "https://itsfresh.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/its-fresh/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "BGF-backed It’s Fresh! develops tech solutions to extend the shelf life of fresh fruit and vegetables throughout the entire supply chain."
+ },
+ "joesephs": {
+  "brand": "Joe & Seph’s",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/joe-and-sephs/"
+  ],
+  "food_terms": [
+   "cheese",
+   "chocolate",
+   "drink",
+   "food",
+   "gin",
+   "popcorn",
+   "tonic"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 7,
+  "description": "Joe & Seph’s popcorn is handmade at their kitchens in London by a team of pastry chefs, who ‘air-pop’ the kernels and use only natural ingredients. The range now comprises over 50 innovative flavours, from Chilli Chocolate and Salted Caramel, to Cheese on Toast and Gin & Tonic, earning the business "
+ },
+ "keenanrecycling": {
+  "brand": "Keenan Recycling",
+  "website": "https://www.keenanrecycling.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/keenan-recycling/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Keenan Recycling is a family-owned food waste collections specialist that was acquired by Biffa in 2024, following a successful UK expansion."
+ },
+ "moteefe": {
+  "brand": "Moteefe",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/moteefe/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Moteefe enables brands and retailers of all sizes to offer unique and personalised merchandisable products within minutes. Its end-to-end e-commerce solution manages the entire production and fulfilment of high-quality, on-demand, customised products, routed as close to the end-consumer as possible "
+ },
+ "ruroc": {
+  "brand": "Ruroc",
+  "website": "https://www.ruroc.com/en_gb/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/ruroc/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Action sports brand Ruroc created the world's first helmet system with integrated goggles and detachable face mask, to protect from rocks, rails and sub-zero wind chill. Ruroc is gaining rapid traction across the globe, as the go-to brand for action sports protective gear."
+ },
+ "scrumbles": {
+  "brand": "Scrumbles",
+  "website": "https://scrumbles.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/scrumbles/"
+  ],
+  "food_terms": [
+   "food",
+   "pet food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "BGF-backed pet food brand Scrumbles provides nutritious, natural and ‘gut-friendly’ food for cats and dogs."
+ },
+ "seasalt": {
+  "brand": "Seasalt",
+  "website": "https://www.seasaltcornwall.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/seasalt/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Seasalt is a Cornish women's clothing and lifestyle brand. Its design ethos is to create beautiful and useful clothing that our customers can enjoy wearing season after season."
+ },
+ "slg": {
+  "brand": "SLG",
+  "website": "https://www.slgbrands.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/slg/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "private label"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "SLG are designers, developers and manufacturers of design-led beauty and lifestyle collections. The company’s expertise covers cosmetics, fragrance, toiletry, beauty accessory and lifestyle products. Within these fields, SLG has a portfolio of its own designer brand properties and licensed product r"
+ },
+ "stripestare": {
+  "brand": "Stripe & Stare",
+  "website": "https://stripeandstare.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/stripe-and-stare/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Stripe & Stare was founded with the belief that nothing great was ever achieved in uncomfortable underwear. The business is addressing the real demands of today’s women, and with a focus on sustainability."
+ },
+ "thecoachinginngroup": {
+  "brand": "The Coaching Inn Group",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/coaching-inn-group/"
+  ],
+  "food_terms": [
+   "coffee"
+  ],
+  "excl_terms": [
+   "restaurants"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "The Coaching Inn Group operates high-quality hotels in traditional market towns across England. Restoring historical properties in line with the character of their local surroundings, the business has also added stylish restaurants and coffee venues under the Eatery & Coffee House brand."
+ },
+ "thompsonmorgan": {
+  "brand": "Thompson & Morgan",
+  "website": "https://www.thompson-morgan.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/thompson-and-morgan/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Thompson & Morgan is the UK's largest and most established D2C retailer of plants, seeds and other garden and horticultural products. The group owns several leading brands including Suttons, van Meuwen and Organic Garden Catalogue."
+ },
+ "toucanbox": {
+  "brand": "toucanBox",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/toucanbox/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "toucanBox delivers a subscription service for themed boxes of arts and craft activities for children, developed by educational experts."
+ },
+ "prezola": {
+  "brand": "Prezola",
+  "website": "https://www.prezola.com",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/prezola/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Prezola is the UK’s largest independent wedding gift list company. Its website features a curated range of items from premium brands, such as The White Company, Le Creuset, and Dyson, alongside ‘quirkier’ gift options, like vinyl records and experiences."
+ },
+ "renegadespirits": {
+  "brand": "Renegade Spirits",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/renegade-spirits/"
+  ],
+  "food_terms": [
+   "distillery",
+   "drink",
+   "food",
+   "meat",
+   "spirits",
+   "whiskey"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "Renegade Spirits Ireland is the owner of Waterford Distillery, a major whiskey project on the south-eastern coast of Ireland."
+ },
+ "directonlineservices": {
+  "brand": "Direct Online Services",
+  "website": "https://www.directonlineservices.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/direct-online-services/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "DOS is an online retailer of wooden kitchen worktops. The company sell its range of kitchen furniture through an array of individually branded retail websites and eBay shops. It owns a fleet of vehicles and showrooms throughout the UK."
+ },
+ "mouldedfoams": {
+  "brand": "Moulded Foams",
+  "website": "https://www.mouldedfoams.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/moulded-foams/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Moulded Foams is the UK’s largest independent manufacturer of moulded foam products. The business produces a range of 98% air products which protect food, goods and insulate buildings, and operates from bases in Scotland, South Wales, and Lincolnshire."
+ },
+ "thegardenbuildingsgroup": {
+  "brand": "The Garden Buildings Group",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/garden-buildings-group/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "The Garden Buildings Group (GBG) is one of the UK's leading manufacturers and retailers of garden buildings, operating under leading brands Waltons and Mercia."
+ },
+ "sophiawebster": {
+  "brand": "Sophia Webster",
+  "website": "https://www.sophiawebster.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/sophia-webster/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Sophia Webster is a signature shoe and handbag brand, known for combining feminine design with a sophisticated approach. The company's products are sold by retailers around the world."
+ },
+ "reviveactive": {
+  "brand": "Revive Active",
+  "website": "https://reviveactive.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/revive-active/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Revive Active offers a range of supplements, focused on benefits such as increased energy, immunity and wellbeing."
+ },
+ "plantex": {
+  "brand": "Plant-Ex",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/plant-ex/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "BGF-backed Plant-Ex Ingredients specialises in the development, manufacturing and distribution of natural food colours, extracts and flavours."
+ },
+ "oliversweeney": {
+  "brand": "Oliver Sweeney",
+  "website": "https://www.oliversweeney.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/oliver-sweeney/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "BGF-backed menswear brand Oliver Sweeney is a fast-growing retailer of men's clothing, footwear and accessories."
+ },
+ "itdglobal": {
+  "brand": "ITD Global",
+  "website": "https://www.itdglobal.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/itd-global/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "ITD Global is a tech-enabled logistics consolidator that brokers parcel and freight solutions for e-commerce clients, operating in countries around the world."
+ },
+ "dublinmeatcompany": {
+  "brand": "Dublin Meat Company",
+  "website": "https://www.dublinmeatcompany.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/dublin-meat-company/"
+  ],
+  "food_terms": [
+   "butcher",
+   "drink",
+   "food",
+   "foods",
+   "meat",
+   "ready meal"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 8,
+  "description": "Family-run business Dublin Meat Company has grown from six craft butcher shops to a nationwide retailer of the Fit Foods healthy, ready meal range. It distributes hundreds of thousands of meals each week, through its network of retailers, craft butcher shops and online service."
+ },
+ "charactercom": {
+  "brand": "Character.com",
+  "website": "https://www.character.com/password",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/character-com/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Founded in 2009 by husband-and-wife team Stephen and Karen Hewitt, Character.com is a dynamic character clothing retailer with a focus on children’s products which has featured on the Sunday Times Fast Track 100 for four consecutive years."
+ },
+ "brompton": {
+  "brand": "Brompton",
+  "website": "https://www.brompton.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/brompton/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Founded in 1975, Brompton designs and manufactures the iconic folding bike, created specifically for urban environments."
+ },
+ "crpeaffaire": {
+  "brand": "Crêpeaffaire",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/crepeaffaire/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "meat"
+  ],
+  "excl_terms": [
+   "franchise"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Crêpeaffaire operates a chain of company-owned crêperies and has a growing franchise in the Middle East. Set up in 2008, Crêpeaffaire provides an all-day offering, serving sweet and savoury crêpes, waffles, coffees and smoothies for food-to-go and sit-in customers."
+ },
+ "primrose": {
+  "brand": "Primrose",
+  "website": "https://www.primrose.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/primrose/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Following BGF’s investment in 2012, Primrose quickly established itself as the market leader in its segment, more than tripling its revenues since 2012. The business now sells over 10,000 garden and outdoor leisure products direct to consumers through its UK and European websites. It was acquired by"
+ },
+ "christopherward": {
+  "brand": "Christopher Ward",
+  "website": "https://www.christopherward.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/christopher-ward/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Christopher Ward creates high-quality timepieces that combine British style and innovation with Swiss watchmaking skills. The brand specialises in mechanical and quartz watches, that are designed in the UK and manufactured in the home of horology, Biel, Switzerland."
+ },
+ "elvie": {
+  "brand": "Elvie",
+  "website": "https://www.elvie.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/elvie/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Elvie brings together a team of world-class engineers, designers and business minds to develop extraordinary products that improve women’s lives – revolutionising categories which had been overlooked for many years, including breast pumps and pelvic floor health."
+ },
+ "spoke": {
+  "brand": "Spoke",
+  "website": "https://spoke-london.com/",
+  "funds": [
+   "BGF",
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/spoke/",
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Spoke is a direct-to-customer (D2C), e-commerce menswear brand, specialising in chinos."
+ },
+ "stpierregroupe": {
+  "brand": "St Pierre Groupe",
+  "website": "https://www.stpierregroupe.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/st-pierre-groupe/"
+  ],
+  "food_terms": [
+   "baker",
+   "bakery",
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "BGF-backed St Pierre Groupe is an award-winning bakery business, with brands including Baker Street and Paul Hollywood Ready to Bake."
+ },
+ "springfieldhealthcaregroup": {
+  "brand": "Springfield Healthcare Group",
+  "website": "https://www.springfieldhealthcare.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/springfield-healthcare-group/"
+  ],
+  "food_terms": [
+   "chocolate"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Springfield Healthcare Group (backed by BGF from 2012 to 2024) operates multiple care villages across Yorkshire and the North East."
+ },
+ "fairgame": {
+  "brand": "Fairgame",
+  "website": "https://www.wearefairgame.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/fairgame/"
+  ],
+  "food_terms": [
+   "drinks",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "BGF-backed Fairgame is a premium social entertainment brand that reimagines the traditional outdoor fairground in an indoor venue."
+ },
+ "buyitdirect": {
+  "brand": "Buy it Direct",
+  "website": "https://www.buyitdirect.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/buy-it-direct/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Founded in 1999, Buy It Direct has grown from a high street computer repair shop to one of the largest, privately-owned online retailers in the UK. It sells a range of home appliances, IT products and furniture to both consumers and businesses."
+ },
+ "gousto": {
+  "brand": "Gousto",
+  "website": "https://www.gousto.co.uk/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/gousto/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Recipe box delivery service Gousto takes the time and trekking out of home cooking. Subscribers choose from a wide range of healthy recipes every week and are offered flexible delivery dates. Gousto then sends high-quality, pre-portioned ingredients and recipe cards for food that can be prepared and"
+ },
+ "apsgroup": {
+  "brand": "APS Group",
+  "website": "https://apsgroup.uk.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/aps-group/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Family-owned APS Group is the UK’s largest tomato grower. Founded in 1949, the business operates greenhouse sites across the UK, from Alderley Edge to the Isle of Wight."
+ },
+ "ourportfolio": {
+  "brand": "Our portfolio",
+  "website": null,
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "We’re proud to have backed more than 600 growing businesses and supported standout exits across the UK and Ireland. Explore our portfolio, past and present, here."
+ },
+ "this": {
+  "brand": "THIS",
+  "website": "https://this.co/",
+  "funds": [
+   "BGF",
+   "Five Seasons Ventures",
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/this/",
+   "https://www.fiveseasons.vc/portfolio/",
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "foods",
+   "meat",
+   "plant-based",
+   "supermarket",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 9,
+  "description": "THIS™ develops no-meat alternatives to chicken and pork, mimicking their taste, texture, appearance and versatility, but without the ethical or environmental impact."
+ },
+ "rmsinternational": {
+  "brand": "RMS International",
+  "website": "https://rmsint.com",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/rms-international/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "BGF-backed RMS designs, sources and distributes toys, craft, stationery and licenced products to global customers."
+ },
+ "offpistewines": {
+  "brand": "Off-Piste Wines",
+  "website": "https://www.offpistewines.com/",
+  "funds": [
+   "BGF"
+  ],
+  "sources": [
+   "https://www.bgf.co.uk/portfolio/off-piste-wines/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "grocery",
+   "meat",
+   "wine"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 7,
+  "description": "Off-Piste Wines develops and distributes award-winning own-brand and private-label wines to grocery, convenience and on-trade customers."
+ },
+ "bramblefoodssupportingamarketleadingfoodmanufacturer": {
+  "brand": "Bramble Foods",
+  "website": "https://bramblefoods.com/",
+  "funds": [
+   "LDC"
+  ],
+  "sources": [
+   "https://www.ldc.co.uk/portfolio/bramble-foods-supporting-a-market-leading-food-manufacturer/"
+  ],
+  "food_terms": [
+   "food",
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "LDC backed Bramble Foods (Bramble) in December 2021 to support its organic and acquisitive growth strategy."
+ },
+ "cakesmithsbringingfantasticcakestomorepeople": {
+  "brand": "Cakesmiths",
+  "website": "https://www.cakesmiths.com/",
+  "funds": [
+   "LDC"
+  ],
+  "sources": [
+   "https://www.ldc.co.uk/portfolio/cakesmiths-bringing-fantastic-cakes-to-more-people/"
+  ],
+  "food_terms": [
+   "cakes"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Artisan cakemaker almost trebles revenue and EBITDA during two-year partnership with private equity partnership with LDC."
+ },
+ "assetsolutionsgroupinvestmenttocreatestandalonebusiness": {
+  "brand": "Asset Solutions Group: investment to create standalone business",
+  "website": "https://www.retailassetsolutions.com/",
+  "funds": [
+   "LDC"
+  ],
+  "sources": [
+   "https://www.ldc.co.uk/portfolio/asset-solutions-group-investment-standalone-business/"
+  ],
+  "food_terms": [
+   "grocery"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Asset Solutions Group, previously OCS Asset Solutions, is a leading provider of supply chain management, stocktaking and merchandising services to the grocery and general retail sector."
+ },
+ "addofoodgroupsupportivesecondarybuyout": {
+  "brand": "Addo Food Group",
+  "website": "https://www.addofoodgroup.com",
+  "funds": [
+   "LDC"
+  ],
+  "sources": [
+   "https://www.ldc.co.uk/portfolio/addo-food-group-supportive-secondary-buyout/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "In April 2017, LDC backed the secondary buyout of Addo to support the management team’s continued growth strategy."
+ },
+ "seabrookinvestingininternationalexpansion": {
+  "brand": "Seabrook",
+  "website": "https://www.seabrookcrisps.com",
+  "funds": [
+   "LDC"
+  ],
+  "sources": [
+   "https://www.ldc.co.uk/portfolio/seabrook-investing-in-international-expansion/"
+  ],
+  "food_terms": [
+   "snack"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "In October 2018, LDC completed the sale of Seabrook to leading snack brand Calbee (UK) Ltd for an undisclosed sum."
+ },
+ "reevethebaker": {
+  "brand": "Reeve the Baker",
+  "website": "https://www.reevethebaker.co.uk/",
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/reeve-the-baker/"
+  ],
+  "food_terms": [
+   "baked",
+   "baker",
+   "bakery",
+   "bread",
+   "dog food",
+   "drink",
+   "drinks",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 10,
+  "description": "We are delighted to announce our investment in Reeve the Baker , the much-loved, third-generation regional bakery renowned for its high-quality bread and baked goods, baked fresh every day."
+ },
+ "boroughbroth": {
+  "brand": "Borough Broth",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/borough-broth/"
+  ],
+  "food_terms": [
+   "beverage",
+   "broth",
+   "drink",
+   "food",
+   "sauces",
+   "soup"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 8,
+  "description": "Piper invests £7.5m in Borough Broth to champion healthy and sustainable convenience food"
+ },
+ "yardsalepizza": {
+  "brand": "Yard Sale Pizza",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/yard-sale-pizza/"
+  ],
+  "food_terms": [
+   "bread",
+   "cheese",
+   "food",
+   "pizza",
+   "spice"
+  ],
+  "excl_terms": [
+   "restaurants"
+  ],
+  "uk_signal": true,
+  "score": 5,
+  "description": "We are delighted to announce our investment in Yard Sale Pizza , London’s favourite neighbourhood pizza brand, to fund growth across the capital and into new UK cities. Renowned for its high-quality toppings, giant 18-inch pizzas, and market-leading collaborations with cult restaurants and content c"
+ },
+ "insidetravelgroup": {
+  "brand": "Inside Travel Group",
+  "website": "https://insidetravelgroup.com/",
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/inside-travel-group/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "We are delighted to announce that we have backed a management buyout of the world’s leading Asia-focused ‘cultural adventure’ brand, Inside Travel Group (ITG). We have invested alongside Cool Japan Fund , Japan’s sovereign wealth fund focused on investing in businesses that promote Japanese culture "
+ },
+ "ancientbrave": {
+  "brand": "Ancient + Brave",
+  "website": "https://ancientandbrave.earth/",
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/ancient-brave/"
+  ],
+  "food_terms": [
+   "drinks",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "The mission-driven wellness brand that uses natural ingredients, ancestral wisdom and science-led innovation to create a range of whole-body health supplements to use in your daily rituals."
+ },
+ "rabbies": {
+  "brand": "Rabbies",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/rabbies/"
+  ],
+  "food_terms": [
+   "whisky"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Founded in 1993 by Robin Worsnop, Rabbie’s began with him taking small groups of travellers around Scotland in his first 16-seater mini-coach. Today, it has almost 100 luxury vehicles operating small group tours across the UK, alongside exclusive partnerships in Ireland and Europe. It is the UK’s le"
+ },
+ "omlet": {
+  "brand": "Omlet",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/omlet/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Omlet was founded in 2004 by James Tuthill, Johannes Paul, William Windham and Simon Nicholls, who met at London’s Royal College of Art while completing a postgraduate course in Industrial Design Engineering. During their final year, they developed the Eglu, a revolutionary new chicken coop that mak"
+ },
+ "wildnutrition": {
+  "brand": "Wild Nutrition",
+  "website": "https://www.wildnutrition.com/",
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/wild-nutrition/"
+  ],
+  "food_terms": [
+   "food",
+   "nutrition",
+   "supplement",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "Our investment into Wild Nutrition, an online natural health supplements brand that has disrupted the UK’s health and wellness market with their Food-Grown® formulations."
+ },
+ "wattbike": {
+  "brand": "Wattbike",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/wattbike/"
+  ],
+  "food_terms": [
+   "baker"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Our investment into Wattbike, the world’s first smart indoor bike brand, joining the impressive team on their mission to make Wattbike a global brand legend."
+ },
+ "flatiron": {
+  "brand": "Flat Iron",
+  "website": "https://flatironsteak.co.uk/",
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/flatiron/"
+  ],
+  "food_terms": [
+   "butcher"
+  ],
+  "excl_terms": [
+   "restaurant"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Flat Iron was created to challenge traditional perceptions of steak. We invested in 2017 to help build the team, focus on delivering outstanding quality, continue to develop a beacon brand."
+ },
+ "mindfulchef": {
+  "brand": "Mindful Chef",
+  "website": "https://www.mindfulchef.com/",
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/mindful-chef/"
+  ],
+  "food_terms": [
+   "dairy",
+   "nutrition"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Mindful Chef, making healthy eating easy and delicious. Since its launch in 2015, Mindful Chef has delivered nearly two million meals to UK consumers."
+ },
+ "barkingheads": {
+  "brand": "Barking Heads",
+  "website": "https://barkingheads.co.uk/",
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/barking-heads/"
+  ],
+  "food_terms": [
+   "cat food",
+   "meat",
+   "nutrition",
+   "pet food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "Barking Heads for dogs & Meowing Heads for cats are predominantly dry premium natural pet food ranges formulated with the finest ingredients sourced from the UK."
+ },
+ "proper": {
+  "brand": "Proper",
+  "website": "https://proper.co.uk/",
+  "funds": [
+   "Piper",
+   "JamJar Investments",
+   "Exponent"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/proper/",
+   "https://www.jamjarinvestments.com/jamjar-portfolio",
+   "https://www.exponentpe.com/our-portfolio/proper-snacks"
+  ],
+  "food_terms": [
+   "mixer",
+   "popcorn",
+   "snack",
+   "snacking",
+   "snacks"
+  ],
+  "excl_terms": [
+   "café"
+  ],
+  "uk_signal": true,
+  "score": 5,
+  "description": "In 2016, we and and JamJar, invested in Proper to support the brand’s growth ambitions as consumers continue to seek healthier snacks. We exited in 2021."
+ },
+ "forthglade": {
+  "brand": "Forthglade",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/forthglade/"
+  ],
+  "food_terms": [
+   "dog food",
+   "food",
+   "pet food",
+   "private label"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "The Forthglade philosophy has always been: ‘If you’re not prepared to eat it yourself, don’t feed it to your pets.’ We invested in 2015 and exited in 2020."
+ },
+ "bottlegreen": {
+  "brand": "Bottlegreen",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/bottle-green/"
+  ],
+  "food_terms": [
+   "drinks",
+   "food",
+   "wine"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "From Piper’s investment in 2007, Bottlegreen became an iconic natural, healthy adult soft drinks brand stocked by all the major UK multiples. We exited in 2011."
+ },
+ "beatone": {
+  "brand": "Be At One",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/be-at-one/"
+  ],
+  "food_terms": [
+   "cocktail",
+   "vodka"
+  ],
+  "excl_terms": [
+   "bars"
+  ],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Be At One’s success is driven by its focus on providing the finest range of cocktails served by the best quality staff. We invested in Be At One from 2011 to 2018."
+ },
+ "maximuscle": {
+  "brand": "Maximuscle",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/maximuscle/"
+  ],
+  "food_terms": [
+   "nutrition"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "We exited Maximuscle in 2007. Maximuscle is a sports nutrition brand used by sports stars such as Josh Lewsey and Gavin Henson."
+ },
+ "weirdfish": {
+  "brand": "Weird Fish",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/weird-fish/"
+  ],
+  "food_terms": [
+   "fish"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Weird Fish was founded in 1993 and has grown to become one of the UK’s leading wholesale brands in the active lifestyle clothing market."
+ },
+ "rollover": {
+  "brand": "Rollover",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/rollover/"
+  ],
+  "food_terms": [
+   "food",
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Piper turned Rollover into the UK’s largest premium hot dog seller, sold in over 3,000 locations, including more than half of the country’s Premiership League football stadiums."
+ },
+ "dietchef": {
+  "brand": "Diet Chef",
+  "website": null,
+  "funds": [
+   "Piper"
+  ],
+  "sources": [
+   "https://piper.co.uk/our-brands/diet-chef/"
+  ],
+  "food_terms": [
+   "supermarket"
+  ],
+  "excl_terms": [
+   "recruitment"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Diet Chef offers consumers a highly convenient, effective and sustainable weight loss solution. With Piper’s involvement key areas of the business were enhanced."
+ },
+ "aspenpumps": {
+  "brand": "Aspen Pumps",
+  "website": "https://www.aspenpumps.com/",
+  "funds": [
+   "Inflexion"
+  ],
+  "sources": [
+   "https://www.inflexion.com/portfolio/aspen-pumps"
+  ],
+  "food_terms": [
+   "treats"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "See how Inflexion is powering Aspen Pumps to lead the specialist AC and refrigeration aftermarket, with 18 acquisitions and the US now its largest market."
+ },
+ "bakertillybenelux": {
+  "brand": "Baker Tilly Benelux",
+  "website": "https://www.bakertilly.nl/en",
+  "funds": [
+   "Inflexion"
+  ],
+  "sources": [
+   "https://www.inflexion.com/portfolio/baker-tilly-benelux"
+  ],
+  "food_terms": [
+   "baker"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "In 2025, Inflexion’s Partnership Capital III fund made a strategic investment in Baker Tilly Benelux, a leading accountancy and advisory firm."
+ },
+ "bakertillynetherlands": {
+  "brand": "Baker Tilly Netherlands",
+  "website": null,
+  "funds": [
+   "Inflexion"
+  ],
+  "sources": [
+   "https://www.inflexion.com/media/arhdgxnv/inflexion-portfolio_-160926.pdf"
+  ],
+  "food_terms": [
+   "baker"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "ilchestercheese": {
+  "brand": "Ilchester Cheese",
+  "website": null,
+  "funds": [
+   "Inflexion"
+  ],
+  "sources": [
+   "https://www.inflexion.com/media/arhdgxnv/inflexion-portfolio_-160926.pdf"
+  ],
+  "food_terms": [
+   "cheese"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "absolutecollagen": {
+  "brand": "Absolute Collagen",
+  "website": "https://www.absolutecollagen.com/",
+  "funds": [
+   "Livingbridge"
+  ],
+  "sources": [
+   "https://www.livingbridge.com/portfolio/absolute-collagen"
+  ],
+  "food_terms": [
+   "supplement",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "The business was founded in 2015 by Maxine Laceby, after she experienced positive skin and wellbeing benefits attributed to the collagen contained in homemade bone broths. Disappointed by the low concentration and multitude of bulking agents in collagen supplements available at the time, she set out"
+ },
+ "directtyremanagementdtm": {
+  "brand": "Direct Tyre Management (DTM)",
+  "website": "https://www.directtyre.com/",
+  "funds": [
+   "Palatine"
+  ],
+  "sources": [
+   "https://palatinepe.com/portfolio-item/dtm/"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "PORTFOLIO — BUSINESS SERVICES Direct Tyre Management (DTM) Technology-led, environmentally considerate tyre management. Key Facts Initial investment: 28/09/2020 Sector – Business Services Fund — Buyout Fund IV Status — Realised Investment Highlights Leigh Goodland – CEO of DTM Leigh was promoted to "
+ },
+ "nrg": {
+  "brand": "NRG",
+  "website": "https://nrgriverside.com/",
+  "funds": [
+   "Palatine"
+  ],
+  "sources": [
+   "https://palatinepe.com/portfolio-item/nrg/"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "PORTFOLIO — BUSINESS SERVICES NRG NRG Fleet Services Ltd is a provider of specialist services to the commercial vehicle sector. Key Facts Initial investment: 28/09/2020 Sector – Business Services Fund — Buyout Fund IV Status — Realised Investment highlights Darren Powell – CEO of NRG Darren has over"
+ },
+ "proteinworks": {
+  "brand": "Protein Works",
+  "website": "https://www.theproteinworks.com/",
+  "funds": [
+   "YFM Equity Partners"
+  ],
+  "sources": [
+   "https://yfmep.com/portfolio/protein-works"
+  ],
+  "food_terms": [
+   "dairy",
+   "nutrition",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Explore Protein Works nutrition products YFM supported its growth and international expansion before its acquisition by Lactalis in 2026."
+ },
+ "favershamhouse": {
+  "brand": "Faversham House",
+  "website": "https://favershamhouse.com/",
+  "funds": [
+   "Mobeus"
+  ],
+  "sources": [
+   "https://www.mobeus.co.uk/investments/faversham-house/"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Mobeus Equity Partners invested in the £4m management buyout of Faversham House, a leading environmental media business that publishes Europe’s largest environmental website www.edie.net."
+ },
+ "starbrands": {
+  "brand": "Star Brands",
+  "website": "https://www.starbrandsltd.co.uk/",
+  "funds": [
+   "Mobeus"
+  ],
+  "sources": [
+   "https://www.mobeus.co.uk/investments/star-brands/"
+  ],
+  "food_terms": [
+   "fmcg",
+   "grocery",
+   "private label"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Branded and private label laundry and cleaning product manufacturer responsible for social media sensation, The Pink Stuff"
+ },
+ "vectairsystems": {
+  "brand": "Vectair Systems",
+  "website": "https://www.vectairsystems.com/",
+  "funds": [
+   "Mobeus"
+  ],
+  "sources": [
+   "https://www.mobeus.co.uk/investments/vectair-systems/"
+  ],
+  "food_terms": [
+   "infant"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Vectair has delivered sanitary & scent solutions for over 30 years. Its product range covers air care and odour control, hand washing and skin care,"
+ },
+ "virginwines": {
+  "brand": "Virgin Wines",
+  "website": "https://www.virginwines.co.uk/",
+  "funds": [
+   "Mobeus",
+   "Gresham House Ventures"
+  ],
+  "sources": [
+   "https://www.mobeus.co.uk/investments/virgin-wines/",
+   "https://greshamhouseventures.com/portfolio/virgin-wines/"
+  ],
+  "food_terms": [
+   "spirits",
+   "wine"
+  ],
+  "excl_terms": [
+   "b2b"
+  ],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Virgin Wines works with its network of trusted suppliers and winemaking partners from around the world to source, design, blend and sell award-winning and largely exclusive premium wines. These wines are sold through its WineBank and Wine Plan subscription schemes and on a pay-as-you-go basis. The G"
+ },
+ "pastaking": {
+  "brand": "Pasta King",
+  "website": "https://pastaking.co.uk/",
+  "funds": [
+   "Mobeus"
+  ],
+  "sources": [
+   "https://www.mobeus.co.uk/investments/"
+  ],
+  "food_terms": [
+   "pasta",
+   "sauces"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Pasta King Realised investment Pasta King"
+ },
+ "bridgefarmgroup": {
+  "brand": "Bridge Farm Group",
+  "website": "https://www.bridgefarmgroup.co.uk/",
+  "funds": [
+   "NorthEdge"
+  ],
+  "sources": [
+   "https://northedge.com/our_portfolio/bridge-farm-group/"
+  ],
+  "food_terms": [
+   "supermarkets"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Bridge Farm Group is one of the UK’s leading growers of ornamental plants, flowers and herbs."
+ },
+ "clearlydrinks": {
+  "brand": "Clearly Drinks",
+  "website": null,
+  "funds": [
+   "NorthEdge"
+  ],
+  "sources": [
+   "https://northedge.com/our_portfolio/clearly-drinks/"
+  ],
+  "food_terms": [
+   "drinks",
+   "sugar"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Clearly Drinks is a soft drinks manufacturer operating in the fast-growing flavoured spring water sector. It specialises in sugar-free products, with brands including Perfectly Clear, Upstream and Northumbria Spring."
+ },
+ "eastcoastconcepts": {
+  "brand": "East Coast Concepts",
+  "website": "https://www.eastcoastconcepts.co.uk/",
+  "funds": [
+   "NorthEdge"
+  ],
+  "sources": [
+   "https://northedge.com/our_portfolio/east-coast-concepts/"
+  ],
+  "food_terms": [
+   "seafood"
+  ],
+  "excl_terms": [
+   "dining"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "East Coast Concepts comprises two complementary premium dining concepts: Neighbourhood, based in city centres; and Victors, based in the suburbs."
+ },
+ "fpeglobal": {
+  "brand": "FPE Global",
+  "website": null,
+  "funds": [
+   "NorthEdge"
+  ],
+  "sources": [
+   "https://northedge.com/our_portfolio/fpe-global/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "FPE Global designed, developed and manufactured bespoke materials-handling processing systems with proven applications in a range of high-growth end markets"
+ },
+ "totalfitness": {
+  "brand": "Total Fitness",
+  "website": "https://www.totalfitness.co.uk/",
+  "funds": [
+   "NorthEdge"
+  ],
+  "sources": [
+   "https://northedge.com/our_portfolio/totalfitness/"
+  ],
+  "food_terms": [
+   "beverage",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Total Fitness operates of 17 full-service health and fitness clubs across the North of England."
+ },
+ "mcpheemixers": {
+  "brand": "McPhee Mixers",
+  "website": null,
+  "funds": [
+   "Elaghmore"
+  ],
+  "sources": [
+   "https://elaghmore.com/portfolio/mcphee-mixers/"
+  ],
+  "food_terms": [
+   "mixers"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "McPhee Mixers is a leading designer and manufacturer of truck-mounted concrete mixers. Elaghmore invested in the company in 2018. The Glasgow-based business now trades within Elaghmore-owned Total Vehicle Solutions Group."
+ },
+ "chaucerfoods": {
+  "brand": "Chaucer Foods",
+  "website": "https://chaucerfoods.com",
+  "funds": [
+   "Elaghmore"
+  ],
+  "sources": [
+   "https://elaghmore.com/portfolio/chaucer-foods/"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Chaucer Foods was a speciality provider of freeze-dried foods. Elaghmore acquired the company in 2011 and sold it for a strong return in 2016 to a Japanese trade buyer."
+ },
+ "wilcoxcommercialvehicles": {
+  "brand": "Wilcox Commercial Vehicles",
+  "website": null,
+  "funds": [
+   "Elaghmore"
+  ],
+  "sources": [
+   "https://elaghmore.com/portfolio/wilcox/"
+  ],
+  "food_terms": [
+   "mixers"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Wilcox is one of the UK’s leading manufacturers of aluminium bodies for rigid and tipping trailers and is the first acquisition TVS Group has made since its formation in 2019. Wilcox is also the exclusive Agent for CIFA Mixers in the UK."
+ },
+ "sneakaleadingchallengerinthehugeenergydrinkmarketwithrootsindtcbutafastgrowinggroceryretailpresenc": {
+  "brand": "Sneak",
+  "website": null,
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/case-study/sneak"
+  ],
+  "food_terms": [
+   "beverage",
+   "drink",
+   "drinks",
+   "energy drink",
+   "food",
+   "grocery",
+   "sugar"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 9,
+  "description": "Founded in 2018, Sneak was created as a healthier and culturally relevant alternative to traditional energy drinks, with zero sugar and only natural colours and flavours. It was sold mainly as a powder that consumers mix with water at their convenience, but has since transitioned into a true multi-c"
+ },
+ "soulfreshahealthyfoodandbeveragebusinessbringingmoreexcitingandnutritiousproductstoshelves": {
+  "brand": "Soulfresh: A healthy food and beverage business bringing more exciting and nutritious products to shelves.",
+  "website": null,
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/case-study/soulfresh"
+  ],
+  "food_terms": [
+   "beverage",
+   "beverages",
+   "biscuit",
+   "drink",
+   "drinks",
+   "food",
+   "juices",
+   "kombucha",
+   "plant-based",
+   "snacks",
+   "soda",
+   "supermarkets"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 14,
+  "description": "Soulfresh was founded in 2003 with one van in Melbourne, Australia, with the aim of changing the way people eat and drink for the better. The business takes a stand against unimaginative brands dominating supermarkets, with a sustainable and uncompromising approach to food."
+ },
+ "cambiotics": {
+  "brand": "cambiotics",
+  "website": "https://cambiotics.com/",
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/private-equity"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Consumer Tech, Seed, Current Cambiotics is developing a science-backed supplement using proprietary probiotics and postbiotics to capture PFAS chemicals in the gut and help them pass through the body. View website"
+ },
+ "10pourcent": {
+  "brand": "10pourcent",
+  "website": "https://10pourcent.fr/",
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/private-equity"
+  ],
+  "food_terms": [
+   "fmcg"
+  ],
+  "excl_terms": [
+   "platform"
+  ],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Consumer Tech, Retail/eCom Tech, Pre-Seed, Current 10% is a direct-to-brand loyalty platform giving shoppers 10% cashback on future purchases while delivering rich customer insights to FMCG brands. View website"
+ },
+ "milanovice": {
+  "brand": "milano-vice",
+  "website": "https://milano-vice.de/",
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/private-equity"
+  ],
+  "food_terms": [
+   "food",
+   "pizza"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 4,
+  "description": "Consumer Service, Series A, Current Milano Vice are pizza enthusiasts building a new virtual food brand, working with professional kitchens to prepare and deliver delicious pizzas to your home. View website"
+ },
+ "theshellworks": {
+  "brand": "theshellworks",
+  "website": "https://theshellworks.com/",
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/private-equity"
+  ],
+  "food_terms": [
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Supply Chain Tech, Pre-Seed, Current Shellworks is on a mission to make plastic waste a thing of the past. Its first product, Vivomer, is a vegan, compostable material made with help from microbes. View website"
+ },
+ "bleachlondon": {
+  "brand": "bleachlondon",
+  "website": "https://bleachlondon.co.uk",
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/private-equity"
+  ],
+  "food_terms": [
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Consumer Product, Series A, Exited Cool kid of the UK hair scene, Bleach London creates vegan and cruelty-free DIY dye and haircare products. It also has a suite of specialist colour hair salons in the UK and US. View website"
+ },
+ "shamelesspets": {
+  "brand": "shamelesspets",
+  "website": "https://shamelesspets.com",
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/private-equity"
+  ],
+  "food_terms": [
+   "food",
+   "treats"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Consumer Product, Seed, Current Chicago-based Shameless Pets makes dog treats with upcycled ingredients, working with farmers and food processors to use nutrient-rich food that would otherwise be wasted. View website"
+ },
+ "vitl": {
+  "brand": "vitl",
+  "website": "https://vitl.com",
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/private-equity"
+  ],
+  "food_terms": [
+   "supplement",
+   "supplements",
+   "vitamins"
+  ],
+  "excl_terms": [
+   "platform"
+  ],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Consumer Service, Pre-Seed, Current VITL is a wellbeing platform offering personalised vitamin and supplement subscriptions, with expert advice and a monthly wellbeing package delivered through the letterbox. View website"
+ },
+ "seriouspig": {
+  "brand": "seriouspig",
+  "website": "https://seriouspig.london",
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/private-equity"
+  ],
+  "food_terms": [
+   "cheese",
+   "snack",
+   "snacking"
+  ],
+  "excl_terms": [
+   "pub"
+  ],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Consumer Product, Pre-Seed, Current Serious Pig is elevating the traditional pub snack - creating snacking salami, cheese and charcuterie for the casual drinker. View website"
+ },
+ "citypantry": {
+  "brand": "citypantry",
+  "website": "https://citypantry.com",
+  "funds": [
+   "True (TrueCapital)"
+  ],
+  "sources": [
+   "https://www.true.global/private-equity"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": "Other, Pre-Seed, Exited City Pantry is a food delivery technology brand for the workplace. It capitalised on the trend towards more social workspaces, and was acquired by Just Eat in 2019. View website"
+ },
+ "puritysoftdrinks": {
+  "brand": "Purity Soft Drinks",
+  "website": null,
+  "funds": [
+   "Langholm Capital"
+  ],
+  "sources": [
+   "https://www.langholm.com/portfolio"
+  ],
+  "food_terms": [
+   "drinks",
+   "juice"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "UK based juice manufacturer (sold to Verdane, Oct 2021)"
+ },
+ "dorsetcereals": {
+  "brand": "Dorset Cereals",
+  "website": null,
+  "funds": [
+   "Langholm Capital"
+  ],
+  "sources": [
+   "https://www.langholm.com/portfolio"
+  ],
+  "food_terms": [
+   "cereals"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Previous investment"
+ },
+ "tyrrellscrisps": {
+  "brand": "Tyrrells Crisps",
+  "website": null,
+  "funds": [
+   "Langholm Capital"
+  ],
+  "sources": [
+   "https://www.langholm.com/portfolio"
+  ],
+  "food_terms": [
+   "crisps"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Previous investment"
+ },
+ "bartspices": {
+  "brand": "Bart Spices",
+  "website": null,
+  "funds": [
+   "Langholm Capital"
+  ],
+  "sources": [
+   "https://www.langholm.com/portfolio"
+  ],
+  "food_terms": [
+   "spices"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Previous investment"
+ },
+ "evergreen": {
+  "brand": "Evergreen",
+  "website": "https://protect-eu.mimecast.com/s/WeJZCOgRgcmyRXCEFJVZ?domain=lovethegarden.com",
+  "funds": [
+   "Exponent"
+  ],
+  "sources": [
+   "https://www.exponentpe.com/our-portfolio/evergreen"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Evergreen was formed through the acquisition of the European and Asia-Pacific operations of Scotts Miracle-Gro, the world's leading marketer of branded consumer products for lawn and garden care. The business is a leader in garden consumables and operates primarily in the UK, France, Germany, Austri"
+ },
+ "g": {
+  "brand": "Gü",
+  "website": null,
+  "funds": [
+   "Exponent"
+  ],
+  "sources": [
+   "https://www.exponentpe.com/our-portfolio/gu"
+  ],
+  "food_terms": [
+   "chilled",
+   "fmcg",
+   "food",
+   "foods",
+   "snacks",
+   "treats"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 8,
+  "description": "A leading premium chilled dessert brand in the UK, Europe & US, with an expanding range of indulgent, multi-layered treats across key segments including cheesecakes, mousse, hot and \"free from’’.We were attracted to Gü due to its leading position in a growing category, its premium brand with strong "
+ },
+ "lochlomondgroup": {
+  "brand": "Loch Lomond Group",
+  "website": "http://www.lochlomonddistillery.com",
+  "funds": [
+   "Exponent"
+  ],
+  "sources": [
+   "https://www.exponentpe.com/our-portfolio/loch-lomond-group"
+  ],
+  "food_terms": [
+   "whisky"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Loch Lomond is a leading producer of malt, blended and grain whisky. Established in Scotland in 1842, the business remained in family ownership until Exponent acquired it in 2014."
+ },
+ "meadow": {
+  "brand": "Meadow",
+  "website": "https://meadowfoods.co.uk/",
+  "funds": [
+   "Exponent"
+  ],
+  "sources": [
+   "https://www.exponentpe.com/our-portfolio/meadow-foods"
+  ],
+  "food_terms": [
+   "chocolate",
+   "dairy",
+   "food",
+   "milk",
+   "plant-based"
+  ],
+  "excl_terms": [
+   "b2b"
+  ],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Meadow is a leading B2B player in sustainable dairy, confectionery and plant-based ingredients in the UK."
+ },
+ "propersnacks": {
+  "brand": "PROPER SNACKS",
+  "website": "https://proper.co.uk/",
+  "funds": [
+   "Exponent",
+   "JamJar Investments",
+   "Piper"
+  ],
+  "sources": [
+   "https://www.exponentpe.com/our-portfolio/proper-snacks",
+   "https://www.jamjarinvestments.com/jamjar-portfolio",
+   "https://piper.co.uk/our-brands/proper/"
+  ],
+  "food_terms": [
+   "fmcg",
+   "food",
+   "foods",
+   "snacking",
+   "snacks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 7,
+  "description": "Eat Real and Proper are two of Europe’s leading and fastest-growing Better-for-You snacking brands. Their distinct identities are underpinned by a shared ambition to recruit new consumers into the healthier snacking category."
+ },
+ "quornfoods": {
+  "brand": "Quorn Foods",
+  "website": null,
+  "funds": [
+   "Exponent"
+  ],
+  "sources": [
+   "https://www.exponentpe.com/our-portfolio/quorn-foods"
+  ],
+  "food_terms": [
+   "food",
+   "foods",
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Quorn Foods is one of the largest meat-alternative brands in the world, trading under the Quorn and Cauldron brands. It is a UK market leader with a well-established brand and a loyal customer base."
+ },
+ "vibrantfoods": {
+  "brand": "Vibrant Foods",
+  "website": "https://vibrantfoods.com/",
+  "funds": [
+   "Exponent"
+  ],
+  "sources": [
+   "https://www.exponentpe.com/our-portfolio/trs-east-end-foods"
+  ],
+  "food_terms": [
+   "food",
+   "foods",
+   "snacks",
+   "spices",
+   "supermarket"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 7,
+  "description": "Vibrant Foods is the leading producer and distributor of South Asian foods in the UK and across continental Europe. The business produces a range of pulses, spices, flours and other Indian food ingredients which are sold under the Vibrant Food brand primarily through independent South Asian stores a"
+ },
+ "novusfoods": {
+  "brand": "novusfoods",
+  "website": "https://novusfoods.com/",
+  "funds": [
+   "CapVest"
+  ],
+  "sources": [
+   "https://www.capvest.com/investments"
+  ],
+  "food_terms": [
+   "food",
+   "foods",
+   "private label"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 5,
+  "description": "Leading manufacturer of branded and private label refrigerated food products in the US. #fhtogglels/Read more/Read less/ib Novus Foods is a Cincinnati Ohio based refrigerated food manufacturer with ~1,200 employees across 6 manufacturing locations. The Company produces refrigerated dips, desserts, s"
+ },
+ "natra": {
+  "brand": "natra",
+  "website": "https://www.natra.com",
+  "funds": [
+   "CapVest"
+  ],
+  "sources": [
+   "https://www.capvest.com/investments"
+  ],
+  "food_terms": [
+   "chocolate"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": "European producer and distributor of chocolates and cocoa products #fhtogglels/Read more/Read less/ib Founded in 1943 and headquartered in Spain, Natra is a global manufacturer specialised in cocoa ingredients and chocolate products for private labels and co-manufacturing for other brands. The Compa"
+ },
+ "secondnaturebrandsus": {
+  "brand": "secondnaturebrandsus",
+  "website": "https://secondnaturebrandsus.com",
+  "funds": [
+   "CapVest"
+  ],
+  "sources": [
+   "https://www.capvest.com/investments"
+  ],
+  "food_terms": [
+   "bakery",
+   "nuts",
+   "snacks",
+   "treats"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 6,
+  "description": "CREATORS OF NUTRITIONAL AND LIFESTYLE SNACKS AND TREATS #fhtogglels/Read more/Read less/ib With a heritage stretching over 140 years, Second Nature is a leader in the fast-growing snacks and treats market, focussing on the nutritional and lifestyle needs of health-conscious consumers. The Company’s "
+ },
+ "ipn": {
+  "brand": "ipn",
+  "website": "https://ipn.co.uk",
+  "funds": [
+   "CapVest"
+  ],
+  "sources": [
+   "https://www.capvest.com/investments"
+  ],
+  "food_terms": [
+   "fmcg",
+   "nutrition",
+   "pet food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Major UK pet food manufacturing business #fhtogglels/Read more/Read less/ib With nearly 100 years of history behind it, Inspired Pet Nutrition is an award-winning pet food manufacturer based in North Yorkshire. IPN’s market-leading Harringtons and Wagg brands, in addition to its value-added own labe"
+ },
+ "rex": {
+  "brand": "REX",
+  "website": null,
+  "funds": [
+   "Lion Capital"
+  ],
+  "sources": [
+   "https://lioncapital.com/portfolio/rex/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "hatchbeautybrands": {
+  "brand": "Hatch Beauty Brands",
+  "website": null,
+  "funds": [
+   "Lion Capital"
+  ],
+  "sources": [
+   "https://lioncapital.com/portfolio/hatch-beauty/"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": ""
+ },
+ "kettlefoods": {
+  "brand": "Kettle Foods",
+  "website": null,
+  "funds": [
+   "Lion Capital"
+  ],
+  "sources": [
+   "https://lioncapital.com/portfolio/kettle-foods/"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": ""
+ },
+ "lennylarrys": {
+  "brand": "Lenny & Larry’s",
+  "website": null,
+  "funds": [
+   "Lion Capital"
+  ],
+  "sources": [
+   "https://lioncapital.com/portfolio/lenny-larrys/"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "truefoodkitchen": {
+  "brand": "True Food Kitchen",
+  "website": null,
+  "funds": [
+   "Lion Capital"
+  ],
+  "sources": [
+   "https://lioncapital.com/portfolio/true-food-kitchen/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "verishop": {
+  "brand": "Verishop",
+  "website": null,
+  "funds": [
+   "Lion Capital"
+  ],
+  "sources": [
+   "https://lioncapital.com/portfolio/verishop/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "arranaromatics": {
+  "brand": "Arran Aromatics",
+  "website": null,
+  "funds": [
+   "Endless"
+  ],
+  "sources": [
+   "https://endlessllp.com/investments/arran-aromatics/"
+  ],
+  "food_terms": [
+   "fmcg",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "The business was founded by Janet Russell and her husband Iain in the kitchen of their cottage on the Isle of Arran in 1989. Since then, it has grown to be one of the best-loved brands in Scotland employing over 60 people. The business retains a strong family ethos and we are delighted that members "
+ },
+ "brightbluefoods": {
+  "brand": "Bright Blue Foods",
+  "website": null,
+  "funds": [
+   "Endless"
+  ],
+  "sources": [
+   "https://endlessllp.com/investments/bright-blue-food/"
+  ],
+  "food_terms": [
+   "beverage",
+   "cake",
+   "cakes",
+   "chilled",
+   "food",
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "BBF is the largest own label cake manufacturer in the UK with turnover of over £200 million. It trades from four sites in the UK and one in Poland and employs over 1,500 people. The business delivers ‘best in class’ operational performance across a broad range of production capabilities including mi"
+ },
+ "2024buybuildrsk": {
+  "brand": "2024 Buy & Build RSK",
+  "website": "https://rskgroup.com/",
+  "funds": [
+   "Penta Capital",
+   "BGF"
+  ],
+  "sources": [
+   "https://pentacapital.com/portfolio/rsk/",
+   "https://www.bgf.co.uk/portfolio/rsk/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Penta Capital invested in RSK Group in September 2024 as part of a consortium with Searchlight Capital Partners LP and Ares Management funds. The group together invested £500m, which will support the ambitions articulated in RSK’s 2030 Global Growth Strategy , including organic growth initiatives an"
+ },
+ "hochdorfswissnutrition": {
+  "brand": "Hochdorf Swiss Nutrition",
+  "website": "http://www.hochdorf.com/en",
+  "funds": [
+   "Penta Capital"
+  ],
+  "sources": [
+   "https://pentacapital.com/portfolio/hochdorf-swiss-nutrition/"
+  ],
+  "food_terms": [
+   "chocolate",
+   "food",
+   "infant",
+   "milk",
+   "nutrition"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "HSN is a manufacturer / processor and distributer of functional milk powders and infant nutrition / formula."
+ },
+ "armitagepetcare": {
+  "brand": "Armitage Pet Care",
+  "website": null,
+  "funds": [
+   "Rutland Partners"
+  ],
+  "sources": [
+   "https://rutlandpartners.com/project/armitage-pet-care/"
+  ],
+  "food_terms": [
+   "treats"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "The Business Armitage is the largest independent supplier of pet treats and accessories in the UK. The business has a number of brands but the most significant is “Good Boy”, a leading premium dog treats brand. From its operations in Nottingham, Armitage supplies to a broad customer base, however it",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "cedo": {
+  "brand": "CeDo",
+  "website": null,
+  "funds": [
+   "Rutland Partners"
+  ],
+  "sources": [
+   "https://rutlandpartners.com/project/cedo/"
+  ],
+  "food_terms": [
+   "own-label",
+   "supermarkets"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "The Business CeDo is one of Europe’s leading manufacturers of household disposables such as refuse sacks, bin liners and other speciality kitchen and household disposable products. It supplies the majority of Europe’s largest supermarkets and discounters with own-label products as well as some brand"
+ },
+ "hcc": {
+  "brand": "HCC",
+  "website": null,
+  "funds": [
+   "Rutland Partners"
+  ],
+  "sources": [
+   "https://rutlandpartners.com/project/hcc/"
+  ],
+  "food_terms": [
+   "drinks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "The Business HCC is a leading UK independent canned drinks co-packing service provider for a wide range of customers from multinational drinks brands to fast growing challenger brands. The company was established in 2009 to address the attractive opportunity identified for an independent canning ope"
+ },
+ "millbrook": {
+  "brand": "Millbrook",
+  "website": null,
+  "funds": [
+   "Rutland Partners"
+  ],
+  "sources": [
+   "https://rutlandpartners.com/project/millbrook/"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "The Business Leading European testing services provider offering real-world and laboratory-based test and validation services to the transport and energy sectors. Established in 1969. Millbrook is one of the most comprehensive testing facilities in Europe and one of only two such facilities in the U"
+ },
+ "walsteadgroup": {
+  "brand": "Walstead Group",
+  "website": null,
+  "funds": [
+   "Rutland Partners"
+  ],
+  "sources": [
+   "https://rutlandpartners.com/project/walstead-group/"
+  ],
+  "food_terms": [
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "The Business Walstead is the leading European commercial printing group with operations in the UK, Spain and Central and Eastern Europe. The Group employs around 2,500  staff at 12  production facilities across six countries. The business mainly operates web-offset presses, which produce promotional"
+ },
+ "thescotchmaltwhiskysociety": {
+  "brand": "The Scotch Malt Whisky Society",
+  "website": "https://www.smws.com/",
+  "funds": [
+   "Inverleith"
+  ],
+  "sources": [
+   "https://inverleith.com/investments/the-scotch-malt-whisky-society/"
+  ],
+  "food_terms": [
+   "spirits",
+   "whisky"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Awarded the 2017 ‘Independent Bottler of the Year’ at the renowned Independent Bottlers’ Challenge Competition (IBC) and named 2018…"
+ },
+ "goodhemp": {
+  "brand": "Good Hemp",
+  "website": "https://www.goodhemp.com/",
+  "funds": [
+   "Inverleith"
+  ],
+  "sources": [
+   "https://inverleith.com/investments/good-hemp/"
+  ],
+  "food_terms": [
+   "drink",
+   "food",
+   "foods",
+   "milk",
+   "supplements",
+   "whisky"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 8,
+  "description": "Good Hemp is a plant based food and drink brand which manufactures products from hemp seed. Founded by Henry…"
+ },
+ "montane": {
+  "brand": "Montane",
+  "website": "https://www.montane.co.uk/",
+  "funds": [
+   "Inverleith"
+  ],
+  "sources": [
+   "https://inverleith.com/investments/montane/"
+  ],
+  "food_terms": [
+   "whisky"
+  ],
+  "excl_terms": [
+   "equipment"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Montane, founded over 25 years ago, is the leading European specialist brand of lightweight, breathable outdoor clothing and equipment…"
+ },
+ "edenmillstandrews": {
+  "brand": "EDEN MILL St Andrews",
+  "website": "https://www.edenmill.com/",
+  "funds": [
+   "Inverleith"
+  ],
+  "sources": [
+   "https://inverleith.com/investments/eden-mill-st-andrews/"
+  ],
+  "food_terms": [
+   "distiller",
+   "distillery",
+   "gin",
+   "whisky",
+   "wine"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 7,
+  "description": "Will be one of the world’s first carbon neutral distilleries EDEN MILL St Andrews is one of Scotland’s leading…"
+ },
+ "coffeenation": {
+  "brand": "Coffee Nation",
+  "website": null,
+  "funds": [
+   "Primary Capital"
+  ],
+  "sources": [
+   "https://www.primary.pe/investments/all-investments/coffee-nation"
+  ],
+  "food_terms": [
+   "coffee"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": ""
+ },
+ "mpm": {
+  "brand": "MPM",
+  "website": "https://mpmproducts.co.uk/",
+  "funds": [
+   "ECI Partners"
+  ],
+  "sources": [
+   "https://www.ecipartners.com/our-companies/mpm"
+  ],
+  "food_terms": [
+   "foods",
+   "grocery",
+   "pet food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "MPM produces high-quality, natural pet foods for discerning cat and dog owners."
+ },
+ "metacompliance": {
+  "brand": "MetaCompliance",
+  "website": "https://www.metacompliance.com",
+  "funds": [
+   "Tenzing"
+  ],
+  "sources": [
+   "https://tenzing.pe/portfolio/metacompliance/"
+  ],
+  "food_terms": [
+   "cake"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Security awareness training that gets employees to care"
+ },
+ "cognassist": {
+  "brand": "Cognassist",
+  "website": "https://cognassist.com/",
+  "funds": [
+   "Gresham House Ventures"
+  ],
+  "sources": [
+   "https://greshamhouseventures.com/portfolio/cognassist/"
+  ],
+  "food_terms": [
+   "wine"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Cognassist helps organisations to identify and support individuals with hidden learning needs. Our investment will help them meet demand."
+ },
+ "ipv": {
+  "brand": "IPV",
+  "website": "https://www.ipv.com/",
+  "funds": [
+   "Gresham House Ventures"
+  ],
+  "sources": [
+   "https://greshamhouseventures.com/portfolio/ipv/"
+  ],
+  "food_terms": [
+   "wine"
+  ],
+  "excl_terms": [
+   "software"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "The investment is funding increased sales and marketing activity to deliver a focused and measured growth plan."
+ },
+ "proactive": {
+  "brand": "Proactive",
+  "website": "https://www.proactiveinvestors.co.uk/",
+  "funds": [
+   "Gresham House Ventures"
+  ],
+  "sources": [
+   "https://greshamhouseventures.com/portfolio/proactive/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "We invested £3.3m of development capital, backing Proactive to take its services into the US, which is the largest global market"
+ },
+ "spinners": {
+  "brand": "Spinners",
+  "website": "https://spinnersuk.com/",
+  "funds": [
+   "Gresham House Ventures"
+  ],
+  "sources": [
+   "https://greshamhouseventures.com/portfolio/spinners/"
+  ],
+  "food_terms": [
+   "drinks",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Spinners is a leisure chain offering games such as bowling, crazy golf, darts and shuffleboard is an online travel company specialising in active outdoor adventure holidays."
+ },
+ "veritek": {
+  "brand": "Veritek",
+  "website": "https://veritekglobal.com/",
+  "funds": [
+   "Gresham House Ventures",
+   "Mobeus"
+  ],
+  "sources": [
+   "https://greshamhouseventures.com/portfolio/veritek/",
+   "https://www.mobeus.co.uk/investments/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [
+   "equipment"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "European-wide field engineering service partnerships that empower OEMs to scale after-sales service capacity"
+ },
+ "needed": {
+  "brand": "NEEDED ®",
+  "website": "http://thisisneeded.com/pages/neededlabs",
+  "funds": [
+   "The Craftory"
+  ],
+  "sources": [
+   "https://www.thecraftory.io/needed-investment-page"
+  ],
+  "food_terms": [
+   "hydration",
+   "nutrition",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": "Needed is known for its system of radically better, science-backed nutritional supplements for women in the perinatal stage. Since launching in 2021, Needed has rapidly expanded its product offering to become the most complete perinatal nutrition system on the market - a wide range of targeted suppo"
+ },
+ "deliveroo": {
+  "brand": "Deliveroo",
+  "website": "https://deliveroo.co.uk/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "food",
+   "groceries"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Deliveroo - Food, Groceries, Pharmacy, Gifts & More. Delivered In A Tap. From food to flowers, gifts to groceries, we bring the best of your neighbourhood to your door. All in as little as 30 minutes. Download our app or order online."
+ },
+ "innocent": {
+  "brand": "innocent",
+  "website": "https://www.innocentdrinks.co.uk/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "drinks",
+   "juice"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "innocent Fruit juice company our founders ran and sold to Coca-Cola in 2013 for $700m+."
+ },
+ "tonys": {
+  "brand": "Tony's",
+  "website": "https://uk.tonyschocolonely.com/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "chocolate"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Chunky Chocolate, Fighting Exploitation in Cocoa\n – Tony’s Chocolonely UK Tony’s Chocolonely makes chunky chocolate gifts with a mission: fighting exploitation in cocoa - poverty, child labour and deforestation. Personalise your bar with a message, picture or name. As a thank-you, for a birthday, Ch"
+ },
+ "humantra": {
+  "brand": "Humantra",
+  "website": "https://humantra.co.uk/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "electrolyte",
+   "plant-based",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Humantra | Electrolytes For The Race. The Human Race.\n – Humantra UK We're a global supplements brand on a mission to put thriving health within reach for everyone. We'll help you recharge and perform at your highest potential every day, starting with our 100% clean and highly effective electrolyte "
+ },
+ "ahead": {
+  "brand": "Ahead",
+  "website": "https://www.ahead-nutrition.com/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "snack"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "ahead® | Naschen und Snacken 🍫 ohne zugesetzten Zucker & ohne Reue\n – ahead® | The Better for You Company Werde Teil der Snack Revolution mit ahead® Mit Geschmack – ohne Reue 🍫 Unwiderstehlich lecker ✅ Frei von Zuckerzusatz 🤝 60 Tage Geld-zurück-Garantie 🚛 Schnelle Lieferung 👉🏻 Klicken & mehr erfahr"
+ },
+ "reformed": {
+  "brand": "Reformed",
+  "website": "https://www.feelreformed.com/pages/build-your-bundle",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "coffee",
+   "vitamins"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Reformed: The biggest thing to happen to Coffee since Coffee. Reformed: Arabica coffee and ceremonial matcha, enriched with functionality: collagen or creatine, adaptogens and twenty-one vitamins."
+ },
+ "oatly": {
+  "brand": "Oatly",
+  "website": "https://www.oatly.com/",
+  "funds": [
+   "JamJar Investments",
+   "Verlinvest"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio",
+   "https://www.verlinvest.com/brands/oatly/"
+  ],
+  "food_terms": [
+   "drink"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "the Original Oat Drink Company | Oatly A site filled with everything you could possibly think of, and also probably not think of, related to an oat drink company called Oatly."
+ },
+ "truestart": {
+  "brand": "Truestart",
+  "website": "https://www.truestartcoffee.com/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "coffee"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "TrueStart Coffee | Healthy Coffee | B Corp Barista Quality, Healthy Coffee, Free Delivery over £30, Subscribe & Save 15%, This is the Energy You Need"
+ },
+ "graze": {
+  "brand": "Graze",
+  "website": "https://www.graze.com/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "snack",
+   "snacking"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Graze We’re snack pioneers | From inventive new ingredient combinations, to unexpected new flavours, we never stop striving for tastier and healthier snacking. No compromises."
+ },
+ "glowery": {
+  "brand": "Glowery",
+  "website": "https://helloglowery.com/?srsltid=AfmBOopJMa6HzOnF1uw2I5dPiMZSv9XhF3UfWS0Yfli1iRY9GYC7Exe0",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Glowery | Clinically Smart Skincare Skincare that gets you. Clinically Smart, Effortlessly good. Powered by dermatologists. Made in France & Korea. Sensitive skin friendly. Vegan. Cruelty-free. Non-comedogenic"
+ },
+ "bluebottle": {
+  "brand": "Bluebottle",
+  "website": "https://bluebottlecoffee.com/us/eng",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "coffee"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Bluebottle LA-based specialty coffee roaster and retailer focusing on single-origin beans"
+ },
+ "luckysaint": {
+  "brand": "Lucky Saint",
+  "website": "https://luckysaint.co/",
+  "funds": [
+   "JamJar Investments",
+   "Beringea",
+   "Puma Private Equity"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio",
+   "https://www.beringea.co.uk/portfolio",
+   "https://investor.pumainvestments.co.uk/portfolio/lucky-saint"
+  ],
+  "food_terms": [
+   "alcohol-free",
+   "beer",
+   "brewing"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Lucky Saint - Superior Alcohol Free Beer Heritage Brewing. Modern Drinking. Try Lucky Saint's award-winning alcohol-free beer. Finally rewarding those not drinking with the beer they deserve."
+ },
+ "obart": {
+  "brand": "OBART",
+  "website": "https://obartbeauty.com/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "OBART OBART is the first scentcare brand with a Fragrance Primer that extends perfume wear up to 8 hours plus 8 clean, vegan Eaux de Parfum made in France."
+ },
+ "dotdottea": {
+  "brand": "Dot Dot Tea",
+  "website": "https://www.dotdottea.com/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "drink",
+   "tea"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Dot Dot Bubble Tea\n – Dot Dot Tea First UK-made ready-to-drink bubble tea in glass bottles and aluminium cans."
+ },
+ "meatly": {
+  "brand": "Meatly",
+  "website": "https://meatly.pet/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "meat",
+   "pet food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Home | Meatly | Real Meat Made Better We create real meat for our pets without hurting other animals. Find out more from the world's leading cultivated pet food company"
+ },
+ "kluralabs": {
+  "brand": "Klura Labs",
+  "website": "https://www.klura.com/",
+  "funds": [
+   "JamJar Investments",
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio",
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Klura Labs Foodtech company creating a material to transform everyday food packaging into an active defense against bacteria and mould"
+ },
+ "marleybones": {
+  "brand": "Marleybones",
+  "website": "https://marleybones.com/",
+  "funds": [
+   "JamJar Investments",
+   "Active Partners"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio",
+   "https://active.partners/company-profile/marleybones/"
+  ],
+  "food_terms": [
+   "dog food",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Fresh Dog Food Delivery Service | High Quality | Marleybones Marleybones dog dining offers farm-fresh, and deliciously healthy food tailored for your dog and delivered to your doorstep. Try it now!"
+ },
+ "cuure": {
+  "brand": "Cuure",
+  "website": "https://cuure.com/?lang=en_gb",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Die personalisierte MyCuure Box Machen Sie den Online-Test und erhalten Sie Ihre personalisierte Supplement-Box in praktischen täglichen Sachets – mit Ihrem Namen."
+ },
+ "xoxo": {
+  "brand": "XOXO",
+  "website": "https://drinkxoxo.com/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "drinks",
+   "soda",
+   "sugar"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "XOXO Prebiotic Soda UK | Healthy Low Sugar & High Fibre. Discover XOXO Prebiotic Soda in the UK — healthy low sugar fizzy drinks with prebiotic fibre for gut health, natural ingredients, and refreshing flavours."
+ },
+ "popchips": {
+  "brand": "Popchips",
+  "website": "https://www.popchips.co.uk/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "snack"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "popchips uk we’re a different kind of snack for a different kind of snacker. we‘re popped not fried, big on flavour, big on crunch."
+ },
+ "cherrypick": {
+  "brand": "Cherrypick",
+  "website": "https://www.cherrypick.co/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "supermarket"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Plan & shop meals instantly at supermarket prices Try Cherrypick for free today. Plan meals & shop them instantly. Free personalised recipes. No subscriptions. Supermarket prices."
+ },
+ "bol": {
+  "brand": "Bol",
+  "website": "https://bolfoods.com/",
+  "funds": [
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "BOL Foods Shop online 🛍️ From £2.97 per bottle 100% nutritionally complete & 25g+ protein, high fibre & ingredients you can trust."
+ },
+ "hestahealth": {
+  "brand": "hestahealth",
+  "website": "https://www.hestahealth.com/",
+  "funds": [
+   "Eka Ventures"
+  ],
+  "sources": [
+   "https://www.ekavc.com/portfolio"
+  ],
+  "food_terms": [
+   "nutrition"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "About Hesta Health’s vision is to improve the healthcare system for women. Their initial focus is providing a comprehensive postnatal healthcare program. Impact Whole-person and tech-enabled pathway addressing mothers’ health needs from pregnancy to 24 months post birth. View Website"
+ },
+ "dittodaily": {
+  "brand": "dittodaily",
+  "website": "https://dittodaily.com/",
+  "funds": [
+   "Eka Ventures"
+  ],
+  "sources": [
+   "https://www.ekavc.com/portfolio"
+  ],
+  "food_terms": [
+   "nutrition",
+   "supplement",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": "About Ditto Daily is focused on developing science backed supplements which improve the everyday lives of women. The first product is a supplement focused on improving symptoms linked to the menstrual cycle. Impact 80% of women experience period pain at some stage in their life and in 40% of women t"
+ },
+ "wearejude": {
+  "brand": "wearejude",
+  "website": "https://www.wearejude.com/",
+  "funds": [
+   "Eka Ventures"
+  ],
+  "sources": [
+   "https://www.ekavc.com/portfolio"
+  ],
+  "food_terms": [
+   "food",
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "About Jude is focussed on providing consumers with products and services that help individuals manage healthcare issues that become more common as you age and are often taboo topics. They're starting with bladder care products. Impact Improving the quality of life for people suffering from age-relat"
+ },
+ "sustained": {
+  "brand": "sustained",
+  "website": "https://sustained.com/",
+  "funds": [
+   "Eka Ventures"
+  ],
+  "sources": [
+   "https://www.ekavc.com/portfolio"
+  ],
+  "food_terms": [
+   "beverage",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "About Sustained helps food and beverage companies measure and reduce their environmental footprint at scale. Impact By automating product life cycle analysis, Sustained helps clients develop better strategy to reduce the impact of their product portfolio. View Website"
+ },
+ "artah": {
+  "brand": "artah",
+  "website": "https://artah.co",
+  "funds": [
+   "Five Seasons Ventures",
+   "Active Partners"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/",
+   "https://active.partners/company-profile/artah/"
+  ],
+  "food_terms": [
+   "nutrition",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "ARTAH We create science-backed systems for real, lasting change. Our award-winning supplements and nutrition programmes blend cutting edge science with high-quality, natural ingredients to help you see and feel visible changes."
+ },
+ "dashwater": {
+  "brand": "dash-water",
+  "website": "https://dash-water.com",
+  "funds": [
+   "Five Seasons Ventures",
+   "Beringea"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/",
+   "https://www.beringea.co.uk/portfolio"
+  ],
+  "food_terms": [
+   "drink",
+   "drinks",
+   "sparkling water",
+   "sugar"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Healthy Drinks You'll Love | 30% Off Soft Drinks – DASH Water Finally, a drink to feel good about! Sparkling water made with real fruit. No calories, sugar or sweetener. Sign up to our newsletter and get 30% off."
+ },
+ "korodrogerie": {
+  "brand": "korodrogerie",
+  "website": "https://www.korodrogerie.de/",
+  "funds": [
+   "Five Seasons Ventures"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/"
+  ],
+  "food_terms": [
+   "snacks"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "KoRo Online Shop: Top-Qualität in Großpackungen | KoRo Vielfältige Qualitätsprodukte zu fairen Preisen: Kauf Nüsse, Nussmus, innovative Snacks sowie vegane & Bio-Produkte in unserem Online Shop."
+ },
+ "mammaly": {
+  "brand": "mammaly",
+  "website": "https://www.mammaly.de/",
+  "funds": [
+   "Five Seasons Ventures"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/"
+  ],
+  "food_terms": [
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "mammaly | Premium Dog Supplements | Einfach. Super. Lecker. Entdecke die besten Hunde-Futterergänzungen – für Verdauung, Gelenke & mehr. Wissenschaftlich fundiert und mit Tierärzten entwickelt. Für die beste Gesundheit von deinem Hund. Probier's aus!"
+ },
+ "puresport": {
+  "brand": "puresport",
+  "website": "https://puresport.co",
+  "funds": [
+   "Five Seasons Ventures"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/"
+  ],
+  "food_terms": [
+   "hydration",
+   "supplement",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Puresport | Leading Performance Supplement and Hydration Brand The UK's leading wellness brand creating the world's most trusted and certified natural wellness products to optimise mind and body. Informed Sport certified supplements."
+ },
+ "tallowash": {
+  "brand": "tallow-ash",
+  "website": "https://www.tallow-ash.com/",
+  "funds": [
+   "Five Seasons Ventures"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/"
+  ],
+  "food_terms": [
+   "plant-based",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Best Smelling Planet-Friendly Laundry Detergents – Tallow + Ash The best-smelling laundry detergents and fabric softeners. Formulated with planet-friendly, vegan, cruelty-free ingredients. Powerful plant-based stain removal. Made in the UK. Non-bio for sensitive skin."
+ },
+ "thenucompany": {
+  "brand": "the-nu-company",
+  "website": "https://www.the-nu-company.com/",
+  "funds": [
+   "Five Seasons Ventures"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/"
+  ],
+  "food_terms": [
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "nucao | The good choc. Krass lecker. Krass gut. Wir machen Schokolade, wie sie sein sollte. 100 % vegan & bio, super cremig, mit Fairtrade-zertifiziertem Kakao und in Papier verpackt."
+ },
+ "untamedcatfood": {
+  "brand": "untamedcatfood",
+  "website": "https://www.untamedcatfood.com",
+  "funds": [
+   "Five Seasons Ventures"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/"
+  ],
+  "food_terms": [
+   "cat food",
+   "food",
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": "Untamed Cat Food | Food They’ll Go Wild For The real meat diet they need to thrive. Food they'll go wild for, delivered to your door."
+ },
+ "vlyfoods": {
+  "brand": "vlyfoods",
+  "website": "https://www.vlyfoods.com/",
+  "funds": [
+   "Five Seasons Ventures"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/"
+  ],
+  "food_terms": [
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "vly | Die cremig-leckere Milchalternative aus Erbsenprotein | vegan Natürliche Zutaten und neueste Technologie: vly ist die cremig leckere Milchalternative aus Erbsenprotein. 100% pflanzlich mit vielen Proteinen, aufschäumbar, perfekt für den Kaffee und extra nachhaltig durch die Herstellung in Deut"
+ },
+ "justspices": {
+  "brand": "justspices",
+  "website": "https://www.justspices.de/",
+  "funds": [
+   "Five Seasons Ventures"
+  ],
+  "sources": [
+   "https://www.fiveseasons.vc/portfolio/"
+  ],
+  "food_terms": [
+   "spice",
+   "spices"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Gewürze & Mischungen online kaufen | JUST SPICES® Gewürze & Gewürzmischungen ✓ Für jedes Gericht die passende JUST SPICES® Gewürzmischung finden ✓ Spice up your life!"
+ },
+ "stocked": {
+  "brand": "STOCKED",
+  "website": "https://stockedfood.com/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/stocked/"
+  ],
+  "food_terms": [
+   "food",
+   "frozen"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Stocked offers high-quality, chef-prepared frozen meals in an innovative “block format”, allowing customers to customise portion size, reduce food waste, and save freezer space."
+ },
+ "botivo": {
+  "brand": "Botivo",
+  "website": "https://www.botivodrinks.com/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/botivo/"
+  ],
+  "food_terms": [
+   "drinks",
+   "mixer",
+   "non-alcoholic",
+   "spirits"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Botivo champions true craft and great taste with its award-winning aperitivo. Positioned between the alcoholic and non-alcoholic categories, it acts as both a replacement for spirits and a mixer for drinks.."
+ },
+ "katkin": {
+  "brand": "KatKin",
+  "website": "https://www.katkin.com/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/katkin/"
+  ],
+  "food_terms": [
+   "food",
+   "grocery",
+   "meat",
+   "pet food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "KatKin is the UK’s leading fresh food brand for cats, providing vet-formulated fresh food using 100% real meat that keeps cats healthy."
+ },
+ "allthings": {
+  "brand": "All Things",
+  "website": "https://allthingsbutter.co.uk/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/all-things-butter/"
+  ],
+  "food_terms": [
+   "cheese",
+   "dairy",
+   "milk"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Co-founded by chef and restauranteur Thomas Straker, All Things is now expanding beyond butter into categories like cottage cheese. Made using British milk from grass-fed cows, their award-winning products are driving growth in a category long lacking innovation."
+ },
+ "alltheaunties": {
+  "brand": "All the Aunties",
+  "website": "http://alltheaunties.co.uk/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/all-the-aunties/"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Starting with paneer, All the Aunties is reimagining heritage South Asian ingredients, creating a modern brand that celebrates and elevates traditional South Asian foods."
+ },
+ "thesaladproject": {
+  "brand": "The Salad Project",
+  "website": null,
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/3285/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "The Salad Project is redefining the healthy eating category through a curated and creative approach to fresh, nutritious food. They offer seasonal, chef-designed salads crafted from premium, hand-selected ingredients."
+ },
+ "epetome": {
+  "brand": "Epetome",
+  "website": "https://epetome.com/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/epetome/"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Epetome aims to bring clarity to the complex world of gut health with the Synbiotic Duo Cap, a once-daily pre- and pro-biotic supplement, developed by Emily English, a renowned nutritionist with a deep understanding of the target market."
+ },
+ "northernmonk": {
+  "brand": "Northern Monk",
+  "website": "https://northernmonk.com/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/northern-monk/"
+  ],
+  "food_terms": [
+   "beer",
+   "brewery",
+   "brewing"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "A pioneering UK craft brewery on a mission to create the best beer experiences in the world. We're helping Russell to increase brewing capacity, build out the team, expand the Refectory bar footprint, and grow distribution."
+ },
+ "chickenshop": {
+  "brand": "Chicken Shop",
+  "website": "https://chickenshop.com/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/chicken-shop/"
+  ],
+  "food_terms": [
+   "plant-based",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "London’s much-loved cult chicken burger sensation serves quick, tasty fried chicken with house-made dips, hand-made buns, cold beers and good vibes."
+ },
+ "porefavor": {
+  "brand": "Pore Favor",
+  "website": "https://www.porefavor.com/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/pore-favor/"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Targeting the root cause of acne – hormonal imbalances. Pore Favor is a safe, affordable, and natural alternative to Roaccutane."
+ },
+ "puttshack": {
+  "brand": "Puttshack",
+  "website": "https://www.puttshack.com/uk",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/puttshack/"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Puttshack combines tech with mini golf to create an immersive and competitive socialising experience for everyone."
+ },
+ "freja": {
+  "brand": "Freja",
+  "website": "https://www.frejabonebroth.com/",
+  "funds": [
+   "Active Partners"
+  ],
+  "sources": [
+   "https://active.partners/company-profile/freja/"
+  ],
+  "food_terms": [
+   "broth",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "The UK’s fastest-growing natural, high-quality bone broth brand. Broth is a functional food benefitting gut health, joint health, collagen production, menopause and more."
+ },
+ "limitlesstravel": {
+  "brand": "Limitless Travel",
+  "website": "https://www.limitlesstravel.org/",
+  "funds": [
+   "Beringea",
+   "Active Partners"
+  ],
+  "sources": [
+   "https://www.beringea.co.uk/portfolio/limitless-travel",
+   "https://active.partners/company-profile/limitless-travel/"
+  ],
+  "food_terms": [
+   "drink"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Limitless Travel is an innovative company creating accessible holidays for people with disabilities, which joined the Beringea UK portfolio after raising £6.5m Series A in April 2025. It was founded in 2015 by Angus Drummond, who was diagnosed with Muscular Dystrophy at 22. Rather than retreat, Angu"
+ },
+ "moth": {
+  "brand": "MOTH",
+  "website": "https://mothdrinks.com/",
+  "funds": [
+   "Beringea",
+   "Puma Private Equity"
+  ],
+  "sources": [
+   "https://www.beringea.co.uk/portfolio/moth",
+   "https://investor.pumainvestments.co.uk/portfolio/moth"
+  ],
+  "food_terms": [
+   "beer",
+   "cocktail",
+   "drink",
+   "drinks",
+   "supermarkets",
+   "wine"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 8,
+  "description": "In September 2024, Beringea UK led a £4.6m growth round into MOTH - the nation’s leading ready-to-drink (RTD) cocktail brand. Founded in 2021 by Rob Wallis and Sam Hunt, the company set out to make bar-quality cocktails as easy to enjoy as a can of beer or a glass of wine. Working with award-winning"
+ },
+ "farmerj": {
+  "brand": "farmerj",
+  "website": "https://www.farmerj.com/",
+  "funds": [
+   "Beringea"
+  ],
+  "sources": [
+   "https://www.beringea.co.uk/portfolio"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Home of the Fieldtray - Farmer J Farmer J serves honest food, that rolls with the seasons, is mindfully sourced, is bursting with flavour and most importantly, is scratch cooked on-site."
+ },
+ "lupafoods": {
+  "brand": "lupafoods",
+  "website": "https://lupafoods.com/",
+  "funds": [
+   "Beringea"
+  ],
+  "sources": [
+   "https://www.beringea.co.uk/portfolio"
+  ],
+  "food_terms": [
+   "food",
+   "foods",
+   "pasta"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Lupa Foods | UK Food Importer and Distributor since 1902 BRCGS B2B partner supplying quality food ingredients and products to the UK market, offering pasta, ambient tomatoes, olive oil and more!"
+ },
+ "theeyefoundation": {
+  "brand": "The Eye Foundation",
+  "website": "https://www.theeyefoundation.com/",
+  "funds": [
+   "Verlinvest"
+  ],
+  "sources": [
+   "https://www.verlinvest.com/brands/the-eye-foundation/"
+  ],
+  "food_terms": [
+   "treats"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Verlinvest $75 million investment in The Eye Foundation largest single-specialty healthcare investment India"
+ },
+ "tonyschocolonely": {
+  "brand": "Tony’s Chocolonely",
+  "website": "https://tonyschocolonely.com",
+  "funds": [
+   "Verlinvest"
+  ],
+  "sources": [
+   "https://www.verlinvest.com/brands/tonys-chocolonely/"
+  ],
+  "food_terms": [
+   "chocolate"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "See how Verlinvest fueled Tony’s Chocolonely’s mission to create 100% slave-free chocolate while expanding its global market presence."
+ },
+ "vitacoco": {
+  "brand": "Vita Coco",
+  "website": "https://vitacoco.com/",
+  "funds": [
+   "Verlinvest"
+  ],
+  "sources": [
+   "https://www.verlinvest.com/brands/vita-coco/"
+  ],
+  "food_terms": [
+   "beverages",
+   "drink"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Find out how Verlinvest boosted Vita Coco's expansion, turning it into a global leader in coconut water and natural beverages."
+ },
+ "yepoda": {
+  "brand": "Yepoda",
+  "website": "https://yepoda.com/",
+  "funds": [
+   "Verlinvest"
+  ],
+  "sources": [
+   "https://www.verlinvest.com/brands/yepoda/"
+  ],
+  "food_terms": [
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Discover Yepoda, a leading K-Beauty brand bringing innovative, clean, and sustainable Korean skincare to customers across Europe and the U.S."
+ },
+ "years": {
+  "brand": "Years",
+  "website": "https://www.years.com/",
+  "funds": [
+   "Verlinvest"
+  ],
+  "sources": [
+   "https://www.verlinvest.com/brands/years/"
+  ],
+  "food_terms": [
+   "dog food",
+   "nutrition"
+  ],
+  "excl_terms": [
+   "platform"
+  ],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Verlinvest and Five Seasons Ventures partner with Years to redefine premium pet nutrition through Cupboard Fresh™ technology and European expansion."
+ },
+ "whogivesacrap": {
+  "brand": "Who Gives A Crap",
+  "website": "https://whogivesacrap.org/",
+  "funds": [
+   "Verlinvest",
+   "The Craftory"
+  ],
+  "sources": [
+   "https://www.verlinvest.com/brands/who-gives-a-crap/",
+   "https://www.thecraftory.io/wgac-investment-page"
+  ],
+  "food_terms": [
+   "supermarkets"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": "Learn how Verlinvest’s investment enabled Who Gives A Crap to expand its eco-friendly product line and make a positive environmental impact."
+ },
+ "plantalternative": {
+  "brand": "Plant Alternative",
+  "website": "https://www.plantalternative.com/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "foods",
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Plant Alternative Our vision at SHICKEN is very simple, we want to offer plant- based vegan alternatives for every day favourite meat based foods. We developed our unique [SHICKEN] pieces, to allow more and more people to enjoy a plant-based diet without sacrificing taste, texture and most important"
+ },
+ "mummymeegz": {
+  "brand": "Mummy Meegz",
+  "website": "https://mummymeagz.com/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "chocolate"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Mummy Meegz Mummy Meegz is on a mission to make mind-blowing M!lk Choc swaps that are kinder to animals and the planet. Many years of development and hard work have culminated in the launch of Vegan swaps for Lindt Lindor Balls, Cadbury Mini Eggs & M&M’s Visit site"
+ },
+ "oggs": {
+  "brand": "OGGS",
+  "website": "https://www.loveoggs.com/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "cakes",
+   "treats"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "OGGS OGGS® are on a mission to remove unnecessary egg from our food chain with delicious plant-based eggs and sweet treats that give chickens the week off and produce less CO2e. Visit site"
+ },
+ "purezza": {
+  "brand": "Purezza",
+  "website": "https://purezza.co.uk/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "cheese",
+   "pizza"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Purezza The UK’s first vegan pizzeria, serving plant-based versions of classic Italian dishes. We’ve invested in the new cheese factory developing plant-based mozzarella for the retail market. Visit site"
+ },
+ "oneplanetpizza": {
+  "brand": "One Planet Pizza",
+  "website": "https://www.oneplanetpizza.com/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "frozen",
+   "pizza"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "One Planet Pizza The UK’s first and leading frozen vegan pizza company. Disrupting the pizza sector by making delicious award winning “pizzzas with purpose” that are better for you, the planet and the animals we share the world with. Visit site"
+ },
+ "nativesnacks": {
+  "brand": "Native Snacks",
+  "website": "https://www.wearenativesnacks.com/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "crackers",
+   "snack",
+   "snacking",
+   "snacks"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 4,
+  "description": "Native Snacks Native Snacks is on a mission to change snacking for good by creating plant-based alternatives to street food snack classics that are known and loved around the world. Visit site"
+ },
+ "hooked": {
+  "brand": "HOOKED",
+  "website": "https://www.hookedfoods.com/",
+  "funds": [
+   "Veg Capital",
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/",
+   "https://bigideaventures.com/portfolio/hooked-foods/"
+  ],
+  "food_terms": [
+   "grocery",
+   "pasta",
+   "seafood"
+  ],
+  "excl_terms": [
+   "foodservice"
+  ],
+  "uk_signal": false,
+  "score": 1,
+  "description": "HOOKED Hooked develops, sells and markets delicious & healthy plant-based seafood to foodservice and grocery. Their first two products are Toona and Salmoon that are perfect to use in a wide variety of dishes like salads, wraps, sushi, sandwiches, bowls, tacos and pasta. Visit site"
+ },
+ "betterdairy": {
+  "brand": "Better Dairy",
+  "website": "https://betterdairy.co.uk/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Better Dairy Dairy production is currently hugely unsustainable and also highly inefficient. At Better Dairy we are using yeast fermentation to produce the same cheeses, yoghurts, ice creams that customers currently enjoy without having to use animals. Visit site"
+ },
+ "supervegan": {
+  "brand": "Super Vegan",
+  "website": "https://www.superveganchoc.com.br/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "chocolate"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Super Vegan Loja virtual de chocolates veganos. Aproveite para conhecer o melhor chocolate vegano do mercado."
+ },
+ "jamnvegan": {
+  "brand": "Jam 'N' Vegan",
+  "website": "https://jamnvegan.com",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "frozen",
+   "jam"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Jam 'N' Vegan Jam ‘N’ Vegan develop culture saturated Pre- prepared Frozen meals. Inspired by Kyle’s Backpacking ventures around the World. Their aim is To bring the best of the worlds flavours/ culture to our tables. Visit Site"
+ },
+ "kaleunited": {
+  "brand": "Kale United",
+  "website": "https://www.kaleunited.com",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "foods",
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Kale United We enable the shift to plant-based foods through investment, ownership and management of plant-based businesses. The most effective investment to reduce the carbon footprint is to invest in the transition to plant-based food. The mission of Kale United is to maximize climate benefit with"
+ },
+ "nutropy": {
+  "brand": "Nutropy",
+  "website": "http://nutropy.com",
+  "funds": [
+   "Veg Capital",
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/",
+   "https://bigideaventures.com/portfolio/nutropy/"
+  ],
+  "food_terms": [
+   "cheese",
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Nutropy Nutropy is on a mission to create a sustainable way to eat dairy products. As cheese lovers and French citizens, we want to eat delicious gourmet cheese with a lighter conscience, in the respect of our convictions regarding animal welfare."
+ },
+ "opaliafoods": {
+  "brand": "opaliafoods",
+  "website": "https://www.opaliafoods.com",
+  "funds": [
+   "Sustainable Food Ventures",
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies",
+   "https://bigideaventures.com/portfolio/opaliafoods/"
+  ],
+  "food_terms": [
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Opalia - Animal-Free Dairy Opalia is introducing a new era of dairy:  functional, delicious, and sustainable dairy made from mammary cells."
+ },
+ "newformfoods": {
+  "brand": "newformfoods",
+  "website": "https://newformfoods.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "food",
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Home - Newform Foods Building the foodtech platform for industrial-scale cellular agriculture Shaping tomorrow’s food landscape. We help companies bring cultivated and cell-based products to market with end-to-end solutions. CONTACT US Who we are Newform Foods is a biotech company developing a scala"
+ },
+ "novelfarms": {
+  "brand": "novelfarms",
+  "website": "https://novelfarms.co/",
+  "funds": [
+   "Sustainable Food Ventures",
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies",
+   "https://bigideaventures.com/portfolio/novel-farms/"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Novel Farms | Sustainable Ingredients for the Future of Food"
+ },
+ "umamibioworks": {
+  "brand": "umamibioworks",
+  "website": "https://umamibioworks.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "seafood"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Umami Bioworks | Cultivated Seafood Without Compromise Combining breakthroughs in genomics, stem cell biology and machine learning to create the next generation of cultivated production, powered by ALKEMYSTTM"
+ },
+ "cacultured": {
+  "brand": "cacultured",
+  "website": "https://www.cacultured.com",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "chocolate",
+   "coffee"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "The Future of Chocolate | California Cultured We make sustainable coffee and chocolate from plant cells. Not an alternative - the real deal."
+ },
+ "magicvalley": {
+  "brand": "magicvalley",
+  "website": "https://magicvalley.com.au",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "food",
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Cultivated Meat - Magic Valley Magic Valley is an Australian food company developing cultivated meat products in order to meet the future protein demands of the expanding global population."
+ },
+ "daisylab": {
+  "brand": "daisylab",
+  "website": "https://www.daisylab.co.nz",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Daisy Lab - Rethinking Dairy"
+ },
+ "cultivated": {
+  "brand": "cultivated",
+  "website": "https://www.cultivated.bio",
+  "funds": [
+   "Sustainable Food Ventures",
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies",
+   "https://bigideaventures.com/portfolio/cultivated-biosciences/"
+  ],
+  "food_terms": [
+   "dairy",
+   "plant-based"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Cosaic Discover Cosaic Neo: a natural, multifunctional emulsion from yeast fermentation. Boost stability & creaminess in plant-based and dairy productsâclean label guaranteed."
+ },
+ "luyef": {
+  "brand": "luyef",
+  "website": "https://luyef.com",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Luyef | Animal-Free Deep Biotech Company Luyef is a B2B Mission-Driven Deep-Biotech Company developing cutting-edge animal-free solutions for the food, cosmetics, and biomedical industries"
+ },
+ "prosefoods": {
+  "brand": "prosefoods",
+  "website": "https://www.prosefoods.com/about",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Prose Foods | The Engine for Ingredient Innovation At Prose Foods, we build technology to discover better ingredients."
+ },
+ "kyndatech": {
+  "brand": "kyndatech",
+  "website": "https://kyndatech.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "kyndatech.com – We are a biotech start up from Hamburg that uses bio reactors to ferment mushroom mycelium in order to produce alternative proteins for the food industry."
+ },
+ "myodenovo": {
+  "brand": "myodenovo",
+  "website": "https://myodenovo.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Home - Myodenovo Scaffolds are to cells as trellises are to plants — templates to guide and nurture growth. Myodenovo curates the most nutritious, sustainable scaffolds nature offers, delivering meat aficionados the gastronomical delight of succulent, prized-for-texture cuts like filet mignon — all "
+ },
+ "atlanticfish": {
+  "brand": "atlanticfish",
+  "website": "https://www.atlanticfish.co/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "fish",
+   "seafood"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Cultivated Seafood | Atlantic Fish Co Atlantic Fish Co is a cultivated seafood company using cellular agriculture to bring the world sustainable delicious seafood."
+ },
+ "anotherfood": {
+  "brand": "anotherfood",
+  "website": "https://www.anotherfood.co/",
+  "funds": [
+   "Sustainable Food Ventures",
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies",
+   "https://bigideaventures.com/portfolio/another-food/"
+  ],
+  "food_terms": [
+   "brewing",
+   "coffee",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": "Another Food | Brewing Sustainable Coffee Another Food is a plant cell culture startup which develops sustainable coffee from plant cells. A nature-identical coffee, healthier for consumers and better for the planet."
+ },
+ "sobofoods": {
+  "brand": "sobofoods",
+  "website": "https://sobofoods.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "foods",
+   "frozen"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Sobo Foods High protein frozen dumplings. Unapologetically Asian American flavors."
+ },
+ "blackbirdfoods": {
+  "brand": "blackbirdfoods",
+  "website": "https://www.blackbirdfoods.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "dairy",
+   "food",
+   "foods",
+   "frozen",
+   "meat",
+   "pizza",
+   "plant-based",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 8,
+  "description": "Blackbird Foods - Meat Made From Plants Restaurant-quality plant-based comfort food, made by chefs in NYC. Hand-crafted seitan, crispy wings, golden tofu, pizza minis, and dairy-free mozzarella. Vegan, high-protein, shipped frozen to your door."
+ },
+ "demolishfoods": {
+  "brand": "demolishfoods",
+  "website": "https://www.demolishfoods.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Demolish Foods Pioneering whole-cuts of plant meats starting with chicken"
+ },
+ "veggievictory": {
+  "brand": "veggievictory",
+  "website": "https://veggievictory.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "VeggieVictory – Healthy Delicious Food for You WELCOME TO Veggie Victory Where Delicious Meets Healthy VIEW MENU Real Ingredients. Big Flavour. African Superfoods Food Made To Nourish You At VeggieVictory, we believe that good food starts with ingredients you can trust.Our cooking is rooted in the r"
+ },
+ "renegadefoods": {
+  "brand": "renegadefoods",
+  "website": "https://renegadefoods.com",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "food",
+   "foods",
+   "plant-based"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": "Renegade Food | Delicious smoked meats made entirely from plants.– Renegade Foods We believe that eating well should be easy and taste delicious. We believe that what we eat should support our earth and every animal that calls it home. Our organic, 100% plant-based food delivers on these beliefs. Ou"
+ },
+ "grainlyfoods": {
+  "brand": "grainlyfoods",
+  "website": "https://www.grainlyfoods.com",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Grainly Foods Co. Grainly Foods - tasty and sustainable freeze-dried meals for all your daily adventures. Shop online or subscribe to our meal kits. Free shipping for all orders above 15 USD."
+ },
+ "goodmylk": {
+  "brand": "goodmylk",
+  "website": "https://goodmylk.in",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "milk",
+   "nutrition",
+   "oats",
+   "plant-based",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 5,
+  "description": "Nourish You | Buy Chia Seeds, Quinoa, Vegan Milk, Oats Online Buy premium superfoods online at Nourish You – chia seeds, watermelon seeds, pumpkin seeds, sunflower seeds, quinoa, flaxseed, vegan milk, vegan ghee, vegan curd, plant protein & high protein oats, muesli, oats. Healthy, plant-based nutri"
+ },
+ "umarofoods": {
+  "brand": "umarofoods",
+  "website": "https://www.umarofoods.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "plant-based",
+   "superfood"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Umaro - 100% Plant-Based Bacon Plant-Based Superfood Bacon Made From The Ocean"
+ },
+ "hightimefoods": {
+  "brand": "hightimefoods",
+  "website": "https://hightimefoods.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "High Time Foods High Time Foods"
+ },
+ "thrillingfoods": {
+  "brand": "thrillingfoods",
+  "website": "https://www.thrillingfoods.com/",
+  "funds": [
+   "Sustainable Food Ventures",
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies",
+   "https://bigideaventures.com/portfolio/thrilling-foods/"
+  ],
+  "food_terms": [
+   "baked",
+   "foods",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": "Thrilling Bakon™ - Plant Bacon for Bacon Lovers\n – Thrilling Foods Thrilling Bakon™ is the best plant bacon in the world. Loved by vegans/vegetarians and omnivores alike, our award-winning Bakon is non-GMO, gluten-free, high in protein and still vegan. It's terrific by the slice or layered on BLTs, "
+ },
+ "meatlesskingdom": {
+  "brand": "meatlesskingdom",
+  "website": "https://www.meatlesskingdom.com/",
+  "funds": [
+   "Sustainable Food Ventures",
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies",
+   "https://bigideaventures.com/portfolio/meatless-kingdom/"
+  ],
+  "food_terms": [
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Meatless Kingdom - Indonesia Mushroom Based Meat Company"
+ },
+ "tourlami": {
+  "brand": "tourlami",
+  "website": "https://www.tourlami.com/",
+  "funds": [
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "plant-based",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "Tourlami - Premium Plant-Based Butter for Professional Use Tourlami is a vegan ingredients company specializing in plant-based butter for professional use."
+ },
+ "biocloak": {
+  "brand": "BioCloak",
+  "website": "http://www.biocloak.com",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/263829-2/"
+  ],
+  "food_terms": [
+   "nutrition"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "fattastictechnologies": {
+  "brand": "Fattastic Technologies",
+  "website": "https://www.fattastic.tech/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/fattastic-technologies/"
+  ],
+  "food_terms": [
+   "bakery",
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "dissolves": {
+  "brand": "DisSolves",
+  "website": "http://www.dissolves.com",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/dissolves/"
+  ],
+  "food_terms": [
+   "juice",
+   "milk"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "mad": {
+  "brand": "MAD",
+  "website": "https://iammad.co/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/mad/"
+  ],
+  "food_terms": [
+   "beverages",
+   "dairy",
+   "drink",
+   "nuts"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 4,
+  "description": ""
+ },
+ "lypid": {
+  "brand": "Lypid",
+  "website": "https://www.lypid.co",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/lypid/"
+  ],
+  "food_terms": [
+   "sauce"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "thegoodpulseco": {
+  "brand": "The Good Pulse Co",
+  "website": null,
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/the-good-pulse-co/"
+  ],
+  "food_terms": [
+   "dairy",
+   "nutrition",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": ""
+ },
+ "foodsquared": {
+  "brand": "Food Squared",
+  "website": "https://www.foodsquared.earth/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/food-squared/"
+  ],
+  "food_terms": [
+   "fish",
+   "nutrition",
+   "seafood"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": ""
+ },
+ "lokifoods": {
+  "brand": "Loki Foods",
+  "website": "https://www.lokifoods.com/",
+  "funds": [
+   "Big Idea Ventures",
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/loki-foods/",
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "fish",
+   "seafood"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "esencia": {
+  "brand": "Esencia",
+  "website": "https://esenciafoods.co/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/esencia/"
+  ],
+  "food_terms": [
+   "fish",
+   "nutrition",
+   "seafood"
+  ],
+  "excl_terms": [
+   "platform"
+  ],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "algrowbiosciences": {
+  "brand": "Algrow Biosciences",
+  "website": null,
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/algrow-biosciences/"
+  ],
+  "food_terms": [
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "pleesefoods": {
+  "brand": "Pleese Foods",
+  "website": "https://www.pleesefoods.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/pleese-foods-2/"
+  ],
+  "food_terms": [
+   "cheese",
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "kabochamilk": {
+  "brand": "Kabocha Milk",
+  "website": "https://www.kabochamilk.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/kabocha-milk/"
+  ],
+  "food_terms": [
+   "dairy",
+   "milk",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": ""
+ },
+ "morefoodsinnotech": {
+  "brand": "More Foods Innotech",
+  "website": "https://www.morefoods.in/?lang=en",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/more-foods-innotech/"
+  ],
+  "food_terms": [
+   "milk"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "retufoods": {
+  "brand": "Retu Foods",
+  "website": "https://www.retufoods.com/",
+  "funds": [
+   "Big Idea Ventures",
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/greengourmet-foods/",
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "Home — Retü® mi-biotics™ Retü® makes mi-biotics™, a clean-label fermented-millet probiotic gut shot built for the Asian gut — patented and independently validated."
+ },
+ "littlebandits": {
+  "brand": "Little Bandits",
+  "website": "https://www.hungrylittlebandits.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/little-bandits/"
+  ],
+  "food_terms": [
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": ""
+ },
+ "plantbaby": {
+  "brand": "PlantBaby",
+  "website": "http://www.plantbaby.co",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/plantbaby/"
+  ],
+  "food_terms": [
+   "beverages",
+   "dairy",
+   "milk",
+   "nutrition",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 5,
+  "description": ""
+ },
+ "greenon": {
+  "brand": "Green-On",
+  "website": "http://www.green-on.se",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/green-on/"
+  ],
+  "food_terms": [
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "mayamilk": {
+  "brand": "Maya Milk",
+  "website": "https://www.mayamilk.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/maya-milk/"
+  ],
+  "food_terms": [
+   "cheese",
+   "dairy",
+   "milk"
+  ],
+  "excl_terms": [
+   "precision fermentation"
+  ],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "lilodesserts": {
+  "brand": "LILO Desserts",
+  "website": "https://www.lilodesserts.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/lilo-desserts/"
+  ],
+  "food_terms": [
+   "dairy",
+   "snacks"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "yofi": {
+  "brand": "YOFI",
+  "website": "http://www.yofi.bio",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/yofi/"
+  ],
+  "food_terms": [
+   "dairy",
+   "drinks",
+   "milk",
+   "nutrition",
+   "sugar"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 5,
+  "description": ""
+ },
+ "thefrauxmagerieltd": {
+  "brand": "The Frauxmagerie Ltd",
+  "website": "https://thefrauxmagerie.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/the-frauxmagerie/"
+  ],
+  "food_terms": [
+   "cheese",
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "wellmepteltd": {
+  "brand": "Wellme Pte. Ltd.",
+  "website": "http://www.berrywellme.com",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/wellme/"
+  ],
+  "food_terms": [
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": ""
+ },
+ "aquaculturedfoods": {
+  "brand": "Aqua Cultured Foods",
+  "website": "https://www.aquaculturedfoods.com/",
+  "funds": [
+   "Big Idea Ventures",
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/aquacultured-foods-2/",
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "seafood"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": "404 Not Found"
+ },
+ "harmonybabynutrition": {
+  "brand": "Harmony Baby Nutrition",
+  "website": "https://www.harmonybabynutrition.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/harmony-baby-nutrition/"
+  ],
+  "food_terms": [
+   "dairy",
+   "milk",
+   "nutrition"
+  ],
+  "excl_terms": [
+   "cultivated"
+  ],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "hookedfoods": {
+  "brand": "Hooked Foods",
+  "website": "https://hookedfoods.com/",
+  "funds": [
+   "Big Idea Ventures",
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/hooked-foods/",
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [
+   "nutrition",
+   "seafood"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "gatheredfoods": {
+  "brand": "Gathered Foods",
+  "website": "https://gatheredfoods.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/gathered-foods/"
+  ],
+  "food_terms": [
+   "seafood",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "newwave": {
+  "brand": "New Wave",
+  "website": "https://www.newwavefoods.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/new-wave/"
+  ],
+  "food_terms": [
+   "seafood"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "zhenmeats": {
+  "brand": "Zhen Meats",
+  "website": "https://zhenmeat.com/en",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/zhen-meats/"
+  ],
+  "food_terms": [
+   "cake",
+   "fish",
+   "sauce"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 3,
+  "description": ""
+ },
+ "uproot": {
+  "brand": "Uproot",
+  "website": "http://www.uprootmilk.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/uproot/"
+  ],
+  "food_terms": [
+   "dairy",
+   "milk"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "confettifinefoods": {
+  "brand": "Confetti Fine Foods",
+  "website": "https://www.confettisnacks.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/confetti/"
+  ],
+  "food_terms": [
+   "snack",
+   "snacks"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 4,
+  "description": ""
+ },
+ "yoconut": {
+  "brand": "Yoconut",
+  "website": "http://www.YoconutDairyFree.com/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/yoconut/"
+  ],
+  "food_terms": [
+   "dairy",
+   "sugar",
+   "yogurt"
+  ],
+  "excl_terms": [
+   "platform"
+  ],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "wildfor": {
+  "brand": "Wild For",
+  "website": "https://wildfor.co/",
+  "funds": [
+   "Big Idea Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/wild-for/"
+  ],
+  "food_terms": [
+   "snack",
+   "sugar",
+   "superfood"
+  ],
+  "excl_terms": [
+   "bars"
+  ],
+  "uk_signal": false,
+  "score": 1,
+  "description": ""
+ },
+ "melibio": {
+  "brand": "MeliBio",
+  "website": "http://www.melibio.com/",
+  "funds": [
+   "Big Idea Ventures",
+   "Sustainable Food Ventures"
+  ],
+  "sources": [
+   "https://bigideaventures.com/portfolio/melibio/",
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "food_terms": [
+   "fmcg",
+   "honey"
+  ],
+  "excl_terms": [
+   "b2b"
+  ],
+  "uk_signal": false,
+  "score": 2,
+  "description": ""
+ },
+ "wearefeel": {
+  "brand": "wearefeel",
+  "website": "https://wearefeel.com/en-eu",
+  "funds": [
+   "Fuel Ventures"
+  ],
+  "sources": [
+   "https://www.fuel.ventures/portfolio"
+  ],
+  "food_terms": [
+   "nutrition",
+   "supplements",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Alternative to industry-standard multivitamins and supplements, expanded into collagen, biotics, menopause and skincare products."
+ },
+ "getshopwave": {
+  "brand": "Getshopwave",
+  "website": "http://getshopwave.com/",
+  "funds": [
+   "Fuel Ventures"
+  ],
+  "sources": [
+   "https://www.fuel.ventures/portfolio"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Shopwave | The Merchant Orchestration Engine Powering amazing customer experience for thousands of food and retail brands globally. Grow multi-channel sales, increase profit and serve customers faster"
+ },
+ "joinjuniver": {
+  "brand": "joinjuniver",
+  "website": "https://www.joinjuniver.com/",
+  "funds": [
+   "Fuel Ventures",
+   "Ascension"
+  ],
+  "sources": [
+   "https://www.fuel.ventures/portfolio",
+   "https://www.ascension.vc/portfolio/juniver"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Health company focused on eating disorders — program combining neuroscience-based micro-interventions, personalised health data insights and structured community groups."
+ },
+ "heypesto": {
+  "brand": "heypesto",
+  "website": "https://heypesto.ai/",
+  "funds": [
+   "Fuel Ventures"
+  ],
+  "sources": [
+   "https://www.fuel.ventures/portfolio"
+  ],
+  "food_terms": [
+   "beverage",
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "AI-native operating system and insights engine powering sustainable growth and resilient supply chains for food and drink manufacturers."
+ },
+ "lyma": {
+  "brand": "LYMA",
+  "website": "https://lyma.life/",
+  "funds": [
+   "Pembroke VCT"
+  ],
+  "sources": [
+   "https://www.pembrokevct.com/portfolio/lyma/"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "A leader in the wellness industry, LYMA is the epitome of scientifically-backed, premium products."
+ },
+ "rubiesintherubble": {
+  "brand": "Rubies in the Rubble",
+  "website": "https://rubiesintherubble.com/",
+  "funds": [
+   "Pembroke VCT"
+  ],
+  "sources": [
+   "https://www.pembrokevct.com/portfolio/rubies-in-the-rubble/"
+  ],
+  "food_terms": [
+   "condiments",
+   "food",
+   "gelato"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Hackney Gelato was established in 2015 by two former chefs, Enrico Pavoncelli and Sam Newman, who met whilst working at the renowned Michelin-starred Locanda Locatelli. After spending a summer in Italy learning from masters of the craft, premium ice-cream brand Hackney Gelato was born."
+ },
+ "secretfoodtours": {
+  "brand": "Secret Food Tours",
+  "website": "https://www.secretfoodtours.com/",
+  "funds": [
+   "Pembroke VCT"
+  ],
+  "sources": [
+   "https://www.pembrokevct.com/portfolio/secret-food-tours/"
+  ],
+  "food_terms": [
+   "beverage",
+   "food",
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Founded in 2013 by friends Nico Jacquart and Oliver Mernick-Levene, Secret Food Tours helps travellers discover the best bites in destinations all over the globe."
+ },
+ "nfamilyclub": {
+  "brand": "N Family Club",
+  "website": "https://nfamilyclub.com/",
+  "funds": [
+   "Pembroke VCT"
+  ],
+  "sources": [
+   "https://www.pembrokevct.com/portfolio/n-family-club/"
+  ],
+  "food_terms": [
+   "coffee"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "N Family Club offers a 7-days-a-week service that operates as a high-quality nursery during the week and as a family club at the weekends."
+ },
+ "plenish": {
+  "brand": "Plenish",
+  "website": "https://www.plenishdrinks.com/?gclid=CjwKCAjwnIr1BRAWEiwA6GpwNQP18iq82QLRqH5ShJKQThp3IURpBjYdzK0_pMnQ0n5rAb0A_O1CuhoC_uEQAvD_BwE",
+  "funds": [
+   "Pembroke VCT"
+  ],
+  "sources": [
+   "https://www.pembrokevct.com/portfolio/plenish/"
+  ],
+  "food_terms": [
+   "beverage",
+   "drinks",
+   "juice",
+   "juices",
+   "plant-based",
+   "sugar",
+   "supermarket",
+   "supermarkets"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 10,
+  "description": "Plenish, founded in 2012, is one of the leading providers of nut milks, now stocked in every major supermarket in the UK and is a fast growing product category."
+ },
+ "pastaevangelists": {
+  "brand": "Pasta Evangelists",
+  "website": "https://pastaevangelists.com/",
+  "funds": [
+   "Pembroke VCT"
+  ],
+  "sources": [
+   "https://www.pembrokevct.com/portfolio/pasts-evangelists/"
+  ],
+  "food_terms": [
+   "pasta",
+   "sauces"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Founded by Genoa-born Alessandro Savelli in 2016, Pasta Evangelists’ mission is to provide the highest quality fresh pastas to homes across the country and soon internationally."
+ },
+ "belairinc": {
+  "brand": "Bel-Air Inc",
+  "website": null,
+  "funds": [
+   "Pembroke VCT"
+  ],
+  "sources": [
+   "https://www.pembrokevct.com/portfolio/bel-air-inc/"
+  ],
+  "food_terms": [
+   "drinks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Bel-Air Inc, founded in 2015, was a deli which aimed to combine freshly made Mediterranean-inspired salads, meats and drinks with a bright California feel. The company ceased to trade and closed all three London sites in 2017."
+ },
+ "dillywolf": {
+  "brand": "Dilly & Wolf",
+  "website": null,
+  "funds": [
+   "Pembroke VCT"
+  ],
+  "sources": [
+   "https://www.pembrokevct.com/portfolio/dilly-wolf/"
+  ],
+  "food_terms": [
+   "snacks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Dilly & Wolf produced nutritious snacks using local, sustainably-sourced beans and peas."
+ },
+ "ipacinnovations": {
+  "brand": "iPac Innovations",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/ipac-innovations"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": ""
+ },
+ "atlanticfoods": {
+  "brand": "Atlantic Foods",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/atlantic-foods"
+  ],
+  "food_terms": [
+   "food",
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": ""
+ },
+ "blacktrace": {
+  "brand": "Blacktrace",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/blacktrace"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": ""
+ },
+ "bulletexpress": {
+  "brand": "Bullet Express",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/bullet-express"
+  ],
+  "food_terms": [
+   "fmcg"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Maven supports ambitious and growth focused UK businesses. Discover more about the MBO backed, Bullet Express."
+ },
+ "pura": {
+  "brand": "Pura",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/pura"
+  ],
+  "food_terms": [
+   "fmcg"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": ""
+ },
+ "tomparkercreamery": {
+  "brand": "Tom Parker Creamery",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/tom-parker-creamery"
+  ],
+  "food_terms": [
+   "cheese",
+   "dairy",
+   "drink",
+   "food",
+   "foods",
+   "milk",
+   "vitamins"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 9,
+  "description": ""
+ },
+ "tibatempeh": {
+  "brand": "Tiba Tempeh",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/tiba-tempeh"
+  ],
+  "food_terms": [
+   "food",
+   "foods",
+   "meat",
+   "plant-based"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": ""
+ },
+ "kelpi": {
+  "brand": "Kelpi",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/kelpi"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": ""
+ },
+ "triyit": {
+  "brand": "Triyit",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/triyit"
+  ],
+  "food_terms": [
+   "fmcg"
+  ],
+  "excl_terms": [
+   "platform"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": ""
+ },
+ "fodabox": {
+  "brand": "Fodabox",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/fodabox"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": ""
+ },
+ "covestus": {
+  "brand": "Covestus",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/covestus"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": ""
+ },
+ "sensoteq": {
+  "brand": "Sensoteq",
+  "website": null,
+  "funds": [
+   "Maven Capital Partners"
+  ],
+  "sources": [
+   "https://www.mavencp.com/our-portfolio/sensoteq"
+  ],
+  "food_terms": [
+   "beverage",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Maven supports ambitious and growth focused UK businesses. Discover more about the VCT backed, Sensoteq."
+ },
+ "74mloanforiconicgradeiilistedcanonswharfredevelopmentinbristol": {
+  "brand": "£74m loan for iconic Grade II listed Canons Wharf redevelopment in Bristol",
+  "website": null,
+  "funds": [
+   "Puma Private Equity"
+  ],
+  "sources": [
+   "https://investor.pumainvestments.co.uk/portfolio/74m-loan-for-iconic-grade-ii-listed-canons-wharf-redevelopment-in-bristol"
+  ],
+  "food_terms": [
+   "beverage",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "This marks the largest loan provided to date"
+ },
+ "lovecorn": {
+  "brand": "LOVE CORN",
+  "website": null,
+  "funds": [
+   "Puma Private Equity"
+  ],
+  "sources": [
+   "https://investor.pumainvestments.co.uk/portfolio/love-corn"
+  ],
+  "food_terms": [
+   "foods",
+   "snack",
+   "snacks",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "The Grocer UK’s SME Brand of the Year 2024 and sold in over 20,000 stores across the UK and US, LOVE CORN is crunchy corn snack made with simple ingredients."
+ },
+ "15mloanfacilitytofundalowcarbonindustrialdevelopment": {
+  "brand": "£15m loan facility to fund a low-carbon industrial development",
+  "website": null,
+  "funds": [
+   "Puma Private Equity"
+  ],
+  "sources": [
+   "https://investor.pumainvestments.co.uk/portfolio/15m-loan-facility-to-fund-a-low-carbon-industrial-development-in-north-yorkshire"
+  ],
+  "food_terms": [
+   "beverage",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "A £15m loan for a low-carbon industrial development in North Yorkshire."
+ },
+ "rosebourne": {
+  "brand": "Rosebourne",
+  "website": null,
+  "funds": [
+   "Puma Private Equity"
+  ],
+  "sources": [
+   "https://investor.pumainvestments.co.uk/portfolio/rosebourne"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [
+   "restaurants"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Puma Private Equity invested in Rosebourne, a garden centre business with food halls, restaurants, garden nurseries and gifts."
+ },
+ "freesoul": {
+  "brand": "Free Soul",
+  "website": "https://freesoul.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Partial Exit Free Soul Nutritionist formulated blends for women. www.freesoul.com"
+ },
+ "ollys": {
+  "brand": "Olly's",
+  "website": "https://ollys-ollys.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "snack",
+   "snacking",
+   "snacks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Partial Exit Olly's Naturally delicious snacks designed to feed your feel good. www.ollys-ollys.com"
+ },
+ "biovit": {
+  "brand": "BIOVIT",
+  "website": "https://biovit.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "beverage",
+   "drink",
+   "food",
+   "supplements",
+   "vitamins"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "BIOVIT BIOVIT produce plant-derived multi-nutrient blends for use in food manufacture. www.biovit.com"
+ },
+ "winefi": {
+  "brand": "Winefi",
+  "website": "https://www.winefi.co/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "spirits",
+   "wine"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Winefi Making investing in fine wine accessible. www.winefi.co"
+ },
+ "adamofoods": {
+  "brand": "Adamo Foods",
+  "website": "https://www.adamofoods.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "food",
+   "foods",
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Adamo Foods Food technology company developing innovative alternatives to meat whole cuts. www.adamofoods.com"
+ },
+ "narswaterakanorthatlanticresearchandsurvey": {
+  "brand": "NARS Water (aka North Atlantic Research and Survey)",
+  "website": "https://www.nars-uk.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "beverage",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "NARS Water (aka North Atlantic Research and Survey) Delivering environmentally focused global freshwater solutions. www.nars-uk.com"
+ },
+ "gspot": {
+  "brand": "G Spot",
+  "website": "https://thisisgspot.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "drink",
+   "drinks",
+   "non-alcoholic",
+   "vitamins"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "G Spot Soft drinks filled to the brim with life-enhancing adaptogens and nootropics. www.thisisgspot.com"
+ },
+ "kluralabsfkacodikoat": {
+  "brand": "KluraLabs (fka Codikoat)",
+  "website": "https://klura.com/",
+  "funds": [
+   "SFC Capital",
+   "JamJar Investments"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio",
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "KluraLabs (fka Codikoat) Killing viruses, bacteria and fungi within seconds of contact. www.klura.com"
+ },
+ "ingenious": {
+  "brand": "Ingenious",
+  "website": "https://ingeniouslife.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "supplement",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Ingenious The ultimate natural collagen supplement. www.ingeniouslife.com"
+ },
+ "sweetjoes": {
+  "brand": "Sweet Joe's",
+  "website": "https://sweetjoes.co.uk/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "supermarkets"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Sweet Joe's The UK's only bespoke producer of gourmet cookie dough for the dessert industry. www.sweetjoes.co.uk"
+ },
+ "griddle": {
+  "brand": "Griddle",
+  "website": "https://wearegriddle.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "bakery",
+   "food",
+   "frozen"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Griddle A 100% natural bakery fighting against food waste. www.wearegriddle.com"
+ },
+ "huntergather": {
+  "brand": "Hunter & Gather",
+  "website": "https://hunterandgatherfoods.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "broth",
+   "food",
+   "foods",
+   "sauces",
+   "sugar",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "Hunter & Gather Real food that is free from sugar, grains, and harmful fats! www.hunterandgatherfoods.com"
+ },
+ "punchy": {
+  "brand": "Punchy",
+  "website": "http://www.punchydrinks.com",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "drinks",
+   "hydration",
+   "rum",
+   "vitamins"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Punchy The world’s first 4% and 0% abv Spiced Rum Punch. www.punchydrinks.com"
+ },
+ "airheads": {
+  "brand": "Airheads",
+  "website": "https://weareairheads.com",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "chilled",
+   "meal kit"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Airheads The UK's first native air fryer meal kit brand. www.weareairheads.com"
+ },
+ "onbeer": {
+  "brand": "ON Beer",
+  "website": "https://on-beer.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "beer",
+   "drink",
+   "non-alcoholic"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "ON Beer The world's 1st non-alcoholic beer with real effects. www.on-beer.com"
+ },
+ "somegrub": {
+  "brand": "Some Grub",
+  "website": "https://somegrub.co.uk/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "dog food",
+   "treats"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Some Grub Gut-loving, planet-saving pet care, harnessing the power of insect protein. www.somegrub.co.uk"
+ },
+ "circltech": {
+  "brand": "Circltech",
+  "website": "https://circltech.co.uk/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "coffee"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Circltech Innovative technology for reusable cups and containers. www.circltech.co.uk"
+ },
+ "abjak": {
+  "brand": "Abjak",
+  "website": "https://abjak.co.uk/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Abjak End-to-end infrastructure for tomorrow's food brands. www.abjak.co.uk"
+ },
+ "unibloomworld": {
+  "brand": "Unibloom World",
+  "website": "https://unibloom.world",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [
+   "platform"
+  ],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Full Exit Onfido Identity verification for a more open world, where identity is the key to access www.onfido.com Partial Exit Cognism AI-powered sales acceleration platform using real-time data to boost sales. www.cognism.com Partial Exit Ryft Payments system enabling automated next-day payouts for "
+ },
+ "cordontechnologies": {
+  "brand": "Cordon Technologies",
+  "website": "https://www.cordon.ai/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "mixer"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Cordon Technologies Precision pesticide sprayers to save money and save the environment. www.cordon.ai"
+ },
+ "gustosnacks": {
+  "brand": "Gusto Snacks",
+  "website": "https://snackgusto.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "crisps",
+   "dried fruit",
+   "food",
+   "snack",
+   "snacks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 7,
+  "description": "Gusto Snacks Reducing food waste in a delicious and sustainable way. www.snackgusto.com"
+ },
+ "futuregreens": {
+  "brand": "Future Greens",
+  "website": "https://www.futuregreens.uk/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "drink",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Future Greens Next-level sustainable farming aligning with the UN's sustainable goals. www.futuregreens.uk"
+ },
+ "firglas": {
+  "brand": "Firglas",
+  "website": "https://firglas.co.uk/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Firglas Provider of commercial-scale algae cultivation for food-grade products. www.firglas.co.uk"
+ },
+ "ecoroots": {
+  "brand": "Ecoroots",
+  "website": "https://ecoroot.co",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "plant-based"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Ecoroots Creators of a plant-based, biodegradable material made out of mushroom roots. www.ecoroot.co"
+ },
+ "cookistible": {
+  "brand": "Cookistible",
+  "website": "https://www.cookistible.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Cookistible Venture studio funding, creating and building irresistible food brands. www.cookistible.com"
+ },
+ "sages": {
+  "brand": "SAGES",
+  "website": "https://www.sageslondon.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "SAGES Pioneering material innovation company making natural dyes from food waste. www.sageslondon.com"
+ },
+ "figuraanalytics": {
+  "brand": "Figura Analytics",
+  "website": "http://figura-analytics.co.uk/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "drinks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Figura Analytics Rapid characterisation, identification and quantification of liquids. www.figura-analytics.co.uk"
+ },
+ "arcticpowerberries": {
+  "brand": "Arctic Power Berries",
+  "website": "https://www.arcticpowerberries.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "health food",
+   "superfood"
+  ],
+  "excl_terms": [
+   "wholesaler"
+  ],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Arctic Power Berries Health food manufacturer and wholesaler unlocking power hidden within berries. www.arcticpowerberries.com"
+ },
+ "naturellyjellyjuice": {
+  "brand": "Naturelly Jelly Juice",
+  "website": "http://www.naturelly.co.uk",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "gummies",
+   "juice",
+   "snack",
+   "snacks",
+   "sugar",
+   "treats"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "Naturelly Jelly Juice Fruity snack for children that is sweet by nature, with nothing naughty added! www.naturelly.co.uk"
+ },
+ "oteas": {
+  "brand": "Oteas",
+  "website": "https://oteas.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "teas"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Oteas Specialty teas that help promote an active, healthy and balanced lifestyle. www.oteas.com"
+ },
+ "hopeglory": {
+  "brand": "Hope & Glory",
+  "website": "https://www.hopeandglorytea.com/",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "tea",
+   "teas"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Hope & Glory Hand-picked, organic teas sourced solely from ethical growers. www.hopeandglorytea.com"
+ },
+ "solocoffee": {
+  "brand": "Solo Coffee",
+  "website": "http://www.solocoffee.co.uk",
+  "funds": [
+   "SFC Capital"
+  ],
+  "sources": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "food_terms": [
+   "coffee",
+   "drink"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Solo Coffee Producers of cold brew coffee, coffee concentrate and ready-to-drink espresso. www.solocoffee.co.uk"
+ },
+ "thepattyman": {
+  "brand": "The Pattyman",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/pattyman"
+  ],
+  "food_terms": [
+   "food",
+   "rum",
+   "sauces"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Business overviewThe Pattyman is a Cardiff-based artisan food producer creating Jamaican-inspired products influenced by Welsh culture and identity. Founded in 2021 by Leroy Williams, the business produces a range of products including award-winning Red Pepper Jelly, sauces, relishes, jerk marinades"
+ },
+ "fordenconcreteproductslimited": {
+  "brand": "Forden Concrete Products Limited",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/forden-concrete-products-limited"
+  ],
+  "food_terms": [
+   "dairy"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "A £45,000 loan from the Development Bank of Wales has supported the management buy-out of Forden Concrete Products Limited, enabling long-standing employee Shane Clee to acquire the business and secure its future under Welsh ownership. The challengeFounded in 1978, Forden Concrete Products Limited i"
+ },
+ "bartirum": {
+  "brand": "Barti Rum",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/barti-rum"
+  ],
+  "food_terms": [
+   "rum"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "We’re proud to be Welsh and we’re passionate about Pembrokeshire so it was only natural that we work with Welsh funders who share our vision of Barti becoming the best-selling rum in the world.Jonathan Williams, DirectorBusiness overviewBarti Rum specializes in crafting premium spiced rum infused wi"
+ },
+ "orenfoods": {
+  "brand": "Oren Foods",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/oren-foods"
+  ],
+  "food_terms": [
+   "foods"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "The support we’ve had from the Development Bank of Wales via the Green Business Loan Scheme has been great. It’s a cost-neutral step in the short term and will pay off in the long term because we’ll be able to power our fleet sustainably and pay less for our energy.Gethin Dwyfor, Director, Oren Food",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "2benterprising": {
+  "brand": "2B Enterprising",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/2b-enterprising"
+  ],
+  "food_terms": [
+   "brewer"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Businesses want to partner with us because they recognise the benefits of developing ambition and enterprise in young people while schools appreciate the fun and interactive way in which we embed entrepreneurial learning. The on-going support of our investment partners is enabling us to make a real "
+ },
+ "justlovefoodcompany": {
+  "brand": "Just Love Food Company",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/just-love-food-company"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "The positives of having the equity from the Development Bank of Wales is the people I’m dealing with are experts at what they do – they’re people on your side, able to give advice, ideas, and thoughts towards my vision.\""
+ },
+ "shearwatereco": {
+  "brand": "ShearWater Eco",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/shearwater-eco"
+  ],
+  "food_terms": [
+   "fmcg",
+   "plant-based"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "\"It’s my ambition to see our plant-based, plastic free and zero waste products replace FMCG plastics in the home.\""
+ },
+ "tregroeswaffles": {
+  "brand": "Tregroes Waffles",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/tregroes-waffles"
+  ],
+  "food_terms": [
+   "bakery"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "The market in the UK is growing fast for the taste of our waffles and we already supply many outlets all over the UK. To be able to add this production capacity to the bakery, is an exciting and proud moment which will create a great foundation for the future. Kees Huysmans, Managing Director"
+ },
+ "ffwrnespizza": {
+  "brand": "Ffwrnes Pizza",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/ffwrnes-pizza"
+  ],
+  "food_terms": [
+   "pizza"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "“With the help of the Development Bank, we can also offer the good people of Cardiff an amazing taste of Italy right here in Cardiff Indoor Market. It’s a recipe for success.”"
+ },
+ "quantumcoffeeroasters": {
+  "brand": "Quantum Coffee Roasters",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/quantum-coffee-roasters"
+  ],
+  "food_terms": [
+   "coffee"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "\"We have grown the business a lot in less than a year and we naturally came back to the Development Bank when we needed finance to expand and set up the wholesale side of the business.\""
+ },
+ "hilltophoney": {
+  "brand": "Hilltop Honey",
+  "website": null,
+  "funds": [
+   "Development Bank of Wales"
+  ],
+  "sources": [
+   "https://developmentbank.wales/case-studies/hilltop-honey"
+  ],
+  "food_terms": [
+   "honey",
+   "supermarkets"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "\"We are thrilled that our contracts with the major supermarkets are growing, but we needed to expand to fulfill our orders and to keep pace with demand for our products.\""
+ },
+ "mialgae": {
+  "brand": "MiAlgae",
+  "website": "https://mialgae.com",
+  "funds": [
+   "Ascension"
+  ],
+  "sources": [
+   "https://www.ascension.vc/portfolio/mialgae"
+  ],
+  "food_terms": [
+   "distillery",
+   "fish"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Grows algae on distillery by-products to produce sustainable omega-3 animal feed, replacing fish oil"
+ },
+ "betternature": {
+  "brand": "Better Nature",
+  "website": "https://betternaturetempeh.co",
+  "funds": [
+   "Ascension"
+  ],
+  "sources": [
+   "https://www.ascension.vc/portfolio/better-nature"
+  ],
+  "food_terms": [
+   "meat"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Meat-free brand using tempeh as sustainable alternative"
+ },
+ "beautybakerie": {
+  "brand": "Beauty Bakerie",
+  "website": "https://www.beautybakerie.com/",
+  "funds": [
+   "Unilever Ventures"
+  ],
+  "sources": [
+   "https://www.unileverventures.com/portfolio/"
+  ],
+  "food_terms": [
+   "baked",
+   "cake",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 5,
+  "description": "Beauty Bakerie Cosmetics Brand | Clean Vegan & Gluten Free Beauty Be sweetened by the facts that laid the foundation for Beauty Bakerie! We support cake face dreams and baked beats."
+ },
+ "bybi": {
+  "brand": "BYBI",
+  "website": "https://bybi.com/",
+  "funds": [
+   "Unilever Ventures"
+  ],
+  "sources": [
+   "https://www.unileverventures.com/portfolio/"
+  ],
+  "food_terms": [
+   "superfood",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": false,
+  "score": 2,
+  "description": "BYBI | Vegan Skincare, Cruelty-Free, Eco-Friendly Skin-positive, pro-planet beauty. 100% vegan, eco-friendly skincare. nourishing formulations with superfood ingredients, that are easy to use."
+ },
+ "asterleybroslondon": {
+  "brand": "Asterley Bros, London",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/asterley-bros-london-15-943956"
+  ],
+  "food_terms": [
+   "low alcohol",
+   "spirits",
+   "sugar",
+   "vegan"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "Find out more about Asterley Bros, London and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "drheffsremarkables": {
+  "brand": "Dr. Heff’s Remarkables",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/dr-heff-s-remarkables-15-1623125"
+  ],
+  "food_terms": [
+   "sugar"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Find out more about Dr. Heff’s Remarkables and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "goodrays": {
+  "brand": "Goodrays",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/goodrays-growth-round-15-1645982"
+  ],
+  "food_terms": [
+   "beverage",
+   "drink",
+   "drinks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Find out more about Goodrays - Growth Round and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "badeddiepbliqueur": {
+  "brand": "Bad Eddie PB Liqueur",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/bad-eddie-pb-liqueur-15-1439545"
+  ],
+  "food_terms": [
+   "drinks",
+   "peanut butter",
+   "spirits"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Find out more about Bad Eddie PB Liqueur and other business investment opportunities in the UK on the Angel Investment Network.",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "squarefairinvestment": {
+  "brand": "Square + Fair Investment",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/square-fair-investment-15-1642035"
+  ],
+  "food_terms": [
+   "coffee",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Find out more about Square + Fair Investment  and other business investment opportunities in the UK on the Angel Investment Network.",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "epicuralife": {
+  "brand": "Epicura.life",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/epicura-life-15-1511751"
+  ],
+  "food_terms": [
+   "food",
+   "supplements"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Find out more about Epicura.life and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "chicpinvestment": {
+  "brand": "ChicP Investment",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/chicp-investment-15-1323921"
+  ],
+  "food_terms": [
+   "food",
+   "hummus",
+   "snacking"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Find out more about ChicP Investment and other business investment opportunities in the UK on the Angel Investment Network.",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "mabel": {
+  "brand": "Mabel",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/mabel-15-1563125"
+  ],
+  "food_terms": [
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Find out more about Mabel and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "wheybetterchocolate": {
+  "brand": "WheyBetter Chocolate",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/wheybetter-chocolate-15-1425778"
+  ],
+  "food_terms": [
+   "chocolate",
+   "protein bar",
+   "sugar"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Find out more about WheyBetter Chocolate and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "thefutureofdrinking": {
+  "brand": "The future of drinking",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/the-future-of-drinking-15-1652355"
+  ],
+  "food_terms": [
+   "soda",
+   "supermarket"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Find out more about The future of drinking  and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "caru": {
+  "brand": "Caru",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/caru-brandy-liqueur-15-1629542"
+  ],
+  "food_terms": [
+   "drinks",
+   "honey",
+   "wine"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 5,
+  "description": "Find out more about Caru -  Brandy Liqueur  and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "proteinsnacksforkids": {
+  "brand": "Protein Snacks for Kids",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/protein-snacks-for-kids-15-1638726"
+  ],
+  "food_terms": [
+   "snack",
+   "snacks"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Find out more about Protein Snacks for Kids and other business investment opportunities in the UK on the Angel Investment Network.",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "zenoalcoholfreewine": {
+  "brand": "ZENO Alcohol-Free Wine",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/zeno-alcohol-free-wine-15-1607198"
+  ],
+  "food_terms": [
+   "alcohol-free",
+   "wine"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Find out more about ZENO Alcohol-Free Wine and other business investment opportunities in the UK on the Angel Investment Network.",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "fitproteinmatcha": {
+  "brand": "FIT",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/fit-protein-matcha-15-1652573"
+  ],
+  "food_terms": [
+   "juice"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 3,
+  "description": "Find out more about FIT: Protein & Matcha and other business investment opportunities in the UK on the Angel Investment Network.",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "fishfarmingcaribbean": {
+  "brand": "Fish Farming Caribbean",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/fish-farming-caribbean-15-1588918"
+  ],
+  "food_terms": [
+   "fish"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Find out more about Fish Farming Caribbean  and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "outbackbitesdeck": {
+  "brand": "Outback Bites Deck",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/outback-bites-deck-15-1628181"
+  ],
+  "food_terms": [
+   "foods",
+   "nutrition"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Find out more about Outback Bites Deck and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "highgrowthfbventure": {
+  "brand": "High Growth F&B Venture",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/high-growth-f-b-venture-15-1648005"
+  ],
+  "food_terms": [
+   "beverage",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 4,
+  "description": "Find out more about High Growth F&B Venture and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "dairywastereduction": {
+  "brand": "Dairy Waste Reduction",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/dairy-waste-reduction-15-1632101"
+  ],
+  "food_terms": [
+   "dairy",
+   "milk"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Find out more about Dairy Waste Reduction and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "klarastillemilliarden": {
+  "brand": "Klara: Stille Milliarden",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/klara-stille-milliarden-15-1636400"
+  ],
+  "food_terms": [
+   "supplement"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 1,
+  "description": "Find out more about Klara: Stille Milliarden and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "notalcoholsocialbuzz": {
+  "brand": "NOTalcohol",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/notalcohol-social-buzz-15-1646567"
+  ],
+  "food_terms": [
+   "drinks",
+   "fmcg",
+   "spirits",
+   "sugar"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 6,
+  "description": "Find out more about NOTalcohol: Social Buzz and other business investment opportunities in the UK on the Angel Investment Network.",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "hyfood": {
+  "brand": "HYFOOD",
+  "website": null,
+  "funds": [
+   "Angel Investment Network"
+  ],
+  "sources": [
+   "https://www.angelinvestmentnetwork.co.uk/business-proposals/hyfood-15-1623971"
+  ],
+  "food_terms": [
+   "beverage",
+   "food"
+  ],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 2,
+  "description": "Find out more about HYFOOD and other business investment opportunities in the UK on the Angel Investment Network."
+ },
+ "fevertreedoublingenterprisevalue": {
+  "brand": "Fever-Tree",
+  "website": "https://fever-tree.com/en_GB",
+  "funds": [
+   "LDC"
+  ],
+  "sources": [
+   "https://www.ldc.co.uk/portfolio/fever-tree-doubling-enterprise-value/"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "Fever-Tree came to us in 2013 looking for a partner to support its ambitious plans. Our investment allowed the management team to invest in operational improvements, international expansion and drive strong financial growth at a critical point in the brand’s development.",
+  "added": "manual_name_review"
+ },
+ "grenade": {
+  "brand": "GRENADE",
+  "website": null,
+  "funds": [
+   "Lion Capital"
+  ],
+  "sources": [
+   "https://lioncapital.com/portfolio/grenade/"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "",
+  "added": "manual_name_review"
+ },
+ "parsleybox": {
+  "brand": "Parsley Box",
+  "website": null,
+  "funds": [
+   "Gresham House Ventures"
+  ],
+  "sources": [
+   "https://greshamhouseventures.com/portfolio/parsley-box/"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "Read more about our investment into this direct-to-consumer provider of ready meals focused on the Baby Boomer+ demographic",
+  "added": "manual_name_review"
+ },
+ "hippeas": {
+  "brand": "HIPPEAS",
+  "website": "https://www.hippeas.com",
+  "funds": [
+   "The Craftory"
+  ],
+  "sources": [
+   "https://www.thecraftory.io/hippeas-investment-page"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "+ Using organic farming practices reduces pollution, conserves water, reduces soil erosion, increases soil fertility, and uses less energy",
+  "added": "manual_name_review"
+ },
+ "perfectted": {
+  "brand": "PerfectTed",
+  "website": null,
+  "funds": [
+   "Felix Capital"
+  ],
+  "sources": [
+   "https://www.felixcap.com/nwol-2/perfected"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "",
+  "added": "manual_name_review"
+ },
+ "pure": {
+  "brand": "Pure",
+  "website": "https://www.purepetfood.com/",
+  "funds": [
+   "Felix Capital"
+  ],
+  "sources": [
+   "https://www.felixcap.com/nwol-2/pure"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "",
+  "added": "manual_name_review",
+  "no_search": true,
+  "review_note": "website taken from Felix Capital portfolio page link (purepetfood.com)"
+ },
+ "grounded": {
+  "brand": "Grounded",
+  "website": "http://groundeddrinks.eu/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "Grounded GROUNDED® make 100% natural sustainably packaged plant-based protein m*lkshakes. They have ambitious plans to innovate in & disrupt the wider functional f&b space with only natural, plant-based ingredients. Visit site",
+  "added": "manual_name_review"
+ },
+ "misterfreed": {
+  "brand": "Mister Free'd",
+  "website": "https://www.misterfreed.com/",
+  "funds": [
+   "Veg Capital"
+  ],
+  "sources": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "Mister Free'd Gluten-free and vegan tortilla chips. Visit site",
+  "added": "manual_name_review"
+ },
+ "nakd": {
+  "brand": "Nakd",
+  "website": null,
+  "funds": [
+   "Hambro Perks"
+  ],
+  "sources": [
+   "https://salicainvestments.com"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "",
+  "added": "manual_name_review"
+ },
+ "hackneygelato": {
+  "brand": "Hackney Gelato",
+  "website": "https://www.hackneygelato.com/",
+  "funds": [
+   "Pembroke VCT"
+  ],
+  "sources": [
+   "https://www.pembrokevct.com/portfolio/hackney-gelato/"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "Hackney Gelato was established in 2015 by two former chefs, Enrico Pavoncelli and Sam Newman, who met whilst working at the renowned Michelin-starred Locanda Locatelli. After spending a summer in Italy learning from masters of the craft, premium ice-cream brand Hackney Gelato was born.",
+  "added": "manual_name_review"
+ },
+ "runa": {
+  "brand": "Runa",
+  "website": null,
+  "funds": [
+   "Puma Private Equity"
+  ],
+  "sources": [
+   "https://investor.pumainvestments.co.uk/portfolio/runa"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "The Grocer UK’s SME Brand of the Year 2024 and sold in over 20,000 stores across the UK and US, LOVE CORN is crunchy corn snack made with simple ingredients.",
+  "added": "manual_name_review",
+  "no_search": true,
+  "review_note": "Firecrawl-search website rejected on manual review (wrong company)"
+ },
+ "hovis": {
+  "brand": "Hovis",
+  "website": null,
+  "funds": [
+   "Endless"
+  ],
+  "sources": [
+   "https://endlessllp.com/investments/hovis/"
+  ],
+  "food_terms": [],
+  "excl_terms": [],
+  "uk_signal": true,
+  "score": 0,
+  "description": "Founded in 1886, Hovis is one of the UK’s most iconic food brands. The business manufactures both branded and private-label bread and bakery products for all of the UK’s major grocery retailers and local convenience stores.",
+  "added": "manual_name_review"
+ }
+}
