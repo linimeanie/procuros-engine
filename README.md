@@ -46,3 +46,35 @@ python step2.py enrich selected.json && python finalize.py
 ```
 
 The cache lives in `data/firecrawl/raw/`, so a re-run only spends credits on pages that aren't cached yet.
+
+## Scoring: `scripts/scoring/`
+
+Run `python3 scripts/scoring/score.py`. It reads `data/firecrawl/`, applies `overrides.json`, and writes `data/scored/`:
+
+- `funds_scored.json`: for each fund, its rank, score (0–100), tier, the four pillar scores, raw and normalised signals, its brands, the evidence behind them, and a generated `why`.
+- `brands_scored.json`: for each brand, fit, pain, the retailer list (from its site plus news headlines), filtered news, and its size proxy.
+- `shortlist.csv`: the ranking as a flat table.
+
+**Model** (weights are in `config.json`):
+- Score = 100 × (0.4 fit + 0.3 pain + 0.2 access + 0.1 strategic).
+- **Fit** (portfolio fit): the fund's brand count weighted by how well each brand fits (log-scaled), FMCG share of the portfolio, average brand fit, and recent deals.
+- **Pain** (brand pain): the mean pain of the fund's top 5 brands, built from listings, funding/M&A, ops hiring, news momentum and export.
+- **Access** (accessibility): platform or portfolio-ops people, community programmes, fund size/stage, and openness to vendors.
+- **Strategic**: overlap with Procuros customers, brand halo, and ecosystem programmes.
+- Access and strategic are multiplied by `min(live brands / 3, 1)`, because reach is worth nothing without brands to reach.
+
+**Brand status weights:**
+
+| Status | Weight |
+|---|---|
+| Current | 1 |
+| Unknown | 0.85 |
+| Exited within 24 months | 0.5 |
+| Exited earlier | 0.15 |
+
+**Curation** (`overrides.json`): Angel Investment Network listings and 3 non-ICP brands are dropped. Exit statuses come from the profile pages where they say so; a few come from desk knowledge and are labelled that way. 7 brands found in the earlier web pass were added, each with its source. Fund size/stage values are desk knowledge, so treat their confidence as low.
+
+**Limits:**
+- No revenue data was available, so the £3m–£100m size band is approximated by retail reach and trade-press coverage.
+- News only counts if the headline names the brand and the article is from the last 24 months. Ambiguous names (THIS, Sneak, STOCKED…) also need a trade-press domain.
+- Tier cut-offs (A ≥ 38 with 3+ live brands, B ≥ 30) are set to the observed score range, because sparse signals keep the top score near 45.

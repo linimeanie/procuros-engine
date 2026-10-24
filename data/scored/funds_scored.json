@@ -1,0 +1,5835 @@
+[
+ {
+  "fund": "JamJar Investments",
+  "fund_type": "VC",
+  "website": "https://www.jamjarinvestments.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "company_count": 77,
+  "brands": [
+   {
+    "brand": "Marleybones",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.605,
+    "pain": 0.65,
+    "retailers": [
+     "Waitrose",
+     "Ocado"
+    ]
+   },
+   {
+    "brand": "PROPER SNACKS",
+    "status": "exited_old",
+    "status_source": "Exponent took majority 2021",
+    "fit": 0.45,
+    "pain": 0.167,
+    "retailers": []
+   },
+   {
+    "brand": "innocent",
+    "status": "exited_old",
+    "status_source": "https://www.jamjarinvestments.com/ (founders sold to Coca-Cola 2013)",
+    "fit": 0.35,
+    "pain": 0.5,
+    "retailers": []
+   },
+   {
+    "brand": "Humantra",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.432,
+    "pain": 0.325,
+    "retailers": [
+     "Boots"
+    ]
+   },
+   {
+    "brand": "Reformed",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Truestart",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.9,
+    "pain": 0.375,
+    "retailers": [
+     "Asda",
+     "Morrisons",
+     "Ocado",
+     "Co-op"
+    ]
+   },
+   {
+    "brand": "Graze",
+    "status": "exited_old",
+    "status_source": "desk_knowledge: sold to Unilever 2019",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Lucky Saint",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.1,
+    "retailers": []
+   },
+   {
+    "brand": "Dot Dot Tea",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.025,
+    "retailers": []
+   },
+   {
+    "brand": "XOXO",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.425,
+    "pain": 0.425,
+    "retailers": []
+   },
+   {
+    "brand": "Popchips",
+    "status": "unknown",
+    "status_source": "not stated",
+    "fit": 0.35,
+    "pain": 0.25,
+    "retailers": []
+   },
+   {
+    "brand": "Tony's Chocolonely",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 3.6677,
+   "fmcg_share": 0.10519480519480519,
+   "avg_brand_fit": 0.45280246913580247,
+   "recent_deals": 1,
+   "pain_top": 0.34425,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 2,
+   "brand_halo": 4,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [
+    "Truestart",
+    "Tony's Chocolonely"
+   ],
+   "recent_deal_brands": [
+    "Truestart"
+   ]
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.603,
+   "pain": 0.344,
+   "access": 0.15,
+   "strategic": 0.64
+  },
+  "normalised": {
+   "icp_count": 0.782,
+   "fmcg_share": 0.278,
+   "avg_brand_fit": 0.503,
+   "recent_deals": 0.631,
+   "pain_top": 0.344,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 1.0,
+   "brand_halo": 0.8,
+   "ecosystem": 0.0
+  },
+  "score": 43.8,
+  "live_brand_count": 9,
+  "tier": "A",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "3/5"
+  },
+  "rank": 1,
+  "why": "9 UK grocery brands held now or exited <24m, incl. Truestart (Asda/Morrisons/Ocado), Marleybones (Waitrose/Ocado), Humantra (Boots); recent trigger: Truestart: \"TrueStart launches Espresso Coffee Concentrate\" (2026-05); already backs Procuros customer Tony's Chocolonely, Truestart."
+ },
+ {
+  "fund": "Active Partners",
+  "fund_type": "PE",
+  "website": "https://active.partners",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://active.partners/portfolio/"
+  ],
+  "company_count": 73,
+  "brands": [
+   {
+    "brand": "STOCKED",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.305,
+    "pain": 0.25,
+    "retailers": []
+   },
+   {
+    "brand": "Botivo",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.125,
+    "retailers": []
+   },
+   {
+    "brand": "KatKin",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.405,
+    "pain": 0.633,
+    "retailers": []
+   },
+   {
+    "brand": "All Things",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.305,
+    "pain": 0.425,
+    "retailers": []
+   },
+   {
+    "brand": "All the Aunties",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Freja",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.7,
+    "retailers": [
+     "Tesco"
+    ]
+   },
+   {
+    "brand": "Northern Monk",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.425,
+    "pain": 0.275,
+    "retailers": []
+   },
+   {
+    "brand": "Marleybones",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.605,
+    "pain": 0.65,
+    "retailers": [
+     "Waitrose",
+     "Ocado"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 2.7684499999999996,
+   "fmcg_share": 0.09315068493150684,
+   "avg_brand_fit": 0.40712499999999996,
+   "recent_deals": 0,
+   "pain_top": 0.45610999999999996,
+   "platform_team": 1,
+   "community": 3,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 2,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Tom Curling",
+     "title": "Operating Partner",
+     "url": "https://active.partners/people/"
+    }
+   ],
+   "community": [
+    {
+     "text": "achieving fundraising success in todays market key takeaways from our breakfast event",
+     "url": "https://active.partners/achieving-fundraising-success-in-todays-market-key-takeaways-from-our-breakfast-event"
+    },
+    {
+     "text": "behind the brand flash packs radha vyas on creating a global community of friendships through travel",
+     "url": "https://active.partners/behind-the-brand-flash-packs-radha-vyas-on-creating-a-global-community-of-friendships-through-travel"
+    },
+    {
+     "text": "behind the brand how code first girls anna brailsford is building the largest global community of women coders",
+     "url": "https://active.partners/behind-the-brand-how-code-first-girls-anna-brailsford-is-building-the-largest-global-community-of-women-coders"
+    },
+    {
+     "text": "building high performing boards takeaways from our breakfast event part 2",
+     "url": "https://active.partners/building-high-performing-boards-takeaways-from-our-breakfast-event-part-2"
+    },
+    {
+     "text": "padel social club",
+     "url": "https://active.partners/company-profile/padel-social-club"
+    },
+    {
+     "text": "how do you lead effectively during uncertainty key takeaways from our portfolio event",
+     "url": "https://active.partners/how-do-you-lead-effectively-during-uncertainty-key-takeaways-from-our-portfolio-event"
+    },
+    {
+     "text": "how to build a brand story and craft your tone of voice an active event with sonder tell",
+     "url": "https://active.partners/how-to-build-a-brand-story-and-craft-your-tone-of-voice-an-active-event-with-sonder-tell"
+    },
+    {
+     "text": "what does it take to build an iconic brand in 2024 and beyond takeaways from our event with pearlfisher",
+     "url": "https://active.partners/what-does-it-take-to-build-an-iconic-brand-in-2024-and-beyond-takeaways-from-our-event-with-pearlfisher"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.443,
+   "pain": 0.456,
+   "access": 0.538,
+   "strategic": 0.12
+  },
+  "normalised": {
+   "icp_count": 0.673,
+   "fmcg_share": 0.247,
+   "avg_brand_fit": 0.452,
+   "recent_deals": 0.0,
+   "pain_top": 0.456,
+   "platform_team": 0.333,
+   "community": 1.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.4,
+   "ecosystem": 0.0
+  },
+  "score": 43.4,
+  "live_brand_count": 8,
+  "tier": "A",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 2,
+  "why": "8 UK grocery brands held now or exited <24m, incl. Marleybones (Waitrose/Ocado), Freja (Tesco), KatKin; recent trigger: Marleybones: \"Marleybones raises seven-figure funding from Estée Lauder heiress Jane Lauder\" (2025-11); named portfolio/platform contact: Tom Curling (Operating Partner)."
+ },
+ {
+  "fund": "SFC Capital",
+  "fund_type": "VC",
+  "website": "https://sfccapital.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "company_count": 436,
+  "brands": [
+   {
+    "brand": "Free Soul",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.532,
+    "pain": 0.617,
+    "retailers": [
+     "Boots"
+    ]
+   },
+   {
+    "brand": "Olly's",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.725,
+    "pain": 0.025,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's"
+    ]
+   },
+   {
+    "brand": "G Spot",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.725,
+    "pain": 0.7,
+    "retailers": [
+     "Sainsbury's",
+     "M&S"
+    ]
+   },
+   {
+    "brand": "Ingenious",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.27,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Sweet Joe's",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.0,
+    "retailers": [
+     "Asda"
+    ]
+   },
+   {
+    "brand": "Griddle",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Hunter & Gather",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.55,
+    "retailers": [
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Punchy",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.025,
+    "retailers": []
+   },
+   {
+    "brand": "ON Beer",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.175,
+    "retailers": []
+   },
+   {
+    "brand": "Some Grub",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.0,
+    "retailers": [
+     "Co-op"
+    ]
+   },
+   {
+    "brand": "Gusto Snacks",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.175,
+    "retailers": [
+     "Holland & Barrett"
+    ]
+   },
+   {
+    "brand": "Naturelly Jelly Juice",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Oteas",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Hope & Glory",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Solo Coffee",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.325,
+    "retailers": [
+     "Tesco"
+    ]
+   },
+   {
+    "brand": "TOSS",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 6.1727,
+   "fmcg_share": 0.031192660550458714,
+   "avg_brand_fit": 0.45387500000000003,
+   "recent_deals": 1,
+   "pain_top": 0.40239,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 2,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": [
+    "Free Soul"
+   ]
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.662,
+   "pain": 0.402,
+   "access": 0.15,
+   "strategic": 0.12
+  },
+  "normalised": {
+   "icp_count": 1.0,
+   "fmcg_share": 0.083,
+   "avg_brand_fit": 0.504,
+   "recent_deals": 0.631,
+   "pain_top": 0.402,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.4,
+   "ecosystem": 0.0
+  },
+  "score": 42.8,
+  "live_brand_count": 16,
+  "tier": "A",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 3,
+  "why": "16 UK grocery brands held now or exited <24m, incl. G Spot (Sainsbury's/M&S), Olly's (Tesco/Sainsbury's), Free Soul (Boots); recent trigger: G Spot: \"Sainsbury’s lists G Spot by Gillian Anderson\" (2025-01)."
+ },
+ {
+  "fund": "BGF",
+  "fund_type": "PE",
+  "website": "https://www.bgf.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.bgf.co.uk/portfolio/"
+  ],
+  "company_count": 407,
+  "brands": [
+   {
+    "brand": "Bella & Duke",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.705,
+    "pain": 0.133,
+    "retailers": [
+     "Sainsbury's",
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Joe & Seph’s",
+    "status": "current",
+    "status_source": "https://www.bgf.co.uk/portfolio/?sector=food-drink lists as current",
+    "fit": 0.425,
+    "pain": 0.4,
+    "retailers": []
+   },
+   {
+    "brand": "Scrumbles",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.9,
+    "pain": 0.0,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Asda",
+     "Waitrose",
+     "Ocado"
+    ]
+   },
+   {
+    "brand": "St Pierre Groupe",
+    "status": "exited_old",
+    "status_source": "BGF profile: exited",
+    "fit": 0.51,
+    "pain": 0.05,
+    "retailers": []
+   },
+   {
+    "brand": "THIS",
+    "status": "current",
+    "status_source": "https://www.bgf.co.uk/portfolio/?sector=food-drink lists as current",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Off-Piste Wines",
+    "status": "exited_old",
+    "status_source": "BGF profile: exited",
+    "fit": 0.51,
+    "pain": 0.325,
+    "retailers": []
+   },
+   {
+    "brand": "Artisanal Spirits Company",
+    "status": "exited_recent",
+    "status_source": "BGF food & drink filter lists as current in Oct 2026 web pass; Firecrawl marks exited?",
+    "fit": 0.35,
+    "pain": 0.15,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 2.46725,
+   "fmcg_share": 0.011056511056511056,
+   "avg_brand_fit": 0.5482777777777778,
+   "recent_deals": 0,
+   "pain_top": 0.12886,
+   "platform_team": 2,
+   "community": 3,
+   "size_stage": 0.5,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0,
+   "brand_halo": 5,
+   "ecosystem": 1
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Andrew Taylor",
+     "title": "Value Creation",
+     "url": "https://www.bgf.co.uk/team"
+    },
+    {
+     "name": "Andrew Watts",
+     "title": "Value Creation",
+     "url": "https://www.bgf.co.uk/team"
+    }
+   ],
+   "community": [
+    {
+     "text": "Community",
+     "url": "https://www.bgf.co.uk/community"
+    },
+    {
+     "text": "eventmaster",
+     "url": "https://www.bgf.co.uk/portfolio/eventmaster"
+    },
+    {
+     "text": "Non-Exec Network",
+     "url": "https://www.bgf.co.uk/talent-network"
+    }
+   ],
+   "vendor": [
+    {
+     "text": "exchange lab",
+     "url": "https://www.bgf.co.uk/portfolio/exchange-lab"
+    },
+    {
+     "text": "Non-Exec Network",
+     "url": "https://www.bgf.co.uk/talent-network"
+    }
+   ],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.412,
+   "pain": 0.129,
+   "access": 0.792,
+   "strategic": 0.45
+  },
+  "normalised": {
+   "icp_count": 0.631,
+   "fmcg_share": 0.029,
+   "avg_brand_fit": 0.609,
+   "recent_deals": 0.0,
+   "pain_top": 0.129,
+   "platform_team": 0.667,
+   "community": 1.0,
+   "size_stage": 0.5,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 1.0,
+   "ecosystem": 0.5
+  },
+  "score": 40.7,
+  "live_brand_count": 5,
+  "tier": "A",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 4,
+  "why": "5 UK grocery brands held now or exited <24m, incl. Scrumbles (Tesco/Sainsbury's/Asda), Bella & Duke (Sainsbury's/Waitrose), Joe & Seph’s; recent trigger: Joe & Seph’s: \"Joe & Seph’s lands £100k Saudi supermarket deal with government backing\" (2026-09); named portfolio/platform contact: Andrew Taylor (Value Creation)."
+ },
+ {
+  "fund": "Veg Capital",
+  "fund_type": "VC",
+  "website": "https://vegcapital.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://vegcapital.co.uk/portfolio/"
+  ],
+  "company_count": 18,
+  "brands": [
+   {
+    "brand": "THIS",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "One Planet Pizza",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.812,
+    "pain": 0.675,
+    "retailers": [
+     "Asda",
+     "Morrisons",
+     "Co-op"
+    ]
+   },
+   {
+    "brand": "Mummy Meegz",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.025,
+    "retailers": []
+   },
+   {
+    "brand": "OGGS",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.525,
+    "pain": 0.392,
+    "retailers": []
+   },
+   {
+    "brand": "Grounded",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Mister Free'd",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.9,
+    "pain": 0.0,
+    "retailers": [
+     "Sainsbury's",
+     "Waitrose",
+     "Ocado",
+     "Holland & Barrett"
+    ]
+   },
+   {
+    "brand": "Shicken (Plant Alternative)",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Native Snacks",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 3.38895,
+   "fmcg_share": 0.37777777777777777,
+   "avg_brand_fit": 0.498375,
+   "recent_deals": 1,
+   "pain_top": 0.18564,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 4,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": [
+    "One Planet Pizza"
+   ]
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.743,
+   "pain": 0.186,
+   "access": 0.15,
+   "strategic": 0.24
+  },
+  "normalised": {
+   "icp_count": 0.751,
+   "fmcg_share": 1.0,
+   "avg_brand_fit": 0.554,
+   "recent_deals": 0.631,
+   "pain_top": 0.186,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.8,
+   "ecosystem": 0.0
+  },
+  "score": 40.7,
+  "live_brand_count": 8,
+  "tier": "A",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 5,
+  "why": "8 UK grocery brands held now or exited <24m, incl. Mister Free'd (Sainsbury's/Waitrose/Ocado), One Planet Pizza (Asda/Morrisons/Co-op), OGGS; recent trigger: One Planet Pizza: \"One Planet Pizza Enters Frozen Ready Meals With Three-Dish Asda Exclusive\" (2026-10)."
+ },
+ {
+  "fund": "Maven Capital Partners",
+  "fund_type": "VC",
+  "website": "https://www.mavencp.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.mavencp.com/our-portfolio/"
+  ],
+  "company_count": 155,
+  "brands": [
+   {
+    "brand": "Tom Parker Creamery",
+    "status": "current",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.5,
+    "retailers": []
+   },
+   {
+    "brand": "Tiba Tempeh",
+    "status": "current",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.5,
+    "retailers": [
+     "Waitrose"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 0.862,
+   "fmcg_share": 0.012903225806451613,
+   "avg_brand_fit": 0.431,
+   "recent_deals": 0,
+   "pain_top": 0.5,
+   "platform_team": 3,
+   "community": 3,
+   "size_stage": 0.7,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0,
+   "brand_halo": 1,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Carl Edgehill",
+     "title": "Portfolio Director",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Catherine Earl",
+     "title": "Portfolio Manager",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Chris Lawlor",
+     "title": "Portfolio Manager",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "David McCrory",
+     "title": "Operations Partner",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Graham Palmer",
+     "title": "Portfolio Manager",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Jenny Linney",
+     "title": "Portfolio Director",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Joe Croghan",
+     "title": "Portfolio Manager",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Michelle Pownall",
+     "title": "Portfolio Director",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Nicola Holloway",
+     "title": "Portfolio Director",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Philip McGrath",
+     "title": "Portfolio Director",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Sanjay Patel",
+     "title": "Portfolio Director",
+     "url": "https://www.mavencp.com/our-team"
+    },
+    {
+     "name": "Trisha Reay",
+     "title": "AIM Portfolio Director",
+     "url": "https://www.mavencp.com/our-team"
+    }
+   ],
+   "community": [
+    {
+     "text": "bright network case study",
+     "url": "https://www.mavencp.com/bright-network-case-study"
+    },
+    {
+     "text": "case study bright network",
+     "url": "https://www.mavencp.com/maven-video-resources/case-study-bright-network"
+    },
+    {
+     "text": "the benefits of active portfolio management with bright network",
+     "url": "https://www.mavencp.com/maven-video-resources/the-benefits-of-active-portfolio-management-with-bright-network"
+    },
+    {
+     "text": "834 maven investor partners network buys nottingham property for 37m",
+     "url": "https://www.mavencp.com/news-insights/834-maven-investor-partners-network-buys-nottingham-property-for-37m"
+    },
+    {
+     "text": "bill nixon speaks to wealth club about the maven vct offers",
+     "url": "https://www.mavencp.com/news-insights/bill-nixon-speaks-to-wealth-club-about-the-maven-vct-offers"
+    },
+    {
+     "text": "ewan mackinnon speaks to wealth club about the maven vct offers",
+     "url": "https://www.mavencp.com/news-insights/ewan-mackinnon-speaks-to-wealth-club-about-the-maven-vct-offers"
+    },
+    {
+     "text": "invested podcast season 2 james uffindell founder of bright network",
+     "url": "https://www.mavencp.com/news-insights/invested-podcast-season-2-james-uffindell-founder-of-bright-network"
+    },
+    {
+     "text": "london meet the manager event for vct shareholders",
+     "url": "https://www.mavencp.com/news-insights/london-meet-the-manager-event-for-vct-shareholders"
+    },
+    {
+     "text": "maven backs security and critical event software specialist zinc systems",
+     "url": "https://www.mavencp.com/news-insights/maven-backs-security-and-critical-event-software-specialist-zinc-systems"
+    },
+    {
+     "text": "maven invests in it managed services provider kube networks",
+     "url": "https://www.mavencp.com/news-insights/maven-invests-in-it-managed-services-provider-kube-networks"
+    }
+   ],
+   "vendor": [
+    {
+     "text": "834 maven investor partners network buys nottingham property for 37m",
+     "url": "https://www.mavencp.com/news-insights/834-maven-investor-partners-network-buys-nottingham-property-for-37m"
+    }
+   ],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.245,
+   "pain": 0.5,
+   "access": 0.637,
+   "strategic": 0.04
+  },
+  "normalised": {
+   "icp_count": 0.316,
+   "fmcg_share": 0.034,
+   "avg_brand_fit": 0.479,
+   "recent_deals": 0.0,
+   "pain_top": 0.5,
+   "platform_team": 1.0,
+   "community": 1.0,
+   "size_stage": 0.7,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.2,
+   "ecosystem": 0.0
+  },
+  "score": 37.9,
+  "live_brand_count": 2,
+  "tier": "B",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 6,
+  "why": "2 UK grocery brands held now or exited <24m, incl. Tiba Tempeh (Waitrose), Tom Parker Creamery; recent trigger: Tiba Tempeh: \"Tiba Tempeh launches new SKU, lands in Waitrose\" (2025-04); named portfolio/platform contact: Carl Edgehill (Portfolio Director)."
+ },
+ {
+  "fund": "Piper",
+  "fund_type": "PE",
+  "website": "https://piper.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://piper.co.uk/our-brands/"
+  ],
+  "company_count": 44,
+  "brands": [
+   {
+    "brand": "PROPER SNACKS",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2021",
+    "fit": 0.45,
+    "pain": 0.167,
+    "retailers": []
+   },
+   {
+    "brand": "Borough Broth",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.912,
+    "pain": 0.675,
+    "retailers": [
+     "Sainsbury's",
+     "Tesco",
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Wild Nutrition",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.27,
+    "pain": 0.275,
+    "retailers": []
+   },
+   {
+    "brand": "Mindful Chef",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited to Nestle 2020",
+    "fit": 0.23,
+    "pain": 0.2,
+    "retailers": []
+   },
+   {
+    "brand": "Barking Heads",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2021",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Forthglade",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2020",
+    "fit": 0.9,
+    "pain": 0.4,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Asda",
+     "Morrisons",
+     "Waitrose",
+     "Ocado"
+    ]
+   },
+   {
+    "brand": "Bottlegreen",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2011",
+    "fit": 0.512,
+    "pain": 0.25,
+    "retailers": [
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Maximuscle",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2007",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Reeve the Baker",
+    "status": "current",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 1.7735,
+   "fmcg_share": 0.08181818181818182,
+   "avg_brand_fit": 0.4926388888888889,
+   "recent_deals": 2,
+   "pain_top": 0.187,
+   "platform_team": 1,
+   "community": 1,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 3,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Annabel Feather",
+     "title": "Associate Partner, Talent",
+     "url": "https://piper.co.uk/our-team/"
+    }
+   ],
+   "community": [
+    {
+     "text": "Founder stories",
+     "url": "https://piper.co.uk/founder-stories"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": [
+    "Borough Broth"
+   ]
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.536,
+   "pain": 0.187,
+   "access": 0.338,
+   "strategic": 0.18
+  },
+  "normalised": {
+   "icp_count": 0.518,
+   "fmcg_share": 0.217,
+   "avg_brand_fit": 0.547,
+   "recent_deals": 1.0,
+   "pain_top": 0.187,
+   "platform_team": 0.333,
+   "community": 0.333,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.6,
+   "ecosystem": 0.0
+  },
+  "score": 35.6,
+  "live_brand_count": 3,
+  "tier": "B",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 7,
+  "why": "3 UK grocery brands held now or exited <24m, incl. Borough Broth (Sainsbury's/Tesco/Waitrose), Wild Nutrition, Reeve the Baker; recent trigger: Borough Broth: \"Borough Broth secures £7.5m investment to expand organic range\" (2025-12); named portfolio/platform contact: Annabel Feather (Associate Partner, Talent)."
+ },
+ {
+  "fund": "Beringea",
+  "fund_type": "VC",
+  "website": "https://www.beringea.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.beringea.co.uk/portfolio"
+  ],
+  "company_count": 136,
+  "brands": [
+   {
+    "brand": "MOTH",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 1.0,
+    "pain": 0.092,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Asda",
+     "Morrisons",
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "dash-water",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 1.0,
+    "pain": 0.475,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Waitrose",
+     "Ocado",
+     "M&S"
+    ]
+   },
+   {
+    "brand": "Lucky Saint",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.1,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 1.9975,
+   "fmcg_share": 0.01875,
+   "avg_brand_fit": 0.7833333333333334,
+   "recent_deals": 0,
+   "pain_top": 0.1889833333333333,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 5,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.435,
+   "pain": 0.189,
+   "access": 0.105,
+   "strategic": 0.3
+  },
+  "normalised": {
+   "icp_count": 0.557,
+   "fmcg_share": 0.05,
+   "avg_brand_fit": 0.87,
+   "recent_deals": 0.0,
+   "pain_top": 0.189,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 1.0,
+   "ecosystem": 0.0
+  },
+  "score": 28.2,
+  "live_brand_count": 3,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 8,
+  "why": "3 UK grocery brands held now or exited <24m, incl. dash-water (Tesco/Sainsbury's/Waitrose), MOTH (Tesco/Sainsbury's/Asda), Lucky Saint."
+ },
+ {
+  "fund": "Development Bank of Wales",
+  "fund_type": "VC",
+  "website": "https://developmentbank.wales",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://developmentbank.wales/resources/case-studies"
+  ],
+  "company_count": 120,
+  "brands": [
+   {
+    "brand": "The Pattyman",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Barti Rum",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.125,
+    "retailers": []
+   },
+   {
+    "brand": "Just Love Food Company",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.025,
+    "retailers": [
+     "Ocado"
+    ]
+   },
+   {
+    "brand": "Tregroes Waffles",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Quantum Coffee Roasters",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Hilltop Honey",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.9,
+    "pain": 0.075,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Asda",
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Oren Foods",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 2.6877,
+   "fmcg_share": 0.04958333333333333,
+   "avg_brand_fit": 0.4517142857142857,
+   "recent_deals": 0,
+   "pain_top": 0.03825,
+   "platform_team": 0,
+   "community": 2,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 4,
+   "ecosystem": 1
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [
+    {
+     "text": "Barmouth Beach Club Loan",
+     "url": "https://developmentbank.wales/case-studies/barmouth-beach-club"
+    },
+    {
+     "text": "Events landing page",
+     "url": "https://developmentbank.wales/resources/events"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.425,
+   "pain": 0.038,
+   "access": 0.305,
+   "strategic": 0.39
+  },
+  "normalised": {
+   "icp_count": 0.662,
+   "fmcg_share": 0.131,
+   "avg_brand_fit": 0.502,
+   "recent_deals": 0.0,
+   "pain_top": 0.038,
+   "platform_team": 0.0,
+   "community": 0.667,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.8,
+   "ecosystem": 0.5
+  },
+  "score": 28.1,
+  "live_brand_count": 7,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "3/5"
+  },
+  "rank": 9,
+  "why": "7 UK grocery brands held now or exited <24m, incl. Hilltop Honey (Tesco/Sainsbury's/Asda), Just Love Food Company (Ocado), Barti Rum."
+ },
+ {
+  "fund": "Ascension",
+  "fund_type": "VC",
+  "website": "https://www.ascension.vc",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.ascension.vc/portfolio"
+  ],
+  "company_count": 153,
+  "brands": [
+   {
+    "brand": "Better Nature",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.812,
+    "pain": 0.425,
+    "retailers": [
+     "Tesco",
+     "Asda",
+     "Ocado"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 0.6902,
+   "fmcg_share": 0.005555555555555556,
+   "avg_brand_fit": 0.812,
+   "recent_deals": 0,
+   "pain_top": 0.36124999999999996,
+   "platform_team": 1,
+   "community": 2,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 3,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Romha Berhane",
+     "title": "Portfolio Manager",
+     "url": "https://www.ascension.vc/team"
+    }
+   ],
+   "community": [
+    {
+     "text": "guardian angel network",
+     "url": "https://www.ascension.vc/portfolio/guardian-angel-network"
+    },
+    {
+     "text": "runa network",
+     "url": "https://www.ascension.vc/portfolio/runa-network"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.303,
+   "pain": 0.361,
+   "access": 0.161,
+   "strategic": 0.06
+  },
+  "normalised": {
+   "icp_count": 0.266,
+   "fmcg_share": 0.015,
+   "avg_brand_fit": 0.902,
+   "recent_deals": 0.0,
+   "pain_top": 0.361,
+   "platform_team": 0.333,
+   "community": 0.667,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.6,
+   "ecosystem": 0.0
+  },
+  "score": 26.8,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 10,
+  "why": "1 UK grocery brand held now or exited <24m, incl. Better Nature (Tesco/Asda/Ocado); recent trigger: Better Nature: \"Tempeh Brand Better Nature Launches at Hundreds of REWE Stores Across Germany\" (2025-04); named portfolio/platform contact: Romha Berhane (Portfolio Manager)."
+ },
+ {
+  "fund": "Five Seasons Ventures",
+  "fund_type": "VC",
+  "website": "https://www.fiveseasons.vc",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.fiveseasons.vc/portfolio/"
+  ],
+  "company_count": 23,
+  "brands": [
+   {
+    "brand": "THIS",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "dash-water",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 1.0,
+    "pain": 0.475,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Waitrose",
+     "Ocado",
+     "M&S"
+    ]
+   },
+   {
+    "brand": "puresport",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.27,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Space Goods",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 1.6744999999999999,
+   "fmcg_share": 0.14782608695652175,
+   "avg_brand_fit": 0.4925,
+   "recent_deals": 0,
+   "pain_top": 0.1009375,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 5,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.412,
+   "pain": 0.101,
+   "access": 0.105,
+   "strategic": 0.3
+  },
+  "normalised": {
+   "icp_count": 0.499,
+   "fmcg_share": 0.391,
+   "avg_brand_fit": 0.547,
+   "recent_deals": 0.0,
+   "pain_top": 0.101,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 1.0,
+   "ecosystem": 0.0
+  },
+  "score": 24.6,
+  "live_brand_count": 4,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 11,
+  "why": "4 UK grocery brands held now or exited <24m, incl. dash-water (Tesco/Sainsbury's/Waitrose), THIS, puresport."
+ },
+ {
+  "fund": "LDC",
+  "fund_type": "PE",
+  "website": "https://www.ldc.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.ldc.co.uk/portfolio/",
+   "https://www.ldc.co.uk/portfolio/page/2/",
+   "https://www.ldc.co.uk/portfolio/page/3/",
+   "https://www.ldc.co.uk/portfolio/",
+   "https://www.ldc.co.uk/portfolio/page/4/",
+   "https://www.ldc.co.uk/portfolio/page/5/",
+   "https://www.ldc.co.uk/portfolio/page/6/",
+   "https://www.ldc.co.uk/portfolio/page/7/",
+   "https://www.ldc.co.uk/portfolio/page/8/",
+   "https://www.ldc.co.uk/portfolio/page/9/",
+   "https://www.ldc.co.uk/portfolio/page/10/",
+   "https://www.ldc.co.uk/portfolio/page/11/",
+   "https://www.ldc.co.uk/portfolio/page/12/",
+   "https://www.ldc.co.uk/portfolio/page/13/",
+   "https://www.ldc.co.uk/portfolio/page/14/",
+   "https://www.ldc.co.uk/portfolio/page/15/",
+   "https://www.ldc.co.uk/portfolio/page/16/"
+  ],
+  "company_count": 182,
+  "brands": [
+   {
+    "brand": "Fever-Tree",
+    "status": "exited_old",
+    "status_source": "https://www.ldc.co.uk/sector/consumer/ (IPO 2014)",
+    "fit": 0.425,
+    "pain": 0.625,
+    "retailers": []
+   },
+   {
+    "brand": "Bramble Foods",
+    "status": "current",
+    "status_source": "LDC profile: backed Dec 2021",
+    "fit": 0.51,
+    "pain": 0.5,
+    "retailers": []
+   },
+   {
+    "brand": "Cakesmiths",
+    "status": "exited_old",
+    "status_source": "https://www.ldc.co.uk/sector/consumer/",
+    "fit": 0.51,
+    "pain": 0.175,
+    "retailers": []
+   },
+   {
+    "brand": "Addo Food Group",
+    "status": "unknown",
+    "status_source": "LDC profile: backed 2017 SBO",
+    "fit": 0.61,
+    "pain": 0.2,
+    "retailers": []
+   },
+   {
+    "brand": "Seabrook",
+    "status": "exited_old",
+    "status_source": "LDC profile: sold to Calbee Oct 2018",
+    "fit": 0.512,
+    "pain": 0.375,
+    "retailers": [
+     "Morrisons"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 1.24555,
+   "fmcg_share": 0.012637362637362636,
+   "avg_brand_fit": 0.5415434782608696,
+   "recent_deals": 0,
+   "pain_top": 0.16925,
+   "platform_team": 2,
+   "community": 1,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Andy Holman",
+     "title": "Portfolio Director",
+     "url": "https://www.ldc.co.uk/team-hub/"
+    },
+    {
+     "name": "Richard Haynes",
+     "title": "Partner, Head of Value Creation Partners",
+     "url": "https://www.ldc.co.uk/team-hub/"
+    }
+   ],
+   "community": [
+    {
+     "text": "The Pallet Network: support for national roll-out Ten-year private equity partnership helped management treble revenues ",
+     "url": "https://www.ldc.co.uk/portfolio/the-pallet-network-support-for-national-roll-out"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.312,
+   "pain": 0.169,
+   "access": 0.294,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.411,
+   "fmcg_share": 0.033,
+   "avg_brand_fit": 0.602,
+   "recent_deals": 0.0,
+   "pain_top": 0.169,
+   "platform_team": 0.667,
+   "community": 0.333,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 23.4,
+  "live_brand_count": 2,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 12,
+  "why": "2 UK grocery brands held now or exited <24m, incl. Bramble Foods, Addo Food Group; recent trigger: Bramble Foods: \"UK’s Bramble Foods Group snaps up Whitakers Chocolates\" (2025-01); named portfolio/platform contact: Andy Holman (Portfolio Director)."
+ },
+ {
+  "fund": "Puma Private Equity",
+  "fund_type": "VC",
+  "website": "https://pumainvestments.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://investor.pumainvestments.co.uk/portfolio",
+   "https://investor.pumainvestments.co.uk/portfolio?page=2",
+   "https://investor.pumainvestments.co.uk/portfolio?page=3",
+   "https://investor.pumainvestments.co.uk/portfolio?page=4",
+   "https://investor.pumainvestments.co.uk/portfolio?page=5",
+   "https://investor.pumainvestments.co.uk/portfolio?page=6",
+   "https://investor.pumainvestments.co.uk/portfolio?page=7"
+  ],
+  "company_count": 81,
+  "brands": [
+   {
+    "brand": "MOTH",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 1.0,
+    "pain": 0.092,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Asda",
+     "Morrisons",
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Lucky Saint",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.1,
+    "retailers": []
+   },
+   {
+    "brand": "LOVE CORN",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.275,
+    "retailers": []
+   },
+   {
+    "brand": "Runa",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 1.7425,
+   "fmcg_share": 0.04197530864197531,
+   "avg_brand_fit": 0.5125,
+   "recent_deals": 0,
+   "pain_top": 0.0992375,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 5,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.367,
+   "pain": 0.099,
+   "access": 0.105,
+   "strategic": 0.3
+  },
+  "normalised": {
+   "icp_count": 0.512,
+   "fmcg_share": 0.111,
+   "avg_brand_fit": 0.569,
+   "recent_deals": 0.0,
+   "pain_top": 0.099,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 1.0,
+   "ecosystem": 0.0
+  },
+  "score": 22.7,
+  "live_brand_count": 4,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 13,
+  "why": "4 UK grocery brands held now or exited <24m, incl. MOTH (Tesco/Sainsbury's/Asda), LOVE CORN, Lucky Saint."
+ },
+ {
+  "fund": "Gresham House Ventures",
+  "fund_type": "VC",
+  "website": "https://greshamhouse.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://greshamhouseventures.com/portfolio/",
+   "https://greshamhouseventures.com/portfolio/",
+   "https://greshamhouseventures.com/portfolio/page/2/",
+   "https://greshamhouseventures.com/portfolio/page/3/",
+   "https://greshamhouseventures.com/portfolio/page/4/",
+   "https://greshamhouseventures.com/portfolio/page/5/"
+  ],
+  "company_count": 77,
+  "brands": [
+   {
+    "brand": "Bella & Duke",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.705,
+    "pain": 0.133,
+    "retailers": [
+     "Sainsbury's",
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Parsley Box",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.23,
+    "pain": 0.025,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.79475,
+   "fmcg_share": 0.02207792207792208,
+   "avg_brand_fit": 0.46749999999999997,
+   "recent_deals": 0,
+   "pain_top": 0.06715,
+   "platform_team": 3,
+   "community": 2,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 2,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Simon Bursell",
+     "title": "Portfolio Director",
+     "url": "https://greshamhouse.com/our-team/"
+    },
+    {
+     "name": "Graham Butler",
+     "title": "Head of Talent, Strategic Equity",
+     "url": "https://greshamhouse.com/our-team/"
+    },
+    {
+     "name": "Fernando Casas Garcia",
+     "title": "Head of Operations & Asset Management, Energy Transition",
+     "url": "https://greshamhouse.com/our-team/"
+    },
+    {
+     "name": "Marieke Christmann",
+     "title": "Portfolio Partner, Gresham House Ventures",
+     "url": "https://greshamhouse.com/our-team/"
+    },
+    {
+     "name": "Bob Henry",
+     "title": "Portfolio Director",
+     "url": "https://greshamhouse.com/our-team/"
+    }
+   ],
+   "community": [
+    {
+     "text": "fraud prevention",
+     "url": "https://greshamhouse.com/fraud-prevention"
+    },
+    {
+     "text": "gresham house vcts shareholder event 2026 replay",
+     "url": "https://greshamhouse.com/gresham-house-vcts-shareholder-event-2026-replay"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.249,
+   "pain": 0.067,
+   "access": 0.47,
+   "strategic": 0.08
+  },
+  "normalised": {
+   "icp_count": 0.297,
+   "fmcg_share": 0.058,
+   "avg_brand_fit": 0.519,
+   "recent_deals": 0.0,
+   "pain_top": 0.067,
+   "platform_team": 1.0,
+   "community": 0.667,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.4,
+   "ecosystem": 0.0
+  },
+  "score": 22.2,
+  "live_brand_count": 2,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 14,
+  "why": "2 UK grocery brands held now or exited <24m, incl. Bella & Duke (Sainsbury's/Waitrose), Parsley Box; named portfolio/platform contact: Simon Bursell (Portfolio Director)."
+ },
+ {
+  "fund": "The Craftory",
+  "fund_type": "VC",
+  "website": "https://www.thecraftory.io",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.thecraftory.io/investments"
+  ],
+  "company_count": 13,
+  "brands": [
+   {
+    "brand": "HIPPEAS",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.4,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.2975,
+   "fmcg_share": 0.06538461538461539,
+   "avg_brand_fit": 0.35,
+   "recent_deals": 1,
+   "pain_top": 0.34,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": [
+    "HIPPEAS"
+   ]
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.267,
+   "pain": 0.34,
+   "access": 0.035,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.132,
+   "fmcg_share": 0.173,
+   "avg_brand_fit": 0.389,
+   "recent_deals": 0.631,
+   "pain_top": 0.34,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 21.6,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 15,
+  "why": "1 UK grocery brand held now or exited <24m, incl. HIPPEAS."
+ },
+ {
+  "fund": "Exponent",
+  "fund_type": "PE",
+  "website": "https://www.exponentpe.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.exponentpe.com/our-portfolio"
+  ],
+  "company_count": 34,
+  "brands": [
+   {
+    "brand": "Gü",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.25,
+    "retailers": []
+   },
+   {
+    "brand": "Loch Lomond Group",
+    "status": "exited_old",
+    "status_source": "Exponent profile: realised",
+    "fit": 0.35,
+    "pain": 0.05,
+    "retailers": []
+   },
+   {
+    "brand": "PROPER SNACKS",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.45,
+    "pain": 0.167,
+    "retailers": []
+   },
+   {
+    "brand": "Quorn Foods",
+    "status": "exited_old",
+    "status_source": "Exponent profile: realised, sold to Monde Nissin",
+    "fit": 1.0,
+    "pain": 0.267,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Asda",
+     "Morrisons",
+     "Waitrose",
+     "Co-op"
+    ]
+   },
+   {
+    "brand": "Vibrant Foods",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.51,
+    "pain": 0.15,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 1.316,
+   "fmcg_share": 0.08382352941176471,
+   "avg_brand_fit": 0.4617543859649123,
+   "recent_deals": 0,
+   "pain_top": 0.1059,
+   "platform_team": 0,
+   "community": 1,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [
+    {
+     "text": "our network",
+     "url": "http://www.exponentpe.com/our-network"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.339,
+   "pain": 0.106,
+   "access": 0.145,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.426,
+   "fmcg_share": 0.222,
+   "avg_brand_fit": 0.513,
+   "recent_deals": 0.0,
+   "pain_top": 0.106,
+   "platform_team": 0.0,
+   "community": 0.333,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 19.6,
+  "live_brand_count": 3,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "3/5"
+  },
+  "rank": 16,
+  "why": "3 UK grocery brands held now or exited <24m, incl. Gü, PROPER SNACKS, Vibrant Foods; recent trigger: Vibrant Foods: \"Vibrant Foods turnaround plan shows green shoots\" (2025-10)."
+ },
+ {
+  "fund": "Felix Capital",
+  "fund_type": "VC",
+  "website": "https://www.felixcap.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.felixcap.com/nwol-2",
+   "https://www.felixcap.com/nwow-2"
+  ],
+  "company_count": 26,
+  "brands": [
+   {
+    "brand": "PerfectTed",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.425,
+    "pain": 0.25,
+    "retailers": []
+   },
+   {
+    "brand": "Pure",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.405,
+    "pain": 0.35,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.7055,
+   "fmcg_share": 0.06538461538461539,
+   "avg_brand_fit": 0.41500000000000004,
+   "recent_deals": 0,
+   "pain_top": 0.255,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.249,
+   "pain": 0.255,
+   "access": 0.07,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.271,
+   "fmcg_share": 0.173,
+   "avg_brand_fit": 0.461,
+   "recent_deals": 0.0,
+   "pain_top": 0.255,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 19.0,
+  "live_brand_count": 2,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 17,
+  "why": "2 UK grocery brands held now or exited <24m, incl. Pure, PerfectTed; recent trigger: Pure: \"Pure Pet Food’s sales double after hefty investment\" (2025-07)."
+ },
+ {
+  "fund": "Inverleith",
+  "fund_type": "PE",
+  "website": "https://inverleith.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://inverleith.com/investments/"
+  ],
+  "company_count": 5,
+  "brands": [
+   {
+    "brand": "Good Hemp",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.025,
+    "retailers": []
+   },
+   {
+    "brand": "EDEN MILL St Andrews",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.15,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.595,
+   "fmcg_share": 0.33999999999999997,
+   "avg_brand_fit": 0.35,
+   "recent_deals": 0,
+   "pain_top": 0.074375,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.364,
+   "pain": 0.074,
+   "access": 0.07,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.237,
+   "fmcg_share": 0.9,
+   "avg_brand_fit": 0.389,
+   "recent_deals": 0.0,
+   "pain_top": 0.074,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 18.2,
+  "live_brand_count": 2,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 18,
+  "why": "2 UK grocery brands held now or exited <24m, incl. EDEN MILL St Andrews, Good Hemp."
+ },
+ {
+  "fund": "Big Idea Ventures",
+  "fund_type": "VC",
+  "website": "https://bigideaventures.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://bigideaventures.com/portfolio/"
+  ],
+  "company_count": 119,
+  "brands": [
+   {
+    "brand": "The Good Pulse Co",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Little Bandits",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.595,
+   "fmcg_share": 0.014285714285714285,
+   "avg_brand_fit": 0.35,
+   "recent_deals": 0,
+   "pain_top": 0.0,
+   "platform_team": 0,
+   "community": 3,
+   "size_stage": 1.0,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 2
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [
+    {
+     "text": "Big Idea Ventures and Mars Petcare select three startups for the 2026 Next Generation Pet Food Program",
+     "url": "https://bigideaventures.com/big-idea-ventures-and-mars-petcare-select-three-startups-for-the-2026-next-generation-pet-food-program"
+    },
+    {
+     "text": "Corporate Programs",
+     "url": "https://bigideaventures.com/corporate-challenges-programs"
+    },
+    {
+     "text": "Pet Food Program",
+     "url": "https://bigideaventures.com/pet-food-program"
+    }
+   ],
+   "vendor": [
+    {
+     "text": "Corporate Programs",
+     "url": "https://bigideaventures.com/corporate-challenges-programs"
+    }
+   ],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.192,
+   "pain": 0.0,
+   "access": 0.4,
+   "strategic": 0.2
+  },
+  "normalised": {
+   "icp_count": 0.237,
+   "fmcg_share": 0.038,
+   "avg_brand_fit": 0.389,
+   "recent_deals": 0.0,
+   "pain_top": 0.0,
+   "platform_team": 0.0,
+   "community": 1.0,
+   "size_stage": 1.0,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 1.0
+  },
+  "score": 17.7,
+  "live_brand_count": 2,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 19,
+  "why": "2 UK grocery brands held now or exited <24m, incl. The Good Pulse Co, Little Bandits."
+ },
+ {
+  "fund": "Endless",
+  "fund_type": "PE",
+  "website": "https://endlessllp.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://endlessllp.com/investments/",
+   "https://endlessllp.com/"
+  ],
+  "company_count": 15,
+  "brands": [
+   {
+    "brand": "Bright Blue Foods",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.51,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Hovis",
+    "status": "exited_recent",
+    "status_source": "Endless page: sold to ABF",
+    "fit": 0.772,
+    "pain": 0.325,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Waitrose"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 0.8195,
+   "fmcg_share": 0.09000000000000001,
+   "avg_brand_fit": 0.607037037037037,
+   "recent_deals": 0,
+   "pain_top": 0.08125,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 3,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.319,
+   "pain": 0.081,
+   "access": 0.05,
+   "strategic": 0.12
+  },
+  "normalised": {
+   "icp_count": 0.304,
+   "fmcg_share": 0.238,
+   "avg_brand_fit": 0.674,
+   "recent_deals": 0.0,
+   "pain_top": 0.081,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.6,
+   "ecosystem": 0.0
+  },
+  "score": 17.4,
+  "live_brand_count": 2,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 20,
+  "why": "2 UK grocery brands held now or exited <24m, incl. Hovis (Tesco/Sainsbury's/Waitrose), Bright Blue Foods; recent trigger: Hovis: \"Why ABF’s Hovis deal matters far beyond bread\" (2026-09)."
+ },
+ {
+  "fund": "True (TrueCapital)",
+  "fund_type": "PE",
+  "website": "https://www.true.global",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.true.global/private-equity",
+   "https://www.true.global/venture-capital"
+  ],
+  "company_count": 65,
+  "brands": [
+   {
+    "brand": "seriouspig",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Sneak",
+    "status": "current",
+    "status_source": "True site lists as portfolio",
+    "fit": 0.35,
+    "pain": 0.375,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.6475,
+   "fmcg_share": 0.02846153846153846,
+   "avg_brand_fit": 0.35,
+   "recent_deals": 0,
+   "pain_top": 0.1875,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.207,
+   "pain": 0.188,
+   "access": 0.07,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.253,
+   "fmcg_share": 0.075,
+   "avg_brand_fit": 0.389,
+   "recent_deals": 0.0,
+   "pain_top": 0.188,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 15.3,
+  "live_brand_count": 2,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 21,
+  "why": "2 UK grocery brands held now or exited <24m, incl. Sneak, seriouspig; recent trigger: Sneak: \"Sneak Energy lands additional listings across Bestway\" (2026-06)."
+ },
+ {
+  "fund": "Pembroke VCT",
+  "fund_type": "VC",
+  "website": "https://www.pembrokevct.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.pembrokevct.com/portfolio/"
+  ],
+  "company_count": 70,
+  "brands": [
+   {
+    "brand": "Plenish",
+    "status": "exited_old",
+    "status_source": "Pembroke profile: acquired by Britvic",
+    "fit": 0.512,
+    "pain": 0.55,
+    "retailers": [
+     "Tesco"
+    ]
+   },
+   {
+    "brand": "Pasta Evangelists",
+    "status": "exited_old",
+    "status_source": "Pembroke profile: exited; desk_knowledge: Barilla majority 2021",
+    "fit": 0.23,
+    "pain": 0.125,
+    "retailers": []
+   },
+   {
+    "brand": "Hackney Gelato",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.45,
+    "pain": 0.192,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.4938,
+   "fmcg_share": 0.016428571428571428,
+   "avg_brand_fit": 0.42939130434782613,
+   "recent_deals": 0,
+   "pain_top": 0.08815,
+   "platform_team": 2,
+   "community": 3,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Adrian Harris",
+     "title": "Portfolio Director",
+     "url": "https://www.pembrokevct.com/team/"
+    },
+    {
+     "name": "Emma Ward",
+     "title": "Director of Talent",
+     "url": "https://www.pembrokevct.com/team/"
+    }
+   ],
+   "community": [
+    {
+     "text": "founder stories",
+     "url": "https://www.pembrokevct.com/founder-stories"
+    },
+    {
+     "text": "founder stories lyma",
+     "url": "https://www.pembrokevct.com/founder-stories-lyma"
+    },
+    {
+     "text": "founder stories meem",
+     "url": "https://www.pembrokevct.com/founder-stories-meem"
+    },
+    {
+     "text": "founder stories plenish",
+     "url": "https://www.pembrokevct.com/founder-stories-plenish"
+    },
+    {
+     "text": "founder stories popsa",
+     "url": "https://www.pembrokevct.com/founder-stories-popsa"
+    },
+    {
+     "text": "n family club",
+     "url": "https://www.pembrokevct.com/n-family-club"
+    },
+    {
+     "text": "pembroke vct exits n family club for 2 9x realised return",
+     "url": "https://www.pembrokevct.com/pembroke-vct-exits-n-family-club-for-2-9x-realised-return"
+    },
+    {
+     "text": "N Family Club Consumer 2.9× Return Exited 2025",
+     "url": "https://www.pembrokevct.com/portfolio/n-family-club"
+    },
+    {
+     "text": "startup grind x pembroke event",
+     "url": "https://www.pembrokevct.com/startup-grind-x-pembroke-event"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.196,
+   "pain": 0.088,
+   "access": 0.224,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.204,
+   "fmcg_share": 0.043,
+   "avg_brand_fit": 0.477,
+   "recent_deals": 0.0,
+   "pain_top": 0.088,
+   "platform_team": 0.667,
+   "community": 1.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 15.0,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 22,
+  "why": "1 UK grocery brand held now or exited <24m, incl. Hackney Gelato; named portfolio/platform contact: Adrian Harris (Portfolio Director)."
+ },
+ {
+  "fund": "NorthEdge",
+  "fund_type": "PE",
+  "website": "https://northedge.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://northedge.com/portfolio/"
+  ],
+  "company_count": 49,
+  "brands": [
+   {
+    "brand": "Clearly Drinks",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.51,
+    "pain": 0.025,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.4335,
+   "fmcg_share": 0.017346938775510204,
+   "avg_brand_fit": 0.51,
+   "recent_deals": 0,
+   "pain_top": 0.02125,
+   "platform_team": 2,
+   "community": 1,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Derek Knowles",
+     "title": "Head of Operations",
+     "url": "https://northedge.com/our-people/"
+    },
+    {
+     "name": "Lucie Mills",
+     "title": "Partner, Value Creation & ESG",
+     "url": "https://northedge.com/our-people/"
+    }
+   ],
+   "community": [
+    {
+     "text": "Community",
+     "url": "https://northedge.com/community"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.205,
+   "pain": 0.021,
+   "access": 0.147,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.183,
+   "fmcg_share": 0.046,
+   "avg_brand_fit": 0.567,
+   "recent_deals": 0.0,
+   "pain_top": 0.021,
+   "platform_team": 0.667,
+   "community": 0.333,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 11.8,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 23,
+  "why": "1 UK grocery brand held now or exited <24m, incl. Clearly Drinks; named portfolio/platform contact: Derek Knowles (Head of Operations)."
+ },
+ {
+  "fund": "Livingbridge",
+  "fund_type": "PE",
+  "website": "https://www.livingbridge.com",
+  "scrape_status": "partial",
+  "portfolio_urls": [
+   "https://www.livingbridge.com/portfolio"
+  ],
+  "company_count": 12,
+  "brands": [
+   {
+    "brand": "Absolute Collagen",
+    "status": "current",
+    "status_source": "portfolio page",
+    "fit": 0.27,
+    "pain": 0.025,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.27,
+   "fmcg_share": 0.08333333333333333,
+   "avg_brand_fit": 0.27,
+   "recent_deals": 0,
+   "pain_top": 0.025,
+   "platform_team": 0,
+   "community": 2,
+   "size_stage": 0.5,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 1
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [
+    {
+     "text": "network plus",
+     "url": "https://www.livingbridge.com/portfolio/network-plus"
+    },
+    {
+     "text": "upper street events",
+     "url": "https://www.livingbridge.com/portfolio/upper-street-events"
+    }
+   ],
+   "vendor": [
+    {
+     "text": "network plus",
+     "url": "https://www.livingbridge.com/portfolio/network-plus"
+    }
+   ],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.159,
+   "pain": 0.025,
+   "access": 0.142,
+   "strategic": 0.05
+  },
+  "normalised": {
+   "icp_count": 0.121,
+   "fmcg_share": 0.221,
+   "avg_brand_fit": 0.3,
+   "recent_deals": 0.0,
+   "pain_top": 0.025,
+   "platform_team": 0.0,
+   "community": 0.667,
+   "size_stage": 0.5,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.5
+  },
+  "score": 10.4,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "partial",
+   "signals_with_data": "3/5"
+  },
+  "rank": 24,
+  "why": "1 UK grocery brand held now or exited <24m, incl. Absolute Collagen."
+ },
+ {
+  "fund": "CapVest",
+  "fund_type": "PE",
+  "website": "https://www.capvest.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.capvest.com/investments"
+  ],
+  "company_count": 12,
+  "brands": [
+   {
+    "brand": "ipn",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.51,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.4335,
+   "fmcg_share": 0.07083333333333333,
+   "avg_brand_fit": 0.51,
+   "recent_deals": 0,
+   "pain_top": 0.0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.233,
+   "pain": 0.0,
+   "access": 0.015,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.183,
+   "fmcg_share": 0.188,
+   "avg_brand_fit": 0.567,
+   "recent_deals": 0.0,
+   "pain_top": 0.0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 9.6,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "1/5"
+  },
+  "rank": 25,
+  "why": "1 UK grocery brand held now or exited <24m, incl. ipn."
+ },
+ {
+  "fund": "ECI Partners",
+  "fund_type": "PE",
+  "website": "https://www.ecipartners.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.ecipartners.com/our-companies"
+  ],
+  "company_count": 49,
+  "brands": [
+   {
+    "brand": "MPM",
+    "status": "exited_old",
+    "status_source": "ECI profile: exited to 3i (3i later sold to Partners Group, Jun 2025)",
+    "fit": 0.612,
+    "pain": 0.7,
+    "retailers": [
+     "Ocado"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 0.09179999999999999,
+   "fmcg_share": 0.003061224489795918,
+   "avg_brand_fit": 0.612,
+   "recent_deals": 0,
+   "pain_top": 0.105,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.158,
+   "pain": 0.105,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.045,
+   "fmcg_share": 0.008,
+   "avg_brand_fit": 0.68,
+   "recent_deals": 0.0,
+   "pain_top": 0.105,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 9.5,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 26,
+  "why": "."
+ },
+ {
+  "fund": "Rutland Partners",
+  "fund_type": "PE",
+  "website": "https://rutlandpartners.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://rutlandpartners.com/portfolio/"
+  ],
+  "company_count": 17,
+  "brands": [
+   {
+    "brand": "Armitage Pet Care",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.51,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.4335,
+   "fmcg_share": 0.049999999999999996,
+   "avg_brand_fit": 0.51,
+   "recent_deals": 0,
+   "pain_top": 0.0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.222,
+   "pain": 0.0,
+   "access": 0.025,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.183,
+   "fmcg_share": 0.132,
+   "avg_brand_fit": 0.567,
+   "recent_deals": 0.0,
+   "pain_top": 0.0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 9.4,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "1/5"
+  },
+  "rank": 27,
+  "why": "1 UK grocery brand held now or exited <24m, incl. Armitage Pet Care."
+ },
+ {
+  "fund": "Hambro Perks",
+  "fund_type": "VC",
+  "website": "https://salicainvestments.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://salicainvestments.com/portfolio/"
+  ],
+  "company_count": 145,
+  "brands": [
+   {
+    "brand": "Nakd",
+    "status": "exited_old",
+    "status_source": "desk_knowledge: Natural Balance Foods sold to Lotus Bakeries 2019",
+    "fit": 0.9,
+    "pain": 0.05,
+    "retailers": [
+     "Tesco",
+     "Asda",
+     "Morrisons",
+     "Waitrose",
+     "Ocado"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 0.135,
+   "fmcg_share": 0.0010344827586206897,
+   "avg_brand_fit": 0.9000000000000001,
+   "recent_deals": 0,
+   "pain_top": 0.0075,
+   "platform_team": 0,
+   "community": 3,
+   "size_stage": 0.7,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [
+    {
+     "text": "hambro perks access fund invests habyt europes leading co living provider",
+     "url": "https://salicainvestments.com/hambro-perks-access-fund-invests-habyt-europes-leading-co-living-provider"
+    },
+    {
+     "text": "hambro perks access fund invests in na kd a leading european fashion retailer",
+     "url": "https://salicainvestments.com/hambro-perks-access-fund-invests-in-na-kd-a-leading-european-fashion-retailer"
+    },
+    {
+     "text": "hambro perks announces first close of new venture debt fund",
+     "url": "https://salicainvestments.com/hambro-perks-announces-first-close-of-new-venture-debt-fund"
+    },
+    {
+     "text": "hambro perks bolsters investment team with the appointment of laura noorani",
+     "url": "https://salicainvestments.com/hambro-perks-bolsters-investment-team-with-the-appointment-of-laura-noorani"
+    },
+    {
+     "text": "hambro perks completes investment in comet the leading provider of specialist tech freelancer talent in france",
+     "url": "https://salicainvestments.com/hambro-perks-completes-investment-in-comet-the-leading-provider-of-specialist-tech-freelancer-talent-in-france"
+    },
+    {
+     "text": "hambro perks growth debt fund announces 2 million investment in legal tech platform apperio",
+     "url": "https://salicainvestments.com/hambro-perks-growth-debt-fund-announces-2-million-investment-in-legal-tech-platform-apperio"
+    },
+    {
+     "text": "hambro perks growth debt fund announces investment in century a leading ai edtech platform for schools colleges and univ",
+     "url": "https://salicainvestments.com/hambro-perks-growth-debt-fund-announces-investment-in-century-a-leading-ai-edtech-platform-for-schools-colleges-and-universities"
+    },
+    {
+     "text": "hambro perks growth debt fund invests in essentia analytics",
+     "url": "https://salicainvestments.com/hambro-perks-growth-debt-fund-invests-in-essentia-analytics"
+    },
+    {
+     "text": "hambro perks invests in agricultral challenger oxbury bank",
+     "url": "https://salicainvestments.com/hambro-perks-invests-in-agricultral-challenger-oxbury-bank"
+    },
+    {
+     "text": "hambro perks leads latest funding round for uk female founded gynae health startup daye",
+     "url": "https://salicainvestments.com/hambro-perks-leads-latest-funding-round-for-uk-female-founded-gynae-health-startup-daye"
+    }
+   ],
+   "vendor": [
+    {
+     "text": "hambro perks access fund invests habyt europes leading co living provider",
+     "url": "https://salicainvestments.com/hambro-perks-access-fund-invests-habyt-europes-leading-co-living-provider"
+    },
+    {
+     "text": "hambro perks access fund invests in na kd a leading european fashion retailer",
+     "url": "https://salicainvestments.com/hambro-perks-access-fund-invests-in-na-kd-a-leading-european-fashion-retailer"
+    },
+    {
+     "text": "hambro perks announces first close of new venture debt fund",
+     "url": "https://salicainvestments.com/hambro-perks-announces-first-close-of-new-venture-debt-fund"
+    },
+    {
+     "text": "hambro perks bolsters investment team with the appointment of laura noorani",
+     "url": "https://salicainvestments.com/hambro-perks-bolsters-investment-team-with-the-appointment-of-laura-noorani"
+    },
+    {
+     "text": "hambro perks completes investment in comet the leading provider of specialist tech freelancer talent in france",
+     "url": "https://salicainvestments.com/hambro-perks-completes-investment-in-comet-the-leading-provider-of-specialist-tech-freelancer-talent-in-france"
+    },
+    {
+     "text": "hambro perks growth debt fund announces 2 million investment in legal tech platform apperio",
+     "url": "https://salicainvestments.com/hambro-perks-growth-debt-fund-announces-2-million-investment-in-legal-tech-platform-apperio"
+    },
+    {
+     "text": "hambro perks growth debt fund announces investment in century a leading ai edtech platform for schools colleges and univ",
+     "url": "https://salicainvestments.com/hambro-perks-growth-debt-fund-announces-investment-in-century-a-leading-ai-edtech-platform-for-schools-colleges-and-universities"
+    },
+    {
+     "text": "hambro perks growth debt fund invests in essentia analytics",
+     "url": "https://salicainvestments.com/hambro-perks-growth-debt-fund-invests-in-essentia-analytics"
+    },
+    {
+     "text": "hambro perks invests in agricultral challenger oxbury bank",
+     "url": "https://salicainvestments.com/hambro-perks-invests-in-agricultral-challenger-oxbury-bank"
+    },
+    {
+     "text": "hambro perks leads latest funding round for uk female founded gynae health startup daye",
+     "url": "https://salicainvestments.com/hambro-perks-leads-latest-funding-round-for-uk-female-founded-gynae-health-startup-daye"
+    }
+   ],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.229,
+   "pain": 0.007,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.064,
+   "fmcg_share": 0.003,
+   "avg_brand_fit": 1.0,
+   "recent_deals": 0.0,
+   "pain_top": 0.007,
+   "platform_team": 0.0,
+   "community": 1.0,
+   "size_stage": 0.7,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 9.4,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "3/5"
+  },
+  "rank": 28,
+  "why": "."
+ },
+ {
+  "fund": "Verlinvest",
+  "fund_type": "PE",
+  "website": "https://www.verlinvest.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.verlinvest.com/brands/"
+  ],
+  "company_count": 20,
+  "brands": [
+   {
+    "brand": "Tony's Chocolonely",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.2975,
+   "fmcg_share": 0.042499999999999996,
+   "avg_brand_fit": 0.35,
+   "recent_deals": 0,
+   "pain_top": 0.0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 1,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [
+    "Tony's Chocolonely"
+   ],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.16,
+   "pain": 0.0,
+   "access": 0.015,
+   "strategic": 0.067
+  },
+  "normalised": {
+   "icp_count": 0.132,
+   "fmcg_share": 0.112,
+   "avg_brand_fit": 0.389,
+   "recent_deals": 0.0,
+   "pain_top": 0.0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.5,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 7.4,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 29,
+  "why": "1 UK grocery brand held now or exited <24m, incl. Tony's Chocolonely; already backs Procuros customer Tony's Chocolonely."
+ },
+ {
+  "fund": "Langholm Capital",
+  "fund_type": "PE",
+  "website": "https://www.langholm.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.langholm.com/portfolio"
+  ],
+  "company_count": 7,
+  "brands": [
+   {
+    "brand": "Purity Soft Drinks",
+    "status": "exited_old",
+    "status_source": "Langholm page: sold to Verdane Oct 2021",
+    "fit": 0.35,
+    "pain": 0.25,
+    "retailers": []
+   },
+   {
+    "brand": "Dorset Cereals",
+    "status": "exited_old",
+    "status_source": "Langholm page: previous investment",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Tyrrells Crisps",
+    "status": "exited_old",
+    "status_source": "https://en.wikipedia.org/wiki/Langholm_Capital (sold 2013)",
+    "fit": 0.35,
+    "pain": 0.025,
+    "retailers": []
+   },
+   {
+    "brand": "Bart Spices",
+    "status": "exited_old",
+    "status_source": "Langholm page: previous investment",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.21,
+   "fmcg_share": 0.08571428571428572,
+   "avg_brand_fit": 0.35,
+   "recent_deals": 0,
+   "pain_top": 0.010312499999999999,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.167,
+   "pain": 0.01,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.097,
+   "fmcg_share": 0.227,
+   "avg_brand_fit": 0.389,
+   "recent_deals": 0.0,
+   "pain_top": 0.01,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 7.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 30,
+  "why": "."
+ },
+ {
+  "fund": "YFM Equity Partners",
+  "fund_type": "PE",
+  "website": "https://yfmep.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://yfmep.com/portfolio"
+  ],
+  "company_count": 91,
+  "brands": [
+   {
+    "brand": "Protein Works",
+    "status": "exited_old",
+    "status_source": "YFM profile: acquired by Lactalis (desk_knowledge: 2023)",
+    "fit": 0.445,
+    "pain": 0.417,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.06675,
+   "fmcg_share": 0.0016483516483516484,
+   "avg_brand_fit": 0.44500000000000006,
+   "recent_deals": 0,
+   "pain_top": 0.06255,
+   "platform_team": 3,
+   "community": 1,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Adam Milner",
+     "title": "Portfolio Director, Leeds",
+     "url": "https://yfmep.com/our-people"
+    },
+    {
+     "name": "Christina Tymviou",
+     "title": "Talent Lead, London",
+     "url": "https://yfmep.com/our-people"
+    },
+    {
+     "name": "David Bell",
+     "title": "Senior Portfolio Partner, Reading",
+     "url": "https://yfmep.com/our-people"
+    },
+    {
+     "name": "Gavin Chadwick",
+     "title": "Portfolio Director, Manchester",
+     "url": "https://yfmep.com/our-people"
+    },
+    {
+     "name": "Nick Holt",
+     "title": "Senior Portfolio Partner, Reading",
+     "url": "https://yfmep.com/our-people"
+    },
+    {
+     "name": "Nicola McQuaid",
+     "title": "Senior Portfolio Partner, Leeds",
+     "url": "https://yfmep.com/our-people"
+    },
+    {
+     "name": "Steve Harrison",
+     "title": "Senior Portfolio Partner, Leeds",
+     "url": "https://yfmep.com/our-people"
+    }
+   ],
+   "community": [
+    {
+     "text": "The Networking People (TNP) Status: In Portfolio Deal Type: Buyout Sector: Business Services",
+     "url": "https://yfmep.com/portfolio/the-network-people-tnp"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.115,
+   "pain": 0.063,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.033,
+   "fmcg_share": 0.004,
+   "avg_brand_fit": 0.494,
+   "recent_deals": 0.0,
+   "pain_top": 0.063,
+   "platform_team": 1.0,
+   "community": 0.333,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 6.5,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "4/5"
+  },
+  "rank": 31,
+  "why": "named portfolio/platform contact: Adam Milner (Portfolio Director, Leeds)."
+ },
+ {
+  "fund": "Lion Capital",
+  "fund_type": "PE",
+  "website": "https://lioncapital.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://lioncapital.com/portfolio/"
+  ],
+  "company_count": 44,
+  "brands": [
+   {
+    "brand": "Kettle Foods",
+    "status": "exited_old",
+    "status_source": "desk_knowledge: sold 2010",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "GRENADE",
+    "status": "exited_old",
+    "status_source": "desk_knowledge: sold to Mondelez 2021",
+    "fit": 0.45,
+    "pain": 0.317,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.12,
+   "fmcg_share": 0.006818181818181818,
+   "avg_brand_fit": 0.4,
+   "recent_deals": 0,
+   "pain_top": 0.023775,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.118,
+   "pain": 0.024,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.058,
+   "fmcg_share": 0.018,
+   "avg_brand_fit": 0.444,
+   "recent_deals": 0.0,
+   "pain_top": 0.024,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 5.4,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 32,
+  "why": "."
+ },
+ {
+  "fund": "Inflexion",
+  "fund_type": "PE",
+  "website": "https://www.inflexion.com",
+  "scrape_status": "partial",
+  "portfolio_urls": [
+   "https://www.inflexion.com/portfolio/"
+  ],
+  "company_count": 127,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.3,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [
+    {
+     "text": "Value acceleration",
+     "url": "https://www.inflexion.com/approach/value-acceleration"
+    }
+   ],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.3,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "partial",
+   "signals_with_data": "0/5"
+  },
+  "rank": 33,
+  "why": "."
+ },
+ {
+  "fund": "Palatine",
+  "fund_type": "PE",
+  "website": "https://palatinepe.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://palatinepe.com/portfolio/"
+  ],
+  "company_count": 48,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 2,
+   "community": 3,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 2
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Nigel Moss",
+     "title": "Portfolio Director",
+     "url": "https://palatinepe.com/our-people/"
+    },
+    {
+     "name": "Georgina Wendon-Smith",
+     "title": "Portfolio Director",
+     "url": "https://palatinepe.com/our-people/"
+    }
+   ],
+   "community": [
+    {
+     "text": "all onside for palatines charity golf event",
+     "url": "https://palatinepe.com/all-onside-for-palatines-charity-golf-event"
+    },
+    {
+     "text": "gary tipper joins city in the community board of trustees",
+     "url": "https://palatinepe.com/gary-tipper-joins-city-in-the-community-board-of-trustees"
+    },
+    {
+     "text": "over 12400 raised at charity events in london and birmingham",
+     "url": "https://palatinepe.com/over-12400-raised-at-charity-events-in-london-and-birmingham"
+    },
+    {
+     "text": "palatine holds first charity darts event in manchester",
+     "url": "https://palatinepe.com/palatine-holds-first-charity-darts-event-in-manchester"
+    },
+    {
+     "text": "palatine holds inspiring wellness networking event",
+     "url": "https://palatinepe.com/palatine-holds-inspiring-wellness-networking-event"
+    },
+    {
+     "text": "palatine holds women in leadership event",
+     "url": "https://palatinepe.com/palatine-holds-women-in-leadership-event"
+    },
+    {
+     "text": "palatine hosts esg intelligent board event",
+     "url": "https://palatinepe.com/palatine-hosts-esg-intelligent-board-event"
+    },
+    {
+     "text": "palatine private equity raises over 6000 for mentoring charity reach out at annual darts event",
+     "url": "https://palatinepe.com/palatine-private-equity-raises-over-6000-for-mentoring-charity-reach-out-at-annual-darts-event"
+    },
+    {
+     "text": "palatine supports manchester access programme scholarships",
+     "url": "https://palatinepe.com/palatine-supports-manchester-access-programme-scholarships"
+    },
+    {
+     "text": "royal bolton hospital selects vernacare infection prevention technology",
+     "url": "https://palatinepe.com/royal-bolton-hospital-selects-vernacare-infection-prevention-technology"
+    },
+    {
+     "text": "strategic growth summit 2023",
+     "url": "https://palatinepe.com/strategic-growth-summit-2023"
+    },
+    {
+     "text": "strategic growth summit 2025",
+     "url": "https://palatinepe.com/strategic-growth-summit-2025"
+    },
+    {
+     "text": "supporting our local community through intouniversity",
+     "url": "https://palatinepe.com/supporting-our-local-community-through-intouniversity"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.667,
+   "community": 1.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 1.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 34,
+  "why": "named portfolio/platform contact: Nigel Moss (Portfolio Director)."
+ },
+ {
+  "fund": "Mobeus",
+  "fund_type": "PE",
+  "website": "https://www.mobeus.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.mobeus.co.uk/investments/",
+   "https://www.mobeus.co.uk/investments/page/2/",
+   "https://www.mobeus.co.uk/investments/page/3/"
+  ],
+  "company_count": 58,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 35,
+  "why": "."
+ },
+ {
+  "fund": "Kester Capital",
+  "fund_type": "PE",
+  "website": "https://www.kestercapital.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.kestercapital.com/portfolio"
+  ],
+  "company_count": 19,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 36,
+  "why": "."
+ },
+ {
+  "fund": "Elaghmore",
+  "fund_type": "PE",
+  "website": "https://elaghmore.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://elaghmore.com/portfolio/"
+  ],
+  "company_count": 11,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 37,
+  "why": "."
+ },
+ {
+  "fund": "Silverfleet",
+  "fund_type": "PE",
+  "website": "https://www.silverfleetcapital.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.silverfleetcapital.com/our-portfolio/"
+  ],
+  "company_count": 3,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 38,
+  "why": "."
+ },
+ {
+  "fund": "Synova",
+  "fund_type": "PE",
+  "website": "https://synova.pe",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://synova.pe/companies"
+  ],
+  "company_count": 17,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 2,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Angus Abbott",
+     "title": "Portfolio Director",
+     "url": "https://synova.pe/people"
+    },
+    {
+     "name": "Erato Kallitsa",
+     "title": "Talent Manager",
+     "url": "https://synova.pe/people"
+    }
+   ],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.667,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "1/5"
+  },
+  "rank": 39,
+  "why": "named portfolio/platform contact: Angus Abbott (Portfolio Director)."
+ },
+ {
+  "fund": "CBPE",
+  "fund_type": "PE",
+  "website": "https://www.cbpe.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.cbpe.com/portfolio"
+  ],
+  "company_count": 27,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 40,
+  "why": "."
+ },
+ {
+  "fund": "L Catterton (Europe)",
+  "fund_type": "PE",
+  "website": "https://www.lcatterton.com",
+  "scrape_status": "no_companies_found",
+  "portfolio_urls": [
+   "https://www.lcatterton.com/Investments.html#!/current/M:nag_major"
+  ],
+  "company_count": 0,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "no_companies_found",
+   "signals_with_data": "0/5"
+  },
+  "rank": 41,
+  "why": "."
+ },
+ {
+  "fund": "Penta Capital",
+  "fund_type": "PE",
+  "website": "https://pentacapital.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://pentacapital.com/portfolio/"
+  ],
+  "company_count": 17,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 42,
+  "why": "."
+ },
+ {
+  "fund": "Cairngorm Capital",
+  "fund_type": "PE",
+  "website": "https://www.cairngormcapital.com",
+  "scrape_status": "no_companies_found",
+  "portfolio_urls": [
+   "https://www.cairngormcapital.com/portfolio",
+   "https://cairngormcapital.com/past-investments"
+  ],
+  "company_count": 0,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 2,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [
+    {
+     "text": "cairngorm capital portfolio company paintwell buys kent blaxill extending its branch network across the east of england ",
+     "url": "https://www.cairngormcapital.com/cairngorm-capital-portfolio-company-paintwell-buys-kent-blaxill-extending-its-branch-network-across-the-east-of-england-and-the-south-east"
+    },
+    {
+     "text": "cairngorm capital supports parker building supplies merger with chandlers expanding its builders merchant network in the",
+     "url": "https://www.cairngormcapital.com/cairngorm-capital-supports-parker-building-supplies-merger-with-chandlers-expanding-its-builders-merchant-network-in-the-south-east"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.667,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "no_companies_found",
+   "signals_with_data": "1/5"
+  },
+  "rank": 43,
+  "why": "."
+ },
+ {
+  "fund": "Phoenix Equity Partners",
+  "fund_type": "PE",
+  "website": "https://phoenix-equity.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://phoenix-equity.com/investments/"
+  ],
+  "company_count": 15,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 2,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "James Hope",
+     "title": "Fund & Portfolio Director",
+     "url": "https://phoenix-equity.com/team/"
+    },
+    {
+     "name": "Dan McManus",
+     "title": "Operating Director",
+     "url": "https://phoenix-equity.com/team/"
+    }
+   ],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.667,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "1/5"
+  },
+  "rank": 44,
+  "why": "named portfolio/platform contact: James Hope (Fund & Portfolio Director)."
+ },
+ {
+  "fund": "Primary Capital",
+  "fund_type": "PE",
+  "website": "https://www.primary.pe",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.primary.pe/investments"
+  ],
+  "company_count": 15,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 45,
+  "why": "."
+ },
+ {
+  "fund": "Tenzing",
+  "fund_type": "PE",
+  "website": "https://tenzing.pe",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://tenzing.pe/portfolio/"
+  ],
+  "company_count": 26,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 3,
+   "community": 2,
+   "size_stage": 0.7,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 2
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Rebecca Manning",
+     "title": "Talent",
+     "url": "https://tenzing.pe/about-us/meet-the-team/"
+    },
+    {
+     "name": "Mira Markova",
+     "title": "Talent",
+     "url": "https://tenzing.pe/about-us/meet-the-team/"
+    },
+    {
+     "name": "Mark Trebble",
+     "title": "Portfolio Operations Lead",
+     "url": "https://tenzing.pe/about-us/meet-the-team/"
+    }
+   ],
+   "community": [
+    {
+     "text": "Growth Network – Empowering management teams",
+     "url": "https://tenzing.pe/grow-with-us/growth-network"
+    },
+    {
+     "text": "Sherpa Programme – Supercharge your strategy",
+     "url": "https://tenzing.pe/grow-with-us/sherpa-programme"
+    }
+   ],
+   "vendor": [
+    {
+     "text": "Growth Network – Empowering management teams",
+     "url": "https://tenzing.pe/grow-with-us/growth-network"
+    }
+   ],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 1.0,
+   "community": 0.667,
+   "size_stage": 0.7,
+   "vendor_openness": 1.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 1.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 46,
+  "why": "named portfolio/platform contact: Rebecca Manning (Talent)."
+ },
+ {
+  "fund": "Bridgepoint Development Capital",
+  "fund_type": "PE",
+  "website": "https://www.bridgepointgroup.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [],
+  "company_count": 42,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 1,
+   "community": 0,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Tom Cooley",
+     "title": "Portfolio Manager",
+     "url": "https://www.bridgepointgroup.com/about-us/our-people"
+    }
+   ],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.333,
+   "community": 0.0,
+   "size_stage": 0.3,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "1/5"
+  },
+  "rank": 47,
+  "why": "named portfolio/platform contact: Tom Cooley (Portfolio Manager)."
+ },
+ {
+  "fund": "Literacy Capital",
+  "fund_type": "PE",
+  "website": "https://www.literacycapital.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.literacycapital.com/portfolio/default.aspx"
+  ],
+  "company_count": 23,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 48,
+  "why": "."
+ },
+ {
+  "fund": "Eka Ventures",
+  "fund_type": "VC",
+  "website": "https://www.ekavc.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.ekavc.com/portfolio"
+  ],
+  "company_count": 24,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 49,
+  "why": "."
+ },
+ {
+  "fund": "Octopus Ventures",
+  "fund_type": "VC",
+  "website": "https://octopusventures.com",
+  "scrape_status": "partial",
+  "portfolio_urls": [
+   "https://octopusventures.com/our-portfolio/"
+  ],
+  "company_count": 10,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 3,
+   "community": 3,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Jeevs Mahil",
+     "title": "People + Talent",
+     "url": "https://octopusventures.com/team/"
+    },
+    {
+     "name": "Chris Oliver",
+     "title": "People + Talent",
+     "url": "https://octopusventures.com/team/"
+    },
+    {
+     "name": "Vicky Booth",
+     "title": "People + Talent",
+     "url": "https://octopusventures.com/team/"
+    }
+   ],
+   "community": [
+    {
+     "text": "Founder stories",
+     "url": "https://octopusventures.com/founder-stories"
+    },
+    {
+     "text": "founder stories 3",
+     "url": "https://octopusventures.com/founder-stories-3"
+    },
+    {
+     "text": "founder stories 4",
+     "url": "https://octopusventures.com/founder-stories-4"
+    },
+    {
+     "text": "founder stories 5",
+     "url": "https://octopusventures.com/founder-stories-5"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 1.0,
+   "community": 1.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "partial",
+   "signals_with_data": "2/5"
+  },
+  "rank": 50,
+  "why": "named portfolio/platform contact: Jeevs Mahil (People + Talent)."
+ },
+ {
+  "fund": "CPT Capital",
+  "fund_type": "VC",
+  "website": "https://www.cptcapital.com",
+  "scrape_status": "no_companies_found",
+  "portfolio_urls": [
+   "https://forsale.godaddy.com/forsale/cptcapital.com?traffic_type=TDFS_BINNS2&traffic_id=binns2&oref=https%3A%2F%2Fwww.google.com%2F"
+  ],
+  "company_count": 0,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "no_companies_found",
+   "signals_with_data": "0/5"
+  },
+  "rank": 51,
+  "why": "."
+ },
+ {
+  "fund": "Sustainable Food Ventures",
+  "fund_type": "VC",
+  "website": "https://www.sustainablefoodventures.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.sustainablefoodventures.com/companies"
+  ],
+  "company_count": 55,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 52,
+  "why": "."
+ },
+ {
+  "fund": "Smedvig Capital",
+  "fund_type": "VC",
+  "website": "https://smedvigcapital.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://smedvigcapital.com/venture-capital-portfolio/"
+  ],
+  "company_count": 27,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 53,
+  "why": "."
+ },
+ {
+  "fund": "Fuel Ventures",
+  "fund_type": "VC",
+  "website": "https://www.fuel.ventures",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.fuel.ventures/portfolio",
+   "https://www.fuel.ventures/portfolio?page=2",
+   "https://www.fuel.ventures/portfolio?page=3",
+   "https://www.fuel.ventures/portfolio?page=4",
+   "https://www.fuel.ventures/portfolio?page=1"
+  ],
+  "company_count": 178,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 2,
+   "community": 3,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 2
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Christina Levada",
+     "title": "HEAD OF OPERATIONS",
+     "url": "https://www.fuel.ventures/our-team"
+    },
+    {
+     "name": "Alice O'Connor",
+     "title": "SEIS PORTFOLIO MANAGER",
+     "url": "https://www.fuel.ventures/our-team"
+    }
+   ],
+   "community": [
+    {
+     "text": "community wolf",
+     "url": "https://www.fuel.ventures/community-wolf"
+    },
+    {
+     "text": "eventscase raise series a",
+     "url": "https://www.fuel.ventures/eventscase-raise-series-a"
+    },
+    {
+     "text": "eventwise",
+     "url": "https://www.fuel.ventures/eventwise"
+    },
+    {
+     "text": "fuel ventures leads 340k investment in community wolf to power global public safety innovation via whatsapp",
+     "url": "https://www.fuel.ventures/fuel-ventures-leads-340k-investment-in-community-wolf-to-power-global-public-safety-innovation-via-whatsapp"
+    },
+    {
+     "text": "fuel ventures leads 525k investment in eventwise to revolutionise event budgeting at scale",
+     "url": "https://www.fuel.ventures/fuel-ventures-leads-525k-investment-in-eventwise-to-revolutionise-event-budgeting-at-scale"
+    },
+    {
+     "text": "pitch please fuel ventures are doing a clubhouse pitching event",
+     "url": "https://www.fuel.ventures/pitch-please-fuel-ventures-are-doing-a-clubhouse-pitching-event"
+    },
+    {
+     "text": "ppc protect chosen for international growth programme",
+     "url": "https://www.fuel.ventures/ppc-protect-chosen-for-international-growth-programme"
+    },
+    {
+     "text": "trudenty the consumer data network for trusted commerce announces its pre seed round",
+     "url": "https://www.fuel.ventures/trudenty-the-consumer-data-network-for-trusted-commerce-announces-its-pre-seed-round"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.667,
+   "community": 1.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 1.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "2/5"
+  },
+  "rank": 54,
+  "why": "named portfolio/platform contact: Christina Levada (HEAD OF OPERATIONS)."
+ },
+ {
+  "fund": "Mercia Ventures",
+  "fund_type": "VC",
+  "website": "https://www.mercia.co.uk",
+  "scrape_status": "partial",
+  "portfolio_urls": [
+   "https://www.mercia.co.uk/about-us/portfolio/"
+  ],
+  "company_count": 32,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 3,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Amber Jardine",
+     "title": "Portfolio Manager",
+     "url": "https://www.mercia.co.uk/about-us/team/"
+    },
+    {
+     "name": "Arun Fernandez",
+     "title": "Platform Community Lead",
+     "url": "https://www.mercia.co.uk/about-us/team/"
+    },
+    {
+     "name": "Clive Broadhurst",
+     "title": "Portfolio Director (SME) - Frontier Development Capital",
+     "url": "https://www.mercia.co.uk/about-us/team/"
+    },
+    {
+     "name": "David Baker",
+     "title": "Portfolio Director",
+     "url": "https://www.mercia.co.uk/about-us/team/"
+    }
+   ],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 1.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "partial",
+   "signals_with_data": "1/5"
+  },
+  "rank": 55,
+  "why": "named portfolio/platform contact: Amber Jardine (Portfolio Manager)."
+ },
+ {
+  "fund": "Foresight Group",
+  "fund_type": "VC",
+  "website": "https://foresight.group",
+  "scrape_status": "partial",
+  "portfolio_urls": [
+   "https://foresight.group/growing-companies/portfolio-companies/"
+  ],
+  "company_count": 10,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "partial",
+   "signals_with_data": "0/5"
+  },
+  "rank": 56,
+  "why": "."
+ },
+ {
+  "fund": "Blackfinch Ventures",
+  "fund_type": "VC",
+  "website": "https://blackfinch.ventures",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://blackfinch.ventures/portfolio/"
+  ],
+  "company_count": 54,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 57,
+  "why": "."
+ },
+ {
+  "fund": "Unilever Ventures",
+  "fund_type": "corporate VC",
+  "website": "https://www.unileverventures.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.unileverventures.com/portfolio/"
+  ],
+  "company_count": 8,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "0/5"
+  },
+  "rank": 58,
+  "why": "."
+ },
+ {
+  "fund": "Distill Ventures",
+  "fund_type": "corporate VC",
+  "website": "https://distillventures.com",
+  "scrape_status": "failed",
+  "portfolio_urls": [
+   "https://distillventures.com/portfolio"
+  ],
+  "company_count": 0,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "failed",
+   "signals_with_data": "0/5"
+  },
+  "rank": 59,
+  "why": "."
+ },
+ {
+  "fund": "SnackFutures (Mondelez)",
+  "fund_type": "corporate VC",
+  "website": "https://www.snackfutures.com",
+  "scrape_status": "no_companies_found",
+  "portfolio_urls": [
+   "https://www.snackfutures.com/"
+  ],
+  "company_count": 0,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "no_companies_found",
+   "signals_with_data": "0/5"
+  },
+  "rank": 60,
+  "why": "."
+ },
+ {
+  "fund": "ZX Ventures",
+  "fund_type": "corporate VC",
+  "website": "https://zx-ventures.com",
+  "scrape_status": "failed",
+  "portfolio_urls": [
+   "https://zx-ventures.com/"
+  ],
+  "company_count": 0,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "failed",
+   "signals_with_data": "0/5"
+  },
+  "rank": 61,
+  "why": "."
+ },
+ {
+  "fund": "Creandum",
+  "fund_type": "VC",
+  "website": "https://creandum.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://creandum.com/commitments/"
+  ],
+  "company_count": 35,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 3,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Daniel Ovenden",
+     "title": "Talent Team",
+     "url": "https://creandum.com/team/"
+    },
+    {
+     "name": "Michelle Coventry",
+     "title": "VP Talent",
+     "url": "https://creandum.com/team/"
+    },
+    {
+     "name": "Peter Stilwell",
+     "title": "Operating Partner",
+     "url": "https://creandum.com/team/"
+    }
+   ],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 1.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "1/5"
+  },
+  "rank": 62,
+  "why": "named portfolio/platform contact: Daniel Ovenden (Talent Team)."
+ },
+ {
+  "fund": "Point Nine",
+  "fund_type": "VC",
+  "website": "https://www.pointnine.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.pointnine.com/companies"
+  ],
+  "company_count": 25,
+  "brands": [],
+  "raw": {
+   "icp_count": 0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0,
+   "recent_deals": 0,
+   "pain_top": 0,
+   "platform_team": 2,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Aleksandra Zorylo",
+     "title": "Operating Partner",
+     "url": "https://www.pointnine.com/team"
+    },
+    {
+     "name": "Laura Weritz",
+     "title": "Director of Platform & Community",
+     "url": "https://www.pointnine.com/team"
+    }
+   ],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.0,
+   "pain": 0,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.0,
+   "fmcg_share": 0.0,
+   "avg_brand_fit": 0.0,
+   "recent_deals": 0.0,
+   "pain_top": 0,
+   "platform_team": 0.667,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 0.0,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": "1/5"
+  },
+  "rank": 63,
+  "why": "named portfolio/platform contact: Aleksandra Zorylo (Operating Partner)."
+ }
+]
