@@ -1,0 +1,296 @@
+{
+  "_note": "Manual curation on top of the Firecrawl data. Every entry carries a source URL or is labelled desk_knowledge (confidence Low).",
+  "drop_brands": {
+    "Star Brands": "cleaning products, not grocery",
+    "Bol": "news and site ambiguous; brand ceased UK retail trading per press, unverified",
+    "Rubies in the Rubble": "profile text is a copy of Hackney Gelato's page, so the fund link is unreliable"
+  },
+  "category": {
+    "meal_kit_dtc": [
+      "Mindful Chef",
+      "Parsley Box",
+      "STOCKED",
+      "Pasta Evangelists",
+      "KatKin",
+      "Marleybones",
+      "Bella & Duke",
+      "Pure",
+      "All Things"
+    ],
+    "supplements": [
+      "Absolute Collagen",
+      "Wild Nutrition",
+      "Ingenious",
+      "Free Soul",
+      "puresport",
+      "Humantra",
+      "Protein Works"
+    ],
+    "manufacturer_own_label": [
+      "Bright Blue Foods",
+      "Addo Food Group",
+      "Bramble Foods",
+      "Clearly Drinks",
+      "ipn",
+      "Armitage Pet Care",
+      "Vibrant Foods",
+      "St Pierre Groupe",
+      "Cakesmiths",
+      "Hovis",
+      "Off-Piste Wines"
+    ]
+  },
+  "add_brands": [
+    {
+      "brand": "Reeve the Baker",
+      "fund": "Piper",
+      "status": "current",
+      "source": "https://piper.co.uk/",
+      "description": "Third-generation bakery brand; Piper's newest investment"
+    },
+    {
+      "brand": "TOSS",
+      "fund": "SFC Capital",
+      "status": "unknown",
+      "source": "https://www.grocerygazette.co.uk/2026/08/13/toss-secures-660k-in-investment-funding/",
+      "description": "Salad dressing brand; raised £660k in Aug 2026"
+    },
+    {
+      "brand": "Shicken (Plant Alternative)",
+      "fund": "Veg Capital",
+      "status": "unknown",
+      "source": "veg capital portfolio page (funds.jsonl)",
+      "description": "Plant-based chicken brand"
+    },
+    {
+      "brand": "Native Snacks",
+      "fund": "Veg Capital",
+      "status": "unknown",
+      "source": "veg capital portfolio page (funds.jsonl)",
+      "description": "Plant-based snack brand"
+    },
+    {
+      "brand": "Space Goods",
+      "fund": "Five Seasons Ventures",
+      "status": "unknown",
+      "source": "https://seedtable.com/investors/five-seasons-ventures/portfolio",
+      "description": "UK functional drinks brand"
+    },
+    {
+      "brand": "Tony's Chocolonely",
+      "fund": "JamJar Investments",
+      "status": "unknown",
+      "source": "https://www.jamjarinvestments.com/",
+      "description": "Chocolate brand with large UK grocery footprint; Procuros customer",
+      "uk_note": "NL HQ, strong UK retail presence"
+    },
+    {
+      "brand": "Tony's Chocolonely",
+      "fund": "Verlinvest",
+      "status": "unknown",
+      "source": "https://www.verlinvest.com/portfolio",
+      "description": "Chocolate brand; Procuros customer",
+      "uk_note": "NL HQ"
+    }
+  ],
+  "status_override": {
+    "Graze|JamJar Investments": [
+      "exited_old",
+      "desk_knowledge: sold to Unilever 2019"
+    ],
+    "innocent|JamJar Investments": [
+      "exited_old",
+      "https://www.jamjarinvestments.com/ (founders sold to Coca-Cola 2013)"
+    ],
+    "Fever-Tree|LDC": [
+      "exited_old",
+      "https://www.ldc.co.uk/sector/consumer/ (IPO 2014)"
+    ],
+    "Seabrook|LDC": [
+      "exited_old",
+      "LDC profile: sold to Calbee Oct 2018"
+    ],
+    "Cakesmiths|LDC": [
+      "exited_old",
+      "https://www.ldc.co.uk/sector/consumer/"
+    ],
+    "Tyrrells Crisps|Langholm Capital": [
+      "exited_old",
+      "https://en.wikipedia.org/wiki/Langholm_Capital (sold 2013)"
+    ],
+    "Dorset Cereals|Langholm Capital": [
+      "exited_old",
+      "Langholm page: previous investment"
+    ],
+    "Bart Spices|Langholm Capital": [
+      "exited_old",
+      "Langholm page: previous investment"
+    ],
+    "Purity Soft Drinks|Langholm Capital": [
+      "exited_old",
+      "Langholm page: sold to Verdane Oct 2021"
+    ],
+    "GRENADE|Lion Capital": [
+      "exited_old",
+      "desk_knowledge: sold to Mondelez 2021"
+    ],
+    "Kettle Foods|Lion Capital": [
+      "exited_old",
+      "desk_knowledge: sold 2010"
+    ],
+    "Popchips|JamJar Investments": [
+      "unknown",
+      "not stated"
+    ],
+    "Barking Heads|Piper": [
+      "exited_old",
+      "Piper profile: exited 2021"
+    ],
+    "Bottlegreen|Piper": [
+      "exited_old",
+      "Piper profile: exited 2011"
+    ],
+    "Forthglade|Piper": [
+      "exited_old",
+      "Piper profile: exited 2020"
+    ],
+    "Maximuscle|Piper": [
+      "exited_old",
+      "Piper profile: exited 2007"
+    ],
+    "Mindful Chef|Piper": [
+      "exited_old",
+      "Piper profile: exited to Nestle 2020"
+    ],
+    "PROPER SNACKS|Piper": [
+      "exited_old",
+      "Piper profile: exited 2021"
+    ],
+    "PROPER SNACKS|JamJar Investments": [
+      "exited_old",
+      "Exponent took majority 2021"
+    ],
+    "Hovis|Endless": [
+      "exited_recent",
+      "Endless page: sold to ABF"
+    ],
+    "Loch Lomond Group|Exponent": [
+      "exited_old",
+      "Exponent profile: realised"
+    ],
+    "Quorn Foods|Exponent": [
+      "exited_old",
+      "Exponent profile: realised, sold to Monde Nissin"
+    ],
+    "MPM|ECI Partners": [
+      "exited_old",
+      "ECI profile: exited to 3i (3i later sold to Partners Group, Jun 2025)"
+    ],
+    "Protein Works|YFM Equity Partners": [
+      "exited_old",
+      "YFM profile: acquired by Lactalis (desk_knowledge: 2023)"
+    ],
+    "Off-Piste Wines|BGF": [
+      "exited_old",
+      "BGF profile: exited"
+    ],
+    "St Pierre Groupe|BGF": [
+      "exited_old",
+      "BGF profile: exited"
+    ],
+    "Plenish|Pembroke VCT": [
+      "exited_old",
+      "Pembroke profile: acquired by Britvic"
+    ],
+    "Pasta Evangelists|Pembroke VCT": [
+      "exited_old",
+      "Pembroke profile: exited; desk_knowledge: Barilla majority 2021"
+    ],
+    "Artisanal Spirits Company|BGF": [
+      "exited_recent",
+      "BGF food & drink filter lists as current in Oct 2026 web pass; Firecrawl marks exited?"
+    ],
+    "Joe & Seph’s|BGF": [
+      "current",
+      "https://www.bgf.co.uk/portfolio/?sector=food-drink lists as current"
+    ],
+    "THIS|BGF": [
+      "current",
+      "https://www.bgf.co.uk/portfolio/?sector=food-drink lists as current"
+    ],
+    "Bramble Foods|LDC": [
+      "current",
+      "LDC profile: backed Dec 2021"
+    ],
+    "Addo Food Group|LDC": [
+      "unknown",
+      "LDC profile: backed 2017 SBO"
+    ],
+    "Sneak|True (TrueCapital)": [
+      "current",
+      "True site lists as portfolio"
+    ],
+    "Nakd|Hambro Perks": [
+      "exited_old",
+      "desk_knowledge: Natural Balance Foods sold to Lotus Bakeries 2019"
+    ]
+  },
+  "fund_size_stage": {
+    "_scale": "1 = small/early (easy to reach a partner), 0.7 = lower-mid, 0.5 = mid-market, 0.3 = large; desk_knowledge, confidence Low",
+    "BGF": 0.5,
+    "LDC": 0.5,
+    "Piper": 0.7,
+    "Inflexion": 0.3,
+    "Livingbridge": 0.5,
+    "Palatine": 0.5,
+    "YFM Equity Partners": 0.7,
+    "Mobeus": 0.7,
+    "NorthEdge": 0.5,
+    "Kester Capital": 0.7,
+    "Elaghmore": 0.7,
+    "Silverfleet": 0.5,
+    "Synova": 0.5,
+    "CBPE": 0.5,
+    "True (TrueCapital)": 0.7,
+    "Langholm Capital": 0.7,
+    "Exponent": 0.3,
+    "CapVest": 0.3,
+    "Lion Capital": 0.3,
+    "Endless": 0.5,
+    "Penta Capital": 0.7,
+    "Rutland Partners": 0.5,
+    "Inverleith": 0.7,
+    "Phoenix Equity Partners": 0.5,
+    "Primary Capital": 0.5,
+    "ECI Partners": 0.5,
+    "Tenzing": 0.7,
+    "Bridgepoint Development Capital": 0.3,
+    "Gresham House Ventures": 0.7,
+    "Literacy Capital": 0.7,
+    "The Craftory": 0.7,
+    "JamJar Investments": 1.0,
+    "Felix Capital": 0.7,
+    "Eka Ventures": 1.0,
+    "Five Seasons Ventures": 0.7,
+    "Active Partners": 0.7,
+    "Beringea": 0.7,
+    "Octopus Ventures": 0.5,
+    "Verlinvest": 0.3,
+    "Veg Capital": 1.0,
+    "Sustainable Food Ventures": 1.0,
+    "Big Idea Ventures": 1.0,
+    "Smedvig Capital": 1.0,
+    "Hambro Perks": 0.7,
+    "Fuel Ventures": 1.0,
+    "Mercia Ventures": 0.7,
+    "Pembroke VCT": 0.7,
+    "Foresight Group": 0.5,
+    "Maven Capital Partners": 0.7,
+    "Puma Private Equity": 0.7,
+    "SFC Capital": 1.0,
+    "Blackfinch Ventures": 1.0,
+    "Development Bank of Wales": 0.7,
+    "Ascension": 1.0,
+    "Unilever Ventures": 0.5
+  }
+}

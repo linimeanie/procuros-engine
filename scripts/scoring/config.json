@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-10-24",
+  "recent_months": 24,
+  "pillars": {"fit": 0.40, "pain": 0.30, "access": 0.20, "strategic": 0.10},
+  "fit": {"icp_count": 0.45, "fmcg_share": 0.20, "avg_brand_fit": 0.20, "recent_deals": 0.15},
+  "pain": {"listings": 0.30, "funding": 0.25, "ops_hiring": 0.20, "momentum": 0.15, "expansion": 0.10},
+  "access": {"platform_team": 0.40, "community": 0.30, "size_stage": 0.15, "vendor_openness": 0.15},
+  "strategic": {"procuros_overlap": 0.40, "brand_halo": 0.30, "ecosystem": 0.30},
+  "brand_fit": {"retail": 0.35, "size_proxy": 0.25, "category": 0.20, "ops_gap": 0.10, "status": 0.10},
+  "status_weight": {"current": 1.0, "unknown": 0.85, "exited_recent": 0.5, "exited_old": 0.15},
+  "pain_top_n": 5,
+  "gate_brands": 3,
+  "tiers": {"A": {"min_score": 38, "min_brands": 3}, "B": {"min_score": 30}},
+  "major_grocers": ["Tesco", "Sainsbury's", "Asda", "Morrisons", "Waitrose", "Ocado", "Co-op", "M&S", "Aldi", "Lidl", "Boots", "Holland & Barrett"],
+  "procuros_customers": ["LittleMoons", "Little Moons", "Windmill Organics", "Tony's Chocolonely", "Tony's", "Flaconi", "Niche Beauty", "TrueStart", "Truestart"],
+  "excluded_fund_types": ["angel/crowdfunding listing"],
+  "anchor_funds": ["Creandum", "Point Nine"]
+}
