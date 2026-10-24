@@ -1,179 +1,5 @@
 [
  {
-  "fund": "JamJar Investments",
-  "fund_type": "VC",
-  "website": "https://www.jamjarinvestments.com",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://www.jamjarinvestments.com/jamjar-portfolio"
-  ],
-  "company_count": 77,
-  "brands": [
-   {
-    "brand": "Marleybones",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.605,
-    "pain": 0.65,
-    "retailers": [
-     "Waitrose",
-     "Ocado"
-    ]
-   },
-   {
-    "brand": "PROPER SNACKS",
-    "status": "exited_old",
-    "status_source": "Exponent took majority 2021",
-    "fit": 0.45,
-    "pain": 0.167,
-    "retailers": []
-   },
-   {
-    "brand": "innocent",
-    "status": "exited_old",
-    "status_source": "https://www.jamjarinvestments.com/ (founders sold to Coca-Cola 2013)",
-    "fit": 0.35,
-    "pain": 0.5,
-    "retailers": []
-   },
-   {
-    "brand": "Humantra",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.432,
-    "pain": 0.325,
-    "retailers": [
-     "Boots"
-    ]
-   },
-   {
-    "brand": "Reformed",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Truestart",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.9,
-    "pain": 0.375,
-    "retailers": [
-     "Asda",
-     "Morrisons",
-     "Ocado",
-     "Co-op"
-    ]
-   },
-   {
-    "brand": "Graze",
-    "status": "exited_old",
-    "status_source": "desk_knowledge: sold to Unilever 2019",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Lucky Saint",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.1,
-    "retailers": []
-   },
-   {
-    "brand": "Dot Dot Tea",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.025,
-    "retailers": []
-   },
-   {
-    "brand": "XOXO",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.425,
-    "pain": 0.425,
-    "retailers": []
-   },
-   {
-    "brand": "Popchips",
-    "status": "unknown",
-    "status_source": "not stated",
-    "fit": 0.35,
-    "pain": 0.25,
-    "retailers": []
-   },
-   {
-    "brand": "Tony's Chocolonely",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   }
-  ],
-  "raw": {
-   "icp_count": 3.6677,
-   "fmcg_share": 0.10519480519480519,
-   "avg_brand_fit": 0.45280246913580247,
-   "recent_deals": 1,
-   "pain_top": 0.34425,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 1.0,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 2,
-   "brand_halo": 4,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [
-    "Truestart",
-    "Tony's Chocolonely"
-   ],
-   "recent_deal_brands": [
-    "Truestart"
-   ]
-  },
-  "gate": 1.0,
-  "pillars": {
-   "fit": 0.603,
-   "pain": 0.344,
-   "access": 0.15,
-   "strategic": 0.64
-  },
-  "normalised": {
-   "icp_count": 0.782,
-   "fmcg_share": 0.278,
-   "avg_brand_fit": 0.503,
-   "recent_deals": 0.631,
-   "pain_top": 0.344,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 1.0,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 1.0,
-   "brand_halo": 0.8,
-   "ecosystem": 0.0
-  },
-  "score": 43.8,
-  "live_brand_count": 9,
-  "tier": "A",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": "3/5"
-  },
-  "rank": 1,
-  "why": "9 UK grocery brands held now or exited <24m, incl. Truestart (Asda/Morrisons/Ocado), Marleybones (Waitrose/Ocado), Humantra (Boots); recent trigger: Truestart: \"TrueStart launches Espresso Coffee Concentrate\" (2026-05); already backs Procuros customer Tony's Chocolonely, Truestart."
- },
- {
   "fund": "Active Partners",
   "fund_type": "PE",
   "website": "https://active.partners",
@@ -188,7 +14,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.305,
-    "pain": 0.25,
+    "pain": 0.083,
     "retailers": []
    },
    {
@@ -196,7 +22,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.35,
-    "pain": 0.125,
+    "pain": 0.05,
     "retailers": []
    },
    {
@@ -204,7 +30,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.405,
-    "pain": 0.633,
+    "pain": 0.808,
     "retailers": []
    },
    {
@@ -212,7 +38,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.305,
-    "pain": 0.425,
+    "pain": 0.533,
     "retailers": []
    },
    {
@@ -228,7 +54,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.512,
-    "pain": 0.7,
+    "pain": 0.332,
     "retailers": [
      "Tesco"
     ]
@@ -238,7 +64,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.425,
-    "pain": 0.275,
+    "pain": 0.084,
     "retailers": []
    },
    {
@@ -246,7 +72,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.605,
-    "pain": 0.65,
+    "pain": 0.779,
     "retailers": [
      "Waitrose",
      "Ocado"
@@ -258,7 +84,7 @@
    "fmcg_share": 0.09315068493150684,
    "avg_brand_fit": 0.40712499999999996,
    "recent_deals": 0,
-   "pain_top": 0.45610999999999996,
+   "pain_top": 0.43112000000000006,
    "platform_team": 1,
    "community": 3,
    "size_stage": 0.7,
@@ -316,7 +142,7 @@
   "gate": 1.0,
   "pillars": {
    "fit": 0.443,
-   "pain": 0.456,
+   "pain": 0.431,
    "access": 0.538,
    "strategic": 0.12
   },
@@ -325,7 +151,7 @@
    "fmcg_share": 0.247,
    "avg_brand_fit": 0.452,
    "recent_deals": 0.0,
-   "pain_top": 0.456,
+   "pain_top": 0.431,
    "platform_team": 0.333,
    "community": 1.0,
    "size_stage": 0.7,
@@ -334,226 +160,16 @@
    "brand_halo": 0.4,
    "ecosystem": 0.0
   },
-  "score": 43.4,
+  "score": 42.6,
   "live_brand_count": 8,
   "tier": "A",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "4/5"
+   "signals_with_data": 12,
+   "signals_total": 16
   },
-  "rank": 2,
+  "rank": 1,
   "why": "8 UK grocery brands held now or exited <24m, incl. Marleybones (Waitrose/Ocado), Freja (Tesco), KatKin; recent trigger: Marleybones: \"Marleybones raises seven-figure funding from Estée Lauder heiress Jane Lauder\" (2025-11); named portfolio/platform contact: Tom Curling (Operating Partner)."
- },
- {
-  "fund": "SFC Capital",
-  "fund_type": "VC",
-  "website": "https://sfccapital.com",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://portal.sfccapital.com/portfolio"
-  ],
-  "company_count": 436,
-  "brands": [
-   {
-    "brand": "Free Soul",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.532,
-    "pain": 0.617,
-    "retailers": [
-     "Boots"
-    ]
-   },
-   {
-    "brand": "Olly's",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.725,
-    "pain": 0.025,
-    "retailers": [
-     "Tesco",
-     "Sainsbury's"
-    ]
-   },
-   {
-    "brand": "G Spot",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.725,
-    "pain": 0.7,
-    "retailers": [
-     "Sainsbury's",
-     "M&S"
-    ]
-   },
-   {
-    "brand": "Ingenious",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.27,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Sweet Joe's",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.512,
-    "pain": 0.0,
-    "retailers": [
-     "Asda"
-    ]
-   },
-   {
-    "brand": "Griddle",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Hunter & Gather",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.512,
-    "pain": 0.55,
-    "retailers": [
-     "Waitrose"
-    ]
-   },
-   {
-    "brand": "Punchy",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.025,
-    "retailers": []
-   },
-   {
-    "brand": "ON Beer",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.175,
-    "retailers": []
-   },
-   {
-    "brand": "Some Grub",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.512,
-    "pain": 0.0,
-    "retailers": [
-     "Co-op"
-    ]
-   },
-   {
-    "brand": "Gusto Snacks",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.512,
-    "pain": 0.175,
-    "retailers": [
-     "Holland & Barrett"
-    ]
-   },
-   {
-    "brand": "Naturelly Jelly Juice",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Oteas",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Hope & Glory",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Solo Coffee",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.512,
-    "pain": 0.325,
-    "retailers": [
-     "Tesco"
-    ]
-   },
-   {
-    "brand": "TOSS",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   }
-  ],
-  "raw": {
-   "icp_count": 6.1727,
-   "fmcg_share": 0.031192660550458714,
-   "avg_brand_fit": 0.45387500000000003,
-   "recent_deals": 1,
-   "pain_top": 0.40239,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 1.0,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 2,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": [
-    "Free Soul"
-   ]
-  },
-  "gate": 1.0,
-  "pillars": {
-   "fit": 0.662,
-   "pain": 0.402,
-   "access": 0.15,
-   "strategic": 0.12
-  },
-  "normalised": {
-   "icp_count": 1.0,
-   "fmcg_share": 0.083,
-   "avg_brand_fit": 0.504,
-   "recent_deals": 0.631,
-   "pain_top": 0.402,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 1.0,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.4,
-   "ecosystem": 0.0
-  },
-  "score": 42.8,
-  "live_brand_count": 16,
-  "tier": "A",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": "2/5"
-  },
-  "rank": 3,
-  "why": "16 UK grocery brands held now or exited <24m, incl. G Spot (Sainsbury's/M&S), Olly's (Tesco/Sainsbury's), Free Soul (Boots); recent trigger: G Spot: \"Sainsbury’s lists G Spot by Gillian Anderson\" (2025-01)."
  },
  {
   "fund": "BGF",
@@ -581,7 +197,7 @@
     "status": "current",
     "status_source": "https://www.bgf.co.uk/portfolio/?sector=food-drink lists as current",
     "fit": 0.425,
-    "pain": 0.4,
+    "pain": 0.556,
     "retailers": []
    },
    {
@@ -603,7 +219,7 @@
     "status": "exited_old",
     "status_source": "BGF profile: exited",
     "fit": 0.51,
-    "pain": 0.05,
+    "pain": 0.027,
     "retailers": []
    },
    {
@@ -619,7 +235,7 @@
     "status": "exited_old",
     "status_source": "BGF profile: exited",
     "fit": 0.51,
-    "pain": 0.325,
+    "pain": 0.289,
     "retailers": []
    },
    {
@@ -627,7 +243,7 @@
     "status": "exited_recent",
     "status_source": "BGF food & drink filter lists as current in Oct 2026 web pass; Firecrawl marks exited?",
     "fit": 0.35,
-    "pain": 0.15,
+    "pain": 0.131,
     "retailers": []
    }
   ],
@@ -636,7 +252,7 @@
    "fmcg_share": 0.011056511056511056,
    "avg_brand_fit": 0.5482777777777778,
    "recent_deals": 0,
-   "pain_top": 0.12886,
+   "pain_top": 0.15639,
    "platform_team": 2,
    "community": 3,
    "size_stage": 0.5,
@@ -688,7 +304,7 @@
   "gate": 1.0,
   "pillars": {
    "fit": 0.412,
-   "pain": 0.129,
+   "pain": 0.156,
    "access": 0.792,
    "strategic": 0.45
   },
@@ -697,7 +313,7 @@
    "fmcg_share": 0.029,
    "avg_brand_fit": 0.609,
    "recent_deals": 0.0,
-   "pain_top": 0.129,
+   "pain_top": 0.156,
    "platform_team": 0.667,
    "community": 1.0,
    "size_stage": 0.5,
@@ -706,14 +322,15 @@
    "brand_halo": 1.0,
    "ecosystem": 0.5
   },
-  "score": 40.7,
+  "score": 41.5,
   "live_brand_count": 5,
   "tier": "A",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "4/5"
+   "signals_with_data": 14,
+   "signals_total": 16
   },
-  "rank": 4,
+  "rank": 2,
   "why": "5 UK grocery brands held now or exited <24m, incl. Scrumbles (Tesco/Sainsbury's/Asda), Bella & Duke (Sainsbury's/Waitrose), Joe & Seph’s; recent trigger: Joe & Seph’s: \"Joe & Seph’s lands £100k Saudi supermarket deal with government backing\" (2026-09); named portfolio/platform contact: Andrew Taylor (Value Creation)."
  },
  {
@@ -739,7 +356,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.812,
-    "pain": 0.675,
+    "pain": 1.0,
     "retailers": [
      "Asda",
      "Morrisons",
@@ -751,7 +368,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.35,
-    "pain": 0.025,
+    "pain": 0.006,
     "retailers": []
    },
    {
@@ -759,7 +376,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.525,
-    "pain": 0.392,
+    "pain": 0.144,
     "retailers": []
    },
    {
@@ -805,7 +422,7 @@
    "fmcg_share": 0.37777777777777777,
    "avg_brand_fit": 0.498375,
    "recent_deals": 1,
-   "pain_top": 0.18564,
+   "pain_top": 0.19549999999999998,
    "platform_team": 0,
    "community": 0,
    "size_stage": 1.0,
@@ -826,7 +443,7 @@
   "gate": 1.0,
   "pillars": {
    "fit": 0.743,
-   "pain": 0.186,
+   "pain": 0.195,
    "access": 0.15,
    "strategic": 0.24
   },
@@ -835,7 +452,7 @@
    "fmcg_share": 1.0,
    "avg_brand_fit": 0.554,
    "recent_deals": 0.631,
-   "pain_top": 0.186,
+   "pain_top": 0.195,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 1.0,
@@ -844,15 +461,565 @@
    "brand_halo": 0.8,
    "ecosystem": 0.0
   },
-  "score": 40.7,
+  "score": 41.0,
   "live_brand_count": 8,
   "tier": "A",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 11,
+   "signals_total": 16
+  },
+  "rank": 3,
+  "why": "8 UK grocery brands held now or exited <24m, incl. Mister Free'd (Sainsbury's/Waitrose/Ocado), One Planet Pizza (Asda/Morrisons/Co-op), OGGS; recent trigger: One Planet Pizza: \"One Planet Pizza Enters Frozen Ready Meals With Three-Dish Asda Exclusive\" (2026-10)."
+ },
+ {
+  "fund": "JamJar Investments",
+  "fund_type": "VC",
+  "website": "https://www.jamjarinvestments.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.jamjarinvestments.com/jamjar-portfolio"
+  ],
+  "company_count": 77,
+  "brands": [
+   {
+    "brand": "Marleybones",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.605,
+    "pain": 0.779,
+    "retailers": [
+     "Waitrose",
+     "Ocado"
+    ]
+   },
+   {
+    "brand": "PROPER SNACKS",
+    "status": "exited_old",
+    "status_source": "Exponent took majority 2021",
+    "fit": 0.45,
+    "pain": 0.124,
+    "retailers": []
+   },
+   {
+    "brand": "innocent",
+    "status": "exited_old",
+    "status_source": "https://www.jamjarinvestments.com/ (founders sold to Coca-Cola 2013)",
+    "fit": 0.35,
+    "pain": 0.352,
+    "retailers": []
+   },
+   {
+    "brand": "Humantra",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.432,
+    "pain": 0.096,
+    "retailers": [
+     "Boots"
+    ]
+   },
+   {
+    "brand": "Reformed",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Truestart",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.9,
+    "pain": 0.269,
+    "retailers": [
+     "Asda",
+     "Morrisons",
+     "Ocado",
+     "Co-op"
+    ]
+   },
+   {
+    "brand": "Graze",
+    "status": "exited_old",
+    "status_source": "desk_knowledge: sold to Unilever 2019",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Lucky Saint",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.049,
+    "retailers": []
+   },
+   {
+    "brand": "Dot Dot Tea",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.005,
+    "retailers": []
+   },
+   {
+    "brand": "XOXO",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.425,
+    "pain": 0.106,
+    "retailers": []
+   },
+   {
+    "brand": "Popchips",
+    "status": "unknown",
+    "status_source": "not stated",
+    "fit": 0.35,
+    "pain": 0.206,
+    "retailers": []
+   },
+   {
+    "brand": "Tony's Chocolonely",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 3.6677,
+   "fmcg_share": 0.10519480519480519,
+   "avg_brand_fit": 0.45280246913580247,
+   "recent_deals": 1,
+   "pain_top": 0.24752000000000002,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 2,
+   "brand_halo": 4,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [
+    "Truestart",
+    "Tony's Chocolonely"
+   ],
+   "recent_deal_brands": [
+    "Truestart"
+   ]
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.603,
+   "pain": 0.248,
+   "access": 0.15,
+   "strategic": 0.64
+  },
+  "normalised": {
+   "icp_count": 0.782,
+   "fmcg_share": 0.278,
+   "avg_brand_fit": 0.503,
+   "recent_deals": 0.631,
+   "pain_top": 0.248,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 1.0,
+   "brand_halo": 0.8,
+   "ecosystem": 0.0
+  },
+  "score": 40.9,
+  "live_brand_count": 9,
+  "tier": "A",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 11,
+   "signals_total": 16
+  },
+  "rank": 4,
+  "why": "9 UK grocery brands held now or exited <24m, incl. Truestart (Asda/Morrisons/Ocado), Marleybones (Waitrose/Ocado), Humantra (Boots); recent trigger: Truestart: \"TrueStart launches Espresso Coffee Concentrate\" (2026-05); already backs Procuros customer Tony's Chocolonely, Truestart."
+ },
+ {
+  "fund": "SFC Capital",
+  "fund_type": "VC",
+  "website": "https://sfccapital.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "company_count": 436,
+  "brands": [
+   {
+    "brand": "Free Soul",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.532,
+    "pain": 0.589,
+    "retailers": [
+     "Boots"
+    ]
+   },
+   {
+    "brand": "Olly's",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.725,
+    "pain": 0.024,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's"
+    ]
+   },
+   {
+    "brand": "G Spot",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.725,
+    "pain": 0.732,
+    "retailers": [
+     "Sainsbury's",
+     "M&S"
+    ]
+   },
+   {
+    "brand": "Ingenious",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.27,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Sweet Joe's",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.0,
+    "retailers": [
+     "Asda"
+    ]
+   },
+   {
+    "brand": "Griddle",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Hunter & Gather",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.219,
+    "retailers": [
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Punchy",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.005,
+    "retailers": []
+   },
+   {
+    "brand": "ON Beer",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.1,
+    "retailers": []
+   },
+   {
+    "brand": "Some Grub",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.0,
+    "retailers": [
+     "Co-op"
+    ]
+   },
+   {
+    "brand": "Gusto Snacks",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.038,
+    "retailers": [
+     "Holland & Barrett"
+    ]
+   },
+   {
+    "brand": "Naturelly Jelly Juice",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Oteas",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Hope & Glory",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Solo Coffee",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.512,
+    "pain": 0.085,
+    "retailers": [
+     "Tesco"
+    ]
+   },
+   {
+    "brand": "TOSS",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 6.1727,
+   "fmcg_share": 0.031192660550458714,
+   "avg_brand_fit": 0.45387500000000003,
+   "recent_deals": 1,
+   "pain_top": 0.29324999999999996,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 2,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": [
+    "Free Soul"
+   ]
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.662,
+   "pain": 0.293,
+   "access": 0.15,
+   "strategic": 0.12
+  },
+  "normalised": {
+   "icp_count": 1.0,
+   "fmcg_share": 0.083,
+   "avg_brand_fit": 0.504,
+   "recent_deals": 0.631,
+   "pain_top": 0.293,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.4,
+   "ecosystem": 0.0
+  },
+  "score": 39.5,
+  "live_brand_count": 16,
+  "tier": "A",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 10,
+   "signals_total": 16
   },
   "rank": 5,
-  "why": "8 UK grocery brands held now or exited <24m, incl. Mister Free'd (Sainsbury's/Waitrose/Ocado), One Planet Pizza (Asda/Morrisons/Co-op), OGGS; recent trigger: One Planet Pizza: \"One Planet Pizza Enters Frozen Ready Meals With Three-Dish Asda Exclusive\" (2026-10)."
+  "why": "16 UK grocery brands held now or exited <24m, incl. G Spot (Sainsbury's/M&S), Olly's (Tesco/Sainsbury's), Free Soul (Boots); recent trigger: G Spot: \"Sainsbury’s lists G Spot by Gillian Anderson\" (2025-01)."
+ },
+ {
+  "fund": "Piper",
+  "fund_type": "PE",
+  "website": "https://piper.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://piper.co.uk/our-brands/"
+  ],
+  "company_count": 44,
+  "brands": [
+   {
+    "brand": "PROPER SNACKS",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2021",
+    "fit": 0.45,
+    "pain": 0.124,
+    "retailers": []
+   },
+   {
+    "brand": "Borough Broth",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.912,
+    "pain": 0.708,
+    "retailers": [
+     "Sainsbury's",
+     "Tesco",
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Wild Nutrition",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.27,
+    "pain": 0.213,
+    "retailers": []
+   },
+   {
+    "brand": "Mindful Chef",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited to Nestle 2020",
+    "fit": 0.23,
+    "pain": 0.129,
+    "retailers": []
+   },
+   {
+    "brand": "Barking Heads",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2021",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Forthglade",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2020",
+    "fit": 0.9,
+    "pain": 0.363,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Asda",
+     "Morrisons",
+     "Waitrose",
+     "Ocado"
+    ]
+   },
+   {
+    "brand": "Bottlegreen",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2011",
+    "fit": 0.512,
+    "pain": 0.161,
+    "retailers": [
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Maximuscle",
+    "status": "exited_old",
+    "status_source": "Piper profile: exited 2007",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Reeve the Baker",
+    "status": "current",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 1.7735,
+   "fmcg_share": 0.08181818181818182,
+   "avg_brand_fit": 0.4926388888888889,
+   "recent_deals": 2,
+   "pain_top": 0.17616,
+   "platform_team": 1,
+   "community": 1,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 3,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Annabel Feather",
+     "title": "Associate Partner, Talent",
+     "url": "https://piper.co.uk/our-team/"
+    }
+   ],
+   "community": [
+    {
+     "text": "Founder stories",
+     "url": "https://piper.co.uk/founder-stories"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": [
+    "Borough Broth"
+   ]
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.536,
+   "pain": 0.176,
+   "access": 0.338,
+   "strategic": 0.18
+  },
+  "normalised": {
+   "icp_count": 0.518,
+   "fmcg_share": 0.217,
+   "avg_brand_fit": 0.547,
+   "recent_deals": 1.0,
+   "pain_top": 0.176,
+   "platform_team": 0.333,
+   "community": 0.333,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.6,
+   "ecosystem": 0.0
+  },
+  "score": 35.3,
+  "live_brand_count": 3,
+  "tier": "B",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 12,
+   "signals_total": 16
+  },
+  "rank": 6,
+  "why": "3 UK grocery brands held now or exited <24m, incl. Borough Broth (Sainsbury's/Tesco/Waitrose), Wild Nutrition, Reeve the Baker; recent trigger: Borough Broth: \"Borough Broth secures £7.5m investment to expand organic range\" (2025-12); named portfolio/platform contact: Annabel Feather (Associate Partner, Talent)."
  },
  {
   "fund": "Maven Capital Partners",
@@ -869,7 +1036,7 @@
     "status": "current",
     "status_source": "portfolio page",
     "fit": 0.35,
-    "pain": 0.5,
+    "pain": 0.6,
     "retailers": []
    },
    {
@@ -877,7 +1044,7 @@
     "status": "current",
     "status_source": "portfolio page",
     "fit": 0.512,
-    "pain": 0.5,
+    "pain": 0.13,
     "retailers": [
      "Waitrose"
     ]
@@ -888,7 +1055,7 @@
    "fmcg_share": 0.012903225806451613,
    "avg_brand_fit": 0.431,
    "recent_deals": 0,
-   "pain_top": 0.5,
+   "pain_top": 0.365,
    "platform_team": 3,
    "community": 3,
    "size_stage": 0.7,
@@ -1014,7 +1181,7 @@
   "gate": 0.67,
   "pillars": {
    "fit": 0.245,
-   "pain": 0.5,
+   "pain": 0.365,
    "access": 0.637,
    "strategic": 0.04
   },
@@ -1023,7 +1190,7 @@
    "fmcg_share": 0.034,
    "avg_brand_fit": 0.479,
    "recent_deals": 0.0,
-   "pain_top": 0.5,
+   "pain_top": 0.365,
    "platform_team": 1.0,
    "community": 1.0,
    "size_stage": 0.7,
@@ -1032,275 +1199,16 @@
    "brand_halo": 0.2,
    "ecosystem": 0.0
   },
-  "score": 37.9,
+  "score": 33.9,
   "live_brand_count": 2,
   "tier": "B",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "4/5"
-  },
-  "rank": 6,
-  "why": "2 UK grocery brands held now or exited <24m, incl. Tiba Tempeh (Waitrose), Tom Parker Creamery; recent trigger: Tiba Tempeh: \"Tiba Tempeh launches new SKU, lands in Waitrose\" (2025-04); named portfolio/platform contact: Carl Edgehill (Portfolio Director)."
- },
- {
-  "fund": "Piper",
-  "fund_type": "PE",
-  "website": "https://piper.co.uk",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://piper.co.uk/our-brands/"
-  ],
-  "company_count": 44,
-  "brands": [
-   {
-    "brand": "PROPER SNACKS",
-    "status": "exited_old",
-    "status_source": "Piper profile: exited 2021",
-    "fit": 0.45,
-    "pain": 0.167,
-    "retailers": []
-   },
-   {
-    "brand": "Borough Broth",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.912,
-    "pain": 0.675,
-    "retailers": [
-     "Sainsbury's",
-     "Tesco",
-     "Waitrose"
-    ]
-   },
-   {
-    "brand": "Wild Nutrition",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.27,
-    "pain": 0.275,
-    "retailers": []
-   },
-   {
-    "brand": "Mindful Chef",
-    "status": "exited_old",
-    "status_source": "Piper profile: exited to Nestle 2020",
-    "fit": 0.23,
-    "pain": 0.2,
-    "retailers": []
-   },
-   {
-    "brand": "Barking Heads",
-    "status": "exited_old",
-    "status_source": "Piper profile: exited 2021",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Forthglade",
-    "status": "exited_old",
-    "status_source": "Piper profile: exited 2020",
-    "fit": 0.9,
-    "pain": 0.4,
-    "retailers": [
-     "Tesco",
-     "Sainsbury's",
-     "Asda",
-     "Morrisons",
-     "Waitrose",
-     "Ocado"
-    ]
-   },
-   {
-    "brand": "Bottlegreen",
-    "status": "exited_old",
-    "status_source": "Piper profile: exited 2011",
-    "fit": 0.512,
-    "pain": 0.25,
-    "retailers": [
-     "Waitrose"
-    ]
-   },
-   {
-    "brand": "Maximuscle",
-    "status": "exited_old",
-    "status_source": "Piper profile: exited 2007",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Reeve the Baker",
-    "status": "current",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   }
-  ],
-  "raw": {
-   "icp_count": 1.7735,
-   "fmcg_share": 0.08181818181818182,
-   "avg_brand_fit": 0.4926388888888889,
-   "recent_deals": 2,
-   "pain_top": 0.187,
-   "platform_team": 1,
-   "community": 1,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 3,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [
-    {
-     "name": "Annabel Feather",
-     "title": "Associate Partner, Talent",
-     "url": "https://piper.co.uk/our-team/"
-    }
-   ],
-   "community": [
-    {
-     "text": "Founder stories",
-     "url": "https://piper.co.uk/founder-stories"
-    }
-   ],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": [
-    "Borough Broth"
-   ]
-  },
-  "gate": 1.0,
-  "pillars": {
-   "fit": 0.536,
-   "pain": 0.187,
-   "access": 0.338,
-   "strategic": 0.18
-  },
-  "normalised": {
-   "icp_count": 0.518,
-   "fmcg_share": 0.217,
-   "avg_brand_fit": 0.547,
-   "recent_deals": 1.0,
-   "pain_top": 0.187,
-   "platform_team": 0.333,
-   "community": 0.333,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.6,
-   "ecosystem": 0.0
-  },
-  "score": 35.6,
-  "live_brand_count": 3,
-  "tier": "B",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": "4/5"
+   "signals_with_data": 12,
+   "signals_total": 16
   },
   "rank": 7,
-  "why": "3 UK grocery brands held now or exited <24m, incl. Borough Broth (Sainsbury's/Tesco/Waitrose), Wild Nutrition, Reeve the Baker; recent trigger: Borough Broth: \"Borough Broth secures £7.5m investment to expand organic range\" (2025-12); named portfolio/platform contact: Annabel Feather (Associate Partner, Talent)."
- },
- {
-  "fund": "Beringea",
-  "fund_type": "VC",
-  "website": "https://www.beringea.co.uk",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://www.beringea.co.uk/portfolio"
-  ],
-  "company_count": 136,
-  "brands": [
-   {
-    "brand": "MOTH",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 1.0,
-    "pain": 0.092,
-    "retailers": [
-     "Tesco",
-     "Sainsbury's",
-     "Asda",
-     "Morrisons",
-     "Waitrose"
-    ]
-   },
-   {
-    "brand": "dash-water",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 1.0,
-    "pain": 0.475,
-    "retailers": [
-     "Tesco",
-     "Sainsbury's",
-     "Waitrose",
-     "Ocado",
-     "M&S"
-    ]
-   },
-   {
-    "brand": "Lucky Saint",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.1,
-    "retailers": []
-   }
-  ],
-  "raw": {
-   "icp_count": 1.9975,
-   "fmcg_share": 0.01875,
-   "avg_brand_fit": 0.7833333333333334,
-   "recent_deals": 0,
-   "pain_top": 0.1889833333333333,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 5,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 1.0,
-  "pillars": {
-   "fit": 0.435,
-   "pain": 0.189,
-   "access": 0.105,
-   "strategic": 0.3
-  },
-  "normalised": {
-   "icp_count": 0.557,
-   "fmcg_share": 0.05,
-   "avg_brand_fit": 0.87,
-   "recent_deals": 0.0,
-   "pain_top": 0.189,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 1.0,
-   "ecosystem": 0.0
-  },
-  "score": 28.2,
-  "live_brand_count": 3,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": "2/5"
-  },
-  "rank": 8,
-  "why": "3 UK grocery brands held now or exited <24m, incl. dash-water (Tesco/Sainsbury's/Waitrose), MOTH (Tesco/Sainsbury's/Asda), Lucky Saint."
+  "why": "2 UK grocery brands held now or exited <24m, incl. Tiba Tempeh (Waitrose), Tom Parker Creamery; recent trigger: Tiba Tempeh: \"Tiba Tempeh launches new SKU, lands in Waitrose\" (2025-04); named portfolio/platform contact: Carl Edgehill (Portfolio Director)."
  },
  {
   "fund": "Development Bank of Wales",
@@ -1325,7 +1233,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.35,
-    "pain": 0.125,
+    "pain": 0.1,
     "retailers": []
    },
    {
@@ -1333,7 +1241,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.512,
-    "pain": 0.025,
+    "pain": 0.023,
     "retailers": [
      "Ocado"
     ]
@@ -1359,7 +1267,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.9,
-    "pain": 0.075,
+    "pain": 0.035,
     "retailers": [
      "Tesco",
      "Sainsbury's",
@@ -1381,7 +1289,7 @@
    "fmcg_share": 0.04958333333333333,
    "avg_brand_fit": 0.4517142857142857,
    "recent_deals": 0,
-   "pain_top": 0.03825,
+   "pain_top": 0.026860000000000002,
    "platform_team": 0,
    "community": 2,
    "size_stage": 0.7,
@@ -1409,7 +1317,7 @@
   "gate": 1.0,
   "pillars": {
    "fit": 0.425,
-   "pain": 0.038,
+   "pain": 0.027,
    "access": 0.305,
    "strategic": 0.39
   },
@@ -1418,7 +1326,7 @@
    "fmcg_share": 0.131,
    "avg_brand_fit": 0.502,
    "recent_deals": 0.0,
-   "pain_top": 0.038,
+   "pain_top": 0.027,
    "platform_team": 0.0,
    "community": 0.667,
    "size_stage": 0.7,
@@ -1427,105 +1335,116 @@
    "brand_halo": 0.8,
    "ecosystem": 0.5
   },
-  "score": 28.1,
+  "score": 27.8,
   "live_brand_count": 7,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "3/5"
+   "signals_with_data": 9,
+   "signals_total": 16
   },
-  "rank": 9,
+  "rank": 8,
   "why": "7 UK grocery brands held now or exited <24m, incl. Hilltop Honey (Tesco/Sainsbury's/Asda), Just Love Food Company (Ocado), Barti Rum."
  },
  {
-  "fund": "Ascension",
+  "fund": "Beringea",
   "fund_type": "VC",
-  "website": "https://www.ascension.vc",
+  "website": "https://www.beringea.co.uk",
   "scrape_status": "ok",
   "portfolio_urls": [
-   "https://www.ascension.vc/portfolio"
+   "https://www.beringea.co.uk/portfolio"
   ],
-  "company_count": 153,
+  "company_count": 136,
   "brands": [
    {
-    "brand": "Better Nature",
+    "brand": "MOTH",
     "status": "unknown",
     "status_source": "portfolio page",
-    "fit": 0.812,
-    "pain": 0.425,
+    "fit": 1.0,
+    "pain": 0.074,
     "retailers": [
      "Tesco",
+     "Sainsbury's",
      "Asda",
-     "Ocado"
+     "Morrisons",
+     "Waitrose"
     ]
+   },
+   {
+    "brand": "dash-water",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 1.0,
+    "pain": 0.313,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Waitrose",
+     "Ocado",
+     "M&S"
+    ]
+   },
+   {
+    "brand": "Lucky Saint",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.049,
+    "retailers": []
    }
   ],
   "raw": {
-   "icp_count": 0.6902,
-   "fmcg_share": 0.005555555555555556,
-   "avg_brand_fit": 0.812,
+   "icp_count": 1.9975,
+   "fmcg_share": 0.01875,
+   "avg_brand_fit": 0.7833333333333334,
    "recent_deals": 0,
-   "pain_top": 0.36124999999999996,
-   "platform_team": 1,
-   "community": 2,
-   "size_stage": 1.0,
+   "pain_top": 0.12353333333333333,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
    "vendor_openness": 0.0,
    "procuros_overlap": 0,
-   "brand_halo": 3,
+   "brand_halo": 5,
    "ecosystem": 0
   },
   "evidence": {
-   "platform_people": [
-    {
-     "name": "Romha Berhane",
-     "title": "Portfolio Manager",
-     "url": "https://www.ascension.vc/team"
-    }
-   ],
-   "community": [
-    {
-     "text": "guardian angel network",
-     "url": "https://www.ascension.vc/portfolio/guardian-angel-network"
-    },
-    {
-     "text": "runa network",
-     "url": "https://www.ascension.vc/portfolio/runa-network"
-    }
-   ],
+   "platform_people": [],
+   "community": [],
    "vendor": [],
    "procuros_overlap": [],
    "recent_deal_brands": []
   },
-  "gate": 0.33,
+  "gate": 1.0,
   "pillars": {
-   "fit": 0.303,
-   "pain": 0.361,
-   "access": 0.161,
-   "strategic": 0.06
+   "fit": 0.435,
+   "pain": 0.124,
+   "access": 0.105,
+   "strategic": 0.3
   },
   "normalised": {
-   "icp_count": 0.266,
-   "fmcg_share": 0.015,
-   "avg_brand_fit": 0.902,
+   "icp_count": 0.557,
+   "fmcg_share": 0.05,
+   "avg_brand_fit": 0.87,
    "recent_deals": 0.0,
-   "pain_top": 0.361,
-   "platform_team": 0.333,
-   "community": 0.667,
-   "size_stage": 1.0,
+   "pain_top": 0.124,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
-   "brand_halo": 0.6,
+   "brand_halo": 1.0,
    "ecosystem": 0.0
   },
-  "score": 26.8,
-  "live_brand_count": 1,
+  "score": 26.2,
+  "live_brand_count": 3,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "4/5"
+   "signals_with_data": 8,
+   "signals_total": 16
   },
-  "rank": 10,
-  "why": "1 UK grocery brand held now or exited <24m, incl. Better Nature (Tesco/Asda/Ocado); recent trigger: Better Nature: \"Tempeh Brand Better Nature Launches at Hundreds of REWE Stores Across Germany\" (2025-04); named portfolio/platform contact: Romha Berhane (Portfolio Manager)."
+  "rank": 9,
+  "why": "3 UK grocery brands held now or exited <24m, incl. dash-water (Tesco/Sainsbury's/Waitrose), MOTH (Tesco/Sainsbury's/Asda), Lucky Saint."
  },
  {
   "fund": "Five Seasons Ventures",
@@ -1550,7 +1469,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 1.0,
-    "pain": 0.475,
+    "pain": 0.313,
     "retailers": [
      "Tesco",
      "Sainsbury's",
@@ -1581,7 +1500,7 @@
    "fmcg_share": 0.14782608695652175,
    "avg_brand_fit": 0.4925,
    "recent_deals": 0,
-   "pain_top": 0.1009375,
+   "pain_top": 0.0665125,
    "platform_team": 0,
    "community": 0,
    "size_stage": 0.7,
@@ -1600,7 +1519,7 @@
   "gate": 1.0,
   "pillars": {
    "fit": 0.412,
-   "pain": 0.101,
+   "pain": 0.067,
    "access": 0.105,
    "strategic": 0.3
   },
@@ -1609,7 +1528,7 @@
    "fmcg_share": 0.391,
    "avg_brand_fit": 0.547,
    "recent_deals": 0.0,
-   "pain_top": 0.101,
+   "pain_top": 0.067,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -1618,14 +1537,15 @@
    "brand_halo": 1.0,
    "ecosystem": 0.0
   },
-  "score": 24.6,
+  "score": 23.6,
   "live_brand_count": 4,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 8,
+   "signals_total": 16
   },
-  "rank": 11,
+  "rank": 10,
   "why": "4 UK grocery brands held now or exited <24m, incl. dash-water (Tesco/Sainsbury's/Waitrose), THIS, puresport."
  },
  {
@@ -1659,7 +1579,7 @@
     "status": "exited_old",
     "status_source": "https://www.ldc.co.uk/sector/consumer/ (IPO 2014)",
     "fit": 0.425,
-    "pain": 0.625,
+    "pain": 0.166,
     "retailers": []
    },
    {
@@ -1667,7 +1587,7 @@
     "status": "current",
     "status_source": "LDC profile: backed Dec 2021",
     "fit": 0.51,
-    "pain": 0.5,
+    "pain": 0.47,
     "retailers": []
    },
    {
@@ -1675,7 +1595,7 @@
     "status": "exited_old",
     "status_source": "https://www.ldc.co.uk/sector/consumer/",
     "fit": 0.51,
-    "pain": 0.175,
+    "pain": 0.098,
     "retailers": []
    },
    {
@@ -1691,7 +1611,7 @@
     "status": "exited_old",
     "status_source": "LDC profile: sold to Calbee Oct 2018",
     "fit": 0.512,
-    "pain": 0.375,
+    "pain": 0.112,
     "retailers": [
      "Morrisons"
     ]
@@ -1702,7 +1622,7 @@
    "fmcg_share": 0.012637362637362636,
    "avg_brand_fit": 0.5415434782608696,
    "recent_deals": 0,
-   "pain_top": 0.16925,
+   "pain_top": 0.13928000000000001,
    "platform_team": 2,
    "community": 1,
    "size_stage": 0.5,
@@ -1737,7 +1657,7 @@
   "gate": 0.67,
   "pillars": {
    "fit": 0.312,
-   "pain": 0.169,
+   "pain": 0.139,
    "access": 0.294,
    "strategic": 0.0
   },
@@ -1746,7 +1666,7 @@
    "fmcg_share": 0.033,
    "avg_brand_fit": 0.602,
    "recent_deals": 0.0,
-   "pain_top": 0.169,
+   "pain_top": 0.139,
    "platform_team": 0.667,
    "community": 0.333,
    "size_stage": 0.5,
@@ -1755,122 +1675,16 @@
    "brand_halo": 0.0,
    "ecosystem": 0.0
   },
-  "score": 23.4,
+  "score": 22.5,
   "live_brand_count": 2,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "4/5"
+   "signals_with_data": 10,
+   "signals_total": 16
   },
-  "rank": 12,
+  "rank": 11,
   "why": "2 UK grocery brands held now or exited <24m, incl. Bramble Foods, Addo Food Group; recent trigger: Bramble Foods: \"UK’s Bramble Foods Group snaps up Whitakers Chocolates\" (2025-01); named portfolio/platform contact: Andy Holman (Portfolio Director)."
- },
- {
-  "fund": "Puma Private Equity",
-  "fund_type": "VC",
-  "website": "https://pumainvestments.co.uk",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://investor.pumainvestments.co.uk/portfolio",
-   "https://investor.pumainvestments.co.uk/portfolio?page=2",
-   "https://investor.pumainvestments.co.uk/portfolio?page=3",
-   "https://investor.pumainvestments.co.uk/portfolio?page=4",
-   "https://investor.pumainvestments.co.uk/portfolio?page=5",
-   "https://investor.pumainvestments.co.uk/portfolio?page=6",
-   "https://investor.pumainvestments.co.uk/portfolio?page=7"
-  ],
-  "company_count": 81,
-  "brands": [
-   {
-    "brand": "MOTH",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 1.0,
-    "pain": 0.092,
-    "retailers": [
-     "Tesco",
-     "Sainsbury's",
-     "Asda",
-     "Morrisons",
-     "Waitrose"
-    ]
-   },
-   {
-    "brand": "Lucky Saint",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.1,
-    "retailers": []
-   },
-   {
-    "brand": "LOVE CORN",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.275,
-    "retailers": []
-   },
-   {
-    "brand": "Runa",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   }
-  ],
-  "raw": {
-   "icp_count": 1.7425,
-   "fmcg_share": 0.04197530864197531,
-   "avg_brand_fit": 0.5125,
-   "recent_deals": 0,
-   "pain_top": 0.0992375,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 5,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 1.0,
-  "pillars": {
-   "fit": 0.367,
-   "pain": 0.099,
-   "access": 0.105,
-   "strategic": 0.3
-  },
-  "normalised": {
-   "icp_count": 0.512,
-   "fmcg_share": 0.111,
-   "avg_brand_fit": 0.569,
-   "recent_deals": 0.0,
-   "pain_top": 0.099,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 1.0,
-   "ecosystem": 0.0
-  },
-  "score": 22.7,
-  "live_brand_count": 4,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": "2/5"
-  },
-  "rank": 13,
-  "why": "4 UK grocery brands held now or exited <24m, incl. MOTH (Tesco/Sainsbury's/Asda), LOVE CORN, Lucky Saint."
  },
  {
   "fund": "Gresham House Ventures",
@@ -1903,7 +1717,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.23,
-    "pain": 0.025,
+    "pain": 0.004,
     "retailers": []
    }
   ],
@@ -1912,7 +1726,7 @@
    "fmcg_share": 0.02207792207792208,
    "avg_brand_fit": 0.46749999999999997,
    "recent_deals": 0,
-   "pain_top": 0.06715,
+   "pain_top": 0.058225,
    "platform_team": 3,
    "community": 2,
    "size_stage": 0.7,
@@ -1966,7 +1780,7 @@
   "gate": 0.67,
   "pillars": {
    "fit": 0.249,
-   "pain": 0.067,
+   "pain": 0.058,
    "access": 0.47,
    "strategic": 0.08
   },
@@ -1975,7 +1789,7 @@
    "fmcg_share": 0.058,
    "avg_brand_fit": 0.519,
    "recent_deals": 0.0,
-   "pain_top": 0.067,
+   "pain_top": 0.058,
    "platform_team": 1.0,
    "community": 0.667,
    "size_stage": 0.7,
@@ -1984,47 +1798,84 @@
    "brand_halo": 0.4,
    "ecosystem": 0.0
   },
-  "score": 22.2,
+  "score": 21.9,
   "live_brand_count": 2,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "4/5"
+   "signals_with_data": 9,
+   "signals_total": 16
   },
-  "rank": 14,
+  "rank": 12,
   "why": "2 UK grocery brands held now or exited <24m, incl. Bella & Duke (Sainsbury's/Waitrose), Parsley Box; named portfolio/platform contact: Simon Bursell (Portfolio Director)."
  },
  {
-  "fund": "The Craftory",
+  "fund": "Puma Private Equity",
   "fund_type": "VC",
-  "website": "https://www.thecraftory.io",
+  "website": "https://pumainvestments.co.uk",
   "scrape_status": "ok",
   "portfolio_urls": [
-   "https://www.thecraftory.io/investments"
+   "https://investor.pumainvestments.co.uk/portfolio",
+   "https://investor.pumainvestments.co.uk/portfolio?page=2",
+   "https://investor.pumainvestments.co.uk/portfolio?page=3",
+   "https://investor.pumainvestments.co.uk/portfolio?page=4",
+   "https://investor.pumainvestments.co.uk/portfolio?page=5",
+   "https://investor.pumainvestments.co.uk/portfolio?page=6",
+   "https://investor.pumainvestments.co.uk/portfolio?page=7"
   ],
-  "company_count": 13,
+  "company_count": 81,
   "brands": [
    {
-    "brand": "HIPPEAS",
+    "brand": "MOTH",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 1.0,
+    "pain": 0.074,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Asda",
+     "Morrisons",
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "Lucky Saint",
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.35,
-    "pain": 0.4,
+    "pain": 0.049,
+    "retailers": []
+   },
+   {
+    "brand": "LOVE CORN",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.107,
+    "retailers": []
+   },
+   {
+    "brand": "Runa",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
     "retailers": []
    }
   ],
   "raw": {
-   "icp_count": 0.2975,
-   "fmcg_share": 0.06538461538461539,
-   "avg_brand_fit": 0.35,
-   "recent_deals": 1,
-   "pain_top": 0.34,
+   "icp_count": 1.7425,
+   "fmcg_share": 0.04197530864197531,
+   "avg_brand_fit": 0.5125,
+   "recent_deals": 0,
+   "pain_top": 0.048874999999999995,
    "platform_team": 0,
    "community": 0,
    "size_stage": 0.7,
    "vendor_openness": 0.0,
    "procuros_overlap": 0,
-   "brand_halo": 0,
+   "brand_halo": 5,
    "ecosystem": 0
   },
   "evidence": {
@@ -2032,40 +1883,130 @@
    "community": [],
    "vendor": [],
    "procuros_overlap": [],
-   "recent_deal_brands": [
-    "HIPPEAS"
-   ]
+   "recent_deal_brands": []
   },
-  "gate": 0.33,
+  "gate": 1.0,
   "pillars": {
-   "fit": 0.267,
-   "pain": 0.34,
-   "access": 0.035,
-   "strategic": 0.0
+   "fit": 0.367,
+   "pain": 0.049,
+   "access": 0.105,
+   "strategic": 0.3
   },
   "normalised": {
-   "icp_count": 0.132,
-   "fmcg_share": 0.173,
-   "avg_brand_fit": 0.389,
-   "recent_deals": 0.631,
-   "pain_top": 0.34,
+   "icp_count": 0.512,
+   "fmcg_share": 0.111,
+   "avg_brand_fit": 0.569,
+   "recent_deals": 0.0,
+   "pain_top": 0.049,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
-   "brand_halo": 0.0,
+   "brand_halo": 1.0,
    "ecosystem": 0.0
   },
-  "score": 21.6,
+  "score": 21.2,
+  "live_brand_count": 4,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 8,
+   "signals_total": 16
+  },
+  "rank": 13,
+  "why": "4 UK grocery brands held now or exited <24m, incl. MOTH (Tesco/Sainsbury's/Asda), LOVE CORN, Lucky Saint."
+ },
+ {
+  "fund": "Ascension",
+  "fund_type": "VC",
+  "website": "https://www.ascension.vc",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.ascension.vc/portfolio"
+  ],
+  "company_count": 153,
+  "brands": [
+   {
+    "brand": "Better Nature",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.812,
+    "pain": 0.14,
+    "retailers": [
+     "Tesco",
+     "Asda",
+     "Ocado"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 0.6902,
+   "fmcg_share": 0.005555555555555556,
+   "avg_brand_fit": 0.812,
+   "recent_deals": 0,
+   "pain_top": 0.11900000000000001,
+   "platform_team": 1,
+   "community": 2,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 3,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Romha Berhane",
+     "title": "Portfolio Manager",
+     "url": "https://www.ascension.vc/team"
+    }
+   ],
+   "community": [
+    {
+     "text": "guardian angel network",
+     "url": "https://www.ascension.vc/portfolio/guardian-angel-network"
+    },
+    {
+     "text": "runa network",
+     "url": "https://www.ascension.vc/portfolio/runa-network"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.303,
+   "pain": 0.119,
+   "access": 0.161,
+   "strategic": 0.06
+  },
+  "normalised": {
+   "icp_count": 0.266,
+   "fmcg_share": 0.015,
+   "avg_brand_fit": 0.902,
+   "recent_deals": 0.0,
+   "pain_top": 0.119,
+   "platform_team": 0.333,
+   "community": 0.667,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.6,
+   "ecosystem": 0.0
+  },
+  "score": 19.5,
   "live_brand_count": 1,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 10,
+   "signals_total": 16
   },
-  "rank": 15,
-  "why": "1 UK grocery brand held now or exited <24m, incl. HIPPEAS."
+  "rank": 14,
+  "why": "1 UK grocery brand held now or exited <24m, incl. Better Nature (Tesco/Asda/Ocado); recent trigger: Better Nature: \"Tempeh Brand Better Nature Launches at Hundreds of REWE Stores Across Germany\" (2025-04); named portfolio/platform contact: Romha Berhane (Portfolio Manager)."
  },
  {
   "fund": "Exponent",
@@ -2082,7 +2023,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.35,
-    "pain": 0.25,
+    "pain": 0.173,
     "retailers": []
    },
    {
@@ -2090,7 +2031,7 @@
     "status": "exited_old",
     "status_source": "Exponent profile: realised",
     "fit": 0.35,
-    "pain": 0.05,
+    "pain": 0.034,
     "retailers": []
    },
    {
@@ -2098,7 +2039,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.45,
-    "pain": 0.167,
+    "pain": 0.124,
     "retailers": []
    },
    {
@@ -2106,7 +2047,7 @@
     "status": "exited_old",
     "status_source": "Exponent profile: realised, sold to Monde Nissin",
     "fit": 1.0,
-    "pain": 0.267,
+    "pain": 0.225,
     "retailers": [
      "Tesco",
      "Sainsbury's",
@@ -2121,7 +2062,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.51,
-    "pain": 0.15,
+    "pain": 0.057,
     "retailers": []
    }
   ],
@@ -2130,7 +2071,7 @@
    "fmcg_share": 0.08382352941176471,
    "avg_brand_fit": 0.4617543859649123,
    "recent_deals": 0,
-   "pain_top": 0.1059,
+   "pain_top": 0.06795,
    "platform_team": 0,
    "community": 1,
    "size_stage": 0.3,
@@ -2154,7 +2095,7 @@
   "gate": 1.0,
   "pillars": {
    "fit": 0.339,
-   "pain": 0.106,
+   "pain": 0.068,
    "access": 0.145,
    "strategic": 0.0
   },
@@ -2163,7 +2104,7 @@
    "fmcg_share": 0.222,
    "avg_brand_fit": 0.513,
    "recent_deals": 0.0,
-   "pain_top": 0.106,
+   "pain_top": 0.068,
    "platform_team": 0.0,
    "community": 0.333,
    "size_stage": 0.3,
@@ -2172,129 +2113,42 @@
    "brand_halo": 0.0,
    "ecosystem": 0.0
   },
-  "score": 19.6,
+  "score": 18.5,
   "live_brand_count": 3,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "3/5"
+   "signals_with_data": 9,
+   "signals_total": 16
   },
-  "rank": 16,
+  "rank": 15,
   "why": "3 UK grocery brands held now or exited <24m, incl. Gü, PROPER SNACKS, Vibrant Foods; recent trigger: Vibrant Foods: \"Vibrant Foods turnaround plan shows green shoots\" (2025-10)."
  },
  {
-  "fund": "Felix Capital",
+  "fund": "The Craftory",
   "fund_type": "VC",
-  "website": "https://www.felixcap.com",
+  "website": "https://www.thecraftory.io",
   "scrape_status": "ok",
   "portfolio_urls": [
-   "https://www.felixcap.com/nwol-2",
-   "https://www.felixcap.com/nwow-2"
+   "https://www.thecraftory.io/investments"
   ],
-  "company_count": 26,
+  "company_count": 13,
   "brands": [
    {
-    "brand": "PerfectTed",
+    "brand": "HIPPEAS",
     "status": "unknown",
     "status_source": "portfolio page",
-    "fit": 0.425,
-    "pain": 0.25,
-    "retailers": []
-   },
-   {
-    "brand": "Pure",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.405,
-    "pain": 0.35,
+    "fit": 0.35,
+    "pain": 0.269,
     "retailers": []
    }
   ],
   "raw": {
-   "icp_count": 0.7055,
+   "icp_count": 0.2975,
    "fmcg_share": 0.06538461538461539,
-   "avg_brand_fit": 0.41500000000000004,
-   "recent_deals": 0,
-   "pain_top": 0.255,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 0,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 0.67,
-  "pillars": {
-   "fit": 0.249,
-   "pain": 0.255,
-   "access": 0.07,
-   "strategic": 0.0
-  },
-  "normalised": {
-   "icp_count": 0.271,
-   "fmcg_share": 0.173,
-   "avg_brand_fit": 0.461,
-   "recent_deals": 0.0,
-   "pain_top": 0.255,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.0,
-   "ecosystem": 0.0
-  },
-  "score": 19.0,
-  "live_brand_count": 2,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": "2/5"
-  },
-  "rank": 17,
-  "why": "2 UK grocery brands held now or exited <24m, incl. Pure, PerfectTed; recent trigger: Pure: \"Pure Pet Food’s sales double after hefty investment\" (2025-07)."
- },
- {
-  "fund": "Inverleith",
-  "fund_type": "PE",
-  "website": "https://inverleith.com",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://inverleith.com/investments/"
-  ],
-  "company_count": 5,
-  "brands": [
-   {
-    "brand": "Good Hemp",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.025,
-    "retailers": []
-   },
-   {
-    "brand": "EDEN MILL St Andrews",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.15,
-    "retailers": []
-   }
-  ],
-  "raw": {
-   "icp_count": 0.595,
-   "fmcg_share": 0.33999999999999997,
    "avg_brand_fit": 0.35,
-   "recent_deals": 0,
-   "pain_top": 0.074375,
+   "recent_deals": 1,
+   "pain_top": 0.22865000000000002,
    "platform_team": 0,
    "community": 0,
    "size_stage": 0.7,
@@ -2308,21 +2162,23 @@
    "community": [],
    "vendor": [],
    "procuros_overlap": [],
-   "recent_deal_brands": []
+   "recent_deal_brands": [
+    "HIPPEAS"
+   ]
   },
-  "gate": 0.67,
+  "gate": 0.33,
   "pillars": {
-   "fit": 0.364,
-   "pain": 0.074,
-   "access": 0.07,
+   "fit": 0.267,
+   "pain": 0.229,
+   "access": 0.035,
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.237,
-   "fmcg_share": 0.9,
+   "icp_count": 0.132,
+   "fmcg_share": 0.173,
    "avg_brand_fit": 0.389,
-   "recent_deals": 0.0,
-   "pain_top": 0.074,
+   "recent_deals": 0.631,
+   "pain_top": 0.229,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -2332,14 +2188,15 @@
    "ecosystem": 0.0
   },
   "score": 18.2,
-  "live_brand_count": 2,
+  "live_brand_count": 1,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 7,
+   "signals_total": 16
   },
-  "rank": 18,
-  "why": "2 UK grocery brands held now or exited <24m, incl. EDEN MILL St Andrews, Good Hemp."
+  "rank": 16,
+  "why": "1 UK grocery brand held now or exited <24m, incl. HIPPEAS."
  },
  {
   "fund": "Big Idea Ventures",
@@ -2433,10 +2290,91 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 7,
+   "signals_total": 16
   },
-  "rank": 19,
+  "rank": 17,
   "why": "2 UK grocery brands held now or exited <24m, incl. The Good Pulse Co, Little Bandits."
+ },
+ {
+  "fund": "Inverleith",
+  "fund_type": "PE",
+  "website": "https://inverleith.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://inverleith.com/investments/"
+  ],
+  "company_count": 5,
+  "brands": [
+   {
+    "brand": "Good Hemp",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.025,
+    "retailers": []
+   },
+   {
+    "brand": "EDEN MILL St Andrews",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.089,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.595,
+   "fmcg_share": 0.33999999999999997,
+   "avg_brand_fit": 0.35,
+   "recent_deals": 0,
+   "pain_top": 0.04845,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.364,
+   "pain": 0.048,
+   "access": 0.07,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.237,
+   "fmcg_share": 0.9,
+   "avg_brand_fit": 0.389,
+   "recent_deals": 0.0,
+   "pain_top": 0.048,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 17.4,
+  "live_brand_count": 2,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 6,
+   "signals_total": 16
+  },
+  "rank": 18,
+  "why": "2 UK grocery brands held now or exited <24m, incl. EDEN MILL St Andrews, Good Hemp."
  },
  {
   "fund": "Endless",
@@ -2462,7 +2400,7 @@
     "status": "exited_recent",
     "status_source": "Endless page: sold to ABF",
     "fit": 0.772,
-    "pain": 0.325,
+    "pain": 0.301,
     "retailers": [
      "Tesco",
      "Sainsbury's",
@@ -2475,7 +2413,7 @@
    "fmcg_share": 0.09000000000000001,
    "avg_brand_fit": 0.607037037037037,
    "recent_deals": 0,
-   "pain_top": 0.08125,
+   "pain_top": 0.07525,
    "platform_team": 0,
    "community": 0,
    "size_stage": 0.5,
@@ -2494,7 +2432,7 @@
   "gate": 0.67,
   "pillars": {
    "fit": 0.319,
-   "pain": 0.081,
+   "pain": 0.075,
    "access": 0.05,
    "strategic": 0.12
   },
@@ -2503,7 +2441,7 @@
    "fmcg_share": 0.238,
    "avg_brand_fit": 0.674,
    "recent_deals": 0.0,
-   "pain_top": 0.081,
+   "pain_top": 0.075,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.5,
@@ -2512,50 +2450,51 @@
    "brand_halo": 0.6,
    "ecosystem": 0.0
   },
-  "score": 17.4,
+  "score": 17.2,
   "live_brand_count": 2,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 7,
+   "signals_total": 16
   },
-  "rank": 20,
+  "rank": 19,
   "why": "2 UK grocery brands held now or exited <24m, incl. Hovis (Tesco/Sainsbury's/Waitrose), Bright Blue Foods; recent trigger: Hovis: \"Why ABF’s Hovis deal matters far beyond bread\" (2026-09)."
  },
  {
-  "fund": "True (TrueCapital)",
-  "fund_type": "PE",
-  "website": "https://www.true.global",
+  "fund": "Felix Capital",
+  "fund_type": "VC",
+  "website": "https://www.felixcap.com",
   "scrape_status": "ok",
   "portfolio_urls": [
-   "https://www.true.global/private-equity",
-   "https://www.true.global/venture-capital"
+   "https://www.felixcap.com/nwol-2",
+   "https://www.felixcap.com/nwow-2"
   ],
-  "company_count": 65,
+  "company_count": 26,
   "brands": [
    {
-    "brand": "seriouspig",
+    "brand": "PerfectTed",
     "status": "unknown",
     "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
+    "fit": 0.425,
+    "pain": 0.135,
     "retailers": []
    },
    {
-    "brand": "Sneak",
-    "status": "current",
-    "status_source": "True site lists as portfolio",
-    "fit": 0.35,
-    "pain": 0.375,
+    "brand": "Pure",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.405,
+    "pain": 0.247,
     "retailers": []
    }
   ],
   "raw": {
-   "icp_count": 0.6475,
-   "fmcg_share": 0.02846153846153846,
-   "avg_brand_fit": 0.35,
+   "icp_count": 0.7055,
+   "fmcg_share": 0.06538461538461539,
+   "avg_brand_fit": 0.41500000000000004,
    "recent_deals": 0,
-   "pain_top": 0.1875,
+   "pain_top": 0.16235,
    "platform_team": 0,
    "community": 0,
    "size_stage": 0.7,
@@ -2573,17 +2512,17 @@
   },
   "gate": 0.67,
   "pillars": {
-   "fit": 0.207,
-   "pain": 0.188,
+   "fit": 0.249,
+   "pain": 0.162,
    "access": 0.07,
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.253,
-   "fmcg_share": 0.075,
-   "avg_brand_fit": 0.389,
+   "icp_count": 0.271,
+   "fmcg_share": 0.173,
+   "avg_brand_fit": 0.461,
    "recent_deals": 0.0,
-   "pain_top": 0.188,
+   "pain_top": 0.162,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -2592,15 +2531,16 @@
    "brand_halo": 0.0,
    "ecosystem": 0.0
   },
-  "score": 15.3,
+  "score": 16.2,
   "live_brand_count": 2,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 7,
+   "signals_total": 16
   },
-  "rank": 21,
-  "why": "2 UK grocery brands held now or exited <24m, incl. Sneak, seriouspig; recent trigger: Sneak: \"Sneak Energy lands additional listings across Bestway\" (2026-06)."
+  "rank": 20,
+  "why": "2 UK grocery brands held now or exited <24m, incl. Pure, PerfectTed; recent trigger: Pure: \"Pure Pet Food’s sales double after hefty investment\" (2025-07)."
  },
  {
   "fund": "Pembroke VCT",
@@ -2617,7 +2557,7 @@
     "status": "exited_old",
     "status_source": "Pembroke profile: acquired by Britvic",
     "fit": 0.512,
-    "pain": 0.55,
+    "pain": 0.636,
     "retailers": [
      "Tesco"
     ]
@@ -2627,7 +2567,7 @@
     "status": "exited_old",
     "status_source": "Pembroke profile: exited; desk_knowledge: Barilla majority 2021",
     "fit": 0.23,
-    "pain": 0.125,
+    "pain": 0.082,
     "retailers": []
    },
    {
@@ -2635,7 +2575,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.45,
-    "pain": 0.192,
+    "pain": 0.137,
     "retailers": []
    }
   ],
@@ -2644,7 +2584,7 @@
    "fmcg_share": 0.016428571428571428,
    "avg_brand_fit": 0.42939130434782613,
    "recent_deals": 0,
-   "pain_top": 0.08815,
+   "pain_top": 0.07471666666666667,
    "platform_team": 2,
    "community": 3,
    "size_stage": 0.7,
@@ -2711,7 +2651,7 @@
   "gate": 0.33,
   "pillars": {
    "fit": 0.196,
-   "pain": 0.088,
+   "pain": 0.075,
    "access": 0.224,
    "strategic": 0.0
   },
@@ -2720,7 +2660,7 @@
    "fmcg_share": 0.043,
    "avg_brand_fit": 0.477,
    "recent_deals": 0.0,
-   "pain_top": 0.088,
+   "pain_top": 0.075,
    "platform_team": 0.667,
    "community": 1.0,
    "size_stage": 0.7,
@@ -2729,15 +2669,97 @@
    "brand_halo": 0.0,
    "ecosystem": 0.0
   },
-  "score": 15.0,
+  "score": 14.6,
   "live_brand_count": 1,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "4/5"
+   "signals_with_data": 8,
+   "signals_total": 16
+  },
+  "rank": 21,
+  "why": "1 UK grocery brand held now or exited <24m, incl. Hackney Gelato; named portfolio/platform contact: Adrian Harris (Portfolio Director)."
+ },
+ {
+  "fund": "True (TrueCapital)",
+  "fund_type": "PE",
+  "website": "https://www.true.global",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.true.global/private-equity",
+   "https://www.true.global/venture-capital"
+  ],
+  "company_count": 65,
+  "brands": [
+   {
+    "brand": "seriouspig",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Sneak",
+    "status": "current",
+    "status_source": "True site lists as portfolio",
+    "fit": 0.35,
+    "pain": 0.255,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.6475,
+   "fmcg_share": 0.02846153846153846,
+   "avg_brand_fit": 0.35,
+   "recent_deals": 0,
+   "pain_top": 0.1275,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.67,
+  "pillars": {
+   "fit": 0.207,
+   "pain": 0.128,
+   "access": 0.07,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.253,
+   "fmcg_share": 0.075,
+   "avg_brand_fit": 0.389,
+   "recent_deals": 0.0,
+   "pain_top": 0.128,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 13.5,
+  "live_brand_count": 2,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 6,
+   "signals_total": 16
   },
   "rank": 22,
-  "why": "1 UK grocery brand held now or exited <24m, incl. Hackney Gelato; named portfolio/platform contact: Adrian Harris (Portfolio Director)."
+  "why": "2 UK grocery brands held now or exited <24m, incl. Sneak, seriouspig; recent trigger: Sneak: \"Sneak Energy lands additional listings across Bestway\" (2026-06)."
  },
  {
   "fund": "NorthEdge",
@@ -2754,7 +2776,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 0.51,
-    "pain": 0.025,
+    "pain": 0.006,
     "retailers": []
    }
   ],
@@ -2763,7 +2785,7 @@
    "fmcg_share": 0.017346938775510204,
    "avg_brand_fit": 0.51,
    "recent_deals": 0,
-   "pain_top": 0.02125,
+   "pain_top": 0.0051,
    "platform_team": 2,
    "community": 1,
    "size_stage": 0.5,
@@ -2798,7 +2820,7 @@
   "gate": 0.33,
   "pillars": {
    "fit": 0.205,
-   "pain": 0.021,
+   "pain": 0.005,
    "access": 0.147,
    "strategic": 0.0
   },
@@ -2807,7 +2829,7 @@
    "fmcg_share": 0.046,
    "avg_brand_fit": 0.567,
    "recent_deals": 0.0,
-   "pain_top": 0.021,
+   "pain_top": 0.005,
    "platform_team": 0.667,
    "community": 0.333,
    "size_stage": 0.5,
@@ -2816,12 +2838,13 @@
    "brand_halo": 0.0,
    "ecosystem": 0.0
   },
-  "score": 11.8,
+  "score": 11.3,
   "live_brand_count": 1,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "4/5"
+   "signals_with_data": 7,
+   "signals_total": 16
   },
   "rank": 23,
   "why": "1 UK grocery brand held now or exited <24m, incl. Clearly Drinks; named portfolio/platform contact: Derek Knowles (Head of Operations)."
@@ -2841,7 +2864,7 @@
     "status": "current",
     "status_source": "portfolio page",
     "fit": 0.27,
-    "pain": 0.025,
+    "pain": 0.016,
     "retailers": []
    }
   ],
@@ -2850,7 +2873,7 @@
    "fmcg_share": 0.08333333333333333,
    "avg_brand_fit": 0.27,
    "recent_deals": 0,
-   "pain_top": 0.025,
+   "pain_top": 0.016,
    "platform_team": 0,
    "community": 2,
    "size_stage": 0.5,
@@ -2883,7 +2906,7 @@
   "gate": 0.33,
   "pillars": {
    "fit": 0.159,
-   "pain": 0.025,
+   "pain": 0.016,
    "access": 0.142,
    "strategic": 0.05
   },
@@ -2892,7 +2915,7 @@
    "fmcg_share": 0.221,
    "avg_brand_fit": 0.3,
    "recent_deals": 0.0,
-   "pain_top": 0.025,
+   "pain_top": 0.016,
    "platform_team": 0.0,
    "community": 0.667,
    "size_stage": 0.5,
@@ -2901,12 +2924,13 @@
    "brand_halo": 0.0,
    "ecosystem": 0.5
   },
-  "score": 10.4,
+  "score": 10.2,
   "live_brand_count": 1,
   "tier": "C",
   "coverage": {
    "scrape_status": "partial",
-   "signals_with_data": "3/5"
+   "signals_with_data": 8,
+   "signals_total": 16
   },
   "rank": 24,
   "why": "1 UK grocery brand held now or exited <24m, incl. Absolute Collagen."
@@ -2977,83 +3001,11 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "1/5"
+   "signals_with_data": 4,
+   "signals_total": 16
   },
   "rank": 25,
   "why": "1 UK grocery brand held now or exited <24m, incl. ipn."
- },
- {
-  "fund": "ECI Partners",
-  "fund_type": "PE",
-  "website": "https://www.ecipartners.com",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://www.ecipartners.com/our-companies"
-  ],
-  "company_count": 49,
-  "brands": [
-   {
-    "brand": "MPM",
-    "status": "exited_old",
-    "status_source": "ECI profile: exited to 3i (3i later sold to Partners Group, Jun 2025)",
-    "fit": 0.612,
-    "pain": 0.7,
-    "retailers": [
-     "Ocado"
-    ]
-   }
-  ],
-  "raw": {
-   "icp_count": 0.09179999999999999,
-   "fmcg_share": 0.003061224489795918,
-   "avg_brand_fit": 0.612,
-   "recent_deals": 0,
-   "pain_top": 0.105,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 0,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 0.0,
-  "pillars": {
-   "fit": 0.158,
-   "pain": 0.105,
-   "access": 0.0,
-   "strategic": 0.0
-  },
-  "normalised": {
-   "icp_count": 0.045,
-   "fmcg_share": 0.008,
-   "avg_brand_fit": 0.68,
-   "recent_deals": 0.0,
-   "pain_top": 0.105,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.0,
-   "ecosystem": 0.0
-  },
-  "score": 9.5,
-  "live_brand_count": 0,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": "2/5"
-  },
-  "rank": 26,
-  "why": "."
  },
  {
   "fund": "Rutland Partners",
@@ -3121,9 +3073,10 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "1/5"
+   "signals_with_data": 4,
+   "signals_total": 16
   },
-  "rank": 27,
+  "rank": 26,
   "why": "1 UK grocery brand held now or exited <24m, incl. Armitage Pet Care."
  },
  {
@@ -3141,7 +3094,7 @@
     "status": "exited_old",
     "status_source": "desk_knowledge: Natural Balance Foods sold to Lotus Bakeries 2019",
     "fit": 0.9,
-    "pain": 0.05,
+    "pain": 0.023,
     "retailers": [
      "Tesco",
      "Asda",
@@ -3156,7 +3109,7 @@
    "fmcg_share": 0.0010344827586206897,
    "avg_brand_fit": 0.9000000000000001,
    "recent_deals": 0,
-   "pain_top": 0.0075,
+   "pain_top": 0.00345,
    "platform_team": 0,
    "community": 3,
    "size_stage": 0.7,
@@ -3257,7 +3210,7 @@
   "gate": 0.0,
   "pillars": {
    "fit": 0.229,
-   "pain": 0.007,
+   "pain": 0.003,
    "access": 0.0,
    "strategic": 0.0
   },
@@ -3266,7 +3219,7 @@
    "fmcg_share": 0.003,
    "avg_brand_fit": 1.0,
    "recent_deals": 0.0,
-   "pain_top": 0.007,
+   "pain_top": 0.003,
    "platform_team": 0.0,
    "community": 1.0,
    "size_stage": 0.7,
@@ -3275,12 +3228,87 @@
    "brand_halo": 0.0,
    "ecosystem": 0.0
   },
-  "score": 9.4,
+  "score": 9.3,
   "live_brand_count": 0,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "3/5"
+   "signals_with_data": 6,
+   "signals_total": 16
+  },
+  "rank": 27,
+  "why": "."
+ },
+ {
+  "fund": "ECI Partners",
+  "fund_type": "PE",
+  "website": "https://www.ecipartners.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.ecipartners.com/our-companies"
+  ],
+  "company_count": 49,
+  "brands": [
+   {
+    "brand": "MPM",
+    "status": "exited_old",
+    "status_source": "ECI profile: exited to 3i (3i later sold to Partners Group, Jun 2025)",
+    "fit": 0.612,
+    "pain": 0.504,
+    "retailers": [
+     "Ocado"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 0.09179999999999999,
+   "fmcg_share": 0.003061224489795918,
+   "avg_brand_fit": 0.612,
+   "recent_deals": 0,
+   "pain_top": 0.0756,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.0,
+  "pillars": {
+   "fit": 0.158,
+   "pain": 0.076,
+   "access": 0.0,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.045,
+   "fmcg_share": 0.008,
+   "avg_brand_fit": 0.68,
+   "recent_deals": 0.0,
+   "pain_top": 0.076,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 8.6,
+  "live_brand_count": 0,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 4,
+   "signals_total": 16
   },
   "rank": 28,
   "why": "."
@@ -3353,7 +3381,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 5,
+   "signals_total": 16
   },
   "rank": 29,
   "why": "1 UK grocery brand held now or exited <24m, incl. Tony's Chocolonely; already backs Procuros customer Tony's Chocolonely."
@@ -3373,7 +3402,7 @@
     "status": "exited_old",
     "status_source": "Langholm page: sold to Verdane Oct 2021",
     "fit": 0.35,
-    "pain": 0.25,
+    "pain": 0.109,
     "retailers": []
    },
    {
@@ -3389,7 +3418,7 @@
     "status": "exited_old",
     "status_source": "https://en.wikipedia.org/wiki/Langholm_Capital (sold 2013)",
     "fit": 0.35,
-    "pain": 0.025,
+    "pain": 0.014,
     "retailers": []
    },
    {
@@ -3406,7 +3435,7 @@
    "fmcg_share": 0.08571428571428572,
    "avg_brand_fit": 0.35,
    "recent_deals": 0,
-   "pain_top": 0.010312499999999999,
+   "pain_top": 0.0046125,
    "platform_team": 0,
    "community": 0,
    "size_stage": 0.7,
@@ -3425,7 +3454,7 @@
   "gate": 0.0,
   "pillars": {
    "fit": 0.167,
-   "pain": 0.01,
+   "pain": 0.005,
    "access": 0.0,
    "strategic": 0.0
   },
@@ -3434,7 +3463,7 @@
    "fmcg_share": 0.227,
    "avg_brand_fit": 0.389,
    "recent_deals": 0.0,
-   "pain_top": 0.01,
+   "pain_top": 0.005,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -3443,12 +3472,13 @@
    "brand_halo": 0.0,
    "ecosystem": 0.0
   },
-  "score": 7.0,
+  "score": 6.8,
   "live_brand_count": 0,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 4,
+   "signals_total": 16
   },
   "rank": 30,
   "why": "."
@@ -3468,7 +3498,7 @@
     "status": "exited_old",
     "status_source": "YFM profile: acquired by Lactalis (desk_knowledge: 2023)",
     "fit": 0.445,
-    "pain": 0.417,
+    "pain": 0.482,
     "retailers": []
    }
   ],
@@ -3477,7 +3507,7 @@
    "fmcg_share": 0.0016483516483516484,
    "avg_brand_fit": 0.44500000000000006,
    "recent_deals": 0,
-   "pain_top": 0.06255,
+   "pain_top": 0.07229999999999999,
    "platform_team": 3,
    "community": 1,
    "size_stage": 0.7,
@@ -3537,7 +3567,7 @@
   "gate": 0.0,
   "pillars": {
    "fit": 0.115,
-   "pain": 0.063,
+   "pain": 0.072,
    "access": 0.0,
    "strategic": 0.0
   },
@@ -3546,7 +3576,7 @@
    "fmcg_share": 0.004,
    "avg_brand_fit": 0.494,
    "recent_deals": 0.0,
-   "pain_top": 0.063,
+   "pain_top": 0.072,
    "platform_team": 1.0,
    "community": 0.333,
    "size_stage": 0.7,
@@ -3555,12 +3585,13 @@
    "brand_halo": 0.0,
    "ecosystem": 0.0
   },
-  "score": 6.5,
+  "score": 6.7,
   "live_brand_count": 0,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "4/5"
+   "signals_with_data": 6,
+   "signals_total": 16
   },
   "rank": 31,
   "why": "named portfolio/platform contact: Adam Milner (Portfolio Director, Leeds)."
@@ -3588,7 +3619,7 @@
     "status": "exited_old",
     "status_source": "desk_knowledge: sold to Mondelez 2021",
     "fit": 0.45,
-    "pain": 0.317,
+    "pain": 0.347,
     "retailers": []
    }
   ],
@@ -3597,7 +3628,7 @@
    "fmcg_share": 0.006818181818181818,
    "avg_brand_fit": 0.4,
    "recent_deals": 0,
-   "pain_top": 0.023775,
+   "pain_top": 0.026024999999999996,
    "platform_team": 0,
    "community": 0,
    "size_stage": 0.3,
@@ -3616,7 +3647,7 @@
   "gate": 0.0,
   "pillars": {
    "fit": 0.118,
-   "pain": 0.024,
+   "pain": 0.026,
    "access": 0.0,
    "strategic": 0.0
   },
@@ -3625,7 +3656,7 @@
    "fmcg_share": 0.018,
    "avg_brand_fit": 0.444,
    "recent_deals": 0.0,
-   "pain_top": 0.024,
+   "pain_top": 0.026,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.3,
@@ -3634,12 +3665,13 @@
    "brand_halo": 0.0,
    "ecosystem": 0.0
   },
-  "score": 5.4,
+  "score": 5.5,
   "live_brand_count": 0,
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 4,
+   "signals_total": 16
   },
   "rank": 32,
   "why": "."
@@ -3706,7 +3738,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "partial",
-   "signals_with_data": "0/5"
+   "signals_with_data": 2,
+   "signals_total": 16
   },
   "rank": 33,
   "why": "."
@@ -3832,7 +3865,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 4,
+   "signals_total": 16
   },
   "rank": 34,
   "why": "named portfolio/platform contact: Nigel Moss (Portfolio Director)."
@@ -3896,7 +3930,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 35,
   "why": "."
@@ -3958,7 +3993,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 36,
   "why": "."
@@ -4020,7 +4056,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 37,
   "why": "."
@@ -4082,7 +4119,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 38,
   "why": "."
@@ -4155,7 +4193,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "1/5"
+   "signals_with_data": 2,
+   "signals_total": 16
   },
   "rank": 39,
   "why": "named portfolio/platform contact: Angus Abbott (Portfolio Director)."
@@ -4217,7 +4256,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 40,
   "why": "."
@@ -4279,7 +4319,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "no_companies_found",
-   "signals_with_data": "0/5"
+   "signals_with_data": 0,
+   "signals_total": 16
   },
   "rank": 41,
   "why": "."
@@ -4341,7 +4382,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 42,
   "why": "."
@@ -4413,7 +4455,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "no_companies_found",
-   "signals_with_data": "1/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 43,
   "why": "."
@@ -4486,7 +4529,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "1/5"
+   "signals_with_data": 2,
+   "signals_total": 16
   },
   "rank": 44,
   "why": "named portfolio/platform contact: James Hope (Fund & Portfolio Director)."
@@ -4548,7 +4592,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 45,
   "why": "."
@@ -4640,7 +4685,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 5,
+   "signals_total": 16
   },
   "rank": 46,
   "why": "named portfolio/platform contact: Rebecca Manning (Talent)."
@@ -4706,7 +4752,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "1/5"
+   "signals_with_data": 2,
+   "signals_total": 16
   },
   "rank": 47,
   "why": "named portfolio/platform contact: Tom Cooley (Portfolio Manager)."
@@ -4768,7 +4815,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 48,
   "why": "."
@@ -4830,7 +4878,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 49,
   "why": "."
@@ -4925,7 +4974,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "partial",
-   "signals_with_data": "2/5"
+   "signals_with_data": 3,
+   "signals_total": 16
   },
   "rank": 50,
   "why": "named portfolio/platform contact: Jeevs Mahil (People + Talent)."
@@ -4987,7 +5037,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "no_companies_found",
-   "signals_with_data": "0/5"
+   "signals_with_data": 0,
+   "signals_total": 16
   },
   "rank": 51,
   "why": "."
@@ -5049,7 +5100,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 52,
   "why": "."
@@ -5111,7 +5163,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 53,
   "why": "."
@@ -5221,7 +5274,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "2/5"
+   "signals_with_data": 4,
+   "signals_total": 16
   },
   "rank": 54,
   "why": "named portfolio/platform contact: Christina Levada (HEAD OF OPERATIONS)."
@@ -5304,7 +5358,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "partial",
-   "signals_with_data": "1/5"
+   "signals_with_data": 2,
+   "signals_total": 16
   },
   "rank": 55,
   "why": "named portfolio/platform contact: Amber Jardine (Portfolio Manager)."
@@ -5366,7 +5421,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "partial",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 56,
   "why": "."
@@ -5428,7 +5484,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 57,
   "why": "."
@@ -5490,7 +5547,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "0/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 58,
   "why": "."
@@ -5552,7 +5610,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "failed",
-   "signals_with_data": "0/5"
+   "signals_with_data": 0,
+   "signals_total": 16
   },
   "rank": 59,
   "why": "."
@@ -5614,7 +5673,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "no_companies_found",
-   "signals_with_data": "0/5"
+   "signals_with_data": 0,
+   "signals_total": 16
   },
   "rank": 60,
   "why": "."
@@ -5676,7 +5736,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "failed",
-   "signals_with_data": "0/5"
+   "signals_with_data": 0,
+   "signals_total": 16
   },
   "rank": 61,
   "why": "."
@@ -5754,7 +5815,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "1/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 62,
   "why": "named portfolio/platform contact: Daniel Ovenden (Talent Team)."
@@ -5827,7 +5889,8 @@
   "tier": "C",
   "coverage": {
    "scrape_status": "ok",
-   "signals_with_data": "1/5"
+   "signals_with_data": 1,
+   "signals_total": 16
   },
   "rank": 63,
   "why": "named portfolio/platform contact: Aleksandra Zorylo (Operating Partner)."

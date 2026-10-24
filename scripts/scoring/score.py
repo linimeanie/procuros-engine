@@ -161,14 +161,32 @@ def build_brands(brands):
                          + w["ops_gap"] * (1.0 if b["ops_roles"] else 0.0) + w["status"] * 1.0, 3)
         p = CFG["pain"]
         b["pain_parts"] = {
-            "listings": min(len(listing_news) / 2, 1),
-            "funding": min(len(funding_news) / 2, 1),
-            "ops_hiring": min(len(b["ops_roles"]) / 3, 1),
-            "momentum": min(len(news) / 6, 1),
-            "expansion": min(len(export_news), 1),
+            "listings": min(decayed(listing_news) / 2, 1),
+            "funding": min(decayed(funding_news) / 2, 1),
+            "ops_hiring": min(len(b["ops_roles"]) / 3, 1),  # open roles are live today, so no decay
+            "momentum": min(decayed(news) / 6, 1),
+            "expansion": min(decayed(export_news), 1),
         }
-        b["pain"] = round(sum(p[k] * v for k, v in b["pain_parts"].items()), 3)
+        base = sum(p[k] * v for k, v in b["pain_parts"].items())
+        # Trigger stack: distinct signals landing in the same window are the buying moment, so they compound.
+        st = CFG["stack"]
+        fresh = lambda ns: any(age_months(n) <= st["window_months"] for n in ns)
+        active = [k for k, on in (("listings", fresh(listing_news)), ("funding", fresh(funding_news)),
+                                  ("ops_hiring", bool(b["ops_roles"])), ("expansion", fresh(export_news))) if on]
+        mult = min(1 + st["bonus_per_extra_signal"] * max(len(active) - 1, 0), st["max_multiplier"])
+        b["stack"] = active
+        b["pain_base"] = round(base, 3)
+        b["pain"] = round(min(base * mult, 1.0), 3)
     return out
+
+
+def age_months(n):
+    return max((AS_OF - date.fromisoformat(n["date_parsed"][:10])).days / 30.4, 0)
+
+
+def decayed(news):
+    """Recency-weighted count: a story loses half its weight every `recency_half_life_months`."""
+    return sum(0.5 ** (age_months(n) / CFG["recency_half_life_months"]) for n in news)
 
 
 def size_stage(fund):
@@ -233,6 +251,7 @@ def score_funds(funds, brands):
                 "brand_halo": halo,
                 "ecosystem": min(len(eco), 2),
             },
+            "_live_brands": [m["brand"] for m in live],
             "evidence": {"platform_people": people, "community": comm, "vendor": vendor, "procuros_overlap": overlap,
                          "recent_deal_brands": [m["brand"]["brand"] for m in recent]},
         })
@@ -266,9 +285,13 @@ def combine(rows, cfg=CFG):
         t = cfg["tiers"]
         r["tier"] = ("A" if r["score"] >= t["A"]["min_score"] and len(live) >= t["A"]["min_brands"]
                      else "B" if r["score"] >= t["B"]["min_score"] or (r["score"] >= t["A"]["min_score"]) else "C")
-        filled = sum(1 for k in ("icp_count", "pain_top", "platform_team", "community", "procuros_overlap")
-                     if r["raw"][k])
-        r["coverage"] = {"scrape_status": r["scrape_status"], "signals_with_data": f"{filled}/5"}
+        # Coverage: how many of the 16 signals have any data behind them, so a low score can be told from missing data.
+        sig = [r["raw"][k] for k in ("icp_count", "fmcg_share", "avg_brand_fit", "recent_deals", "platform_team",
+                                    "community", "vendor_openness", "procuros_overlap", "brand_halo", "ecosystem")]
+        pain_parts = [any(b2["pain_parts"][k] > 0 for b2 in r["_live_brands"]) for k in cfg["pain"]]
+        size_known = r["fund"] in OVR["fund_size_stage"]
+        filled = sum(1 for v in sig if v) + sum(pain_parts) + (1 if size_known else 0)
+        r["coverage"] = {"scrape_status": r["scrape_status"], "signals_with_data": filled, "signals_total": 16}
     rows.sort(key=lambda r: r["score"], reverse=True)
     for i, r in enumerate(rows, 1):
         r["rank"] = i
@@ -309,6 +332,8 @@ def main():
     out.mkdir(exist_ok=True)
     for b in brands:
         b.pop("news_raw", None)
+    for r in rows:
+        r.pop("_live_brands", None)
     (out / "brands_scored.json").write_text(json.dumps(brands, indent=1, ensure_ascii=False))
     (out / "funds_scored.json").write_text(json.dumps(rows, indent=1, ensure_ascii=False, default=str))
     with open(out / "shortlist.csv", "w") as fh:

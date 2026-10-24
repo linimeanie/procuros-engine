@@ -53,12 +53,14 @@
   "fit": 0.305,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.1652563687964785,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
-   "expansion": 1
+   "momentum": 0.055085456265492834,
+   "expansion": 0.330512737592957
   },
-  "pain": 0.25
+  "stack": [],
+  "pain_base": 0.083,
+  "pain": 0.083
  },
  {
   "brand": "Botivo",
@@ -130,10 +132,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.8333333333333334,
+   "momentum": 0.336360714516269,
    "expansion": 0
   },
-  "pain": 0.125
+  "stack": [],
+  "pain_base": 0.05,
+  "pain": 0.05
  },
  {
   "brand": "KatKin",
@@ -286,12 +290,18 @@
   "fit": 0.405,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 1,
+   "funding": 0.9893336000744872,
    "ops_hiring": 0.6666666666666666,
-   "momentum": 1.0,
+   "momentum": 0.3869969358574606,
    "expansion": 1
   },
-  "pain": 0.633
+  "stack": [
+   "funding",
+   "ops_hiring",
+   "expansion"
+  ],
+  "pain_base": 0.539,
+  "pain": 0.808
  },
  {
   "brand": "All Things",
@@ -371,13 +381,19 @@
   "size_proxy": 0.5,
   "fit": 0.305,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 0.5,
+   "listings": 0.46576070024986393,
+   "funding": 0.3081918433288086,
    "ops_hiring": 0.0,
-   "momentum": 0.3333333333333333,
+   "momentum": 0.25798418119289085,
    "expansion": 1
   },
-  "pain": 0.425
+  "stack": [
+   "listings",
+   "funding",
+   "expansion"
+  ],
+  "pain_base": 0.355,
+  "pain": 0.533
  },
  {
   "brand": "All the Aunties",
@@ -411,6 +427,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -532,13 +550,17 @@
   "size_proxy": 0.5,
   "fit": 0.512,
   "pain_parts": {
-   "listings": 1.0,
-   "funding": 1.0,
+   "listings": 0.5607273129922556,
+   "funding": 0.3602441189941246,
    "ops_hiring": 0.0,
-   "momentum": 1.0,
+   "momentum": 0.49368024138290484,
    "expansion": 0
   },
-  "pain": 0.7
+  "stack": [
+   "listings"
+  ],
+  "pain_base": 0.332,
+  "pain": 0.332
  },
  {
   "brand": "Northern Monk",
@@ -625,12 +647,14 @@
   "fit": 0.425,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.12957870813281477,
    "ops_hiring": 0.0,
-   "momentum": 1.0,
+   "momentum": 0.3417077771301624,
    "expansion": 0
   },
-  "pain": 0.275
+  "stack": [],
+  "pain_base": 0.084,
+  "pain": 0.084
  },
  {
   "brand": "Marleybones",
@@ -795,13 +819,19 @@
   "size_proxy": 1.0,
   "fit": 0.605,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 1,
+   "listings": 0.39604676277311296,
+   "funding": 0.8090480490034542,
    "ops_hiring": 0.0,
-   "momentum": 1,
+   "momentum": 0.6562522500313402,
    "expansion": 1
   },
-  "pain": 0.65
+  "stack": [
+   "listings",
+   "funding",
+   "expansion"
+  ],
+  "pain_base": 0.52,
+  "pain": 0.779
  },
  {
   "brand": "Better Nature",
@@ -930,13 +960,15 @@
   "size_proxy": 1.0,
   "fit": 0.812,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 0.5,
+   "listings": 0.12009528879904922,
+   "funding": 0.16235154088251327,
    "ops_hiring": 0.0,
-   "momentum": 1,
+   "momentum": 0.4243513968758989,
    "expansion": 0
   },
-  "pain": 0.425
+  "stack": [],
+  "pain_base": 0.14,
+  "pain": 0.14
  },
  {
   "brand": "Bella & Duke",
@@ -1000,6 +1032,10 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [
+   "ops_hiring"
+  ],
+  "pain_base": 0.133,
   "pain": 0.133
  },
  {
@@ -1064,13 +1100,19 @@
   "size_proxy": 0.5,
   "fit": 0.425,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 0.5,
+   "listings": 0.4634067221751998,
+   "funding": 0.4634067221751998,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
-   "expansion": 1
+   "momentum": 0.15446890739173327,
+   "expansion": 0.9268134443503996
   },
-  "pain": 0.4
+  "stack": [
+   "listings",
+   "funding",
+   "expansion"
+  ],
+  "pain_base": 0.371,
+  "pain": 0.556
  },
  {
   "brand": "Scrumbles",
@@ -1150,6 +1192,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -1198,10 +1242,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.3333333333333333,
+   "momentum": 0.17736542551399007,
    "expansion": 0
   },
-  "pain": 0.05
+  "stack": [],
+  "pain_base": 0.027,
+  "pain": 0.027
  },
  {
   "brand": "THIS",
@@ -1241,6 +1287,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -1320,12 +1368,16 @@
   "fit": 0.51,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 1,
+   "funding": 0.9620398828298355,
    "ops_hiring": 0.0,
-   "momentum": 0.5,
+   "momentum": 0.3206799609432785,
    "expansion": 0
   },
-  "pain": 0.325
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.289,
+  "pain": 0.289
  },
  {
   "brand": "MOTH",
@@ -1415,10 +1467,14 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.3333333333333333,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.04755783904522506,
    "expansion": 0
   },
-  "pain": 0.092
+  "stack": [
+   "ops_hiring"
+  ],
+  "pain_base": 0.074,
+  "pain": 0.074
  },
  {
   "brand": "The Good Pulse Co",
@@ -1452,6 +1508,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -1486,6 +1544,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -1520,6 +1580,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -1554,6 +1616,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -1603,10 +1667,14 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
-   "expansion": 1
+   "momentum": 0.13336019946574731,
+   "expansion": 0.8001611967944839
   },
-  "pain": 0.125
+  "stack": [
+   "expansion"
+  ],
+  "pain_base": 0.1,
+  "pain": 0.1
  },
  {
   "brand": "Just Love Food Company",
@@ -1656,10 +1724,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.15446890739173327,
    "expansion": 0
   },
-  "pain": 0.025
+  "stack": [],
+  "pain_base": 0.023,
+  "pain": 0.023
  },
  {
   "brand": "Tregroes Waffles",
@@ -1693,6 +1763,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -1727,6 +1799,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -1817,10 +1891,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.5,
+   "momentum": 0.23133957823128767,
    "expansion": 0
   },
-  "pain": 0.075
+  "stack": [],
+  "pain_base": 0.035,
+  "pain": 0.035
  },
  {
   "brand": "MPM",
@@ -1995,12 +2071,16 @@
   "fit": 0.612,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 1,
+   "funding": 0.8943622077820376,
    "ops_hiring": 1,
-   "momentum": 1,
-   "expansion": 1
+   "momentum": 0.3459201556511277,
+   "expansion": 0.28679651834269115
   },
-  "pain": 0.7
+  "stack": [
+   "ops_hiring"
+  ],
+  "pain_base": 0.504,
+  "pain": 0.504
  },
  {
   "brand": "Bright Blue Foods",
@@ -2034,6 +2114,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -2131,10 +2213,14 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 1.0,
-   "expansion": 1
+   "momentum": 0.5006827289355699,
+   "expansion": 0.9777118050066229
   },
-  "pain": 0.25
+  "stack": [
+   "expansion"
+  ],
+  "pain_base": 0.173,
+  "pain": 0.173
  },
  {
   "brand": "Loch Lomond Group",
@@ -2182,10 +2268,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.3333333333333333,
+   "momentum": 0.22599048956327192,
    "expansion": 0
   },
-  "pain": 0.05
+  "stack": [],
+  "pain_base": 0.034,
+  "pain": 0.034
  },
  {
   "brand": "PROPER SNACKS",
@@ -2260,10 +2348,14 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.3333333333333333,
-   "momentum": 0.6666666666666666,
+   "momentum": 0.38029851468398235,
    "expansion": 0
   },
-  "pain": 0.167
+  "stack": [
+   "ops_hiring"
+  ],
+  "pain_base": 0.124,
+  "pain": 0.124
  },
  {
   "brand": "Quorn Foods",
@@ -2391,10 +2483,15 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.3333333333333333,
-   "momentum": 0.6666666666666666,
-   "expansion": 1
+   "momentum": 0.4264500825003237,
+   "expansion": 0.49696910440843967
   },
-  "pain": 0.267
+  "stack": [
+   "ops_hiring",
+   "expansion"
+  ],
+  "pain_base": 0.18,
+  "pain": 0.225
  },
  {
   "brand": "Vibrant Foods",
@@ -2441,12 +2538,14 @@
   "fit": 0.51,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.19044629680731054,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.06348209893577018,
    "expansion": 0
   },
-  "pain": 0.15
+  "stack": [],
+  "pain_base": 0.057,
+  "pain": 0.057
  },
  {
   "brand": "dash-water",
@@ -2603,12 +2702,16 @@
   "fit": 1.0,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.15590222793843123,
    "ops_hiring": 1,
-   "momentum": 1.0,
+   "momentum": 0.49619505577071443,
    "expansion": 0
   },
-  "pain": 0.475
+  "stack": [
+   "ops_hiring"
+  ],
+  "pain_base": 0.313,
+  "pain": 0.313
  },
  {
   "brand": "puresport",
@@ -2642,6 +2745,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -2682,9 +2787,11 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.1637370489509518,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.025,
   "pain": 0.025
  },
  {
@@ -2742,10 +2849,14 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.3333333333333333,
-   "expansion": 1
+   "momentum": 0.17161548033608032,
+   "expansion": 0.6290036748186352
   },
-  "pain": 0.15
+  "stack": [
+   "expansion"
+  ],
+  "pain_base": 0.089,
+  "pain": 0.089
  },
  {
   "brand": "innocent",
@@ -2865,12 +2976,17 @@
   "fit": 0.35,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 1.0,
+   "funding": 0.5581871062320871,
    "ops_hiring": 0.0,
-   "momentum": 1,
-   "expansion": 1
+   "momentum": 0.5788648159168873,
+   "expansion": 0.5499707896537189
   },
-  "pain": 0.5
+  "stack": [
+   "funding",
+   "expansion"
+  ],
+  "pain_base": 0.281,
+  "pain": 0.352
  },
  {
   "brand": "Humantra",
@@ -2960,13 +3076,15 @@
   "size_proxy": 0.5,
   "fit": 0.432,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 0.5,
+   "listings": 0.15629769647211725,
+   "funding": 0.13665924539250554,
    "ops_hiring": 0.0,
-   "momentum": 0.3333333333333333,
+   "momentum": 0.09765231395487427,
    "expansion": 0
   },
-  "pain": 0.325
+  "stack": [],
+  "pain_base": 0.096,
+  "pain": 0.096
  },
  {
   "brand": "Reformed",
@@ -3000,6 +3118,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -3117,13 +3237,18 @@
   "size_proxy": 1.0,
   "fit": 0.9,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 0.5,
+   "listings": 0.3250322939033408,
+   "funding": 0.2529304900715685,
    "ops_hiring": 0.0,
-   "momentum": 0.6666666666666666,
+   "momentum": 0.3620388811782638,
    "expansion": 0
   },
-  "pain": 0.375
+  "stack": [
+   "listings",
+   "funding"
+  ],
+  "pain_base": 0.215,
+  "pain": 0.269
  },
  {
   "brand": "Graze",
@@ -3162,6 +3287,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -3232,10 +3359,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.6666666666666666,
+   "momentum": 0.32710468987391506,
    "expansion": 0
   },
-  "pain": 0.1
+  "stack": [],
+  "pain_base": 0.049,
+  "pain": 0.049
  },
  {
   "brand": "Dot Dot Tea",
@@ -3275,10 +3404,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.03302062376521784,
    "expansion": 0
   },
-  "pain": 0.025
+  "stack": [],
+  "pain_base": 0.005,
+  "pain": 0.005
  },
  {
   "brand": "XOXO",
@@ -3358,12 +3489,14 @@
   "fit": 0.425,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 1.0,
+   "funding": 0.24576869154017544,
    "ops_hiring": 0.0,
-   "momentum": 0.5,
-   "expansion": 1
+   "momentum": 0.13297683863509321,
+   "expansion": 0.25012670373070073
   },
-  "pain": 0.425
+  "stack": [],
+  "pain_base": 0.106,
+  "pain": 0.106
  },
  {
   "brand": "Popchips",
@@ -3442,12 +3575,16 @@
   "fit": 0.35,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.49873488687737444,
    "ops_hiring": 0.0,
-   "momentum": 0.8333333333333334,
+   "momentum": 0.5433388496841299,
    "expansion": 0
   },
-  "pain": 0.25
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.206,
+  "pain": 0.206
  },
  {
   "brand": "Purity Soft Drinks",
@@ -3552,10 +3689,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 1,
-   "expansion": 1
+   "momentum": 0.5158358442284595,
+   "expansion": 0.3181884154573898
   },
-  "pain": 0.25
+  "stack": [],
+  "pain_base": 0.109,
+  "pain": 0.109
  },
  {
   "brand": "Dorset Cereals",
@@ -3589,6 +3728,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -3629,10 +3770,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.09096778199660471,
    "expansion": 0
   },
-  "pain": 0.025
+  "stack": [],
+  "pain_base": 0.014,
+  "pain": 0.014
  },
  {
   "brand": "Bart Spices",
@@ -3671,6 +3814,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -3705,6 +3850,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -3815,10 +3962,15 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.3333333333333333,
-   "momentum": 1,
+   "momentum": 0.7411838356925524,
    "expansion": 1
   },
-  "pain": 0.317
+  "stack": [
+   "ops_hiring",
+   "expansion"
+  ],
+  "pain_base": 0.278,
+  "pain": 0.347
  },
  {
   "brand": "Absolute Collagen",
@@ -3858,10 +4010,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.10404019675661681,
    "expansion": 0
   },
-  "pain": 0.025
+  "stack": [],
+  "pain_base": 0.016,
+  "pain": 0.016
  },
  {
   "brand": "Tom Parker Creamery",
@@ -3957,13 +4111,19 @@
   "size_proxy": 0.2,
   "fit": 0.35,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 0.5,
+   "listings": 0.493706363720437,
+   "funding": 0.24974678505452433,
    "ops_hiring": 0.0,
-   "momentum": 0.8333333333333334,
-   "expansion": 1
+   "momentum": 0.6037736766772294,
+   "expansion": 0.987412727440874
   },
-  "pain": 0.5
+  "stack": [
+   "listings",
+   "funding",
+   "expansion"
+  ],
+  "pain_base": 0.4,
+  "pain": 0.6
  },
  {
   "brand": "Tiba Tempeh",
@@ -4064,13 +4224,15 @@
   "size_proxy": 0.5,
   "fit": 0.512,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 0.5,
+   "listings": 0.12162623132305178,
+   "funding": 0.11130592826210277,
    "ops_hiring": 0.0,
-   "momentum": 0.8333333333333334,
-   "expansion": 1
+   "momentum": 0.2756734485482515,
+   "expansion": 0.24019057759809845
   },
-  "pain": 0.5
+  "stack": [],
+  "pain_base": 0.13,
+  "pain": 0.13
  },
  {
   "brand": "Clearly Drinks",
@@ -4110,10 +4272,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.03912933017879361,
    "expansion": 0
   },
-  "pain": 0.025
+  "stack": [],
+  "pain_base": 0.006,
+  "pain": 0.006
  },
  {
   "brand": "Plenish",
@@ -4237,13 +4401,18 @@
   "size_proxy": 0.5,
   "fit": 0.512,
   "pain_parts": {
-   "listings": 1.0,
+   "listings": 0.9268134443503996,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 1,
+   "momentum": 0.8732487814158924,
    "expansion": 1
   },
-  "pain": 0.55
+  "stack": [
+   "listings",
+   "expansion"
+  ],
+  "pain_base": 0.509,
+  "pain": 0.636
  },
  {
   "brand": "Pasta Evangelists",
@@ -4315,10 +4484,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.8333333333333334,
+   "momentum": 0.5462734370190521,
    "expansion": 0
   },
-  "pain": 0.125
+  "stack": [],
+  "pain_base": 0.082,
+  "pain": 0.082
  },
  {
   "brand": "Hackney Gelato",
@@ -4395,10 +4566,14 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.3333333333333333,
-   "momentum": 0.8333333333333334,
+   "momentum": 0.47007185384447586,
    "expansion": 0
   },
-  "pain": 0.192
+  "stack": [
+   "ops_hiring"
+  ],
+  "pain_base": 0.137,
+  "pain": 0.137
  },
  {
   "brand": "Borough Broth",
@@ -4545,12 +4720,18 @@
   "fit": 0.912,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 1,
+   "funding": 0.6551000038092865,
    "ops_hiring": 1,
-   "momentum": 0.8333333333333334,
-   "expansion": 1
+   "momentum": 0.43174883190737884,
+   "expansion": 0.4367333358728577
   },
-  "pain": 0.675
+  "stack": [
+   "funding",
+   "ops_hiring",
+   "expansion"
+  ],
+  "pain_base": 0.472,
+  "pain": 0.708
  },
  {
   "brand": "Wild Nutrition",
@@ -4645,12 +4826,16 @@
   "fit": 0.27,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.482576781584995,
    "ops_hiring": 0.0,
-   "momentum": 1,
+   "momentum": 0.6155913435998024,
    "expansion": 0
   },
-  "pain": 0.275
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.213,
+  "pain": 0.213
  },
  {
   "brand": "Mindful Chef",
@@ -4713,12 +4898,16 @@
   "fit": 0.23,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.31212059026985045,
    "ops_hiring": 0.0,
-   "momentum": 0.5,
+   "momentum": 0.33865380535897177,
    "expansion": 0
   },
-  "pain": 0.2
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.129,
+  "pain": 0.129
  },
  {
   "brand": "Barking Heads",
@@ -4752,6 +4941,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -4915,10 +5106,14 @@
    "listings": 0.0,
    "funding": 1,
    "ops_hiring": 0.0,
-   "momentum": 1.0,
+   "momentum": 0.7534377344177291,
    "expansion": 0
   },
-  "pain": 0.4
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.363,
+  "pain": 0.363
  },
  {
   "brand": "Bottlegreen",
@@ -5007,12 +5202,16 @@
   "fit": 0.512,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.291484531183859,
    "ops_hiring": 0.0,
-   "momentum": 0.8333333333333334,
+   "momentum": 0.5861125317645495,
    "expansion": 0
   },
-  "pain": 0.25
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.161,
+  "pain": 0.161
  },
  {
   "brand": "Maximuscle",
@@ -5046,6 +5245,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -5133,12 +5334,14 @@
   "fit": 0.35,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.19483852574079974,
    "ops_hiring": 0.0,
-   "momentum": 1.0,
+   "momentum": 0.3886848894036094,
    "expansion": 0
   },
-  "pain": 0.275
+  "stack": [],
+  "pain_base": 0.107,
+  "pain": 0.107
  },
  {
   "brand": "Free Soul",
@@ -5267,13 +5470,18 @@
   "size_proxy": 0.5,
   "fit": 0.532,
   "pain_parts": {
-   "listings": 0.5,
+   "listings": 0.17428643163261467,
    "funding": 1,
    "ops_hiring": 0.3333333333333333,
-   "momentum": 1,
+   "momentum": 0.6796161617280211,
    "expansion": 0
   },
-  "pain": 0.617
+  "stack": [
+   "funding",
+   "ops_hiring"
+  ],
+  "pain_base": 0.471,
+  "pain": 0.589
  },
  {
   "brand": "Olly's",
@@ -5331,10 +5539,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.1580313962179502,
    "expansion": 0
   },
-  "pain": 0.025
+  "stack": [],
+  "pain_base": 0.024,
+  "pain": 0.024
  },
  {
   "brand": "G Spot",
@@ -5494,13 +5704,18 @@
   "size_proxy": 1.0,
   "fit": 0.725,
   "pain_parts": {
-   "listings": 1,
+   "listings": 0.9090111936987415,
    "funding": 1,
    "ops_hiring": 0.0,
-   "momentum": 1,
+   "momentum": 0.41966131482036434,
    "expansion": 0
   },
-  "pain": 0.7
+  "stack": [
+   "listings",
+   "funding"
+  ],
+  "pain_base": 0.586,
+  "pain": 0.732
  },
  {
   "brand": "Ingenious",
@@ -5534,6 +5749,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -5578,6 +5795,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -5612,6 +5831,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -5712,13 +5933,15 @@
   "size_proxy": 0.5,
   "fit": 0.512,
   "pain_parts": {
-   "listings": 1.0,
-   "funding": 0.5,
+   "listings": 0.3941452799974045,
+   "funding": 0.16483823279495474,
    "ops_hiring": 0.0,
-   "momentum": 0.8333333333333334,
+   "momentum": 0.39608857399733305,
    "expansion": 0
   },
-  "pain": 0.55
+  "stack": [],
+  "pain_base": 0.219,
+  "pain": 0.219
  },
  {
   "brand": "Punchy",
@@ -5758,10 +5981,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.03412625241536967,
    "expansion": 0
   },
-  "pain": 0.025
+  "stack": [],
+  "pain_base": 0.005,
+  "pain": 0.005
  },
  {
   "brand": "ON Beer",
@@ -5812,13 +6037,17 @@
   "size_proxy": 0.2,
   "fit": 0.35,
   "pain_parts": {
-   "listings": 0.5,
+   "listings": 0.2856363438362718,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.0952121146120906,
    "expansion": 0
   },
-  "pain": 0.175
+  "stack": [
+   "listings"
+  ],
+  "pain_base": 0.1,
+  "pain": 0.1
  },
  {
   "brand": "Some Grub",
@@ -5862,6 +6091,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -5913,13 +6144,15 @@
   "size_proxy": 0.5,
   "fit": 0.512,
   "pain_parts": {
-   "listings": 0.5,
+   "listings": 0.10797301432528063,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.035991004775093545,
    "expansion": 0
   },
-  "pain": 0.175
+  "stack": [],
+  "pain_base": 0.038,
+  "pain": 0.038
  },
  {
   "brand": "Naturelly Jelly Juice",
@@ -5953,6 +6186,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -5987,6 +6222,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -6021,6 +6258,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -6089,13 +6328,15 @@
   "size_proxy": 0.5,
   "fit": 0.512,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 0.5,
+   "listings": 0.13123054274239535,
+   "funding": 0.13123054274239535,
    "ops_hiring": 0.0,
-   "momentum": 0.3333333333333333,
+   "momentum": 0.08759799024106096,
    "expansion": 0
   },
-  "pain": 0.325
+  "stack": [],
+  "pain_base": 0.085,
+  "pain": 0.085
  },
  {
   "brand": "seriouspig",
@@ -6129,6 +6370,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -6308,12 +6551,18 @@
   "fit": 0.812,
   "pain_parts": {
    "listings": 1,
-   "funding": 0.5,
+   "funding": 0.482576781584995,
    "ops_hiring": 0.0,
    "momentum": 1,
-   "expansion": 1
+   "expansion": 0.9824222937057109
   },
-  "pain": 0.675
+  "stack": [
+   "listings",
+   "funding",
+   "expansion"
+  ],
+  "pain_base": 0.669,
+  "pain": 1.0
  },
  {
   "brand": "Mummy Meegz",
@@ -6353,10 +6602,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.04297460360174313,
    "expansion": 0
   },
-  "pain": 0.025
+  "stack": [],
+  "pain_base": 0.006,
+  "pain": 0.006
  },
  {
   "brand": "OGGS",
@@ -6441,12 +6692,16 @@
   "fit": 0.525,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.09881122234899756,
    "ops_hiring": 0.3333333333333333,
-   "momentum": 0.6666666666666666,
-   "expansion": 1
+   "momentum": 0.21889526269045576,
+   "expansion": 0.1946411816341117
   },
-  "pain": 0.392
+  "stack": [
+   "ops_hiring"
+  ],
+  "pain_base": 0.144,
+  "pain": 0.144
  },
  {
   "brand": "Grounded",
@@ -6480,6 +6735,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -6548,6 +6805,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -6642,10 +6901,15 @@
    "listings": 0.0,
    "funding": 1,
    "ops_hiring": 0.3333333333333333,
-   "momentum": 0.6666666666666666,
+   "momentum": 0.45855919477751944,
    "expansion": 0
   },
-  "pain": 0.417
+  "stack": [
+   "funding",
+   "ops_hiring"
+  ],
+  "pain_base": 0.385,
+  "pain": 0.482
  },
  {
   "brand": "HIPPEAS",
@@ -6748,12 +7012,16 @@
   "fit": 0.35,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 1.0,
+   "funding": 0.6660447064421404,
    "ops_hiring": 0.0,
-   "momentum": 1,
+   "momentum": 0.6833415379486044,
    "expansion": 0
   },
-  "pain": 0.4
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.269,
+  "pain": 0.269
  },
  {
   "brand": "PerfectTed",
@@ -6832,12 +7100,14 @@
   "fit": 0.425,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.18662528572703188,
    "ops_hiring": 0.0,
-   "momentum": 0.8333333333333334,
+   "momentum": 0.5905058189881318,
    "expansion": 0
   },
-  "pain": 0.25
+  "stack": [],
+  "pain_base": 0.135,
+  "pain": 0.135
  },
  {
   "brand": "Parsley Box",
@@ -6877,10 +7147,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.02909192647513942,
    "expansion": 0
   },
-  "pain": 0.025
+  "stack": [],
+  "pain_base": 0.004,
+  "pain": 0.004
  },
  {
   "brand": "Nakd",
@@ -6974,10 +7246,12 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.3333333333333333,
+   "momentum": 0.15121655254798885,
    "expansion": 0
   },
-  "pain": 0.05
+  "stack": [],
+  "pain_base": 0.023,
+  "pain": 0.023
  },
  {
   "brand": "Fever-Tree",
@@ -7081,13 +7355,15 @@
   "size_proxy": 0.5,
   "fit": 0.425,
   "pain_parts": {
-   "listings": 0.5,
-   "funding": 1.0,
+   "listings": 0.10083430713078664,
+   "funding": 0.2016686142615733,
    "ops_hiring": 0.0,
-   "momentum": 0.8333333333333334,
-   "expansion": 1
+   "momentum": 0.4351792601196413,
+   "expansion": 0.2016686142615733
   },
-  "pain": 0.625
+  "stack": [],
+  "pain_base": 0.166,
+  "pain": 0.166
  },
  {
   "brand": "Artisanal Spirits Company",
@@ -7144,10 +7420,14 @@
    "listings": 0.0,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.3333333333333333,
-   "expansion": 1
+   "momentum": 0.25286900665563267,
+   "expansion": 0.9268134443503996
   },
-  "pain": 0.15
+  "stack": [
+   "expansion"
+  ],
+  "pain_base": 0.131,
+  "pain": 0.131
  },
  {
   "brand": "Bramble Foods",
@@ -7291,12 +7571,17 @@
   "fit": 0.51,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 1,
+   "funding": 0.9105544296819037,
    "ops_hiring": 0.0,
-   "momentum": 1,
-   "expansion": 1
+   "momentum": 0.4389209825574465,
+   "expansion": 0.8269529724497834
   },
-  "pain": 0.5
+  "stack": [
+   "funding",
+   "expansion"
+  ],
+  "pain_base": 0.376,
+  "pain": 0.47
  },
  {
   "brand": "Cakesmiths",
@@ -7351,12 +7636,16 @@
   "fit": 0.51,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.28636090170538053,
    "ops_hiring": 0.0,
-   "momentum": 0.3333333333333333,
+   "momentum": 0.17807224392469126,
    "expansion": 0
   },
-  "pain": 0.175
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.098,
+  "pain": 0.098
  },
  {
   "brand": "Addo Food Group",
@@ -7447,6 +7736,10 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [
+   "ops_hiring"
+  ],
+  "pain_base": 0.2,
   "pain": 0.2
  },
  {
@@ -7522,13 +7815,17 @@
   "size_proxy": 0.5,
   "fit": 0.512,
   "pain_parts": {
-   "listings": 1.0,
+   "listings": 0.3051788549100862,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.5,
+   "momentum": 0.13359625765512437,
    "expansion": 0
   },
-  "pain": 0.375
+  "stack": [
+   "listings"
+  ],
+  "pain_base": 0.112,
+  "pain": 0.112
  },
  {
   "brand": "Sneak",
@@ -7598,13 +7895,17 @@
   "size_proxy": 0.2,
   "fit": 0.35,
   "pain_parts": {
-   "listings": 1.0,
+   "listings": 0.7077131044498316,
    "funding": 0.0,
    "ops_hiring": 0.0,
-   "momentum": 0.5,
+   "momentum": 0.28322184747754825,
    "expansion": 0
   },
-  "pain": 0.375
+  "stack": [
+   "listings"
+  ],
+  "pain_base": 0.255,
+  "pain": 0.255
  },
  {
   "brand": "Hovis",
@@ -7711,10 +8012,14 @@
    "listings": 0.0,
    "funding": 1,
    "ops_hiring": 0.0,
-   "momentum": 0.5,
+   "momentum": 0.336927107734841,
    "expansion": 0
   },
-  "pain": 0.325
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.301,
+  "pain": 0.301
  },
  {
   "brand": "Armitage Pet Care",
@@ -7748,6 +8053,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -7782,6 +8089,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -7846,12 +8155,16 @@
   "fit": 0.405,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5,
+   "funding": 0.156694168168896,
    "ops_hiring": 1,
-   "momentum": 0.16666666666666666,
+   "momentum": 0.052231389389632,
    "expansion": 0
   },
-  "pain": 0.35
+  "stack": [
+   "ops_hiring"
+  ],
+  "pain_base": 0.247,
+  "pain": 0.247
  },
  {
   "brand": "Runa",
@@ -7885,6 +8198,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -7919,6 +8234,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -7953,6 +8270,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -7987,6 +8306,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -8021,6 +8342,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -8055,6 +8378,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  },
  {
@@ -8092,6 +8417,8 @@
    "momentum": 0.0,
    "expansion": 0
   },
+  "stack": [],
+  "pain_base": 0.0,
   "pain": 0.0
  }
 ]
