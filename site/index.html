@@ -286,7 +286,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   <div class="prose">
     <p class="eyebrow">Scoring logic</p>
     <h2>Four pillars, sixteen signals</h2>
-    <p class="muted">Each signal is scaled 0 to 1 across the funds; counts are log-scaled so one huge portfolio doesn't flatten the rest. Access and strategic value only count once a fund holds brands to reach: they scale with live brands up to three. Move the sliders to re-weight the pillars and watch the ranking change.</p>
+    <p class="muted">Each signal is scaled 0 to 1 across the funds; counts are log-scaled so one huge portfolio doesn't flatten the rest. News loses half its weight every 9 months, and a brand showing two or more triggers within 12 months (a listing, a round, ops hiring, export) gets up to 1.5× on its pain score, because that overlap is the buying moment. Access and strategic value only count once a fund holds brands to reach: they scale with live brands up to three. Move the sliders to re-weight the pillars and watch the ranking change.</p>
   </div>
   <div class="sig-grid">
     <div class="table-scroll"><table>
@@ -482,6 +482,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     exited_old: "The fund sold its stake more than 24 months ago; not counted in the score.",
   };
   const RB = D.retailer_blurbs || {};
+  const STACK_LABEL = { listings: "new listing", funding: "funding", ops_hiring: "ops hiring", expansion: "export" };
   let drawerOpen = false;
   function select(name, where) {
     selected = name;
@@ -504,7 +505,8 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
         ${B.blurb ? `<p class="blurb">${esc(B.blurb)}</p>` : ""}
         <div class="chips">${b.retailers.length ? b.retailers.map(x => `<span class="chip" title="${esc(x + (RB[x] ? ": " + RB[x] : ""))}">${esc(x)}</span>`).join("") : `<span class="chip ghost">no stockist found yet</span>`}</div>
         ${trig ? `<p class="trig">${esc(trig.date.slice(0, 7))} · <a href="${esc(trig.url)}" target="_blank" rel="noopener">${esc(trig.headline)}</a> <span class="mono">(${esc(host(trig.url))})</span></p>` : ""}
-        ${ops ? `<p class="trig">Hiring: ${esc(ops)}</p>` : ""}</div>`;
+        ${ops ? `<p class="trig">Hiring: ${esc(ops)}</p>` : ""}
+        ${(B.stack || []).length > 1 ? `<p class="trig"><b style="color:var(--accent)">Stacked triggers:</b> ${B.stack.map(k => STACK_LABEL[k]).join(" + ")} in the last 12 months</p>` : ""}</div>`;
     }).join("");
     const side = [];
     if (fd.people.length) side.push(`<div><p class="eyebrow">Named contacts</p><ul>${fd.people.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>, <span class="muted">${esc(p.title)}</span></li>`).join("")}</ul></div>`);
@@ -513,7 +515,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     side.push(`<div><p class="eyebrow">Sources</p><ul>${[fd.website, ...fd.portfolio_urls].filter(Boolean).map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u) + new URL(u).pathname.replace(/\/$/, ""))}</a></li>`).join("")}</ul>
       <p class="muted" style="font-size:13px;margin-top:6px">Portfolio read: ${esc(fd.scrape)}.</p></div>`);
     return `<p class="eyebrow">Fund dossier</p><div class="dos-head"><h3>${esc(fd.name)}</h3><span class="tier ${r.tier}">${r.tier}</span>
-        <span class="mono muted">#${rank} · ${r.score.toFixed(1)} / 100 · ${esc(fd.type)} · ${fmtInt(fd.companies)} portfolio companies</span></div>
+        <span class="mono muted">#${rank} · ${r.score.toFixed(1)} / 100 · ${esc(fd.type)} · ${fmtInt(fd.companies)} portfolio companies · <span title="How many of the 16 signals have any data for this fund. Low coverage means a low score may be missing data, not a weak fund.">data on ${fd.coverage}/16 signals</span></span></div>
       ${fd.about ? `<p class="about">${esc(fd.about)}</p>` : ""}
       <div style="display:grid;gap:6px"><p class="eyebrow">Why this fund</p><p class="why">${esc(fd.why)}</p></div>
       <div class="pillars">${pillars}</div>

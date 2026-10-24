@@ -23,7 +23,7 @@ for b in brands:
         "name": b["brand"], "website": b.get("website"), "description": (b.get("description") or "")[:220],
         "blurb": blurbs["brands"].get(b["brand"], ""),
         "funds": b["funds"], "category": b["category"], "fit": b["fit"], "pain": b["pain"],
-        "pain_parts": b["pain_parts"], "size_proxy": b["size_proxy"],
+        "pain_parts": b["pain_parts"], "size_proxy": b["size_proxy"], "stack": b["stack"],
         "retailers": b["retailers"], "ops_roles": b["ops_roles"][:5],
         "triggers": [news_item(n) for n in trig[:3]],
         "news_count": len(b["news"]), "fund_sources": b["fund_sources"][:3],
@@ -40,6 +40,7 @@ for f in funds:
         "people": [{"name": p["name"], "title": p["title"], "url": p["url"]} for p in f["evidence"]["platform_people"][:4]],
         "community": [{"text": c["text"][:60], "url": c["url"]} for c in f["evidence"]["community"][:4]],
         "overlap": sorted(set(f["evidence"]["procuros_overlap"])),
+        "coverage": f["coverage"]["signals_with_data"],
     })
 
 failed = [{"name": f["fund"], "status": f["scrape_status"], "note": (f.get("scrape_notes") or "")[:140]}
