@@ -159,6 +159,11 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 .bi .top b { font-size: 16px; }
 .bi .chips { display: flex; flex-wrap: wrap; gap: 5px; }
 .bi .trig { font-size: 13px; color: var(--ink-2); }
+.bi .blurb { font-size: 14px; color: var(--ink-2); margin-top: -2px; }
+.about { font-size: 15px; color: var(--ink-2); margin-top: -8px; }
+.key { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12px; color: var(--ink-2); padding: 8px 10px; background: var(--card); border: 1px solid var(--rule); border-radius: 4px; margin-bottom: 4px; }
+.key > span { display: inline-flex; gap: 6px; align-items: center; }
+.status, .chip { cursor: help; }
 .status { font: 500 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .status.current { color: var(--good); } .status.unknown { color: var(--ink-2); } .status.exited_recent { color: var(--warn); } .status.exited_old { color: var(--crit); }
 .side { display: grid; gap: 18px; font-size: 14px; }
@@ -460,7 +465,14 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   }
 
   // Dossier
-  const STATUS_LABEL = { current: "Current", unknown: "Status not stated", exited_recent: "Exited < 24 months", exited_old: "Exited earlier" };
+  const STATUS_LABEL = { current: "Still held", unknown: "Holding not confirmed", exited_recent: "Sold < 24 months ago", exited_old: "Sold earlier" };
+  const STATUS_TIP = {
+    current: "The fund's site or recent news shows it still holds a stake.",
+    unknown: "The fund lists this brand but doesn't say whether it still holds a stake.",
+    exited_recent: "The fund sold its stake in the last 24 months; the relationship is still warm.",
+    exited_old: "The fund sold its stake more than 24 months ago; not counted in the score.",
+  };
+  const RB = D.retailer_blurbs || {};
   let drawerOpen = false;
   function select(name, where) {
     selected = name;
@@ -478,9 +490,10 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
       const B = brandsByName[b.brand] || {};
       const trig = (B.triggers || [])[0];
       const ops = (B.ops_roles || []).slice(0, 2).map(o => o.title).join(", ");
-      return `<div class="bi"><div class="top"><b>${B.website ? `<a href="${esc(B.website)}" target="_blank" rel="noopener">${esc(b.brand)}</a>` : esc(b.brand)}</b>
-          <span class="status ${b.status}">${STATUS_LABEL[b.status]}</span></div>
-        <div class="chips">${b.retailers.length ? b.retailers.map(x => `<span class="chip">${esc(x)}</span>`).join("") : `<span class="chip ghost">no retailer named on site</span>`}</div>
+      return `<div class="bi"><div class="top"><b>${B.website ? `<a href="${esc(B.website)}" target="_blank" rel="noopener">${esc(b.brand.replace("dash-water", "DASH Water"))}</a>` : esc(b.brand)}</b>
+          <span class="status ${b.status}" title="${esc(STATUS_TIP[b.status])}">${STATUS_LABEL[b.status]}</span></div>
+        ${B.blurb ? `<p class="blurb">${esc(B.blurb)}</p>` : ""}
+        <div class="chips">${b.retailers.length ? b.retailers.map(x => `<span class="chip" title="${esc(x + (RB[x] ? ": " + RB[x] : ""))}">${esc(x)}</span>`).join("") : `<span class="chip ghost">no stockist found yet</span>`}</div>
         ${trig ? `<p class="trig">${esc(trig.date.slice(0, 7))} · <a href="${esc(trig.url)}" target="_blank" rel="noopener">${esc(trig.headline)}</a> <span class="mono">(${esc(host(trig.url))})</span></p>` : ""}
         ${ops ? `<p class="trig">Hiring: ${esc(ops)}</p>` : ""}</div>`;
     }).join("");
@@ -492,10 +505,13 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
       <p class="muted" style="font-size:13px;margin-top:6px">Portfolio read: ${esc(fd.scrape)}.</p></div>`);
     return `<p class="eyebrow">Fund dossier</p><div class="dos-head"><h3>${esc(fd.name)}</h3><span class="tier ${r.tier}">${r.tier}</span>
         <span class="mono muted">#${rank} · ${r.score.toFixed(1)} / 100 · ${esc(fd.type)} · ${fmtInt(fd.companies)} portfolio companies</span></div>
+      ${fd.about ? `<p class="about">${esc(fd.about)}</p>` : ""}
       <div style="display:grid;gap:6px"><p class="eyebrow">Why this fund</p><p class="why">${esc(fd.why)}</p></div>
       <div class="pillars">${pillars}</div>
       <div class="dossier">
-        <div style="min-width:0"><p class="eyebrow" style="margin-bottom:6px">UK grocery brands in the portfolio</p><div class="brand-list">${brands}</div></div>
+        <div style="min-width:0"><p class="eyebrow" style="margin-bottom:8px">UK grocery brands in the portfolio</p>
+          <div class="key"><span><span class="chip">Tesco</span> = UK retailer that sells the brand (hover for what it is)</span><span><span class="status unknown">Holding</span> = whether the fund still owns a stake</span></div>
+          <div class="brand-list">${brands}</div></div>
         <aside class="side">${side.join("")}</aside>
       </div>`;
   }
@@ -557,9 +573,9 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     .map(([l, t]) => `<span><span class="pill-dot" style="background:var(${t});border:1px solid var(--ink-2)"></span>${l}</span>`).join("");
   const top = scoreAll(DEFAULT_W).slice(0, 20), topNames = new Set(top.map(r => r.fd.name));
   const nodes = [], links = [], seen = new Map();
-  top.forEach(r => nodes.push({ id: "f:" + r.fd.name, name: r.fd.name, kind: "fund", score: r.score, live: r.fd.live }));
+  top.forEach(r => nodes.push({ id: "f:" + r.fd.name, name: r.fd.name, kind: "fund", score: r.score, live: r.fd.live, about: r.fd.about }));
   top.forEach(r => r.fd.brands.filter(b => b.status !== "exited_old").forEach(b => {
-    if (!seen.has(b.brand)) { const n = { id: "b:" + b.brand, name: b.brand, kind: "brand", reach: b.retailers.length, retailers: b.retailers, backers: 0 }; seen.set(b.brand, n); nodes.push(n); }
+    if (!seen.has(b.brand)) { const n = { id: "b:" + b.brand, name: b.brand, kind: "brand", blurb: (brandsByName[b.brand] || {}).blurb, reach: b.retailers.length, retailers: b.retailers, backers: 0 }; seen.set(b.brand, n); nodes.push(n); }
     seen.get(b.brand).backers++;
     links.push({ source: "f:" + r.fd.name, target: "b:" + b.brand });
   }));
@@ -587,8 +603,8 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     tip.style.display = "block";
     tip.style.left = Math.min(ev.clientX - box.left + 12, box.width - 270) + "px";
     tip.style.top = (ev.clientY - box.top + 12) + "px";
-    tip.innerHTML = d.kind === "fund" ? `<b>${esc(d.name)}</b><br>score ${d.score.toFixed(1)} · ${d.live} live brands`
-      : `<b>${esc(d.name)}</b><br>${d.retailers.length ? esc(d.retailers.join(", ")) : "no grocer named"}${d.backers > 1 ? `<br>${d.backers} shortlisted backers` : ""}`;
+    tip.innerHTML = d.kind === "fund" ? `<b>${esc(d.name)}</b><br>${esc(d.about || "")}${d.about ? "<br>" : ""}score ${d.score.toFixed(1)} · ${d.live} live brands`
+      : `<b>${esc(d.name.replace("dash-water", "DASH Water"))}</b>${d.blurb ? "<br>" + esc(d.blurb) : ""}<br>${d.retailers.length ? "Sold at " + esc(d.retailers.join(", ")) : "no stockist found yet"}${d.backers > 1 ? `<br>${d.backers} shortlisted backers` : ""}`;
   }).on("mouseleave", () => tip.style.display = "none")
     .on("click", (ev, d) => { if (d.kind === "fund") select(d.name, "map"); });
   nd.call(d3.drag()

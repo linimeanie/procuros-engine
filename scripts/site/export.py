@@ -8,6 +8,7 @@ funds = json.loads((ROOT / "data/scored/funds_scored.json").read_text())
 brands = json.loads((ROOT / "data/scored/brands_scored.json").read_text())
 raw_funds = [json.loads(l) for l in open(ROOT / "data/firecrawl/funds.jsonl")]
 cands = json.loads((ROOT / "data/firecrawl/grocery_candidates.json").read_text())
+blurbs = json.loads((ROOT / "scripts/site/blurbs.json").read_text())  # plain-English one-liners, written by hand
 
 
 def news_item(n):
@@ -20,6 +21,7 @@ for b in brands:
                   key=lambda n: n["date_parsed"], reverse=True)
     out_brands.append({
         "name": b["brand"], "website": b.get("website"), "description": (b.get("description") or "")[:220],
+        "blurb": blurbs["brands"].get(b["brand"], ""),
         "funds": b["funds"], "category": b["category"], "fit": b["fit"], "pain": b["pain"],
         "pain_parts": b["pain_parts"], "size_proxy": b["size_proxy"],
         "retailers": b["retailers"], "ops_roles": b["ops_roles"][:5],
@@ -30,7 +32,7 @@ for b in brands:
 out_funds = []
 for f in funds:
     out_funds.append({
-        "name": f["fund"], "type": f["fund_type"], "website": f.get("website"), "scrape": f["scrape_status"],
+        "name": f["fund"], "type": f["fund_type"], "about": blurbs["funds"].get(f["fund"], ""), "website": f.get("website"), "scrape": f["scrape_status"],
         "portfolio_urls": f.get("portfolio_urls", [])[:2], "companies": f["company_count"],
         "n": f["normalised"], "raw": f["raw"], "gate": f["gate"], "score": f["score"], "tier": f["tier"],
         "pillars": f["pillars"], "live": f["live_brand_count"], "why": f["why"],
@@ -52,7 +54,7 @@ funnel = [
     {"label": "Shortlist", "value": 20},
 ]
 data = {"as_of": cfg["as_of"], "config": {k: cfg[k] for k in ("pillars", "fit", "pain", "access", "strategic", "tiers", "gate_brands")},
-        "funnel": funnel, "funds": out_funds, "brands": out_brands, "failed": failed,
+        "funnel": funnel, "retailer_blurbs": blurbs["retailers"], "funds": out_funds, "brands": out_brands, "failed": failed,
         "stats": {"brands_with_retailers": sum(1 for b in brands if b["retailers"]),
                   "brands_with_ops": sum(1 for b in brands if b["ops_roles"]),
                   "brands_with_news": sum(1 for b in brands if b["news"])}}
