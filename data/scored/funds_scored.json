@@ -755,8 +755,8 @@
    },
    {
     "brand": "Popchips",
-    "status": "unknown",
-    "status_source": "not stated",
+    "status": "current",
+    "status_source": "fund invested recently, no exit found: invested in Popchips (2026) (https://pitchbook.com/profiles/company/231130-81)",
     "fit": 0.9,
     "pain": 0.206,
     "retailers": [
@@ -788,11 +788,11 @@
    }
   ],
   "raw": {
-   "icp_count": 6.23375,
-   "fmcg_share": 0.10519480519480519,
-   "avg_brand_fit": 0.7695987654320987,
+   "icp_count": 6.36875,
+   "fmcg_share": 0.10714285714285714,
+   "avg_brand_fit": 0.771969696969697,
    "recent_deals": 1,
-   "pain_top": 0.28169,
+   "pain_top": 0.28786999999999996,
    "platform_team": 0,
    "community": 0,
    "size_stage": 1.0,
@@ -815,17 +815,17 @@
   },
   "gate": 1.0,
   "pillars": {
-   "fit": 0.697,
-   "pain": 0.282,
+   "fit": 0.702,
+   "pain": 0.288,
    "access": 0.15,
    "strategic": 0.7
   },
   "normalised": {
-   "icp_count": 0.869,
-   "fmcg_share": 0.261,
-   "avg_brand_fit": 0.798,
+   "icp_count": 0.877,
+   "fmcg_share": 0.266,
+   "avg_brand_fit": 0.8,
    "recent_deals": 0.631,
-   "pain_top": 0.282,
+   "pain_top": 0.288,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 1.0,
@@ -834,7 +834,7 @@
    "brand_halo": 1.0,
    "ecosystem": 0.0
   },
-  "score": 46.3,
+  "score": 46.7,
   "live_brand_count": 9,
   "tier": "A",
   "coverage": {
@@ -2487,159 +2487,6 @@
   "why": "1 UK grocery brand held now or exited <24m, incl. Hackney Gelato (Sainsbury's/Waitrose/Ocado); named portfolio/platform contact: Adrian Harris (Portfolio Director)."
  },
  {
-  "fund": "LDC",
-  "fund_type": "PE",
-  "website": "https://www.ldc.co.uk",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://www.ldc.co.uk/portfolio/",
-   "https://www.ldc.co.uk/portfolio/page/2/",
-   "https://www.ldc.co.uk/portfolio/page/3/",
-   "https://www.ldc.co.uk/portfolio/",
-   "https://www.ldc.co.uk/portfolio/page/4/",
-   "https://www.ldc.co.uk/portfolio/page/5/",
-   "https://www.ldc.co.uk/portfolio/page/6/",
-   "https://www.ldc.co.uk/portfolio/page/7/",
-   "https://www.ldc.co.uk/portfolio/page/8/",
-   "https://www.ldc.co.uk/portfolio/page/9/",
-   "https://www.ldc.co.uk/portfolio/page/10/",
-   "https://www.ldc.co.uk/portfolio/page/11/",
-   "https://www.ldc.co.uk/portfolio/page/12/",
-   "https://www.ldc.co.uk/portfolio/page/13/",
-   "https://www.ldc.co.uk/portfolio/page/14/",
-   "https://www.ldc.co.uk/portfolio/page/15/",
-   "https://www.ldc.co.uk/portfolio/page/16/"
-  ],
-  "company_count": 182,
-  "brands": [
-   {
-    "brand": "Fever-Tree",
-    "status": "exited_old",
-    "status_source": "https://www.ldc.co.uk/sector/consumer/ (IPO 2014)",
-    "fit": 0.9,
-    "pain": 0.166,
-    "retailers": [
-     "Waitrose",
-     "Sainsbury's",
-     "Ocado",
-     "Asda",
-     "Tesco",
-     "Co-op",
-     "Morrisons"
-    ]
-   },
-   {
-    "brand": "Bramble Foods",
-    "status": "current",
-    "status_source": "LDC profile: backed Dec 2021",
-    "fit": 0.51,
-    "pain": 0.47,
-    "retailers": []
-   },
-   {
-    "brand": "Cakesmiths",
-    "status": "exited_old",
-    "status_source": "https://www.ldc.co.uk/sector/consumer/",
-    "fit": 0.51,
-    "pain": 0.191,
-    "retailers": []
-   },
-   {
-    "brand": "Addo Food Group",
-    "status": "unknown",
-    "status_source": "LDC profile: backed 2017 SBO",
-    "fit": 0.61,
-    "pain": 0.2,
-    "retailers": []
-   },
-   {
-    "brand": "Seabrook",
-    "status": "exited_old",
-    "status_source": "LDC profile: sold to Calbee Oct 2018",
-    "fit": 0.9,
-    "pain": 0.112,
-    "retailers": [
-     "Aldi",
-     "Lidl",
-     "Sainsbury's",
-     "Ocado",
-     "Morrisons",
-     "Asda",
-     "Tesco",
-     "Waitrose"
-    ]
-   }
-  ],
-  "raw": {
-   "icp_count": 1.375,
-   "fmcg_share": 0.012637362637362636,
-   "avg_brand_fit": 0.5978260869565218,
-   "recent_deals": 0,
-   "pain_top": 0.14207,
-   "platform_team": 2,
-   "community": 1,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 0,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [
-    {
-     "name": "Andy Holman",
-     "title": "Portfolio Director",
-     "url": "https://www.ldc.co.uk/team-hub/"
-    },
-    {
-     "name": "Richard Haynes",
-     "title": "Partner, Head of Value Creation Partners",
-     "url": "https://www.ldc.co.uk/team-hub/"
-    }
-   ],
-   "community": [
-    {
-     "text": "The Pallet Network: support for national roll-out Ten-year private equity partnership helped management treble revenues ",
-     "url": "https://www.ldc.co.uk/portfolio/the-pallet-network-support-for-national-roll-out"
-    }
-   ],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 0.67,
-  "pillars": {
-   "fit": 0.301,
-   "pain": 0.142,
-   "access": 0.294,
-   "strategic": 0.0
-  },
-  "normalised": {
-   "icp_count": 0.38,
-   "fmcg_share": 0.031,
-   "avg_brand_fit": 0.62,
-   "recent_deals": 0.0,
-   "pain_top": 0.142,
-   "platform_team": 0.667,
-   "community": 0.333,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.0,
-   "ecosystem": 0.0
-  },
-  "score": 22.2,
-  "live_brand_count": 2,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": 10,
-   "signals_total": 16
-  },
-  "rank": 17,
-  "why": "2 UK grocery brands held now or exited <24m, incl. Bramble Foods, Addo Food Group; recent trigger: Bramble Foods: \"UK’s Bramble Foods Group snaps up Whitakers Chocolates\" (2025-01); named portfolio/platform contact: Andy Holman (Portfolio Director)."
- },
- {
   "fund": "Inverleith",
   "fund_type": "PE",
   "website": "https://inverleith.com",
@@ -2722,7 +2569,7 @@
    "signals_with_data": 7,
    "signals_total": 16
   },
-  "rank": 18,
+  "rank": 17,
   "why": "2 UK grocery brands held now or exited <24m, incl. Good Hemp (Waitrose/Sainsbury's/Tesco), EDEN MILL St Andrews (Sainsbury's)."
  },
  {
@@ -2813,7 +2660,7 @@
    "signals_with_data": 10,
    "signals_total": 16
   },
-  "rank": 19,
+  "rank": 18,
   "why": "1 UK grocery brand held now or exited <24m, incl. Better Nature (Tesco/Asda/Ocado); recent trigger: Better Nature: \"Tempeh Brand Better Nature Launches at Hundreds of REWE Stores Across Germany\" (2025-04); named portfolio/platform contact: Romha Berhane (Portfolio Manager)."
  },
  {
@@ -2913,7 +2760,7 @@
    "signals_with_data": 9,
    "signals_total": 16
   },
-  "rank": 20,
+  "rank": 19,
   "why": "2 UK grocery brands held now or exited <24m, incl. Little Bandits (Asda), The Good Pulse Co."
  },
  {
@@ -3001,7 +2848,7 @@
    "signals_with_data": 10,
    "signals_total": 16
   },
-  "rank": 21,
+  "rank": 20,
   "why": "1 UK grocery brand held now or exited <24m, incl. Absolute Collagen (Boots)."
  },
  {
@@ -3090,8 +2937,161 @@
    "signals_with_data": 7,
    "signals_total": 16
   },
-  "rank": 22,
+  "rank": 21,
   "why": "2 UK grocery brands held now or exited <24m, incl. Hovis (Tesco/Sainsbury's/Waitrose), Bright Blue Foods; recent trigger: Hovis: \"Why ABF’s Hovis deal matters far beyond bread\" (2026-09)."
+ },
+ {
+  "fund": "LDC",
+  "fund_type": "PE",
+  "website": "https://www.ldc.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.ldc.co.uk/portfolio/",
+   "https://www.ldc.co.uk/portfolio/page/2/",
+   "https://www.ldc.co.uk/portfolio/page/3/",
+   "https://www.ldc.co.uk/portfolio/",
+   "https://www.ldc.co.uk/portfolio/page/4/",
+   "https://www.ldc.co.uk/portfolio/page/5/",
+   "https://www.ldc.co.uk/portfolio/page/6/",
+   "https://www.ldc.co.uk/portfolio/page/7/",
+   "https://www.ldc.co.uk/portfolio/page/8/",
+   "https://www.ldc.co.uk/portfolio/page/9/",
+   "https://www.ldc.co.uk/portfolio/page/10/",
+   "https://www.ldc.co.uk/portfolio/page/11/",
+   "https://www.ldc.co.uk/portfolio/page/12/",
+   "https://www.ldc.co.uk/portfolio/page/13/",
+   "https://www.ldc.co.uk/portfolio/page/14/",
+   "https://www.ldc.co.uk/portfolio/page/15/",
+   "https://www.ldc.co.uk/portfolio/page/16/"
+  ],
+  "company_count": 182,
+  "brands": [
+   {
+    "brand": "Fever-Tree",
+    "status": "exited_old",
+    "status_source": "https://www.ldc.co.uk/sector/consumer/ (IPO 2014)",
+    "fit": 0.9,
+    "pain": 0.166,
+    "retailers": [
+     "Waitrose",
+     "Sainsbury's",
+     "Ocado",
+     "Asda",
+     "Tesco",
+     "Co-op",
+     "Morrisons"
+    ]
+   },
+   {
+    "brand": "Bramble Foods",
+    "status": "current",
+    "status_source": "LDC profile: backed Dec 2021",
+    "fit": 0.51,
+    "pain": 0.47,
+    "retailers": []
+   },
+   {
+    "brand": "Cakesmiths",
+    "status": "exited_old",
+    "status_source": "https://www.ldc.co.uk/sector/consumer/",
+    "fit": 0.51,
+    "pain": 0.191,
+    "retailers": []
+   },
+   {
+    "brand": "Addo Food Group",
+    "status": "exited_old",
+    "status_source": "Companies House PSC: Eliot Luxembourg Holdco Sarl (https://find-and-update.company-information.service.gov.uk/company/05998337/persons-with-significant-control)",
+    "fit": 0.61,
+    "pain": 0.2,
+    "retailers": []
+   },
+   {
+    "brand": "Seabrook",
+    "status": "exited_old",
+    "status_source": "LDC profile: sold to Calbee Oct 2018",
+    "fit": 0.9,
+    "pain": 0.112,
+    "retailers": [
+     "Aldi",
+     "Lidl",
+     "Sainsbury's",
+     "Ocado",
+     "Morrisons",
+     "Asda",
+     "Tesco",
+     "Waitrose"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 0.9480000000000001,
+   "fmcg_share": 0.008791208791208791,
+   "avg_brand_fit": 0.5925,
+   "recent_deals": 0,
+   "pain_top": 0.11407,
+   "platform_team": 2,
+   "community": 1,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Andy Holman",
+     "title": "Portfolio Director",
+     "url": "https://www.ldc.co.uk/team-hub/"
+    },
+    {
+     "name": "Richard Haynes",
+     "title": "Partner, Head of Value Creation Partners",
+     "url": "https://www.ldc.co.uk/team-hub/"
+    }
+   ],
+   "community": [
+    {
+     "text": "The Pallet Network: support for national roll-out Ten-year private equity partnership helped management treble revenues ",
+     "url": "https://www.ldc.co.uk/portfolio/the-pallet-network-support-for-national-roll-out"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.259,
+   "pain": 0.114,
+   "access": 0.147,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.293,
+   "fmcg_share": 0.022,
+   "avg_brand_fit": 0.614,
+   "recent_deals": 0.0,
+   "pain_top": 0.114,
+   "platform_team": 0.667,
+   "community": 0.333,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 16.7,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 9,
+   "signals_total": 16
+  },
+  "rank": 22,
+  "why": "1 UK grocery brand held now or exited <24m, incl. Bramble Foods; recent trigger: Bramble Foods: \"UK’s Bramble Foods Group snaps up Whitakers Chocolates\" (2025-01); named portfolio/platform contact: Andy Holman (Portfolio Director)."
  },
  {
   "fund": "True (TrueCapital)",

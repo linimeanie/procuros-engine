@@ -264,14 +264,14 @@ def score_funds(funds, brands):
             ov = OVR["status_override"].get(f"{b['brand']}|{name}")
             st = status_key(b["status_raw"].get(name), ov[0] if ov else None)
             src = ov[1] if ov else "portfolio page"
-            if not ov and st == "unknown":
+            if st == "unknown":  # also upgrades a manual "unknown" when the rescrape found evidence
                 chk = STATUS2.get((name, b["brand"]))
                 link = next((l for l in (CH.get(b["brand"]) or {}).get("fund_links", []) if l["fund"] == name), None)
                 if link:  # the public register is the hardest evidence
                     st = exit_status(None, link["ceased"]) if link.get("ceased") else "current"
                     src = f"Companies House {link['role']}: {link['name']} ({link['url']})"
                 elif chk:
-                    st = "current" if chk["status"] == "current" else exit_status(chk["evidence"])
+                    st = "current" if chk["status"] == "current" else exit_status(f"{chk['evidence']} {chk['url']}")
                     src = f"{chk['evidence']} ({chk['url']})"
             mine.append({"brand": b, "status": st, "status_source": src,
                          "w": CFG["status_weight"][st]})
