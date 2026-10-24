@@ -59,10 +59,7 @@ p { margin: 0; }
 
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
 nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
-nav.rail .wrap { display: flex; gap: 18px; align-items: center; padding-block: 10px; overflow-x: auto; scrollbar-width: none; }
-nav.rail a { font: 500 13px/1 var(--mono); text-decoration: none; color: var(--ink-2); white-space: nowrap; }
-nav.rail a:hover { color: var(--ink); }
-nav.rail .brand { font: 800 15px/1 var(--display); color: var(--ink); margin-right: auto; }
+nav.rail .brand { font: 800 16px/1 var(--display); color: var(--ink); white-space: nowrap; }
 
 section { padding-block: 72px; border-bottom: 1px solid var(--rule); }
 section > .wrap { display: grid; gap: 28px; }
@@ -104,7 +101,7 @@ th { text-align: left; font: 500 11px/1.2 var(--mono); letter-spacing: .06em; te
 td { padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
 td.w { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
 .pill-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: -1px; }
-.panel { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; display: grid; gap: 16px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 60px); }
+.panel { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; display: grid; gap: 16px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 112px); }
 .slider { display: grid; gap: 6px; }
 .slider label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 500; }
 .slider output { font-family: var(--mono); font-variant-numeric: tabular-nums; }
@@ -143,8 +140,8 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 
 /* Map */
 .map-box { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; position: relative; }
-#map { display: block; width: 100%; height: 620px; }
-@media (max-width: 640px) { #map { height: 480px; } }
+#map-svg { display: block; width: 100%; height: 620px; }
+@media (max-width: 640px) { #map-svg { height: 480px; } }
 .map-note { position: absolute; left: 14px; bottom: 12px; right: 14px; font-size: 13px; color: var(--ink-2); pointer-events: none; }
 .tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--paper); font-size: 13px; padding: 8px 10px; border-radius: 4px; max-width: 260px; display: none; }
 
@@ -179,34 +176,68 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 .coverage { display: grid; gap: 8px; }
 footer { padding-block: 40px 56px; font-size: 14px; color: var(--ink-2); }
 footer .wrap { display: grid; gap: 8px; }
+
+
+/* Tabs */
+nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
+.tasks, .subtabs { display: flex; gap: 6px; align-items: center; overflow-x: auto; scrollbar-width: none; }
+.tasks { padding-block: 12px 10px; gap: 4px; }
+.tasks .brand { margin-right: 18px; }
+.task { font: 600 13px/1 var(--body); padding: 9px 12px; border-radius: 4px; border: 1px solid transparent; background: transparent; color: var(--ink-2); white-space: nowrap; cursor: pointer; }
+.task.on { background: var(--ink); color: var(--paper); }
+.task[aria-disabled="true"] { cursor: default; opacity: .7; }
+.task .soon { font: 500 10px/1 var(--mono); text-transform: uppercase; letter-spacing: .06em; margin-left: 6px; color: var(--accent); }
+.subtabs { gap: 2px; border-top: 1px solid var(--rule); }
+.subtabs button { font: 500 13px/1 var(--mono); padding: 13px 12px 11px; background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--ink-2); cursor: pointer; white-space: nowrap; }
+.subtabs button:hover { color: var(--ink); }
+.subtabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.panel-tab { border-bottom: 0; padding-block: 48px 64px; min-height: 70vh; }
+.panel-tab .hero { padding-block: 8px 48px; }
+.next { display: flex; justify-content: flex-end; border-top: 1px solid var(--rule); padding-top: 20px; }
+
 @media (prefers-reduced-motion: reduce) { .stack span { transition: none; } }
 </style>
 </head>
 <body>
 
 
-<nav class="rail" aria-label="Sections"><div class="wrap">
-  <span class="brand">Warm Doors UK</span>
-  <a href="#thesis">Thesis</a><a href="#pipeline">Pipeline</a><a href="#signals">Signals</a><a href="#ranking">Ranking</a><a href="#map-section">Map</a><a href="#dossier">Dossier</a><a href="#limits">Limits</a>
+<nav class="rail" aria-label="Case study"><div class="wrap">
+  <div class="tasks" role="tablist" aria-label="Tasks">
+    <span class="brand">Warm Doors UK</span>
+    <button type="button" class="task on" role="tab" aria-selected="true">1.1 Investor shortlist</button>
+    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming next">1.2 Two-fund experiment <span class="soon">next</span></button>
+    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">1.3 Scaling the motion <span class="soon">later</span></button>
+    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">2 Creative play <span class="soon">later</span></button>
+  </div>
+  <div class="subtabs" role="tablist" aria-label="Investor shortlist sections" id="subtabs">
+    <button type="button" role="tab" data-tab="thesis">Thesis</button>
+    <button type="button" role="tab" data-tab="pipeline">Pipeline</button>
+    <button type="button" role="tab" data-tab="signals">Signals</button>
+    <button type="button" role="tab" data-tab="ranking">Ranking</button>
+    <button type="button" role="tab" data-tab="map">Map</button>
+    <button type="button" role="tab" data-tab="dossier">Dossier</button>
+    <button type="button" role="tab" data-tab="limits">Limits</button>
+  </div>
 </div></nav>
 
-<header class="hero"><div class="wrap" style="display:grid;gap:26px">
+<section id="thesis" class="panel-tab" role="tabpanel"><div class="hero"><div class="wrap" style="display:grid;gap:26px">
   <p class="eyebrow">Procuros · UK go-to-market · Task 1.1 · data as of <span id="asof"></span></p>
   <h1>Twenty <em>warm doors</em> into UK grocery.</h1>
   <p class="lede">UK grocery brands don't buy EDI from cold emails. They buy when a retailer mandates it, a funding round lands, or the ops team drowns in PDF orders. <strong>Their investors see those moments first.</strong> We scraped the portfolios of every UK fund that backs grocery brands, scored each brand for retail reach and live pain, and ranked the investors who can open the most doors.</p>
   <div class="ticket" id="ticket"></div>
-</div></header>
+</div></div>
 
-<section id="thesis"><div class="wrap">
+<div class="wrap">
   <h2>Why go through investors</h2>
   <div class="three">
     <div><span class="k">Trust</span><h3>An intro beats a cold sequence</h3><p class="muted">A portfolio partner recommending a vendor carries the weight of a board seat. Founders take that meeting.</p></div>
     <div><span class="k">Density</span><h3>One relationship, many brands</h3><p class="muted">A single fund can hold 5 to 16 UK grocery brands. Win the partner once and the intros compound.</p></div>
     <div><span class="k">Timing</span><h3>Money changes the ops stack</h3><p class="muted">New rounds and buyouts come with 100-day plans: new retailers, new ERP, new pressure on order processing. That is Procuros' window.</p></div>
   </div>
+  <div class="next"><button type="button" class="btn" data-go="pipeline">Next: Pipeline →</button></div>
 </div></section>
 
-<section id="pipeline"><div class="wrap">
+<section id="pipeline" class="panel-tab" role="tabpanel" hidden><div class="wrap">
   <div class="prose">
     <p class="eyebrow">How the data was built</p>
     <h2>From 66 funds to a shortlist of 20</h2>
@@ -221,9 +252,10 @@ footer .wrap { display: grid; gap: 8px; }
     <div><span class="k">2 · Classify</span><p class="muted">Keyword rules over names and descriptions, then a manual pass to keep UK packaged food, drink, snack, frozen and pet brands.</p></div>
     <div><span class="k">3 · Enrich</span><p class="muted">Stockist pages for named retailers, careers pages for ops and supply-chain roles, and 24 months of news for funding, listings and exports.</p></div>
   </div>
+  <div class="next"><button type="button" class="btn" data-go="signals">Next: Signals →</button></div>
 </div></section>
 
-<section id="signals"><div class="wrap">
+<section id="signals" class="panel-tab" role="tabpanel" hidden><div class="wrap">
   <div class="prose">
     <p class="eyebrow">Scoring logic</p>
     <h2>Four pillars, sixteen signals</h2>
@@ -241,9 +273,10 @@ footer .wrap { display: grid; gap: 8px; }
       <button type="button" class="btn" id="reset">Reset to 40 / 30 / 20 / 10</button>
     </form>
   </div>
+  <div class="next"><button type="button" class="btn" data-go="ranking">Next: Ranking →</button></div>
 </div></section>
 
-<section id="ranking"><div class="wrap">
+<section id="ranking" class="panel-tab" role="tabpanel" hidden><div class="wrap">
   <div class="rank-head">
     <div class="prose"><p class="eyebrow">Result</p><h2>The ranking</h2>
       <p class="muted">Funds holding at least one live UK grocery brand. Bar segments show what each pillar adds to the score. Select a fund to open its dossier.</p></div>
@@ -253,23 +286,25 @@ footer .wrap { display: grid; gap: 8px; }
     <div class="axis" aria-hidden="true"><span></span><span></span><span class="sp"></span><div class="ticks" id="ticks"></div><span></span><span></span></div>
     <div class="board" id="board"></div>
   </div>
+  <div class="next"><button type="button" class="btn" data-go="map">Next: Map →</button></div>
 </div></section>
 
-<section id="map-section"><div class="wrap">
+<section id="map" class="panel-tab" role="tabpanel" hidden><div class="wrap">
   <div class="prose">
     <p class="eyebrow">The network</p>
     <h2>Who sits behind which brand</h2>
     <p class="muted">Funds are dark circles sized by score; brands are dots coloured by how many major UK grocers stock them. Brands with several backers, like DASH Water or Lucky Saint, are where co-investors meet: two routes to the same founder.</p>
   </div>
   <div class="map-box">
-    <svg id="map" role="img" aria-label="Network of funds and the UK grocery brands they back"></svg>
+    <svg id="map-svg" role="img" aria-label="Network of funds and the UK grocery brands they back"></svg>
     <div class="tip" id="tip"></div>
     <p class="map-note">Drag to rearrange. Select a fund to open its dossier.</p>
   </div>
   <div class="legend" id="map-legend"></div>
+  <div class="next"><button type="button" class="btn" data-go="dossier">Next: Dossier →</button></div>
 </div></section>
 
-<section id="dossier"><div class="wrap">
+<section id="dossier" class="panel-tab" role="tabpanel" hidden><div class="wrap">
   <div class="prose"><p class="eyebrow">Fund dossier</p><h2>What we'd say in the first email</h2></div>
   <div class="picker" id="picker"></div>
   <div class="dossier">
@@ -281,9 +316,10 @@ footer .wrap { display: grid; gap: 8px; }
     </div>
     <aside class="side" id="d-side"></aside>
   </div>
+  <div class="next"><button type="button" class="btn" data-go="limits">Next: Limits →</button></div>
 </div></section>
 
-<section id="limits"><div class="wrap">
+<section id="limits" class="panel-tab" role="tabpanel" hidden><div class="wrap">
   <div class="prose"><p class="eyebrow">Read with care</p><h2>What the data can and can't tell you</h2></div>
   <div class="limits">
     <div><h3>Coverage</h3><div class="coverage" id="coverage"></div></div>
@@ -301,6 +337,7 @@ footer .wrap { display: grid; gap: 8px; }
 <script>
 (async function () {
   const D = await fetch("data.json").then(r => r.json());
+  const TABS = ["thesis", "pipeline", "signals", "ranking", "map", "dossier", "limits"];
   const PILLARS = [
     { key: "fit", label: "Portfolio fit", color: "var(--p-fit)" },
     { key: "pain", label: "Brand pain", color: "var(--p-pain)" },
@@ -424,7 +461,7 @@ footer .wrap { display: grid; gap: 8px; }
   function select(name, scroll) {
     selected = name;
     render();
-    if (scroll) document.getElementById("dossier").scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+    if (scroll) showTab("dossier");
   }
   function renderDossier(name) {
     const r = current.find(x => x.fd.name === name); if (!r) return;
@@ -467,7 +504,7 @@ footer .wrap { display: grid; gap: 8px; }
   document.getElementById("failed").innerHTML = D.failed.map(x => `<li><b>${esc(x.name)}</b>: ${esc(x.note || x.status)}</li>`).join("");
 
   // Network map
-  const svg = d3.select("#map"), tip = document.getElementById("tip");
+  const svg = d3.select("#map-svg"), tip = document.getElementById("tip");
   const css = getComputedStyle(document.documentElement);
   const tok = n => css.getPropertyValue(n).trim();
   const reachColor = k => [tok("--rule"), tok("--sel"), tok("--accent")][k >= 3 ? 2 : k >= 1 ? 1 : 0];
@@ -514,13 +551,16 @@ footer .wrap { display: grid; gap: 8px; }
     .on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
     .on("end", (ev, d) => { if (!ev.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
   function size() {
-    const el = document.getElementById("map"), w = el.clientWidth, h = el.clientHeight;
+    const el = document.getElementById("map-svg"), w = el.clientWidth, h = el.clientHeight;
+    if (!w) return;
     svg.attr("viewBox", [-w / 2, -h / 2, w, h]);
     sim.force("x").strength(w < 600 ? 0.12 : 0.05); sim.force("y").strength(w < 600 ? 0.05 : 0.08);
     sim.alpha(0.3).restart();
   }
   sim.on("tick", () => {
-    const el = document.getElementById("map"), w = el.clientWidth / 2 - 16, h = el.clientHeight / 2 - 30;
+    const el = document.getElementById("map-svg");
+    if (!el.clientWidth) return;
+    const w = el.clientWidth / 2 - 16, h = el.clientHeight / 2 - 30;
     nodes.forEach(d => { d.x = Math.max(-w, Math.min(w, d.x)); d.y = Math.max(-h, Math.min(h, d.y)); });
     lk.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
     nd.attr("transform", d => `translate(${d.x},${d.y})`);
@@ -533,7 +573,30 @@ footer .wrap { display: grid; gap: 8px; }
   readW();
   render();
   select(scoreAll(DEFAULT_W)[0].fd.name, false);
-  if (location.hash) document.querySelector(location.hash)?.scrollIntoView();
+  function showTab(id) {
+    if (!TABS.includes(id)) id = "thesis";
+    TABS.forEach(t => {
+      document.getElementById(t).hidden = t !== id;
+      const b = document.querySelector(`#subtabs [data-tab="${t}"]`);
+      b.setAttribute("aria-selected", String(t === id));
+      b.tabIndex = t === id ? 0 : -1;
+    });
+    try { history.replaceState(null, "", "#" + id); } catch (e) {}
+    if (id === "map") size();
+    const on = document.querySelector(`#subtabs [data-tab="${id}"]`);
+    on.scrollIntoView({ block: "nearest", inline: "nearest" });
+    window.scrollTo({ top: 0 });
+  }
+  window.showTab = showTab;
+  document.querySelectorAll("#subtabs button").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
+  document.getElementById("subtabs").addEventListener("keydown", e => {
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    const cur = TABS.findIndex(t => !document.getElementById(t).hidden);
+    const nx = TABS[(cur + (e.key === "ArrowRight" ? 1 : TABS.length - 1)) % TABS.length];
+    showTab(nx); document.querySelector(`#subtabs [data-tab="${nx}"]`).focus();
+  });
+  document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.go)));
+  showTab((location.hash || "#thesis").slice(1));
 })();
 </script>
 
