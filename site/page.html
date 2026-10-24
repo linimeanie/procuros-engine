@@ -163,9 +163,6 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 .status.current { color: var(--good); } .status.unknown { color: var(--ink-2); } .status.exited_recent { color: var(--warn); } .status.exited_old { color: var(--crit); }
 .side { display: grid; gap: 18px; font-size: 14px; }
 .side ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
-.picker { display: flex; flex-wrap: wrap; gap: 6px; }
-.picker button { font: 500 12px/1 var(--mono); padding: 7px 9px; border-radius: 3px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); cursor: pointer; }
-.picker button.on { border-color: var(--accent); color: var(--accent); }
 
 /* Limits */
 .limits { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
@@ -232,7 +229,6 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     <button type="button" role="tab" data-tab="signals">Signals</button>
     <button type="button" role="tab" data-tab="ranking">Ranking</button>
     <button type="button" role="tab" data-tab="map">Map</button>
-    <button type="button" role="tab" data-tab="dossier">Dossier</button>
     <button type="button" role="tab" data-tab="limits">Limits</button>
   </div>
 </div></nav>
@@ -319,13 +315,6 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     <p class="map-note">Drag to rearrange. Select a fund to see its dossier alongside.</p>
   </div>
   <div class="map-tools"><div class="legend" id="map-legend"></div><button type="button" class="btn" id="map-reset" hidden>Show everything</button></div>
-  <div class="next"><button type="button" class="btn" data-go="dossier">Next: Dossier →</button></div>
-</div></section>
-
-<section id="dossier" class="panel-tab" role="tabpanel" hidden><div class="wrap">
-  <div class="prose"><p class="eyebrow">Fund dossier</p><h2>What we'd say in the first email</h2></div>
-  <div class="picker" id="picker"></div>
-  <div id="dos-body"></div>
   <div class="next"><button type="button" class="btn" data-go="limits">Next: Limits →</button></div>
 </div></section>
 
@@ -343,7 +332,6 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     <button type="button" class="btn" id="dr-prev" aria-label="Previous fund in the ranking">↑ Prev</button>
     <button type="button" class="btn" id="dr-next" aria-label="Next fund in the ranking">↓ Next</button>
     <span class="grow"></span>
-    <button type="button" class="btn" id="dr-full">Full page</button>
     <button type="button" class="x" id="dr-close" aria-label="Close dossier">×</button>
   </div>
   <div class="drawer-body" id="drawer-body"></div>
@@ -358,7 +346,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
 <script>
 (async function () {
   const D = await fetch("data.json").then(r => r.json());
-  const TABS = ["thesis", "pipeline", "signals", "ranking", "map", "dossier", "limits"];
+  const TABS = ["thesis", "pipeline", "signals", "ranking", "map", "limits"];
   const PILLARS = [
     { key: "fit", label: "Portfolio fit", color: "var(--p-fit)" },
     { key: "pain", label: "Brand pain", color: "var(--p-pain)" },
@@ -467,18 +455,12 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
       btn.addEventListener("click", () => select(r.fd.name, "ranking"));
       board.appendChild(btn);
     });
-    renderPicker();
     if (selected) renderDossier(selected);
     if (window.__resizeMap) window.__resizeMap();
   }
 
   // Dossier
   const STATUS_LABEL = { current: "Current", unknown: "Status not stated", exited_recent: "Exited < 24 months", exited_old: "Exited earlier" };
-  function renderPicker() {
-    document.getElementById("picker").innerHTML = current.slice(0, 20).map(r =>
-      `<button type="button" data-f="${esc(r.fd.name)}" class="${selected === r.fd.name ? "on" : ""}">${esc(r.fd.name)}</button>`).join("");
-    document.querySelectorAll("#picker button").forEach(b => b.addEventListener("click", () => select(b.dataset.f)));
-  }
   let drawerOpen = false;
   function select(name, where) {
     selected = name;
@@ -508,9 +490,9 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     if (fd.community.length) side.push(`<div><p class="eyebrow">Community signals</p><ul>${fd.community.map(c => `<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.text)}</a></li>`).join("")}</ul></div>`);
     side.push(`<div><p class="eyebrow">Sources</p><ul>${[fd.website, ...fd.portfolio_urls].filter(Boolean).map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u) + new URL(u).pathname.replace(/\/$/, ""))}</a></li>`).join("")}</ul>
       <p class="muted" style="font-size:13px;margin-top:6px">Portfolio read: ${esc(fd.scrape)}.</p></div>`);
-    return `<div class="dos-head"><h3>${esc(fd.name)}</h3><span class="tier ${r.tier}">${r.tier}</span>
+    return `<p class="eyebrow">Fund dossier</p><div class="dos-head"><h3>${esc(fd.name)}</h3><span class="tier ${r.tier}">${r.tier}</span>
         <span class="mono muted">#${rank} · ${r.score.toFixed(1)} / 100 · ${esc(fd.type)} · ${fmtInt(fd.companies)} portfolio companies</span></div>
-      <p class="why">${esc(fd.why)}</p>
+      <div style="display:grid;gap:6px"><p class="eyebrow">Why this fund</p><p class="why">${esc(fd.why)}</p></div>
       <div class="pillars">${pillars}</div>
       <div class="dossier">
         <div style="min-width:0"><p class="eyebrow" style="margin-bottom:6px">UK grocery brands in the portfolio</p><div class="brand-list">${brands}</div></div>
@@ -520,7 +502,6 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   function renderDossier(name) {
     const r = current.find(x => x.fd.name === name); if (!r) return;
     const html = dossierHTML(r);
-    document.getElementById("dos-body").innerHTML = html;
     if (drawerOpen) {
       document.getElementById("drawer-body").innerHTML = html;
       const i = current.indexOf(r);
@@ -551,7 +532,6 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   document.getElementById("dr-prev").addEventListener("click", () => step(-1));
   document.getElementById("dr-next").addEventListener("click", () => step(1));
   document.getElementById("dr-close").addEventListener("click", closeDrawer);
-  document.getElementById("dr-full").addEventListener("click", () => { closeDrawer(); showTab("dossier"); });
   document.addEventListener("keydown", e => {
     if (!drawerOpen) return;
     if (e.key === "Escape") closeDrawer();
@@ -704,6 +684,6 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     showTab(nx); document.querySelector(`#subtabs [data-tab="${nx}"]`).focus();
   });
   document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.go)));
-  showTab((location.hash || "#thesis").slice(1));
+  showTab({ dossier: "ranking" }[(location.hash || "#thesis").slice(1)] || (location.hash || "#thesis").slice(1));
 })();
 </script>
