@@ -24,7 +24,7 @@ for b in brands:
         "blurb": blurbs["brands"].get(b["brand"], ""),
         "funds": b["funds"], "category": b["category"], "fit": b["fit"], "pain": b["pain"],
         "pain_parts": b["pain_parts"], "size_proxy": b["size_proxy"], "stack": b["stack"],
-        "retailers": b["retailers"], "ops_roles": b["ops_roles"][:5],
+        "retailers": b["retailers"], "ops_roles": b["ops_roles"][:5], "companies_house": b.get("companies_house"),
         "triggers": [news_item(n) for n in trig[:3]],
         "news_count": len(b["news"]), "fund_sources": b["fund_sources"][:3],
     })
@@ -58,6 +58,9 @@ data = {"as_of": cfg["as_of"], "config": {k: cfg[k] for k in ("pillars", "fit", 
         "funnel": funnel, "retailer_blurbs": blurbs["retailers"], "funds": out_funds, "brands": out_brands, "failed": failed,
         "stats": {"brands_with_retailers": sum(1 for b in brands if b["retailers"]),
                   "brands_with_ops": sum(1 for b in brands if b["ops_roles"]),
-                  "brands_with_news": sum(1 for b in brands if b["news"])}}
+                  "brands_with_news": sum(1 for b in brands if b["news"]),
+                  "brands_with_ch": sum(1 for b in brands if b.get("companies_house")),
+                  "pairs_confirmed": sum(1 for f in funds for b in f["brands"] if b["status"] != "unknown"),
+                  "pairs_total": sum(len(f["brands"]) for f in funds)}}
 (ROOT / "site/data.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 print({k: v for k, v in data["stats"].items()}, [x["value"] for x in funnel], len(out_funds))

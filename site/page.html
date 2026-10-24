@@ -163,7 +163,9 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 .about { font-size: 15px; color: var(--ink-2); margin-top: -8px; }
 .key { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12px; color: var(--ink-2); padding: 8px 10px; background: var(--card); border: 1px solid var(--rule); border-radius: 4px; margin-bottom: 4px; }
 .key > span { display: inline-flex; gap: 6px; align-items: center; }
-.status, .chip { cursor: help; }
+.status, span.chip { cursor: help; }
+a.chip { text-decoration: none; }
+a.chip:hover { outline: 1px solid var(--sel-ink); }
 .status { font: 500 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .status.current { color: var(--good); } .status.unknown { color: var(--ink-2); } .status.exited_recent { color: var(--warn); } .status.exited_old { color: var(--crit); }
 .side { display: grid; gap: 18px; font-size: 14px; }
@@ -327,7 +329,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   <div class="prose"><p class="eyebrow">Read with care</p><h2>What the data can and can't tell you</h2></div>
   <div class="limits">
     <div><h3>Coverage</h3><div class="coverage" id="coverage"></div></div>
-    <div><h3>Known gaps</h3><p class="muted">No revenue data reached the pipeline, so the £3m–£100m size band is approximated from retail reach and trade-press coverage. A missing retailer means the brand's own site doesn't name it, not that it isn't stocked there. Scores run low because these signals are sparse: read them as a ranking, not a grade.</p></div>
+    <div><h3>Known gaps</h3><p class="muted">Most small UK companies file abbreviated accounts without turnover, so size comes from the accounts type filed at Companies House (micro, small, medium, full or group), with retail reach as the fallback. A missing retailer means no product page, Open Food Facts entry or stockist list confirmed one; manufacturers and own-label makers rightly have none. Job boards add little: most of these brands hire through LinkedIn or recruiters. Scores run low because these signals are sparse: read them as a ranking, not a grade.</p></div>
     <div><h3>Sites that couldn't be read</h3><ul class="muted" id="failed" style="margin:0;padding-left:18px;display:grid;gap:4px;font-size:14px"></ul></div>
   </div>
 </div></section>
@@ -473,6 +475,9 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     exited_old: "The fund sold its stake more than 24 months ago; not counted in the score.",
   };
   const RB = D.retailer_blurbs || {};
+  const SIZE_LABEL = band => !band ? "accounts size not stated" : band.startsWith("full") ? "files full accounts (usually medium or large)"
+    : band.startsWith("group") ? "files group accounts (usually medium or large)" : band.startsWith("dormant") ? "dormant entity (trades elsewhere)"
+    : band.startsWith("audit-exemption") ? "subsidiary of a larger group" : band;
   const STACK_LABEL = { listings: "new listing", funding: "funding", ops_hiring: "ops hiring", expansion: "export" };
   let drawerOpen = false;
   function select(name, where) {
@@ -492,9 +497,11 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
       const trig = (B.triggers || [])[0];
       const ops = (B.ops_roles || []).slice(0, 2).map(o => o.title).join(", ");
       return `<div class="bi"><div class="top"><b>${B.website ? `<a href="${esc(B.website)}" target="_blank" rel="noopener">${esc(b.brand.replace("dash-water", "DASH Water"))}</a>` : esc(b.brand)}</b>
-          <span class="status ${b.status}" title="${esc(STATUS_TIP[b.status])}">${STATUS_LABEL[b.status]}</span></div>
+          <span class="status ${b.status}" title="${esc(STATUS_TIP[b.status] + (b.status_source && b.status_source !== "portfolio page" ? " Source: " + b.status_source : ""))}">${STATUS_LABEL[b.status]}</span></div>
         ${B.blurb ? `<p class="blurb">${esc(B.blurb)}</p>` : ""}
-        <div class="chips">${b.retailers.length ? b.retailers.map(x => `<span class="chip" title="${esc(x + (RB[x] ? ": " + RB[x] : ""))}">${esc(x)}</span>`).join("") : `<span class="chip ghost">no stockist found yet</span>`}</div>
+        <div class="chips">${b.retailers.length ? b.retailers.map(x => { const proof = ((B.retailers || []).find(r => r.name === x) || {}).source_url;
+          return proof ? `<a class="chip" href="${esc(proof)}" target="_blank" rel="noopener" title="${esc(x + (RB[x] ? ": " + RB[x] : "") + " · open the proof")}">${esc(x)}</a>` : `<span class="chip" title="${esc(x + (RB[x] ? ": " + RB[x] : ""))}">${esc(x)}</span>`; }).join("") : `<span class="chip ghost">no UK retailer found</span>`}</div>
+        ${B.companies_house ? `<p class="trig">Companies House: <a href="${esc(B.companies_house.url)}" target="_blank" rel="noopener">${esc(B.companies_house.company_name || "")}</a> · ${esc(SIZE_LABEL(B.companies_house.size_band))}${B.companies_house.share_allotments_24m ? ` · ${B.companies_house.share_allotments_24m} share issue${B.companies_house.share_allotments_24m > 1 ? "s" : ""} in 24 months` : ""}${B.companies_house.charges_24m ? ` · new debt facility` : ""}</p>` : ""}
         ${trig ? `<p class="trig">${esc(trig.date.slice(0, 7))} · <a href="${esc(trig.url)}" target="_blank" rel="noopener">${esc(trig.headline)}</a> <span class="mono">(${esc(host(trig.url))})</span></p>` : ""}
         ${ops ? `<p class="trig">Hiring: ${esc(ops)}</p>` : ""}
         ${(B.stack || []).length > 1 ? `<p class="trig"><b style="color:var(--accent)">Stacked triggers:</b> ${B.stack.map(k => STACK_LABEL[k]).join(" + ")} in the last 12 months</p>` : ""}</div>`;
@@ -512,7 +519,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
       <div class="pillars">${pillars}</div>
       <div class="dossier">
         <div style="min-width:0"><p class="eyebrow" style="margin-bottom:8px">UK grocery brands in the portfolio</p>
-          <div class="key"><span><span class="chip">Tesco</span> = UK retailer that sells the brand (hover for what it is)</span><span><span class="status unknown">Holding</span> = whether the fund still owns a stake</span></div>
+          <div class="key"><span><span class="chip">Tesco</span> = UK retailer that sells the brand; click for the product page that proves it</span><span><span class="status unknown">Holding</span> = whether the fund still owns a stake</span></div>
           <div class="brand-list">${brands}</div></div>
         <aside class="side">${side.join("")}</aside>
       </div>`;
@@ -559,7 +566,8 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   // Limits
   const s = D.stats, nb = D.funnel[4].value;
   document.getElementById("coverage").innerHTML = [
-    [s.brands_with_retailers, "brands name a major grocer on their site or in a headline"],
+    [s.brands_with_retailers, "brands have a major UK retailer confirmed by a product page, Open Food Facts or the brand's stockist list"],
+    [s.brands_with_ch, "brands matched to their Companies House record (size, share issues, charges)"],
     [s.brands_with_ops, "brands have open ops or supply-chain roles"],
     [s.brands_with_news, "brands have trade or press coverage in the last 24 months"],
   ].map(([v, l]) => `<div class="bar-row"><div class="lbl"><span>${l}</span><b>${v}<span class="muted" style="font:400 13px var(--mono)"> / ${nb}</span></b></div>

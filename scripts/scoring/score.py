@@ -95,6 +95,32 @@ def status_key(raw, override=None):
     return "unknown"
 
 
+def jsonl(name):
+    path = ROOT / "data/firecrawl" / name
+    return [json.loads(l) for l in open(path)] if path.exists() else []
+
+
+# Second-pass sources (scripts/firecrawl/step3-5.py): retailer checks, holding status, job boards, Companies House.
+RETAIL2 = {r["brand"]: r["retailers"] for r in jsonl("retail_check.jsonl")}
+STATUS2 = {(r["fund"], r["brand"]): r for r in jsonl("status_check.jsonl") if r["status"] != "unknown"}
+JOBS2 = {r["brand"]: r.get("roles", []) for r in jsonl("jobs_check.jsonl")}
+CH = {r["brand"]: r for r in jsonl("companies_house.jsonl") if r.get("match_confidence") in ("high", "medium")}
+CH_SIZE = {"micro": 0.2, "small": 0.7, "medium": 1.0, "full accounts": 1.0, "group accounts": 1.0}
+
+
+def ch_size(row):
+    band = (row or {}).get("size_band") or ""
+    return next((v for k, v in CH_SIZE.items() if band.startswith(k)), None)
+
+
+def exit_status(evidence, ceased=None):
+    """Exited within the recent window counts as a warm relationship; older exits don't."""
+    if ceased:
+        return "exited_recent" if date.fromisoformat(ceased[:10]) >= CUTOFF else "exited_old"
+    years = [int(y) for y in re.findall(r"\b(20[0-2]\d)\b", evidence or "")]
+    return "exited_recent" if years and max(years) >= CUTOFF.year + 1 else "exited_old"
+
+
 def load():
     funds = [json.loads(l) for l in open(ROOT / "data/firecrawl/funds.jsonl")]
     brands = [json.loads(l) for l in open(ROOT / "data/firecrawl/brands.jsonl")]
@@ -128,6 +154,9 @@ def build_brands(brands):
     for b in out:
         news = relevant_news(b["brand"], b["news_raw"])
         retail = {r["name"]: r["source_url"] for r in b["retailers_site"] if r["name"] in GROCERS}
+        for r in RETAIL2.get(b["brand"], []):  # union: a missed re-check never removes a retailer found earlier
+            if r["name"] in GROCERS:
+                retail.setdefault(r["name"], r["url"])
         listing_news, funding_news, export_news = [], [], []
         for n in news:
             head = n["headline"]
@@ -140,8 +169,24 @@ def build_brands(brands):
                 funding_news.append(n)
             if n.get("type") == "export" or EXPORT_RE.search(head):
                 export_news.append(n)
+        ch = CH.get(b["brand"])
+        if ch:
+            # Filings the press missed: one funding item per month with share allotments (max 2), one per new charge (max 1).
+            months = sorted({a["date"][:7]: a for a in ch.get("share_allotments_24m", [])}.items(), reverse=True)[:2]
+            for _, a in months:
+                funding_news.append({"date_parsed": a["date"], "headline": "Share allotment filed at Companies House",
+                                     "url": a["url"], "trade_press": False, "source": "companies_house"})
+            for c in ch.get("charges_24m", [])[:1]:
+                funding_news.append({"date_parsed": c["date"], "headline": "New charge (debt facility) filed at Companies House",
+                                     "url": c["url"], "trade_press": False, "source": "companies_house"})
+        for role in JOBS2.get(b["brand"], []):
+            if not any(role["url"] == o.get("url") for o in b["ops_roles"]):
+                b["ops_roles"].append({"title": role["title"], "url": role["url"], "source": "job board"})
         category = cat.get(b["brand"], "branded_grocery")
         b.update({
+            "companies_house": ({k: ch.get(k) for k in ("company_number", "company_name", "size_band", "url", "match_confidence")}
+                                | {"share_allotments_24m": len(ch.get("share_allotments_24m", [])),
+                                   "charges_24m": len(ch.get("charges_24m", []))}) if ch else None,
             "category": category,
             "retailers": [{"name": k, "source_url": v} for k, v in retail.items()],
             "news": news, "listing_news": listing_news, "funding_news": funding_news, "export_news": export_news,
@@ -155,6 +200,9 @@ def build_brands(brands):
             size = 0.5
         else:
             size = 0.2
+        known = ch_size(ch)
+        if known is not None:  # filed accounts beat the retail-reach proxy; micro filers are below the ICP band
+            size = known if known < 0.5 else max(size, known)
         b["size_proxy"] = size
         w = CFG["brand_fit"]
         b["fit"] = round(w["retail"] * min(len(retail) / 4, 1) + w["size_proxy"] * size + w["category"] * cat_score
@@ -215,7 +263,17 @@ def score_funds(funds, brands):
                 continue
             ov = OVR["status_override"].get(f"{b['brand']}|{name}")
             st = status_key(b["status_raw"].get(name), ov[0] if ov else None)
-            mine.append({"brand": b, "status": st, "status_source": ov[1] if ov else "portfolio page",
+            src = ov[1] if ov else "portfolio page"
+            if not ov and st == "unknown":
+                chk = STATUS2.get((name, b["brand"]))
+                link = next((l for l in (CH.get(b["brand"]) or {}).get("fund_links", []) if l["fund"] == name), None)
+                if link:  # the public register is the hardest evidence
+                    st = exit_status(None, link["ceased"]) if link.get("ceased") else "current"
+                    src = f"Companies House {link['role']}: {link['name']} ({link['url']})"
+                elif chk:
+                    st = "current" if chk["status"] == "current" else exit_status(chk["evidence"])
+                    src = f"{chk['evidence']} ({chk['url']})"
+            mine.append({"brand": b, "status": st, "status_source": src,
                          "w": CFG["status_weight"][st]})
         people = [p for p in f.get("team_platform_people", [])
                   if PLATFORM_TITLE.search(p.get("title", "")) and not NOT_A_NAME.search(p.get("name", ""))
