@@ -24,6 +24,7 @@
   --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
   --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --measure: 720px;       /* one reading width for every intro and paragraph */
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --paper: #0f161c; --card: #172129; --ink: #e8eef2; --ink-2: #9fb0bd; --rule: #2a3742;
@@ -45,7 +46,8 @@ h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.01e
 h3 { font-size: 20px; font-weight: 700; }
 p { margin: 0; }
 .wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-.prose { max-width: 66ch; display: grid; gap: 14px; }
+.prose { max-width: var(--measure); display: grid; gap: 14px; }
+.prose p, .lede, .why { text-wrap: pretty; }
 .eyebrow { font: 500 12px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
 .mono { font-family: var(--mono); }
 .num { font-variant-numeric: tabular-nums; }
@@ -53,16 +55,16 @@ p { margin: 0; }
 
 body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
 nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
-nav.rail .brand { font: 800 16px/1 var(--display); color: var(--ink); white-space: nowrap; }
+nav.rail .logo { font: 800 16px/1 var(--display); color: var(--ink); white-space: nowrap; }
 
 section { padding-block: 72px; border-bottom: 1px solid var(--rule); }
 section > .wrap { display: grid; gap: 28px; }
 
 /* Hero */
 .hero { padding-block: 64px 56px; }
-.hero h1 { font-size: clamp(44px, 8vw, 92px); font-weight: 800; letter-spacing: -0.03em; max-width: 12ch; }
+.hero h1 { font-size: clamp(40px, 6.8vw, 74px); font-weight: 800; letter-spacing: -0.03em; max-width: var(--measure); }
 .hero h1 em { font-style: normal; color: var(--accent); }
-.hero .lede { font-size: clamp(18px, 2.2vw, 21px); max-width: 60ch; color: var(--ink-2); }
+.hero .lede { font-size: clamp(18px, 2.2vw, 21px); max-width: var(--measure); color: var(--ink-2); }
 .hero .lede strong { color: var(--ink); font-weight: 600; }
 .ticket { display: flex; flex-wrap: wrap; gap: 10px; }
 .sel { display: inline-flex; align-items: baseline; gap: 6px; background: var(--sel); color: var(--sel-ink); font: 500 12px/1 var(--mono); padding: 6px 8px 5px; border-radius: 2px; clip-path: polygon(0 0, 100% 0, 100% 100%, 8px 100%, 0 calc(100% - 8px)); }
@@ -71,8 +73,9 @@ section > .wrap { display: grid; gap: 28px; }
 .chip.ghost { background: transparent; color: var(--ink-2); border: 1px dashed var(--rule); }
 
 /* Thesis */
-.three { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
-.three > div { display: grid; gap: 8px; align-content: start; border-top: 3px solid var(--ink); padding-top: 14px; }
+.three { row-gap: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+.three > div { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 8px; align-content: start; border-top: 3px solid var(--ink); padding-top: 14px; }
+@supports not (grid-template-rows: subgrid) { .three > div { grid-template-rows: none; } }
 .three .k { font: 500 12px/1 var(--mono); color: var(--accent); letter-spacing: .06em; text-transform: uppercase; }
 
 /* Pipeline */
@@ -144,18 +147,18 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 @media (max-width: 860px) { .dossier { grid-template-columns: 1fr; } }
 .dos-head { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: baseline; }
 .dos-head h3 { font-size: clamp(28px, 4vw, 38px); font-weight: 800; }
-.why { font-size: 17px; max-width: 70ch; }
+.why { font-size: 17px; max-width: var(--measure); }
 .pillars { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
 @media (max-width: 520px) { .pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .pillars div { border-top: 3px solid; padding-top: 8px; display: grid; gap: 2px; }
 .pillars b { font: 700 24px/1 var(--display); font-variant-numeric: tabular-nums; }
 .pillars span { font-size: 12px; color: var(--ink-2); }
 .brand-list { display: grid; gap: 0; }
-.brand { display: grid; gap: 6px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
-.brand .top { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; }
-.brand .top b { font-size: 16px; }
-.brand .chips { display: flex; flex-wrap: wrap; gap: 5px; }
-.brand .trig { font-size: 13px; color: var(--ink-2); }
+.bi { display: grid; gap: 6px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.bi .top { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; }
+.bi .top b { font-size: 16px; }
+.bi .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.bi .trig { font-size: 13px; color: var(--ink-2); }
 .status { font: 500 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
 .status.current { color: var(--good); } .status.unknown { color: var(--ink-2); } .status.exited_recent { color: var(--warn); } .status.exited_old { color: var(--crit); }
 .side { display: grid; gap: 18px; font-size: 14px; }
@@ -166,7 +169,7 @@ input[type=range] { width: 100%; accent-color: var(--accent); }
 
 /* Limits */
 .limits { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
-.limits > div { display: grid; gap: 8px; align-content: start; }
+.limits > div { display: grid; gap: 10px; align-content: start; border-top: 3px solid var(--ink); padding-top: 14px; }
 .coverage { display: grid; gap: 8px; }
 footer { padding-block: 40px 56px; font-size: 14px; color: var(--ink-2); }
 footer .wrap { display: grid; gap: 8px; }
@@ -176,7 +179,7 @@ footer .wrap { display: grid; gap: 8px; }
 nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
 .tasks, .subtabs { display: flex; gap: 6px; align-items: center; overflow-x: auto; scrollbar-width: none; }
 .tasks { padding-block: 12px 10px; gap: 4px; }
-.tasks .brand { margin-right: 18px; }
+.tasks .logo { margin-right: 18px; }
 .task { font: 600 13px/1 var(--body); padding: 9px 12px; border-radius: 4px; border: 1px solid transparent; background: transparent; color: var(--ink-2); white-space: nowrap; cursor: pointer; }
 .task.on { background: var(--ink); color: var(--paper); }
 .task[aria-disabled="true"] { cursor: default; opacity: .7; }
@@ -189,12 +192,35 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
 .panel-tab .hero { padding-block: 8px 48px; }
 .next { display: flex; justify-content: flex-end; border-top: 1px solid var(--rule); padding-top: 20px; }
 
-@media (prefers-reduced-motion: reduce) { .stack span { transition: none; } }
+/* Side drawer: the dossier opens beside Ranking and Map instead of switching tabs */
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; z-index: 30; width: min(560px, 100vw); background: var(--paper); border-left: 1px solid var(--rule); box-shadow: -18px 0 40px -24px rgb(0 0 0 / .35); transform: translateX(105%); transition: transform .25s ease; overflow-y: auto; overscroll-behavior: contain; visibility: hidden; }
+.drawer.open { transform: none; visibility: visible; }
+@media (min-width: 1100px) { body.drawer-on .panel-tab, body.drawer-on footer, body.drawer-on nav.rail { padding-right: min(560px, 100vw); } }
+.drawer-bar { position: sticky; top: 0; z-index: 1; display: flex; gap: 8px; align-items: center; padding: 12px 20px; padding-top: max(12px, env(safe-area-inset-top, 0px)); background: var(--paper); border-bottom: 1px solid var(--rule); }
+.drawer-bar .grow { flex: 1; }
+.drawer-bar .x { font: 400 22px/1 var(--body); width: 36px; height: 36px; border: 1px solid var(--rule); border-radius: 3px; background: var(--card); color: var(--ink); cursor: pointer; }
+.drawer-body { padding: 22px 20px 40px; display: grid; gap: 22px; }
+.drawer .dossier { grid-template-columns: 1fr; gap: 24px; }
+.drawer .dos-head h3 { font-size: 30px; }
+.btn[disabled] { opacity: .4; cursor: default; }
+.btn[disabled]:hover { background: transparent; color: var(--ink); }
+
+/* Map takeaways double as highlight filters */
+.takeaways { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.takeaways button { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 6px; align-content: start; text-align: left; font: inherit; color: inherit; background: var(--card); border: 1px solid var(--rule); border-top: 3px solid var(--ink); border-radius: 4px; padding: 14px 16px; cursor: pointer; }
+.takeaways button:hover { border-color: var(--ink-2); }
+.takeaways button[aria-pressed="true"] { border-color: var(--accent); border-top-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.takeaways b { font: 800 30px/1 var(--display); font-variant-numeric: tabular-nums; }
+.takeaways h3 { font-size: 17px; }
+.takeaways p { font-size: 14px; color: var(--ink-2); }
+.map-tools { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; }
+
+@media (prefers-reduced-motion: reduce) { .stack span, .drawer { transition: none; } }
 </style>
 
 <nav class="rail" aria-label="Case study"><div class="wrap">
   <div class="tasks" role="tablist" aria-label="Tasks">
-    <span class="brand">Warm Doors UK</span>
+    <span class="logo">Warm Doors UK</span>
     <button type="button" class="task on" role="tab" aria-selected="true">1.1 Investor shortlist</button>
     <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming next">1.2 Two-fund experiment <span class="soon">next</span></button>
     <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">1.3 Scaling the motion <span class="soon">later</span></button>
@@ -270,7 +296,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
 <section id="ranking" class="panel-tab" role="tabpanel" hidden><div class="wrap">
   <div class="rank-head">
     <div class="prose"><p class="eyebrow">Result</p><h2>The ranking</h2>
-      <p class="muted">Funds holding at least one live UK grocery brand. Bar segments show what each pillar adds to the score. Select a fund to open its dossier.</p></div>
+      <p class="muted">Funds holding at least one live UK grocery brand. Bar segments show what each pillar adds to the score. Select a fund to see its dossier alongside the ranking.</p></div>
     <div class="legend" id="legend"></div>
   </div>
   <div>
@@ -284,29 +310,22 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   <div class="prose">
     <p class="eyebrow">The network</p>
     <h2>Who sits behind which brand</h2>
-    <p class="muted">Funds are dark circles sized by score; brands are dots coloured by how many major UK grocers stock them. Brands with several backers, like DASH Water or Lucky Saint, are where co-investors meet: two routes to the same founder.</p>
+    <p class="muted">Each dark circle is a shortlisted fund, sized by score. Each dot is a UK grocery brand it backs, coloured by how many major grocers stock it. Three things stand out; select one to highlight it on the map.</p>
   </div>
+  <div class="takeaways" id="takeaways"></div>
   <div class="map-box">
     <svg id="map-svg" role="img" aria-label="Network of funds and the UK grocery brands they back"></svg>
     <div class="tip" id="tip"></div>
-    <p class="map-note">Drag to rearrange. Select a fund to open its dossier.</p>
+    <p class="map-note">Drag to rearrange. Select a fund to see its dossier alongside.</p>
   </div>
-  <div class="legend" id="map-legend"></div>
+  <div class="map-tools"><div class="legend" id="map-legend"></div><button type="button" class="btn" id="map-reset" hidden>Show everything</button></div>
   <div class="next"><button type="button" class="btn" data-go="dossier">Next: Dossier →</button></div>
 </div></section>
 
 <section id="dossier" class="panel-tab" role="tabpanel" hidden><div class="wrap">
   <div class="prose"><p class="eyebrow">Fund dossier</p><h2>What we'd say in the first email</h2></div>
   <div class="picker" id="picker"></div>
-  <div class="dossier">
-    <div style="display:grid;gap:22px;min-width:0">
-      <div class="dos-head"><h3 id="d-name"></h3><span class="tier" id="d-tier"></span><span class="mono muted" id="d-meta"></span></div>
-      <p class="why" id="d-why"></p>
-      <div class="pillars" id="d-pillars"></div>
-      <div><p class="eyebrow" style="margin-bottom:6px">UK grocery brands in the portfolio</p><div class="brand-list" id="d-brands"></div></div>
-    </div>
-    <aside class="side" id="d-side"></aside>
-  </div>
+  <div id="dos-body"></div>
   <div class="next"><button type="button" class="btn" data-go="limits">Next: Limits →</button></div>
 </div></section>
 
@@ -318,6 +337,17 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     <div><h3>Sites that couldn't be read</h3><ul class="muted" id="failed" style="margin:0;padding-left:18px;display:grid;gap:4px;font-size:14px"></ul></div>
   </div>
 </div></section>
+
+<aside class="drawer" id="drawer" role="dialog" aria-label="Fund dossier" aria-hidden="true">
+  <div class="drawer-bar">
+    <button type="button" class="btn" id="dr-prev" aria-label="Previous fund in the ranking">↑ Prev</button>
+    <button type="button" class="btn" id="dr-next" aria-label="Next fund in the ranking">↓ Next</button>
+    <span class="grow"></span>
+    <button type="button" class="btn" id="dr-full">Full page</button>
+    <button type="button" class="x" id="dr-close" aria-label="Close dossier">×</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
 
 <footer><div class="wrap">
   <p>Built for the Procuros GTM Engineering case study. Data scraped on <span id="asof2"></span>; every record keeps its source URL in the <a href="https://github.com/linimeanie/procuros-engine">procuros-engine repository</a>.</p>
@@ -434,7 +464,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
         <span class="stackcell"><span class="stack" title="${PILLARS.map(p => p.label + " " + r.parts[p.key].toFixed(1)).join(" · ")}">${PILLARS.map(p => `<span style="width:${(100 * r.parts[p.key] / AX).toFixed(2)}%;background:${p.color}"></span>`).join("")}</span></span>
         <span class="s">${r.score.toFixed(1)}</span>
         <span class="d ${delta > 0 ? "up" : delta < 0 ? "down" : ""}">${delta > 0 ? "▲" + delta : delta < 0 ? "▼" + -delta : "–"}</span>`;
-      btn.addEventListener("click", () => select(r.fd.name, true));
+      btn.addEventListener("click", () => select(r.fd.name, "ranking"));
       board.appendChild(btn);
     });
     renderPicker();
@@ -447,29 +477,26 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   function renderPicker() {
     document.getElementById("picker").innerHTML = current.slice(0, 20).map(r =>
       `<button type="button" data-f="${esc(r.fd.name)}" class="${selected === r.fd.name ? "on" : ""}">${esc(r.fd.name)}</button>`).join("");
-    document.querySelectorAll("#picker button").forEach(b => b.addEventListener("click", () => select(b.dataset.f, false)));
+    document.querySelectorAll("#picker button").forEach(b => b.addEventListener("click", () => select(b.dataset.f)));
   }
-  function select(name, scroll) {
+  let drawerOpen = false;
+  function select(name, where) {
     selected = name;
     render();
-    if (scroll) showTab("dossier");
+    if (where) openDrawer();
+    paintMap();
   }
-  function renderDossier(name) {
-    const r = current.find(x => x.fd.name === name); if (!r) return;
+  function dossierHTML(r) {
     const fd = r.fd, rank = current.indexOf(r) + 1;
-    document.getElementById("d-name").textContent = fd.name;
-    const t = document.getElementById("d-tier"); t.className = "tier " + r.tier; t.textContent = r.tier;
-    document.getElementById("d-meta").textContent = `#${rank} · ${r.score.toFixed(1)} / 100 · ${fd.type} · ${fmtInt(fd.companies)} portfolio companies`;
-    document.getElementById("d-why").textContent = fd.why;
-    document.getElementById("d-pillars").innerHTML = PILLARS.map(p =>
+    const pillars = PILLARS.map(p =>
       `<div style="border-color:${p.color}"><b>${Math.round(100 * r.p[p.key])}</b><span>${p.label} (0–100)</span></div>`).join("");
     const order = { current: 0, unknown: 1, exited_recent: 2, exited_old: 3 };
     const bs = [...fd.brands].sort((a, b) => order[a.status] - order[b.status] || b.retailers.length - a.retailers.length);
-    document.getElementById("d-brands").innerHTML = bs.map(b => {
+    const brands = bs.map(b => {
       const B = brandsByName[b.brand] || {};
       const trig = (B.triggers || [])[0];
       const ops = (B.ops_roles || []).slice(0, 2).map(o => o.title).join(", ");
-      return `<div class="brand"><div class="top"><b>${B.website ? `<a href="${esc(B.website)}" target="_blank" rel="noopener">${esc(b.brand)}</a>` : esc(b.brand)}</b>
+      return `<div class="bi"><div class="top"><b>${B.website ? `<a href="${esc(B.website)}" target="_blank" rel="noopener">${esc(b.brand)}</a>` : esc(b.brand)}</b>
           <span class="status ${b.status}">${STATUS_LABEL[b.status]}</span></div>
         <div class="chips">${b.retailers.length ? b.retailers.map(x => `<span class="chip">${esc(x)}</span>`).join("") : `<span class="chip ghost">no retailer named on site</span>`}</div>
         ${trig ? `<p class="trig">${esc(trig.date.slice(0, 7))} · <a href="${esc(trig.url)}" target="_blank" rel="noopener">${esc(trig.headline)}</a> <span class="mono">(${esc(host(trig.url))})</span></p>` : ""}
@@ -481,8 +508,55 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     if (fd.community.length) side.push(`<div><p class="eyebrow">Community signals</p><ul>${fd.community.map(c => `<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.text)}</a></li>`).join("")}</ul></div>`);
     side.push(`<div><p class="eyebrow">Sources</p><ul>${[fd.website, ...fd.portfolio_urls].filter(Boolean).map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u) + new URL(u).pathname.replace(/\/$/, ""))}</a></li>`).join("")}</ul>
       <p class="muted" style="font-size:13px;margin-top:6px">Portfolio read: ${esc(fd.scrape)}.</p></div>`);
-    document.getElementById("d-side").innerHTML = side.join("");
+    return `<div class="dos-head"><h3>${esc(fd.name)}</h3><span class="tier ${r.tier}">${r.tier}</span>
+        <span class="mono muted">#${rank} · ${r.score.toFixed(1)} / 100 · ${esc(fd.type)} · ${fmtInt(fd.companies)} portfolio companies</span></div>
+      <p class="why">${esc(fd.why)}</p>
+      <div class="pillars">${pillars}</div>
+      <div class="dossier">
+        <div style="min-width:0"><p class="eyebrow" style="margin-bottom:6px">UK grocery brands in the portfolio</p><div class="brand-list">${brands}</div></div>
+        <aside class="side">${side.join("")}</aside>
+      </div>`;
   }
+  function renderDossier(name) {
+    const r = current.find(x => x.fd.name === name); if (!r) return;
+    const html = dossierHTML(r);
+    document.getElementById("dos-body").innerHTML = html;
+    if (drawerOpen) {
+      document.getElementById("drawer-body").innerHTML = html;
+      const i = current.indexOf(r);
+      document.getElementById("dr-prev").disabled = i === 0;
+      document.getElementById("dr-next").disabled = i === current.length - 1;
+    }
+  }
+
+  // Drawer
+  const drawer = document.getElementById("drawer");
+  let opener = null;
+  function openDrawer() {
+    if (!drawerOpen) opener = document.activeElement;
+    drawerOpen = true;
+    drawer.classList.add("open"); drawer.setAttribute("aria-hidden", "false"); document.body.classList.add("drawer-on"); size();
+    renderDossier(selected);
+    drawer.scrollTop = 0;
+    document.getElementById("dr-close").focus({ preventScroll: true });
+  }
+  function closeDrawer() {
+    if (!drawerOpen) return;
+    drawerOpen = false;
+    drawer.classList.remove("open"); drawer.setAttribute("aria-hidden", "true"); document.body.classList.remove("drawer-on"); size();
+    paintMap();
+    if (opener && opener.isConnected) opener.focus({ preventScroll: true });
+  }
+  const step = d => { const i = current.findIndex(x => x.fd.name === selected); const r = current[i + d]; if (r) select(r.fd.name, true); };
+  document.getElementById("dr-prev").addEventListener("click", () => step(-1));
+  document.getElementById("dr-next").addEventListener("click", () => step(1));
+  document.getElementById("dr-close").addEventListener("click", closeDrawer);
+  document.getElementById("dr-full").addEventListener("click", () => { closeDrawer(); showTab("dossier"); });
+  document.addEventListener("keydown", e => {
+    if (!drawerOpen) return;
+    if (e.key === "Escape") closeDrawer();
+    else if (drawer.contains(document.activeElement) && (e.key === "ArrowUp" || e.key === "ArrowDown")) { e.preventDefault(); step(e.key === "ArrowUp" ? -1 : 1); }
+  });
 
   // Limits
   const s = D.stats, nb = D.funnel[4].value;
@@ -536,7 +610,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     tip.innerHTML = d.kind === "fund" ? `<b>${esc(d.name)}</b><br>score ${d.score.toFixed(1)} · ${d.live} live brands`
       : `<b>${esc(d.name)}</b><br>${d.retailers.length ? esc(d.retailers.join(", ")) : "no grocer named"}${d.backers > 1 ? `<br>${d.backers} shortlisted backers` : ""}`;
   }).on("mouseleave", () => tip.style.display = "none")
-    .on("click", (ev, d) => { if (d.kind === "fund") select(d.name, true); });
+    .on("click", (ev, d) => { if (d.kind === "fund") select(d.name, "map"); });
   nd.call(d3.drag()
     .on("start", (ev, d) => { if (!ev.active) sim.alphaTarget(0.2).restart(); d.fx = d.x; d.fy = d.y; })
     .on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
@@ -555,15 +629,58 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     nodes.forEach(d => { d.x = Math.max(-w, Math.min(w, d.x)); d.y = Math.max(-h, Math.min(h, d.y)); });
     lk.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
     nd.attr("transform", d => `translate(${d.x},${d.y})`);
-    nd.select("circle").attr("opacity", d => !selected || d.kind === "brand" || d.name === selected ? 1 : 0.45);
   });
+  // Takeaways, computed from the graph so they stay true when the data changes
+  const brandNodes = nodes.filter(n => n.kind === "brand");
+  const fundBrands = new Map(top.map(r => [r.fd.name, new Set(links.filter(l => l.source === "f:" + r.fd.name || l.source.id === "f:" + r.fd.name).map(l => (l.target.id || l.target).slice(2)))]));
+  const shared = brandNodes.filter(n => n.backers > 1);
+  const sharedNames = new Set(shared.map(n => n.name));
+  const clusterFunds = top.filter(r => [...fundBrands.get(r.fd.name)].some(b => sharedNames.has(b))).map(r => r.fd.name);
+  const islands = top.filter(r => !clusterFunds.includes(r.fd.name)).map(r => r.fd.name);
+  const reach3 = brandNodes.filter(n => n.reach >= 3);
+  const biggest = top.map(r => ({ name: r.fd.name, n: fundBrands.get(r.fd.name).size, r3: [...fundBrands.get(r.fd.name)].filter(b => seen.get(b).reach >= 3).length })).sort((a, b) => b.n - a.n)[0];
+  const short = n => n.replace(/ (Investments|Capital Partners|Capital|Partners|Ventures|Private Equity)$/, "");
+  const list = a => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a[a.length - 1] : a.join("");
+  const FOCUS = {
+    shared: { num: shared.length, title: "brands have two or three shortlisted backers",
+      text: `${list(shared.map(n => n.name.replace("dash-water", "DASH Water")))} tie ${clusterFunds.length} funds into one cluster. Those founders can be reached through either investor, which makes the cluster the natural place to test two funds side by side.`,
+      brand: n => n.backers > 1, fund: f => clusterFunds.includes(f) },
+    islands: { num: islands.length, title: "of 20 funds share no brand with another",
+      text: `Most doors are separate: ${list(islands.slice(0, 3).map(short))} and the rest each lead to their own brands. Coverage grows with the number of fund relationships, not through one syndicate.`,
+      brand: n => islands.some(f => fundBrands.get(f).has(n.name)), fund: f => islands.includes(f) },
+    reach: { num: reach3.length, title: `of ${brandNodes.length} brands are stocked by 3+ major grocers`,
+      text: `A big portfolio isn't the same as big brands. ${short(biggest.name)} backs the most (${biggest.n}) but ${biggest.r3 ? "only " + biggest.r3 : "none"} at three or more grocers, the brands most likely to face EDI mandates today.`,
+      brand: n => n.reach >= 3, fund: f => [...fundBrands.get(f)].some(b => seen.get(b).reach >= 3) },
+  };
+  let focus = null;
+  const tk = document.getElementById("takeaways");
+  tk.innerHTML = Object.entries(FOCUS).map(([k, v]) => `<button type="button" data-k="${k}" aria-pressed="false"><b>${v.num}</b><h3>${v.title}</h3><p>${esc(v.text)}</p></button>`).join("");
+  tk.querySelectorAll("button").forEach(b => b.addEventListener("click", () => setFocus(focus === b.dataset.k ? null : b.dataset.k)));
+  document.getElementById("map-reset").addEventListener("click", () => setFocus(null));
+  function setFocus(k) {
+    focus = k;
+    tk.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.k === k)));
+    document.getElementById("map-reset").hidden = !k;
+    paintMap();
+  }
+  // Highlight: an open dossier wins over a takeaway; everything else fades back
+  function paintMap() {
+    let onB, onF;
+    if (drawerOpen && selected && fundBrands.has(selected)) { const set = fundBrands.get(selected); onB = n => set.has(n.name); onF = f => f === selected; }
+    else if (focus) { onB = FOCUS[focus].brand; onF = FOCUS[focus].fund; }
+    const lit = d => !onB || (d.kind === "fund" ? onF(d.name) : onB(d));
+    nd.transition().duration(200).style("opacity", d => lit(d) ? 1 : 0.14);
+    lk.transition().duration(200).style("opacity", d => !onB || (onF(d.source.name) && onB(d.target)) ? 1 : 0.08);
+  }
+  window.paintMap = paintMap;
+
   window.addEventListener("resize", size);
   window.__resizeMap = () => sim.alpha(Math.max(sim.alpha(), 0.02)).restart();
   size();
 
   readW();
   render();
-  select(scoreAll(DEFAULT_W)[0].fd.name, false);
+  select(scoreAll(DEFAULT_W)[0].fd.name);
   function showTab(id) {
     if (!TABS.includes(id)) id = "thesis";
     TABS.forEach(t => {
