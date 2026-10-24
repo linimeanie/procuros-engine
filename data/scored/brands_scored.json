@@ -16,8 +16,26 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "12788957",
+   "company_name": "STOCKED FOOD LTD",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/12788957",
+   "match_confidence": "medium",
+   "share_allotments_24m": 4,
+   "charges_24m": 0
+  },
   "category": "meal_kit_dtc",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/stocked-chicken-tinga-ready-meal/648296011"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/stocked-frozen-beef-chilli/985882-1-2"
+   }
+  ],
   "news": [
    {
     "date": "13 Aug 2025",
@@ -37,6 +55,20 @@
     "type": "funding",
     "date_parsed": "2025-08-13",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2026-10-05",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/12788957/filing-history/MzU0OTI4NjczNmFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-11-17",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/12788957/filing-history/MzQ4OTE4MTk1MmFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [
@@ -49,18 +81,20 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.5,
-  "fit": 0.305,
+  "size_proxy": 1.0,
+  "fit": 0.605,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.1652563687964785,
+   "funding": 0.8525161925373597,
    "ops_hiring": 0.0,
    "momentum": 0.055085456265492834,
    "expansion": 0.330512737592957
   },
-  "stack": [],
-  "pain_base": 0.083,
-  "pain": 0.083
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.254,
+  "pain": 0.254
  },
  {
   "brand": "Botivo",
@@ -79,8 +113,30 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "14346064",
+   "company_name": "BOTIVO LTD",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/14346064",
+   "match_confidence": "high",
+   "share_allotments_24m": 5,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/botivo-botanical-non-alcoholic-aperitivo/908014-838489-838490"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/botivo-alcohol-free-botanical-aperitivo-spirit/666654011"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/botivo-0-0-alcohol-free-50cl"
+   }
+  ],
   "news": [
    {
     "date": "26 May 2026",
@@ -124,20 +180,37 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2026-09-14",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/14346064/filing-history/MzU0NDUyOTU0NGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2026-08-20",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/14346064/filing-history/MzUzOTk2MzU4NWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.812,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.8758995433678994,
    "ops_hiring": 0.0,
    "momentum": 0.336360714516269,
    "expansion": 0
   },
-  "stack": [],
-  "pain_base": 0.05,
-  "pain": 0.05
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.269,
+  "pain": 0.269
  },
  {
   "brand": "KatKin",
@@ -161,12 +234,28 @@
    {
     "title": "Logistics Contractor (flexible, part-time contractor role) Manchester area",
     "url": "https://katkin.jobs.personio.com/"
+   },
+   {
+    "title": "Logistics Contractor (flexible, part-time contractor role) Manchester area",
+    "url": "https://katkin.jobs.personio.de/job/2712827",
+    "source": "job board"
+   },
+   {
+    "title": "Logistics Coordinator",
+    "url": "https://katkin.jobs.personio.de/job/2776641",
+    "source": "job board"
    }
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "meal_kit_dtc",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/katkin-chicken-nibbles-cat-treats/621617011"
+   }
+  ],
   "news": [
    {
     "date": "16 Dec 2025",
@@ -287,11 +376,11 @@
    }
   ],
   "size_proxy": 0.5,
-  "fit": 0.405,
+  "fit": 0.492,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.9893336000744872,
-   "ops_hiring": 0.6666666666666666,
+   "ops_hiring": 1,
    "momentum": 0.3869969358574606,
    "expansion": 1
   },
@@ -300,8 +389,8 @@
    "ops_hiring",
    "expansion"
   ],
-  "pain_base": 0.539,
-  "pain": 0.808
+  "pain_base": 0.605,
+  "pain": 0.908
  },
  {
   "brand": "All Things",
@@ -320,8 +409,42 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "14833009",
+   "company_name": "ALL THINGS BUTTER LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/14833009",
+   "match_confidence": "medium",
+   "share_allotments_24m": 5,
+   "charges_24m": 0
+  },
   "category": "meal_kit_dtc",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/all-things-cottage-cheese-smooth/704048011"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://corporate.asda.com/asda-barking-206769"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/all-things-cottage-cheese-low-fat/115904190"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/all-things-240g-smooth-cottage-cheese"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/all-things-butter-salted-butter-200g--5061051740074"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/390092958"
+   }
+  ],
   "news": [
    {
     "date": "16 Apr 2026",
@@ -358,6 +481,20 @@
     "type": "funding",
     "date_parsed": "2026-04-16",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2026-09-18",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/14833009/filing-history/MzU0NTY1NTU3MWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2026-06-08",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/14833009/filing-history/MzUyNTg3MzE4MmFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [
@@ -378,11 +515,11 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.5,
-  "fit": 0.305,
+  "size_proxy": 1.0,
+  "fit": 0.78,
   "pain_parts": {
    "listings": 0.46576070024986393,
-   "funding": 0.3081918433288086,
+   "funding": 1,
    "ops_hiring": 0.0,
    "momentum": 0.25798418119289085,
    "expansion": 1
@@ -392,8 +529,8 @@
    "funding",
    "expansion"
   ],
-  "pain_base": 0.355,
-  "pain": 0.533
+  "pain_base": 0.528,
+  "pain": 0.793
  },
  {
   "brand": "All the Aunties",
@@ -412,14 +549,28 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/all-the-aunties-200g-cumin-chilli-turmeric-paneer"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/322435615"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/all-the-aunties-original-plain-paneer/663985011"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.812,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -453,11 +604,40 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "13779983",
+   "company_name": "FREJA LTD",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/13779983",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
     "name": "Tesco",
     "source_url": "https://www.frejabonebroth.com/"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/freja-classic-chicken-sipping-bone-broth/622691011"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/freja-collagen-protein-shake-vanilla-300g-6100021229"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/freja-560g-classic-chicken-vegetable-bone-broth-soup"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/freja-instant-beef-bone-broth/944350-1-2"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/freja-chocolate-collagen-protein-blend-300g-10400043"
    }
   ],
   "news": [
@@ -547,8 +727,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 0.2,
+  "fit": 0.7,
   "pain_parts": {
    "listings": 0.5607273129922556,
    "funding": 0.3602441189941246,
@@ -579,8 +759,50 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "08651758",
+   "company_name": "NORTHERN MONK BREWING CO. LTD",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/08651758",
+   "match_confidence": "medium",
+   "share_allotments_24m": 1,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/northern-monk-faith/113751468"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/305964020"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/northern-monk-faith-4-pack/647374011"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/northern-monk-faith-hazy-pale-ale/801395-757471-757472"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/northern-monk-faith-hazy-pale-ale-440ml--5060983535284"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/northern-monk-beyond-bold-4-x-330ml-new-world-ipa-beer-cans"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/ipas/northern-monk-heathen-hazy-ipa-440ml/9071230"
+   },
+   {
+    "name": "M&S",
+    "source_url": "https://www.marksandspencer.com/food/northern-monk-new-england-ipa/p/fdp60605824"
+   }
+  ],
   "news": [
    {
     "date": "26 Mar 2025",
@@ -640,21 +862,28 @@
     "type": "funding",
     "date_parsed": "2025-05-09",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2025-10-02",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/08651758/filing-history/MzQ4MzU4OTE5M2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.425,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.12957870813281477,
+   "funding": 0.31715199873279554,
    "ops_hiring": 0.0,
    "momentum": 0.3417077771301624,
    "expansion": 0
   },
   "stack": [],
-  "pain_base": 0.084,
-  "pain": 0.084
+  "pain_base": 0.131,
+  "pain": 0.131
  },
  {
   "brand": "Marleybones",
@@ -685,6 +914,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "12216353",
+   "company_name": "MARLEYBONES LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/12216353",
+   "match_confidence": "high",
+   "share_allotments_24m": 1,
+   "charges_24m": 0
+  },
   "category": "meal_kit_dtc",
   "retailers": [
    {
@@ -694,6 +932,10 @@
    {
     "name": "Ocado",
     "source_url": "https://trade.marleybones.com/"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/marleybones-boss-beef-390g--5070001029015"
    }
   ],
   "news": [
@@ -796,6 +1038,13 @@
     "type": "funding",
     "date_parsed": "2025-10-29",
     "trade_press": false
+   },
+   {
+    "date_parsed": "2025-09-24",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/12216353/filing-history/MzQ4MjU1OTI4NmFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [
@@ -817,10 +1066,10 @@
    }
   ],
   "size_proxy": 1.0,
-  "fit": 0.605,
+  "fit": 0.693,
   "pain_parts": {
    "listings": 0.39604676277311296,
-   "funding": 0.8090480490034542,
+   "funding": 0.9928579709595595,
    "ops_hiring": 0.0,
    "momentum": 0.6562522500313402,
    "expansion": 1
@@ -830,8 +1079,8 @@
    "funding",
    "expansion"
   ],
-  "pain_base": 0.52,
-  "pain": 0.779
+  "pain_base": 0.565,
+  "pain": 0.848
  },
  {
   "brand": "Better Nature",
@@ -863,6 +1112,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "11613856",
+   "company_name": "BETTER NATURE LTD",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11613856",
+   "match_confidence": "medium",
+   "share_allotments_24m": 1,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -954,6 +1212,13 @@
     "type": "funding",
     "date_parsed": "2025-08-06",
     "trade_press": false
+   },
+   {
+    "date_parsed": "2025-07-02",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/11613856/filing-history/MzQ3MjEzMzkyNGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
@@ -961,14 +1226,14 @@
   "fit": 0.812,
   "pain_parts": {
    "listings": 0.12009528879904922,
-   "funding": 0.16235154088251327,
+   "funding": 0.3109271299321588,
    "ops_hiring": 0.0,
    "momentum": 0.4243513968758989,
    "expansion": 0
   },
   "stack": [],
-  "pain_base": 0.14,
-  "pain": 0.14
+  "pain_base": 0.177,
+  "pain": 0.177
  },
  {
   "brand": "Bella & Duke",
@@ -1008,6 +1273,15 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "SC547789",
+   "company_name": "BELLA & DUKE LIMITED",
+   "size_band": "group accounts (usually medium/large)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/SC547789",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 1
+  },
   "category": "meal_kit_dtc",
   "retailers": [
    {
@@ -1021,22 +1295,31 @@
   ],
   "news": [],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2026-04-27",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC547789/filing-history/MzUxODQxMzQwNmFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
   "size_proxy": 1.0,
   "fit": 0.705,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.31690125168711514,
    "ops_hiring": 0.6666666666666666,
    "momentum": 0.0,
    "expansion": 0
   },
   "stack": [
+   "funding",
    "ops_hiring"
   ],
-  "pain_base": 0.133,
-  "pain": 0.133
+  "pain_base": 0.213,
+  "pain": 0.266
  },
  {
   "brand": "Joe & Seph’s",
@@ -1055,8 +1338,18 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/joe-seph-s-salted-caramel-popcorn/100023011"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/joe-sephs-toffee-gourmet-popcorn/907801-1-2"
+   }
+  ],
   "news": [
    {
     "date": "2026-09-24 (approx, from '1 month ago')",
@@ -1097,8 +1390,8 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.5,
-  "fit": 0.425,
+  "size_proxy": 1.0,
+  "fit": 0.725,
   "pain_parts": {
    "listings": 0.4634067221751998,
    "funding": 0.4634067221751998,
@@ -1156,6 +1449,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "11852138",
+   "company_name": "SCRUMBLES LTD",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11852138",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -1177,14 +1479,18 @@
    {
     "name": "Ocado",
     "source_url": "https://www.scrumbles.de/en?shpxid=6206ef03-3644-44e4-b84d-260daabeb199"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/scrumbles-adult-seniors-chicken-750g--5060475830040"
    }
   ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 1.0,
-  "fit": 0.9,
+  "size_proxy": 0.2,
+  "fit": 0.7,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -1213,6 +1519,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "03259222",
+   "company_name": "ST PIERRE GROUPE LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/03259222",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "manufacturer_own_label",
   "retailers": [],
   "news": [
@@ -1272,14 +1587,44 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=THIS&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=THIS&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=THIS&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=THIS&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=THIS&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=THIS&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "M&S",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=THIS&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -1308,6 +1653,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "05885139",
+   "company_name": "OFF-PISTE WINES LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/05885139",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 1
+  },
   "category": "manufacturer_own_label",
   "retailers": [],
   "news": [
@@ -1361,6 +1715,13 @@
     "type": "acquisition",
     "date_parsed": "2026-05-06",
     "trade_press": false
+   },
+   {
+    "date_parsed": "2026-09-22",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/05885139/filing-history/MzU0NjIxODg4MGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
@@ -1368,7 +1729,7 @@
   "fit": 0.51,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.9620398828298355,
+   "funding": 1,
    "ops_hiring": 0.0,
    "momentum": 0.3206799609432785,
    "expansion": 0
@@ -1376,8 +1737,8 @@
   "stack": [
    "funding"
   ],
-  "pain_base": 0.289,
-  "pain": 0.289
+  "pain_base": 0.298,
+  "pain": 0.298
  },
  {
   "brand": "MOTH",
@@ -1425,6 +1786,15 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "11525411",
+   "company_name": "MOTH DRINKS LTD",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11525411",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 2
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -1446,6 +1816,14 @@
    {
     "name": "Waitrose",
     "source_url": "https://mothdrinks.com/"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/moth-margarita-125ml--5060676750109"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/moth-margarita-cocktail/646897011"
    }
   ],
   "news": [
@@ -1459,22 +1837,31 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2026-09-01",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/11525411/filing-history/MzU0MTg4NjI0NmFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
   "size_proxy": 1.0,
   "fit": 1.0,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.4371761339965905,
    "ops_hiring": 0.3333333333333333,
    "momentum": 0.04755783904522506,
    "expansion": 0
   },
   "stack": [
+   "funding",
    "ops_hiring"
   ],
-  "pain_base": 0.074,
-  "pain": 0.074
+  "pain_base": 0.183,
+  "pain": 0.229
  },
  {
   "brand": "The Good Pulse Co",
@@ -1493,24 +1880,41 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "13801345",
+   "company_name": "GOOD PULSE FOODS LIMITED",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/13801345",
+   "match_confidence": "medium",
+   "share_allotments_24m": 1,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2024-11-26",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/13801345/filing-history/MzQ0NDkxMDk3OGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
   "size_proxy": 0.2,
   "fit": 0.35,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.0855247255807647,
    "ops_hiring": 0.0,
    "momentum": 0.0,
    "expansion": 0
   },
   "stack": [],
-  "pain_base": 0.0,
-  "pain": 0.0
+  "pain_base": 0.021,
+  "pain": 0.021
  },
  {
   "brand": "Little Bandits",
@@ -1529,14 +1933,20 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/dairy-free-chilled-food/banana-coconut-pot/6724223"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 0.5,
+  "fit": 0.512,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -1565,6 +1975,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "11079693",
+   "company_name": "IPN HOLDING LTD",
+   "size_band": "dormant",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11079693",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "manufacturer_own_label",
   "retailers": [],
   "news": [],
@@ -1601,6 +2020,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -1637,6 +2057,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "11287078",
+   "company_name": "BARTI RUM LTD",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11287078",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [],
   "news": [
@@ -1661,8 +2090,8 @@
     "trade_press": false
    }
   ],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 0.7,
+  "fit": 0.475,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -1698,11 +2127,28 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "06919062",
+   "company_name": "JUST LOVE FOOD COMPANY LTD",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/06919062",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 2
+  },
   "category": "branded_grocery",
   "retailers": [
    {
     "name": "Ocado",
     "source_url": "https://justlovefoodcompany.com/"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/303433600"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/birthday-party-cakes/just-love-food-company-happy-birthday-cake/7622437"
    }
   ],
   "news": [
@@ -1716,20 +2162,30 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2025-12-19",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/06919062/filing-history/MzQ5NTM2MzIyM2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 1.0,
+  "fit": 0.812,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.22855511873203196,
    "ops_hiring": 0.0,
    "momentum": 0.15446890739173327,
    "expansion": 0
   },
-  "stack": [],
-  "pain_base": 0.023,
-  "pain": 0.023
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.08,
+  "pain": 0.08
  },
  {
   "brand": "Tregroes Waffles",
@@ -1748,6 +2204,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -1784,6 +2241,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "09595593",
+   "company_name": "QUANTUM COFFEE ROASTERS LTD",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/09595593",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -1837,6 +2303,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "17071027",
+   "company_name": "HILLTOP HONEY LIMITED",
+   "size_band": null,
+   "url": "https://find-and-update.company-information.service.gov.uk/company/17071027",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -1854,6 +2329,10 @@
    {
     "name": "Waitrose",
     "source_url": "https://wearelittles.com/pages/stockists"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://zoom.ocado.com/hilltop-honey-organic-blossom-squeezy-720g-548008011"
    }
   ],
   "news": [
@@ -1941,6 +2420,7 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [
    {
@@ -2099,24 +2579,43 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "08211695",
+   "company_name": "BRIGHT BLUE FOODS LIMITED",
+   "size_band": "group accounts (usually medium/large)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/08211695",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 2
+  },
   "category": "manufacturer_own_label",
   "retailers": [],
   "news": [],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2026-02-16",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/08211695/filing-history/MzUwNTIwMTU0M2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
   "size_proxy": 1.0,
   "fit": 0.51,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.26540313363685,
    "ops_hiring": 0.0,
    "momentum": 0.0,
    "expansion": 0
   },
-  "stack": [],
-  "pain_base": 0.0,
-  "pain": 0.0
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.066,
+  "pain": 0.066
  },
  {
   "brand": "Gü",
@@ -2135,8 +2634,30 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=G%C3%BC&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/gu-chocolate-honeycomb-cheesecake-dessert-2-x-86-5g-173g--5060425288129"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/g-ultimate-chocolate-cheesecake-dessert-2-x-85g"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/gu-new-york-cheesecakes/655861-825161-825162"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/cheesecakes/gu-new-york-cheesecake-dessert-2-x-70g/9353403"
+   }
+  ],
   "news": [
    {
     "date": "16 Jan 2026",
@@ -2207,8 +2728,8 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -2239,8 +2760,42 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "08617161",
+   "company_name": "LOCH LOMOND DISTILLERY COMPANY LIMITED",
+   "size_band": "audit-exemption-subsidiary",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/08617161",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/loch-lomond-classic-single-malt-scotch-whisky-70cl--5016840043218"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/single-malt-whisky/loch-lomond-aged-10-years-single-malt-scotch-whisky-70cl/7468580"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/loch-lomond-the-original-triple-oak-single-malt-scotch-whisky/115931526"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/loch-lomond-classic-single-malt-scotch-whisky-70cl"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/308458845"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/loch-lomond/804365-683820-683821"
+   }
+  ],
   "news": [
    {
     "date": "1 Jun 2026",
@@ -2262,8 +2817,8 @@
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -2303,8 +2858,46 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "13071913",
+   "company_name": "PROPER SNACKS LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/13071913",
+   "match_confidence": "high",
+   "share_allotments_24m": 2,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/propercorn-sweet-salty-multipack/307754011"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/propercorn-lightly-sea-salted-popcorn-multipack-6x10g"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/sharing-popcorn/propercorn-sea-salted-popcorn-70g/5748063"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/274110433"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/propercorn-sweet-salty-popcorn/110260760"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/propercorn-sweet-salty-popcorn-90g--5060283760072"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/propercorn-smoky-sweet-paprika-popcorn/922995-829942-829943"
+   }
+  ],
   "news": [
    {
     "date": "25 Sept 2025",
@@ -2340,13 +2933,28 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2025-07-21",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/13071913/filing-history/MzQ3NDQ2ODcwN2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-03-25",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/13071913/filing-history/MzQ2MDAxNDg4MWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.45,
+  "size_proxy": 1.0,
+  "fit": 1.0,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.27151934431694796,
    "ops_hiring": 0.3333333333333333,
    "momentum": 0.38029851468398235,
    "expansion": 0
@@ -2354,8 +2962,8 @@
   "stack": [
    "ops_hiring"
   ],
-  "pain_base": 0.124,
-  "pain": 0.124
+  "pain_base": 0.192,
+  "pain": 0.192
  },
  {
   "brand": "Quorn Foods",
@@ -2404,6 +3012,15 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10528961",
+   "company_name": "QUORN FOODS LIMITED",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10528961",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -2429,6 +3046,10 @@
    {
     "name": "Co-op",
     "source_url": "https://www.quorn.co.uk/"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/quorn-pieces/663970011"
    }
   ],
   "news": [
@@ -2477,8 +3098,8 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 1.0,
-  "fit": 1.0,
+  "size_proxy": 0.2,
+  "fit": 0.8,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -2510,8 +3131,42 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "11995168",
+   "company_name": "VIBRANT FOODS LIMITED",
+   "size_band": "group accounts (usually medium/large)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11995168",
+   "match_confidence": "medium",
+   "share_allotments_24m": 1,
+   "charges_24m": 0
+  },
   "category": "manufacturer_own_label",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Asda",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=ktc&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=ktc&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/ktc-chopped-tomatoes-400g"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://zoom.ocado.com/ktc-italian-chopped-tomato-400g-621515011"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/ktc-minced-garlic-paste-210g--5013635389520"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/ktc-peeled-chopped-tomatoes-in-tomato-juice-400g/100382780"
+   }
+  ],
   "news": [
    {
     "date": "8 Oct 2025",
@@ -2531,21 +3186,28 @@
     "type": "funding",
     "date_parsed": "2025-10-08",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2024-11-06",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/11995168/filing-history/MzQ0MjE5NjkyMGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
   "size_proxy": 1.0,
-  "fit": 0.51,
+  "fit": 0.86,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.19044629680731054,
+   "funding": 0.27174555308738146,
    "ops_hiring": 0.0,
    "momentum": 0.06348209893577018,
    "expansion": 0
   },
   "stack": [],
-  "pain_base": 0.057,
-  "pain": 0.057
+  "pain_base": 0.077,
+  "pain": 0.077
  },
  {
   "brand": "dash-water",
@@ -2613,6 +3275,15 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "15528771",
+   "company_name": "DASH WATER LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/15528771",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -2730,14 +3401,36 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "06457864",
+   "company_name": "PURE SPORT UK LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/06457864",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "supplements",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/puresport-energy-gel-sachet-berry-41ml-6-sachets-10384872"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/puresport-ultra-electrolytes-trial-pack/694940011"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/puresport-ultra-electrolytes-raspberry-15-sachets-6100028175"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.27,
+  "size_proxy": 1.0,
+  "fit": 0.732,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -2766,8 +3459,30 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "11268854",
+   "company_name": "GOODHEMP LTD.",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11268854",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/good-hemp-original-hemp-seed-oil/065520-33203-33204"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/good-hemp-seed-hearts-225g"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/293062300"
+   }
+  ],
   "news": [
    {
     "date": "2026-10-17 (approx, from '1 week ago')",
@@ -2782,7 +3497,7 @@
   "funding_news": [],
   "export_news": [],
   "size_proxy": 0.2,
-  "fit": 0.35,
+  "fit": 0.612,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -2811,8 +3526,22 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "SC536046",
+   "company_name": "EDEN MILL ST ANDREWS LTD",
+   "size_band": "dormant",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/SC536046",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/gol-ui/product/eden-mill-st-andrews-original-tonic-250ml"
+   }
+  ],
   "news": [
    {
     "date": "28 Oct 2025",
@@ -2843,8 +3572,8 @@
     "trade_press": false
    }
   ],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 0.5,
+  "fit": 0.512,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -2875,8 +3604,46 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "04007092",
+   "company_name": "INNOCENT LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/04007092",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=innocent&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=innocent&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=innocent&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/innocent-pure-orange-juice-smooth/60111011"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/innocent-pure-orange-fruit-juice-with-bits/770199-124258-124259"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://www.coop.co.uk/products/innocent-1-35l-oj-smooth"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/innocent-tropical-juice/106317508"
+   }
+  ],
   "news": [
    {
     "date": "18 Mar 2025",
@@ -2972,8 +3739,8 @@
     "trade_press": false
    }
   ],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.5581871062320871,
@@ -3027,11 +3794,36 @@
    }
   ],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "14265538",
+   "company_name": "HUMANTRA LIMITED",
+   "size_band": "dormant",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/14265538",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "supplements",
   "retailers": [
    {
     "name": "Boots",
     "source_url": "https://humantra.co.uk/"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/humantra-electrolyte-powder-himalayan-lime/901168-1-2"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/323321529"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/humantra-himalayan-lime-electrolyte-powder/694120011"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/humantra-6-x-3-6g-himalayan-lime-zero-sugar-electrolyte-drink-hydration-sachets"
    }
   ],
   "news": [
@@ -3073,8 +3865,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.432,
+  "size_proxy": 1.0,
+  "fit": 0.82,
   "pain_parts": {
    "listings": 0.15629769647211725,
    "funding": 0.13665924539250554,
@@ -3103,6 +3895,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "05194044",
+   "company_name": "REFORMED LIMITED",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/05194044",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -3160,6 +3961,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "09460193",
+   "company_name": "TRUESTART COFFEE LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/09460193",
+   "match_confidence": "medium",
+   "share_allotments_24m": 2,
+   "charges_24m": 1
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -3231,6 +4041,27 @@
     "type": "funding",
     "date_parsed": "2026-01-28",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2025-12-09",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/09460193/filing-history/MzQ5MzE3NzAwMGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2024-10-31",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/09460193/filing-history/MzQ0MTYxNjcxM2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-04-09",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/09460193/filing-history/MzQ2MTk1ODg2N2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
@@ -3238,7 +4069,7 @@
   "fit": 0.9,
   "pain_parts": {
    "listings": 0.3250322939033408,
-   "funding": 0.2529304900715685,
+   "funding": 0.6759361427387736,
    "ops_hiring": 0.0,
    "momentum": 0.3620388811782638,
    "expansion": 0
@@ -3247,8 +4078,8 @@
    "listings",
    "funding"
   ],
-  "pain_base": 0.215,
-  "pain": 0.269
+  "pain_base": 0.321,
+  "pain": 0.401
  },
  {
   "brand": "Graze",
@@ -3272,14 +4103,56 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "12052918",
+   "company_name": "GRAZE LTD",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/12052918",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=graze&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=graze&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=graze&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/313942754"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/graze-smoky-bbq-crunch/434922-511742-511743"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/graze-peri-peri-crunch-100g/113124624"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/graze-crunch-snacks-smoky-barbecue-28-g--5055958706011"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/graze-crunch-bbq-22-5g-5s-10346942"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
   "size_proxy": 0.2,
-  "fit": 0.35,
+  "fit": 0.7,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -3314,8 +4187,38 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/311448058"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/lucky-saint-alcohol-free-lager/473029-793385-793386"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/lucky-saint-lager-alcohol-free-0-5/585868011"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/lucky-saint-0-5-low-alcohol-lager-4-x-330ml"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/lucky-saint-unfiltered-alcohol-free-lager-can-4x330ml/113325119"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/lucky-saint-unfiltered-lager-330ml--5060621160090"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/no-low-alcohol-beer/lucky-saint-superior-unfiltered-lager-4-x-330ml/9409157"
+   }
+  ],
   "news": [
    {
     "date": "2026-09-24 (approx, from '1 month ago')",
@@ -3353,8 +4256,8 @@
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -3383,8 +4286,22 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "15895336",
+   "company_name": "DOT DOT TEA LIMITED",
+   "size_band": "dormant",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/15895336",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/dot-dot-mango-passionfruit-bubble-tea/656181011"
+   }
+  ],
   "news": [
    {
     "date": "23 Jan 2025",
@@ -3398,8 +4315,8 @@
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 0.5,
+  "fit": 0.512,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -3428,8 +4345,38 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "15219707",
+   "company_name": "XOXO LIMITED",
+   "size_band": "dormant",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/15219707",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/xoxo-sparkling-watermelon-330ml--5070000962009"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/xoxo-sparkling-tropical/647539011"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/xoxo-330ml-sparkling-tropical-fruits-soda-can"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/xoxo-soda-sparkling-tropical-fruits-330ml-6100006931"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/health-wellbeing/xoxo-sparkling-tropical-fruits-4-x-330ml/9415850"
+   }
+  ],
   "news": [
    {
     "date": "11 Apr 2025",
@@ -3485,8 +4432,8 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.5,
-  "fit": 0.425,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.24576869154017544,
@@ -3515,8 +4462,38 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/308104019"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/small-multipack-crisps-4-8-packs-/popchips-popchips-sour-cream-onion-multipack-crisps-5-pack/6905269"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/popchips-sea-salt-sharing-crisps-85g"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/popchips-salt-pepper-potato-chips/591052-168592-168593"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/popchips-sour-cream-onion-sharing-crisps/67292011"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/popchips-sea-salt-vinegar-sharing-crisps/109397494"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://www.coop.co.uk/products/popchips-barbeque-sharing-crisps-85g"
+   }
+  ],
   "news": [
    {
     "date": "2026-10-17 (approx, from '1 week ago')",
@@ -3571,8 +4548,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.49873488687737444,
@@ -3603,8 +4580,30 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "07993043",
+   "company_name": "PURITY SOFT DRINKS LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/07993043",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/juiceburst-orange-500ml"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/juiceburst-apple/110666161"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/303706785"
+   }
+  ],
   "news": [
    {
     "date": "30 Apr 2026",
@@ -3683,8 +4682,8 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.812,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -3713,14 +4712,44 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "02867393",
+   "company_name": "DORSET CEREALS LIMITED",
+   "size_band": "dormant",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/02867393",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Dorset%20Cereals&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Dorset%20Cereals&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Dorset%20Cereals&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/granola-crisp/dorset-cereals-oat-granola-breakfast-cereal-500g/9026759"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/dorset-cereals-simply-oat-granola/594633-283761-283762"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -3749,8 +4778,38 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/271208882"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/tyrrells-chips-lightly-sea-salted-150g"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://zoom.ocado.com/tyrrells-sea-salt-black-pepper-sharing-crisps-150g-43320011"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/sharing-crisps/tyrrells-lightly-sea-salted-sharing-crisps-150g/5891527"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/tyrrells-mature-cheddar-chive-crisps/668582-94892-94893"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/tyrrells-sea-salted-crisps/112607085"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/tyrrells-furrows-sea-salted-sharing-crisps-150g--5060042643325"
+   }
+  ],
   "news": [
    {
     "date": "27 Feb 2026",
@@ -3764,8 +4823,8 @@
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -3799,14 +4858,32 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "07225991",
+   "company_name": "BART SPICES GROUP HOLDINGS LIMITED",
+   "size_band": "group accounts (usually medium/large)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/07225991",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/bart-spices-harissa-paste/007774-3658-3659"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://bart.co.uk/pages/where-to-buy-bart"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.725,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -3835,24 +4912,79 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "02238320",
+   "company_name": "KETTLE FOODS LTD.",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/02238320",
+   "match_confidence": "high",
+   "share_allotments_24m": 4,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/sharing-crisps/kettle-lightly-salted-potato-chips-130g/7464255"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/kettle-chips-lightly-salted-multipack-crisps-5x25g"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://zoom.ocado.com/kettle-chips-lightly-salted-130g-591111011"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/kettle-chips-lightly-salted-sharing-crisps/112683176"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/kettle-honey-dijon-mustard-potato-chips-130g--5017764004880"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/312698140"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/kettle-chips-lightly-salted/558610-79062-79063"
+   }
+  ],
   "news": [],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2025-11-21",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/02238320/filing-history/MzQ5MDQwMzE5NWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-05-21",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/02238320/filing-history/MzQ2NzM3MjAwN2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.3464825315051588,
    "ops_hiring": 0.0,
    "momentum": 0.0,
    "expansion": 0
   },
-  "stack": [],
-  "pain_base": 0.0,
-  "pain": 0.0
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.087,
+  "pain": 0.087
  },
  {
   "brand": "GRENADE",
@@ -3876,8 +5008,54 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "08894863",
+   "company_name": "GRENADE HOLDINGS LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/08894863",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=GRENADE&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=GRENADE&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/grenade-carb-killa-bar-chocolate-chip-salted-caramel-60g-10277827"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/grenade-fan-favourites-protein-bars/622636011"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/grenade-protein-bar-chocolate-chip-salted-caramel-flavour-60g/111118061"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/protein-bars-snacks/grenade-protein-bars-oreo-white-bars-4-x-60g/9110908"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/grenade-protein-bars-oreo-milk-60g--5060811383254"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/grenade-chocolate-chip-salted-caramel/442327-824087-824088"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/grenade-carb-killa-bar-cookie-dough-60016681"
+   }
+  ],
   "news": [
    {
     "date": "25 Jun 2025",
@@ -3956,8 +5134,8 @@
     "trade_press": false
    }
   ],
-  "size_proxy": 0.2,
-  "fit": 0.45,
+  "size_proxy": 1.0,
+  "fit": 1.0,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -3989,8 +5167,22 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "14198102",
+   "company_name": "ABSOLUTE COLLAGEN GROUP LIMITED",
+   "size_band": "group accounts (usually medium/large)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/14198102",
+   "match_confidence": "high",
+   "share_allotments_24m": 3,
+   "charges_24m": 0
+  },
   "category": "supplements",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/absolute-collagen-marine-collagen-liquid-supplement-lemon-flavour-10x10ml-sachets-10364394"
+   }
+  ],
   "news": [
    {
     "date": "21 Apr 2026",
@@ -4002,20 +5194,37 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2026-10-01",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/14198102/filing-history/MzU0ODc0MjAxNGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-07-27",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/14198102/filing-history/MzQ3NTI1NjMxOWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.27,
+  "size_proxy": 1.0,
+  "fit": 0.557,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.6299882302856279,
    "ops_hiring": 0.0,
    "momentum": 0.10404019675661681,
    "expansion": 0
   },
-  "stack": [],
-  "pain_base": 0.016,
-  "pain": 0.016
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.173,
+  "pain": 0.173
  },
  {
   "brand": "Tom Parker Creamery",
@@ -4034,8 +5243,38 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10397498",
+   "company_name": "TOM PARKER CREAMERY LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10397498",
+   "match_confidence": "high",
+   "share_allotments_24m": 1,
+   "charges_24m": 2
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/tom-parker-creamery-vitamin-enriched-whole-milk-500ml"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/tom-parker-creamery-free-range-british-vitamin-enriched-whole-milk/596925011"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/tom-parker-creamery-free-range-double-cream/790789-801478-801479"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/tom-parker-creamery-free-range-double-cream-250ml/116152196"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/318092639"
+   }
+  ],
   "news": [
    {
     "date": "23 Jan 2026",
@@ -4096,6 +5335,20 @@
     "type": "funding",
     "date_parsed": "2026-01-23",
     "trade_press": false
+   },
+   {
+    "date_parsed": "2025-01-31",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/10397498/filing-history/MzQ1MzMzODU3MWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2026-10-05",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/10397498/filing-history/MzU0OTI5MTI1NWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [
@@ -4108,11 +5361,11 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.493706363720437,
-   "funding": 0.24974678505452433,
+   "funding": 0.8273393290833908,
    "ops_hiring": 0.0,
    "momentum": 0.6037736766772294,
    "expansion": 0.987412727440874
@@ -4122,8 +5375,8 @@
    "funding",
    "expansion"
   ],
-  "pain_base": 0.4,
-  "pain": 0.6
+  "pain_base": 0.544,
+  "pain": 0.816
  },
  {
   "brand": "Tiba Tempeh",
@@ -4142,11 +5395,32 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "12041656",
+   "company_name": "TIBA TEMPEH LTD",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/12041656",
+   "match_confidence": "high",
+   "share_allotments_24m": 1,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Tiba%20Tempeh&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
     "name": "Waitrose",
-    "source_url": "https://www.foodmanufacture.co.uk/Article/2025/04/14/tiba-tempeh-launches-new-sku-lands-in-waitrose/"
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Tiba%20Tempeh&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Tiba%20Tempeh&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/330775088"
    }
   ],
   "news": [
@@ -4209,6 +5483,13 @@
     "type": "funding",
     "date_parsed": "2025-03-10",
     "trade_press": false
+   },
+   {
+    "date_parsed": "2025-03-04",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/12041656/filing-history/MzQ1NzIyODQ0M2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [
@@ -4221,18 +5502,18 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.12162623132305178,
-   "funding": 0.11130592826210277,
+   "funding": 0.22093273423004423,
    "ops_hiring": 0.0,
    "momentum": 0.2756734485482515,
    "expansion": 0.24019057759809845
   },
   "stack": [],
-  "pain_base": 0.13,
-  "pain": 0.13
+  "pain_base": 0.157,
+  "pain": 0.157
  },
  {
   "brand": "Clearly Drinks",
@@ -4251,6 +5532,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "07505787",
+   "company_name": "CLEARLY DRINKS LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/07505787",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 1
+  },
   "category": "manufacturer_own_label",
   "retailers": [],
   "news": [
@@ -4264,20 +5554,28 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2025-04-01",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/07505787/filing-history/MzQ2MTAzNDE4NWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
   "size_proxy": 1.0,
   "fit": 0.51,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.11768576214044096,
    "ops_hiring": 0.0,
    "momentum": 0.03912933017879361,
    "expansion": 0
   },
   "stack": [],
-  "pain_base": 0.006,
-  "pain": 0.006
+  "pain_base": 0.035,
+  "pain": 0.035
  },
  {
   "brand": "Plenish",
@@ -4296,11 +5594,40 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [
    {
     "name": "Tesco",
-    "source_url": "https://vegconomist.com/products-launches/plenish-puts-clean-protein-line-oat-drinks-tesco-listing/"
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=plenish&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=plenish&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Plenish&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/plenish-organic-almond-unsweetened-drink-long-life/306065011"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/plenish-organic-almond-1l/114443221"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/oat-nut-drinks/plenish-organic-almond-drink-chilled-dairy-free-1l/7661790"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/plenish-organic-coconut-10-x-1l-6100000480"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/plenish-organic-almond-1l--95842732-07bc-4856-a36a-c4848b489e40/opengraph-image-1ayjk0?bc0ce6a2ad8b6fee"
    }
   ],
   "news": [
@@ -4398,8 +5725,8 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.9268134443503996,
    "funding": 0.0,
@@ -4431,8 +5758,22 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10188849",
+   "company_name": "PASTA EVANGELISTS LTD",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10188849",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "meal_kit_dtc",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Ocado",
+    "source_url": "https://zoom.ocado.com/pasta-evangelists-carbonara-spaghetti-dinner-for-2-kit-565g-560332011"
+   }
+  ],
   "news": [
    {
     "date": "2 Jun 2026",
@@ -4478,8 +5819,8 @@
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.23,
+  "size_proxy": 1.0,
+  "fit": 0.518,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -4513,8 +5854,38 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10940084",
+   "company_name": "HACKNEY GELATO LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10940084",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 1
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/hackney-gelato-pistachio-420ml"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/hackney-gelato-pistachio/692276-824389-824390"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/hackney-gelato-peanut-butter-chocolate-gelato/488630011"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/312564172"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/hackney-gelato-chocolate-roasted-hazelnut-460ml--5060540310620"
+   }
+  ],
   "news": [
    {
     "date": "5 Feb 2026",
@@ -4558,22 +5929,31 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2026-05-08",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/10940084/filing-history/MzUyMDQzMDY1MWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.45,
+  "size_proxy": 1.0,
+  "fit": 1.0,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.32585678529368406,
    "ops_hiring": 0.3333333333333333,
    "momentum": 0.47007185384447586,
    "expansion": 0
   },
   "stack": [
+   "funding",
    "ops_hiring"
   ],
-  "pain_base": 0.137,
-  "pain": 0.137
+  "pain_base": 0.219,
+  "pain": 0.273
  },
  {
   "brand": "Borough Broth",
@@ -4622,6 +6002,15 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "09590728",
+   "company_name": "BOROUGH BROTH COMPANY LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/09590728",
+   "match_confidence": "high",
+   "share_allotments_24m": 3,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -4635,6 +6024,10 @@
    {
     "name": "Waitrose",
     "source_url": "https://boroughbroth.co.uk/pages/broth-cube-stockists"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/borough-broth-organic-frozen-chicken-bone-broth-cubes/683980011"
    }
   ],
   "news": [
@@ -4704,6 +6097,20 @@
     "type": "funding",
     "date_parsed": "2025-12-01",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2026-03-30",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/09590728/filing-history/MzUxMzI4MjY3NGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-12-17",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/09590728/filing-history/MzQ5NDk0Njk1MmFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [
@@ -4717,10 +6124,10 @@
    }
   ],
   "size_proxy": 1.0,
-  "fit": 0.912,
+  "fit": 1.0,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.6551000038092865,
+   "funding": 1,
    "ops_hiring": 1,
    "momentum": 0.43174883190737884,
    "expansion": 0.4367333358728577
@@ -4730,8 +6137,8 @@
    "ops_hiring",
    "expansion"
   ],
-  "pain_base": 0.472,
-  "pain": 0.708
+  "pain_base": 0.558,
+  "pain": 0.838
  },
  {
   "brand": "Wild Nutrition",
@@ -4750,8 +6157,34 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "08022597",
+   "company_name": "WILD NUTRITION LTD",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/08022597",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "supplements",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/wild-nutrition-food-grown-daily-multi-nutrient-for-women-60-capsules-6100002054"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/wild-nutrition-food-grown-vitamin-c-plus-capsules-60s-10367934"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/wild-nutrition-food-grown-men-s-daily-multi/664452011"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/gol-ui/product/wild-nutrition-food-grown-pregnancy-new-mother-multi-capsules-x90"
+   }
+  ],
   "news": [
    {
     "date": "10 Mar 2026",
@@ -4822,8 +6255,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.27,
+  "size_proxy": 1.0,
+  "fit": 0.82,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.482576781584995,
@@ -4854,8 +6287,22 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "09270945",
+   "company_name": "MINDFUL CHEF LTD",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/09270945",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "meal_kit_dtc",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/mindful-chef-chicken-satay/475395-790891-790892"
+   }
+  ],
   "news": [
    {
     "date": "21 Apr 2026",
@@ -4894,8 +6341,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.23,
+  "size_proxy": 1.0,
+  "fit": 0.518,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.31212059026985045,
@@ -4926,14 +6373,24 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/barking-heads-wet-dog-food-multipack/951168-833858-833859"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/barking-heads-hair-necessities-dry-dog-food/212862011"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.725,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -4987,6 +6444,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "07781711",
+   "company_name": "FORTHGLADE FOODS LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/07781711",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 1
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -5012,6 +6478,10 @@
    {
     "name": "Ocado",
     "source_url": "https://forthglade.com/pages/find-a-stockist"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/forthglade-variety-pack-complete-meal-adult-1-yr-6-x-395g--5023833007461"
    }
   ],
   "news": [
@@ -5097,6 +6567,13 @@
     "type": "acquisition",
     "date_parsed": "2026-07-20",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2026-09-14",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/07781711/filing-history/MzU0NDUwNjYxMWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
@@ -5137,11 +6614,44 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "05900867",
+   "company_name": "BOTTLEGREEN HOLDINGS LIMITED",
+   "size_band": "dormant",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/05900867",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
     "name": "Waitrose",
     "source_url": "https://www.bottlegreendrinks.com/"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/bottlegreen-elderflower-cordial/16252011"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/258043686"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/bottlegreen-elderflower-cordial-500ml"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/bottlegreen-elderflower-cordial/100163325"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/adult-soft-drinks/bottlegreen-bottlegreen-wild-elderflower-sparkling-presse-750ml/3483866"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/bottlegreen-ginger-lemongrass-cordial-500ml--5021812000694"
    }
   ],
   "news": [
@@ -5198,8 +6708,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.291484531183859,
@@ -5230,14 +6740,28 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/maximuscle-strawberry-max-whey-protein-powder/503088011"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/261084794"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/protein-shakes-powders/maximuscle-max-whey-protein-powder-vanilla-flavour/7176540"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.812,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -5266,8 +6790,46 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10451031",
+   "company_name": "LOVE CORN LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10451031",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=love-corn&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/love-corn-variety-pack/668396011"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/314102843"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/sharing-crisps/love-corn-salt-vinegar-delicious-crunchy-corn-115g/9095253"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/love-corn-sea-salt-delicious-crunchy-corn-115g--5060490400242"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/love-corn-sea-salt/888942-694924-694925"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/love-corn-sea-salt-crunchy-corn-115g-10323304"
+   }
+  ],
   "news": [
    {
     "date": "21 May 2026",
@@ -5330,8 +6892,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.19483852574079974,
@@ -5365,11 +6927,32 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "supplements",
   "retailers": [
    {
     "name": "Boots",
-    "source_url": "https://www.insidermedia.com/news/national/free-soul-lands-in-more-than-60-boots-stores-nationwide"
+    "source_url": "https://www.boots.com/free-soul-vegan-protein-chocolate-powder-5-sachets-30g-10380519"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/free-soul-vegan-protein-blend-vanilla-600-g-6100023923"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/323779984"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/free-soul-vegan-protein-blend-chocolate-sachets/700052011"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/free-soul-greens-sachets-mango-7s/340452-1-2"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/gol-ui/product/free-soul-7-x-5g-greens-mango-flavour-sachets"
    }
   ],
   "news": [
@@ -5467,8 +7050,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.532,
+  "size_proxy": 1.0,
+  "fit": 0.92,
   "pain_parts": {
    "listings": 0.17428643163261467,
    "funding": 1,
@@ -5509,6 +7092,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [
    {
@@ -5518,6 +7102,18 @@
    {
     "name": "Sainsbury's",
     "source_url": "https://ollys-snacks.com/pages/store-locator"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/olly-s-pretzel-thins-original-salted/542021011"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/ollys-pretzels-thins-salted-original/748964-778984-778985"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/sharing-crisps/olly-s-pretzels-salted-pretzel-thins-140g/7429965"
    }
   ],
   "news": [
@@ -5534,7 +7130,7 @@
   "funding_news": [],
   "export_news": [],
   "size_proxy": 1.0,
-  "fit": 0.725,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -5563,15 +7159,20 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [
    {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/g-spot-awaken-passionfruit-and-habanero/671298011"
+   },
+   {
     "name": "Sainsbury's",
-    "source_url": "https://www.foodanddrinktechnology.com/news/56775/sainsburys-lists-g-spot-by-gillian-anderson/"
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/g-spot-red-berries-sarawak-sparkling-functional-drink-4-x-250ml"
    },
    {
     "name": "M&S",
-    "source_url": "https://www.thetimes.com/business/companies-markets/article/gillian-andersons-g-spot-drink-m-and-s-2ncds7gzg"
+    "source_url": "https://www.marksandspencer.com/food/g-spot-awaken/p/fdp61281797"
    }
   ],
   "news": [
@@ -5702,7 +7303,7 @@
   ],
   "export_news": [],
   "size_proxy": 1.0,
-  "fit": 0.725,
+  "fit": 0.812,
   "pain_parts": {
    "listings": 0.9090111936987415,
    "funding": 1,
@@ -5734,6 +7335,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "14783844",
+   "company_name": "INGENIOUS LIFE LTD",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/14783844",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "supplements",
   "retailers": [],
   "news": [],
@@ -5775,6 +7385,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [
    {
@@ -5816,6 +7427,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -5852,11 +7464,32 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10469907",
+   "company_name": "HUNTER & GATHER FOODS LTD",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10469907",
+   "match_confidence": "medium",
+   "share_allotments_24m": 1,
+   "charges_24m": 1
+  },
   "category": "branded_grocery",
   "retailers": [
    {
     "name": "Waitrose",
-    "source_url": "https://retailtimes.co.uk/hunter-gather-is-bringing-its-four-ingredient-100-avocado-oil-mayonnaise-to-waitrose/"
+    "source_url": "https://www.waitrose.com/ecom/products/hunter-gather-grass-fed-protein-vanilla/982550-1-2"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://zoom.ocado.com/hunter-gather-avocado-oil-mayonnaise-175g-416829011"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/hunter-gather-100-pure-unflavoured-bovine-collagen-peptides-400g-6100007249"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/316537803"
    }
   ],
   "news": [
@@ -5927,21 +7560,37 @@
     "type": "funding",
     "date_parsed": "2025-08-12",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2025-07-01",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/10469907/filing-history/MzQ3MjExNzQ4NGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2026-10-01",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/10469907/filing-history/MzU0ODc2MjYzOWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.3941452799974045,
-   "funding": 0.16483823279495474,
+   "funding": 0.7847359846981877,
    "ops_hiring": 0.0,
    "momentum": 0.39608857399733305,
    "expansion": 0
   },
-  "stack": [],
-  "pain_base": 0.219,
-  "pain": 0.219
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.374,
+  "pain": 0.374
  },
  {
   "brand": "Punchy",
@@ -5960,8 +7609,38 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "11056237",
+   "company_name": "PUNCHY DRINKS LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11056237",
+   "match_confidence": "medium",
+   "share_allotments_24m": 2,
+   "charges_24m": 1
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/punchy-everyday-hydration-mango/629945011"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/punchy-daily-hydration-reset-tropical-7-sachets-6100010743"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/punchy-daily-hydration-reset-citrus-30-x-4-85g-sachets-10382085"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/punchy-hydration-4-x-330ml-mango-electrolyte-drinks"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/punchy-hydration-lightly-sparkling-mexican-lime-cans/935497-847259-847260"
+   }
+  ],
   "news": [
    {
     "date": "5 Feb 2025",
@@ -5973,20 +7652,44 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2026-02-13",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/11056237/filing-history/MzUwNDkyMTU5MGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-09-11",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/11056237/filing-history/MzQ4MDU3OTY0OWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2026-08-20",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/11056237/filing-history/MzUzOTkyNjU0MmFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.8653339035544029,
    "ops_hiring": 0.0,
    "momentum": 0.03412625241536967,
    "expansion": 0
   },
-  "stack": [],
-  "pain_base": 0.005,
-  "pain": 0.005
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.221,
+  "pain": 0.221
  },
  {
   "brand": "ON Beer",
@@ -6010,6 +7713,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [],
   "news": [
@@ -6071,6 +7775,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "13132625",
+   "company_name": "SOME GRUB LTD",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/13132625",
+   "match_confidence": "medium",
+   "share_allotments_24m": 3,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -6080,20 +7793,35 @@
   ],
   "news": [],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2025-06-12",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/13132625/filing-history/MzQ2OTcwOTcxMmFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-03-25",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/13132625/filing-history/MzQ1OTc2ODc0NGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 0.2,
+  "fit": 0.438,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.2568521195788817,
    "ops_hiring": 0.0,
    "momentum": 0.0,
    "expansion": 0
   },
   "stack": [],
-  "pain_base": 0.0,
-  "pain": 0.0
+  "pain_base": 0.064,
+  "pain": 0.064
  },
  {
   "brand": "Gusto Snacks",
@@ -6112,6 +7840,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "12071511",
+   "company_name": "GUSTO SNACKS LTD",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/12071511",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -6141,8 +7878,8 @@
   ],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 0.2,
+  "fit": 0.438,
   "pain_parts": {
    "listings": 0.10797301432528063,
    "funding": 0.0,
@@ -6171,6 +7908,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -6207,6 +7945,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -6243,6 +7982,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -6279,6 +8019,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10098371",
+   "company_name": "SOLO COFFEE LTD",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10098371",
+   "match_confidence": "high",
+   "share_allotments_24m": 2,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
@@ -6322,21 +8071,37 @@
     "type": "retailer_listing",
     "date_parsed": "2025-05-14",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2026-10-23",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/10098371/filing-history/MzU1MjU4MjE1N2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-07-16",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/10098371/filing-history/MzQ3Mzk0NDIxNGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 0.7,
+  "fit": 0.562,
   "pain_parts": {
    "listings": 0.13123054274239535,
-   "funding": 0.13123054274239535,
+   "funding": 0.7839052737225649,
    "ops_hiring": 0.0,
    "momentum": 0.08759799024106096,
    "expansion": 0
   },
-  "stack": [],
-  "pain_base": 0.085,
-  "pain": 0.085
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.248,
+  "pain": 0.248
  },
  {
   "brand": "seriouspig",
@@ -6355,24 +8120,41 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "07015461",
+   "company_name": "SERIOUS PIG LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/07015461",
+   "match_confidence": "high",
+   "share_allotments_24m": 2,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2025-10-02",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/07015461/filing-history/MzQ4MzU2OTg4NWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 0.7,
+  "fit": 0.475,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.1875732905999808,
    "ops_hiring": 0.0,
    "momentum": 0.0,
    "expansion": 0
   },
   "stack": [],
-  "pain_base": 0.0,
-  "pain": 0.0
+  "pain_base": 0.047,
+  "pain": 0.047
  },
  {
   "brand": "One Planet Pizza",
@@ -6404,6 +8186,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [
    {
@@ -6581,8 +8364,34 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10579966",
+   "company_name": "MUMMY MEEGZ LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10579966",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/mummy-meegz-chuckie-egg/850926-819265-819266"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/mummy-meegz-m-z-gems-chocolate/659735011"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/multipack-chocolate/mummy-meegz-choccy-balls-3-x-12g-36g-/9070786"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/mummy-meegz-m-z-gems-sharing-bag-80g/116220697"
+   }
+  ],
   "news": [
    {
     "date": "7 May 2025",
@@ -6596,8 +8405,8 @@
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -6631,8 +8440,38 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=oggs&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=oggs&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=oggs&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=oggs&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=oggs&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/oggs-double-chocolate-cake-celebration/513833011"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/oggs-mini-vanilla-cupcakes/115721967"
+   }
+  ],
   "news": [
    {
     "date": "16 Jan 2025",
@@ -6688,8 +8527,8 @@
     "trade_press": true
    }
   ],
-  "size_proxy": 0.5,
-  "fit": 0.525,
+  "size_proxy": 1.0,
+  "fit": 1.0,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.09881122234899756,
@@ -6720,14 +8559,24 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/grounded-protein-chocolate-mlkshake-60061218/reviews"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://zoom.ocado.com/grounded-milk-chocolate-plant-protein-shake-490ml-614520011"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.725,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -6773,6 +8622,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [
    {
@@ -6790,6 +8640,18 @@
    {
     "name": "Holland & Barrett",
     "source_url": "https://www.misterfreed.com/"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/sharing-crisps/mister-free-d-tortilla-chips-cheezie-cheese-flavour-135g/7424707"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/mister-free-d-cheezie-cheese-flavour-tortilla-chips/112888198"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/310111055"
    }
   ],
   "news": [],
@@ -6831,6 +8693,7 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "supplements",
   "retailers": [],
   "news": [
@@ -6928,8 +8791,34 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/311448162"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/hippeas-chickpea-puffs-sweet-smokin-multipack/538376011"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/hippeas-sweet-smokin-5pk/112926094"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/small-multipack-crisps-4-8-packs-/hippeas-chickpea-puffs-sweet-smokin-multipack-limited-edition-minions/7457992"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/gol-ui/product/hippeas-chickpea-tortilla-snacks-rockin-ranch-flavour-130g"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/hippeas-sweet-smokin/498617-678797-678798"
+   }
+  ],
   "news": [
    {
     "date": "14 Jul 2026",
@@ -7008,8 +8897,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.6660447064421404,
@@ -7040,8 +8929,34 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/321039965"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/perfectted-matcha-latte-vanilla/678164011"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/perfectted-strawberry-flavoured-matcha-green-tea-latte-oat-drink-250ml-6100006948"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/perfectted-matcha-green-tea-powder-30g-10375809"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/perfectted-blueberry-matcha-powder/963097-1-2"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/perfectted-matcha-powder-sachets-7-x-1-5g/114228249"
+   }
+  ],
   "news": [
    {
     "date": "2026-09-24 (approx, from '1 month ago')",
@@ -7096,8 +9011,8 @@
    }
   ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.425,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.18662528572703188,
@@ -7126,6 +9041,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "SC561983",
+   "company_name": "PARSLEY BOX LIMITED",
+   "size_band": "medium (turnover up to £54m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/SC561983",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "meal_kit_dtc",
   "retailers": [],
   "news": [
@@ -7141,8 +9065,8 @@
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.23,
+  "size_proxy": 1.0,
+  "fit": 0.43,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -7196,6 +9120,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [
    {
@@ -7217,6 +9142,26 @@
    {
     "name": "Ocado",
     "source_url": "https://www.nakdbars.com/en/where-buy"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=nakd&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "M&S",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=nakd&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=nakd&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/nakd-peanut-delight-raw-fruit-nut-bars-4x35g--5060088705230?__queryId=eef88f1d6ea7c371c39ec3bfb72ce319"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/nakd-raw-fruit-nut-wholefood-bars-blueberry-muffin-4-x-35g-bars-10256598"
    }
   ],
   "news": [
@@ -7270,8 +9215,46 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "05291668",
+   "company_name": "FEVERTREE LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/05291668",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/fever-tree-indian-tonic-water/402597-56654-56655"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/fever-tree-g-t-0-5-low-alcohol-mediterranean-25cl"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/fever-tree-premium-soda-water/602837011"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/mixers/fever-tree-fever-tree-refreshingly-light-sparkling-ginger-beer-500ml/5432051"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/299914037"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/fever-tree-refreshingly-light-mediterranean-tonic-water-500ml--5060108451697"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/fever-tree-refreshingly-light-indian-tonic-water/107268808"
+   }
+  ],
   "news": [
    {
     "date": "30 Jan 2025",
@@ -7352,8 +9335,8 @@
     "trade_press": false
    }
   ],
-  "size_proxy": 0.5,
-  "fit": 0.425,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.10083430713078664,
    "funding": 0.2016686142615733,
@@ -7382,6 +9365,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "SC490305",
+   "company_name": "THE ARTISANAL SPIRITS COMPANY PLC",
+   "size_band": "group accounts (usually medium/large)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/SC490305",
+   "match_confidence": "high",
+   "share_allotments_24m": 3,
+   "charges_24m": 1
+  },
   "category": "branded_grocery",
   "retailers": [],
   "news": [
@@ -7403,7 +9395,29 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2025-11-26",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC490305/filing-history/MzQ5MTEyMDc1N2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-07-01",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC490305/filing-history/MzQ3MjE0NTE0N2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-09-24",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/SC490305/filing-history/MzQ4MjU1NDgwNWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [
    {
     "date": "2026-09-24 (approx, from '1 month ago')",
@@ -7414,20 +9428,21 @@
     "trade_press": false
    }
   ],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.55,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.5476276083202186,
    "ops_hiring": 0.0,
    "momentum": 0.25286900665563267,
    "expansion": 0.9268134443503996
   },
   "stack": [
+   "funding",
    "expansion"
   ],
-  "pain_base": 0.131,
-  "pain": 0.131
+  "pain_base": 0.268,
+  "pain": 0.334
  },
  {
   "brand": "Bramble Foods",
@@ -7446,6 +9461,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "06426069",
+   "company_name": "BRAMBLE FOODS LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/06426069",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "manufacturer_own_label",
   "retailers": [],
   "news": [
@@ -7600,6 +9624,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "05586303",
+   "company_name": "CAKESMITHS GROUP LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/05586303",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 1
+  },
   "category": "manufacturer_own_label",
   "retailers": [],
   "news": [
@@ -7629,6 +9662,13 @@
     "type": "acquisition",
     "date_parsed": "2026-03-18",
     "trade_press": false
+   },
+   {
+    "date_parsed": "2026-06-30",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/05586303/filing-history/MzUyOTQ1ODg4MWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
@@ -7636,7 +9676,7 @@
   "fit": 0.51,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.28636090170538053,
+   "funding": 0.6590445410371486,
    "ops_hiring": 0.0,
    "momentum": 0.17807224392469126,
    "expansion": 0
@@ -7644,8 +9684,8 @@
   "stack": [
    "funding"
   ],
-  "pain_base": 0.098,
-  "pain": 0.098
+  "pain_base": 0.191,
+  "pain": 0.191
  },
  {
   "brand": "Addo Food Group",
@@ -7721,6 +9761,15 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "05998337",
+   "company_name": "ADDO FOOD GROUP LIMITED",
+   "size_band": "audit-exemption-subsidiary",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/05998337",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "manufacturer_own_label",
   "retailers": [],
   "news": [],
@@ -7759,11 +9808,48 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "00472391",
+   "company_name": "SEABROOK CRISPS LIMITED",
+   "size_band": "dormant",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/00472391",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [
    {
+    "name": "Aldi",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=seabrook&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Lidl",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=seabrook&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/seabrook-crinkle-cut-crisps-variety-6x25g"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/seabrook-crinkle-cut-sea-salt-crisps/14791011"
+   },
+   {
     "name": "Morrisons",
-    "source_url": "https://www.thetelegraphandargus.co.uk/news/25617382.seabrook-crisps-launch-new-frozen-french-fries-crinkles/"
+    "source_url": "https://groceries.morrisons.com/products/seabrook-classic-12-pack/115085243"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/gluten-free-food-cupboard/seabrook-sea-salted-the-original-crinkle-cut-crisp-6-x-25g/4088434"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/275594831"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/seabrook-sea-salted-crisps/042156-20876-20877"
    }
   ],
   "news": [
@@ -7812,8 +9898,8 @@
   ],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.512,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.3051788549100862,
    "funding": 0.0,
@@ -7844,8 +9930,22 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10187480",
+   "company_name": "SNEAK ENERGY LIMITED",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10187480",
+   "match_confidence": "medium",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/322761995"
+   }
+  ],
   "news": [
    {
     "date": "14 Jun 2025",
@@ -7892,8 +9992,8 @@
   ],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 0.7,
+  "fit": 0.562,
   "pain_parts": {
    "listings": 0.7077131044498316,
    "funding": 0.0,
@@ -7937,6 +10037,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "08846838",
+   "company_name": "HOVIS LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/08846838",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "manufacturer_own_label",
   "retailers": [
    {
@@ -7950,6 +10059,22 @@
    {
     "name": "Waitrose",
     "source_url": "https://www.hovis.co.uk/"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=hovis&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/hovis-seeded-sourdough-450g/680233011"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/white-bread/hovis-soft-white-thick-800g/792877"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://shop.coop.co.uk/product/hovis-baking-authentic-granary-bread-flour-1kg--5010024118082"
    }
   ],
   "news": [
@@ -8007,7 +10132,7 @@
   ],
   "export_news": [],
   "size_proxy": 1.0,
-  "fit": 0.772,
+  "fit": 0.86,
   "pain_parts": {
    "listings": 0.0,
    "funding": 1,
@@ -8038,24 +10163,41 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "10851999",
+   "company_name": "ARMITAGE PET CARE LIMITED",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/10851999",
+   "match_confidence": "medium",
+   "share_allotments_24m": 1,
+   "charges_24m": 0
+  },
   "category": "manufacturer_own_label",
   "retailers": [],
   "news": [],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2025-09-30",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/10851999/filing-history/MzQ4MzIyMDA0NGFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
   "size_proxy": 1.0,
   "fit": 0.51,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.18662528572703188,
    "ops_hiring": 0.0,
    "momentum": 0.0,
    "expansion": 0
   },
   "stack": [],
-  "pain_base": 0.0,
-  "pain": 0.0
+  "pain_base": 0.047,
+  "pain": 0.047
  },
  {
   "brand": "Oren Foods",
@@ -8074,6 +10216,7 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": null,
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -8127,6 +10270,15 @@
   ],
   "erp_mentions": [],
   "added_manually": false,
+  "companies_house": {
+   "company_number": "08199354",
+   "company_name": "PURE PET FOOD LTD",
+   "size_band": "group accounts (usually medium/large)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/08199354",
+   "match_confidence": "high",
+   "share_allotments_24m": 3,
+   "charges_24m": 1
+  },
   "category": "meal_kit_dtc",
   "retailers": [],
   "news": [
@@ -8148,59 +10300,45 @@
     "type": "funding",
     "date_parsed": "2025-07-23",
     "trade_press": true
+   },
+   {
+    "date_parsed": "2026-07-27",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/08199354/filing-history/MzUzNDg5MTY2M2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2025-06-16",
+    "headline": "Share allotment filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/08199354/filing-history/MzQ3MDI2MTcxOWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   },
+   {
+    "date_parsed": "2026-05-20",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/08199354/filing-history/MzUyNzc2NTI5NWFkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
    }
   ],
   "export_news": [],
-  "size_proxy": 0.5,
-  "fit": 0.405,
+  "size_proxy": 1.0,
+  "fit": 0.53,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.156694168168896,
+   "funding": 1,
    "ops_hiring": 1,
    "momentum": 0.052231389389632,
    "expansion": 0
   },
   "stack": [
+   "funding",
    "ops_hiring"
   ],
-  "pain_base": 0.247,
-  "pain": 0.247
- },
- {
-  "brand": "Runa",
-  "website": null,
-  "description": "The Grocer UK’s SME Brand of the Year 2024 and sold in over 20,000 stores across the UK and US, LOVE CORN is crunchy corn snack made with simple ingredients.",
-  "funds": [
-   "Puma Private Equity"
-  ],
-  "fund_sources": [
-   "https://investor.pumainvestments.co.uk/portfolio/runa"
-  ],
-  "status_raw": {
-   "Puma Private Equity": "unknown"
-  },
-  "retailers_site": [],
-  "ops_roles": [],
-  "erp_mentions": [],
-  "added_manually": false,
-  "category": "branded_grocery",
-  "retailers": [],
-  "news": [],
-  "listing_news": [],
-  "funding_news": [],
-  "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
-  "pain_parts": {
-   "listings": 0.0,
-   "funding": 0.0,
-   "ops_hiring": 0.0,
-   "momentum": 0.0,
-   "expansion": 0
-  },
-  "stack": [],
-  "pain_base": 0.0,
-  "pain": 0.0
+  "pain_base": 0.458,
+  "pain": 0.572
  },
  {
   "brand": "Reeve the Baker",
@@ -8219,24 +10357,43 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": true,
+  "companies_house": {
+   "company_number": "02088228",
+   "company_name": "REEVE THE BAKER LIMITED",
+   "size_band": "medium (turnover up to £54m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/02088228",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 2
+  },
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
   "listing_news": [],
-  "funding_news": [],
+  "funding_news": [
+   {
+    "date_parsed": "2026-10-07",
+    "headline": "New charge (debt facility) filed at Companies House",
+    "url": "https://find-and-update.company-information.service.gov.uk/company/02088228/filing-history/MzU0OTc3Mzc4N2FkaXF6a2N4",
+    "trade_press": false,
+    "source": "companies_house"
+   }
+  ],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.55,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.0,
+   "funding": 0.4789229568881716,
    "ops_hiring": 0.0,
    "momentum": 0.0,
    "expansion": 0
   },
-  "stack": [],
-  "pain_base": 0.0,
-  "pain": 0.0
+  "stack": [
+   "funding"
+  ],
+  "pain_base": 0.12,
+  "pain": 0.12
  },
  {
   "brand": "TOSS",
@@ -8255,6 +10412,15 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": true,
+  "companies_house": {
+   "company_number": "12466454",
+   "company_name": "TOSS LTD",
+   "size_band": "dormant",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/12466454",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
@@ -8291,14 +10457,23 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": true,
+  "companies_house": {
+   "company_number": "12711277",
+   "company_name": "SHICKEN FOODS LTD",
+   "size_band": "small (turnover up to £15m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/12711277",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
   "retailers": [],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 0.7,
+  "fit": 0.475,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -8327,14 +10502,40 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": true,
+  "companies_house": {
+   "company_number": "11514198",
+   "company_name": "NATIVE SNACKS LTD",
+   "size_band": "micro (turnover up to £1m)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11514198",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/native-snacks-vegan-prawn-crackers/364742-828375-828376"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/native-vegan-prawn-crackers-sweet-chilli-sharing-bag/586853011"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/native-snacks-vegan-prawn-crackers-original-prawn-flavour-60g/113427191"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/crackers-dipping-sauces/native-prawn-crackers-original-prawn-flavour-60g/7149010"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
   "size_proxy": 0.2,
-  "fit": 0.35,
+  "fit": 0.7,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -8363,14 +10564,36 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": true,
+  "companies_house": null,
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Holland & Barrett",
+    "source_url": "https://www.hollandandbarrett.com/shop/product/spacegoods-rainbow-dust-coffee-flavour-food-supplement-240g-6100006762"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://www.sainsburys.co.uk/groceries/product/spacegoods-7-x-56g-rainbow-dust-mushrooms-cocoa-chocolate-flavour-food-supplement"
+   },
+   {
+    "name": "Tesco",
+    "source_url": "https://www.tesco.com/shop/en-GB/products/323496304"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/spacegoods-rainbow-dust-coffee-mushroom-blend-8g-x-7-sachets-10369461"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/spacegoods-mushroom-coffee-chocolate-30x-lions-mane-ashwagandha-b5/660587011"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,
@@ -8402,14 +10625,56 @@
   "ops_roles": [],
   "erp_mentions": [],
   "added_manually": true,
+  "companies_house": {
+   "company_number": "11565535",
+   "company_name": "TONY'S CHOCOLONELY LTD",
+   "size_band": "full accounts (medium/large, or chose full filing)",
+   "url": "https://find-and-update.company-information.service.gov.uk/company/11565535",
+   "match_confidence": "high",
+   "share_allotments_24m": 0,
+   "charges_24m": 0
+  },
   "category": "branded_grocery",
-  "retailers": [],
+  "retailers": [
+   {
+    "name": "Tesco",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Tony%27s%20Chocolonely&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Sainsbury's",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Tony%27s%20Chocolonely&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Co-op",
+    "source_url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=Tony%27s%20Chocolonely&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+   },
+   {
+    "name": "Ocado",
+    "source_url": "https://www.ocado.com/products/tony-s-chocolonely-milk-chocolate/452004011"
+   },
+   {
+    "name": "Asda",
+    "source_url": "https://www.asda.com/groceries/product/sharing-chocolate-bars/tony-s-chocolonely-milk-chocolate-with-caramel-pretzel-almond-nougat-and-sea-salt-180g/9281763"
+   },
+   {
+    "name": "Waitrose",
+    "source_url": "https://www.waitrose.com/ecom/products/tonys-chocolonely-everything-bar/991189-844384-844385"
+   },
+   {
+    "name": "Morrisons",
+    "source_url": "https://groceries.morrisons.com/products/tony-s-chocolonely-milk-chocolate/112583917"
+   },
+   {
+    "name": "Boots",
+    "source_url": "https://www.boots.com/tonys-chocolonely-tinys-countdown-chocolate-advent-calendar-216g-10361206"
+   }
+  ],
   "news": [],
   "listing_news": [],
   "funding_news": [],
   "export_news": [],
-  "size_proxy": 0.2,
-  "fit": 0.35,
+  "size_proxy": 1.0,
+  "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
    "funding": 0.0,

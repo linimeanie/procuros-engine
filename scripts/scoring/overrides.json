@@ -3,7 +3,8 @@
   "drop_brands": {
     "Star Brands": "cleaning products, not grocery",
     "Bol": "news and site ambiguous; brand ceased UK retail trading per press, unverified",
-    "Rubies in the Rubble": "profile text is a copy of Hackney Gelato's page, so the fund link is unreliable"
+    "Rubies in the Rubble": "profile text is a copy of Hackney Gelato's page, so the fund link is unreliable",
+    "Runa": "Puma's Runa is a fintech payments company, not grocery; scraped description was LOVE CORN's"
   },
   "category": {
     "meal_kit_dtc": [
