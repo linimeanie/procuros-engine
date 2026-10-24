@@ -78,3 +78,11 @@ Run `python3 scripts/scoring/score.py`. It reads `data/firecrawl/`, applies `ove
 - No revenue data was available, so the £3m–£100m size band is approximated by retail reach and trade-press coverage.
 - News only counts if the headline names the brand and the article is from the last 24 months. Ambiguous names (THIS, Sneak, STOCKED…) also need a trade-press domain.
 - Tier cut-offs (A ≥ 38 with 3+ live brands, B ≥ 30) are set to the observed score range, because sparse signals keep the top score near 45.
+
+## Case-study site: `site/`
+
+The site is static (D3 from cdnjs, no build step). It covers the thesis, the pipeline funnel, the signal table with live pillar-weight sliders, the ranking, the fund↔brand network map, fund dossiers, and limits.
+
+- `python3 scripts/site/export.py` rebuilds `site/data.json` from `data/scored/`.
+- `python3 scripts/site/build.py` wraps `site/page.html` into the standalone `site/index.html`.
+- Vercel: import the repo. `vercel.json` serves `site/` as-is.
