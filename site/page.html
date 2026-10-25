@@ -77,7 +77,15 @@ nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; bac
 .logo { font: 800 16px/1 var(--display); white-space: nowrap; margin-right: 16px; }
 .task { font: 500 13px/1 var(--body); padding: 9px 12px; border-radius: 6px; border: 0; background: transparent; color: var(--ink-2); white-space: nowrap; }
 .task.on { background: var(--ink); color: var(--paper); }
-.task[aria-disabled="true"] { opacity: .65; }
+/* Not-yet-written tasks read as a stated roadmap, not as broken links: dimmed, dashed, and dotted-marked. */
+.task[aria-disabled="true"] { opacity: .5; cursor: default; }
+.task.soon { border: 1px dashed var(--rule); padding-block: 8px; }
+.task.soon::before { content: "○ "; color: var(--ink-2); }
+
+/* Start here: the one door to open first, set apart from the ranking that justifies it. */
+#start-here { border-left: 3px solid var(--accent); display: grid; gap: 8px; }
+#start-here h3 { font-family: var(--display); font-size: 26px; line-height: 1.15; }
+#start-here p:not(.label) { font-size: 17px; max-width: var(--measure); }
 .theme { margin-left: auto; font: 500 13px/1 var(--body); padding: 8px 12px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); color: var(--ink); cursor: pointer; white-space: nowrap; }
 .subtabs { gap: 2px; border-top: 1px solid var(--rule); }
 .subtabs button { font: 500 var(--fs-small)/1 var(--body); padding: 13px 12px 11px; background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--ink-2); cursor: pointer; white-space: nowrap; }
@@ -302,19 +310,16 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <span class="logo">Warm Doors UK</span>
     <button type="button" class="task on" role="tab" aria-selected="true" data-task="t11" data-first="summary">1.1 Investor shortlist</button>
     <button type="button" class="task" role="tab" aria-selected="false" data-task="t12" data-first="exp">1.2 Two-fund experiment</button>
-    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">1.3 Scaling the motion</button>
-    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">2 Creative play</button>
+    <button type="button" class="task soon" role="tab" aria-selected="false" aria-disabled="true" title="In progress — what survives when this runs on every UK fund">1.3 Scaling the motion</button>
+    <button type="button" class="task soon" role="tab" aria-selected="false" aria-disabled="true" title="In progress — the non-scalable idea">2 Creative play</button>
     <button type="button" class="theme" id="theme" aria-label="Switch between day and night mode"></button>
   </div>
   <div class="subtabs" role="tablist" aria-label="Sections" id="subtabs">
-    <button type="button" role="tab" data-tab="summary" data-task="t11">Shortlist</button>
-    <button type="button" role="tab" data-tab="opps" data-task="t11">Opportunities</button>
-    <button type="button" role="tab" data-tab="method" data-task="t11">Method</button>
-    <button type="button" role="tab" data-tab="map" data-task="t11">Map</button>
-    <button type="button" role="tab" data-tab="notes" data-task="t11">Data notes</button>
+    <button type="button" role="tab" data-tab="summary" data-task="t11">The answer</button>
+    <button type="button" role="tab" data-tab="method" data-task="t11">How it was built</button>
+    <button type="button" role="tab" data-tab="notes" data-task="t11">What to trust</button>
     <button type="button" role="tab" data-tab="exp" data-task="t12" hidden>The test</button>
-    <button type="button" role="tab" data-tab="piper" data-task="t12" hidden>Piper · PE</button>
-    <button type="button" role="tab" data-tab="maven" data-task="t12" hidden>Maven · VC</button>
+    <button type="button" role="tab" data-tab="play" data-task="t12" hidden>Playbooks</button>
     <button type="button" role="tab" data-tab="score" data-task="t12" hidden>Scorecard</button>
   </div>
 </div></nav>
@@ -322,15 +327,16 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 <section id="summary" class="panel-tab" role="tabpanel"><div class="wrap page">
   <div class="block">
     <p class="label">Procuros · UK go-to-market · Task 1.1 · data as of <span id="asof"></span></p>
-    <h1>Twenty asked for. <em>Not twenty worth calling.</em></h1>
-    <p class="lede">The UK VC and PE funds best placed to introduce Procuros to grocery brands that need EDI. Each fund is here for a named brand it backs and a route to someone who can make the intro. Every claim links to its source.</p>
-    <p class="lede">The brief asked for 20, so here are 20 — but the honest number is smaller. Only <span data-n="holding"></span> of the <span data-n="vcpe"></span> funds back a single brand that fits, which means the target-brand test does the filtering and the ranking only decides the order. <span data-n="worth"></span> funds clear the score <b>and</b> name a person who could make the intro. The rest are shown with that said plainly, because the gap between #20 and #21 is a tenth of a point.</p>
+    <h1>Cold doesn't work here. <em>Borrow the introduction.</em></h1>
+    <p class="lede">Procuros is unknown in UK grocery, and a brand's buying moment — a retailer mandate, a raise, a new listing, an ERP move — is invisible from outside. When it arrives they ask someone they already trust. Their investors are that someone, they can see the moment coming, and an introduction from them costs Procuros nothing but a good reason to make it.</p>
+    <p class="lede">So this is not a list of funds worth knowing. It is a list of <b>specific doors</b>: a fund, a brand inside it that needs EDI now, and a named person who can open it. Every claim links to its source.</p>
+    <div class="card" id="start-here"></div>
     <div class="grid" style="--min:170px" id="stats"></div>
   </div>
 
   <div class="block">
-    <div class="head"><h2>The shortlist</h2>
-      <p class="lede">Ranked by the strength of each fund's best intro opportunities. Select a fund for its brands, evidence and next steps.</p></div>
+    <div class="head"><h2>Twenty funds, in the order I'd call them</h2>
+      <p class="lede">Ranked by the strength of each fund's best doors. Select any fund for its brands, the evidence behind them and the next step. The brief asked for 20 and here are 20, but only <span data-n="holding"></span> of the <span data-n="vcpe"></span> funds back a single brand that fits, so the target-brand test did the filtering and this ranking only sets the order. <b><span data-n="worth"></span> clear the score and name a person to ask</b>; the group at the bottom says plainly that it does not.</p></div>
     <div class="col-head label" aria-hidden="true"><span>#</span><span>Fund</span><span>Why it's selected</span><span>Next step</span><span>Score</span></div>
     <div class="sl" id="shortlist"></div>
     <div class="card" id="dropped"></div>
@@ -346,7 +352,6 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <p class="callout" id="lens-note"></p>
   </div>
 
-  <div class="next"><button type="button" class="btn" data-go="opps">Next: every intro opportunity →</button></div>
 </div></section>
 
 <section id="opps" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
@@ -361,13 +366,13 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
       <div class="filters" id="filters"></div></div>
     <div class="pairs" id="pairs"></div>
   </div>
-  <div class="next"><button type="button" class="btn" data-go="method">Next: how it's scored →</button></div>
+  <div class="next"><button type="button" class="btn" data-go="method">Next: how it was built →</button></div>
 </div></section>
 
 <section id="method" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
-    <div class="head"><p class="label">Method</p><h2>Three questions, in order</h2>
-      <p class="lede">Every fund–brand pair is assessed first. The 20 funds are whatever the strongest pairs add up to.</p></div>
+    <div class="head"><p class="label">How it was built</p><h2>The unit is a door, not a fund</h2>
+      <p class="lede">A fund is not an opportunity. A fund <em>plus a particular brand</em> is. So every fund–brand pair was assessed on its own, and the ranking of funds is simply what their strongest pairs add up to. That one choice decides everything else below.</p></div>
     <div class="chain">
       <div class="card"><p class="label">1 · Fund</p><h3>Can it make a credible intro?</h3><p>A named person on the brand's board, a portfolio-ops contact, a support programme, a holding it confirms.</p></div>
       <span class="arrow" aria-hidden="true">→</span>
@@ -378,8 +383,8 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   </div>
 
   <div class="block">
-    <div class="head"><h2>From <span data-n="seeded"></span> funds to 20</h2>
-      <p class="lede">Each bar is drawn to scale within its group. A <b>target brand</b> is one the fund still holds, that isn't already a Procuros customer, and that sits under £100m revenue.</p></div>
+    <div class="head"><h2>From <span data-n="seeded"></span> funds to <span data-n="worth"></span> doors</h2>
+      <p class="lede">Each bar is drawn to scale within its group. A <b>target brand</b> is one the fund still holds, that isn't already a Procuros customer, and that sits under £100m revenue. The drop that matters is the fourth row: most funds fail on having a fitting brand at all, long before any score is applied.</p></div>
     <div class="funnel" id="funnel"></div>
   </div>
 
@@ -434,27 +439,13 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block">
     <div class="card" id="worked"></div>
   </div>
-  <div class="next"><button type="button" class="btn" data-go="map">Next: the map →</button></div>
-</div></section>
-
-<section id="map" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
-  <div class="block">
-    <div class="head"><p class="label">The network</p><h2>Who sits behind which brand</h2>
-      <p class="lede">Not geography: dark circles are the 20 funds, sized by score, and small dots are their target brands, coloured by how many major grocers stock them. It shows where brands are shared and where each fund leads somewhere new. Select a finding to highlight it.</p></div>
-    <div class="grid" style="--min:300px" id="takeaways"></div>
-    <div class="map-box">
-      <svg id="map-svg" role="img" aria-label="Network of shortlisted funds and the target brands they hold"></svg>
-      <div class="tip" id="tip"></div>
-      <p class="map-note">Drag to rearrange. Select a fund for its dossier.</p>
-    </div>
-    <div class="map-tools"><div class="legend" id="map-legend"></div><button type="button" class="btn" id="map-reset" hidden>Show everything</button></div>
-  </div>
-  <div class="next"><button type="button" class="btn" data-go="notes">Next: data notes →</button></div>
+  <div class="next"><button type="button" class="btn" data-go="notes">Next: what to trust →</button></div>
 </div></section>
 
 <section id="notes" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
-    <div class="head"><p class="label">Data notes</p><h2>What counts, and how far to trust it</h2></div>
+    <div class="head"><p class="label">What to trust</p><h2>Where this is solid, and where it isn't</h2>
+      <p class="lede">The ranking is only worth as much as the evidence under it, and that evidence is uneven. This says which parts are sourced, which are inferred, which are my judgement, and which could not be seen at all. The last group is the one to ask about on the first call.</p></div>
     <div class="grid" style="--min:300px">
       <div class="card"><h3>What counts as a door</h3><p>A brand counts only if the fund still holds it, it isn't already a Procuros customer, and it sits under £100m revenue.</p><div id="set-aside" style="display:grid;gap:8px"></div></div>
       <div class="card"><h3>Coverage of the <span data-n="targets"></span> target brands</h3><div id="coverage" style="display:grid;gap:10px"></div></div>
@@ -478,12 +469,26 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   </div>
 </div></section>
 
+<section id="map" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <div class="head"><p class="label">The network</p><h2>Who sits behind which brand</h2>
+      <p class="lede">Not geography: dark circles are the 20 funds, sized by score, and small dots are their target brands, coloured by how many major grocers stock them. It shows where brands are shared and where each fund leads somewhere new. Select a finding to highlight it.</p></div>
+    <div class="grid" style="--min:300px" id="takeaways"></div>
+    <div class="map-box">
+      <svg id="map-svg" role="img" aria-label="Network of shortlisted funds and the target brands they hold"></svg>
+      <div class="tip" id="tip"></div>
+      <p class="map-note">Drag to rearrange. Select a fund for its dossier.</p>
+    </div>
+    <div class="map-tools"><div class="legend" id="map-legend"></div><button type="button" class="btn" id="map-reset" hidden>Show everything</button></div>
+  </div>
+</div></section>
+
 <section id="exp" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
     <p class="label">Procuros · UK go-to-market · Task 1.2 · six weeks from 2 November 2026</p>
     <h1>Two funds, <em>two ways in</em>.</h1>
-    <p class="lede">We run the motion on the top two funds from the shortlist: Piper, a private equity firm, and Maven, a venture investor. The goal is the same for both: warm intros to grocery brands that need EDI. One thing differs on purpose, and that's how we ask.</p>
-    <div class="grid" style="--min:170px" id="x-stats"></div>
+    <p class="lede">Task 1.1 says which doors to knock on. It does not say whether anyone opens them. Six weeks on the top two funds answers that, before the motion is worth scaling to anyone else.</p>
+    <p class="lede">Piper is private equity and backs consumer brands only. Maven is venture, with 155 companies of which two fit. Same goal for both — a warm introduction to a grocery brand that needs EDI — and one deliberate difference: <b>how we ask</b>.</p>
   </div>
 
   <div class="block">
@@ -545,13 +550,13 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
       </tbody>
     </table></div>
   </div>
-  <div class="next"><button type="button" class="btn" data-go="piper">Next: the Piper playbook →</button></div>
+  <div class="next"><button type="button" class="btn" data-go="play">Next: the playbooks →</button></div>
 </div></section>
 
 <section id="piper" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
-    <div class="head"><p class="label">Task 1.2 · Fund 1 of 2 · Private equity · portfolio offer</p><h2>Piper: offer the whole portfolio</h2>
-      <p class="lede">Piper only backs consumer brands, and three of its holdings are target brands. We give the portfolio something useful first, then ask for two intros.</p></div>
+    <div class="head"><p class="label">Playbooks · lane A of 2</p><h2>Piper: earn the portfolio, then ask twice</h2>
+      <p class="lede">Everything a fund receives from us is on this tab and the next: who gets written to, on what day, and the exact words. Piper first, because its whole portfolio is consumer and three holdings are target brands — which is the only condition under which a portfolio-wide offer is worth building.</p></div>
     <div class="grid" style="--min:250px">
       <div class="card"><p class="label">Contact 1 · portfolio offer</p><h3><a href="https://piper.co.uk/our-team/" target="_blank" rel="noopener">Annabel Feather</a></h3><p>Associate Partner, Talent. She works with the management teams across the portfolio, so she can share an offer with all of them at once.</p></div>
       <div class="card"><p class="label">Contact 2 · Borough Broth</p><h3><a href="https://find-and-update.company-information.service.gov.uk/company/09590728/officers" target="_blank" rel="noopener">Rory Gibbs</a></h3><p>Became a director of Borough Broth on 25 November 2025, the same day Piper Fund VII became a person with significant control. He's the deal lead, so he can make the intro himself.</p></div>
@@ -611,13 +616,12 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
       <div class="card"><h3>No name for Wild Nutrition</h3><p>Piper's fund entities control it, but no Piper person is on the board. That intro has to go through Annabel or Rory.</p></div>
     </div>
   </div>
-  <div class="next"><button type="button" class="btn" data-go="maven">Next: the Maven playbook →</button></div>
 </div></section>
 
 <section id="maven" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
-    <div class="head"><p class="label">Task 1.2 · Fund 2 of 2 · Venture · one specific ask</p><h2>Maven: one brand, one ask</h2>
-      <p class="lede">Maven backs 155 companies across many sectors, and only two are target brands. A portfolio offer would get lost, so we ask the board director for one intro and use the result to earn the next.</p></div>
+    <div class="head"><p class="label">Playbooks · lane B of 2</p><h2>Maven: ask once, and earn the second</h2>
+      <p class="lede">The same six steps as Piper, with steps 2 and 4 inverted. Maven backs 155 companies and two of them fit, so a portfolio-wide offer would be noise in an inbox that gets a lot of it. One named director, one named brand, one ask — and the result of that call is what buys the next one. Fewer moving parts, and a single point of failure, which the risks below take seriously.</p></div>
     <div class="grid" style="--min:250px">
       <div class="card"><p class="label">Contact 1 · Tom Parker Creamery</p><h3><a href="https://find-and-update.company-information.service.gov.uk/company/10397498/officers" target="_blank" rel="noopener">Luke Matthews</a></h3><p>A director of Tom Parker Creamery since 14 August 2024, and on <a href="https://www.mavencp.com/our-team" target="_blank" rel="noopener">Maven's team page</a>. He knows the founders and can make the intro in one email.</p></div>
       <div class="card"><p class="label">Backup, then Tiba Tempeh</p><h3><a href="https://www.mavencp.com/our-team" target="_blank" rel="noopener">Carl Edgehill</a></h3><p>Portfolio Director. Maven talks publicly about <a href="https://www.mavencp.com/maven-video-resources/the-benefits-of-active-portfolio-management-with-bright-network" target="_blank" rel="noopener">active portfolio management</a>, so he's the one to approach if Luke is silent, and the route to Tiba Tempeh.</p></div>
@@ -752,7 +756,12 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 (async function () {
   const D = await fetch("data.json").then(r => r.json());
   const C = D.config, P = C.pairs;
-  const TABS = ["summary", "opps", "method", "map", "notes", "exp", "piper", "maven", "score"];
+  // Six tabs, nine sections: a tab can own more than one section, so the ranking and the pairs behind it
+  // read as one argument instead of two views of the same data.
+  const PANELS = { summary: ["summary", "opps"], method: ["method"], notes: ["notes", "map"],
+                   exp: ["exp"], play: ["piper", "maven"], score: ["score"] };
+  const TABS = Object.keys(PANELS);
+  const SECTIONS = Object.values(PANELS).flat();
   const fmtInt = d3.format(",");
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
@@ -786,6 +795,22 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     [N.vcpe, "VC and PE fund portfolios read"], [N.targets, "target grocery brands inside them"],
     [PAIRS.length, "fund–brand intro opportunities scored"], [nBoard, "with a fund person on the brand's board"],
   ].map(([v, l]) => `<div class="card stat"><b>${v}</b><span>${l}</span></div>`).join("");
+  // Start here: the single best door, named, so the answer is readable before any of the workings.
+  (function startHere() {
+    const f = SHORT[0], p = f.pairs[0], who = p.intro.board_people[0] || p.intro.ops_people[0];
+    const grocers = p.fit.evidence.reach.items.map(r => r.name);
+    // A press headline reads as a reason to write; "Share allotment filed at Companies House" does not,
+    // so prefer a story and fall back to a filing only when there is nothing else.
+    const dated = p.fit.evidence.why_now.items.filter(i => i.date);
+    const trigger = dated.find(i => i.source !== "Companies House") || dated[0] || {};
+    const isFiling = trigger.source === "Companies House";
+    document.getElementById("start-here").innerHTML = `<p class="label">Start here</p>
+      <h3>${esc(short(f.fund))} → ${esc(pretty(p.brand))} → ${who ? esc(who.name) : "the deal partner"}</h3>
+      <p>${esc(pretty(p.brand))} sells through ${grocers.length ? esc(list(grocers)) : "no grocer we could confirm"}${trigger.text ? (isFiling ? `, and filed ${esc(trigger.text.toLowerCase().replace(/ filed at companies house$/, ""))} at Companies House in ${esc(trigger.date.slice(0, 7))}` : `, and ${esc(trigger.text.replace(/\.$/, ""))} (${esc(trigger.date.slice(0, 7))})`) : ""}.
+      ${who && who.since ? `${esc(who.name)} joined its board in ${esc(who.since.slice(0, 7))} and is on ${esc(short(f.fund))}'s team page, so one email reaches the founder.` : `${who ? esc(who.name) + " runs portfolio support, so the ask goes through them." : "No partner is named yet, so the first job is finding the deal lead."}`}
+      This is the strongest of ${PAIRS.length} pairs scored, and the rest of this page is why.</p>`;
+  })();
+
   function rowHTML(f) {
     const best = f.pairs[0], steps = f.next_steps;
     const brands = f.pairs.slice(0, 3).map(p => esc(pretty(p.brand))).join(", ") + (f.pairs.length > 3 ? ` +${f.pairs.length - 3}` : "");
@@ -919,15 +944,20 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     return `<tr><td>${esc(s.scenario)}</td><td class="r">${s.same_in_first} of ${D.first_group}</td><td class="r">${esc(move)}</td></tr>`;
   }).join("");
 
-  // Funnel
+  // Funnel. Bars scale within their group, and the brand group now starts at the food-and-drink candidates
+  // rather than all 3,710 portfolio companies: against that number the last three bars were 10%, 3% and 2%
+  // wide and told the reader nothing. The 3,710 is stated above the bars instead.
+  const V = { ...FN, "With someone to ask": N.worth };
   const groups = [
-    ["Funds", [["Funds seeded", "Funds seeded"], ["VC and PE funds only", "VC and PE funds only"], ["Portfolios read", "Portfolios read"], ["Hold a target brand", "Funds holding a target brand"], ["Shortlist", "Shortlist"]]],
-    ["Brands", [["Portfolio companies", "Portfolio companies"], ["Food and drink candidates", "Food & drink candidates"], ["UK grocery brands", "UK grocery brands kept"], ["Target brands", "Target brands"]]],
+    ["Funds", [["Funds seeded", "Funds seeded"], ["VC and PE funds only", "VC and PE funds only"], ["Portfolios read", "Portfolios read"], ["Hold a target brand", "Funds holding a target brand"], ["In the 20", "Shortlist"], ["With someone to ask", "With someone to ask"]]],
+    ["Brands", [["Food and drink candidates", "Food & drink candidates"], ["UK grocery brands", "UK grocery brands kept"], ["Target brands", "Target brands"]]],
   ];
   document.getElementById("funnel").innerHTML = `<div class="f-row f-head label"><span>Stage</span><span>To scale</span><span style="text-align:right">Count</span><span>Kept</span></div>` +
-    groups.map(([g, rows]) => `<div class="f-group" style="display:grid;gap:10px"><h3>${g}</h3>` + rows.map(([l, k], i) => `<div class="f-row${i === rows.length - 1 ? " last" : ""}"><span>${l}</span>
-      <div class="track"><div class="fill" style="width:${(100 * FN[k] / FN[rows[0][1]]).toFixed(1)}%"></div></div>
-      <b>${fmtInt(FN[k])}</b><span class="keep">${i ? Math.round(100 * FN[k] / FN[rows[i - 1][1]]) + "% of step before" : "start"}</span></div>`).join("") + `</div>`).join("");
+    groups.map(([g, rows]) => `<div class="f-group" style="display:grid;gap:10px"><h3>${g}</h3>${g === "Brands"
+      ? `<p class="small muted">Out of ${fmtInt(FN["Portfolio companies"])} portfolio companies in total. The keyword pass flagged ${fmtInt(FN["Food & drink candidates"])} as food or drink, and these bars are scaled to that rather than to the 3,710, which would make all three unreadable.</p>` : ""}`
+      + rows.map(([l, k], i) => `<div class="f-row${i === rows.length - 1 ? " last" : ""}"><span>${l}</span>
+      <div class="track"><div class="fill" style="width:${(100 * V[k] / V[rows[0][1]]).toFixed(1)}%"></div></div>
+      <b>${fmtInt(V[k])}</b><span class="keep">${i ? Math.round(100 * V[k] / V[rows[i - 1][1]]) + "% of step before" : "start"}</span></div>`).join("") + `</div>`).join("");
 
   // ---------- Method: rule charts
   (function decayChart() {
@@ -1207,10 +1237,6 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   // ---------- Task 1.2: two-fund experiment
   const XF = ["Piper", "Maven Capital Partners"].map(n => FUNDS.find(f => f.fund === n)).filter(Boolean);
   const xBrands = XF.flatMap(f => f.pairs);
-  document.getElementById("x-stats").innerHTML = [
-    [XF.length, "funds, one PE and one VC"], [xBrands.length, "target brands between them"],
-    [5, "named people to contact"], [6, "weeks, ending 11 December"],
-  ].map(([v, l]) => `<div class="card stat"><b>${v}</b><span>${l}</span></div>`).join("");
   document.getElementById("x-why").innerHTML = XF.map(f => {
     const b = f.pairs[0], bp = b.intro.board_people[0];
     const rr = f.rank_range[0] === f.rank_range[1] ? `#${f.rank} in every weight test` : `between #${f.rank_range[0]} and #${f.rank_range[1]} in every weight test`;
@@ -1255,15 +1281,16 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   function showTab(id) {
     if (!TABS.includes(id)) id = "summary";
     const task = taskOf(id);
+    const shown = new Set(PANELS[id]);
+    SECTIONS.forEach(s => { document.getElementById(s).hidden = !shown.has(s); });
     TABS.forEach(t => {
-      document.getElementById(t).hidden = t !== id;
       const b = document.querySelector(`#subtabs [data-tab="${t}"]`);
       b.hidden = b.dataset.task !== task;
       b.setAttribute("aria-selected", String(t === id)); b.tabIndex = t === id ? 0 : -1;
     });
     document.querySelectorAll(".task[data-task]").forEach(b => { const on = b.dataset.task === task; b.classList.toggle("on", on); b.setAttribute("aria-selected", String(on)); });
     try { history.replaceState(null, "", "#" + id); } catch (e) {}
-    if (id === "map") size();
+    if (shown.has("map")) size();
     window.scrollTo({ top: 0 });
   }
   window.showTab = showTab;
@@ -1277,6 +1304,8 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   document.querySelectorAll(".task[data-task]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.first)));
   document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.go)));
   const h = (location.hash || "#summary").slice(1);
-  showTab({ overview: "summary", thesis: "summary", ranking: "opps", pipeline: "method", signals: "method", dossier: "opps", limits: "notes" }[h] || h);
+  // Old links keep working after the nine sections were folded into six tabs.
+  showTab({ overview: "summary", thesis: "summary", ranking: "summary", pipeline: "method", signals: "method",
+            dossier: "summary", limits: "notes", opps: "summary", map: "notes", piper: "play", maven: "play" }[h] || h);
 })();
 </script>
