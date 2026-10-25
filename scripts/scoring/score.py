@@ -275,6 +275,18 @@ def score_funds(funds, brands):
                     src = f"{chk['evidence']} ({chk['url']})"
             mine.append({"brand": b, "status": st, "status_source": src,
                          "w": CFG["status_weight"][st]})
+        # Only brands the fund still holds, that aren't Procuros customers already and fit the ICP size band, are doors.
+        is_customer = lambda m: any(c in m["brand"]["brand"].lower() for c in customers)
+        overlap = [m["brand"]["brand"] for m in mine if is_customer(m) and m["status"] in ("current", "unknown")]
+        set_aside = []
+        for m in mine:
+            why_out = ("already a Procuros customer" if is_customer(m)
+                       else f"over the £100m ICP band ({OVR['over_icp_size'][m['brand']['brand']]})" if m["brand"]["brand"] in OVR["over_icp_size"]
+                       else "sold" if m["status"] in ("exited_recent", "exited_old") else None)
+            if why_out:
+                set_aside.append({"brand": m["brand"]["brand"], "reason": why_out, "status": m["status"]})
+        out_names = {x["brand"] for x in set_aside}
+        mine = [m for m in mine if m["brand"]["brand"] not in out_names]
         people = [p for p in f.get("team_platform_people", [])
                   if PLATFORM_TITLE.search(p.get("title", "")) and not NOT_A_NAME.search(p.get("name", ""))
                   and "investor relations" not in p.get("title", "").lower()]
@@ -287,7 +299,6 @@ def score_funds(funds, brands):
         top = sorted(mine, key=lambda m: m["brand"]["pain"] * m["w"], reverse=True)[:CFG["pain_top_n"]]
         recent = [m for m in live if m["brand"]["funding_news"] and
                   any(name.split()[0].lower() in (n["headline"] + n["url"]).lower() for n in m["brand"]["funding_news"])]
-        overlap = [m["brand"]["brand"] for m in mine if any(c in m["brand"]["brand"].lower() for c in customers)]
         halo = max([len(m["brand"]["retailers"]) for m in live] or [0])
         rows.append({
             "fund": name, "fund_type": f["fund_type"], "website": f.get("website"), "scrape_status": f["scrape_status"],
@@ -310,6 +321,7 @@ def score_funds(funds, brands):
                 "ecosystem": min(len(eco), 2),
             },
             "_live_brands": [m["brand"] for m in live],
+            "set_aside": set_aside,
             "evidence": {"platform_people": people, "community": comm, "vendor": vendor, "procuros_overlap": overlap,
                          "recent_deal_brands": [m["brand"]["brand"] for m in recent]},
         })
@@ -361,7 +373,7 @@ def why(r, brands_by_name):
     parts = []
     if live:
         names = ", ".join(f"{b['brand']} ({'/'.join(b['retailers'][:3])})" if b["retailers"] else b["brand"] for b in live[:3])
-        parts.append(f"{len(live)} UK grocery brand{'s' if len(live) != 1 else ''} held now or exited <24m, incl. {names}")
+        parts.append(f"{len(live)} UK grocery brand{'s' if len(live) != 1 else ''} still held, incl. {names}")
     hot = []
     for b in live:
         bb = brands_by_name[b["brand"]]

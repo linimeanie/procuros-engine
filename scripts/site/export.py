@@ -40,6 +40,7 @@ for f in funds:
         "people": [{"name": p["name"], "title": p["title"], "url": p["url"]} for p in f["evidence"]["platform_people"][:4]],
         "community": [{"text": c["text"][:60], "url": c["url"]} for c in f["evidence"]["community"][:4]],
         "overlap": sorted(set(f["evidence"]["procuros_overlap"])),
+        "set_aside": f.get("set_aside", []),
         "coverage": f["coverage"]["signals_with_data"],
     })
 
@@ -52,16 +53,23 @@ funnel = [
     {"label": "Portfolio companies", "value": sum(len(f.get("companies", [])) for f in raw_funds)},
     {"label": "Food & drink candidates", "value": len(cands)},
     {"label": "UK grocery brands kept", "value": len(brands)},
+    {"label": "Target brands", "value": len({b["brand"] for f in funds for b in f["brands"]})},
     {"label": "Funds holding a live brand", "value": sum(1 for f in funds if f["live_brand_count"] > 0)},
     {"label": "Shortlist", "value": 20},
 ]
+target_names = {b["brand"] for f in funds for b in f["brands"]}
+tb = [b for b in brands if b["brand"] in target_names]  # coverage is reported over the brands that count
 data = {"as_of": cfg["as_of"], "config": {k: cfg[k] for k in ("pillars", "fit", "pain", "access", "strategic", "tiers", "gate_brands", "status_weight", "pain_top_n", "stack", "recency_half_life_months", "excluded_fund_types")},
         "funnel": funnel, "retailer_blurbs": blurbs["retailers"], "funds": out_funds, "brands": out_brands, "failed": failed,
-        "stats": {"brands_with_retailers": sum(1 for b in brands if b["retailers"]),
-                  "brands_with_ops": sum(1 for b in brands if b["ops_roles"]),
-                  "brands_with_news": sum(1 for b in brands if b["news"]),
-                  "brands_with_ch": sum(1 for b in brands if b.get("companies_house")),
+        "stats": {"targets": len(tb),
+                  "brands_with_retailers": sum(1 for b in tb if b["retailers"]),
+                  "brands_with_ops": sum(1 for b in tb if b["ops_roles"]),
+                  "brands_with_news": sum(1 for b in tb if b["news"]),
+                  "brands_with_ch": sum(1 for b in tb if b.get("companies_house")),
+                  "brands_stacked": sum(1 for b in tb if len(b["stack"]) > 1),
                   "pairs_confirmed": sum(1 for f in funds for b in f["brands"] if b["status"] != "unknown"),
-                  "pairs_total": sum(len(f["brands"]) for f in funds)}}
+                  "pairs_total": sum(len(f["brands"]) for f in funds),
+                  "set_aside": {r: sum(1 for f in funds for x in f.get("set_aside", []) if x["reason"].startswith(r))
+                                for r in ("already a Procuros customer", "over the £100m", "sold")}}}
 (ROOT / "site/data.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 print({k: v for k, v in data["stats"].items()}, [x["value"] for x in funnel], len(out_funds))
