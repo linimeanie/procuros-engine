@@ -49,6 +49,10 @@ about = {f["name"]: f for f in out_funds}
 for r in opp["funds"]:
     a = about.get(r["fund"], {})
     r.update({"about": a.get("about", ""), "website": a.get("website"), "portfolio_urls": a.get("portfolio_urls", []), "companies": a.get("companies")})
+    # Second lens: whether the fund is set up to broker an intro at all. The pair model scores the door;
+    # this scores the doorman. Both are computed, so publish both rather than quietly dropping one.
+    r["lens"] = {"pillars": a.get("pillars", {}), "fund_score": a.get("score"),
+                 "platform_people": a.get("people", []), "community": a.get("community", [])}
 
 failed = [{"name": f["fund"], "status": f["scrape_status"], "note": (f.get("scrape_notes") or "")[:140]}
           for f in raw_funds if f["scrape_status"] in ("failed", "no_companies_found")]

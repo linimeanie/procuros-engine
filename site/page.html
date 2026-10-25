@@ -322,8 +322,9 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 <section id="summary" class="panel-tab" role="tabpanel"><div class="wrap page">
   <div class="block">
     <p class="label">Procuros · UK go-to-market · Task 1.1 · data as of <span id="asof"></span></p>
-    <h1>Twenty <em>warm doors</em> into UK grocery.</h1>
-    <p class="lede">The 20 UK VC and PE funds best placed to introduce Procuros to grocery brands that need EDI. Each fund is here for a named brand it backs and a route to someone who can make the intro. Every claim links to its source.</p>
+    <h1>Twenty asked for. <em>Not twenty worth calling.</em></h1>
+    <p class="lede">The UK VC and PE funds best placed to introduce Procuros to grocery brands that need EDI. Each fund is here for a named brand it backs and a route to someone who can make the intro. Every claim links to its source.</p>
+    <p class="lede">The brief asked for 20, so here are 20 — but the honest number is smaller. Only <span data-n="holding"></span> of the <span data-n="vcpe"></span> funds back a single brand that fits, which means the target-brand test does the filtering and the ranking only decides the order. <span data-n="worth"></span> funds clear the score <b>and</b> name a person who could make the intro. The rest are shown with that said plainly, because the gap between #20 and #21 is a tenth of a point.</p>
     <div class="grid" style="--min:170px" id="stats"></div>
   </div>
 
@@ -334,6 +335,17 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="sl" id="shortlist"></div>
     <div class="card" id="dropped"></div>
   </div>
+
+  <div class="block">
+    <div class="head"><p class="label">Second lens</p><h2>The best door is not always the best doorman</h2>
+      <p class="lede">Everything above scores the <b>door</b>: does the brand need Procuros, and is there a route to it. It says nothing about whether the fund is set up to broker a vendor introduction at all. That is a different question with different evidence — a portfolio-operations team, a founder community, and whether the fund has already watched Procuros work. Ranked by that instead, the order changes.</p></div>
+    <div class="table-scroll"><table id="lens-t">
+      <thead><tr><th>Fund</th><th class="r">Door</th><th class="r">Access</th><th class="r">Already has proof</th><th>What the second lens sees</th></tr></thead>
+      <tbody id="lens-body"></tbody>
+    </table></div>
+    <p class="callout" id="lens-note"></p>
+  </div>
+
   <div class="next"><button type="button" class="btn" data-go="opps">Next: every intro opportunity →</button></div>
 </div></section>
 
@@ -383,7 +395,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   <div class="block">
     <div class="head"><h2>Why now: two rules for recent events</h2>
-      <p class="lede">New listings, funding, ops hiring and export news each mark a moment when order volumes and retailer connections grow. Older news counts for less, and events that land close together count for more.</p></div>
+      <p class="lede">New listings, funding, ops hiring and export news each mark a moment when order volumes and retailer connections grow. Older news counts for less, and events that land close together count for more. Funding is read from <b>Companies House filings</b> — share allotments and new charges — as well as the press, because a filing is dated, authoritative and often lands months before anyone writes it up. Every item below names the source it came from, so a filing and a blog post can be told apart. Consumer reviews and taste tests are excluded: they are not events, however many funding words their headlines contain.</p></div>
     <div class="grid" style="--min:300px">
       <div class="card"><p class="label">Rule 1 · Recency</p><h3>News loses half its weight every 9 months</h3><div id="decay"></div><p>A story from this month counts in full, one from 18 months ago counts a quarter, and anything older than 24 months isn't counted. Open job ads are live, so they don't decay.</p></div>
       <div class="card"><p class="label">Rule 2 · Stacking</p><h3>Events in the same 12 months multiply</h3><div id="stackchart"></div><p>Each extra kind of event in the same 12 months adds 25% to the brand's why-now score, capped at 1.5×.</p></div>
@@ -392,7 +404,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   <div class="block">
     <div class="head"><h2>Intro path: can the fund open the door?</h2>
-      <p class="lede">Points for each piece of evidence that the fund can reach the brand's decision-makers. A fund that lists a brand but shows no route scores 10 out of 100.</p></div>
+      <p class="lede">Points for each piece of evidence that the fund can reach the brand's decision-makers. Two of these are entry conditions rather than evidence: a pair only exists because the fund lists the brand, and a sold holding is set aside entirely. So no pair ever scores zero here, and a score alone never means there is someone to ask.</p></div>
     <div class="table-scroll"><table>
       <thead><tr><th>Evidence</th><th>Where it comes from</th><th class="r">Points</th></tr></thead>
       <tbody id="path-body"></tbody>
@@ -411,9 +423,9 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   <div class="block">
     <div class="head"><h2>Does the weighting change the answer?</h2>
-      <p class="lede">The ranking was rerun under other reasonable weightings. If the same funds come out on top every time, the shortlist doesn't depend on my exact numbers.</p></div>
+      <p class="lede">The ranking was rerun under other reasonable weightings. Asking whether the same funds stay in the 20 would prove nothing, because only 22 funds hold a fitting brand at all. What matters is whether the <b>order</b> holds, so each row reports the largest rank move that weighting causes. The call-first group is stable; the middle of the table is not.</p></div>
     <div class="table-scroll"><table>
-      <thead><tr><th>Scenario</th><th class="r">Same funds in the 20</th><th class="r" id="first-head"></th></tr></thead>
+      <thead><tr><th>Scenario</th><th class="r" id="first-head"></th><th class="r">Biggest rank move</th></tr></thead>
       <tbody id="sens-body"></tbody>
     </table></div>
     <p class="small muted">Each fund's dossier shows the best and worst rank it reached across these scenarios.</p>
@@ -455,7 +467,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
         </div></div>
       <div class="card"><h3>Judgement calls</h3><p>These are my calls rather than scraped data:</p>
         <ul class="small muted" style="margin:0;padding-left:18px;display:grid;gap:4px">
-          <li>The weights for brand fit and the points for intro path. The Method tab shows the answer barely moves when they change.</li>
+          <li>The weights for brand fit and the points for intro path. The call-first group survives every weighting tested; the middle of the table does not, and the Method tab reports how far each scenario moves it.</li>
           <li>Which brands are over £100m revenue.</li>
           <li>The 9-month half-life for news and the 1.5× stacking cap.</li>
           <li>The group lines for Call first and Next.</li>
@@ -756,9 +768,10 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   const brandsByName = Object.fromEntries(D.brands.map(b => [b.name, b]));
   const PAIRS = FUNDS.flatMap(f => f.pairs.map(p => ({ ...p, fund: f.fund, f }))).sort((a, b) => b.score - a.score);
   const FN = Object.fromEntries(D.funnel.map(x => [x.label, x.value]));
-  const N = { seeded: FN["Funds seeded"], vcpe: FN["VC and PE funds only"], targets: FN["Target brands"], qual: P.qualified_pair };
+  const N = { seeded: FN["Funds seeded"], vcpe: FN["VC and PE funds only"], targets: FN["Target brands"], qual: P.qualified_pair,
+              holding: FN["Funds holding a target brand"], worth: SHORT.filter(f => f.qualified > 0).length };
   document.querySelectorAll("[data-n]").forEach(el => el.textContent = N[el.dataset.n]);
-  const GROUP = { A: "Call first", B: "Next", C: "Bench" };
+  const GROUP = { A: "Call first", B: "Next", C: "Not recommended" };
   const FIT_LABEL = { reach: "Retail reach", why_now: "Why now", size: "Size", uk: "UK company" };
   const PATH_LABEL = { listed: "Listed in the fund's portfolio", board: "Fund person on the brand's board", ops_person: "Named portfolio-ops contact", support: "Portfolio support programme", held: "Holding confirmed" };
   const STATE = { confirmed: ["confirmed", "Confirmed"], assumed: ["assumed", "Assumed"], "checked, none found": ["none", "None found"], unknown: ["unknown", "Unknown"], "not observable": ["unobs", "Not observable"], unconfirmed: ["assumed", "Unconfirmed"] };
@@ -782,17 +795,50 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
         <span class="badges"><span class="bdg ${best.intro.strength}">${best.intro.strength} route</span><span class="bdg ${best.confidence}">${best.confidence} confidence</span></span></span>
       <span class="why">${esc(f.rationale)}</span>
       <span class="todo"><b>${esc(steps.find(s => !/^(Confirm|Check|Lead)/.test(s)) || steps[0])}</b>${steps.filter(s => /^(Confirm|Check)/.test(s)).map(s => `<span>Before that: ${esc(s.charAt(0).toLowerCase() + s.slice(1))}</span>`).join("")}</span>
-      <span class="sc">${f.score.toFixed(1)}<small>${f.tier !== "-" ? GROUP[f.tier] : ""}</small></span></button>`;
+      <span class="sc">${Math.round(f.score)}<small>${f.tier !== "-" ? GROUP[f.tier] : ""}</small></span></button>`;
   }
   document.getElementById("shortlist").innerHTML = ["A", "B", "C"].map(t => {
     const fs = SHORT.filter(f => f.tier === t);
-    const note = { A: `Score ${P.tiers.A}+ with at least two opportunities worth pursuing`, B: `Score ${P.tiers.B}+: one strong opportunity`, C: "In the 20, but the route or the brand fit is thin" }[t];
+    const note = { A: `Score ${P.tiers.A}+ with at least two opportunities worth pursuing`, B: `Score ${P.tiers.B}+: one strong opportunity`,
+                   C: "Here to reach 20. No named person to ask, or the brand evidence is too thin to act on" }[t];
     return fs.length ? `<div class="sl-group"><p class="label">${GROUP[t]} · ${note}</p>${fs.map(rowHTML).join("")}</div>` : "";
   }).join("");
   const dropped = FUNDS.filter(f => !f.selected);
+  const lastIn = SHORT[SHORT.length - 1], firstOut = dropped[0];
+  const margin = lastIn && firstOut ? Math.abs(lastIn.score - firstOut.score).toFixed(1) : null;
   document.getElementById("dropped").innerHTML = `<h3>Why not the other ${plural(dropped.length, "fund")}</h3>
-    <p>Only ${FN["Funds holding a target brand"]} of the ${N.vcpe} funds back a brand that fits, so the real filter is the target-brand test. The ranking sets the order and who to call first. ${dropped.map(f => `<b>${esc(f.fund)}</b> (${f.score.toFixed(1)}) backs ${list(f.pairs.map(p => esc(pretty(p.brand))))} with ${f.pairs[0].intro.strength.toLowerCase()} routes and thin brand evidence.`).join(" ")}</p>`;
+    <p>Only ${FN["Funds holding a target brand"]} of the ${N.vcpe} funds back a brand that fits, so the real filter is the target-brand test, not the ranking. ${dropped.map(f => `<b>${esc(f.fund)}</b> (${Math.round(f.score)}) backs ${list(f.pairs.map(p => esc(pretty(p.brand))))} with ${f.pairs[0].intro.strength.toLowerCase()} routes and thin brand evidence.`).join(" ")}</p>
+    ${margin !== null ? `<p><b>How little the cut-off means:</b> ${esc(short(lastIn.fund))} is twentieth on ${Math.round(lastIn.score)} and ${esc(short(firstOut.fund))} is twenty-first on ${Math.round(firstOut.score)} — ${margin} of a point apart. Tightening one news classifier while building this page was enough to swap them. Treat the bottom of this list as a tie, not a ranking.</p>` : ""}`;
   document.querySelectorAll(".opp-row").forEach(b => b.addEventListener("click", () => select(b.dataset.f)));
+
+  // ---------- Second lens: can the fund broker at all? (access + strategic pillars, already computed by score.py)
+  (function lens() {
+    const L = f => (f.lens || {}).pillars || {};
+    const brokerage = f => 0.65 * (L(f).access || 0) + 0.35 * (L(f).strategic || 0);
+    const ranked = SHORT.slice().sort((a, b) => brokerage(b) - brokerage(a));
+    const doorRank = Object.fromEntries(SHORT.map((f, i) => [f.fund, i + 1]));
+    document.getElementById("lens-body").innerHTML = ranked.slice(0, 8).map(f => {
+      const people = ((f.lens || {}).platform_people || []).length, comm = ((f.lens || {}).community || []).length;
+      const says = [people ? plural(people, "portfolio-ops contact") : null,
+                    comm ? plural(comm, "community or vendor programme") : null,
+                    f.procuros_overlap.length ? `already backs ${list(f.procuros_overlap)}` : null].filter(Boolean);
+      const moved = doorRank[f.fund] - (ranked.indexOf(f) + 1);
+      return `<tr><td class="p"><b>${esc(short(f.fund))}</b>${moved > 0 ? ` <span class="muted small">↑${moved}</span>` : ""}</td>
+        <td class="r">#${doorRank[f.fund]}</td><td class="r">${Math.round(100 * (L(f).access || 0))}</td>
+        <td class="r">${Math.round(100 * (L(f).strategic || 0))}</td>
+        <td class="muted">${says.length ? esc(says.join("; ")) : "nothing published beyond the portfolio page"}</td></tr>`;
+    }).join("");
+    const lensRank = Object.fromEntries(ranked.map((f, i) => [f.fund, i + 1]));
+    const proof = SHORT.filter(f => f.procuros_overlap.length);
+    const topDoor = SHORT[0], topLens = ranked[0];
+    const parts = [`<b>The two lenses disagree.</b> ${esc(short(topDoor.fund))} has the best door but ranks #${lensRank[topDoor.fund]} here; ${esc(short(topLens.fund))} ranks #${doorRank[topLens.fund]} on door quality and first on this one, on the strength of a value-creation team and published portfolio programmes.`];
+    if (proof.length) {
+      const noRoute = proof.filter(f => !f.pairs.some(p => p.intro.board_people.length));
+      parts.push(`The sharpest case is ${esc(list(proof.map(f => short(f.fund))))}: #${doorRank[proof[0].fund]} on door quality, #${lensRank[proof[0].fund]} here, and the highest strategic score of any shortlisted fund because ${proof.length === 1 ? "it already backs" : "they already back"} ${esc(list(proof.flatMap(f => f.procuros_overlap)))}. Those brands are set aside as targets — they are customers already — but a fund that has watched Procuros work carries the strongest reference an introduction can have, and the door ranking cannot see it at all.`);
+      if (noRoute.length) parts.push(`The catch is real: ${esc(list(noRoute.map(f => short(f.fund))))} ${noRoute.length === 1 ? "has" : "have"} no partner named on any target brand's board, so the proof exists and the route still has to be found.`);
+    }
+    document.getElementById("lens-note").innerHTML = parts.join(" ");
+  })();
 
   // ---------- Opportunities: scatter and list
   (function scatter() {
@@ -800,7 +846,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     const X = v => L + v * (R - L), Y = v => B - v * (B - T);
     const fx = 0.5, py = P.strong_path;
     const dots = PAIRS.map(p => `<circle cx="${X(p.fit.fit).toFixed(1)}" cy="${Y(p.intro.path).toFixed(1)}" r="${p.f.selected ? 6 : 4}" data-f="${esc(p.fund)}"
-      style="fill:${p.score >= P.qualified_pair ? "var(--accent)" : "var(--ink-2)"};stroke:var(--card)" stroke-width="1.5" fill-opacity="${p.f.selected ? .9 : .4}"><title>${esc(p.fund)} → ${esc(pretty(p.brand))} · pair ${p.score.toFixed(1)}</title></circle>`).join("");
+      style="fill:${p.qualified ? "var(--accent)" : "var(--ink-2)"};stroke:var(--card)" stroke-width="1.5" fill-opacity="${p.f.selected ? .9 : .4}"><title>${esc(p.fund)} → ${esc(pretty(p.brand))} · pair ${Math.round(p.score)}${p.qualified ? "" : " · no named person"}</title></circle>`).join("");
     const lab = "";
     document.getElementById("scatter").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Each intro opportunity placed by brand fit and intro path strength">
       <rect x="${X(fx)}" y="${T}" width="${R - X(fx)}" height="${Y(py) - T}" style="fill:color-mix(in srgb, var(--accent) 9%, transparent)"/>
@@ -818,9 +864,10 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     </svg>`;
     document.querySelectorAll("#scatter circle").forEach(c => c.addEventListener("click", () => select(c.dataset.f)));
     const ready = PAIRS.filter(p => p.fit.fit >= fx && p.intro.path >= py), noroute = PAIRS.filter(p => p.fit.fit >= fx && p.intro.path < py);
-    document.getElementById("scatter-note").innerHTML = `Each dot is one fund–brand pair; orange dots score ${P.qualified_pair}+ and are worth pursuing, larger dots belong to the shortlisted 20. Hover a dot for the pair, select it for the fund. <b>${ready.length}</b> pairs are ready to ask: a strong brand and a strong route. <b>${noroute.length}</b> have a good brand but no proven route yet, which is where the next round of research should go.`;
+    const nameless = PAIRS.filter(p => p.score >= P.qualified_pair && !p.qualified);
+    document.getElementById("scatter-note").innerHTML = `Each dot is one fund–brand pair; orange dots score ${P.qualified_pair}+ <b>and name someone who can make the intro</b>, larger dots belong to the shortlisted 20. Hover a dot for the pair, select it for the fund. <b>${ready.length}</b> pairs are ready to ask: a strong brand and a strong route. <b>${noroute.length}</b> have a good brand but no proven route yet, which is where the next round of research should go. A further <b>${nameless.length}</b> clear the score but have nobody named, so they stay grey: a good brand nobody can introduce you to is not an opportunity yet.`;
   })();
-  const FILTERS = { all: ["All", () => true], ready: ["Worth pursuing", p => p.score >= P.qualified_pair], board: ["Board link", p => p.intro.board_people.length > 0], high: ["High confidence", p => p.confidence === "High"] };
+  const FILTERS = { all: ["All", () => true], ready: ["Worth pursuing", p => p.qualified], board: ["Board link", p => p.intro.board_people.length > 0], high: ["High confidence", p => p.confidence === "High"] };
   let filt = "ready";
   function renderPairs() {
     const ps = PAIRS.filter(FILTERS[filt][1]);
@@ -832,7 +879,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
         <span class="t"><b>${esc(short(p.fund))} → ${esc(pretty(p.brand))}</b><span class="muted">${esc(route(p))}</span></span>
         <span class="hb"><span class="hbar"><span style="width:${(100 * p.fit.fit).toFixed(0)}%;background:var(--p-fit)"></span></span></span>
         <span class="hb"><span class="hbar"><span style="width:${(100 * p.intro.path).toFixed(0)}%;background:var(--p-access)"></span></span></span>
-        <span class="s">${p.score.toFixed(1)}</span><span class="bd"><span class="bdg ${p.confidence}">${p.confidence}</span></span></button>`).join("");
+        <span class="s">${Math.round(p.score)}</span><span class="bd"><span class="bdg ${p.confidence}">${p.confidence}</span></span></button>`).join("");
     document.querySelectorAll("#pairs .pair[data-f]").forEach(b => b.addEventListener("click", () => select(b.dataset.f)));
   }
   renderPairs();
@@ -853,12 +900,24 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     ["support", "Events, founder community, perks or a partner programme on the fund's site"],
     ["listed", "The brand appears in the fund's published portfolio"],
   ].map(([k, s]) => `<tr><td class="p">${PATH_LABEL[k]}</td><td class="muted">${s}</td><td class="r">${Math.round(100 * pw[k])}</td></tr>`).join("");
-  document.getElementById("path-bands").textContent = `Strong route: ${Math.round(100 * P.strong_path)}+ points. Good: ${Math.round(100 * P.good_path)}–${Math.round(100 * P.strong_path) - 1}. Weak: below ${Math.round(100 * P.good_path)}.`;
+  document.getElementById("path-bands").innerHTML = `Strong route: ${Math.round(100 * P.strong_path)}+ points. Good: ${Math.round(100 * P.good_path)}–${Math.round(100 * P.strong_path) - 1}. Weak: below ${Math.round(100 * P.good_path)}.
+    <b>Being listed is worth ${Math.round(100 * P.intro_path.listed)} and every pair here has it</b>, because a pair only exists when the fund lists the brand, so the real floor is ${Math.round(100 * P.intro_path.listed)} with an unconfirmed holding and ${Math.round(100 * (P.intro_path.listed + P.intro_path.held))} with a confirmed one. That is why a pair also has to name a person before it counts as worth pursuing.`;
   const dec = P.aggregate_decay;
   document.getElementById("agg-formula").textContent = `fund = (best + ${dec[1]} × 2nd + ${dec[2]} × 3rd) ÷ ${dec.reduce((a, b) => a + b, 0)}`;
   document.getElementById("tier-formula").textContent = `Call first: ${P.tiers.A}+ and 2 pairs · Next: ${P.tiers.B}+`;
-  document.getElementById("first-head").textContent = `Same ${D.first_group} call-first funds`;
-  document.getElementById("sens-body").innerHTML = D.sensitivity.map(s => `<tr><td>${esc(s.scenario)}</td><td class="r">${s.same_in_top} of ${C.shortlist_size}</td><td class="r">${s.same_in_first} of ${D.first_group}</td></tr>`).join("");
+  document.getElementById("first-head").textContent = `Call-first group held (of ${D.first_group})`;
+  // "Same funds in the 20" is near-forced when only 22 funds hold a target brand at all, so it proves nothing.
+  // What moves is the order: report the largest displacement each weighting causes instead.
+  const baseOrder = SHORT.map(f => f.fund);
+  document.getElementById("sens-body").innerHTML = D.sensitivity.map(s => {
+    let worst = 0, who = "";
+    s.top.forEach((name, i) => {
+      const was = baseOrder.indexOf(name);
+      if (was >= 0 && Math.abs(was - i) > worst) { worst = Math.abs(was - i); who = name; }
+    });
+    const move = worst ? `${short(who)} by ${plural(worst, "place")}` : "none";
+    return `<tr><td>${esc(s.scenario)}</td><td class="r">${s.same_in_first} of ${D.first_group}</td><td class="r">${esc(move)}</td></tr>`;
+  }).join("");
 
   // Funnel
   const groups = [
@@ -943,14 +1002,15 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   function pairCard(p) {
     const ev = p.fit.evidence, ip = p.intro, B = brandsByName[p.brand] || {};
     const retail = ev.reach.items.length ? ev.reach.items.map(r => `<a class="chip" href="${esc(r.url)}" target="_blank" rel="noopener" title="Open the proof">${esc(r.name)}</a>`).join("") : `<span class="chip ghost">none confirmed</span>`;
-    const now = ev.why_now.items.slice(0, 3).map(t => `<span>${t.date ? esc(t.date.slice(0, 7)) + " · " : ""}${link(t.url, t.text)}</span>`).join("<br>") || "none found in 24 months";
+    const now = ev.why_now.items.slice(0, 3).map(t => `<span>${t.date ? esc(t.date.slice(0, 7)) + " · " : ""}${link(t.url, t.text)}${t.source ? ` <span class="muted small">${esc(t.source)}</span>` : ""}</span>`).join("<br>") || "none found in 24 months";
     const who = [
       ...ip.board_people.map(x => `${link(x.url, x.name)}, director of ${esc(pretty(p.brand))}${x.since ? " since " + esc(x.since.slice(0, 4)) : ""}${x.team_page ? ` · ${link(x.team_page, "on the fund's team page")}` : ""}`),
       ...(ip.board_people.length ? [] : ip.fund_entity.map(x => `${link(x.url, x.name)} · ${esc(x.role)}`)),
       ...ip.ops_people.map(x => `${link(x.url, x.name)}, ${esc(x.title)}`),
     ];
     return `<div class="pc"><div class="top"><b>${B.website ? link(B.website, pretty(p.brand)) : esc(pretty(p.brand))}</b>
-        <span class="bdg ${ip.strength}">${ip.strength} route</span><span class="bdg ${p.confidence}">${p.confidence} confidence</span><span class="s">${p.score.toFixed(1)}</span></div>
+        <span class="bdg ${ip.strength}">${ip.strength} route</span><span class="bdg ${p.confidence}">${p.confidence} confidence</span><span class="s">${Math.round(p.score)}</span></div>
+      ${p.qualified ? "" : `<p class="small muted">Scores ${Math.round(p.score)} but nobody is named who could make this introduction, so it isn't counted as worth pursuing yet.</p>`}
       ${B.blurb ? `<p class="muted">${esc(B.blurb)}</p>` : ""}
       <div class="ev">
         <span>Retail reach</span><span class="chips">${stateTag(ev.reach.state)} ${retail}</span>
@@ -969,7 +1029,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     if (f.support.length) side.push(`<div><p class="label">Portfolio support it shows</p><ul>${f.support.map(c => `<li>${link(c.url, c.text)}</li>`).join("")}</ul></div>`);
     side.push(`<div><p class="label">Sources</p><ul>${[f.website, ...(f.portfolio_urls || [])].filter(Boolean).map(u => `<li>${link(u, host(u) + new URL(u).pathname.replace(/\/$/, ""))}</li>`).join("")}</ul></div>`);
     return `<div class="dos-head"><h2>${esc(f.fund)}</h2>${f.tier !== "-" ? `<span class="tier ${f.tier}">${f.tier}</span>` : ""}</div>
-      <p class="facts">${f.selected ? `#${f.rank} of ${C.shortlist_size}` : "Not in the 20"} · score ${f.score.toFixed(1)} · ${f.fund_type} · ${plural(f.pairs.length, "target brand")} · rank ${f.rank_range[0] === f.rank_range[1] ? "unchanged" : `between ${f.rank_range[0]} and ${f.rank_range[1]}`} across the weight tests${f.about ? `<br>${esc(f.about)}` : ""}</p>
+      <p class="facts">${f.selected ? `#${f.rank} of ${C.shortlist_size}` : "Not in the 20"} · score ${Math.round(f.score)} · ${f.fund_type} · ${plural(f.pairs.length, "target brand")} · rank ${f.rank_range[0] === f.rank_range[1] ? "unchanged" : `between ${f.rank_range[0]} and ${f.rank_range[1]}`} across the weight tests${f.about ? `<br>${esc(f.about)}` : ""}</p>
       <p class="callout">${esc(f.rationale)}</p>
       <div><p class="label">Next steps</p><ol class="steps">${f.next_steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol></div>
       <div style="display:grid;gap:10px"><p class="label">Intro opportunities, best first</p>${f.pairs.map(pairCard).join("")}</div>
@@ -1154,9 +1214,9 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   document.getElementById("x-why").innerHTML = XF.map(f => {
     const b = f.pairs[0], bp = b.intro.board_people[0];
     const rr = f.rank_range[0] === f.rank_range[1] ? `#${f.rank} in every weight test` : `between #${f.rank_range[0]} and #${f.rank_range[1]} in every weight test`;
-    return `<button type="button" class="card fund" data-x="${esc(f.fund)}"><div class="top"><span class="rank">#${f.rank}</span><h3>${esc(f.fund)}</h3><span class="score">${f.score.toFixed(1)}</span></div>
+    return `<button type="button" class="card fund" data-x="${esc(f.fund)}"><div class="top"><span class="rank">#${f.rank}</span><h3>${esc(f.fund)}</h3><span class="score">${Math.round(f.score)}</span></div>
       <p>${esc(f.fund_type)} · ${esc(f.about || "")} · ${rr}</p>
-      <p>Best opportunity: <b>${esc(b.brand)}</b> (${b.score.toFixed(1)}), with ${plural(b.fit.evidence.reach.items.length, "grocer")} confirmed${bp ? ` and ${esc(bp.name)} on its board since ${esc(bp.since.slice(0, 7))}` : ""}.</p>
+      <p>Best opportunity: <b>${esc(b.brand)}</b> (${Math.round(b.score)}), with ${plural(b.fit.evidence.reach.items.length, "grocer")} confirmed${bp ? ` and ${esc(bp.name)} on its board since ${esc(bp.since.slice(0, 7))}` : ""}.</p>
       <p class="small">Open the full dossier →</p></button>`;
   }).join("");
   document.querySelectorAll("[data-x]").forEach(b => b.addEventListener("click", () => select(b.dataset.x)));

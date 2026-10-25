@@ -6,7 +6,7 @@
   {
    "fund": "Piper",
    "fund_type": "PE",
-   "score": 72.6,
+   "score": 71.4,
    "pairs": [
     {
      "brand": "Borough Broth",
@@ -57,19 +57,34 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-03-30",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/09590728/filing-history/MzUxMzI4MjY3NGFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2025-12-17",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/09590728/filing-history/MzQ5NDk0Njk1MmFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": "2025-12-01",
           "text": "Borough Broth secures £7.5m investment to expand organic range",
-          "url": "https://www.foodbev.com/news/borough-broth-secures-7-5m-investment-to-accelerate-sustainable-growth"
+          "url": "https://www.foodbev.com/news/borough-broth-secures-7-5m-investment-to-accelerate-sustainable-growth",
+          "source": "foodbev.com"
          },
          {
           "date": null,
           "text": "Hiring: Operations",
-          "url": "https://boroughbroth.co.uk/pages/careers"
+          "url": "https://boroughbroth.co.uk/pages/careers",
+          "source": "job board"
          },
          {
           "date": null,
           "text": "Hiring: Customer Service",
-          "url": "https://boroughbroth.co.uk/pages/careers"
+          "url": "https://boroughbroth.co.uk/pages/careers",
+          "source": "job board"
          }
         ]
        },
@@ -134,29 +149,28 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://piper.co.uk/our-brands/borough-broth/"
+     "fund_source": "https://piper.co.uk/our-brands/borough-broth/",
+     "qualified": true
     },
     {
      "brand": "Wild Nutrition",
-     "score": 56.1,
+     "score": 52.0,
      "fit": {
-      "fit": 0.701,
+      "fit": 0.65,
       "parts": {
        "reach": 1.0,
-       "why_now": 0.145,
+       "why_now": 0.0,
        "size": 1.0,
        "uk": 1.0
       },
       "why_now_parts": {
        "listings": 0.0,
-       "funding": 0.483,
+       "funding": 0.0,
        "ops_hiring": 0.0,
        "expansion": 0
       },
       "stack_mult": 1.0,
-      "stack": [
-       "funding"
-      ],
+      "stack": [],
       "evidence": {
        "reach": {
         "state": "confirmed",
@@ -241,7 +255,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://piper.co.uk/our-brands/wild-nutrition/"
+     "fund_source": "https://piper.co.uk/our-brands/wild-nutrition/",
+     "qualified": true
     },
     {
      "brand": "Reeve the Baker",
@@ -270,8 +285,15 @@
         "items": []
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-10-07",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/02088228/filing-history/MzU0OTc3Mzc4N2FkaXF6a2N4",
+          "source": "Companies House"
+         }
+        ]
        },
        "size": {
         "state": "confirmed",
@@ -328,7 +350,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://piper.co.uk/"
+     "fund_source": "https://piper.co.uk/",
+     "qualified": true
     }
    ],
    "qualified": 3,
@@ -384,7 +407,7 @@
    "rationale": "Backs Borough Broth (Sainsbury's, Tesco), Wild Nutrition (Holland & Barrett, Boots) and Reeve the Baker; Rory Gibbs sits on Borough Broth's board.",
    "next_steps": [
     "Ask Rory Gibbs, on Borough Broth's board, for an intro to the founder.",
-    "Lead with: Borough Broth secures £7.5m investment to expand organic range (2025-12)."
+    "Lead with: Share allotment filed at Companies House (2026-03)."
    ],
    "rank_range": [
     1,
@@ -451,7 +474,20 @@
          {
           "date": "2026-10-19",
           "text": "Tom Parker Creamery expands range with Golden Milk",
-          "url": "https://www.grocerygazette.co.uk/2026/10/19/tom-parker-creamery-expands-range-with-golden-milk/"
+          "url": "https://www.grocerygazette.co.uk/2026/10/19/tom-parker-creamery-expands-range-with-golden-milk/",
+          "source": "grocerygazette.co.uk"
+         },
+         {
+          "date": "2026-10-05",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/10397498/filing-history/MzU0OTI5MTI1NWFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2026-01-23",
+          "text": "Tom Parker Creamery",
+          "url": "https://www.british-business-bank.co.uk/case-studies/tom-parker-creamery",
+          "source": "british-business-bank.co.uk"
          }
         ]
        },
@@ -519,7 +555,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.mavencp.com/our-portfolio/tom-parker-creamery"
+     "fund_source": "https://www.mavencp.com/our-portfolio/tom-parker-creamery",
+     "qualified": true
     },
     {
      "brand": "Tiba Tempeh",
@@ -568,7 +605,20 @@
          {
           "date": "2025-04-14",
           "text": "Tiba Tempeh launches new SKU, lands in Waitrose",
-          "url": "https://www.foodmanufacture.co.uk/Article/2025/04/14/tiba-tempeh-launches-new-sku-lands-in-waitrose/"
+          "url": "https://www.foodmanufacture.co.uk/Article/2025/04/14/tiba-tempeh-launches-new-sku-lands-in-waitrose/",
+          "source": "foodmanufacture.co.uk"
+         },
+         {
+          "date": "2025-04-09",
+          "text": "Tiba Tempeh Launches New Smoky Block As Distribution Expands",
+          "url": "https://plantbasednews.org/lifestyle/food/tiba-tempeh-smoky-block/",
+          "source": "plantbasednews.org"
+         },
+         {
+          "date": "2025-03-10",
+          "text": "Newcastle meat free firm Tiba Tempeh seals £1m investment deal",
+          "url": "https://www.business-live.co.uk/enterprise/newcastle-meat-free-firm-tiba-31169374",
+          "source": "business-live.co.uk"
          }
         ]
        },
@@ -628,7 +678,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.mavencp.com/our-portfolio/tiba-tempeh"
+     "fund_source": "https://www.mavencp.com/our-portfolio/tiba-tempeh",
+     "qualified": true
     }
    ],
    "qualified": 2,
@@ -744,9 +795,16 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2025-10-02",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/08651758/filing-history/MzQ4MzU4OTE5M2FkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": "2025-05-09",
           "text": "Russell Bisset: how Northern Monk is keeping the faith",
-          "url": "https://www.thegrocer.co.uk/interviews/russell-bisset-how-northern-monk-is-keeping-the-faith/704273.article"
+          "url": "https://www.thegrocer.co.uk/interviews/russell-bisset-how-northern-monk-is-keeping-the-faith/704273.article",
+          "source": "thegrocer.co.uk"
          }
         ]
        },
@@ -809,7 +867,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://active.partners/company-profile/northern-monk/"
+     "fund_source": "https://active.partners/company-profile/northern-monk/",
+     "qualified": true
     },
     {
      "brand": "All Things",
@@ -870,12 +929,20 @@
          {
           "date": "2026-09-26",
           "text": "All Things expands into US with nationwide Whole Foods butter launch",
-          "url": "https://www.thegrocer.co.uk/news/all-things-expands-into-us-with-nationwide-whole-foods-butter-launch/723782.article"
+          "url": "https://www.thegrocer.co.uk/news/all-things-expands-into-us-with-nationwide-whole-foods-butter-launch/723782.article",
+          "source": "thegrocer.co.uk"
          },
          {
-          "date": "2026-04-16",
-          "text": "UK dairy brand All Things secures funding with US push on horizon",
-          "url": "https://www.just-food.com/news/all-things-secures-funding/"
+          "date": "2026-09-18",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/14833009/filing-history/MzU0NTY1NTU3MWFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2026-06-08",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/14833009/filing-history/MzUyNTg3MzE4MmFkaXF6a2N4",
+          "source": "Companies House"
          }
         ]
        },
@@ -930,7 +997,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://active.partners/company-profile/all-things-butter/"
+     "fund_source": "https://active.partners/company-profile/all-things-butter/",
+     "qualified": true
     },
     {
      "brand": "Botivo",
@@ -972,8 +1040,21 @@
         ]
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-09-14",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/14346064/filing-history/MzU0NDUyOTU0NGFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2026-08-20",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/14346064/filing-history/MzUzOTk2MzU4NWFkaXF6a2N4",
+          "source": "Companies House"
+         }
+        ]
        },
        "size": {
         "state": "confirmed",
@@ -1026,7 +1107,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://active.partners/company-profile/botivo/"
+     "fund_source": "https://active.partners/company-profile/botivo/",
+     "qualified": true
     },
     {
      "brand": "Marleybones",
@@ -1073,14 +1155,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-07-24",
+          "text": "Marleybones lands biggest UK retailer yet, expands to 430 stores",
+          "url": "https://150sec.com/marleybones-lands-biggest-uk-retailer-yet-expands-to-430-stores/",
+          "source": "150sec.com"
+         },
+         {
           "date": "2026-07-17",
           "text": "Marleybones expands into Pets at Home stores",
-          "url": "https://www.petfoodprocessing.net/articles/20685-marleybones-expands-into-pets-at-home-stores"
+          "url": "https://www.petfoodprocessing.net/articles/20685-marleybones-expands-into-pets-at-home-stores",
+          "source": "petfoodprocessing.net"
          },
          {
           "date": "2025-11-04",
           "text": "Marleybones raises seven-figure funding from Estée Lauder heiress Jane Lauder",
-          "url": "https://www.thegrocer.co.uk/news/marleybones-raises-seven-figure-funding-from-estee-lauder-heiress-jane-lauder/711483.article"
+          "url": "https://www.thegrocer.co.uk/news/marleybones-raises-seven-figure-funding-from-estee-lauder-heiress-jane-lauder/711483.article",
+          "source": "thegrocer.co.uk"
          }
         ]
        },
@@ -1135,7 +1225,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": true
     },
     {
      "brand": "All the Aunties",
@@ -1229,7 +1320,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://active.partners/company-profile/all-the-aunties/"
+     "fund_source": "https://active.partners/company-profile/all-the-aunties/",
+     "qualified": true
     },
     {
      "brand": "Freja",
@@ -1288,17 +1380,20 @@
          {
           "date": "2026-09-24",
           "text": "Freja enters ambient soup category with bone broth-based range",
-          "url": "https://www.foodbev.com/news/freja-enters-ambient-soup-category-with-bone-broth-based-range"
+          "url": "https://www.foodbev.com/news/freja-enters-ambient-soup-category-with-bone-broth-based-range",
+          "source": "foodbev.com"
          },
          {
           "date": "2025-09-16",
           "text": "Bone broth challenger Freja appoints new MD to help drive growth",
-          "url": "https://www.thegrocer.co.uk/news/bone-broth-challenger-freja-appoints-new-md-to-help-drive-growth/709438.article"
+          "url": "https://www.thegrocer.co.uk/news/bone-broth-challenger-freja-appoints-new-md-to-help-drive-growth/709438.article",
+          "source": "thegrocer.co.uk"
          },
          {
           "date": "2025-01-16",
           "text": "Freja Bone Broth launches in Tesco nationwide",
-          "url": "https://www.foodanddrinktechnology.com/news/56839/freja-bone-broth-launches-in-tesco-nationwide/"
+          "url": "https://www.foodanddrinktechnology.com/news/56839/freja-bone-broth-launches-in-tesco-nationwide/",
+          "source": "foodanddrinktechnology.com"
          }
         ]
        },
@@ -1353,7 +1448,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://active.partners/company-profile/freja/"
+     "fund_source": "https://active.partners/company-profile/freja/",
+     "qualified": true
     },
     {
      "brand": "KatKin",
@@ -1394,22 +1490,32 @@
          {
           "date": "2025-12-18",
           "text": "KatKin raises $50 million to expand fresh cat food",
-          "url": "https://www.petfoodindustry.com/news-newsletters/pet-food-news/news/15774475/katkin-raises-50-million-to-expand-fresh-cat-food"
+          "url": "https://www.petfoodindustry.com/news-newsletters/pet-food-news/news/15774475/katkin-raises-50-million-to-expand-fresh-cat-food",
+          "source": "petfoodindustry.com"
+         },
+         {
+          "date": "2025-12-16",
+          "text": "Cat food maker KatKin secures funding to boost UK expansion",
+          "url": "https://www.just-food.com/news/cat-food-maker-katkin-secures-funding-to-boost-uk-expansion/",
+          "source": "just-food.com"
          },
          {
           "date": "2024-11-15",
           "text": "KatKin expands cat nutrition team",
-          "url": "https://www.petfoodprocessing.net/articles/18719-katkin-expands-cat-nutrition-team"
+          "url": "https://www.petfoodprocessing.net/articles/18719-katkin-expands-cat-nutrition-team",
+          "source": "petfoodprocessing.net"
          },
          {
           "date": null,
           "text": "Hiring: Logistics Coordinator",
-          "url": "https://katkin.jobs.personio.com/"
+          "url": "https://katkin.jobs.personio.com/",
+          "source": "job board"
          },
          {
           "date": null,
           "text": "Hiring: Logistics Contractor (flexible, part-time contractor role) Manchester area",
-          "url": "https://katkin.jobs.personio.com/"
+          "url": "https://katkin.jobs.personio.com/",
+          "source": "job board"
          }
         ]
        },
@@ -1464,7 +1570,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://active.partners/company-profile/katkin/"
+     "fund_source": "https://active.partners/company-profile/katkin/",
+     "qualified": true
     },
     {
      "brand": "STOCKED",
@@ -1505,9 +1612,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-10-05",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/12788957/filing-history/MzU0OTI4NjczNmFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2025-11-17",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/12788957/filing-history/MzQ4OTE4MTk1MmFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": "2025-08-13",
           "text": "Stocked readies retail expansion as it secures seven-figure sum in seed funding round",
-          "url": "https://www.thegrocer.co.uk/news/stocked-readies-retail-expansion-as-it-secures-seven-figure-sum-in-seed-funding-round/708113.article"
+          "url": "https://www.thegrocer.co.uk/news/stocked-readies-retail-expansion-as-it-secures-seven-figure-sum-in-seed-funding-round/708113.article",
+          "source": "thegrocer.co.uk"
          }
         ]
        },
@@ -1562,7 +1682,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://active.partners/company-profile/stocked/"
+     "fund_source": "https://active.partners/company-profile/stocked/",
+     "qualified": true
     }
    ],
    "qualified": 8,
@@ -1595,7 +1716,7 @@
    "rationale": "Backs Northern Monk (Morrisons, Tesco), All Things (Ocado, Asda) and Botivo (Waitrose, Ocado); Spencer Skinner sits on Northern Monk's board.",
    "next_steps": [
     "Ask Spencer Skinner, on Northern Monk's board, for an intro to the founder.",
-    "Lead with: Russell Bisset: how Northern Monk is keeping the faith (2025-05)."
+    "Lead with: Share allotment filed at Companies House (2025-10)."
    ],
    "rank_range": [
     1,
@@ -1650,7 +1771,8 @@
          {
           "date": "2026-09-24",
           "text": "Joe & Seph’s lands £100k Saudi supermarket deal with government backing",
-          "url": "https://www.grocerygazette.co.uk/2026/09/22/joe-sephs-lands-100k-saudi-supermarket-deal-with-government-backing/"
+          "url": "https://www.grocerygazette.co.uk/2026/09/22/joe-sephs-lands-100k-saudi-supermarket-deal-with-government-backing/",
+          "source": "grocerygazette.co.uk"
          }
         ]
        },
@@ -1710,7 +1832,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.bgf.co.uk/portfolio/joe-and-sephs/"
+     "fund_source": "https://www.bgf.co.uk/portfolio/joe-and-sephs/",
+     "qualified": true
     },
     {
      "brand": "THIS",
@@ -1825,7 +1948,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.bgf.co.uk/portfolio/this/"
+     "fund_source": "https://www.bgf.co.uk/portfolio/this/",
+     "qualified": true
     },
     {
      "brand": "Bella & Duke",
@@ -1867,14 +1991,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-04-27",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/SC547789/filing-history/MzUxODQxMzQwNmFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": null,
           "text": "Hiring: Warehouse Operative + Picker Packer, Inverkeithing - KY11 1HZ",
-          "url": "https://www.bellaandduke.com/careers/"
+          "url": "https://www.bellaandduke.com/careers/",
+          "source": "job board"
          },
          {
           "date": null,
           "text": "Hiring: Supply Chain Planner, Inverkeithing, KY11 1HZ, In Person",
-          "url": "https://www.bellaandduke.com/careers/"
+          "url": "https://www.bellaandduke.com/careers/",
+          "source": "job board"
          }
         ]
        },
@@ -1934,7 +2066,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.bgf.co.uk/portfolio/bella-and-duke/"
+     "fund_source": "https://www.bgf.co.uk/portfolio/bella-and-duke/",
+     "qualified": true
     },
     {
      "brand": "Scrumbles",
@@ -2045,7 +2178,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.bgf.co.uk/portfolio/scrumbles/"
+     "fund_source": "https://www.bgf.co.uk/portfolio/scrumbles/",
+     "qualified": true
     }
    ],
    "qualified": 4,
@@ -2164,9 +2298,16 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-05-08",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/10940084/filing-history/MzUyMDQzMDY1MWFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": null,
           "text": "Hiring: OPS & LOGISTICS",
-          "url": "https://www.hackneygelato.com/careers"
+          "url": "https://www.hackneygelato.com/careers",
+          "source": "job board"
          }
         ]
        },
@@ -2232,7 +2373,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.pembrokevct.com/portfolio/hackney-gelato/"
+     "fund_source": "https://www.pembrokevct.com/portfolio/hackney-gelato/",
+     "qualified": true
     }
    ],
    "qualified": 1,
@@ -2280,7 +2422,8 @@
    "tier": "B",
    "rationale": "Backs Hackney Gelato (Sainsbury's, Waitrose); Adrian Harris (Portfolio Director) runs portfolio support.",
    "next_steps": [
-    "Ask Adrian Harris (Portfolio Director) for an intro to Hackney Gelato."
+    "Ask Adrian Harris (Portfolio Director) for an intro to Hackney Gelato.",
+    "Lead with: New charge (debt facility) filed at Companies House (2026-05)."
    ],
    "rank_range": [
     4,
@@ -2332,14 +2475,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-04-27",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/SC547789/filing-history/MzUxODQxMzQwNmFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": null,
           "text": "Hiring: Warehouse Operative + Picker Packer, Inverkeithing - KY11 1HZ",
-          "url": "https://www.bellaandduke.com/careers/"
+          "url": "https://www.bellaandduke.com/careers/",
+          "source": "job board"
          },
          {
           "date": null,
           "text": "Hiring: Supply Chain Planner, Inverkeithing, KY11 1HZ, In Person",
-          "url": "https://www.bellaandduke.com/careers/"
+          "url": "https://www.bellaandduke.com/careers/",
+          "source": "job board"
          }
         ]
        },
@@ -2407,7 +2558,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.bgf.co.uk/portfolio/bella-and-duke/"
+     "fund_source": "https://www.bgf.co.uk/portfolio/bella-and-duke/",
+     "qualified": true
     },
     {
      "brand": "Parsley Box",
@@ -2493,7 +2645,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://greshamhouseventures.com/portfolio/parsley-box/"
+     "fund_source": "https://greshamhouseventures.com/portfolio/parsley-box/",
+     "qualified": false
     }
    ],
    "qualified": 1,
@@ -2532,7 +2685,8 @@
    "rationale": "Backs Bella & Duke (Sainsbury's, Waitrose); Shalin Pather sits on Bella & Duke's board.",
    "next_steps": [
     "Confirm Gresham House Ventures still holds Bella & Duke.",
-    "Ask Shalin Pather, on Bella & Duke's board, for an intro to the founder."
+    "Ask Shalin Pather, on Bella & Duke's board, for an intro to the founder.",
+    "Lead with: New charge (debt facility) filed at Companies House (2026-04)."
    ],
    "rank_range": [
     4,
@@ -2585,9 +2739,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2025-08-06",
+          "text": "London's FoodTech startup Better Nature bites into UK’s €3.7 billion chicken market with €1.2 million funding boost",
+          "url": "https://www.eu-startups.com/2025/08/londons-foodtech-startup-better-nature-bites-into-uks-e3-7-billion-chicken-market-with-e1-2-million-funding-boost/",
+          "source": "eu-startups.com"
+         },
+         {
+          "date": "2025-07-02",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/11613856/filing-history/MzQ3MjEzMzkyNGFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": "2025-04-09",
           "text": "Tempeh Brand Better Nature Launches at Hundreds of REWE Stores Across Germany",
-          "url": "https://vegconomist.com/retail-e-commerce/tempeh-brand-better-nature-launches-hundreds-rewe-stores-germany/"
+          "url": "https://vegconomist.com/retail-e-commerce/tempeh-brand-better-nature-launches-hundreds-rewe-stores-germany/",
+          "source": "vegconomist.com"
          }
         ]
        },
@@ -2650,7 +2817,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.ascension.vc/portfolio/better-nature"
+     "fund_source": "https://www.ascension.vc/portfolio/better-nature",
+     "qualified": true
     }
    ],
    "qualified": 1,
@@ -2680,11 +2848,11 @@
    "next_steps": [
     "Confirm Ascension still holds Better Nature.",
     "Ask Emma Steele, on Better Nature's board, for an intro to the founder.",
-    "Lead with: Tempeh Brand Better Nature Launches at Hundreds of REWE Stores Across Germany (2025-04)."
+    "Lead with: London's FoodTech startup Better Nature bites into UK’s €3.7 billion chicken mar (2025-08)."
    ],
    "rank_range": [
     6,
-    12
+    11
    ]
   },
   {
@@ -2784,7 +2952,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://vegcapital.co.uk/portfolio/"
+     "fund_source": "https://vegcapital.co.uk/portfolio/",
+     "qualified": false
     },
     {
      "brand": "One Planet Pizza",
@@ -2831,14 +3000,22 @@
         "state": "confirmed",
         "items": [
          {
-          "date": "2026-10-03",
-          "text": "One Planet Pizza Enters Frozen Ready Meals With Three-Dish Asda Exclusive",
-          "url": "https://vegconomist.com/products-launches/one-planet-pizza-enters-frozen-ready-meals-three-dish-asda-exclusive/"
+          "date": "2026-10-17",
+          "text": "One Planet Pizza expands into ready meals category with new Asda launch",
+          "url": "https://www.theplantbasemag.com/news/one-planet-pizza-expands-into-ready-meals-with-new-asda-launch",
+          "source": "theplantbasemag.com"
+         },
+         {
+          "date": "2026-10-10",
+          "text": "One Planet Pizza launches wholesome new ready meal range with up to 24g of protein per portion",
+          "url": "https://www.veganfoodandliving.com/news/one-planet-pizza-vegan-ready-meals/",
+          "source": "veganfoodandliving.com"
          },
          {
           "date": "2026-05-18",
           "text": "‘Just Getting Started’: One Planet Pizza Passes £1 Million In Sales",
-          "url": "https://plantbasednews.org/lifestyle/food/one-planet-pizza-passes-million-sa/"
+          "url": "https://plantbasednews.org/lifestyle/food/one-planet-pizza-passes-million-sa/",
+          "source": "plantbasednews.org"
          }
         ]
        },
@@ -2878,7 +3055,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://vegcapital.co.uk/portfolio/"
+     "fund_source": "https://vegcapital.co.uk/portfolio/",
+     "qualified": false
     },
     {
      "brand": "Shicken (Plant Alternative)",
@@ -2950,22 +3128,23 @@
       }
      },
      "confidence": "High",
-     "fund_source": "veg capital portfolio page (funds.jsonl)"
+     "fund_source": "veg capital portfolio page (funds.jsonl)",
+     "qualified": false
     },
     {
      "brand": "OGGS",
-     "score": 5.6,
+     "score": 5.5,
      "fit": {
-      "fit": 0.559,
+      "fit": 0.549,
       "parts": {
        "reach": 1,
-       "why_now": 0.126,
+       "why_now": 0.096,
        "size": 0.6,
        "uk": 0.5
       },
       "why_now_parts": {
        "listings": 0.0,
-       "funding": 0.099,
+       "funding": 0.0,
        "ops_hiring": 0.333,
        "expansion": 0.195
       },
@@ -3011,14 +3190,16 @@
         "state": "confirmed",
         "items": [
          {
-          "date": "2025-01-22",
-          "text": "My Alternative CV: Oggs CEO Hannah Carter on dyslexia, buyer meetings and animal welfare",
-          "url": "https://www.thegrocer.co.uk/profiles/oggs-ceo-hannah-carter-on-dyslexia-buyer-meetings-and-animal-welfare/700073.article"
+          "date": "2025-01-16",
+          "text": "Oggs dodges Brexit ‘complexities’ with European production move",
+          "url": "https://www.thegrocer.co.uk/news/oggs-dodges-brexit-complexities-with-european-production-move/699891.article",
+          "source": "thegrocer.co.uk"
          },
          {
           "date": null,
           "text": "Hiring: Supply Chain Resilience",
-          "url": "https://www.loveoggs.com/careers/"
+          "url": "https://www.loveoggs.com/careers/",
+          "source": "job board"
          }
         ]
        },
@@ -3058,7 +3239,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://vegcapital.co.uk/portfolio/"
+     "fund_source": "https://vegcapital.co.uk/portfolio/",
+     "qualified": false
     },
     {
      "brand": "Native Snacks",
@@ -3141,7 +3323,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "veg capital portfolio page (funds.jsonl)"
+     "fund_source": "veg capital portfolio page (funds.jsonl)",
+     "qualified": false
     },
     {
      "brand": "THIS",
@@ -3236,7 +3419,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://www.bgf.co.uk/portfolio/this/"
+     "fund_source": "https://www.bgf.co.uk/portfolio/this/",
+     "qualified": false
     },
     {
      "brand": "Mister Free'd",
@@ -3331,7 +3515,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://vegcapital.co.uk/portfolio/"
+     "fund_source": "https://vegcapital.co.uk/portfolio/",
+     "qualified": false
     },
     {
      "brand": "Grounded",
@@ -3406,10 +3591,11 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://vegcapital.co.uk/portfolio/"
+     "fund_source": "https://vegcapital.co.uk/portfolio/",
+     "qualified": false
     }
    ],
-   "qualified": 2,
+   "qualified": 0,
    "set_aside": [],
    "procuros_overlap": [],
    "ops_people": [],
@@ -3417,7 +3603,7 @@
    "rank": 8,
    "selected": true,
    "tier": "B",
-   "rationale": "Backs Mummy Meegz (Waitrose, Ocado) and One Planet Pizza (Asda, Morrisons); the fund is on Mummy Meegz's Companies House register.",
+   "rationale": "Backs Mummy Meegz (Waitrose, Ocado); the fund is on Mummy Meegz's Companies House register.",
    "next_steps": [
     "Find which Veg Capital partner holds the board seat at Mummy Meegz, then ask them."
    ],
@@ -3462,19 +3648,34 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-07-27",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/08199354/filing-history/MzUzNDg5MTY2M2FkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2026-05-20",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/08199354/filing-history/MzUyNzc2NTI5NWFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": "2025-07-23",
           "text": "Pure Pet Food’s sales double after hefty investment",
-          "url": "https://www.thegrocer.co.uk/news/pure-pet-foods-sales-double-after-hefty-investment/707262.article"
+          "url": "https://www.thegrocer.co.uk/news/pure-pet-foods-sales-double-after-hefty-investment/707262.article",
+          "source": "thegrocer.co.uk"
          },
          {
           "date": null,
           "text": "Hiring: Customer Service Advisor",
-          "url": "https://www.purepetfood.com/careers"
+          "url": "https://www.purepetfood.com/careers",
+          "source": "job board"
          },
          {
           "date": null,
           "text": "Hiring: Strategy Operations Manager",
-          "url": "https://www.purepetfood.com/careers"
+          "url": "https://www.purepetfood.com/careers",
+          "source": "job board"
          }
         ]
        },
@@ -3528,7 +3729,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.felixcap.com/nwol-2/pure"
+     "fund_source": "https://www.felixcap.com/nwol-2/pure",
+     "qualified": true
     },
     {
      "brand": "PerfectTed",
@@ -3585,7 +3787,8 @@
          {
           "date": "2025-09-30",
           "text": "PerfectTed secures blockbuster valuation in seven-figure VC investment round",
-          "url": "https://www.thegrocer.co.uk/news/perfectted-secures-blockbuster-valuation-in-seven-figure-vc-investment-round/710056.article"
+          "url": "https://www.thegrocer.co.uk/news/perfectted-secures-blockbuster-valuation-in-seven-figure-vc-investment-round/710056.article",
+          "source": "thegrocer.co.uk"
          }
         ]
        },
@@ -3625,7 +3828,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://www.felixcap.com/nwol-2/perfected"
+     "fund_source": "https://www.felixcap.com/nwol-2/perfected",
+     "qualified": false
     }
    ],
    "qualified": 1,
@@ -3639,7 +3843,7 @@
    "rationale": "Backs Pure; Antoine Nussenbaum sits on Pure's board.",
    "next_steps": [
     "Ask Antoine Nussenbaum, on Pure's board, for an intro to the founder.",
-    "Lead with: Pure Pet Food’s sales double after hefty investment (2025-07)."
+    "Lead with: Share allotment filed at Companies House (2026-07)."
    ],
    "rank_range": [
     7,
@@ -3682,9 +3886,16 @@
         "state": "confirmed",
         "items": [
          {
-          "date": "2025-01-24",
-          "text": "UK’s Bramble Foods Group snaps up Whitakers Chocolates",
-          "url": "https://www.just-food.com/news/bramble-foods-buys-whitakers/"
+          "date": "2026-08-10",
+          "text": "Whitakers Chocolates parent group, Bramble Foods, unveils core expansion",
+          "url": "https://www.confectioneryproduction.com/news/59008/whitakers-chocolates-parent-group-bramble-foods-unveils-core-expansion/",
+          "source": "confectioneryproduction.com"
+         },
+         {
+          "date": "2025-01-29",
+          "text": "Skipton's Whitakers Chocolates bought by Bramble Foods",
+          "url": "https://www.cravenherald.co.uk/news/24893584.skiptons-whitakers-chocolates-bought-bramble-foods/",
+          "source": "cravenherald.co.uk"
          }
         ]
        },
@@ -3746,7 +3957,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.ldc.co.uk/portfolio/bramble-foods-supporting-a-market-leading-food-manufacturer/"
+     "fund_source": "https://www.ldc.co.uk/portfolio/bramble-foods-supporting-a-market-leading-food-manufacturer/",
+     "qualified": true
     }
    ],
    "qualified": 1,
@@ -3797,7 +4009,7 @@
    "rationale": "Backs Bramble Foods; Andy Holman (Portfolio Director) runs portfolio support.",
    "next_steps": [
     "Ask Andy Holman (Portfolio Director) for an intro to Bramble Foods.",
-    "Lead with: UK’s Bramble Foods Group snaps up Whitakers Chocolates (2025-01)."
+    "Lead with: Whitakers Chocolates parent group, Bramble Foods, unveils core expansion (2026-08)."
    ],
    "rank_range": [
     7,
@@ -3805,9 +4017,383 @@
    ]
   },
   {
+   "fund": "Exponent",
+   "fund_type": "PE",
+   "score": 21.6,
+   "pairs": [
+    {
+     "brand": "PROPER SNACKS",
+     "score": 28.1,
+     "fit": {
+      "fit": 0.702,
+      "parts": {
+       "reach": 1,
+       "why_now": 0.148,
+       "size": 1.0,
+       "uk": 1.0
+      },
+      "why_now_parts": {
+       "listings": 0.0,
+       "funding": 0.272,
+       "ops_hiring": 0.333,
+       "expansion": 0
+      },
+      "stack_mult": 1.0,
+      "stack": [
+       "ops_hiring"
+      ],
+      "evidence": {
+       "reach": {
+        "state": "confirmed",
+        "items": [
+         {
+          "name": "Ocado",
+          "url": "https://www.ocado.com/products/propercorn-sweet-salty-multipack/307754011"
+         },
+         {
+          "name": "Sainsbury's",
+          "url": "https://www.sainsburys.co.uk/groceries/product/propercorn-lightly-sea-salted-popcorn-multipack-6x10g"
+         },
+         {
+          "name": "Asda",
+          "url": "https://www.asda.com/groceries/product/sharing-popcorn/propercorn-sea-salted-popcorn-70g/5748063"
+         },
+         {
+          "name": "Tesco",
+          "url": "https://www.tesco.com/shop/en-GB/products/274110433"
+         },
+         {
+          "name": "Morrisons",
+          "url": "https://groceries.morrisons.com/products/propercorn-sweet-salty-popcorn/110260760"
+         },
+         {
+          "name": "Co-op",
+          "url": "https://shop.coop.co.uk/product/propercorn-sweet-salty-popcorn-90g--5060283760072"
+         },
+         {
+          "name": "Waitrose",
+          "url": "https://www.waitrose.com/ecom/products/propercorn-smoky-sweet-paprika-popcorn/922995-829942-829943"
+         }
+        ]
+       },
+       "why_now": {
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2025-07-21",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/13071913/filing-history/MzQ3NDQ2ODcwN2FkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2025-03-25",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/13071913/filing-history/MzQ2MDAxNDg4MWFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": null,
+          "text": "Hiring: Supply Chain",
+          "url": "https://careers.propersnacks.com/",
+          "source": "job board"
+         }
+        ]
+       },
+       "size": {
+        "state": "confirmed",
+        "note": "files full or group accounts (usually £10m+ turnover)",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/13071913"
+       },
+       "uk": {
+        "state": "confirmed",
+        "note": "UK company PROPER SNACKS LIMITED (13071913)",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/13071913"
+       },
+       "manual_process": {
+        "state": "not observable",
+        "note": "No public source shows how orders and invoices are handled; ask on the call."
+       }
+      }
+     },
+     "intro": {
+      "path": 0.4,
+      "strength": "Good",
+      "parts": {
+       "listed": 0.1,
+       "board": 0.0,
+       "ops_person": 0.0,
+       "support": 0.1,
+       "held": 0.2
+      },
+      "board_people": [],
+      "fund_entity": [],
+      "ops_people": [],
+      "support": [
+       {
+        "text": "our network",
+        "url": "http://www.exponentpe.com/our-network"
+       }
+      ],
+      "held": {
+       "state": "confirmed",
+       "source": "fund invested recently, no exit found: invested in Proper Snacks (2026) (https://pitchbook.com/profiles/company/155865-79)"
+      }
+     },
+     "confidence": "High",
+     "fund_source": "https://www.exponentpe.com/our-portfolio/proper-snacks",
+     "qualified": false
+    },
+    {
+     "brand": "Vibrant Foods",
+     "score": 13.6,
+     "fit": {
+      "fit": 0.679,
+      "parts": {
+       "reach": 1,
+       "why_now": 0.082,
+       "size": 1.0,
+       "uk": 1.0
+      },
+      "why_now_parts": {
+       "listings": 0.0,
+       "funding": 0.272,
+       "ops_hiring": 0.0,
+       "expansion": 0
+      },
+      "stack_mult": 1.0,
+      "stack": [],
+      "evidence": {
+       "reach": {
+        "state": "confirmed",
+        "items": [
+         {
+          "name": "Asda",
+          "url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=ktc&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+         },
+         {
+          "name": "Tesco",
+          "url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=ktc&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
+         },
+         {
+          "name": "Sainsbury's",
+          "url": "https://www.sainsburys.co.uk/groceries/product/ktc-chopped-tomatoes-400g"
+         },
+         {
+          "name": "Ocado",
+          "url": "https://zoom.ocado.com/ktc-italian-chopped-tomato-400g-621515011"
+         },
+         {
+          "name": "Co-op",
+          "url": "https://shop.coop.co.uk/product/ktc-minced-garlic-paste-210g--5013635389520"
+         },
+         {
+          "name": "Morrisons",
+          "url": "https://groceries.morrisons.com/products/ktc-peeled-chopped-tomatoes-in-tomato-juice-400g/100382780"
+         }
+        ]
+       },
+       "why_now": {
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2025-10-08",
+          "text": "Vibrant Foods turnaround plan shows green shoots",
+          "url": "https://www.thegrocer.co.uk/news/vibrant-foods-turnaround-plan-shows-green-shoots/710413.article",
+          "source": "thegrocer.co.uk"
+         },
+         {
+          "date": "2024-11-06",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/11995168/filing-history/MzQ0MjE5NjkyMGFkaXF6a2N4",
+          "source": "Companies House"
+         }
+        ]
+       },
+       "size": {
+        "state": "confirmed",
+        "note": "files full or group accounts (usually £10m+ turnover)",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/11995168"
+       },
+       "uk": {
+        "state": "confirmed",
+        "note": "UK company VIBRANT FOODS LIMITED (11995168)",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/11995168"
+       },
+       "manual_process": {
+        "state": "not observable",
+        "note": "No public source shows how orders and invoices are handled; ask on the call."
+       }
+      }
+     },
+     "intro": {
+      "path": 0.2,
+      "strength": "Weak",
+      "parts": {
+       "listed": 0.1,
+       "board": 0.0,
+       "ops_person": 0.0,
+       "support": 0.1,
+       "held": 0.0
+      },
+      "board_people": [],
+      "fund_entity": [],
+      "ops_people": [],
+      "support": [
+       {
+        "text": "our network",
+        "url": "http://www.exponentpe.com/our-network"
+       }
+      ],
+      "held": {
+       "state": "unconfirmed",
+       "source": "portfolio page"
+      }
+     },
+     "confidence": "Medium",
+     "fund_source": "https://www.exponentpe.com/our-portfolio/trs-east-end-foods",
+     "qualified": false
+    },
+    {
+     "brand": "Gü",
+     "score": 11.3,
+     "fit": {
+      "fit": 0.566,
+      "parts": {
+       "reach": 1,
+       "why_now": 0.147,
+       "size": 0.6,
+       "uk": 0.5
+      },
+      "why_now_parts": {
+       "listings": 0.0,
+       "funding": 0.0,
+       "ops_hiring": 0.0,
+       "expansion": 0.978
+      },
+      "stack_mult": 1.0,
+      "stack": [
+       "expansion"
+      ],
+      "evidence": {
+       "reach": {
+        "state": "confirmed",
+        "items": [
+         {
+          "name": "Tesco",
+          "url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=G%C3%BC&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
+         },
+         {
+          "name": "Co-op",
+          "url": "https://shop.coop.co.uk/product/gu-chocolate-honeycomb-cheesecake-dessert-2-x-86-5g-173g--5060425288129"
+         },
+         {
+          "name": "Sainsbury's",
+          "url": "https://www.sainsburys.co.uk/groceries/product/g-ultimate-chocolate-cheesecake-dessert-2-x-85g"
+         },
+         {
+          "name": "Waitrose",
+          "url": "https://www.waitrose.com/ecom/products/gu-new-york-cheesecakes/655861-825161-825162"
+         },
+         {
+          "name": "Asda",
+          "url": "https://www.asda.com/groceries/product/cheesecakes/gu-new-york-cheesecake-dessert-2-x-70g/9353403"
+         }
+        ]
+       },
+       "why_now": {
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-01-16",
+          "text": "Gü doubles down on indulgence with branding refresh amidst global expansion",
+          "url": "https://bakeryinfo.co.uk/finished-goods/gu-doubles-down-on-indulgence-with-branding-refresh-amidst-global-expansion/713955.article",
+          "source": "bakeryinfo.co.uk"
+         }
+        ]
+       },
+       "size": {
+        "state": "assumed",
+        "note": "no accounts matched; sized from retail reach",
+        "url": null
+       },
+       "uk": {
+        "state": "assumed",
+        "note": "sold by UK retailers, UK entity not matched",
+        "url": null
+       },
+       "manual_process": {
+        "state": "not observable",
+        "note": "No public source shows how orders and invoices are handled; ask on the call."
+       }
+      }
+     },
+     "intro": {
+      "path": 0.2,
+      "strength": "Weak",
+      "parts": {
+       "listed": 0.1,
+       "board": 0.0,
+       "ops_person": 0.0,
+       "support": 0.1,
+       "held": 0.0
+      },
+      "board_people": [],
+      "fund_entity": [],
+      "ops_people": [],
+      "support": [
+       {
+        "text": "our network",
+        "url": "http://www.exponentpe.com/our-network"
+       }
+      ],
+      "held": {
+       "state": "unconfirmed",
+       "source": "portfolio page"
+      }
+     },
+     "confidence": "Low",
+     "fund_source": "https://www.exponentpe.com/our-portfolio/gu",
+     "qualified": false
+    }
+   ],
+   "qualified": 0,
+   "set_aside": [
+    {
+     "brand": "Loch Lomond Group",
+     "reason": "sold",
+     "status": "exited_old"
+    },
+    {
+     "brand": "Quorn Foods",
+     "reason": "over the £100m ICP band (global meat-alternative group, £200m+)",
+     "status": "exited_old"
+    }
+   ],
+   "procuros_overlap": [],
+   "ops_people": [],
+   "support": [
+    {
+     "text": "our network",
+     "url": "http://www.exponentpe.com/our-network"
+    }
+   ],
+   "rank": 11,
+   "selected": true,
+   "tier": "B",
+   "rationale": "Backs PROPER SNACKS (Ocado, Sainsbury's); no named route yet, so the first job is finding the deal partner.",
+   "next_steps": [
+    "Find the deal partner for PROPER SNACKS and look for a mutual connection.",
+    "Lead with: Share allotment filed at Companies House (2025-07)."
+   ],
+   "rank_range": [
+    10,
+    13
+   ]
+  },
+  {
    "fund": "SFC Capital",
    "fund_type": "VC",
-   "score": 21.6,
+   "score": 21.3,
    "pairs": [
     {
      "brand": "Hunter & Gather",
@@ -3856,14 +4442,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-10-01",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/10469907/filing-history/MzU0ODc2MjYzOWFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": "2025-10-22",
           "text": "Hunter & Gather clean label mayo sees 107% growth and gets Waitrose listing",
-          "url": "https://www.foodmanufacture.co.uk/Article/2025/10/22/hunter-gather-clean-label-mayo-sees-107-growth-and-gets-waitrose-listing/"
+          "url": "https://www.foodmanufacture.co.uk/Article/2025/10/22/hunter-gather-clean-label-mayo-sees-107-growth-and-gets-waitrose-listing/",
+          "source": "foodmanufacture.co.uk"
          },
          {
           "date": "2025-08-12",
           "text": "Hunter & Gather set for next stage of growth as it raises £1m",
-          "url": "https://www.thegrocer.co.uk/news/hunter-and-gather-set-for-next-stage-of-growth-as-it-raises-1m/708046.article"
+          "url": "https://www.thegrocer.co.uk/news/hunter-and-gather-set-for-next-stage-of-growth-as-it-raises-1m/708046.article",
+          "source": "thegrocer.co.uk"
          }
         ]
        },
@@ -3903,205 +4497,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
-    },
-    {
-     "brand": "Free Soul",
-     "score": 21.1,
-     "fit": {
-      "fit": 0.702,
-      "parts": {
-       "reach": 1,
-       "why_now": 0.535,
-       "size": 0.6,
-       "uk": 0.5
-      },
-      "why_now_parts": {
-       "listings": 0.174,
-       "funding": 1,
-       "ops_hiring": 0.333,
-       "expansion": 0
-      },
-      "stack_mult": 1.25,
-      "stack": [
-       "funding",
-       "ops_hiring"
-      ],
-      "evidence": {
-       "reach": {
-        "state": "confirmed",
-        "items": [
-         {
-          "name": "Boots",
-          "url": "https://www.boots.com/free-soul-vegan-protein-chocolate-powder-5-sachets-30g-10380519"
-         },
-         {
-          "name": "Holland & Barrett",
-          "url": "https://www.hollandandbarrett.com/shop/product/free-soul-vegan-protein-blend-vanilla-600-g-6100023923"
-         },
-         {
-          "name": "Tesco",
-          "url": "https://www.tesco.com/shop/en-GB/products/323779984"
-         },
-         {
-          "name": "Ocado",
-          "url": "https://www.ocado.com/products/free-soul-vegan-protein-blend-chocolate-sachets/700052011"
-         },
-         {
-          "name": "Waitrose",
-          "url": "https://www.waitrose.com/ecom/products/free-soul-greens-sachets-mango-7s/340452-1-2"
-         },
-         {
-          "name": "Sainsbury's",
-          "url": "https://www.sainsburys.co.uk/gol-ui/product/free-soul-7-x-5g-greens-mango-flavour-sachets"
-         }
-        ]
-       },
-       "why_now": {
-        "state": "confirmed",
-        "items": [
-         {
-          "date": "2025-09-03",
-          "text": "Free Soul lands in more than 60 Boots stores nationwide",
-          "url": "https://www.insidermedia.com/news/national/free-soul-lands-in-more-than-60-boots-stores-nationwide"
-         },
-         {
-          "date": null,
-          "text": "Hiring: Operations team",
-          "url": "https://freesoul.teamtailor.com/jobs"
-         }
-        ]
-       },
-       "size": {
-        "state": "assumed",
-        "note": "no accounts matched; sized from retail reach",
-        "url": null
-       },
-       "uk": {
-        "state": "assumed",
-        "note": "sold by UK retailers, UK entity not matched",
-        "url": null
-       },
-       "manual_process": {
-        "state": "not observable",
-        "note": "No public source shows how orders and invoices are handled; ask on the call."
-       }
-      }
-     },
-     "intro": {
-      "path": 0.3,
-      "strength": "Weak",
-      "parts": {
-       "listed": 0.1,
-       "board": 0.0,
-       "ops_person": 0.0,
-       "support": 0.0,
-       "held": 0.2
-      },
-      "board_people": [],
-      "fund_entity": [],
-      "ops_people": [],
-      "support": [],
-      "held": {
-       "state": "confirmed",
-       "source": "partial exit only, fund still holds: SFC Capital Partially Exits Free Soul 29 Jul 2026 · SFC Capital announces a partial exit from Free Soul with a 3.9x return, highlighting the (2026) (https://sfccapital.com/blog/free-soul-partial-exit)"
-      }
-     },
-     "confidence": "Medium",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
-    },
-    {
-     "brand": "G Spot",
-     "score": 20.9,
-     "fit": {
-      "fit": 0.698,
-      "parts": {
-       "reach": 0.75,
-       "why_now": 0.773,
-       "size": 0.6,
-       "uk": 0.5
-      },
-      "why_now_parts": {
-       "listings": 0.909,
-       "funding": 1,
-       "ops_hiring": 0.0,
-       "expansion": 0
-      },
-      "stack_mult": 1.25,
-      "stack": [
-       "listings",
-       "funding"
-      ],
-      "evidence": {
-       "reach": {
-        "state": "confirmed",
-        "items": [
-         {
-          "name": "Ocado",
-          "url": "https://www.ocado.com/products/g-spot-awaken-passionfruit-and-habanero/671298011"
-         },
-         {
-          "name": "Sainsbury's",
-          "url": "https://www.sainsburys.co.uk/groceries/product/g-spot-red-berries-sarawak-sparkling-functional-drink-4-x-250ml"
-         },
-         {
-          "name": "M&S",
-          "url": "https://www.marksandspencer.com/food/g-spot-awaken/p/fdp61281797"
-         }
-        ]
-       },
-       "why_now": {
-        "state": "confirmed",
-        "items": [
-         {
-          "date": "2025-01-13",
-          "text": "Sainsbury’s lists G Spot by Gillian Anderson",
-          "url": "https://www.foodanddrinktechnology.com/news/56775/sainsburys-lists-g-spot-by-gillian-anderson/"
-         },
-         {
-          "date": "2024-11-12",
-          "text": "G Spot secures strategic investment from Heineken",
-          "url": "https://www.foodbev.com/news/g-spot-secures-strategic-investment-from-heineken"
-         }
-        ]
-       },
-       "size": {
-        "state": "assumed",
-        "note": "no accounts matched; sized from retail reach",
-        "url": null
-       },
-       "uk": {
-        "state": "assumed",
-        "note": "sold by UK retailers, UK entity not matched",
-        "url": null
-       },
-       "manual_process": {
-        "state": "not observable",
-        "note": "No public source shows how orders and invoices are handled; ask on the call."
-       }
-      }
-     },
-     "intro": {
-      "path": 0.3,
-      "strength": "Weak",
-      "parts": {
-       "listed": 0.1,
-       "board": 0.0,
-       "ops_person": 0.0,
-       "support": 0.0,
-       "held": 0.2
-      },
-      "board_people": [],
-      "fund_entity": [],
-      "ops_people": [],
-      "support": [],
-      "held": {
-       "state": "confirmed",
-       "source": "fund invested recently, no exit found: invested in G Spot (2026) (https://pitchbook.com/profiles/company/528824-35)"
-      }
-     },
-     "confidence": "Medium",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Punchy",
@@ -4151,8 +4548,27 @@
         ]
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-08-20",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/11056237/filing-history/MzUzOTkyNjU0MmFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2026-02-13",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/11056237/filing-history/MzUwNDkyMTU5MGFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2025-09-11",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/11056237/filing-history/MzQ4MDU3OTY0OWFkaXF6a2N4",
+          "source": "Companies House"
+         }
+        ]
        },
        "size": {
         "state": "confirmed",
@@ -4190,7 +4606,224 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
+    },
+    {
+     "brand": "Free Soul",
+     "score": 18.8,
+     "fit": {
+      "fit": 0.628,
+      "parts": {
+       "reach": 1,
+       "why_now": 0.322,
+       "size": 0.6,
+       "uk": 0.5
+      },
+      "why_now_parts": {
+       "listings": 0.174,
+       "funding": 0.434,
+       "ops_hiring": 0.333,
+       "expansion": 0
+      },
+      "stack_mult": 1.25,
+      "stack": [
+       "funding",
+       "ops_hiring"
+      ],
+      "evidence": {
+       "reach": {
+        "state": "confirmed",
+        "items": [
+         {
+          "name": "Boots",
+          "url": "https://www.boots.com/free-soul-vegan-protein-chocolate-powder-5-sachets-30g-10380519"
+         },
+         {
+          "name": "Holland & Barrett",
+          "url": "https://www.hollandandbarrett.com/shop/product/free-soul-vegan-protein-blend-vanilla-600-g-6100023923"
+         },
+         {
+          "name": "Tesco",
+          "url": "https://www.tesco.com/shop/en-GB/products/323779984"
+         },
+         {
+          "name": "Ocado",
+          "url": "https://www.ocado.com/products/free-soul-vegan-protein-blend-chocolate-sachets/700052011"
+         },
+         {
+          "name": "Waitrose",
+          "url": "https://www.waitrose.com/ecom/products/free-soul-greens-sachets-mango-7s/340452-1-2"
+         },
+         {
+          "name": "Sainsbury's",
+          "url": "https://www.sainsburys.co.uk/gol-ui/product/free-soul-7-x-5g-greens-mango-flavour-sachets"
+         }
+        ]
+       },
+       "why_now": {
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-08-29",
+          "text": "Free Soul: the thriving women’s health brand investors scoffed at",
+          "url": "https://www.thetimes.com/business/entrepreneurs/article/free-soul-womens-health-sb0qnpbbh",
+          "source": "thetimes.com"
+         },
+         {
+          "date": "2025-09-03",
+          "text": "Free Soul lands in more than 60 Boots stores nationwide",
+          "url": "https://www.insidermedia.com/news/national/free-soul-lands-in-more-than-60-boots-stores-nationwide",
+          "source": "insidermedia.com"
+         },
+         {
+          "date": null,
+          "text": "Hiring: Operations team",
+          "url": "https://freesoul.teamtailor.com/jobs",
+          "source": "job board"
+         }
+        ]
+       },
+       "size": {
+        "state": "assumed",
+        "note": "no accounts matched; sized from retail reach",
+        "url": null
+       },
+       "uk": {
+        "state": "assumed",
+        "note": "sold by UK retailers, UK entity not matched",
+        "url": null
+       },
+       "manual_process": {
+        "state": "not observable",
+        "note": "No public source shows how orders and invoices are handled; ask on the call."
+       }
+      }
+     },
+     "intro": {
+      "path": 0.3,
+      "strength": "Weak",
+      "parts": {
+       "listed": 0.1,
+       "board": 0.0,
+       "ops_person": 0.0,
+       "support": 0.0,
+       "held": 0.2
+      },
+      "board_people": [],
+      "fund_entity": [],
+      "ops_people": [],
+      "support": [],
+      "held": {
+       "state": "confirmed",
+       "source": "partial exit only, fund still holds: SFC Capital Partially Exits Free Soul 29 Jul 2026 · SFC Capital announces a partial exit from Free Soul with a 3.9x return, highlighting the (2026) (https://sfccapital.com/blog/free-soul-partial-exit)"
+      }
+     },
+     "confidence": "Medium",
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
+    },
+    {
+     "brand": "G Spot",
+     "score": 17.7,
+     "fit": {
+      "fit": 0.59,
+      "parts": {
+       "reach": 0.75,
+       "why_now": 0.463,
+       "size": 0.6,
+       "uk": 0.5
+      },
+      "why_now_parts": {
+       "listings": 0.501,
+       "funding": 0.65,
+       "ops_hiring": 0.0,
+       "expansion": 0
+      },
+      "stack_mult": 1.25,
+      "stack": [
+       "listings",
+       "funding"
+      ],
+      "evidence": {
+       "reach": {
+        "state": "confirmed",
+        "items": [
+         {
+          "name": "Ocado",
+          "url": "https://www.ocado.com/products/g-spot-awaken-passionfruit-and-habanero/671298011"
+         },
+         {
+          "name": "Sainsbury's",
+          "url": "https://www.sainsburys.co.uk/groceries/product/g-spot-red-berries-sarawak-sparkling-functional-drink-4-x-250ml"
+         },
+         {
+          "name": "M&S",
+          "url": "https://www.marksandspencer.com/food/g-spot-awaken/p/fdp61281797"
+         }
+        ]
+       },
+       "why_now": {
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-08-01",
+          "text": "Gillian Anderson’s ‘G Spot’ drink hits the shelves at M&S",
+          "url": "https://www.thetimes.com/business/companies-markets/article/gillian-andersons-g-spot-drink-m-and-s-2ncds7gzg",
+          "source": "thetimes.com"
+         },
+         {
+          "date": "2025-01-13",
+          "text": "Sainsbury’s lists G Spot by Gillian Anderson",
+          "url": "https://www.foodanddrinktechnology.com/news/56775/sainsburys-lists-g-spot-by-gillian-anderson/",
+          "source": "foodanddrinktechnology.com"
+         },
+         {
+          "date": "2024-11-12",
+          "text": "G Spot secures strategic investment from Heineken",
+          "url": "https://www.foodbev.com/news/g-spot-secures-strategic-investment-from-heineken",
+          "source": "foodbev.com"
+         }
+        ]
+       },
+       "size": {
+        "state": "assumed",
+        "note": "no accounts matched; sized from retail reach",
+        "url": null
+       },
+       "uk": {
+        "state": "assumed",
+        "note": "sold by UK retailers, UK entity not matched",
+        "url": null
+       },
+       "manual_process": {
+        "state": "not observable",
+        "note": "No public source shows how orders and invoices are handled; ask on the call."
+       }
+      }
+     },
+     "intro": {
+      "path": 0.3,
+      "strength": "Weak",
+      "parts": {
+       "listed": 0.1,
+       "board": 0.0,
+       "ops_person": 0.0,
+       "support": 0.0,
+       "held": 0.2
+      },
+      "board_people": [],
+      "fund_entity": [],
+      "ops_people": [],
+      "support": [],
+      "held": {
+       "state": "confirmed",
+       "source": "fund invested recently, no exit found: invested in G Spot (2026) (https://pitchbook.com/profiles/company/528824-35)"
+      }
+     },
+     "confidence": "Medium",
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Olly's",
@@ -4277,7 +4910,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Solo Coffee",
@@ -4314,9 +4948,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-10-23",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/10098371/filing-history/MzU1MjU4MjE1N2FkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2025-07-16",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/10098371/filing-history/MzQ3Mzk0NDIxNGFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": "2025-05-14",
           "text": "Solo Coffee lands Tesco deal with launch of ready-to-go espresso",
-          "url": "https://retailtimes.co.uk/solo-coffee-lands-tesco-deal-with-launch-of-ready-to-go-espresso/"
+          "url": "https://retailtimes.co.uk/solo-coffee-lands-tesco-deal-with-launch-of-ready-to-go-espresso/",
+          "source": "retailtimes.co.uk"
          }
         ]
        },
@@ -4356,7 +5003,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Some Grub",
@@ -4388,8 +5036,21 @@
         ]
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2025-06-12",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/13132625/filing-history/MzQ2OTcwOTcxMmFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2025-03-25",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/13132625/filing-history/MzQ1OTc2ODc0NGFkaXF6a2N4",
+          "source": "Companies House"
+         }
+        ]
        },
        "size": {
         "state": "confirmed",
@@ -4427,7 +5088,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Gusto Snacks",
@@ -4459,8 +5121,15 @@
         ]
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2025-02-26",
+          "text": "Wonky apple war: Has Holland & Barrett stolen Gusto Snacks’ crunch?",
+          "url": "https://www.bakeryandsnacks.com/Article/2025/02/26/wonky-apple-war-did-holland-barrett-steal-gustos-crunch/",
+          "source": "bakeryandsnacks.com"
+         }
+        ]
        },
        "size": {
         "state": "confirmed",
@@ -4498,7 +5167,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Sweet Joe's",
@@ -4569,7 +5239,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Ingenious",
@@ -4635,7 +5306,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "ON Beer",
@@ -4664,8 +5336,15 @@
         "items": []
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-03-17",
+          "text": "ON Beer, The World’s First Non-Alcoholic Beer with Real Effects, Secures First UK National Listing at Dishoom",
+          "url": "https://barmagazine.co.uk/on-beer-the-worlds-first-non-alcoholic-beer-with-real-effects-secures-first-uk-national-listing-at-dishoom/",
+          "source": "barmagazine.co.uk"
+         }
+        ]
        },
        "size": {
         "state": "assumed",
@@ -4703,7 +5382,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Griddle",
@@ -4769,7 +5449,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Naturelly Jelly Juice",
@@ -4835,7 +5516,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Oteas",
@@ -4901,7 +5583,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "Hope & Glory",
@@ -4967,7 +5650,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://portal.sfccapital.com/portfolio"
+     "fund_source": "https://portal.sfccapital.com/portfolio",
+     "qualified": false
     },
     {
      "brand": "TOSS",
@@ -5033,374 +5717,26 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://www.grocerygazette.co.uk/2026/08/13/toss-secures-660k-in-investment-funding/"
+     "fund_source": "https://www.grocerygazette.co.uk/2026/08/13/toss-secures-660k-in-investment-funding/",
+     "qualified": false
     }
    ],
-   "qualified": 4,
+   "qualified": 0,
    "set_aside": [],
    "procuros_overlap": [],
    "ops_people": [],
    "support": [],
-   "rank": 11,
+   "rank": 12,
    "selected": true,
    "tier": "B",
-   "rationale": "Backs Hunter & Gather (Waitrose, Ocado), Free Soul (Boots, Holland & Barrett) and G Spot (Ocado, Sainsbury's); no named route yet, so the first job is finding the deal partner.",
+   "rationale": "Backs Hunter & Gather (Waitrose, Ocado); no named route yet, so the first job is finding the deal partner.",
    "next_steps": [
     "Find the deal partner for Hunter & Gather and look for a mutual connection.",
-    "Lead with: Hunter & Gather clean label mayo sees 107% growth and gets Waitrose listing (2025-10)."
+    "Lead with: New charge (debt facility) filed at Companies House (2026-10)."
    ],
    "rank_range": [
     3,
     14
-   ]
-  },
-  {
-   "fund": "Exponent",
-   "fund_type": "PE",
-   "score": 21.6,
-   "pairs": [
-    {
-     "brand": "PROPER SNACKS",
-     "score": 28.1,
-     "fit": {
-      "fit": 0.702,
-      "parts": {
-       "reach": 1,
-       "why_now": 0.148,
-       "size": 1.0,
-       "uk": 1.0
-      },
-      "why_now_parts": {
-       "listings": 0.0,
-       "funding": 0.272,
-       "ops_hiring": 0.333,
-       "expansion": 0
-      },
-      "stack_mult": 1.0,
-      "stack": [
-       "ops_hiring"
-      ],
-      "evidence": {
-       "reach": {
-        "state": "confirmed",
-        "items": [
-         {
-          "name": "Ocado",
-          "url": "https://www.ocado.com/products/propercorn-sweet-salty-multipack/307754011"
-         },
-         {
-          "name": "Sainsbury's",
-          "url": "https://www.sainsburys.co.uk/groceries/product/propercorn-lightly-sea-salted-popcorn-multipack-6x10g"
-         },
-         {
-          "name": "Asda",
-          "url": "https://www.asda.com/groceries/product/sharing-popcorn/propercorn-sea-salted-popcorn-70g/5748063"
-         },
-         {
-          "name": "Tesco",
-          "url": "https://www.tesco.com/shop/en-GB/products/274110433"
-         },
-         {
-          "name": "Morrisons",
-          "url": "https://groceries.morrisons.com/products/propercorn-sweet-salty-popcorn/110260760"
-         },
-         {
-          "name": "Co-op",
-          "url": "https://shop.coop.co.uk/product/propercorn-sweet-salty-popcorn-90g--5060283760072"
-         },
-         {
-          "name": "Waitrose",
-          "url": "https://www.waitrose.com/ecom/products/propercorn-smoky-sweet-paprika-popcorn/922995-829942-829943"
-         }
-        ]
-       },
-       "why_now": {
-        "state": "confirmed",
-        "items": [
-         {
-          "date": null,
-          "text": "Hiring: Supply Chain",
-          "url": "https://careers.propersnacks.com/"
-         }
-        ]
-       },
-       "size": {
-        "state": "confirmed",
-        "note": "files full or group accounts (usually £10m+ turnover)",
-        "url": "https://find-and-update.company-information.service.gov.uk/company/13071913"
-       },
-       "uk": {
-        "state": "confirmed",
-        "note": "UK company PROPER SNACKS LIMITED (13071913)",
-        "url": "https://find-and-update.company-information.service.gov.uk/company/13071913"
-       },
-       "manual_process": {
-        "state": "not observable",
-        "note": "No public source shows how orders and invoices are handled; ask on the call."
-       }
-      }
-     },
-     "intro": {
-      "path": 0.4,
-      "strength": "Good",
-      "parts": {
-       "listed": 0.1,
-       "board": 0.0,
-       "ops_person": 0.0,
-       "support": 0.1,
-       "held": 0.2
-      },
-      "board_people": [],
-      "fund_entity": [],
-      "ops_people": [],
-      "support": [
-       {
-        "text": "our network",
-        "url": "http://www.exponentpe.com/our-network"
-       }
-      ],
-      "held": {
-       "state": "confirmed",
-       "source": "fund invested recently, no exit found: invested in Proper Snacks (2026) (https://pitchbook.com/profiles/company/155865-79)"
-      }
-     },
-     "confidence": "High",
-     "fund_source": "https://www.exponentpe.com/our-portfolio/proper-snacks"
-    },
-    {
-     "brand": "Vibrant Foods",
-     "score": 13.6,
-     "fit": {
-      "fit": 0.679,
-      "parts": {
-       "reach": 1,
-       "why_now": 0.082,
-       "size": 1.0,
-       "uk": 1.0
-      },
-      "why_now_parts": {
-       "listings": 0.0,
-       "funding": 0.272,
-       "ops_hiring": 0.0,
-       "expansion": 0
-      },
-      "stack_mult": 1.0,
-      "stack": [],
-      "evidence": {
-       "reach": {
-        "state": "confirmed",
-        "items": [
-         {
-          "name": "Asda",
-          "url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=ktc&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
-         },
-         {
-          "name": "Tesco",
-          "url": "https://world.openfoodfacts.org/api/v2/search?brands_tags=ktc&countries_tags=en:united-kingdom&fields=product_name,brands,stores&page_size=50"
-         },
-         {
-          "name": "Sainsbury's",
-          "url": "https://www.sainsburys.co.uk/groceries/product/ktc-chopped-tomatoes-400g"
-         },
-         {
-          "name": "Ocado",
-          "url": "https://zoom.ocado.com/ktc-italian-chopped-tomato-400g-621515011"
-         },
-         {
-          "name": "Co-op",
-          "url": "https://shop.coop.co.uk/product/ktc-minced-garlic-paste-210g--5013635389520"
-         },
-         {
-          "name": "Morrisons",
-          "url": "https://groceries.morrisons.com/products/ktc-peeled-chopped-tomatoes-in-tomato-juice-400g/100382780"
-         }
-        ]
-       },
-       "why_now": {
-        "state": "confirmed",
-        "items": [
-         {
-          "date": "2025-10-08",
-          "text": "Vibrant Foods turnaround plan shows green shoots",
-          "url": "https://www.thegrocer.co.uk/news/vibrant-foods-turnaround-plan-shows-green-shoots/710413.article"
-         }
-        ]
-       },
-       "size": {
-        "state": "confirmed",
-        "note": "files full or group accounts (usually £10m+ turnover)",
-        "url": "https://find-and-update.company-information.service.gov.uk/company/11995168"
-       },
-       "uk": {
-        "state": "confirmed",
-        "note": "UK company VIBRANT FOODS LIMITED (11995168)",
-        "url": "https://find-and-update.company-information.service.gov.uk/company/11995168"
-       },
-       "manual_process": {
-        "state": "not observable",
-        "note": "No public source shows how orders and invoices are handled; ask on the call."
-       }
-      }
-     },
-     "intro": {
-      "path": 0.2,
-      "strength": "Weak",
-      "parts": {
-       "listed": 0.1,
-       "board": 0.0,
-       "ops_person": 0.0,
-       "support": 0.1,
-       "held": 0.0
-      },
-      "board_people": [],
-      "fund_entity": [],
-      "ops_people": [],
-      "support": [
-       {
-        "text": "our network",
-        "url": "http://www.exponentpe.com/our-network"
-       }
-      ],
-      "held": {
-       "state": "unconfirmed",
-       "source": "portfolio page"
-      }
-     },
-     "confidence": "Medium",
-     "fund_source": "https://www.exponentpe.com/our-portfolio/trs-east-end-foods"
-    },
-    {
-     "brand": "Gü",
-     "score": 11.3,
-     "fit": {
-      "fit": 0.566,
-      "parts": {
-       "reach": 1,
-       "why_now": 0.147,
-       "size": 0.6,
-       "uk": 0.5
-      },
-      "why_now_parts": {
-       "listings": 0.0,
-       "funding": 0.0,
-       "ops_hiring": 0.0,
-       "expansion": 0.978
-      },
-      "stack_mult": 1.0,
-      "stack": [
-       "expansion"
-      ],
-      "evidence": {
-       "reach": {
-        "state": "confirmed",
-        "items": [
-         {
-          "name": "Tesco",
-          "url": "https://world.openfoodfacts.org/cgi/search.pl?search_terms=G%C3%BC&json=1&page_size=50&fields=product_name,brands,stores,countries_tags"
-         },
-         {
-          "name": "Co-op",
-          "url": "https://shop.coop.co.uk/product/gu-chocolate-honeycomb-cheesecake-dessert-2-x-86-5g-173g--5060425288129"
-         },
-         {
-          "name": "Sainsbury's",
-          "url": "https://www.sainsburys.co.uk/groceries/product/g-ultimate-chocolate-cheesecake-dessert-2-x-85g"
-         },
-         {
-          "name": "Waitrose",
-          "url": "https://www.waitrose.com/ecom/products/gu-new-york-cheesecakes/655861-825161-825162"
-         },
-         {
-          "name": "Asda",
-          "url": "https://www.asda.com/groceries/product/cheesecakes/gu-new-york-cheesecake-dessert-2-x-70g/9353403"
-         }
-        ]
-       },
-       "why_now": {
-        "state": "confirmed",
-        "items": [
-         {
-          "date": "2026-01-16",
-          "text": "Gü doubles down on indulgence with branding refresh amidst global expansion",
-          "url": "https://bakeryinfo.co.uk/finished-goods/gu-doubles-down-on-indulgence-with-branding-refresh-amidst-global-expansion/713955.article"
-         }
-        ]
-       },
-       "size": {
-        "state": "assumed",
-        "note": "no accounts matched; sized from retail reach",
-        "url": null
-       },
-       "uk": {
-        "state": "assumed",
-        "note": "sold by UK retailers, UK entity not matched",
-        "url": null
-       },
-       "manual_process": {
-        "state": "not observable",
-        "note": "No public source shows how orders and invoices are handled; ask on the call."
-       }
-      }
-     },
-     "intro": {
-      "path": 0.2,
-      "strength": "Weak",
-      "parts": {
-       "listed": 0.1,
-       "board": 0.0,
-       "ops_person": 0.0,
-       "support": 0.1,
-       "held": 0.0
-      },
-      "board_people": [],
-      "fund_entity": [],
-      "ops_people": [],
-      "support": [
-       {
-        "text": "our network",
-        "url": "http://www.exponentpe.com/our-network"
-       }
-      ],
-      "held": {
-       "state": "unconfirmed",
-       "source": "portfolio page"
-      }
-     },
-     "confidence": "Low",
-     "fund_source": "https://www.exponentpe.com/our-portfolio/gu"
-    }
-   ],
-   "qualified": 1,
-   "set_aside": [
-    {
-     "brand": "Loch Lomond Group",
-     "reason": "sold",
-     "status": "exited_old"
-    },
-    {
-     "brand": "Quorn Foods",
-     "reason": "over the £100m ICP band (global meat-alternative group, £200m+)",
-     "status": "exited_old"
-    }
-   ],
-   "procuros_overlap": [],
-   "ops_people": [],
-   "support": [
-    {
-     "text": "our network",
-     "url": "http://www.exponentpe.com/our-network"
-    }
-   ],
-   "rank": 12,
-   "selected": true,
-   "tier": "B",
-   "rationale": "Backs PROPER SNACKS (Ocado, Sainsbury's); no named route yet, so the first job is finding the deal partner.",
-   "next_steps": [
-    "Find the deal partner for PROPER SNACKS and look for a mutual connection."
-   ],
-   "rank_range": [
-    10,
-    13
    ]
   },
   {
@@ -5440,8 +5776,21 @@
         ]
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-10-01",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/14198102/filing-history/MzU0ODc0MjAxNGFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
+          "date": "2025-07-27",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/14198102/filing-history/MzQ3NTI1NjMxOWFkaXF6a2N4",
+          "source": "Companies House"
+         }
+        ]
        },
        "size": {
         "state": "confirmed",
@@ -5507,7 +5856,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.livingbridge.com/portfolio/absolute-collagen"
+     "fund_source": "https://www.livingbridge.com/portfolio/absolute-collagen",
+     "qualified": true
     }
    ],
    "qualified": 1,
@@ -5533,7 +5883,8 @@
    "tier": "B",
    "rationale": "Backs Absolute Collagen (Boots); Mark Advani sits on Absolute Collagen's board.",
    "next_steps": [
-    "Ask Mark Advani, on Absolute Collagen's board, for an intro to the founder."
+    "Ask Mark Advani, on Absolute Collagen's board, for an intro to the founder.",
+    "Lead with: Share allotment filed at Companies House (2026-10)."
    ],
    "rank_range": [
     9,
@@ -5605,9 +5956,16 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-09-01",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/11525411/filing-history/MzU0MTg4NjI0NmFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": null,
           "text": "Hiring: UK Grocery Demand Planner",
-          "url": "https://mothdrinks.recruit.charliehr.com/careers"
+          "url": "https://mothdrinks.recruit.charliehr.com/careers",
+          "source": "job board"
          }
         ]
        },
@@ -5647,7 +6005,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.beringea.co.uk/portfolio/moth"
+     "fund_source": "https://www.beringea.co.uk/portfolio/moth",
+     "qualified": false
     },
     {
      "brand": "Lucky Saint",
@@ -5742,7 +6101,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": false
     },
     {
      "brand": "dash-water",
@@ -5795,14 +6155,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2025-07-21",
+          "text": "VCT-backed DASH Water: turning wonky fruit into a 40% market share seltzer",
+          "url": "https://www.wealthclub.co.uk/news-and-insights/dash-water-proven-vcts/",
+          "source": "wealthclub.co.uk"
+         },
+         {
           "date": null,
           "text": "Hiring: Supply Planning Manager",
-          "url": "https://apply.workable.com/dash-water/?lng=en"
+          "url": "https://apply.workable.com/dash-water/?lng=en",
+          "source": "job board"
          },
          {
           "date": null,
           "text": "Hiring: Operations",
-          "url": "https://apply.workable.com/dash-water/?lng=en"
+          "url": "https://apply.workable.com/dash-water/?lng=en",
+          "source": "job board"
          }
         ]
        },
@@ -5842,10 +6210,11 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.fiveseasons.vc/portfolio/"
+     "fund_source": "https://www.fiveseasons.vc/portfolio/",
+     "qualified": false
     }
    ],
-   "qualified": 1,
+   "qualified": 0,
    "set_aside": [],
    "procuros_overlap": [],
    "ops_people": [],
@@ -5855,7 +6224,8 @@
    "tier": "C",
    "rationale": "Backs MOTH (Tesco, Sainsbury's); no named route yet, so the first job is finding the deal partner.",
    "next_steps": [
-    "Find the deal partner for MOTH and look for a mutual connection."
+    "Find the deal partner for MOTH and look for a mutual connection.",
+    "Lead with: New charge (debt facility) filed at Companies House (2026-09)."
    ],
    "rank_range": [
     11,
@@ -5921,8 +6291,15 @@
         ]
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2025-10-17",
+          "text": "New Products: Pop-Tarts and Pitaya Foods Tackle Protein, LOVE CORN Caters to Trick-or-Treaters",
+          "url": "https://www.nosh.com/news/2025/new-products-pop-tarts-and-pitaya-foods-tackle-protein-love-corn-caters-to-trick-or-treaters/",
+          "source": "nosh.com"
+         }
+        ]
        },
        "size": {
         "state": "confirmed",
@@ -5960,7 +6337,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://investor.pumainvestments.co.uk/portfolio/love-corn"
+     "fund_source": "https://investor.pumainvestments.co.uk/portfolio/love-corn",
+     "qualified": false
     },
     {
      "brand": "Lucky Saint",
@@ -6055,7 +6433,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": false
     },
     {
      "brand": "MOTH",
@@ -6117,9 +6496,16 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-09-01",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/11525411/filing-history/MzU0MTg4NjI0NmFkaXF6a2N4",
+          "source": "Companies House"
+         },
+         {
           "date": null,
           "text": "Hiring: UK Grocery Demand Planner",
-          "url": "https://mothdrinks.recruit.charliehr.com/careers"
+          "url": "https://mothdrinks.recruit.charliehr.com/careers",
+          "source": "job board"
          }
         ]
        },
@@ -6159,7 +6545,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.beringea.co.uk/portfolio/moth"
+     "fund_source": "https://www.beringea.co.uk/portfolio/moth",
+     "qualified": false
     }
    ],
    "qualified": 0,
@@ -6172,7 +6559,8 @@
    "tier": "C",
    "rationale": "Backs LOVE CORN (Sainsbury's, Ocado); no named route yet, so the first job is finding the deal partner.",
    "next_steps": [
-    "Find the deal partner for LOVE CORN and look for a mutual connection."
+    "Find the deal partner for LOVE CORN and look for a mutual connection.",
+    "Lead with: New Products: Pop-Tarts and Pitaya Foods Tackle Protein, LOVE CORN Caters to Tri (2025-10)."
    ],
    "rank_range": [
     15,
@@ -6261,7 +6649,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.fiveseasons.vc/portfolio/"
+     "fund_source": "https://www.fiveseasons.vc/portfolio/",
+     "qualified": false
     },
     {
      "brand": "THIS",
@@ -6356,7 +6745,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.bgf.co.uk/portfolio/this/"
+     "fund_source": "https://www.bgf.co.uk/portfolio/this/",
+     "qualified": false
     },
     {
      "brand": "Space Goods",
@@ -6443,7 +6833,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://seedtable.com/investors/five-seasons-ventures/portfolio"
+     "fund_source": "https://seedtable.com/investors/five-seasons-ventures/portfolio",
+     "qualified": false
     },
     {
      "brand": "dash-water",
@@ -6496,14 +6887,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2025-07-21",
+          "text": "VCT-backed DASH Water: turning wonky fruit into a 40% market share seltzer",
+          "url": "https://www.wealthclub.co.uk/news-and-insights/dash-water-proven-vcts/",
+          "source": "wealthclub.co.uk"
+         },
+         {
           "date": null,
           "text": "Hiring: Supply Planning Manager",
-          "url": "https://apply.workable.com/dash-water/?lng=en"
+          "url": "https://apply.workable.com/dash-water/?lng=en",
+          "source": "job board"
          },
          {
           "date": null,
           "text": "Hiring: Operations",
-          "url": "https://apply.workable.com/dash-water/?lng=en"
+          "url": "https://apply.workable.com/dash-water/?lng=en",
+          "source": "job board"
          }
         ]
        },
@@ -6543,7 +6942,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.fiveseasons.vc/portfolio/"
+     "fund_source": "https://www.fiveseasons.vc/portfolio/",
+     "qualified": false
     }
    ],
    "qualified": 0,
@@ -6560,35 +6960,33 @@
    ],
    "rank_range": [
     9,
-    17
+    16
    ]
   },
   {
    "fund": "JamJar Investments",
    "fund_type": "VC",
-   "score": 12.9,
+   "score": 12.0,
    "pairs": [
     {
      "brand": "Popchips",
-     "score": 17.0,
+     "score": 15.4,
      "fit": {
-      "fit": 0.567,
+      "fit": 0.515,
       "parts": {
        "reach": 1,
-       "why_now": 0.15,
+       "why_now": 0.0,
        "size": 0.6,
        "uk": 0.5
       },
       "why_now_parts": {
        "listings": 0.0,
-       "funding": 0.499,
+       "funding": 0.0,
        "ops_hiring": 0.0,
        "expansion": 0
       },
       "stack_mult": 1.0,
-      "stack": [
-       "funding"
-      ],
+      "stack": [],
       "evidence": {
        "reach": {
         "state": "confirmed",
@@ -6663,7 +7061,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": false
     },
     {
      "brand": "Marleybones",
@@ -6710,14 +7109,22 @@
         "state": "confirmed",
         "items": [
          {
+          "date": "2026-07-24",
+          "text": "Marleybones lands biggest UK retailer yet, expands to 430 stores",
+          "url": "https://150sec.com/marleybones-lands-biggest-uk-retailer-yet-expands-to-430-stores/",
+          "source": "150sec.com"
+         },
+         {
           "date": "2026-07-17",
           "text": "Marleybones expands into Pets at Home stores",
-          "url": "https://www.petfoodprocessing.net/articles/20685-marleybones-expands-into-pets-at-home-stores"
+          "url": "https://www.petfoodprocessing.net/articles/20685-marleybones-expands-into-pets-at-home-stores",
+          "source": "petfoodprocessing.net"
          },
          {
           "date": "2025-11-04",
           "text": "Marleybones raises seven-figure funding from Estée Lauder heiress Jane Lauder",
-          "url": "https://www.thegrocer.co.uk/news/marleybones-raises-seven-figure-funding-from-estee-lauder-heiress-jane-lauder/711483.article"
+          "url": "https://www.thegrocer.co.uk/news/marleybones-raises-seven-figure-funding-from-estee-lauder-heiress-jane-lauder/711483.article",
+          "source": "thegrocer.co.uk"
          }
         ]
        },
@@ -6757,7 +7164,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": false
     },
     {
      "brand": "Humantra",
@@ -6810,7 +7218,14 @@
          {
           "date": "2025-07-22",
           "text": "Humantra launches into Boots as demand for electrolytes continues",
-          "url": "https://www.foodanddrinktechnology.com/news/60441/humantra-launches-into-boots-as-demand-for-electrolytes-continues/"
+          "url": "https://www.foodanddrinktechnology.com/news/60441/humantra-launches-into-boots-as-demand-for-electrolytes-continues/",
+          "source": "foodanddrinktechnology.com"
+         },
+         {
+          "date": "2025-05-30",
+          "text": "Innocent Drinks founders invest in hydration brand Humantra",
+          "url": "https://finance.yahoo.com/news/innocent-drinks-founders-invest-hydration-132153497.html",
+          "source": "finance.yahoo.com"
          }
         ]
        },
@@ -6850,7 +7265,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": false
     },
     {
      "brand": "XOXO",
@@ -6903,7 +7319,8 @@
          {
           "date": "2025-04-25",
           "text": "Xoxo Soda secures £4m funding and expands into national UK retail",
-          "url": "https://www.foodbev.com/news/xoxo-soda-secures-4m-funding-and-expands-into-national-uk-retail"
+          "url": "https://www.foodbev.com/news/xoxo-soda-secures-4m-funding-and-expands-into-national-uk-retail",
+          "source": "foodbev.com"
          }
         ]
        },
@@ -6943,7 +7360,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": false
     },
     {
      "brand": "Lucky Saint",
@@ -7038,7 +7456,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": false
     },
     {
      "brand": "Dot Dot Tea",
@@ -7109,7 +7528,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": false
     },
     {
      "brand": "Reformed",
@@ -7175,7 +7595,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio"
+     "fund_source": "https://www.jamjarinvestments.com/jamjar-portfolio",
+     "qualified": false
     }
    ],
    "qualified": 0,
@@ -7221,7 +7642,7 @@
     "Find the deal partner for Popchips and look for a mutual connection."
    ],
    "rank_range": [
-    11,
+    13,
     17
    ]
   },
@@ -7267,7 +7688,8 @@
          {
           "date": "2026-06-15",
           "text": "Sneak Energy lands additional listings across Bestway",
-          "url": "https://wholesalemanager.co.uk/sneak-energy-lands-additional-listings-across-bestway/"
+          "url": "https://wholesalemanager.co.uk/sneak-energy-lands-additional-listings-across-bestway/",
+          "source": "wholesalemanager.co.uk"
          }
         ]
        },
@@ -7307,7 +7729,8 @@
       }
      },
      "confidence": "High",
-     "fund_source": "https://www.true.global/case-study/sneak"
+     "fund_source": "https://www.true.global/case-study/sneak",
+     "qualified": false
     },
     {
      "brand": "seriouspig",
@@ -7334,8 +7757,15 @@
         "items": []
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2025-10-02",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/07015461/filing-history/MzQ4MzU2OTg4NWFkaXF6a2N4",
+          "source": "Companies House"
+         }
+        ]
        },
        "size": {
         "state": "confirmed",
@@ -7373,7 +7803,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://www.true.global/private-equity"
+     "fund_source": "https://www.true.global/private-equity",
+     "qualified": false
     }
    ],
    "qualified": 0,
@@ -7477,7 +7908,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://bigideaventures.com/portfolio/little-bandits/"
+     "fund_source": "https://bigideaventures.com/portfolio/little-bandits/",
+     "qualified": false
     },
     {
      "brand": "The Good Pulse Co",
@@ -7504,8 +7936,15 @@
         "items": []
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2024-11-26",
+          "text": "Share allotment filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/13801345/filing-history/MzQ0NDkxMDk3OGFkaXF6a2N4",
+          "source": "Companies House"
+         }
+        ]
        },
        "size": {
         "state": "confirmed",
@@ -7552,7 +7991,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://bigideaventures.com/portfolio/the-good-pulse-co/"
+     "fund_source": "https://bigideaventures.com/portfolio/the-good-pulse-co/",
+     "qualified": false
     }
    ],
    "qualified": 0,
@@ -7581,124 +8021,6 @@
     "Confirm Big Idea Ventures still holds Little Bandits.",
     "Check Little Bandits trades through a UK company.",
     "Find the deal partner for Little Bandits and look for a mutual connection."
-   ],
-   "rank_range": [
-    19,
-    21
-   ]
-  },
-  {
-   "fund": "The Craftory",
-   "fund_type": "VC",
-   "score": 3.4,
-   "pairs": [
-    {
-     "brand": "HIPPEAS",
-     "score": 5.9,
-     "fit": {
-      "fit": 0.585,
-      "parts": {
-       "reach": 1,
-       "why_now": 0.2,
-       "size": 0.6,
-       "uk": 0.5
-      },
-      "why_now_parts": {
-       "listings": 0.0,
-       "funding": 0.666,
-       "ops_hiring": 0.0,
-       "expansion": 0
-      },
-      "stack_mult": 1.0,
-      "stack": [
-       "funding"
-      ],
-      "evidence": {
-       "reach": {
-        "state": "confirmed",
-        "items": [
-         {
-          "name": "Tesco",
-          "url": "https://www.tesco.com/shop/en-GB/products/311448162"
-         },
-         {
-          "name": "Ocado",
-          "url": "https://www.ocado.com/products/hippeas-chickpea-puffs-sweet-smokin-multipack/538376011"
-         },
-         {
-          "name": "Morrisons",
-          "url": "https://groceries.morrisons.com/products/hippeas-sweet-smokin-5pk/112926094"
-         },
-         {
-          "name": "Asda",
-          "url": "https://www.asda.com/groceries/product/small-multipack-crisps-4-8-packs-/hippeas-chickpea-puffs-sweet-smokin-multipack-limited-edition-minions/7457992"
-         },
-         {
-          "name": "Sainsbury's",
-          "url": "https://www.sainsburys.co.uk/gol-ui/product/hippeas-chickpea-tortilla-snacks-rockin-ranch-flavour-130g"
-         },
-         {
-          "name": "Waitrose",
-          "url": "https://www.waitrose.com/ecom/products/hippeas-sweet-smokin/498617-678797-678798"
-         }
-        ]
-       },
-       "why_now": {
-        "state": "checked, none found",
-        "items": []
-       },
-       "size": {
-        "state": "assumed",
-        "note": "no accounts matched; sized from retail reach",
-        "url": null
-       },
-       "uk": {
-        "state": "assumed",
-        "note": "sold by UK retailers, UK entity not matched",
-        "url": null
-       },
-       "manual_process": {
-        "state": "not observable",
-        "note": "No public source shows how orders and invoices are handled; ask on the call."
-       }
-      }
-     },
-     "intro": {
-      "path": 0.1,
-      "strength": "Weak",
-      "parts": {
-       "listed": 0.1,
-       "board": 0.0,
-       "ops_person": 0.0,
-       "support": 0.0,
-       "held": 0.0
-      },
-      "board_people": [],
-      "fund_entity": [],
-      "ops_people": [],
-      "support": [],
-      "held": {
-       "state": "unconfirmed",
-       "source": "portfolio page"
-      }
-     },
-     "confidence": "Low",
-     "fund_source": "https://www.thecraftory.io/hippeas-investment-page"
-    }
-   ],
-   "qualified": 0,
-   "set_aside": [],
-   "procuros_overlap": [],
-   "ops_people": [],
-   "support": [],
-   "rank": 20,
-   "selected": true,
-   "tier": "C",
-   "rationale": "Backs HIPPEAS (Tesco, Ocado); no named route yet, so the first job is finding the deal partner.",
-   "next_steps": [
-    "Confirm The Craftory still holds HIPPEAS.",
-    "Check HIPPEAS trades through a UK company.",
-    "Find the deal partner for HIPPEAS and look for a mutual connection."
    ],
    "rank_range": [
     19,
@@ -7787,7 +8109,8 @@
       }
      },
      "confidence": "Medium",
-     "fund_source": "https://inverleith.com/investments/good-hemp/"
+     "fund_source": "https://inverleith.com/investments/good-hemp/",
+     "qualified": false
     },
     {
      "brand": "EDEN MILL St Andrews",
@@ -7821,8 +8144,15 @@
         ]
        },
        "why_now": {
-        "state": "checked, none found",
-        "items": []
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-04-24",
+          "text": "Eden Mill Names Steven Kersley as New CEO",
+          "url": "https://thewhiskeywash.com/whiskey-news/eden-mill-names-steven-kersley-as-new-ceo/",
+          "source": "thewhiskeywash.com"
+         }
+        ]
        },
        "size": {
         "state": "assumed",
@@ -7860,7 +8190,133 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://inverleith.com/investments/eden-mill-st-andrews/"
+     "fund_source": "https://inverleith.com/investments/eden-mill-st-andrews/",
+     "qualified": false
+    }
+   ],
+   "qualified": 0,
+   "set_aside": [],
+   "procuros_overlap": [],
+   "ops_people": [],
+   "support": [],
+   "rank": 20,
+   "selected": true,
+   "tier": "C",
+   "rationale": "Backs Good Hemp (Waitrose, Sainsbury's); no named route yet, so the first job is finding the deal partner.",
+   "next_steps": [
+    "Confirm Inverleith still holds Good Hemp.",
+    "Find the deal partner for Good Hemp and look for a mutual connection."
+   ],
+   "rank_range": [
+    19,
+    21
+   ]
+  },
+  {
+   "fund": "The Craftory",
+   "fund_type": "VC",
+   "score": 3.1,
+   "pairs": [
+    {
+     "brand": "HIPPEAS",
+     "score": 5.4,
+     "fit": {
+      "fit": 0.544,
+      "parts": {
+       "reach": 1,
+       "why_now": 0.084,
+       "size": 0.6,
+       "uk": 0.5
+      },
+      "why_now_parts": {
+       "listings": 0.0,
+       "funding": 0.28,
+       "ops_hiring": 0.0,
+       "expansion": 0
+      },
+      "stack_mult": 1.0,
+      "stack": [
+       "funding"
+      ],
+      "evidence": {
+       "reach": {
+        "state": "confirmed",
+        "items": [
+         {
+          "name": "Tesco",
+          "url": "https://www.tesco.com/shop/en-GB/products/311448162"
+         },
+         {
+          "name": "Ocado",
+          "url": "https://www.ocado.com/products/hippeas-chickpea-puffs-sweet-smokin-multipack/538376011"
+         },
+         {
+          "name": "Morrisons",
+          "url": "https://groceries.morrisons.com/products/hippeas-sweet-smokin-5pk/112926094"
+         },
+         {
+          "name": "Asda",
+          "url": "https://www.asda.com/groceries/product/small-multipack-crisps-4-8-packs-/hippeas-chickpea-puffs-sweet-smokin-multipack-limited-edition-minions/7457992"
+         },
+         {
+          "name": "Sainsbury's",
+          "url": "https://www.sainsburys.co.uk/gol-ui/product/hippeas-chickpea-tortilla-snacks-rockin-ranch-flavour-130g"
+         },
+         {
+          "name": "Waitrose",
+          "url": "https://www.waitrose.com/ecom/products/hippeas-sweet-smokin/498617-678797-678798"
+         }
+        ]
+       },
+       "why_now": {
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-03-09",
+          "text": "Beyond the yellow sea: How LOVE evolved the Hippeas identity for a high-stakes retail environment",
+          "url": "https://www.designweek.co.uk/beyond-the-yellow-sea-how-love-evolved-the-hippeas-identity-for-a-high-stakes-retail-environment/",
+          "source": "designweek.co.uk"
+         }
+        ]
+       },
+       "size": {
+        "state": "assumed",
+        "note": "no accounts matched; sized from retail reach",
+        "url": null
+       },
+       "uk": {
+        "state": "assumed",
+        "note": "sold by UK retailers, UK entity not matched",
+        "url": null
+       },
+       "manual_process": {
+        "state": "not observable",
+        "note": "No public source shows how orders and invoices are handled; ask on the call."
+       }
+      }
+     },
+     "intro": {
+      "path": 0.1,
+      "strength": "Weak",
+      "parts": {
+       "listed": 0.1,
+       "board": 0.0,
+       "ops_person": 0.0,
+       "support": 0.0,
+       "held": 0.0
+      },
+      "board_people": [],
+      "fund_entity": [],
+      "ops_people": [],
+      "support": [],
+      "held": {
+       "state": "unconfirmed",
+       "source": "portfolio page"
+      }
+     },
+     "confidence": "Low",
+     "fund_source": "https://www.thecraftory.io/hippeas-investment-page",
+     "qualified": false
     }
    ],
    "qualified": 0,
@@ -7871,13 +8327,15 @@
    "rank": 21,
    "selected": false,
    "tier": "-",
-   "rationale": "Backs Good Hemp (Waitrose, Sainsbury's); no named route yet, so the first job is finding the deal partner.",
+   "rationale": "Backs HIPPEAS (Tesco, Ocado); no named route yet, so the first job is finding the deal partner.",
    "next_steps": [
-    "Confirm Inverleith still holds Good Hemp.",
-    "Find the deal partner for Good Hemp and look for a mutual connection."
+    "Confirm The Craftory still holds HIPPEAS.",
+    "Check HIPPEAS trades through a UK company.",
+    "Find the deal partner for HIPPEAS and look for a mutual connection.",
+    "Lead with: Beyond the yellow sea: How LOVE evolved the Hippeas identity for a high-stakes r (2026-03)."
    ],
    "rank_range": [
-    20,
+    19,
     21
    ]
   },
@@ -7950,7 +8408,8 @@
       }
      },
      "confidence": "Low",
-     "fund_source": "https://www.capvest.com/investments"
+     "fund_source": "https://www.capvest.com/investments",
+     "qualified": false
     }
    ],
    "qualified": 0,
@@ -7987,8 +8446,8 @@
     "Veg Capital",
     "Felix Capital",
     "LDC",
-    "SFC Capital",
     "Exponent",
+    "SFC Capital",
     "Livingbridge",
     "Beringea",
     "Puma Private Equity",
@@ -7996,7 +8455,7 @@
     "JamJar Investments",
     "True (TrueCapital)",
     "Big Idea Ventures",
-    "The Craftory"
+    "Inverleith"
    ],
    "same_in_top": 20,
    "same_in_first": 4
@@ -8040,8 +8499,8 @@
     "Felix Capital",
     "LDC",
     "Veg Capital",
-    "SFC Capital",
     "Ascension",
+    "SFC Capital",
     "Livingbridge",
     "Exponent",
     "Beringea",
@@ -8049,10 +8508,10 @@
     "Five Seasons Ventures",
     "JamJar Investments",
     "True (TrueCapital)",
-    "The Craftory",
-    "Big Idea Ventures"
+    "Big Idea Ventures",
+    "The Craftory"
    ],
-   "same_in_top": 20,
+   "same_in_top": 19,
    "same_in_first": 4
   },
   {
@@ -8079,7 +8538,7 @@
     "Big Idea Ventures",
     "Inverleith"
    ],
-   "same_in_top": 19,
+   "same_in_top": 20,
    "same_in_first": 3
   },
   {
@@ -8103,8 +8562,8 @@
     "Five Seasons Ventures",
     "JamJar Investments",
     "True (TrueCapital)",
-    "The Craftory",
-    "Inverleith"
+    "Inverleith",
+    "The Craftory"
    ],
    "same_in_top": 19,
    "same_in_first": 3
@@ -8122,8 +8581,8 @@
     "LDC",
     "Veg Capital",
     "Exponent",
-    "SFC Capital",
     "Felix Capital",
+    "SFC Capital",
     "Livingbridge",
     "Beringea",
     "Puma Private Equity",
@@ -8131,7 +8590,7 @@
     "JamJar Investments",
     "True (TrueCapital)",
     "Big Idea Ventures",
-    "The Craftory"
+    "Inverleith"
    ],
    "same_in_top": 20,
    "same_in_first": 4
@@ -8154,8 +8613,8 @@
     "Beringea",
     "SFC Capital",
     "Puma Private Equity",
-    "JamJar Investments",
     "Five Seasons Ventures",
+    "JamJar Investments",
     "True (TrueCapital)",
     "The Craftory",
     "Inverleith"
@@ -8176,9 +8635,9 @@
     "Pembroke VCT",
     "Five Seasons Ventures",
     "Exponent",
-    "JamJar Investments",
     "Ascension",
     "Beringea",
+    "JamJar Investments",
     "Felix Capital",
     "Puma Private Equity",
     "LDC",
@@ -8187,15 +8646,15 @@
     "Big Idea Ventures",
     "Inverleith"
    ],
-   "same_in_top": 19,
+   "same_in_top": 20,
    "same_in_first": 3
   }
  ],
  "dropped": [
   {
-   "fund": "Inverleith",
-   "score": 3.2,
-   "why": "Backs Good Hemp (Waitrose, Sainsbury's); no named route yet, so the first job is finding the deal partner."
+   "fund": "The Craftory",
+   "score": 3.1,
+   "why": "Backs HIPPEAS (Tesco, Ocado); no named route yet, so the first job is finding the deal partner."
   },
   {
    "fund": "CapVest",
