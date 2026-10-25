@@ -182,12 +182,12 @@
    "strategic": 0.3
   },
   "normalised": {
-   "icp_count": 0.808,
-   "fmcg_share": 0.247,
-   "avg_brand_fit": 0.758,
+   "icp_count": 0.808398,
+   "fmcg_share": 0.246575,
+   "avg_brand_fit": 0.758118,
    "recent_deals": 0.0,
-   "pain_top": 0.544,
-   "platform_team": 0.333,
+   "pain_top": 0.54357,
+   "platform_team": 0.333333,
    "community": 1.0,
    "size_stage": 0.7,
    "vendor_openness": 0.0,
@@ -353,11 +353,11 @@
    "strategic": 0.263
   },
   "normalised": {
-   "icp_count": 0.84,
+   "icp_count": 0.840282,
    "fmcg_share": 1.0,
-   "avg_brand_fit": 0.826,
+   "avg_brand_fit": 0.825982,
    "recent_deals": 1.0,
-   "pain_top": 0.226,
+   "pain_top": 0.22568,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 1.0,
@@ -584,10 +584,10 @@
   },
   "normalised": {
    "icp_count": 1.0,
-   "fmcg_share": 0.091,
-   "avg_brand_fit": 0.567,
+   "fmcg_share": 0.09111,
+   "avg_brand_fit": 0.566891,
    "recent_deals": 1.0,
-   "pain_top": 0.433,
+   "pain_top": 0.4328,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 1.0,
@@ -821,11 +821,11 @@
    "strategic": 0.7
   },
   "normalised": {
-   "icp_count": 0.877,
-   "fmcg_share": 0.266,
-   "avg_brand_fit": 0.8,
-   "recent_deals": 0.631,
-   "pain_top": 0.288,
+   "icp_count": 0.876958,
+   "fmcg_share": 0.26601,
+   "avg_brand_fit": 0.800041,
+   "recent_deals": 0.63093,
+   "pain_top": 0.28787,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 1.0,
@@ -1019,11 +1019,11 @@
    "strategic": 0.125
   },
   "normalised": {
-   "icp_count": 0.452,
-   "fmcg_share": 0.032,
-   "avg_brand_fit": 0.933,
+   "icp_count": 0.452089,
+   "fmcg_share": 0.032036,
+   "avg_brand_fit": 0.932727,
    "recent_deals": 0.0,
-   "pain_top": 0.486,
+   "pain_top": 0.4865,
    "platform_team": 1.0,
    "community": 1.0,
    "size_stage": 0.7,
@@ -1193,12 +1193,12 @@
    "strategic": 0.412
   },
   "normalised": {
-   "icp_count": 0.635,
-   "fmcg_share": 0.027,
-   "avg_brand_fit": 0.748,
+   "icp_count": 0.635034,
+   "fmcg_share": 0.027451,
+   "avg_brand_fit": 0.747852,
    "recent_deals": 0.0,
-   "pain_top": 0.2,
-   "platform_team": 0.667,
+   "pain_top": 0.19957,
+   "platform_team": 0.666667,
    "community": 1.0,
    "size_stage": 0.5,
    "vendor_openness": 1.0,
@@ -1385,13 +1385,13 @@
    "strategic": 0.15
   },
   "normalised": {
-   "icp_count": 0.619,
-   "fmcg_share": 0.22,
-   "avg_brand_fit": 0.823,
+   "icp_count": 0.619353,
+   "fmcg_share": 0.220063,
+   "avg_brand_fit": 0.823311,
    "recent_deals": 1.0,
-   "pain_top": 0.251,
-   "platform_team": 0.333,
-   "community": 0.333,
+   "pain_top": 0.25085,
+   "platform_team": 0.333333,
+   "community": 0.333333,
    "size_stage": 0.7,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
@@ -1505,11 +1505,11 @@
    "strategic": 0.263
   },
   "normalised": {
-   "icp_count": 0.649,
-   "fmcg_share": 0.416,
-   "avg_brand_fit": 0.91,
-   "recent_deals": 0.631,
-   "pain_top": 0.067,
+   "icp_count": 0.648748,
+   "fmcg_share": 0.415592,
+   "avg_brand_fit": 0.910385,
+   "recent_deals": 0.63093,
+   "pain_top": 0.066513,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -1615,11 +1615,11 @@
    "strategic": 0.263
   },
   "normalised": {
-   "icp_count": 0.58,
-   "fmcg_share": 0.052,
+   "icp_count": 0.580361,
+   "fmcg_share": 0.052028,
    "avg_brand_fit": 1.0,
    "recent_deals": 0.0,
-   "pain_top": 0.181,
+   "pain_top": 0.18135,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -1760,13 +1760,13 @@
    "strategic": 0.263
   },
   "normalised": {
-   "icp_count": 0.58,
-   "fmcg_share": 0.219,
-   "avg_brand_fit": 0.95,
+   "icp_count": 0.580478,
+   "fmcg_share": 0.219067,
+   "avg_brand_fit": 0.950345,
    "recent_deals": 0.0,
-   "pain_top": 0.089,
+   "pain_top": 0.08867,
    "platform_team": 0.0,
-   "community": 0.333,
+   "community": 0.333333,
    "size_stage": 0.3,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
@@ -1783,145 +1783,6 @@
   },
   "rank": 10,
   "why": "3 UK grocery brands held now or exited <24m, incl. PROPER SNACKS (Ocado/Sainsbury's/Asda), Vibrant Foods (Asda/Tesco/Sainsbury's), Gü (Tesco/Co-op/Sainsbury's); recent trigger: Vibrant Foods: \"Vibrant Foods turnaround plan shows green shoots\" (2025-10)."
- },
- {
-  "fund": "Development Bank of Wales",
-  "fund_type": "development bank",
-  "website": "https://developmentbank.wales",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://developmentbank.wales/resources/case-studies"
-  ],
-  "company_count": 120,
-  "brands": [
-   {
-    "brand": "The Pattyman",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Barti Rum",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.475,
-    "pain": 0.1,
-    "retailers": []
-   },
-   {
-    "brand": "Just Love Food Company",
-    "status": "current",
-    "status_source": "fund invested recently, no exit found: invested in Just Love Food Company (2026) (https://pitchbook.com/profiles/company/62306-02)",
-    "fit": 0.812,
-    "pain": 0.08,
-    "retailers": [
-     "Ocado",
-     "Tesco",
-     "Asda"
-    ]
-   },
-   {
-    "brand": "Tregroes Waffles",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Quantum Coffee Roasters",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Hilltop Honey",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.9,
-    "pain": 0.035,
-    "retailers": [
-     "Tesco",
-     "Sainsbury's",
-     "Asda",
-     "Waitrose",
-     "Ocado"
-    ]
-   },
-   {
-    "brand": "Oren Foods",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   }
-  ],
-  "raw": {
-   "icp_count": 3.17075,
-   "fmcg_share": 0.05083333333333333,
-   "avg_brand_fit": 0.5197950819672131,
-   "recent_deals": 0,
-   "pain_top": 0.03895,
-   "platform_team": 0,
-   "community": 2,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 5,
-   "ecosystem": 1
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [
-    {
-     "text": "Barmouth Beach Club Loan",
-     "url": "https://developmentbank.wales/case-studies/barmouth-beach-club"
-    },
-    {
-     "text": "Events landing page",
-     "url": "https://developmentbank.wales/resources/events"
-    }
-   ],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 1.0,
-  "pillars": {
-   "fit": 0.415,
-   "pain": 0.039,
-   "access": 0.305,
-   "strategic": 0.338
-  },
-  "normalised": {
-   "icp_count": 0.627,
-   "fmcg_share": 0.126,
-   "avg_brand_fit": 0.539,
-   "recent_deals": 0.0,
-   "pain_top": 0.039,
-   "platform_team": 0.0,
-   "community": 0.667,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.625,
-   "ecosystem": 0.5
-  },
-  "score": 27.2,
-  "live_brand_count": 7,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": 10,
-   "signals_total": 16
-  },
-  "rank": 11,
-  "why": "7 UK grocery brands held now or exited <24m, incl. Hilltop Honey (Tesco/Sainsbury's/Asda), Just Love Food Company (Ocado/Tesco/Asda), Barti Rum."
  },
  {
   "fund": "Felix Capital",
@@ -1987,11 +1848,11 @@
    "strategic": 0.15
   },
   "normalised": {
-   "icp_count": 0.365,
-   "fmcg_share": 0.177,
-   "avg_brand_fit": 0.725,
+   "icp_count": 0.364761,
+   "fmcg_share": 0.176658,
+   "avg_brand_fit": 0.725455,
    "recent_deals": 0.0,
-   "pain_top": 0.343,
+   "pain_top": 0.343375,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -2008,7 +1869,7 @@
    "signals_with_data": 8,
    "signals_total": 16
   },
-  "rank": 12,
+  "rank": 11,
   "why": "2 UK grocery brands held now or exited <24m, incl. PerfectTed (Tesco/Ocado/Holland & Barrett), Pure; recent trigger: PerfectTed: \"PerfectTed secures blockbuster valuation in seven-figure VC investment round\" (2025-09)."
  },
  {
@@ -2105,11 +1966,11 @@
    "strategic": 0.263
   },
   "normalised": {
-   "icp_count": 0.568,
-   "fmcg_share": 0.087,
-   "avg_brand_fit": 0.964,
+   "icp_count": 0.568493,
+   "fmcg_share": 0.087356,
+   "avg_brand_fit": 0.963636,
    "recent_deals": 0.0,
-   "pain_top": 0.117,
+   "pain_top": 0.116883,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -2126,7 +1987,7 @@
    "signals_with_data": 8,
    "signals_total": 16
   },
-  "rank": 13,
+  "rank": 12,
   "why": "3 UK grocery brands held now or exited <24m, incl. MOTH (Tesco/Sainsbury's/Asda), LOVE CORN (Sainsbury's/Ocado/Tesco), Lucky Saint (Tesco/Waitrose/Ocado)."
  },
  {
@@ -2186,11 +2047,11 @@
    "strategic": 0.075
   },
   "normalised": {
-   "icp_count": 0.249,
-   "fmcg_share": 0.162,
-   "avg_brand_fit": 0.933,
-   "recent_deals": 0.631,
-   "pain_top": 0.229,
+   "icp_count": 0.249465,
+   "fmcg_share": 0.162334,
+   "avg_brand_fit": 0.932727,
+   "recent_deals": 0.63093,
+   "pain_top": 0.22865,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -2207,7 +2068,7 @@
    "signals_with_data": 8,
    "signals_total": 16
   },
-  "rank": 14,
+  "rank": 13,
   "why": "1 UK grocery brand held now or exited <24m, incl. HIPPEAS (Tesco/Ocado/Morrisons)."
  },
  {
@@ -2309,13 +2170,13 @@
    "strategic": 0.05
   },
   "normalised": {
-   "icp_count": 0.297,
-   "fmcg_share": 0.055,
-   "avg_brand_fit": 0.588,
+   "icp_count": 0.296541,
+   "fmcg_share": 0.054814,
+   "avg_brand_fit": 0.588136,
    "recent_deals": 0.0,
-   "pain_top": 0.115,
+   "pain_top": 0.11475,
    "platform_team": 1.0,
-   "community": 0.667,
+   "community": 0.666667,
    "size_stage": 0.7,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
@@ -2330,7 +2191,7 @@
    "signals_with_data": 10,
    "signals_total": 16
   },
-  "rank": 15,
+  "rank": 14,
   "why": "2 UK grocery brands held now or exited <24m, incl. Bella & Duke (Sainsbury's/Waitrose), Parsley Box; named portfolio/platform contact: Simon Bursell (Portfolio Director)."
  },
  {
@@ -2462,12 +2323,12 @@
    "strategic": 0.062
   },
   "normalised": {
-   "icp_count": 0.349,
-   "fmcg_share": 0.046,
-   "avg_brand_fit": 0.967,
+   "icp_count": 0.348726,
+   "fmcg_share": 0.046108,
+   "avg_brand_fit": 0.966768,
    "recent_deals": 0.0,
-   "pain_top": 0.127,
-   "platform_team": 0.667,
+   "pain_top": 0.1269,
+   "platform_team": 0.666667,
    "community": 1.0,
    "size_stage": 0.7,
    "vendor_openness": 0.0,
@@ -2483,7 +2344,7 @@
    "signals_with_data": 10,
    "signals_total": 16
   },
-  "rank": 16,
+  "rank": 15,
   "why": "1 UK grocery brand held now or exited <24m, incl. Hackney Gelato (Sainsbury's/Waitrose/Ocado); named portfolio/platform contact: Adrian Harris (Portfolio Director)."
  },
  {
@@ -2548,11 +2409,11 @@
    "strategic": 0.075
   },
   "normalised": {
-   "icp_count": 0.294,
-   "fmcg_share": 0.844,
-   "avg_brand_fit": 0.582,
+   "icp_count": 0.294447,
+   "fmcg_share": 0.844138,
+   "avg_brand_fit": 0.582436,
    "recent_deals": 0.0,
-   "pain_top": 0.048,
+   "pain_top": 0.04845,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -2569,7 +2430,7 @@
    "signals_with_data": 7,
    "signals_total": 16
   },
-  "rank": 17,
+  "rank": 16,
   "why": "2 UK grocery brands held now or exited <24m, incl. Good Hemp (Waitrose/Sainsbury's/Tesco), EDEN MILL St Andrews (Sainsbury's)."
  },
  {
@@ -2639,13 +2500,13 @@
    "strategic": 0.037
   },
   "normalised": {
-   "icp_count": 0.23,
-   "fmcg_share": 0.014,
-   "avg_brand_fit": 0.842,
+   "icp_count": 0.230451,
+   "fmcg_share": 0.013793,
+   "avg_brand_fit": 0.841527,
    "recent_deals": 0.0,
-   "pain_top": 0.15,
-   "platform_team": 0.333,
-   "community": 0.667,
+   "pain_top": 0.15045,
+   "platform_team": 0.333333,
+   "community": 0.666667,
    "size_stage": 1.0,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
@@ -2660,7 +2521,7 @@
    "signals_with_data": 10,
    "signals_total": 16
   },
-  "rank": 18,
+  "rank": 17,
   "why": "1 UK grocery brand held now or exited <24m, incl. Better Nature (Tesco/Asda/Ocado); recent trigger: Better Nature: \"Tempeh Brand Better Nature Launches at Hundreds of REWE Stores Across Germany\" (2025-04); named portfolio/platform contact: Romha Berhane (Portfolio Manager)."
  },
  {
@@ -2739,11 +2600,11 @@
    "strategic": 0.225
   },
   "normalised": {
-   "icp_count": 0.241,
-   "fmcg_share": 0.035,
-   "avg_brand_fit": 0.447,
+   "icp_count": 0.241356,
+   "fmcg_share": 0.035468,
+   "avg_brand_fit": 0.446673,
    "recent_deals": 0.0,
-   "pain_top": 0.009,
+   "pain_top": 0.008925,
    "platform_team": 0.0,
    "community": 1.0,
    "size_stage": 1.0,
@@ -2760,7 +2621,7 @@
    "signals_with_data": 9,
    "signals_total": 16
   },
-  "rank": 19,
+  "rank": 18,
   "why": "2 UK grocery brands held now or exited <24m, incl. Little Bandits (Asda), The Good Pulse Co."
  },
  {
@@ -2827,13 +2688,13 @@
    "strategic": 0.062
   },
   "normalised": {
-   "icp_count": 0.194,
-   "fmcg_share": 0.207,
-   "avg_brand_fit": 0.577,
+   "icp_count": 0.194409,
+   "fmcg_share": 0.206897,
+   "avg_brand_fit": 0.577255,
    "recent_deals": 0.0,
    "pain_top": 0.173,
    "platform_team": 0.0,
-   "community": 0.667,
+   "community": 0.666667,
    "size_stage": 0.5,
    "vendor_openness": 1.0,
    "procuros_overlap": 0.0,
@@ -2848,7 +2709,7 @@
    "signals_with_data": 10,
    "signals_total": 16
   },
-  "rank": 20,
+  "rank": 19,
   "why": "1 UK grocery brand held now or exited <24m, incl. Absolute Collagen (Boots)."
  },
  {
@@ -2916,11 +2777,11 @@
    "strategic": 0.175
   },
   "normalised": {
-   "icp_count": 0.273,
-   "fmcg_share": 0.223,
-   "avg_brand_fit": 0.663,
+   "icp_count": 0.27331,
+   "fmcg_share": 0.223448,
+   "avg_brand_fit": 0.662889,
    "recent_deals": 0.0,
-   "pain_top": 0.103,
+   "pain_top": 0.1033,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.5,
@@ -2937,7 +2798,7 @@
    "signals_with_data": 7,
    "signals_total": 16
   },
-  "rank": 21,
+  "rank": 20,
   "why": "2 UK grocery brands held now or exited <24m, incl. Hovis (Tesco/Sainsbury's/Waitrose), Bright Blue Foods; recent trigger: Hovis: \"Why ABF’s Hovis deal matters far beyond bread\" (2026-09)."
  },
  {
@@ -3069,13 +2930,13 @@
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.293,
-   "fmcg_share": 0.022,
-   "avg_brand_fit": 0.614,
+   "icp_count": 0.292782,
+   "fmcg_share": 0.021826,
+   "avg_brand_fit": 0.614045,
    "recent_deals": 0.0,
-   "pain_top": 0.114,
-   "platform_team": 0.667,
-   "community": 0.333,
+   "pain_top": 0.11407,
+   "platform_team": 0.666667,
+   "community": 0.333333,
    "size_stage": 0.5,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
@@ -3090,7 +2951,7 @@
    "signals_with_data": 9,
    "signals_total": 16
   },
-  "rank": 22,
+  "rank": 21,
   "why": "1 UK grocery brand held now or exited <24m, incl. Bramble Foods; recent trigger: Bramble Foods: \"UK’s Bramble Foods Group snaps up Whitakers Chocolates\" (2025-01); named portfolio/platform contact: Andy Holman (Portfolio Director)."
  },
  {
@@ -3152,11 +3013,11 @@
    "strategic": 0.025
   },
   "normalised": {
-   "icp_count": 0.297,
-   "fmcg_share": 0.071,
-   "avg_brand_fit": 0.541,
+   "icp_count": 0.296765,
+   "fmcg_share": 0.070663,
+   "avg_brand_fit": 0.54101,
    "recent_deals": 0.0,
-   "pain_top": 0.147,
+   "pain_top": 0.147475,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -3173,7 +3034,7 @@
    "signals_with_data": 8,
    "signals_total": 16
   },
-  "rank": 23,
+  "rank": 22,
   "why": "2 UK grocery brands held now or exited <24m, incl. Sneak (Tesco), seriouspig; recent trigger: Sneak: \"Sneak Energy lands additional listings across Bestway\" (2026-06)."
  },
  {
@@ -3235,9 +3096,9 @@
    "strategic": 0.167
   },
   "normalised": {
-   "icp_count": 0.249,
-   "fmcg_share": 0.106,
-   "avg_brand_fit": 0.933,
+   "icp_count": 0.249465,
+   "fmcg_share": 0.105517,
+   "avg_brand_fit": 0.932727,
    "recent_deals": 0.0,
    "pain_top": 0.0,
    "platform_team": 0.0,
@@ -3256,7 +3117,7 @@
    "signals_with_data": 6,
    "signals_total": 16
   },
-  "rank": 24,
+  "rank": 23,
   "why": "1 UK grocery brand held now or exited <24m, incl. Tony's Chocolonely (Tesco/Sainsbury's/Co-op); already backs Procuros customer Tony's Chocolonely."
  },
  {
@@ -3352,11 +3213,11 @@
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.178,
-   "fmcg_share": 0.213,
-   "avg_brand_fit": 0.865,
+   "icp_count": 0.178194,
+   "fmcg_share": 0.212808,
+   "avg_brand_fit": 0.864586,
    "recent_deals": 0.0,
-   "pain_top": 0.005,
+   "pain_top": 0.004613,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.7,
@@ -3373,7 +3234,7 @@
    "signals_with_data": 4,
    "signals_total": 16
   },
-  "rank": 25,
+  "rank": 24,
   "why": "."
  },
  {
@@ -3450,11 +3311,11 @@
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.11,
-   "fmcg_share": 0.017,
-   "avg_brand_fit": 0.985,
+   "icp_count": 0.110104,
+   "fmcg_share": 0.016928,
+   "avg_brand_fit": 0.984545,
    "recent_deals": 0.0,
-   "pain_top": 0.033,
+   "pain_top": 0.03255,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.3,
@@ -3471,7 +3332,7 @@
    "signals_with_data": 4,
    "signals_total": 16
   },
-  "rank": 26,
+  "rank": 25,
   "why": "."
  },
  {
@@ -3522,9 +3383,9 @@
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.158,
-   "fmcg_share": 0.176,
-   "avg_brand_fit": 0.529,
+   "icp_count": 0.158122,
+   "fmcg_share": 0.175862,
+   "avg_brand_fit": 0.528545,
    "recent_deals": 0.0,
    "pain_top": 0.0,
    "platform_team": 0.0,
@@ -3543,7 +3404,7 @@
    "signals_with_data": 4,
    "signals_total": 16
   },
-  "rank": 27,
+  "rank": 26,
   "why": "1 UK grocery brand held now or exited <24m, incl. ipn."
  },
  {
@@ -3687,11 +3548,11 @@
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.056,
-   "fmcg_share": 0.003,
-   "avg_brand_fit": 0.933,
+   "icp_count": 0.055602,
+   "fmcg_share": 0.002568,
+   "avg_brand_fit": 0.932727,
    "recent_deals": 0.0,
-   "pain_top": 0.003,
+   "pain_top": 0.00345,
    "platform_team": 0.0,
    "community": 1.0,
    "size_stage": 0.7,
@@ -3708,7 +3569,7 @@
    "signals_with_data": 6,
    "signals_total": 16
   },
-  "rank": 28,
+  "rank": 27,
   "why": "."
  },
  {
@@ -3761,11 +3622,11 @@
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.039,
-   "fmcg_share": 0.008,
-   "avg_brand_fit": 0.634,
+   "icp_count": 0.038564,
+   "fmcg_share": 0.0076,
+   "avg_brand_fit": 0.634255,
    "recent_deals": 0.0,
-   "pain_top": 0.076,
+   "pain_top": 0.0756,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.5,
@@ -3782,7 +3643,7 @@
    "signals_with_data": 4,
    "signals_total": 16
   },
-  "rank": 29,
+  "rank": 28,
   "why": "."
  },
  {
@@ -3874,13 +3735,13 @@
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.028,
-   "fmcg_share": 0.004,
-   "avg_brand_fit": 0.461,
+   "icp_count": 0.028372,
+   "fmcg_share": 0.004092,
+   "avg_brand_fit": 0.461182,
    "recent_deals": 0.0,
-   "pain_top": 0.072,
+   "pain_top": 0.0723,
    "platform_team": 1.0,
-   "community": 0.333,
+   "community": 0.333333,
    "size_stage": 0.7,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
@@ -3895,7 +3756,7 @@
    "signals_with_data": 6,
    "signals_total": 16
   },
-  "rank": 30,
+  "rank": 29,
   "why": "named portfolio/platform contact: Adam Milner (Portfolio Director, Leeds)."
  },
  {
@@ -3946,11 +3807,11 @@
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.032,
-   "fmcg_share": 0.022,
-   "avg_brand_fit": 0.529,
+   "icp_count": 0.032367,
+   "fmcg_share": 0.021907,
+   "avg_brand_fit": 0.528545,
    "recent_deals": 0.0,
-   "pain_top": 0.007,
+   "pain_top": 0.00705,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.5,
@@ -3967,7 +3828,7 @@
    "signals_with_data": 4,
    "signals_total": 16
   },
-  "rank": 31,
+  "rank": 30,
   "why": "."
  },
  {
@@ -4034,13 +3895,13 @@
    "strategic": 0.0
   },
   "normalised": {
-   "icp_count": 0.032,
-   "fmcg_share": 0.008,
-   "avg_brand_fit": 0.529,
+   "icp_count": 0.032367,
+   "fmcg_share": 0.0076,
+   "avg_brand_fit": 0.528545,
    "recent_deals": 0.0,
-   "pain_top": 0.005,
-   "platform_team": 0.667,
-   "community": 0.333,
+   "pain_top": 0.00525,
+   "platform_team": 0.666667,
+   "community": 0.333333,
    "size_stage": 0.5,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
@@ -4055,7 +3916,7 @@
    "signals_with_data": 6,
    "signals_total": 16
   },
-  "rank": 32,
+  "rank": 31,
   "why": "named portfolio/platform contact: Derek Knowles (Head of Operations)."
  },
  {
@@ -4123,7 +3984,7 @@
    "signals_with_data": 2,
    "signals_total": 16
   },
-  "rank": 33,
+  "rank": 32,
   "why": "."
  },
  {
@@ -4234,7 +4095,7 @@
    "avg_brand_fit": 0.0,
    "recent_deals": 0.0,
    "pain_top": 0,
-   "platform_team": 0.667,
+   "platform_team": 0.666667,
    "community": 1.0,
    "size_stage": 0.5,
    "vendor_openness": 0.0,
@@ -4250,7 +4111,7 @@
    "signals_with_data": 4,
    "signals_total": 16
   },
-  "rank": 34,
+  "rank": 33,
   "why": "named portfolio/platform contact: Nigel Moss (Portfolio Director)."
  },
  {
@@ -4315,7 +4176,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 35,
+  "rank": 34,
   "why": "."
  },
  {
@@ -4378,7 +4239,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 36,
+  "rank": 35,
   "why": "."
  },
  {
@@ -4441,7 +4302,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 37,
+  "rank": 36,
   "why": "."
  },
  {
@@ -4504,7 +4365,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 38,
+  "rank": 37,
   "why": "."
  },
  {
@@ -4562,7 +4423,7 @@
    "avg_brand_fit": 0.0,
    "recent_deals": 0.0,
    "pain_top": 0,
-   "platform_team": 0.667,
+   "platform_team": 0.666667,
    "community": 0.0,
    "size_stage": 0.5,
    "vendor_openness": 0.0,
@@ -4578,7 +4439,7 @@
    "signals_with_data": 2,
    "signals_total": 16
   },
-  "rank": 39,
+  "rank": 38,
   "why": "named portfolio/platform contact: Angus Abbott (Portfolio Director)."
  },
  {
@@ -4641,7 +4502,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 40,
+  "rank": 39,
   "why": "."
  },
  {
@@ -4704,7 +4565,7 @@
    "signals_with_data": 0,
    "signals_total": 16
   },
-  "rank": 41,
+  "rank": 40,
   "why": "."
  },
  {
@@ -4767,7 +4628,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 42,
+  "rank": 41,
   "why": "."
  },
  {
@@ -4825,7 +4686,7 @@
    "recent_deals": 0.0,
    "pain_top": 0,
    "platform_team": 0.0,
-   "community": 0.667,
+   "community": 0.666667,
    "size_stage": 0.5,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
@@ -4840,7 +4701,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 43,
+  "rank": 42,
   "why": "."
  },
  {
@@ -4898,7 +4759,7 @@
    "avg_brand_fit": 0.0,
    "recent_deals": 0.0,
    "pain_top": 0,
-   "platform_team": 0.667,
+   "platform_team": 0.666667,
    "community": 0.0,
    "size_stage": 0.5,
    "vendor_openness": 0.0,
@@ -4914,7 +4775,7 @@
    "signals_with_data": 2,
    "signals_total": 16
   },
-  "rank": 44,
+  "rank": 43,
   "why": "named portfolio/platform contact: James Hope (Fund & Portfolio Director)."
  },
  {
@@ -4977,7 +4838,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 45,
+  "rank": 44,
   "why": "."
  },
  {
@@ -5055,7 +4916,7 @@
    "recent_deals": 0.0,
    "pain_top": 0,
    "platform_team": 1.0,
-   "community": 0.667,
+   "community": 0.666667,
    "size_stage": 0.7,
    "vendor_openness": 1.0,
    "procuros_overlap": 0.0,
@@ -5070,7 +4931,7 @@
    "signals_with_data": 5,
    "signals_total": 16
   },
-  "rank": 46,
+  "rank": 45,
   "why": "named portfolio/platform contact: Rebecca Manning (Talent)."
  },
  {
@@ -5121,7 +4982,7 @@
    "avg_brand_fit": 0.0,
    "recent_deals": 0.0,
    "pain_top": 0,
-   "platform_team": 0.333,
+   "platform_team": 0.333333,
    "community": 0.0,
    "size_stage": 0.3,
    "vendor_openness": 0.0,
@@ -5137,7 +4998,7 @@
    "signals_with_data": 2,
    "signals_total": 16
   },
-  "rank": 47,
+  "rank": 46,
   "why": "named portfolio/platform contact: Tom Cooley (Portfolio Manager)."
  },
  {
@@ -5200,7 +5061,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 48,
+  "rank": 47,
   "why": "."
  },
  {
@@ -5263,7 +5124,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 49,
+  "rank": 48,
   "why": "."
  },
  {
@@ -5359,7 +5220,7 @@
    "signals_with_data": 3,
    "signals_total": 16
   },
-  "rank": 50,
+  "rank": 49,
   "why": "named portfolio/platform contact: Jeevs Mahil (People + Talent)."
  },
  {
@@ -5422,7 +5283,7 @@
    "signals_with_data": 0,
    "signals_total": 16
   },
-  "rank": 51,
+  "rank": 50,
   "why": "."
  },
  {
@@ -5485,7 +5346,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 52,
+  "rank": 51,
   "why": "."
  },
  {
@@ -5548,7 +5409,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 53,
+  "rank": 52,
   "why": "."
  },
  {
@@ -5643,7 +5504,7 @@
    "avg_brand_fit": 0.0,
    "recent_deals": 0.0,
    "pain_top": 0,
-   "platform_team": 0.667,
+   "platform_team": 0.666667,
    "community": 1.0,
    "size_stage": 1.0,
    "vendor_openness": 0.0,
@@ -5659,7 +5520,7 @@
    "signals_with_data": 4,
    "signals_total": 16
   },
-  "rank": 54,
+  "rank": 53,
   "why": "named portfolio/platform contact: Christina Levada (HEAD OF OPERATIONS)."
  },
  {
@@ -5743,7 +5604,7 @@
    "signals_with_data": 2,
    "signals_total": 16
   },
-  "rank": 55,
+  "rank": 54,
   "why": "named portfolio/platform contact: Amber Jardine (Portfolio Manager)."
  },
  {
@@ -5806,7 +5667,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 56,
+  "rank": 55,
   "why": "."
  },
  {
@@ -5869,259 +5730,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 57,
-  "why": "."
- },
- {
-  "fund": "Unilever Ventures",
-  "fund_type": "corporate VC",
-  "website": "https://www.unileverventures.com",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://www.unileverventures.com/portfolio/"
-  ],
-  "company_count": 8,
-  "brands": [],
-  "raw": {
-   "icp_count": 0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0,
-   "recent_deals": 0,
-   "pain_top": 0,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 0,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 0.0,
-  "pillars": {
-   "fit": 0.0,
-   "pain": 0,
-   "access": 0.0,
-   "strategic": 0.0
-  },
-  "normalised": {
-   "icp_count": 0.0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0.0,
-   "recent_deals": 0.0,
-   "pain_top": 0,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.0,
-   "ecosystem": 0.0
-  },
-  "score": 0.0,
-  "live_brand_count": 0,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": 1,
-   "signals_total": 16
-  },
-  "rank": 58,
-  "why": "."
- },
- {
-  "fund": "Distill Ventures",
-  "fund_type": "corporate VC",
-  "website": "https://distillventures.com",
-  "scrape_status": "failed",
-  "portfolio_urls": [
-   "https://distillventures.com/portfolio"
-  ],
-  "company_count": 0,
-  "brands": [],
-  "raw": {
-   "icp_count": 0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0,
-   "recent_deals": 0,
-   "pain_top": 0,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 0,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 0.0,
-  "pillars": {
-   "fit": 0.0,
-   "pain": 0,
-   "access": 0.0,
-   "strategic": 0.0
-  },
-  "normalised": {
-   "icp_count": 0.0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0.0,
-   "recent_deals": 0.0,
-   "pain_top": 0,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.0,
-   "ecosystem": 0.0
-  },
-  "score": 0.0,
-  "live_brand_count": 0,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "failed",
-   "signals_with_data": 0,
-   "signals_total": 16
-  },
-  "rank": 59,
-  "why": "."
- },
- {
-  "fund": "SnackFutures (Mondelez)",
-  "fund_type": "corporate VC",
-  "website": "https://www.snackfutures.com",
-  "scrape_status": "no_companies_found",
-  "portfolio_urls": [
-   "https://www.snackfutures.com/"
-  ],
-  "company_count": 0,
-  "brands": [],
-  "raw": {
-   "icp_count": 0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0,
-   "recent_deals": 0,
-   "pain_top": 0,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 0,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 0.0,
-  "pillars": {
-   "fit": 0.0,
-   "pain": 0,
-   "access": 0.0,
-   "strategic": 0.0
-  },
-  "normalised": {
-   "icp_count": 0.0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0.0,
-   "recent_deals": 0.0,
-   "pain_top": 0,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.0,
-   "ecosystem": 0.0
-  },
-  "score": 0.0,
-  "live_brand_count": 0,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "no_companies_found",
-   "signals_with_data": 0,
-   "signals_total": 16
-  },
-  "rank": 60,
-  "why": "."
- },
- {
-  "fund": "ZX Ventures",
-  "fund_type": "corporate VC",
-  "website": "https://zx-ventures.com",
-  "scrape_status": "failed",
-  "portfolio_urls": [
-   "https://zx-ventures.com/"
-  ],
-  "company_count": 0,
-  "brands": [],
-  "raw": {
-   "icp_count": 0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0,
-   "recent_deals": 0,
-   "pain_top": 0,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 0,
-   "ecosystem": 0
-  },
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 0.0,
-  "pillars": {
-   "fit": 0.0,
-   "pain": 0,
-   "access": 0.0,
-   "strategic": 0.0
-  },
-  "normalised": {
-   "icp_count": 0.0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0.0,
-   "recent_deals": 0.0,
-   "pain_top": 0,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.0,
-   "ecosystem": 0.0
-  },
-  "score": 0.0,
-  "live_brand_count": 0,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "failed",
-   "signals_with_data": 0,
-   "signals_total": 16
-  },
-  "rank": 61,
+  "rank": 56,
   "why": "."
  },
  {
@@ -6200,7 +5809,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 62,
+  "rank": 57,
   "why": "named portfolio/platform contact: Daniel Ovenden (Talent Team)."
  },
  {
@@ -6258,7 +5867,7 @@
    "avg_brand_fit": 0.0,
    "recent_deals": 0.0,
    "pain_top": 0,
-   "platform_team": 0.667,
+   "platform_team": 0.666667,
    "community": 0.0,
    "size_stage": 0.5,
    "vendor_openness": 0.0,
@@ -6274,7 +5883,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 63,
+  "rank": 58,
   "why": "named portfolio/platform contact: Aleksandra Zorylo (Operating Partner)."
  }
 ]

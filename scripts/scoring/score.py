@@ -336,7 +336,7 @@ def combine(rows, cfg=CFG):
         P = cfg["pillars"]
         r["gate"] = round(gate, 2)
         r["pillars"] = {"fit": round(fit, 3), "pain": round(pain, 3), "access": round(access, 3), "strategic": round(strat, 3)}
-        r["normalised"] = {k: round(v, 3) for k, v in n.items()}
+        r["normalised"] = {k: round(v, 6) for k, v in n.items()}  # 6dp so the site reproduces scores exactly
         r["score"] = round(100 * (P["fit"] * fit + P["pain"] * pain + P["access"] * access + P["strategic"] * strat), 1)
         live = [b for b in r["brands"] if b["status"] != "exited_old"]
         r["live_brand_count"] = len(live)
