@@ -199,7 +199,9 @@ def build_brands(brands):
             "news": news, "listing_news": listing_news, "funding_news": funding_news, "export_news": export_news,
         })
         cat_score = {"branded_grocery": 1.0, "manufacturer_own_label": 0.8, "supplements": 0.6, "meal_kit_dtc": 0.4}[category]
-        # No revenue data reaches us (Companies House is blocked here), so size band is proxied by retail reach and trade coverage.
+        # Turnover itself is not published for companies this size, so size starts as a proxy from retail reach
+        # and trade coverage and is then overridden by the accounts type filed at Companies House wherever one
+        # exists, which is 90 of the 110 brands. The proxy is the fallback, not the primary.
         trade_funding = any(n["trade_press"] for n in funding_news)
         if len(retail) >= 2 or category == "manufacturer_own_label":
             size = 1.0
