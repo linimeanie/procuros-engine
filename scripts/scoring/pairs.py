@@ -210,6 +210,24 @@ def rationale(f, pairs):
     return f"Backs {lead}" + (f"; {route}." if route else "; no named route yet, so the first job is finding the deal partner.")
 
 
+SCEN_LABEL = {"reach": "retail reach", "why_now": "why-now", "size": "size", "uk": "UK company",
+              "board": "board seat", "ops_person": "ops contact", "held": "holding confirmed",
+              "support": "support programme", "listed": "listed"}
+
+
+def scenario_change(kw):
+    """Spell out what a scenario actually moves. Derived from the same kwargs the rerun uses, so the table
+    cannot drift from what was run: naming a row "fit matters more" tells a reader nothing on its own."""
+    bits = []
+    for key, base in (("fit_w", P["brand_fit"]), ("path_w", P["intro_path"])):
+        for k, v in (kw.get(key) or {}).items():
+            if abs(v - base[k]) > 1e-9:
+                bits.append(f"{SCEN_LABEL[k]} {round(100 * base[k])} → {round(100 * v)}")
+    if "decay" in kw:
+        bits.append("second and third brands ignored" if len(kw["decay"]) == 1 else "every brand counts in full")
+    return ", ".join(bits) or "the weights as chosen"
+
+
 def rank(fund_rows, fit_w=None, path_w=None, decay=None):
     """Pure re-score used by the sensitivity test; returns fund names in rank order."""
     decay = decay or P["aggregate_decay"]
@@ -273,7 +291,8 @@ def main():
     sens = []
     for name, kw in scen.items():
         order = rank(rows, **kw)
-        sens.append({"scenario": name, "top": order[:n], "same_in_top": len(set(order[:n]) & set(base_top)),
+        sens.append({"scenario": name, "change": scenario_change(kw), "top": order[:n],
+                     "same_in_top": len(set(order[:n]) & set(base_top)),
                      "same_in_first": len(set(order[:k]) & set(base_top[:k]))})
     for r in rows:
         ranks = [rank(rows, **kw).index(r["fund"]) + 1 for kw in scen.values()]

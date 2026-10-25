@@ -514,7 +514,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="head"><h2>Does the weighting change the answer?</h2>
       <p class="lede">The ranking was rerun under other reasonable weightings. Asking whether the same funds stay in the 20 would prove nothing, because only 22 funds hold a fitting brand at all. What matters is whether the <b>order</b> holds, so each row reports the largest rank move that weighting causes. The call-first group is stable; the middle of the table is not.</p></div>
     <div class="table-scroll"><table>
-      <thead><tr><th>Scenario</th><th class="r" id="first-head"></th><th class="r">Biggest rank move</th></tr></thead>
+      <thead><tr><th>Scenario</th><th>What changed</th><th class="r" id="first-head"></th><th class="r">Biggest rank move</th></tr></thead>
       <tbody id="sens-body"></tbody>
     </table></div>
     <p class="small muted">Each fund's dossier shows the best and worst rank it reached across these scenarios.</p>
@@ -1241,7 +1241,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
       if (was >= 0 && Math.abs(was - i) > worst) { worst = Math.abs(was - i); who = name; }
     });
     const move = worst ? `${short(who)} by ${plural(worst, "place")}` : "none";
-    return `<tr><td>${esc(s.scenario)}</td><td class="r">${s.same_in_first} of ${D.first_group}</td><td class="r">${esc(move)}</td></tr>`;
+    return `<tr><td class="p">${esc(s.scenario)}</td><td class="muted">${esc(s.change || "")}</td><td class="r">${s.same_in_first} of ${D.first_group}</td><td class="r">${esc(move)}</td></tr>`;
   }).join("");
 
   // Funnel. Bars scale within their group, and the brand group now starts at the food-and-drink candidates
