@@ -81,7 +81,9 @@
     "Truestart"
   ],
   "excluded_fund_types": [
-    "angel/crowdfunding listing"
+    "angel/crowdfunding listing",
+    "corporate VC",
+    "development bank"
   ],
   "anchor_funds": [
     "Creandum",

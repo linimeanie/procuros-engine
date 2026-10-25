@@ -83,10 +83,68 @@ section > .wrap { display: grid; gap: 28px; }
 .three > div { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 8px; align-content: start; border-top: 3px solid var(--ink); padding-top: 14px; }
 @supports not (grid-template-rows: subgrid) { .three > div { grid-template-rows: none; } }
 .three .k { font: 500 12px/1 var(--mono); color: var(--accent); letter-spacing: .06em; text-transform: uppercase; }
+.three.four { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.three.four > div { grid-row: span 4; }
+.formula { font: 500 13px/1.45 var(--mono); background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 10px; }
+.flow > div { position: relative; }
+@media (min-width: 980px) { .flow > div:not(:last-child)::after { content: "→"; position: absolute; right: -22px; top: 6px; font: 700 18px/1 var(--display); color: var(--ink-2); } }
 
-/* Pipeline */
-.pipe { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px; }
-.pipe .lane { display: grid; gap: 10px; }
+/* Explainers: charts and the worked example */
+.explain { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 18px 20px; display: grid; gap: 12px; align-content: start; }
+.card h3 { font-size: 18px; }
+.card svg { width: 100%; height: auto; display: block; }
+.card svg text { font-family: var(--mono); font-size: 11px; fill: var(--ink-2); }
+.card svg .strong { fill: var(--ink); font-weight: 500; }
+.wx { display: grid; gap: 12px; }
+.wx-pick { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-size: 14px; }
+select { font: 500 13px/1 var(--mono); padding: 7px 8px; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 3px; }
+.wx table td { vertical-align: middle; }
+.wx .mini { height: 10px; background: color-mix(in srgb, var(--rule) 55%, transparent); border-radius: 2px; overflow: hidden; min-width: 80px; }
+.wx .mini span { display: block; height: 100%; background: var(--p-pain); }
+.wx tr.total td { border-top: 1px solid var(--ink); font-weight: 600; }
+.wx tr.mult td { color: var(--accent); }
+.sig-w { display: grid; grid-template-columns: minmax(80px, 1fr) 42px; gap: 8px; align-items: center; }
+.sig-w output { font: 500 13px var(--mono); text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Tiers */
+.tierbox { display: grid; gap: 16px; }
+.tier-rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.tier-rules > div { display: flex; gap: 12px; align-items: start; background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 12px 14px; font-size: 14px; }
+.tier-rules .tier { flex: none; }
+.strip { position: relative; height: 154px; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
+.strip .zone { position: absolute; top: 0; bottom: 22px; border-right: 1px dashed var(--ink-2); }
+.strip .zone span { position: absolute; left: 8px; top: 8px; font: 500 11px/1 var(--mono); color: var(--ink-2); letter-spacing: .04em; text-transform: uppercase; }
+.strip .zone.za { background: color-mix(in srgb, var(--accent) 12%, transparent); border-right: 0; }
+.strip .zone.zb { background: color-mix(in srgb, var(--accent) 5%, transparent); }
+.strip .dot { position: absolute; width: 13px; height: 13px; margin: -6.5px 0 0 -6.5px; border-radius: 50%; background: var(--ink); border: 2px solid var(--ink); cursor: pointer; padding: 0; }
+.strip .dot.thin { background: var(--card); }
+.strip .dot.on { border-color: var(--accent); background: var(--accent); }
+.strip .dot.thin.on { background: var(--card); }
+.strip .flag { position: absolute; font: 500 11px/1.2 var(--mono); color: var(--accent); white-space: nowrap; transform: translateX(-50%); }
+.strip .axis-x { position: absolute; left: 0; right: 0; bottom: 0; height: 22px; border-top: 1px solid var(--rule); }
+.strip .axis-x span { position: absolute; bottom: 5px; transform: translateX(-50%); font: 400 10px/1 var(--mono); color: var(--ink-2); }
+.tier-why { font-size: 14px; background: var(--card); border-left: 3px solid var(--accent); padding: 8px 12px; border-radius: 2px; }
+
+/* Theme switch */
+.theme { margin-left: auto; font: 500 12px/1 var(--mono); padding: 8px 10px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); color: var(--ink); cursor: pointer; white-space: nowrap; }
+.theme:hover { border-color: var(--ink-2); }
+
+/* Pipeline: every row shares one column template, so labels, bars, numbers and shares line up across both groups */
+.funnel { display: grid; gap: 12px; }
+.funnel h3 { padding-top: 10px; border-top: 1px solid var(--rule); }
+.funnel .f-head + h3 { border-top: 0; padding-top: 0; }
+.f-row { display: grid; grid-template-columns: 220px minmax(0, 1fr) 64px 170px; gap: 16px; align-items: center; font-size: 14px; }
+.f-row b { font: 700 18px/1 var(--display); font-variant-numeric: tabular-nums; text-align: right; }
+.f-row.last .bar-fill { background: var(--accent); }
+.f-head { font: 500 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.f-head span:nth-child(3) { text-align: right; }
+@media (max-width: 640px) {
+  .f-row { grid-template-columns: minmax(0, 1fr) 56px; gap: 6px 12px; }
+  .f-row .bar-track { grid-column: 1 / -1; grid-row: 2; }
+  .f-row .drop { grid-column: 1 / -1; grid-row: 3; }
+  .f-head { display: none; }
+}
 .bar-row { display: grid; grid-template-columns: 1fr; gap: 4px; }
 .bar-row .lbl { display: flex; justify-content: space-between; font-size: 14px; }
 .bar-row .lbl b { font: 700 18px/1 var(--display); font-variant-numeric: tabular-nums; }
@@ -102,6 +160,7 @@ section > .wrap { display: grid; gap: 28px; }
 table { border-collapse: collapse; width: 100%; font-size: 14px; }
 th { text-align: left; font: 500 11px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); padding: 8px 10px; border-bottom: 1px solid var(--ink); }
 td { padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+#sig-body td:first-child { white-space: nowrap; }
 td.w { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
 .pill-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: -1px; }
 .panel { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; display: grid; gap: 16px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 112px); }
@@ -216,7 +275,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
 .btn[disabled]:hover { background: transparent; color: var(--ink); }
 
 /* Map takeaways double as highlight filters */
-.takeaways { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.takeaways { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
 .takeaways button { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 6px; align-content: start; text-align: left; font: inherit; color: inherit; background: var(--card); border: 1px solid var(--rule); border-top: 3px solid var(--ink); border-radius: 4px; padding: 14px 16px; cursor: pointer; }
 .takeaways button:hover { border-color: var(--ink-2); }
 .takeaways button[aria-pressed="true"] { border-color: var(--accent); border-top-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
@@ -238,10 +297,10 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming next">1.2 Two-fund experiment <span class="soon">next</span></button>
     <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">1.3 Scaling the motion <span class="soon">later</span></button>
     <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">2 Creative play <span class="soon">later</span></button>
+    <button type="button" class="theme" id="theme" aria-label="Switch between day and night mode"></button>
   </div>
   <div class="subtabs" role="tablist" aria-label="Investor shortlist sections" id="subtabs">
-    <button type="button" role="tab" data-tab="thesis">Thesis</button>
-    <button type="button" role="tab" data-tab="pipeline">Pipeline</button>
+    <button type="button" role="tab" data-tab="overview">Overview</button>
     <button type="button" role="tab" data-tab="signals">Signals</button>
     <button type="button" role="tab" data-tab="ranking">Ranking</button>
     <button type="button" role="tab" data-tab="map">Map</button>
@@ -249,10 +308,10 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   </div>
 </div></nav>
 
-<section id="thesis" class="panel-tab" role="tabpanel"><div class="hero"><div class="wrap" style="display:grid;gap:26px">
+<section id="overview" class="panel-tab" role="tabpanel"><div class="hero"><div class="wrap" style="display:grid;gap:26px">
   <p class="eyebrow">Procuros · UK go-to-market · Task 1.1 · data as of <span id="asof"></span></p>
   <h1>Twenty <em>warm doors</em> into UK grocery.</h1>
-  <p class="lede">UK grocery brands don't buy EDI from cold emails. They buy when a retailer mandates it, a funding round lands, or the ops team drowns in PDF orders. <strong>Their investors see those moments first.</strong> We scraped the portfolios of every UK fund that backs grocery brands, scored each brand for retail reach and live pain, and ranked the investors who can open the most doors.</p>
+  <p class="lede">I ranked the UK <strong>VC and PE funds</strong> that can introduce Procuros to the grocery brands that need EDI most. Every number on this site traces back to a scraped page, and every step from raw portfolios to the shortlist is explained below.</p>
   <div class="ticket" id="ticket"></div>
 </div></div>
 
@@ -263,23 +322,18 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     <div><span class="k">Density</span><h3>One relationship, many brands</h3><p class="muted">A single fund can hold 5 to 16 UK grocery brands. Win the partner once and the intros compound.</p></div>
     <div><span class="k">Timing</span><h3>Money changes the ops stack</h3><p class="muted">New rounds and buyouts come with 100-day plans: new retailers, new ERP, new pressure on order processing. That is Procuros' window.</p></div>
   </div>
-  <div class="next"><button type="button" class="btn" data-go="pipeline">Next: Pipeline →</button></div>
-</div></section>
 
-<section id="pipeline" class="panel-tab" role="tabpanel" hidden><div class="wrap">
-  <div class="prose">
+  <div class="prose" style="margin-top:28px">
     <p class="eyebrow">How the data was built</p>
-    <h2>From 66 funds to a shortlist of 20</h2>
-    <p class="muted">Every number below comes from a scraped page with its source URL kept. Bars are drawn to scale within each lane.</p>
+    <h2>From <span id="n-seeded"></span> funds to a shortlist of 20</h2>
+    <p class="muted">Each bar is drawn to scale within its group, and the right-hand column shows how much of the step before survives. Only VC and PE funds are ranked: corporate venture arms, a public development bank and crowdfunding listings were removed.</p>
   </div>
-  <div class="pipe">
-    <div class="lane" id="lane-funds"><h3>Funds</h3></div>
-    <div class="lane" id="lane-companies"><h3>Companies</h3></div>
-  </div>
-  <div class="three">
-    <div><span class="k">1 · Scrape</span><p class="muted">Fund sites, sitemaps and profile pages, plain HTTP first and a headless browser only for JavaScript-heavy sites.</p></div>
-    <div><span class="k">2 · Classify</span><p class="muted">Keyword rules over names and descriptions, then a manual pass to keep UK packaged food, drink, snack, frozen and pet brands.</p></div>
-    <div><span class="k">3 · Enrich</span><p class="muted">Stockist pages for named retailers, careers pages for ops and supply-chain roles, and 24 months of news for funding, listings and exports.</p></div>
+  <div class="funnel" id="funnel"></div>
+  <div class="three four">
+    <div><span class="k">1 · Scrape</span><h3>Read every portfolio</h3><p class="muted">Fund sites, sitemaps and profile pages. Plain HTTP first, a headless browser only for JavaScript-heavy sites.</p><p class="muted mono" style="font-size:12px">3,710 companies</p></div>
+    <div><span class="k">2 · Classify</span><h3>Keep UK grocery brands</h3><p class="muted">Keyword rules over names and descriptions, then a manual pass to keep UK packaged food, drink, snack, frozen and pet brands.</p><p class="muted mono" style="font-size:12px">390 → 109 brands</p></div>
+    <div><span class="k">3 · Enrich</span><h3>Look for buying signals</h3><p class="muted">Retailer product pages, careers pages and job boards, Companies House filings and 24 months of trade news.</p><p class="muted mono" style="font-size:12px">5 sources per brand</p></div>
+    <div><span class="k">4 · Score</span><h3>Rank the funds</h3><p class="muted">Sixteen signals roll up into four pillars and one score out of 100. The Signals tab shows every step of the maths.</p><p class="muted mono" style="font-size:12px">16 signals → 1 score</p></div>
   </div>
   <div class="next"><button type="button" class="btn" data-go="signals">Next: Signals →</button></div>
 </div></section>
@@ -288,18 +342,40 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   <div class="prose">
     <p class="eyebrow">Scoring logic</p>
     <h2>Four pillars, sixteen signals</h2>
-    <p class="muted">Each signal is scaled 0 to 1 across the funds; counts are log-scaled so one huge portfolio doesn't flatten the rest. News loses half its weight every 9 months, and a brand showing two or more triggers within 12 months (a listing, a round, ops hiring, export) gets up to 1.5× on its pain score, because that overlap is the buying moment. Access and strategic value only count once a fund holds brands to reach: they scale with live brands up to three. Move the sliders to re-weight the pillars and watch the ranking change.</p>
+    <p class="muted">I score every fund on the same formula, so the ranking can be checked and argued with. This tab walks through it in four steps, shows what happens when a brand has more than one signal, and lets you change every weight.</p>
+  </div>
+
+  <div class="three four flow">
+    <div><span class="k">Step 1 · Scale</span><h3>Each signal becomes 0 to 1</h3><p class="formula">best fund = 1 · worst = 0</p><p class="muted">Counts such as brands held are log-scaled first, so one 16-brand portfolio doesn't flatten everyone else.</p></div>
+    <div><span class="k">Step 2 · Pillars</span><h3>Signals add up into four pillars</h3><p class="formula">pillar = Σ weight × signal</p><p class="muted">Each pillar is a weighted sum of its signals; the weights inside a pillar add up to 100%.</p></div>
+    <div><span class="k">Step 3 · Score</span><h3>Pillars add up into one score</h3><p class="formula" id="formula-score"></p><p class="muted">Access and strategic value are scaled down for funds with fewer than three live brands: reach is worth little without brands to reach.</p></div>
+    <div><span class="k">Step 4 · Tier</span><h3>The score sets the tier</h3><p class="formula">A ≥ 38 and 3+ brands · B ≥ 30</p><p class="muted">The Ranking tab shows each fund on the tier scale and why it landed where it did.</p></div>
+  </div>
+
+  <div class="prose" style="margin-top:12px">
+    <h2>When a brand shows more than one signal</h2>
+    <p class="muted">Brand pain is where most of the signals live. Two rules decide how several signals combine: older news counts for less, and signals that land close together count for more, because that overlap is the moment a brand is most likely to buy.</p>
+  </div>
+  <div class="explain">
+    <div class="card"><p class="eyebrow">Rule 1 · Recency</p><h3>News loses half its weight every 9 months</h3><div id="decay"></div><p class="muted" style="font-size:14px">A story from this month counts in full. One from 18 months ago counts a quarter. Anything older than 24 months isn't counted. Open job ads are live today, so they don't decay.</p></div>
+    <div class="card"><p class="eyebrow">Rule 2 · Stacking</p><h3>Signals in the same 12 months multiply</h3><div id="stackchart"></div><p class="muted" style="font-size:14px">I count four kinds of trigger: a new listing, a funding round, ops hiring and export news. Each extra trigger inside 12 months adds 25% to the brand's pain, up to 1.5×, so one very busy brand can't dominate its fund.</p></div>
+  </div>
+  <div class="card wx" id="worked"></div>
+
+  <div class="prose" style="margin-top:12px">
+    <h2>Change the weights</h2>
+    <p class="muted">Every signal has its own slider, and so does every pillar. Weights inside a pillar are rescaled to add up to 100%, and so are the pillar weights. The worked example above and the ranking update as you move them.</p>
   </div>
   <div class="sig-grid">
     <div class="table-scroll"><table>
-      <thead><tr><th>Pillar</th><th>Signal</th><th>Source</th><th style="text-align:right">Weight in pillar</th></tr></thead>
+      <thead><tr><th>Pillar</th><th>Signal</th><th>Source</th><th style="min-width:150px">Weight in pillar</th></tr></thead>
       <tbody id="sig-body"></tbody>
     </table></div>
     <form class="panel" id="weights" onsubmit="return false">
       <h3>Pillar weights</h3>
       <div id="sliders" style="display:grid;gap:14px"></div>
-      <p class="muted" style="font-size:13px">Weights are rescaled to add up to 100%.</p>
-      <button type="button" class="btn" id="reset">Reset to 40 / 30 / 20 / 10</button>
+      <p class="muted" style="font-size:13px">Pillar weights are rescaled to add up to 100%.</p>
+      <button type="button" class="btn" id="reset">Reset every weight</button>
     </form>
   </div>
   <div class="next"><button type="button" class="btn" data-go="ranking">Next: Ranking →</button></div>
@@ -310,6 +386,16 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     <div class="prose"><p class="eyebrow">Result</p><h2>The ranking</h2>
       <p class="muted">Funds holding at least one live UK grocery brand. Bar segments show what each pillar adds to the score. Select a fund to see its dossier alongside the ranking.</p></div>
     <div class="legend" id="legend"></div>
+  </div>
+  <div class="tierbox">
+    <h3>How tiers work</h3>
+    <div class="tier-rules">
+      <div><span class="tier A">A</span><span>Score of <b>38 or more</b> <i>and</i> at least <b>3 live brands</b>. Call these first: one partner opens several doors.</span></div>
+      <div><span class="tier B">B</span><span>Score of <b>30 or more</b>, or a high score with fewer than 3 live brands. Worth an intro, but it won't compound.</span></div>
+      <div><span class="tier C">C</span><span>Score <b>below 30</b>. A reserve bench: few brands, thin signals, or both.</span></div>
+    </div>
+    <div class="strip" id="strip" role="img" aria-label="Shortlisted funds placed on the score scale with tier zones"></div>
+    <p class="muted" style="font-size:14px" id="tier-note"></p>
   </div>
   <div>
     <div class="axis" aria-hidden="true"><span></span><span></span><span class="sp"></span><div class="ticks" id="ticks"></div><span></span><span></span></div>
@@ -322,7 +408,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   <div class="prose">
     <p class="eyebrow">The network</p>
     <h2>Who sits behind which brand</h2>
-    <p class="muted">Each dark circle is a shortlisted fund, sized by score. Each dot is a UK grocery brand it backs, coloured by how many major grocers stock it. Three things stand out; select one to highlight it on the map.</p>
+    <p class="muted">Each dark circle is a shortlisted fund, sized by score. Each dot is a UK grocery brand it backs, coloured by how many major grocers stock it. Six things stand out; select one to highlight it on the map, and select it again to clear.</p>
   </div>
   <div class="takeaways" id="takeaways"></div>
   <div class="map-box">
@@ -360,9 +446,24 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
+// Day / night switch: an explicit choice wins over the system setting and is remembered per browser
+(function () {
+  const root = document.documentElement, tb = document.getElementById("theme");
+  const sys = matchMedia("(prefers-color-scheme: dark)");
+  try { const t = localStorage.getItem("theme"); if (t === "light" || t === "dark") root.dataset.theme = t; } catch (e) {}
+  const dark = () => root.dataset.theme ? root.dataset.theme === "dark" : sys.matches;
+  const label = () => { tb.textContent = dark() ? "☀ Day" : "☾ Night"; tb.setAttribute("aria-pressed", String(dark())); };
+  tb.addEventListener("click", () => {
+    root.dataset.theme = dark() ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+    label();
+  });
+  sys.addEventListener("change", label);
+  label();
+})();
 (async function () {
   const D = await fetch("data.json").then(r => r.json());
-  const TABS = ["thesis", "pipeline", "signals", "ranking", "map", "limits"];
+  const TABS = ["overview", "signals", "ranking", "map", "limits"];
   const PILLARS = [
     { key: "fit", label: "Portfolio fit", color: "var(--p-fit)" },
     { key: "pain", label: "Brand pain", color: "var(--p-pain)" },
@@ -381,24 +482,22 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   const brandsByName = Object.fromEntries(D.brands.map(b => [b.name, b]));
 
   // Ticket
-  const f = D.funnel;
+  const FN = Object.fromEntries(D.funnel.map(x => [x.label, x.value]));
   document.getElementById("ticket").innerHTML = [
-    [f[0].value, "funds seeded"], [fmtInt(f[2].value), "portfolio companies"], [f[4].value, "UK grocery brands"], [20, "warm doors"],
+    [FN["VC and PE funds only"], "VC and PE funds"], [fmtInt(FN["Portfolio companies"]), "portfolio companies"], [FN["UK grocery brands kept"], "UK grocery brands"], [20, "warm doors"],
   ].map(([v, l]) => `<span class="sel"><b class="num">${v}</b>${l}</span>`).join("");
+  document.getElementById("n-seeded").textContent = FN["Funds seeded"];
 
-  // Pipeline lanes, each drawn to its own scale
-  function lane(id, rows) {
-    const max = rows[0].value, el = document.getElementById(id);
-    rows.forEach((r, i) => {
-      const prev = rows[i - 1];
-      el.insertAdjacentHTML("beforeend", `<div class="bar-row ${i === rows.length - 1 ? "last" : ""}">
-        <div class="lbl"><span>${r.label}</span><b>${fmtInt(r.value)}</b></div>
-        <div class="bar-track"><div class="bar-fill" style="width:${(100 * r.value / max).toFixed(1)}%"></div></div>
-        ${prev ? `<span class="drop">${Math.round(100 * r.value / prev.value)}% of the step before</span>` : ""}</div>`);
-    });
-  }
-  lane("lane-funds", [f[0], f[1], f[5], f[6]]);
-  lane("lane-companies", [f[2], f[3], f[4]]);
+  // Pipeline: two groups, each drawn to its own scale, on one shared column grid
+  const STAGES = [
+    ["Funds", [["Funds seeded", "Funds seeded"], ["VC and PE funds only", "VC and PE funds only"], ["Portfolios read", "Portfolios read"],
+      ["Funds holding a live brand", "Hold a live UK grocery brand"], ["Shortlist", "Shortlist"]]],
+    ["Companies", [["Portfolio companies", "Portfolio companies found"], ["Food & drink candidates", "Food and drink candidates"], ["UK grocery brands kept", "UK grocery brands kept"]]],
+  ];
+  document.getElementById("funnel").innerHTML = `<div class="f-row f-head" aria-hidden="true"><span>Stage</span><span>To scale</span><span>Count</span><span>Kept from step before</span></div>` +
+    STAGES.map(([h, rows]) => `<h3>${h}</h3>` + rows.map(([k, l], i) => `<div class="f-row ${i === rows.length - 1 ? "last" : ""}">
+      <span>${l}</span><div class="bar-track"><div class="bar-fill" style="width:${(100 * FN[k] / FN[rows[0][0]]).toFixed(1)}%"></div></div>
+      <b>${fmtInt(FN[k])}</b><span class="drop">${i ? Math.round(100 * FN[k] / FN[rows[i - 1][0]]) + "% kept" : "starting point"}</span></div>`).join("")).join("");
 
   // Signal table
   const SIG = {
@@ -407,10 +506,25 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     access: [["platform_team", "Named portfolio-ops or value-creation people", "Fund team pages"], ["community", "Founder community and events", "Fund sites"], ["size_stage", "Fund size and stage (smaller is easier to reach)", "Desk research"], ["vendor_openness", "Partner or perks programme", "Fund sites"]],
     strategic: [["procuros_overlap", "Already backs a Procuros customer", "Portfolio vs. customer list"], ["brand_halo", "Category leaders other brands copy", "Retail reach"], ["ecosystem", "Accelerators and programmes", "Fund sites"]],
   };
-  const pillarW = { fit: D.config.fit, pain: D.config.pain, access: D.config.access, strategic: D.config.strategic };
+  const C = D.config;
+  const SW0 = Object.fromEntries(PILLARS.map(p => [p.key, { ...C[p.key] }]));
+  let SW = JSON.parse(JSON.stringify(SW0));
   document.getElementById("sig-body").innerHTML = PILLARS.map(p => SIG[p.key].map((s, i) => `<tr>
     <td>${i === 0 ? `<span class="pill-dot" style="background:${p.color}"></span><b>${p.label}</b>` : ""}</td>
-    <td>${s[1]}</td><td class="muted">${s[2]}</td><td class="w">${Math.round(100 * pillarW[p.key][s[0]])}%</td></tr>`).join("")).join("");
+    <td>${s[1]}</td><td class="muted">${s[2]}</td>
+    <td><div class="sig-w"><input type="range" min="0" max="100" step="5" data-p="${p.key}" data-k="${s[0]}" value="${Math.round(100 * SW0[p.key][s[0]])}" aria-label="Weight of ${esc(s[1])} within ${p.label}"><output id="sw-${p.key}-${s[0]}"></output></div></td></tr>`).join("")).join("");
+  const sigInputs = [...document.querySelectorAll("#sig-body input")];
+  const readSW = () => {
+    PILLARS.forEach(p => {
+      const ins = sigInputs.filter(x => x.dataset.p === p.key);
+      const sum = ins.reduce((a, x) => a + +x.value, 0);
+      ins.forEach(x => {
+        SW[p.key][x.dataset.k] = sum ? +x.value / sum : 1 / ins.length;
+        document.getElementById(`sw-${p.key}-${x.dataset.k}`).textContent = Math.round(100 * SW[p.key][x.dataset.k]) + "%";
+      });
+    });
+  };
+  document.getElementById("sig-body").addEventListener("input", () => { readSW(); render(); renderWorked(); });
 
   // Sliders
   const sl = document.getElementById("sliders");
@@ -422,21 +536,35 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     const sum = Object.values(raw).reduce((a, b) => a + b, 0) || 1;
     W = Object.fromEntries(Object.entries(raw).map(([k, v]) => [k, v / sum]));
     PILLARS.forEach(p => document.getElementById("o-" + p.key).textContent = Math.round(100 * W[p.key]) + "%");
+    document.getElementById("formula-score").textContent = "score = 100 × (" + PILLARS.map(p => Math.round(100 * W[p.key]) + "% " + p.key).join(" + ") + ")";
   };
   sl.addEventListener("input", () => { readW(); render(); });
   document.getElementById("reset").addEventListener("click", () => {
     PILLARS.forEach(p => document.getElementById("w-" + p.key).value = Math.round(100 * DEFAULT_W[p.key]));
-    readW(); render();
+    sigInputs.forEach(x => x.value = Math.round(100 * SW0[x.dataset.p][x.dataset.k]));
+    readW(); readSW(); render(); renderWorked();
   });
 
-  // Scoring, mirroring scripts/scoring/score.py
+  // Scoring, mirroring scripts/scoring/score.py. Brand pain is rebuilt here so the pain sliders reach it.
+  const mult = k => Math.min(1 + C.stack.bonus_per_extra_signal * Math.max(k - 1, 0), C.stack.max_multiplier);
+  function brandPain(B) {
+    const base = Object.entries(SW.pain).reduce((a, [k, w]) => a + w * ((B.pain_parts || {})[k] ?? 0), 0);
+    const m = mult((B.stack || []).length);
+    return { base, m, pain: Math.round(1000 * Math.min(base * m, 1)) / 1000 };  // rounded like score.py, so default scores match exactly
+  }
+  function painTop(fd) {
+    const xs = fd.brands.map(b => { const B = brandsByName[b.brand]; return (B ? brandPain(B).pain : b.pain) * C.status_weight[b.status]; })
+      .sort((a, b) => b - a).slice(0, C.pain_top_n);
+    return xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0;
+  }
   function pillarsOf(fd) {
-    const n = fd.n, c = D.config;
+    const n = fd.n;
     const sum = (wts) => Object.entries(wts).reduce((a, [k, w]) => a + w * (n[k] ?? 0), 0);
-    return { fit: sum(c.fit), pain: n.pain_top, access: sum(c.access) * fd.gate, strategic: sum(c.strategic) * fd.gate };
+    const gate = Math.min(fd.live / C.gate_brands, 1);  // exact, not the rounded fd.gate
+    return { fit: sum(SW.fit), pain: painTop(fd), access: sum(SW.access) * gate, strategic: sum(SW.strategic) * gate };
   }
   function scoreAll(weights) {
-    const t = D.config.tiers;
+    const t = C.tiers;
     return universe.map(fd => {
       const p = pillarsOf(fd);
       const parts = Object.fromEntries(PILLARS.map(x => [x.key, 100 * weights[x.key] * p[x.key]]));
@@ -450,6 +578,95 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   document.getElementById("legend").innerHTML = PILLARS.map(p => `<span><span class="pill-dot" style="background:${p.color}"></span>${p.label}</span>`).join("");
   const AX = 60;
   document.getElementById("ticks").innerHTML = [0, 20, 40, 60].map(v => `<span style="left:${100 * v / AX}%">${v}</span>`).join("");
+
+  // Rule 1 chart: the recency curve
+  (function decayChart() {
+    const hl = C.recency_half_life_months, X = m => 44 + m * 12, Y = w => 20 + (1 - w) * 110;
+    const pts = d3.range(0, 24.01, 0.5).map(m => `${X(m).toFixed(1)},${Y(0.5 ** (m / hl)).toFixed(1)}`).join(" ");
+    const marks = [0, 9, 18, 24].map(m => ({ m, w: 0.5 ** (m / hl) }));
+    document.getElementById("decay").innerHTML = `<svg viewBox="0 0 360 172" role="img" aria-label="A news story's weight halves every ${hl} months">
+      ${[0, 0.5, 1].map(w => `<line x1="44" x2="332" y1="${Y(w)}" y2="${Y(w)}" style="stroke:var(--rule)"/><text x="36" y="${Y(w) + 4}" text-anchor="end">${w * 100}%</text>`).join("")}
+      ${[0, 6, 12, 18, 24].map(m => `<text x="${X(m)}" y="150" text-anchor="middle">${m}</text>`).join("")}
+      <text x="188" y="168" text-anchor="middle">months since the story</text>
+      <polyline points="${pts}" fill="none" style="stroke:var(--p-pain)" stroke-width="2.5"/>
+      ${marks.map(d => `<circle cx="${X(d.m)}" cy="${Y(d.w)}" r="4" style="fill:var(--p-pain)"/><text class="strong" x="${X(d.m) + (d.m === 24 ? -6 : 7)}" y="${Y(d.w) - 8}" text-anchor="${d.m === 24 ? "end" : "start"}">${Math.round(100 * d.w)}%</text>`).join("")}
+    </svg>`;
+  })();
+  // Rule 2 chart: the stacking multiplier
+  (function stackChart() {
+    const ks = [1, 2, 3, 4], Y = v => 130 - (v / 1.6) * 110, bw = 52;
+    document.getElementById("stackchart").innerHTML = `<svg viewBox="0 0 360 172" role="img" aria-label="Pain multiplier by number of triggers in 12 months, capped at ${C.stack.max_multiplier} times">
+      <line x1="30" x2="340" y1="${Y(C.stack.max_multiplier)}" y2="${Y(C.stack.max_multiplier)}" style="stroke:var(--ink-2)" stroke-dasharray="4 4"/>
+      <text x="30" y="${Y(C.stack.max_multiplier) - 6}">cap</text>
+      <line x1="30" x2="340" y1="130" y2="130" style="stroke:var(--rule)"/>
+      ${ks.map((k, i) => { const x = 50 + i * 76, v = mult(k); return `<rect x="${x}" y="${Y(v)}" width="${bw}" height="${130 - Y(v)}" rx="2" style="fill:var(--p-pain)" fill-opacity="${0.35 + 0.2 * i}"/>
+        <text class="strong" x="${x + bw / 2}" y="${Y(v) - 6}" text-anchor="middle">${v.toFixed(2)}×</text>
+        <text x="${x + bw / 2}" y="150" text-anchor="middle">${k === 4 ? "4" : k} trigger${k > 1 ? "s" : ""}</text>`; }).join("")}
+      <text x="188" y="168" text-anchor="middle">triggers within 12 months</text>
+    </svg>`;
+  })();
+  // Worked example: one real brand, step by step, with the current weights
+  const PAIN_LABEL = { listings: "New retailer listings", funding: "Funding or acquisition", ops_hiring: "Ops or supply-chain hiring", momentum: "News momentum", expansion: "Export or new markets" };
+  const PAIN_CAP = { listings: "2 recent stories = full marks", funding: "2 recent stories = full marks", ops_hiring: "3 open roles = full marks", momentum: "6 recent stories = full marks", expansion: "1 recent story = full marks" };
+  const stacked = D.brands.filter(b => (b.stack || []).length > 1).sort((a, b) => b.pain - a.pain);
+  let wxName = stacked.length ? stacked[0].name : null;
+  const ageM = d => Math.max((Date.parse(D.as_of) - Date.parse(d)) / 864e5 / 30.4, 0);
+  function renderWorked() {
+    const el = document.getElementById("worked");
+    if (!wxName) { el.hidden = true; return; }
+    const B = brandsByName[wxName], bp = brandPain(B), maxW = Math.max(...Object.values(SW.pain));
+    const backers = universe.filter(fd => fd.brands.some(b => b.brand === B.name));
+    const rows = Object.keys(SW.pain).map(k => {
+      const v = (B.pain_parts || {})[k] ?? 0, w = SW.pain[k], pts = v * w, on = (B.stack || []).includes(k);
+      return `<tr><td>${PAIN_LABEL[k]}${on ? ` <span class="chip" title="Active within the last 12 months, so it counts towards stacking">trigger</span>` : ""}<br><span class="muted" style="font-size:12px">${PAIN_CAP[k]}</span></td>
+        <td class="w">${v.toFixed(2)}</td><td class="w">× ${Math.round(100 * w)}%</td><td class="w">= ${pts.toFixed(3)}</td>
+        <td><div class="mini"><span style="width:${maxW ? (100 * pts / maxW).toFixed(1) : 0}%"></span></div></td></tr>`;
+    }).join("");
+    const trig = (B.triggers || []).map(t => `<li>${esc(t.date.slice(0, 7))} · <a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.headline)}</a> <span class="mono muted">counts ${Math.round(100 * 0.5 ** (ageM(t.date) / C.recency_half_life_months))}%</span></li>`).join("");
+    el.innerHTML = `<div class="wx-pick"><p class="eyebrow">Worked example</p><label>Brand with stacked signals:
+        <select id="wx-sel">${stacked.map(b => `<option${b.name === wxName ? " selected" : ""}>${esc(b.name)}</option>`).join("")}</select></label></div>
+      <h3>${esc(B.name)}${B.blurb ? ` <span class="muted" style="font:400 15px var(--body)">· ${esc(B.blurb)}</span>` : ""}</h3>
+      ${trig ? `<div><p class="muted" style="font-size:14px">Its latest trade stories, and how much each still counts after recency decay:</p><ul style="margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:4px">${trig}</ul></div>` : ""}
+      <div class="table-scroll"><table>
+        <thead><tr><th>Signal</th><th style="text-align:right">Value 0–1</th><th style="text-align:right">Weight</th><th style="text-align:right">Points</th><th></th></tr></thead>
+        <tbody>${rows}
+          <tr class="total"><td>Base pain (sum of points)</td><td></td><td></td><td class="w">${bp.base.toFixed(3)}</td><td></td></tr>
+          <tr class="mult"><td>Stacking: ${(B.stack || []).length} triggers within 12 months (${(B.stack || []).map(k => STACK_LABEL[k]).join(" + ")})</td><td></td><td></td><td class="w">× ${bp.m.toFixed(2)}</td><td></td></tr>
+          <tr class="total"><td>Brand pain = base × multiplier, capped at 1</td><td></td><td></td><td class="w">${bp.pain.toFixed(3)}</td><td></td></tr>
+        </tbody></table></div>
+      <p class="muted" style="font-size:14px">From brand to fund: a fund's pain pillar is the average of its ${C.pain_top_n} most painful brands, each multiplied by its holding weight (${C.status_weight.current} still held, ${C.status_weight.unknown} not confirmed, ${C.status_weight.exited_recent} sold in the last 24 months, ${C.status_weight.exited_old} sold earlier).
+        ${backers.length ? `${esc(B.name)} sits with ${backers.map(fd => `<b>${esc(fd.name)}</b> (pain pillar ${Math.round(100 * painTop(fd))} / 100)`).join(", ")}.` : ""}</p>`;
+    document.getElementById("wx-sel").addEventListener("change", e => { wxName = e.target.value; renderWorked(); });
+  }
+
+  // Tiers: why each fund lands where it does
+  function tierWhy(r) {
+    const t = C.tiers, s = r.score.toFixed(1), n = r.fd.live, br = n + " live brand" + (n === 1 ? "" : "s");
+    if (r.tier === "A") return `Tier A: a score of ${s} clears the A line of ${t.A.min_score}, and ${br} meet the minimum of ${t.A.min_brands}.`;
+    if (r.score >= t.A.min_score) return `Tier B, not A: the score of ${s} clears the A line of ${t.A.min_score}, but Tier A also needs ${t.A.min_brands} live brands and this fund holds ${br}. One partner relationship should open several doors.`;
+    if (r.tier === "B") return `Tier B: a score of ${s} sits between the B line of ${t.B.min_score} and the A line of ${t.A.min_score}.`;
+    return `Tier C: a score of ${s} is below the B line of ${t.B.min_score}.`;
+  }
+  function renderStrip() {
+    const t = C.tiers, MAX = 60, pct = v => `calc(16px + (100% - 32px) * ${(Math.min(v, MAX) / MAX).toFixed(4)})`;
+    const top20 = current.slice(0, 20), lanes = [];
+    const dots = [...top20].sort((a, b) => a.score - b.score).map(r => {
+      let lane = lanes.findIndex(x => r.score - x > 2.4); if (lane < 0) lane = lanes.length; if (lane > 3) lane = 3;
+      lanes[lane] = r.score;
+      return { r, top: 34 + lane * 20 };
+    });
+    const odd = top20.filter(r => r.score >= t.A.min_score && r.fd.live < t.A.min_brands);
+    document.getElementById("strip").innerHTML = `
+      <div class="zone" style="left:0;width:${pct(t.B.min_score)}"><span>C · below ${t.B.min_score}</span></div>
+      <div class="zone zb" style="left:${pct(t.B.min_score)};width:calc((100% - 32px) * ${((t.A.min_score - t.B.min_score) / MAX).toFixed(4)})"><span>B · ${t.B.min_score}+</span></div>
+      <div class="zone za" style="left:${pct(t.A.min_score)};right:0"><span>A · ${t.A.min_score}+ and ${t.A.min_brands}+ brands</span></div>
+      ${dots.map(d => `<button type="button" class="dot ${d.r.fd.live < t.A.min_brands ? "thin" : ""} ${selected === d.r.fd.name ? "on" : ""}" style="left:${pct(d.r.score)};top:${d.top}px" data-n="${esc(d.r.fd.name)}" title="${esc(d.r.fd.name)} · ${d.r.score.toFixed(1)} · ${d.r.fd.live} live brand${d.r.fd.live === 1 ? "" : "s"} · Tier ${d.r.tier}" aria-label="${esc(d.r.fd.name)}, Tier ${d.r.tier}"></button>`).join("")}
+      ${dots.filter(d => odd.includes(d.r)).map(d => `<span class="flag" style="left:${pct(d.r.score)};top:112px">↑ ${esc(d.r.fd.name.split(" ")[0])}: ${d.r.fd.live} brands</span>`).join("")}
+      <div class="axis-x">${[0, 10, 20, 30, 40, 50, 60].map(v => `<span style="left:${pct(v)}">${v}</span>`).join("")}</div>`;
+    document.querySelectorAll("#strip .dot").forEach(b => b.addEventListener("click", () => select(b.dataset.n, "ranking")));
+    document.getElementById("tier-note").innerHTML = `Each dot is a shortlisted fund placed by its score; filled dots hold ${t.A.min_brands} or more live brands, hollow dots fewer. ` +
+      (odd.length ? odd.map(r => `<b>${esc(r.fd.name)}</b> scores ${r.score.toFixed(1)}, above the A line, but holds ${r.fd.live} live brand${r.fd.live === 1 ? "" : "s"}, so it is Tier B.`).join(" ") + " Its brands are strong; there just aren't enough of them for one relationship to compound." : "");
+  }
 
   let selected = null, current = [];
   function render() {
@@ -471,6 +688,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
       btn.addEventListener("click", () => select(r.fd.name, "ranking"));
       board.appendChild(btn);
     });
+    renderStrip();
     if (selected) renderDossier(selected);
     if (window.__resizeMap) window.__resizeMap();
   }
@@ -524,6 +742,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     return `<p class="eyebrow">Fund dossier</p><div class="dos-head"><h3>${esc(fd.name)}</h3><span class="tier ${r.tier}">${r.tier}</span>
         <span class="mono muted">#${rank} · ${r.score.toFixed(1)} / 100 · ${esc(fd.type)} · ${fmtInt(fd.companies)} portfolio companies · <span title="How many of the 16 signals have any data for this fund. Low coverage means a low score may be missing data, not a weak fund.">data on ${fd.coverage}/16 signals</span></span></div>
       ${fd.about ? `<p class="about">${esc(fd.about)}</p>` : ""}
+      <p class="tier-why">${esc(tierWhy(r))}</p>
       <div style="display:grid;gap:6px"><p class="eyebrow">Why this fund</p><p class="why">${esc(fd.why)}</p></div>
       <div class="pillars">${pillars}</div>
       <div class="dossier">
@@ -573,7 +792,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   });
 
   // Limits
-  const s = D.stats, nb = D.funnel[4].value;
+  const s = D.stats, nb = FN["UK grocery brands kept"];
   document.getElementById("coverage").innerHTML = [
     [s.brands_with_retailers, "brands have a major UK retailer confirmed by a product page, Open Food Facts or the brand's stockist list"],
     [s.brands_with_ch, "brands matched to their Companies House record (size, share issues, charges)"],
@@ -585,9 +804,8 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
 
   // Network map
   const svg = d3.select("#map-svg"), tip = document.getElementById("tip");
-  const css = getComputedStyle(document.documentElement);
-  const tok = n => css.getPropertyValue(n).trim();
-  const reachColor = k => [tok("--rule"), tok("--sel"), tok("--accent")][k >= 3 ? 2 : k >= 1 ? 1 : 0];
+  // Colours are CSS variables set as styles, so the map follows the day / night switch without redrawing
+  const reachColor = k => ["var(--rule)", "var(--sel)", "var(--accent)"][k >= 3 ? 2 : k >= 1 ? 1 : 0];
   document.getElementById("map-legend").innerHTML = [["0 grocers named", "--rule"], ["1–2 grocers", "--sel"], ["3+ grocers", "--accent"]]
     .map(([l, t]) => `<span><span class="pill-dot" style="background:var(${t});border:1px solid var(--ink-2)"></span>${l}</span>`).join("");
   const top = scoreAll(DEFAULT_W).slice(0, 20), topNames = new Set(top.map(r => r.fd.name));
@@ -604,19 +822,19 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     .force("charge", d3.forceManyBody().strength(d => d.kind === "fund" ? -260 : -40))
     .force("collide", d3.forceCollide(d => d.kind === "fund" ? rFund(d.score) + 6 : 7))
     .force("x", d3.forceX()).force("y", d3.forceY());
-  const gLinks = svg.append("g").attr("stroke", tok("--rule")).attr("stroke-width", 1.2);
+  const gLinks = svg.append("g").style("stroke", "var(--rule)").attr("stroke-width", 1.2);
   const gNodes = svg.append("g");
   const lk = gLinks.selectAll("line").data(links).join("line");
   const nd = gNodes.selectAll("g").data(nodes).join("g").style("cursor", d => d.kind === "fund" ? "pointer" : "grab");
   nd.append("circle")
     .attr("r", d => d.kind === "fund" ? rFund(d.score) : (d.backers > 1 ? 7 : 5))
-    .attr("fill", d => d.kind === "fund" ? tok("--ink") : reachColor(d.reach))
-    .attr("stroke", d => d.kind === "fund" ? tok("--card") : (d.backers > 1 ? tok("--ink") : tok("--ink-2")))
+    .style("fill", d => d.kind === "fund" ? "var(--ink)" : reachColor(d.reach))
+    .style("stroke", d => d.kind === "fund" ? "var(--card)" : (d.backers > 1 ? "var(--ink)" : "var(--ink-2)"))
     .attr("stroke-width", d => d.kind === "brand" && d.backers > 1 ? 2 : 1);
   nd.filter(d => d.kind === "fund").append("text").text(d => d.name.replace(/ \(.*\)/, ""))
     .attr("text-anchor", "middle").attr("dy", d => rFund(d.score) + 13)
-    .attr("font-family", "IBM Plex Mono, monospace").attr("font-size", 11).attr("fill", tok("--ink")).attr("paint-order", "stroke")
-    .attr("stroke", tok("--card")).attr("stroke-width", 3);
+    .attr("font-family", "IBM Plex Mono, monospace").attr("font-size", 11).style("fill", "var(--ink)").attr("paint-order", "stroke")
+    .style("stroke", "var(--card)").attr("stroke-width", 3);
   nd.on("mousemove", (ev, d) => {
     const box = document.querySelector(".map-box").getBoundingClientRect();
     tip.style.display = "block";
@@ -667,6 +885,21 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
       text: `A big portfolio isn't the same as big brands. ${short(biggest.name)} backs the most (${biggest.n}) but ${biggest.r3 ? "only " + biggest.r3 : "none"} at three or more grocers, the brands most likely to face EDI mandates today.`,
       brand: n => n.reach >= 3, fund: f => [...fundBrands.get(f)].some(b => seen.get(b).reach >= 3) },
   };
+  // Three more, from the dossiers: proof points, named contacts, and brands in a buying moment
+  const pretty = n => n.replace("dash-water", "DASH Water");
+  const custFunds = top.filter(r => r.fd.overlap.length), custBrands = new Set(custFunds.flatMap(r => r.fd.overlap));
+  if (custFunds.length) FOCUS.customers = { num: custFunds.length, title: `fund${custFunds.length === 1 ? " already backs" : "s already back"} a Procuros customer`,
+    text: `${list(custFunds.map(r => short(r.fd.name)))} back${custFunds.length === 1 ? "s" : ""} ${list([...custBrands])}. An intro from there comes with a reference the founder can call, which is why JamJar is in the Task 1.2 pair.`,
+    brand: n => custBrands.has(n.name), fund: f => custFunds.some(r => r.fd.name === f) };
+  const named = top.filter(r => r.fd.people.length);
+  FOCUS.contacts = { num: named.length, title: "of 20 funds name a platform or portfolio-ops person",
+    text: `${list(named.slice(0, 4).map(r => short(r.fd.name)))}${named.length > 4 ? " and others" : ""} list someone whose job is helping portfolio companies. That person is the one to ask for the intro; the rest need a partner-level ask.`,
+    brand: n => named.some(r => fundBrands.get(r.fd.name).has(n.name)), fund: f => named.some(r => r.fd.name === f) };
+  const hot = brandNodes.filter(n => ((brandsByName[n.name] || {}).stack || []).length > 1);
+  const hotFunds = top.filter(r => hot.some(n => fundBrands.get(r.fd.name).has(n.name))).map(r => r.fd.name);
+  FOCUS.hot = { num: hot.length, title: "brands show 2+ triggers in the last 12 months",
+    text: `${list(hot.slice(0, 4).map(n => pretty(n.name)))}${hot.length > 4 ? " and more" : ""} are in a buying moment right now. They sit with ${hotFunds.length} of the 20 funds, so those intros are the most time-sensitive.`,
+    brand: n => hot.includes(n), fund: f => hotFunds.includes(f) };
   let focus = null;
   const tk = document.getElementById("takeaways");
   tk.innerHTML = Object.entries(FOCUS).map(([k, v]) => `<button type="button" data-k="${k}" aria-pressed="false"><b>${v.num}</b><h3>${v.title}</h3><p>${esc(v.text)}</p></button>`).join("");
@@ -694,10 +927,12 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   size();
 
   readW();
+  readSW();
   render();
+  renderWorked();
   select(scoreAll(DEFAULT_W)[0].fd.name);
   function showTab(id) {
-    if (!TABS.includes(id)) id = "thesis";
+    if (!TABS.includes(id)) id = "overview";
     TABS.forEach(t => {
       document.getElementById(t).hidden = t !== id;
       const b = document.querySelector(`#subtabs [data-tab="${t}"]`);
@@ -719,7 +954,8 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     showTab(nx); document.querySelector(`#subtabs [data-tab="${nx}"]`).focus();
   });
   document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.go)));
-  showTab({ dossier: "ranking" }[(location.hash || "#thesis").slice(1)] || (location.hash || "#thesis").slice(1));
+  const h = (location.hash || "#overview").slice(1);
+  showTab({ dossier: "ranking", thesis: "overview", pipeline: "overview" }[h] || h);
 })();
 </script>
 

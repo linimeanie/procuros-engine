@@ -47,14 +47,15 @@ failed = [{"name": f["fund"], "status": f["scrape_status"], "note": (f.get("scra
           for f in raw_funds if f["scrape_status"] in ("failed", "no_companies_found")]
 funnel = [
     {"label": "Funds seeded", "value": len(raw_funds)},
-    {"label": "Portfolios scraped", "value": sum(1 for f in raw_funds if f["scrape_status"] in ("ok", "partial"))},
+    {"label": "VC and PE funds only", "value": sum(1 for f in raw_funds if f["fund_type"] not in cfg["excluded_fund_types"])},
+    {"label": "Portfolios read", "value": sum(1 for f in raw_funds if f["fund_type"] not in cfg["excluded_fund_types"] and f["scrape_status"] in ("ok", "partial"))},
     {"label": "Portfolio companies", "value": sum(len(f.get("companies", [])) for f in raw_funds)},
     {"label": "Food & drink candidates", "value": len(cands)},
     {"label": "UK grocery brands kept", "value": len(brands)},
     {"label": "Funds holding a live brand", "value": sum(1 for f in funds if f["live_brand_count"] > 0)},
     {"label": "Shortlist", "value": 20},
 ]
-data = {"as_of": cfg["as_of"], "config": {k: cfg[k] for k in ("pillars", "fit", "pain", "access", "strategic", "tiers", "gate_brands")},
+data = {"as_of": cfg["as_of"], "config": {k: cfg[k] for k in ("pillars", "fit", "pain", "access", "strategic", "tiers", "gate_brands", "status_weight", "pain_top_n", "stack", "recency_half_life_months", "excluded_fund_types")},
         "funnel": funnel, "retailer_blurbs": blurbs["retailers"], "funds": out_funds, "brands": out_brands, "failed": failed,
         "stats": {"brands_with_retailers": sum(1 for b in brands if b["retailers"]),
                   "brands_with_ops": sum(1 for b in brands if b["ops_roles"]),
