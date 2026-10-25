@@ -3,8 +3,9 @@ OUT="/Users/lini/Documents/My Claude/procuros-engine/data/firecrawl"
 norm=lambda n: re.sub(r"[^a-z0-9]","",(n or "").lower())
 PE={"BGF","LDC","Piper","Inflexion","Livingbridge","Palatine","YFM Equity Partners","Mobeus","NorthEdge","Kester Capital","Elaghmore","Silverfleet","Synova","CBPE","Langholm Capital","Exponent","CapVest","L Catterton (Europe)","Lion Capital","Endless","Penta Capital","Rutland Partners","Inverleith","Cairngorm Capital","Phoenix Equity Partners","Primary Capital","ECI Partners","Tenzing","Bridgepoint Development Capital","Literacy Capital","Active Partners","Verlinvest","True (TrueCapital)"}
 CVC={"Unilever Ventures","Distill Ventures","SnackFutures (Mondelez)","ZX Ventures"}
+DEVBANK={"Development Bank of Wales"}
 ANGEL={"Angel Investment Network","Crowdcube (food & drink raises)","Republic Europe/Seedrs (food & drink raises)"}
-def ftype(f): return "PE" if f in PE else "corporate VC" if f in CVC else "angel/crowdfunding listing" if f in ANGEL else "VC"
+def ftype(f): return "PE" if f in PE else "corporate VC" if f in CVC else "development bank" if f in DEVBANK else "angel/crowdfunding listing" if f in ANGEL else "VC"
 funds=[json.loads(l) for l in open(OUT+"/funds.jsonl")]
 side=open(OUT+"/companies_page_text.jsonl","a") if False else open(os.devnull,"w") if os.path.exists(OUT+"/companies_page_text.jsonl") else open(OUT+"/companies_page_text.jsonl","w")
 status={}

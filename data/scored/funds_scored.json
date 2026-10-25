@@ -1786,7 +1786,7 @@
  },
  {
   "fund": "Development Bank of Wales",
-  "fund_type": "VC",
+  "fund_type": "development bank",
   "website": "https://developmentbank.wales",
   "scrape_status": "ok",
   "portfolio_urls": [
