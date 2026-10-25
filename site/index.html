@@ -116,7 +116,7 @@ nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; bac
   .f-head { display: none; }
 }
 .card svg { width: 100%; height: auto; display: block; }
-.card svg text { font: 500 11px var(--mono); fill: var(--ink-2); }
+.card svg text { font: 500 12px var(--mono); fill: var(--ink-2); }
 .card svg .strong { fill: var(--ink); }
 
 /* Tables */
@@ -128,8 +128,28 @@ td.r, th.r { text-align: right; font-variant-numeric: tabular-nums; white-space:
 td.p { white-space: nowrap; font-weight: 600; }
 tr.total td { border-top: 1px solid var(--ink); font-weight: 600; }
 tr.mult td { color: var(--accent); }
-.mini { height: 10px; background: var(--tint); border-radius: 3px; overflow: hidden; min-width: 70px; }
+.mini { height: 10px; background: var(--tint); border-radius: 3px; overflow: hidden; min-width: 6px; box-shadow: inset 0 0 0 1px var(--rule); }
 .mini span { display: block; height: 100%; background: var(--p-pain); }
+.sw { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 8px; vertical-align: -1px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--ink-2); }
+.build { display: grid; gap: 10px; padding-top: 4px; }
+.b-row { display: grid; grid-template-columns: 130px minmax(0, 1fr) 56px; gap: 12px; align-items: center; font-size: var(--fs-small); }
+.b-lab { color: var(--ink-2); }
+.b-val { text-align: right; font-variant-numeric: tabular-nums; }
+.b-track { position: relative; height: 22px; display: flex; background: var(--tint); border-radius: 4px; overflow: hidden; }
+.b-track > span { height: 100%; }
+.b-track .bonus { background: repeating-linear-gradient(135deg, var(--p-pain) 0 6px, color-mix(in srgb, var(--p-pain) 70%, var(--card)) 6px 9px); }
+.capline { position: absolute; top: 0; bottom: 0; left: 83.333%; border-left: 2px dashed var(--ink); }
+.b-ticks { position: relative; height: 16px; font: 500 var(--fs-label)/1 var(--mono); color: var(--ink-2); }
+.b-ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.b-ticks span:first-child { transform: none; }
+@media (max-width: 640px) {
+  .b-row { grid-template-columns: 92px minmax(0, 1fr) 46px; gap: 8px; }
+  .b-ticks .minor { display: none; }
+  table.wx td:nth-child(2), table.wx th:nth-child(2), table.wx td:nth-child(3), table.wx th:nth-child(3) { display: none; }
+  table.wx td .muted { display: none; }
+  .card svg text { font-size: 15px; }
+}
 select { font: 500 var(--fs-small)/1 var(--body); padding: 7px 8px; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; }
 
 /* Ranking */
@@ -189,6 +209,7 @@ details summary { cursor: pointer; font-weight: 500; font-size: var(--fs-small);
 @media (max-width: 640px) { #map-svg { height: 480px; } }
 .map-note { position: absolute; left: 14px; bottom: 12px; right: 14px; font-size: 13px; color: var(--ink-2); pointer-events: none; }
 .tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--paper); font-size: 13px; padding: 8px 10px; border-radius: 6px; max-width: 260px; display: none; }
+.tip b { color: inherit; }
 .take { cursor: pointer; text-align: left; font: inherit; color: inherit; border-top: 3px solid var(--ink); }
 .take:hover { border-color: var(--ink-2); border-top-color: var(--ink); }
 .take[aria-pressed="true"] { border-color: var(--accent); border-top-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
@@ -519,26 +540,48 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   // ---------- Method: rule charts
   (function decayChart() {
-    const hl = C.recency_half_life_months, X = m => 44 + m * 12, Y = w => 20 + (1 - w) * 110;
-    const pts = d3.range(0, 24.01, 0.5).map(m => `${X(m).toFixed(1)},${Y(0.5 ** (m / hl)).toFixed(1)}`).join(" ");
-    document.getElementById("decay").innerHTML = `<svg viewBox="0 0 360 172" role="img" aria-label="A news story's weight halves every ${hl} months">
-      ${[0, 0.5, 1].map(w => `<line x1="44" x2="332" y1="${Y(w)}" y2="${Y(w)}" style="stroke:var(--rule)"/><text x="36" y="${Y(w) + 4}" text-anchor="end">${w * 100}%</text>`).join("")}
-      ${[0, 6, 12, 18, 24].map(m => `<text x="${X(m)}" y="150" text-anchor="middle">${m}</text>`).join("")}
-      <text x="188" y="168" text-anchor="middle">months since the story</text>
-      <polyline points="${pts}" fill="none" style="stroke:var(--p-pain)" stroke-width="2.5"/>
-      ${[0, 9, 18, 24].map(m => { const w = 0.5 ** (m / hl); return `<circle cx="${X(m)}" cy="${Y(w)}" r="4" style="fill:var(--p-pain)"/><text class="strong" x="${X(m) + (m === 24 ? -6 : 7)}" y="${Y(w) - 8}" text-anchor="${m === 24 ? "end" : "start"}">${Math.round(100 * w)}%</text>`; }).join("")}
+    const hl = C.recency_half_life_months, win = C.recent_months || 24, W = 460, L = 44, R = 446, T = 22, Bt = 178;
+    const X = m => L + (m / 30) * (R - L), Y = w => T + (1 - w) * (Bt - T), wt = m => 0.5 ** (m / hl);
+    const curve = d3.range(0, win + 0.01, 0.25).map(m => `${X(m).toFixed(1)},${Y(wt(m)).toFixed(1)}`).join(" ");
+    const guide = (m, lab) => `<line x1="${X(m)}" x2="${X(m)}" y1="${Y(wt(m))}" y2="${Bt}" style="stroke:var(--ink-2)" stroke-dasharray="3 3"/>
+      <line x1="${L}" x2="${X(m)}" y1="${Y(wt(m))}" y2="${Y(wt(m))}" style="stroke:var(--ink-2)" stroke-dasharray="3 3"/>
+      <circle cx="${X(m)}" cy="${Y(wt(m))}" r="5" style="fill:var(--card);stroke:var(--p-pain)" stroke-width="2.5"/>
+      <text class="strong" x="${X(m) + 9}" y="${Y(wt(m)) - 9}">${lab}</text>`;
+    document.getElementById("decay").innerHTML = `<svg viewBox="0 0 ${W} 222" role="img" aria-label="A news story's weight halves every ${hl} months and stops counting after ${win} months">
+      <rect x="${X(win)}" y="${T}" width="${R - X(win)}" height="${Bt - T}" style="fill:var(--tint)"/>
+      <text x="${(X(win) + R) / 2}" y="${T + 16}" text-anchor="middle">not</text><text x="${(X(win) + R) / 2}" y="${T + 30}" text-anchor="middle">counted</text>
+      ${[0, 0.25, 0.5, 0.75, 1].map(w => `<line x1="${L}" x2="${X(win)}" y1="${Y(w)}" y2="${Y(w)}" style="stroke:var(--rule)"/><text x="${L - 8}" y="${Y(w) + 4}" text-anchor="end">${w * 100}%</text>`).join("")}
+      <polygon points="${X(0)},${Bt} ${curve} ${X(win)},${Bt}" style="fill:var(--p-pain)" fill-opacity=".12"/>
+      <polyline points="${curve}" fill="none" style="stroke:var(--p-pain)" stroke-width="2.5" stroke-linejoin="round"/>
+      <line x1="${X(win)}" x2="${X(win)}" y1="${Y(wt(win))}" y2="${Bt}" style="stroke:var(--p-pain)" stroke-width="2.5"/>
+      <circle cx="${X(0)}" cy="${Y(1)}" r="5" style="fill:var(--p-pain)"/><text class="strong" x="${X(0) + 9}" y="${Y(1) - 8}">today: 100%</text>
+      ${guide(hl, `${hl} months: 50%`)}${guide(2 * hl, `${2 * hl} months: 25%`)}
+      <line x1="${L}" x2="${R}" y1="${Bt}" y2="${Bt}" style="stroke:var(--ink)"/>
+      ${[0, 6, 12, 18, 24, 30].map(m => `<text x="${X(m)}" y="${Bt + 18}" text-anchor="middle">${m}</text>`).join("")}
+      <text x="${(L + R) / 2}" y="${Bt + 38}" text-anchor="middle">months since the story was published</text>
     </svg>`;
   })();
   (function stackChart() {
-    const cap = C.stack.max_multiplier, Y = v => 130 - (v / 1.6) * 110, bw = 52;
-    document.getElementById("stackchart").innerHTML = `<svg viewBox="0 0 360 172" role="img" aria-label="Pain multiplier by number of triggers in 12 months, capped at ${cap} times">
-      <line x1="30" x2="340" y1="${Y(cap)}" y2="${Y(cap)}" style="stroke:var(--ink-2)" stroke-dasharray="4 4"/><text x="30" y="${Y(cap) - 6}">cap</text>
-      <line x1="30" x2="340" y1="130" y2="130" style="stroke:var(--rule)"/>
-      ${[1, 2, 3, 4].map((k, i) => { const x = 50 + i * 76, v = mult(k); return `<rect x="${x}" y="${Y(v)}" width="${bw}" height="${130 - Y(v)}" rx="2" style="fill:var(--p-pain)" fill-opacity="${0.35 + 0.2 * i}"/>
-        <text class="strong" x="${x + bw / 2}" y="${Y(v) - 6}" text-anchor="middle">${v.toFixed(2)}×</text>
-        <text x="${x + bw / 2}" y="150" text-anchor="middle">${plural(k, "trigger")}</text>`; }).join("")}
-      <text x="188" y="168" text-anchor="middle">triggers within 12 months</text>
-    </svg>`;
+    const cap = C.stack.max_multiplier, step = C.stack.bonus_per_extra_signal, W = 460, L = 44, Bt = 178, T = 22;
+    const Y = v => Bt - (v / 2) * (Bt - T), bw = 64, gap = (W - L - 4 * bw) / 4;
+    const bars = [1, 2, 3, 4].map((k, i) => {
+      const x = L + gap / 2 + i * (bw + gap), raw = 1 + step * (k - 1), v = Math.min(raw, cap), cx = x + bw / 2;
+      return `<rect x="${x}" y="${Y(1)}" width="${bw}" height="${Bt - Y(1)}" style="fill:var(--p-pain)" fill-opacity=".28"/>
+        ${v > 1 ? `<rect x="${x}" y="${Y(v)}" width="${bw}" height="${Y(1) - Y(v)}" style="fill:var(--p-pain)"/>
+          <text x="${cx}" y="${(Y(v) + Y(1)) / 2 + 4}" text-anchor="middle" style="fill:#fff">+${Math.round(100 * (v - 1))}%</text>` : ""}
+        ${raw > cap ? `<rect x="${x + 1}" y="${Y(raw)}" width="${bw - 2}" height="${Y(cap) - Y(raw)}" fill="none" style="stroke:var(--ink-2)" stroke-dasharray="3 3"/>
+          <text x="${cx}" y="${Y(raw) - 6}" text-anchor="middle">cut off</text>` : `<text class="strong" x="${cx}" y="${Y(v) - 8}" text-anchor="middle">${v.toFixed(2)}×</text>`}
+        <text x="${cx}" y="${Bt + 18}" text-anchor="middle">${k}</text>`;
+    }).join("");
+    document.getElementById("stackchart").innerHTML = `<svg viewBox="0 0 ${W} 222" role="img" aria-label="Pain multiplier by number of triggers in 12 months: plus ${Math.round(100 * step)}% per extra trigger, capped at ${cap} times">
+      ${[0, 0.5, 1, 1.5, 2].map(v => `<line x1="${L}" x2="${W - 4}" y1="${Y(v)}" y2="${Y(v)}" style="stroke:var(--rule)"/><text x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${v}×</text>`).join("")}
+      <line x1="${L}" x2="${W - 4}" y1="${Y(cap)}" y2="${Y(cap)}" style="stroke:var(--ink)" stroke-dasharray="5 4"/>
+      <text class="strong" x="${L + 6}" y="${Y(cap) - 7}">cap ${cap}×</text>
+      ${bars}
+      <line x1="${L}" x2="${W - 4}" y1="${Bt}" y2="${Bt}" style="stroke:var(--ink)"/>
+      <text x="${(L + W) / 2}" y="${Bt + 38}" text-anchor="middle">different triggers in the same 12 months</text>
+    </svg>
+    <div class="legend small"><span><i class="sw" style="background:var(--p-pain);opacity:.28"></i>the brand's base pain</span><span><i class="sw" style="background:var(--p-pain)"></i>stacking bonus</span></div>`;
   })();
 
   // ---------- Method: worked example with the current weights
@@ -551,26 +594,36 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   function renderWorked() {
     const el = document.getElementById("worked");
     if (!wxName) { el.hidden = true; return; }
-    const B = brandsByName[wxName], bp = brandPain(B), maxW = Math.max(...Object.values(SW.pain));
+    const B = brandsByName[wxName], bp = brandPain(B), maxW = Math.max(...Object.values(SW.pain)), keys = Object.keys(SW.pain);
+    const shade = i => `opacity:${(1 - i * 0.17).toFixed(2)}`;
+    const SC = 1.2;
     const backers = universe.filter(fd => fd.brands.some(b => b.brand === B.name));
-    const rows = Object.keys(SW.pain).map(k => {
+    const rows = keys.map((k, i) => {
       const v = (B.pain_parts || {})[k] ?? 0, w = SW.pain[k], pts = v * w, on = (B.stack || []).includes(k);
-      return `<tr><td>${PAIN_LABEL[k]}${on ? ` <span class="chip" title="Active in the last 12 months, so it counts towards stacking">trigger</span>` : ""}<br><span class="muted" style="font-size:12px">${PAIN_CAP[k]}</span></td>
+      return `<tr><td><i class="sw" style="background:var(--p-pain);${shade(i)}"></i>${PAIN_LABEL[k]}${on ? ` <span class="chip" title="Active in the last 12 months, so it counts towards stacking">trigger</span>` : ""}<br><span class="muted" style="font-size:12px">${PAIN_CAP[k]}</span></td>
         <td class="r">${v.toFixed(2)}</td><td class="r">× ${Math.round(100 * w)}%</td><td class="r">= ${pts.toFixed(3)}</td>
-        <td><div class="mini"><span style="width:${maxW ? (100 * pts / maxW).toFixed(1) : 0}%"></span></div></td></tr>`;
+        <td><div class="mini" style="width:${maxW ? (100 * w / maxW).toFixed(1) : 0}%" title="${pts.toFixed(3)} of a possible ${w.toFixed(2)}"><span style="width:${w ? (100 * v).toFixed(1) : 0}%;${shade(i)}"></span></div></td></tr>`;
     }).join("");
     const trig = (B.triggers || []).map(t => `<li>${esc(t.date.slice(0, 7))} · <a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.headline)}</a> <span class="muted">· counts ${Math.round(100 * 0.5 ** (ageM(t.date) / C.recency_half_life_months))}%</span></li>`).join("");
     el.innerHTML = `<div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center"><p class="label">Worked example</p>
         <label class="small">Brand: <select id="wx-sel">${stacked.map(b => `<option${b.name === wxName ? " selected" : ""}>${esc(pretty(b.name))}</option>`).join("")}</select></label></div>
       <h3>${esc(pretty(B.name))}${B.blurb ? ` <span class="muted" style="font:400 15px var(--body)">· ${esc(B.blurb)}</span>` : ""}</h3>
       ${trig ? `<div class="small"><p>Its latest trade stories, and how much each still counts after recency decay:</p><ul style="margin:6px 0 0;padding-left:18px;display:grid;gap:4px">${trig}</ul></div>` : ""}
-      <div class="table-scroll"><table>
-        <thead><tr><th>Signal</th><th class="r">Value 0–1</th><th class="r">Weight</th><th class="r">Points</th><th></th></tr></thead>
+      <div class="table-scroll"><table class="wx">
+        <thead><tr><th>Signal</th><th class="r">Value 0–1</th><th class="r">Weight</th><th class="r">Points</th><th style="min-width:120px">Earned of possible</th></tr></thead>
         <tbody>${rows}
           <tr class="total"><td>Base pain: the sum of the points</td><td></td><td></td><td class="r">${bp.base.toFixed(3)}</td><td></td></tr>
           <tr class="mult"><td>Stacking: ${plural((B.stack || []).length, "trigger")} within 12 months (${(B.stack || []).map(k => STACK_LABEL[k]).join(" + ")})</td><td></td><td></td><td class="r">× ${bp.m.toFixed(2)}</td><td></td></tr>
           <tr class="total"><td>Brand pain: base × multiplier, capped at 1</td><td></td><td></td><td class="r">${bp.pain.toFixed(3)}</td><td></td></tr>
         </tbody></table></div>
+      <p class="small muted">In the last column the grey track is the most a signal can add (its weight), and the fill is what this brand earned.</p>
+      <div class="build" aria-label="How the points add up to brand pain">
+        <p class="label">How it adds up, on a scale where 1 is maximum pain</p>
+        <div class="b-row"><span class="b-lab">Base pain</span><div class="b-track">${keys.map((k, i) => { const pts = ((B.pain_parts || {})[k] ?? 0) * SW.pain[k]; return pts > 0 ? `<span style="width:${(100 * pts / SC).toFixed(2)}%;background:var(--p-pain);${shade(i)}" title="${PAIN_LABEL[k]} ${pts.toFixed(3)}"></span>` : ""; }).join("")}<i class="capline"></i></div><b class="b-val">${bp.base.toFixed(3)}</b></div>
+        <div class="b-row"><span class="b-lab">× ${bp.m.toFixed(2)} stacking</span><div class="b-track"><span style="width:${(100 * bp.base / SC).toFixed(2)}%;background:var(--p-pain);opacity:.28"></span><span class="bonus" style="width:${(100 * (bp.base * bp.m - bp.base) / SC).toFixed(2)}%"></span><i class="capline"></i></div><b class="b-val">${(bp.base * bp.m).toFixed(3)}</b></div>
+        <div class="b-row"><span class="b-lab">Brand pain</span><div class="b-track"><span style="width:${(100 * bp.pain / SC).toFixed(2)}%;background:var(--p-pain)"></span><i class="capline"></i></div><b class="b-val">${bp.pain.toFixed(3)}</b></div>
+        <div class="b-row b-axis"><span></span><div class="b-ticks">${[0, 0.25, 0.5, 0.75, 1].map(v => `<span class="${v % 0.5 ? "minor" : ""}" style="left:${(100 * v / SC).toFixed(2)}%">${v === 1 ? "1 · cap" : v}</span>`).join("")}</div><span></span></div>
+      </div>
       <p>A fund's pain pillar is the average of its ${C.pain_top_n} most painful target brands, discounted to ${Math.round(100 * C.status_weight.unknown)}% when the fund doesn't confirm it still holds the brand.
         ${backers.length ? `${esc(pretty(B.name))} is held by ${backers.map(fd => `<b>${esc(fd.name)}</b> (pain pillar ${Math.round(100 * painTop(fd))}/100)`).join(" and ")}.` : ""}</p>`;
     document.getElementById("wx-sel").addEventListener("change", e => { wxName = stacked[e.target.selectedIndex].name; renderWorked(); });
