@@ -21,8 +21,8 @@
   --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   --fs-h1: clamp(40px, 6vw, 64px); --fs-h2: clamp(26px, 3.2vw, 34px); --fs-h3: 19px; --fs-num: 30px;
-  --fs-lede: 19px; --fs-body: 16px; --fs-small: 14px; --fs-label: 12px;
-  --measure: 720px; --radius: 8px;
+  --fs-lede: 17px; --fs-body: 16px; --fs-small: 14px; --fs-label: 12px;
+  --measure: 720px; --measure-wide: 860px; --radius: 8px;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --paper: #0f161c; --card: #172129; --ink: #e8eef2; --ink-2: #9fb0bd; --rule: #2a3742; --tint: #1c2830;
@@ -44,7 +44,9 @@ h1 em { font-style: normal; color: var(--accent); }
 h2 { font-size: var(--fs-h2); }
 h3 { font: 700 var(--fs-h3)/1.25 var(--display); }
 .label { font: 500 var(--fs-label)/1.2 var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); }
-.lede { font-size: var(--fs-lede); color: var(--ink-2); max-width: var(--measure); text-wrap: pretty; }
+/* Ledes run to a wider column than the hero headline: at 720px they ended well short of a full-width
+   table or chart and left a ragged gap beside it. 860px at 17px is still inside a readable line length. */
+.lede { font-size: var(--fs-lede); color: var(--ink-2); max-width: var(--measure-wide); text-wrap: pretty; }
 .small { font-size: var(--fs-small); }
 .muted { color: var(--ink-2); }
 .num { font-variant-numeric: tabular-nums; }
@@ -55,11 +57,11 @@ b, strong { font-weight: 600; color: var(--ink); }
 .block { display: grid; gap: 20px; }
 /* Grid items default to min-width:auto, so a wide table's min-content pushed its ancestors past the
    viewport and the whole page scrolled sideways on a phone instead of just the table. */
-.page > *, .block > * { min-width: 0; }
+.page > *, .block > *, .rcheck > *, .statement > * { min-width: 0; }
 /* Evidence values include raw Companies House URLs with no spaces in them. "anywhere" (not break-word)
    is what actually reduces min-content, which is what a grid track measures. */
 .pc .ev > span, .pc .ev a { overflow-wrap: anywhere; }
-.head { display: grid; gap: 10px; max-width: var(--measure); }
+.head { display: grid; gap: 10px; max-width: var(--measure-wide); }
 /* min() so a wide --min collapses on a narrow screen instead of forcing the page to scroll sideways. */
 .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(var(--min, 240px), 100%), 1fr)); }
 .card { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 20px; display: grid; gap: 10px; align-content: start; }
@@ -98,7 +100,7 @@ nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; bac
 /* Start here: the one door to open first, set apart from the ranking that justifies it. */
 #start-here { border-left: 3px solid var(--accent); display: grid; gap: 8px; }
 #start-here h3 { font-family: var(--display); font-size: 26px; line-height: 1.15; }
-#start-here p:not(.label) { font-size: 17px; max-width: var(--measure); }
+#start-here p:not(.label) { font-size: 17px; max-width: var(--measure-wide); }
 .theme { margin-left: auto; font: 500 13px/1 var(--body); padding: 8px 12px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); color: var(--ink); cursor: pointer; white-space: nowrap; }
 .subtabs { gap: 2px; border-top: 1px solid var(--rule); }
 .subtabs button { font: 500 var(--fs-small)/1 var(--body); padding: 13px 12px 11px; background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--ink-2); cursor: pointer; white-space: nowrap; }
@@ -206,8 +208,13 @@ select { font: 500 var(--fs-small)/1 var(--body); padding: 7px 8px; background: 
 .scatter-box svg { width: 100%; height: auto; display: block; }
 .scatter-box svg text { font: 500 12px var(--mono); fill: var(--ink-2); }
 .scatter-box svg .q { font: 600 13px var(--body); fill: var(--ink); }
+/* Dot labels sit on top of other dots and the shaded quadrant, so they carry a halo of the card colour. */
+.scatter-box svg .dotlab { font: 600 12px var(--body); fill: var(--ink); paint-order: stroke;
+  stroke: var(--card); stroke-width: 3.5px; stroke-linejoin: round; }
 .scatter-box svg circle { cursor: pointer; }
-@media (max-width: 640px) { .scatter-box svg text { font-size: 17px; } .scatter-box svg .q { font-size: 18px; } }
+@media (max-width: 640px) { .scatter-box svg text { font-size: 17px; } .scatter-box svg .q { font-size: 18px; }
+  /* .dotlab sets font shorthand, so it needs its own bump or it stays 12px while everything else grows. */
+  .scatter-box svg .dotlab { font-size: 17px; } }
 .pairs { display: grid; gap: 2px; }
 .pair { display: grid; grid-template-columns: 30px minmax(0, 1.5fr) minmax(90px, 1fr) minmax(90px, 1fr) 54px 76px; gap: 12px; align-items: center; padding: 9px 10px; border-radius: 6px; cursor: pointer; background: transparent; border: 0; color: inherit; text-align: left; font: inherit; width: 100%; }
 .pair:hover { background: var(--card); }
@@ -384,7 +391,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block">
     <p class="label">Procuros · UK go-to-market · Task 1.1 · data as of <span id="asof"></span></p>
     <h1>Cold doesn't work here. <em>Borrow the introduction.</em></h1>
-    <p class="lede">Procuros is unknown in UK grocery, and a brand's buying moment — a retailer mandate, a raise, a new listing, an ERP move — is invisible from outside. When it arrives they ask someone they already trust. Their investors are that someone, they can see the moment coming, and an introduction from them costs Procuros nothing but a good reason to make it.</p>
+    <p class="lede">Procuros is unknown in UK grocery, and a brand's buying moment (a retailer mandate, a raise, a new listing, an ERP move) is invisible from outside. When it arrives they ask someone they already trust. Their investors are that someone, they can see the moment coming, and an introduction from them costs Procuros nothing but a good reason to make it.</p>
     <p class="lede">So this is not a list of funds worth knowing. It is a list of <b>specific doors</b>: a fund, a brand inside it that needs EDI now, and a named person who can open it. Every claim links to its source.</p>
     <div class="card" id="start-here"></div>
     <div class="grid" style="--min:170px" id="stats"></div>
@@ -401,14 +408,14 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block statement">
     <p class="claim">Only <span data-n="holding"></span> of <span data-n="vcpe"></span> funds back a brand that fits. <em>The ranking never had much to decide.</em></p>
     <div>
-      <p class="because">The scoring looks like the hard part and isn't. Most UK VC and PE funds hold no grocery brand under £100m that Procuros could sell to, so they were out before any weighting was applied. What the ranking adds is the order to work in and who to call first — not the selection.</p>
+      <p class="because">The scoring looks like the hard part and isn't. Most UK VC and PE funds hold no grocery brand under £100m that Procuros could sell to, so they were out before any weighting was applied. What the ranking adds is the order to work in and who to call first, not the selection.</p>
       <p class="because">It is also why the bottom of the list is soft. By rank eighteen the scores are in single figures, and tightening one news classifier while building this page was enough to swap #20 and #21.</p>
     </div>
   </div>
 
   <div class="block">
     <div class="head"><p class="label">Second lens</p><h2>The best door is not always the best doorman</h2>
-      <p class="lede">Everything above scores the <b>door</b>: does the brand need Procuros, and is there a route to it. It says nothing about whether the fund is set up to broker a vendor introduction at all. That is a different question with different evidence — a portfolio-operations team, a founder community, and whether the fund has already watched Procuros work. Ranked by that instead, the order changes.</p></div>
+      <p class="lede">Everything above scores the <b>door</b>: does the brand need Procuros, and is there a route to it. It says nothing about whether the fund is set up to broker a vendor introduction at all. That is a different question with different evidence: a portfolio-operations team, a founder community, and whether the fund has already watched Procuros work. Ranked by that instead, the order changes.</p></div>
     <div class="table-scroll"><table id="lens-t">
       <thead><tr><th>Fund</th><th class="r">Door</th><th class="r">Access</th><th class="r">Already has proof</th><th>What the second lens sees</th></tr></thead>
       <tbody id="lens-body"></tbody>
@@ -464,7 +471,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   <div class="block">
     <div class="head"><h2>Why now: two rules for recent events</h2>
-      <p class="lede">New listings, funding, ops hiring and export news each mark a moment when order volumes and retailer connections grow. Older news counts for less, and events that land close together count for more. Funding is read from <b>Companies House filings</b> — share allotments and new charges — as well as the press, because a filing is dated, authoritative and often lands months before anyone writes it up. Every item below names the source it came from, so a filing and a blog post can be told apart. Consumer reviews and taste tests are excluded: they are not events, however many funding words their headlines contain.</p></div>
+      <p class="lede">New listings, funding, ops hiring and export news each mark a moment when order volumes and retailer connections grow. Older news counts for less, and events that land close together count for more. Funding is read from <b>Companies House filings</b> (share allotments and new charges) as well as the press, because a filing is dated, authoritative and often lands months before anyone writes it up. Every item below names the source it came from, so a filing and a blog post can be told apart. Consumer reviews and taste tests are excluded: they are not events, however many funding words their headlines contain.</p></div>
     <div class="grid" style="--min:300px">
       <div class="card"><p class="label">Rule 1 · Recency</p><h3>News loses half its weight every 9 months</h3><div id="decay"></div><p>A story from this month counts in full, one from 18 months ago counts a quarter, and anything older than 24 months isn't counted. Open job ads are live, so they don't decay.</p></div>
       <div class="card"><p class="label">Rule 2 · Stacking</p><h3>Events in the same 12 months multiply</h3><div id="stackchart"></div><p>Each extra kind of event in the same 12 months adds 25% to the brand's why-now score, capped at 1.5×.</p></div>
@@ -486,7 +493,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="grid" style="--min:250px">
       <div class="card sub" style="--rows:3"><p class="label">Pair score</p><p class="formula">pair = 100 × brand fit × intro path</p><p>Multiplying rather than adding means a weak side drags the whole pair down instead of being averaged away. It does not sink it: both halves carry a floor, which is why a score alone is not enough to call a pair worth pursuing.</p></div>
       <div class="card sub" style="--rows:3"><p class="label">Fund score</p><p class="formula" id="agg-formula"></p><p>Best pair counts fully, the second half, the third a quarter. Depth helps, but only on top of quality: four strong pairs beat fifteen weak ones.</p></div>
-      <div class="card sub" style="--rows:3"><p class="label">Groups</p><p class="formula" id="tier-formula"></p><p>Call first needs two pairs worth pursuing — <span data-n="qual"></span>+ <em>and</em> a named person on each — so one relationship opens more than one door. The group lines use score alone, which is why three funds in Next still have nobody to ask.</p></div>
+      <div class="card sub" style="--rows:3"><p class="label">Groups</p><p class="formula" id="tier-formula"></p><p>Call first needs two pairs worth pursuing (<span data-n="qual"></span>+ <em>and</em> a named person on each), so one relationship opens more than one door. The group lines use score alone, which is why three funds in Next still have nobody to ask.</p></div>
     </div>
   </div>
 
@@ -507,7 +514,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block statement">
     <p class="claim">Nothing above observes the thing that actually matters.</p>
     <div>
-      <p class="because">Whether a brand keys its orders in by hand is not public. No filing records it, no trade story reports it, and no stockist page implies it. Every signal on this page — how many grocers, how recently something changed, what size the accounts suggest — is a proxy for a fact none of them can see.</p>
+      <p class="because">Whether a brand keys its orders in by hand is not public. No filing records it, no trade story reports it, and no stockist page implies it. Every signal on this page (how many grocers, how recently something changed, what size the accounts suggest) is a proxy for a fact none of them can see.</p>
       <p class="because">That is not a hole to apologise for, it is the reason the first call is fifteen minutes and starts with <i>how do orders from each grocer arrive today</i>. The model's job is to decide whose fifteen minutes are worth asking for. It cannot do the asking.</p>
     </div>
   </div>
@@ -561,12 +568,12 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <p class="label">Procuros · UK go-to-market · Task 1.2 · six weeks from 2 November 2026</p>
     <h1>One motion, <em>run twice</em>.</h1>
     <p class="lede">Task 1.1 says which doors to knock on. It does not say whether anyone opens them. Six weeks on the top two funds answers that, before the motion is worth taking to anyone else.</p>
-    <p class="lede">An earlier version of this ran a different ask at each fund — a portfolio-wide offer at Piper, a single ask at Maven — and called the comparison a test. It wasn't one. With one fund per arm and six other things different between them, no result could be attributed to the ask. <b>So the ask is now identical at both funds</b>, and the only thing that varies is the fund itself.</p>
+    <p class="lede">An earlier version of this ran a different ask at each fund (a portfolio-wide offer at Piper, a single ask at Maven) and called the comparison a test. It wasn't one. With one fund per arm and six other things different between them, no result could be attributed to the ask. <b>So the ask is now identical at both funds</b>, and the only thing that varies is the fund itself.</p>
   </div>
 
   <div class="block">
     <div class="head"><h2>Why these two</h2>
-      <p class="lede">They are #1 and #2 on the shortlist and each has a fund person on a target brand's board, which is the condition the motion needs. One is PE and one is VC — an observation we have a hypothesis about, not a variable we can test with one of each.</p></div>
+      <p class="lede">They are #1 and #2 on the shortlist and each has a fund person on a target brand's board, which is the condition the motion needs. One is PE and one is VC, which is an observation we have a hypothesis about rather than a variable we can test with one of each.</p></div>
     <div class="grid" style="--min:300px" id="x-why"></div>
   </div>
 
@@ -579,13 +586,13 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
         <tr><td>The ask</td><td colspan="2"><b>Identical.</b> One introduction to whoever runs orders or finance at one named brand. Fifteen minutes. A second brand only after the first call has happened and been reported back.</td></tr>
         <tr><td>What we give first</td><td colspan="2"><b>Identical.</b> The same deduction brief, built once, with three lines of personalisation for the brand in question.</td></tr>
         <tr><td>Who we write to</td><td>Rory Gibbs, on Borough Broth's board since 25 November 2025</td><td>Luke Matthews, on Tom Parker Creamery's board since 14 August 2024</td></tr>
-        <tr><td>Backup contact</td><td>Annabel Feather (Associate Partner, Talent) — asked who owns operations, not pitched</td><td>Carl Edgehill (Portfolio Director)</td></tr>
+        <tr><td>Backup contact</td><td>Annabel Feather (Associate Partner, Talent). Asked who owns operations, not pitched</td><td>Carl Edgehill (Portfolio Director)</td></tr>
         <tr><td>Lead brand</td><td>Borough Broth: £7.5m from Piper, four grocers, hiring in operations</td><td>Tom Parker Creamery: five grocers, Golden Milk launched 19 October</td></tr>
         <tr><td>Second brand, if earned</td><td>Wild Nutrition</td><td>Tiba Tempeh</td></tr>
         <tr><td>Differs by nature</td><td>Consumer-only portfolio, 3 target brands, a talent function</td><td>155 companies across sectors, 2 target brands, a portfolio director</td></tr>
       </tbody>
     </table></div>
-    <p class="callout"><b>The hypothesis, stated as a hypothesis:</b> a PE firm whose value-creation team is measured on portfolio operations should be more receptive to this than a generalist venture fund. One firm of each cannot test that. What six weeks can establish is whether an investor forwards a vendor introduction at all, and what they say when they don't — and those answers hold whichever fund produces them.</p>
+    <p class="callout"><b>The hypothesis, stated as a hypothesis:</b> a PE firm whose value-creation team is measured on portfolio operations should be more receptive to this than a generalist venture fund. One firm of each cannot test that. What six weeks can establish is whether an investor forwards a vendor introduction at all, and what they say when they don't, and those answers hold whichever fund produces them.</p>
   </div>
 
   <div class="block">
@@ -604,20 +611,20 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block">
     <div class="head"><h2>What we give first</h2>
       <p class="lede">The earlier version of this was a one-page "retailer check": which grocers a brand sells through, which documents each exchanges, and some questions. A brand knows which grocers it sells to. There was nothing in it they did not already have, and an investor forwarding it would have spent credibility rather than earned it.</p>
-      <p class="lede">What a brand genuinely cannot produce is what document errors are costing them, because the evidence sits in remittance advices nobody reads that way. So the asset is a short brief on the regulator's own numbers plus a check the brand can run on its own data — built once, sent to every fund and every brand, with three lines of personalisation.</p></div>
+      <p class="lede">What a brand genuinely cannot produce is what document errors are costing them, because the evidence sits in remittance advices nobody reads that way. So the asset is a short brief on the regulator's own numbers plus a check the brand can run on its own data. Built once, sent to every fund and every brand, with three lines of personalisation.</p></div>
 
     <div class="grid" style="--min:280px">
-      <div class="card"><p class="label">Part 1 · the numbers</p><h3>What the regulator found</h3><p>In the Groceries Code Adjudicator's <a href="https://www.gov.uk/government/news/high-code-compliance-maintained-as-some-supplier-issues-increase" target="_blank" rel="noopener">2026 annual survey</a> of more than 2,600 suppliers, published 16 April 2026, <b>the single most-reported problem in the sector was retailer processes for promptly resolving invoice discrepancies</b> — raised by 20% of suppliers, ahead of inaccurate forecasting (18%), delisting without notice (15%) and late payment (14%). Its <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/494840/GCA_Tesco_plc_final_report_26012016_-_version_for_download.pdf" target="_blank" rel="noopener">2016 Tesco report</a> found unilateral deductions unreasonable and required 30 days to challenge them. Sourced, dated, and not from a vendor.</p></div>
+      <div class="card"><p class="label">Part 1 · the numbers</p><h3>What the regulator found</h3><p>In the Groceries Code Adjudicator's <a href="https://www.gov.uk/government/news/high-code-compliance-maintained-as-some-supplier-issues-increase" target="_blank" rel="noopener">2026 annual survey</a> of more than 2,600 suppliers, published 16 April 2026, <b>the single most-reported problem in the sector was retailer processes for promptly resolving invoice discrepancies</b>, raised by 20% of suppliers, ahead of inaccurate forecasting (18%), delisting without notice (15%) and late payment (14%). Its <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/494840/GCA_Tesco_plc_final_report_26012016_-_version_for_download.pdf" target="_blank" rel="noopener">2016 Tesco report</a> found unilateral deductions unreasonable and required 30 days to challenge them. Sourced, dated, and not from a vendor.</p></div>
       <div class="card"><p class="label">Part 2 · the mechanism</p><h3>How a deduction happens</h3><p>A despatch note that arrives after the lorry, an invoice whose line total disagrees with the order, a missing location code. Each one is a document that moved by hand. One page, no jargon, so a founder can follow it.</p></div>
       <div class="card"><p class="label">Part 3 · the check</p><h3>Thirty minutes, their own data</h3><p>Take one period's remittance advices, reconcile them against invoices raised, and count two things: deductions with no explanation attached, and days to resolve the ones that had one. They have this data. Nobody has cut it this way. They come back with a number, which is a conversation rather than a read.</p></div>
     </div>
 
-    <p class="callout"><b>Why an investor forwards this:</b> it makes them useful to their founder, which is the only reason anyone hits forward. It cites a regulator rather than us, it asks the brand to look at their own numbers, and Procuros appears once, at the end. The same brief goes to every fund, so the cost of the next fund is an email — which is the part of this that has to survive Task 1.3.</p>
+    <p class="callout"><b>Why an investor forwards this:</b> it makes them useful to their founder, which is the only reason anyone hits forward. It cites a regulator rather than us, it asks the brand to look at their own numbers, and Procuros appears once, at the end. The same brief goes to every fund, so the cost of the next fund is an email, which is the part of this that has to survive Task 1.3.</p>
   </div>
 
   <div class="block">
     <div class="head"><h3>The personalisation, per brand</h3>
-      <p class="lede">Three lines on top of the shared brief, from evidence already collected in Task 1.1: where this brand sells, how many document streams that implies, and what changed recently. This is what the retailer check is reduced to — the envelope, not the contents.</p></div>
+      <p class="lede">Three lines on top of the shared brief, from evidence already collected in Task 1.1: where this brand sells, how many document streams that implies, and what changed recently. This is what the retailer check is reduced to: the envelope, not the contents.</p></div>
     <div class="filters" id="rc-pick" role="group" aria-label="Choose a brand"></div>
     <div class="rcheck" id="rcheck"></div>
   </div>
@@ -635,7 +642,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
         <tr><td class="p">4 · 23–27 Nov</td><td>Fifteen minutes with whoever runs orders or finance.</td><td>Fifteen minutes with whoever runs orders or finance.</td></tr>
         <tr><td class="p">5 · 30 Nov–4 Dec</td><td>Report back to Rory, then ask about Wild Nutrition.</td><td>Report back to Luke, then ask about Tiba Tempeh.</td></tr>
         <tr><td class="p">6 · 7–11 Dec</td><td>Second call if the second ask landed. Proposal where it fits.</td><td>Second call if the second ask landed. Proposal where it fits.</td></tr>
-        <tr><td class="p">11 Dec</td><td colspan="2">Read-out against the scorecard. Not to pick a winner — to decide whether the channel is worth Task 1.3 at all.</td></tr>
+        <tr><td class="p">11 Dec</td><td colspan="2">Read-out against the scorecard. Not to pick a winner, but to decide whether the channel is worth Task 1.3 at all.</td></tr>
       </tbody>
     </table></div>
   </div>
@@ -645,10 +652,10 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 <section id="piper" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
     <div class="head"><p class="label">Playbooks · fund 1 of 2</p><h2>Piper: one ask, through the deal lead</h2>
-      <p class="lede">Everything a fund receives from us is on this tab: who gets written to, on what day, and the exact words. Piper first because it is #1 on the shortlist — not because it gets a different treatment. The sequence below is the same one Maven gets, with different names in it.</p></div>
+      <p class="lede">Everything a fund receives from us is on this tab: who gets written to, on what day, and the exact words. Piper first because it is #1 on the shortlist, not because it gets a different treatment. The sequence below is the same one Maven gets, with different names in it.</p></div>
     <div class="grid" style="--min:250px">
       <div class="card"><p class="label">Contact 1 · Borough Broth</p><h3><a href="https://find-and-update.company-information.service.gov.uk/company/09590728/officers" target="_blank" rel="noopener">Rory Gibbs</a></h3><p>Became a director of Borough Broth on 25 November 2025, the same day Piper Fund VII became a person with significant control. He is the deal lead, so he can make the introduction himself rather than route it.</p></div>
-      <div class="card"><p class="label">Backup · day 10 only</p><h3><a href="https://piper.co.uk/our-team/" target="_blank" rel="noopener">Annabel Feather</a></h3><p>Associate Partner, Talent. She is asked one question — who at Piper works with portfolio companies on operations tooling — and is not pitched, because her remit may have nothing to do with it.</p></div>
+      <div class="card"><p class="label">Backup · day 10 only</p><h3><a href="https://piper.co.uk/our-team/" target="_blank" rel="noopener">Annabel Feather</a></h3><p>Associate Partner, Talent. She is asked one question: who at Piper works with portfolio companies on operations tooling. She is not pitched, because her remit may have nothing to do with it.</p></div>
       <div class="card"><p class="label">Second ask, if earned</p><h3>Wild Nutrition</h3><p>Four grocers confirmed, and Piper's fund entities control it, but no Piper person sits on its board. The ask goes back through Rory, and only after Borough Broth's call has happened and been reported to him.</p></div>
     </div>
   </div>
@@ -675,18 +682,18 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
         <p class="subj">Subject: Borough Broth, and what deductions cost suppliers</p>
         <div class="body"><p>Hi Rory,</p>
         <p>Congratulations on the Borough Broth investment. Four grocers and a growing range is usually the point where purchase orders and invoices start being handled by hand.</p>
-        <p>The Groceries Code Adjudicator surveyed 2,600 suppliers this April. The most-reported problem in the whole sector wasn't price or delisting — it was retailer processes for resolving invoice discrepancies, raised by one supplier in five. I've written up what causes them and a half-hour check a finance lead can run on their own remittances to see whether it's happening here (attached, and useful whether or not anyone speaks to us).</p>
+        <p>The Groceries Code Adjudicator surveyed 2,600 suppliers this April. The most-reported problem in the whole sector wasn't price or delisting. It was retailer processes for resolving invoice discrepancies, raised by one supplier in five. I've written up what causes them and a half-hour check a finance lead can run on their own remittances to see whether it's happening here (attached, and useful whether or not anyone speaks to us).</p>
         <p>One ask: would you introduce me to whoever runs orders or finance at Borough Broth? Fifteen minutes, and if it isn't a fit I'll say so on the call.</p></div>
         <button type="button" class="btn copy">Copy</button></div>
       <div class="mail" data-mail><p class="label">A2 · Email to Annabel Feather · day 10, only if Rory is silent</p>
         <p class="subj">Subject: Who owns operations tooling across the portfolio?</p>
         <div class="body"><p>Hi Annabel,</p>
-        <p>I wrote to Rory last week about Borough Broth and haven't caught him — inboxes being what they are.</p>
+        <p>I wrote to Rory last week about Borough Broth and haven't caught him, inboxes being what they are.</p>
         <p>Rather than repeat it at you: who at Piper works with portfolio companies on operations and finance tooling? I've put together a short brief on what document errors cost grocery suppliers, built on the Groceries Code Adjudicator's own figures, and I'd rather send it to the right person than the nearest one.</p>
         <p>Happy to send it to you to judge for yourself if that's easier.</p></div>
         <button type="button" class="btn copy">Copy</button></div>
       <div class="mail" data-mail><p class="label">A3 · Blurb for Piper to forward</p>
-        <div class="body"><p>Hi [founder], [name] at Procuros connects grocery brands to their retailers' EDI, so orders and invoices from Tesco, Sainsbury's and the rest arrive in your own system rather than being keyed in. They've written a short piece on what document errors cost suppliers — the Groceries Code Adjudicator's 2026 survey found resolving invoice discrepancies the most-reported problem in the sector — with a check you can run on your own remittances. It's attached and yours either way. They'd like 15 minutes with whoever runs orders. Shall I connect you?</p></div>
+        <div class="body"><p>Hi [founder], [name] at Procuros connects grocery brands to their retailers' EDI, so orders and invoices from Tesco, Sainsbury's and the rest arrive in your own system rather than being keyed in. They've written a short piece on what document errors cost suppliers, with a check you can run on your own remittances. The Groceries Code Adjudicator's 2026 survey found resolving invoice discrepancies the most-reported problem in the sector. It's attached and yours either way. They'd like 15 minutes with whoever runs orders. Shall I connect you?</p></div>
         <button type="button" class="btn copy">Copy</button></div>
     </div>
   </div>
@@ -700,7 +707,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="head"><h2>What could go wrong</h2></div>
     <div class="risks">
       <div class="card"><h3>A deal lead is not an operator</h3><p>Rory Gibbs joined Borough Broth's board the day Piper's fund took control, which makes him the right person to ask and the wrong person to ask about order admin. He may have no idea whether anyone there keys invoices in by hand, and a brief about deductions may read to him as someone else's problem. That is why the ask is for an introduction rather than an opinion, and why the blurb lets the founder nominate who takes the call. If he answers but won't forward, that reason is the most valuable sentence of the whole six weeks.</p></div>
-      <div class="card"><h3>Borough Broth is mid-hire</h3><p>It raised in December and is hiring in operations. Time the call for after that person starts — they will be the user, and a vacancy answers none of the questions.</p></div>
+      <div class="card"><h3>Borough Broth is mid-hire</h3><p>It raised in December and is hiring in operations. Time the call for after that person starts, because they will be the user and a vacancy answers none of the questions.</p></div>
       <div class="card"><h3>The second ask has no board seat</h3><p>Piper's entities control Wild Nutrition but no Piper person sits on its board, so the second ask depends entirely on the first call having gone well enough for Rory to spend his own credibility again.</p></div>
     </div>
   </div>
@@ -709,7 +716,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 <section id="maven" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
     <div class="head"><p class="label">Playbooks · fund 2 of 2</p><h2>Maven: the same ask, a different fund</h2>
-      <p class="lede">Identical to Piper in every respect we control: same brief, same single ask, same days, same words bar the names. What differs is the fund — Maven backs 155 companies across sectors and two of them fit, against a consumer-only portfolio of which three fit. If the two produce different results, that difference is the finding, and it is about the funds rather than about anything we did.</p></div>
+      <p class="lede">Identical to Piper in every respect we control: same brief, same single ask, same days, same words bar the names. What differs is the fund. Maven backs 155 companies across sectors and two of them fit, against a consumer-only portfolio of which three fit. If the two produce different results, that difference is the finding, and it is about the funds rather than about anything we did.</p></div>
     <div class="grid" style="--min:250px">
       <div class="card"><p class="label">Contact 1 · Tom Parker Creamery</p><h3><a href="https://find-and-update.company-information.service.gov.uk/company/10397498/officers" target="_blank" rel="noopener">Luke Matthews</a></h3><p>A director of Tom Parker Creamery since 14 August 2024, and on <a href="https://www.mavencp.com/our-team" target="_blank" rel="noopener">Maven's team page</a>. He knows the founders and can make the intro in one email.</p></div>
       <div class="card"><p class="label">Backup, then Tiba Tempeh</p><h3><a href="https://www.mavencp.com/our-team" target="_blank" rel="noopener">Carl Edgehill</a></h3><p>Portfolio Director. Maven talks publicly about <a href="https://www.mavencp.com/maven-video-resources/the-benefits-of-active-portfolio-management-with-bright-network" target="_blank" rel="noopener">active portfolio management</a>, so he's the one to approach if Luke is silent, and the route to Tiba Tempeh.</p></div>
@@ -739,7 +746,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
         <p class="subj">Subject: Tom Parker Creamery and Golden Milk</p>
         <div class="body"><p>Hi Luke,</p>
         <p>Congratulations on Golden Milk. Tom Parker Creamery now sells through Sainsbury's, Tesco, Waitrose, Morrisons and Ocado, and every new line adds orders, delivery notes and invoices to handle with each of them.</p>
-        <p>Procuros connects a brand's own system to its retailers' EDI so that paperwork flows without anyone keying it in. When the Groceries Code Adjudicator surveyed 2,600 suppliers this April, the most-reported problem in the sector was retailer processes for resolving invoice discrepancies — one supplier in five. I've written up what causes them and a half-hour check your finance lead can run on their own remittances (attached, and useful whether or not anyone speaks to us).</p>
+        <p>Procuros connects a brand's own system to its retailers' EDI so that paperwork flows without anyone keying it in. When the Groceries Code Adjudicator surveyed 2,600 suppliers this April, the most-reported problem in the sector was retailer processes for resolving invoice discrepancies, raised by one supplier in five. I've written up what causes them and a half-hour check your finance lead can run on their own remittances (attached, and useful whether or not anyone speaks to us).</p>
         <p>One ask: would you introduce me to whoever runs orders or finance at Tom Parker? 15 minutes, and if it's not a fit I'll tell them so.</p></div>
         <button type="button" class="btn copy">Copy</button></div>
       <div class="mail" data-mail><p class="label">B2 · Email to Carl Edgehill · day 10, only if Luke is silent</p>
@@ -750,7 +757,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
         <p>Could you introduce me to whoever runs orders or finance there? 15 minutes is all I'd ask for.</p></div>
         <button type="button" class="btn copy">Copy</button></div>
       <div class="mail" data-mail><p class="label">B3 · Blurb for Maven to forward</p>
-        <div class="body"><p>Hi [founder], [name] at Procuros helps grocery brands connect to their retailers' EDI, so orders and invoices from Sainsbury's, Tesco and the rest go straight into your own system. They've written a short piece on what document errors cost suppliers &mdash; the Groceries Code Adjudicator's 2026 survey found resolving invoice discrepancies the most-reported problem in the sector &mdash; with a check you can run on your own remittances. It's attached and yours either way. They'd like 15 minutes with whoever runs orders. Shall I connect you?</p></div>
+        <div class="body"><p>Hi [founder], [name] at Procuros helps grocery brands connect to their retailers' EDI, so orders and invoices from Sainsbury's, Tesco and the rest go straight into your own system. They've written a short piece on what document errors cost suppliers, with a check you can run on your own remittances. The Groceries Code Adjudicator's 2026 survey found resolving invoice discrepancies the most-reported problem in the sector. It's attached and yours either way. They'd like 15 minutes with whoever runs orders. Shall I connect you?</p></div>
         <button type="button" class="btn copy">Copy</button></div>
     </div>
   </div>
@@ -774,7 +781,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 <section id="score" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
     <div class="head"><p class="label">Task 1.2 · Scorecard</p><h2>Measured where the events are</h2>
-      <p class="lede">Six weeks and two funds produce at most a handful of introductions, so any metric downstream of one has an n of two or three and cannot carry a decision. The primary measures are therefore the ones with enough events to mean something — replies and forwards, counted per ask. Introductions and qualified brands are still recorded, but as outcomes, not as the thing we judge on.</p></div>
+      <p class="lede">Six weeks and two funds produce at most a handful of introductions, so any metric downstream of one has an n of two or three and cannot carry a decision. The primary measures are therefore the ones with enough events to mean something: replies and forwards, counted per ask. Introductions and qualified brands are still recorded, but as outcomes, not as the thing we judge on.</p></div>
     <div class="table-scroll"><table class="sc-t">
       <thead><tr><th>What we count</th><th>Why this one</th><th>By</th><th class="r">Target</th><th class="r">n</th></tr></thead>
       <tbody>
@@ -796,8 +803,8 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block statement">
     <p class="claim">The premise of all of this is still <em>untested.</em></p>
     <div>
-      <p class="because">Task 1.1 argues that cold does not work and that an investor's introduction carries trust Procuros cannot buy. Nothing in these six weeks checks that. If Rory forwards the brief and Borough Broth takes the call, we still will not know whether Borough Broth would have answered a direct email — and that difference is the entire reason to run this motion rather than a sequencer.</p>
-      <p class="because">Measuring it needs a cold arm: fifteen matched brands, same asset, same ask, no investor. It is left out here on purpose, and the reason is scope rather than rigour — these six weeks are about whether an investor forwards anything at all, and running a cold cell at the same time would mean approaching fifteen brands we have not yet earned the right to approach. It is the first thing Task 1.3 has to establish, and it is named there as such rather than assumed away.</p>
+      <p class="because">Task 1.1 argues that cold does not work and that an investor's introduction carries trust Procuros cannot buy. Nothing in these six weeks checks that. If Rory forwards the brief and Borough Broth takes the call, we still will not know whether Borough Broth would have answered a direct email, and that difference is the entire reason to run this motion rather than a sequencer.</p>
+      <p class="because">Measuring it needs a cold arm: fifteen matched brands, same asset, same ask, no investor. It is left out here on purpose, and the reason is scope rather than rigour. These six weeks are about whether an investor forwards anything at all, and running a cold cell at the same time would mean approaching fifteen brands we have not yet earned the right to approach. It is the first thing Task 1.3 has to establish, and it is named there as such rather than assumed away.</p>
     </div>
   </div>
 
@@ -815,7 +822,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="head"><h2>The read-out on 11 December</h2></div>
     <div class="grid" style="--min:320px">
       <div class="card"><h3>The three numbers that decide Task 1.3</h3><p>Forward rate per ask, hours per introduction, and the distribution of reasons for a no. Those three say whether there is a channel here, what it costs, and where it breaks. Every touch is logged to produce them: date, fund, contact, channel, outcome, and the reason in their words.</p></div>
-      <div class="card"><h3>If nothing forwards</h3><p>Then the route is not the problem — the offer is, or the brand-fit model is. Either way we go back to the brand calls and the scoring before taking this to a third fund, let alone to all of them.</p></div>
+      <div class="card"><h3>If nothing forwards</h3><p>Then the route is not the problem. The offer is, or the brand-fit model is. Either way we go back to the brand calls and the scoring before taking this to a third fund, let alone to all of them.</p></div>
     </div>
   </div>
   <div class="next"><button type="button" class="btn" data-go="protect">Next: what survives at scale →</button></div>
@@ -825,7 +832,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block">
     <p class="label">Procuros · UK go-to-market · Task 1.3 · scaling the motion</p>
     <h1>A good wedge. <em>A poor engine.</em></h1>
-    <p class="lede">Assume Task 1.2 works: investors forward, brands take the call, some of them buy. The question is what happens when this is pointed at every VC and PE firm in the UK — and the honest answer is that the motion has a ceiling, it is set at the top rather than at conversion, and it is probably lower than the 10% of new-business ARR this is meant to contribute.</p>
+    <p class="lede">Assume Task 1.2 works: investors forward, brands take the call, some of them buy. The question is what happens when this is pointed at every VC and PE firm in the UK. The honest answer is that the motion has a ceiling, it is set at the top rather than at conversion, and it is probably lower than the 10% of new-business ARR this is meant to contribute.</p>
     <p class="lede">That is not an argument against running it. It is an argument for knowing what it is: a high-trust, low-volume channel that opens accounts nothing else opens, which needs something else beside it for volume.</p>
   </div>
 
@@ -860,7 +867,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
       <p class="lede">Each of these is true at two funds and easy to lose at a hundred. They are ordered by what it costs to break them.</p></div>
     <ol class="motion">
       <li><span class="n">1</span><b>Never approach a brand a fund declined to introduce</b><span>This is the one that ends the channel rather than one relationship, which is why it is first. The brief notes these brands are closely connected to each other; their investors are more so. Going around a no gets discussed, and it would be the single most expensive mistake available here.</span></li>
-      <li><span class="n">2</span><b>Never ask without a named person and a named brand</b><span>The moment an email opens "we help grocery brands" it is cold outreach wearing a warm coat, and an investor's inbox treats it accordingly. If the research has not produced a human and a dated trigger, there is no ask to make — skip the fund rather than soften the ask.</span></li>
+      <li><span class="n">2</span><b>Never ask without a named person and a named brand</b><span>The moment an email opens "we help grocery brands" it is cold outreach wearing a warm coat, and an investor's inbox treats it accordingly. If the research has not produced a human and a dated trigger, there is no ask to make. Skip the fund rather than soften the ask.</span></li>
       <li><span class="n">3</span><b>Report back on every introduction, including the failures</b><span>The second ask is bought with the first report. At two funds this is courtesy; at a hundred it is the only thing that converts a one-off favour into a standing channel, and it is the first thing dropped when volume rises.</span></li>
       <li><span class="n">4</span><b>Keep the give-first asset free, useful and the same for everyone</b><span>Built once, sent to all, no gate and no form. The temptation at scale is to thin it or to make it a lead magnet; either turns a forwardable document back into marketing, and the whole motion rests on an investor being willing to attach it.</span></li>
       <li><span class="n">5</span><b>Say no out loud when it isn't a fit</b><span>"If it isn't a fit I'll tell them so" has to be true, and visibly so, because the investor is lending their judgement and not just their address book. One wasted founder call costs more introductions than one won deal returns.</span></li>
@@ -877,7 +884,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
       <thead><tr><th>What breaks</th><th>What it looks like</th><th>Earliest signal</th></tr></thead>
       <tbody>
         <tr><td class="p">Two funds, one brand</td><td>Some brands already have two or three shortlisted backers. At scale, two investors introduce us to the same founder in the same month, which embarrasses both and looks like a mail-merge.</td><td class="muted">Already visible in the Task 1.1 data. Needs a register of who has been approached, built before the third fund rather than the thirtieth.</td></tr>
-        <tr><td class="p">The research step</td><td>Officer matching, retailer confirmation and news classification took real work for 58 funds. At 500 it is either automated and noisier, or manual and undone.</td><td class="muted">The classifier faults already found in this repo — a product review scored as a funding event. At ten times the volume, precision errors become the output.</td></tr>
+        <tr><td class="p">The research step</td><td>Officer matching, retailer confirmation and news classification took real work for 58 funds. At 500 it is either automated and noisier, or manual and undone.</td><td class="muted">The classifier faults already found in this repo, such as a product review scored as a funding event. At ten times the volume, precision errors become the output.</td></tr>
         <tr><td class="p">The warm premium</td><td>If an investor's introduction converts only slightly better than a direct email, the economics invert, because research per touch costs roughly ten times a cold send.</td><td class="muted">Unmeasured, deliberately, and named on the Scorecard as the first thing to establish. A cold arm of fifteen matched brands prices it.</td></tr>
         <tr><td class="p">Fund-type drift</td><td>Scaling by fund count adds VCTs and seed funds whose companies sit below the pain threshold. More funds, no more buyers.</td><td class="muted">Visible now: five of the twenty are tax-advantaged small-cap funds. Scale on brands that fit, not on funds.</td></tr>
         <tr><td class="p">Who owns it</td><td>At two funds one person does research, outreach and the call. At a hundred that splits, and the trigger goes stale in the handoff between whoever found it and whoever uses it.</td><td class="muted">The first time a brand call opens with a reason that is three months old.</td></tr>
@@ -889,7 +896,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block">
     <div class="head"><h2>What I'd change before fund three</h2></div>
     <div class="risks">
-      <div class="card"><h3>Price the warm premium first</h3><p>Everything else is secondary to knowing whether the investor is adding anything. Fifteen matched brands, same asset, same ask, no investor, run alongside the next two funds. If the warm reply rate is not clearly above cold, this motion is an expensive way to send email and the honest move is to say so and reallocate — which is a better outcome than scaling it quietly for two quarters. If it is clearly above, that number becomes the argument for funding the research step properly.</p></div>
+      <div class="card"><h3>Price the warm premium first</h3><p>Everything else is secondary to knowing whether the investor is adding anything. Fifteen matched brands, same asset, same ask, no investor, run alongside the next two funds. If the warm reply rate is not clearly above cold, this motion is an expensive way to send email and the honest move is to say so and reallocate, which is a better outcome than scaling it quietly for two quarters. If it is clearly above, that number becomes the argument for funding the research step properly.</p></div>
       <div class="card"><h3>Build the register</h3><p>One row per brand: who was approached, by which fund, when, and what came back. Dull, and the thing that breaks first without it.</p></div>
       <div class="card"><h3>Gate on brands, not funds</h3><p>Only funds with two or more qualifying brands earn the full research treatment. Everything else is a watchlist until a portfolio changes.</p></div>
     </div>
@@ -898,7 +905,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block statement">
     <p class="claim">This should be one of two motions, <em>not the plan</em>.</p>
     <div>
-      <p class="because">Three customers per hundred funds researched is a good return on a channel that opens doors nothing else opens, and it is not a route to a tenth of new-business ARR on its own. The brands this reaches are the ones worth having — well connected, visible, and quotable to the next prospect — so its real value may be reference and brand awareness rather than bookings, which is exactly what the ICP note in the brief argues.</p>
+      <p class="because">Three customers per hundred funds researched is a good return on a channel that opens doors nothing else opens, and it is not a route to a tenth of new-business ARR on its own. The brands this reaches are the ones worth having: well connected, visible, and quotable to the next prospect. So its real value may be reference and brand awareness rather than bookings, which is exactly what the ICP note in the brief argues.</p>
       <p class="because">What belongs beside it is the retailer-mandate trigger: when a grocer tells its suppliers to go digital, every affected brand becomes a prospect on the same day, with a deadline attached and no need for an introduction. That is the volume motion. This is the trust motion. Running one without the other is what breaks the number.</p>
     </div>
   </div>
@@ -909,14 +916,14 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block">
     <p class="label">Procuros · UK go-to-market · Task 2 · the non-scalable idea</p>
     <h1>A dinner where <em>Procuros doesn't speak.</em></h1>
-    <p class="lede">Fourteen people around one table in London. Two of them already use Procuros and spend twenty minutes taking their own order flow apart in front of the others — what broke, what it cost, what they tried first. The rest run grocery brands of roughly the same size and recognise every word of it. Nobody from Procuros presents anything.</p>
+    <p class="lede">Fourteen people around one table in London. Two of them already use Procuros and spend twenty minutes taking their own order flow apart in front of the others: what broke, what it cost, what they tried first. The rest run grocery brands of roughly the same size and recognise every word of it. Nobody from Procuros presents anything.</p>
     <p class="lede">This does not scale, on purpose. One evening a quarter, a guest list built by hand, and a host who has to be persuaded rather than booked. That is the cost of the only thing in this market that outperforms a vendor saying it about itself.</p>
   </div>
 
   <div class="block statement">
     <p class="claim">The brief already contains the argument for this.</p>
     <div>
-      <p class="because">Procuros picked grocery brands partly because they are <i>"very well connected amongst each other, so that penetrating this segment — if done well — is a lot easier than in other verticals."</i> That is a statement about a dense referral graph. Cold email, paid acquisition and even the investor motion in Task 1 all route <em>around</em> that graph. A dinner routes through it.</p>
+      <p class="because">Procuros picked grocery brands partly because they are <i>"very well connected amongst each other, so that penetrating this segment, if done well, is a lot easier than in other verticals."</i> That is a statement about a dense referral graph. Cold email, paid acquisition and even the investor motion in Task 1 all route <em>around</em> that graph. A dinner routes through it.</p>
       <p class="because">And the pain Procuros sells against is one nobody admits to in public. No founder posts that their team keys purchase orders in by hand, or that a grocer deducted four thousand pounds last quarter and they never found out why. They will say it across a table to someone with the same problem, which is the whole reason the room is worth building.</p>
     </div>
   </div>
@@ -936,7 +943,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="head"><h2>The evening</h2>
       <p class="lede">No slides, no stand, no roundtable branding. A long table and one structured twenty minutes.</p></div>
     <ol class="motion">
-      <li><span class="n">1</span><b>The teardown, not the testimonial</b><span>The host walks through their real retailer document flow: which grocers, which documents, what used to arrive by email, who used to key it in. Specific and unflattering — the version with the mistakes left in. A testimonial is an advert with a customer's face on it; a teardown is a peer admitting something.</span></li>
+      <li><span class="n">1</span><b>The teardown, not the testimonial</b><span>The host walks through their real retailer document flow: which grocers, which documents, what used to arrive by email, who used to key it in. Specific and unflattering: the version with the mistakes left in. A testimonial is an advert with a customer's face on it; a teardown is a peer admitting something.</span></li>
       <li><span class="n">2</span><b>The number</b><span>One figure from their own books: hours a week recovered, or deductions that stopped. Said by them, not by us, which is the entire point of the format.</span></li>
       <li><span class="n">3</span><b>What they tried first</b><span>The portal, the spreadsheet, the part-time ops hire, the quote from a traditional EDI provider. Everyone at the table is somewhere in that sequence and will place themselves in it immediately.</span></li>
       <li><span class="n">4</span><b>Questions, to the host</b><span>Procuros answers only what the host passes over. If no question reaches us, the evening still worked.</span></li>
@@ -962,7 +969,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block">
     <div class="head"><h2>Where this breaks</h2></div>
     <div class="risks">
-      <div class="card"><h3>The host sounds like an advert</h3><p>The single biggest risk, and it is caused by us. If the host is over-briefed, handed talking points, or told which number to say, the room detects it within a minute and the evening is worse than having sent nothing — because everyone present now associates Procuros with being handled. The mitigation is uncomfortable: agree the structure and let them say what they actually think, including the parts where Procuros was slow or the integration was harder than promised. A host who volunteers one genuine complaint buys more credibility than any case study.</p></div>
+      <div class="card"><h3>The host sounds like an advert</h3><p>The single biggest risk, and it is caused by us. If the host is over-briefed, handed talking points, or told which number to say, the room detects it within a minute and the evening is worse than having sent nothing, because everyone present now associates Procuros with being handled. The mitigation is uncomfortable: agree the structure and let them say what they actually think, including the parts where Procuros was slow or the integration was harder than promised. A host who volunteers one genuine complaint buys more credibility than any case study.</p></div>
       <div class="card"><h3>Free dinners have high no-show</h3><p>Ops leads cancel on the day far more than founders do, and they are the guests who matter. Over-invite by a third, confirm by phone rather than email, and accept that a table of ten with the right people beats fourteen with the wrong ones.</p></div>
       <div class="card"><h3>It only works in London, and only quarterly</h3><p>A real ceiling, not a caveat. Four brands an evening and four evenings a year reaches sixteen brands, which is not a growth channel by any reading. It is a credibility engine whose output is the references and the nominations that make every other motion cheaper.</p></div>
     </div>
@@ -972,7 +979,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <p class="claim">It also fixes the weakest link in <em>Task 1</em>.</p>
     <div>
       <p class="because">The investor motion asks a partner to spend their own credibility introducing a vendor they have never seen work. That is the real reason a forward rate might be low, and no amount of rewriting the email solves it. An investor who has sat at this table, watched two of their peers' portfolio brands take their order flow apart, and heard a number said out loud, is a different proposition when the ask arrives.</p>
-      <p class="because">Which suggests the sequencing in the submission is backwards. The dinner should come first and Task 1.2 should follow it, because the cheapest way to raise a forward rate is not a better subject line — it is having been in the room.</p>
+      <p class="because">Which suggests the sequencing in the submission is backwards. The dinner should come first and Task 1.2 should follow it, because the cheapest way to raise a forward rate is not a better subject line. It is having been in the room.</p>
     </div>
   </div>
 </div></section>
@@ -1087,7 +1094,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   const margin = lastIn && firstOut ? Math.abs(lastIn.score - firstOut.score).toFixed(1) : null;
   document.getElementById("dropped").innerHTML = `<h3>Why not the other ${plural(dropped.length, "fund")}</h3>
     <p>Only ${FN["Funds holding a target brand"]} of the ${N.vcpe} funds back a brand that fits, so the real filter is the target-brand test, not the ranking. ${dropped.map(f => `<b>${esc(f.fund)}</b> (${Math.round(f.score)}) backs ${list(f.pairs.map(p => esc(pretty(p.brand))))} with ${f.pairs[0].intro.strength.toLowerCase()} routes and thin brand evidence.`).join(" ")}</p>
-    ${margin !== null ? `<p><b>How little the cut-off means:</b> ${esc(short(lastIn.fund))} is twentieth on ${lastIn.score.toFixed(1)} and ${esc(short(firstOut.fund))} is twenty-first on ${firstOut.score.toFixed(1)} — ${margin} of a point apart, which is why these two are the only scores on the page shown to a decimal. Tightening one news classifier while building this page was enough to swap them. Treat the bottom of this list as a tie, not a ranking.</p>` : ""}`;
+    ${margin !== null ? `<p><b>How little the cut-off means:</b> ${esc(short(lastIn.fund))} is twentieth on ${lastIn.score.toFixed(1)} and ${esc(short(firstOut.fund))} is twenty-first on ${firstOut.score.toFixed(1)}, which is ${margin} of a point apart and why these two are the only scores on the page shown to a decimal. Tightening one news classifier while building this page was enough to swap them. Treat the bottom of this list as a tie, not a ranking.</p>` : ""}`;
   document.querySelectorAll(".opp-row").forEach(b => b.addEventListener("click", () => select(b.dataset.f)));
 
   // ---------- Second lens: can the fund broker at all? (access + strategic pillars, already computed by score.py)
@@ -1113,7 +1120,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     const parts = [`<b>The two lenses disagree.</b> ${esc(short(topDoor.fund))} has the best door but ranks #${lensRank[topDoor.fund]} here; ${esc(short(topLens.fund))} ranks #${doorRank[topLens.fund]} on door quality and first on this one, on the strength of a value-creation team and published portfolio programmes.`];
     if (proof.length) {
       const noRoute = proof.filter(f => !f.pairs.some(p => p.intro.board_people.length));
-      parts.push(`The sharpest case is ${esc(list(proof.map(f => short(f.fund))))}: #${doorRank[proof[0].fund]} on door quality, #${lensRank[proof[0].fund]} here, and the highest strategic score of any shortlisted fund because ${proof.length === 1 ? "it already backs" : "they already back"} ${esc(list(proof.flatMap(f => f.procuros_overlap).map(pretty)))}. Those brands are set aside as targets — they are customers already — but a fund that has watched Procuros work carries the strongest reference an introduction can have, and the door ranking cannot see it at all.`);
+      parts.push(`The sharpest case is ${esc(list(proof.map(f => short(f.fund))))}: #${doorRank[proof[0].fund]} on door quality, #${lensRank[proof[0].fund]} here, and the highest strategic score of any shortlisted fund because ${proof.length === 1 ? "it already backs" : "they already back"} ${esc(list(proof.flatMap(f => f.procuros_overlap).map(pretty)))}. Those brands are set aside as targets because they are customers already, but a fund that has watched Procuros work carries the strongest reference an introduction can have, and the door ranking cannot see it at all.`);
       if (noRoute.length) parts.push(`The catch is real: ${esc(list(noRoute.map(f => short(f.fund))))} ${noRoute.length === 1 ? "has" : "have"} no partner named on any target brand's board, so the proof exists and the route still has to be found.`);
     }
     document.getElementById("lens-note").innerHTML = parts.join(" ");
@@ -1126,7 +1133,33 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     const fx = 0.5, py = P.strong_path;
     const dots = PAIRS.map(p => `<circle cx="${X(p.fit.fit).toFixed(1)}" cy="${Y(p.intro.path).toFixed(1)}" r="${p.f.selected ? 6 : 4}" data-f="${esc(p.fund)}"
       style="fill:${p.qualified ? "var(--accent)" : "var(--ink-2)"};stroke:var(--card)" stroke-width="1.5" fill-opacity="${p.f.selected ? .9 : .4}"><title>${esc(p.fund)} → ${esc(pretty(p.brand))} · pair ${Math.round(p.score)}${p.qualified ? "" : " · no named person"}</title></circle>`).join("");
-    const lab = "";
+    // Name the strongest pairs on the chart itself. Labelling all 77 would be unreadable, so take the top
+    // few and place each label where it doesn't collide with one already placed; everything else keeps its
+    // hover title. Borough Broth and Tom Parker sit almost on top of each other, so the fallbacks matter.
+    // The four quadrant captions are already on the chart, so they go in first and dot labels route around
+    // them. Without this, Borough Broth printed straight through "Ready to ask".
+    const placed = [
+      { x: R - 8 - 84, y: T + 18, w: 84 },   // Ready to ask
+      { x: L + 8, y: T + 18, w: 112 },       // Route, weak need
+      { x: R - 8 - 158, y: B - 10, w: 158 }, // Good brand, no route yet
+      { x: L + 8, y: B - 10, w: 80 },        // Low priority
+    ];
+    const clear = (x, y, w) => !placed.some(b => Math.abs(b.y - y) < 13 && x < b.x + b.w + 5 && b.x < x + w + 5);
+    const lab = PAIRS.slice(0, 9).map(p => {
+      const cx = X(p.fit.fit), cy = Y(p.intro.path), name = pretty(p.brand), w = name.length * 6.1;
+      for (const [x, y] of [[cx + 11, cy + 4], [cx - 11 - w, cy + 4], [cx - w / 2, cy - 13],
+                            [cx + 11, cy + 20], [cx - 11 - w, cy + 20], [cx + 11, cy - 12],
+                            [cx - 11 - w, cy - 12], [cx - w / 2, cy + 22], [cx + 11, cy + 36],
+                            [cx - 11 - w, cy + 36]]) {
+        // T + 4, not T + 8: a pair with a perfect intro path sits on the top gridline, and a stricter
+        // bound pushed both of the top two into the same row, where the longer label crowded the other out.
+        if (x > L + 2 && x + w < R - 2 && y >= T + 4 && y < B - 4 && clear(x, y, w)) {
+          placed.push({ x, y, w });
+          return `<text class="dotlab" x="${x.toFixed(1)}" y="${y.toFixed(1)}">${esc(name)}</text>`;
+        }
+      }
+      return "";
+    }).join("");
     document.getElementById("scatter").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Each intro opportunity placed by brand fit and intro path strength">
       <rect x="${X(fx)}" y="${T}" width="${R - X(fx)}" height="${Y(py) - T}" style="fill:color-mix(in srgb, var(--accent) 9%, transparent)"/>
       ${[0, .25, .5, .75, 1].map(v => `<line x1="${L}" x2="${R}" y1="${Y(v)}" y2="${Y(v)}" style="stroke:var(--rule)"/><text x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${v * 100}</text>
