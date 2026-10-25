@@ -1,283 +1,222 @@
 <title>Warm Doors UK</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Which UK investors can introduce Procuros to the grocery brands that need it most: the data, the scoring logic and the shortlist.">
+<meta name="description" content="Which UK VC and PE funds can introduce Procuros to the grocery brands that need EDI most: the answer, the method and the data behind it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
-/* Layout: one long reading column that widens for the ranking and the map; sticky section rail on top. */
+/* One system: three typefaces with fixed jobs (display = headings and big numbers, sans = all reading text and controls,
+   mono = small uppercase labels only), one type scale, one box style, one spacing scale. */
 :root {
-  --paper: #f4f6f3;
-  --card: #ffffff;
-  --ink: #15202b;
-  --ink-2: #4b5a66;
-  --rule: #d9dfdb;
-  --accent: #d9480f;      /* shelf-label orange */
-  --accent-soft: #fde7da;
-  --sel: #ffd43b;          /* shelf-edge label yellow */
-  --sel-ink: #2b2100;
-  --p-fit: #1c7ed6;
-  --p-pain: #d9480f;
-  --p-access: #2b8a3e;
-  --p-strat: #7048e8;
-  --good: #2b8a3e; --warn: #e67700; --crit: #c92a2a;
+  --paper: #f4f6f3; --card: #ffffff; --ink: #15202b; --ink-2: #55636e; --rule: #dde3df; --tint: #eef1ee;
+  --accent: #d9480f; --accent-soft: #fde7da; --sel: #ffd43b; --sel-ink: #2b2100;
+  --p-fit: #1c7ed6; --p-pain: #d9480f; --p-access: #2b8a3e; --p-strat: #7048e8;
   --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", sans-serif;
   --body: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
-  --measure: 720px;       /* one reading width for every intro and paragraph */
+  --fs-h1: clamp(40px, 6vw, 64px); --fs-h2: clamp(26px, 3.2vw, 34px); --fs-h3: 19px; --fs-num: 30px;
+  --fs-lede: 19px; --fs-body: 16px; --fs-small: 14px; --fs-label: 12px;
+  --measure: 720px; --radius: 8px;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-  --paper: #0f161c; --card: #172129; --ink: #e8eef2; --ink-2: #9fb0bd; --rule: #2a3742;
+  --paper: #0f161c; --card: #172129; --ink: #e8eef2; --ink-2: #9fb0bd; --rule: #2a3742; --tint: #1c2830;
   --accent: #ff7a3d; --accent-soft: #3a2014; --sel: #f5c518; --sel-ink: #1d1600;
-  --p-fit: #4dabf7; --p-pain: #ff7a3d; --p-access: #51cf66; --p-strat: #9775fa;
-  --good: #51cf66; --warn: #ffa94d; --crit: #ff6b6b; color-scheme: dark; } }
+  --p-fit: #4dabf7; --p-pain: #ff7a3d; --p-access: #51cf66; --p-strat: #9775fa; color-scheme: dark; } }
 :root[data-theme="dark"] {
-  --paper: #0f161c; --card: #172129; --ink: #e8eef2; --ink-2: #9fb0bd; --rule: #2a3742;
+  --paper: #0f161c; --card: #172129; --ink: #e8eef2; --ink-2: #9fb0bd; --rule: #2a3742; --tint: #1c2830;
   --accent: #ff7a3d; --accent-soft: #3a2014; --sel: #f5c518; --sel-ink: #1d1600;
-  --p-fit: #4dabf7; --p-pain: #ff7a3d; --p-access: #51cf66; --p-strat: #9775fa;
-  --good: #51cf66; --warn: #ffa94d; --crit: #ff6b6b; color-scheme: dark; }
+  --p-fit: #4dabf7; --p-pain: #ff7a3d; --p-access: #51cf66; --p-strat: #9775fa; color-scheme: dark; }
 
 * { box-sizing: border-box; }
-body { background: var(--paper); color: var(--ink); font: 16px/1.6 var(--body); }
+body { background: var(--paper); color: var(--ink); font: 400 var(--fs-body)/1.6 var(--body); }
 a { color: inherit; text-decoration-color: var(--accent); text-underline-offset: 3px; }
-a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-h1, h2, h3 { font-family: var(--display); line-height: 1.08; text-wrap: balance; margin: 0; }
-h2 { font-size: clamp(28px, 4vw, 40px); font-weight: 800; letter-spacing: -0.01em; }
-h3 { font-size: 20px; font-weight: 700; }
-p { margin: 0; }
-.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-.prose { max-width: var(--measure); display: grid; gap: 14px; }
-.prose p, .lede, .why { text-wrap: pretty; }
-.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
-.mono { font-family: var(--mono); }
-.num { font-variant-numeric: tabular-nums; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3, p { margin: 0; }
+h1, h2 { font-family: var(--display); font-weight: 800; line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance; }
+h1 { font-size: var(--fs-h1); max-width: var(--measure); }
+h1 em { font-style: normal; color: var(--accent); }
+h2 { font-size: var(--fs-h2); }
+h3 { font: 700 var(--fs-h3)/1.25 var(--display); }
+.label { font: 500 var(--fs-label)/1.2 var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--ink-2); }
+.lede { font-size: var(--fs-lede); color: var(--ink-2); max-width: var(--measure); text-wrap: pretty; }
+.small { font-size: var(--fs-small); }
 .muted { color: var(--ink-2); }
+.num { font-variant-numeric: tabular-nums; }
+b, strong { font-weight: 600; color: var(--ink); }
 
-body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
-nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
-nav.rail .logo { font: 800 16px/1 var(--display); color: var(--ink); white-space: nowrap; }
-
-section { padding-block: 72px; border-bottom: 1px solid var(--rule); }
-section > .wrap { display: grid; gap: 28px; }
-
-/* Hero */
-.hero { padding-block: 64px 56px; }
-.hero h1 { font-size: clamp(40px, 6.8vw, 74px); font-weight: 800; letter-spacing: -0.03em; max-width: var(--measure); }
-.hero h1 em { font-style: normal; color: var(--accent); }
-.hero .lede { font-size: clamp(18px, 2.2vw, 21px); max-width: var(--measure); color: var(--ink-2); }
-.hero .lede strong { color: var(--ink); font-weight: 600; }
-.ticket { display: flex; flex-wrap: wrap; gap: 10px; }
-.sel { display: inline-flex; align-items: baseline; gap: 6px; background: var(--sel); color: var(--sel-ink); font: 500 12px/1 var(--mono); padding: 6px 8px 5px; border-radius: 2px; clip-path: polygon(0 0, 100% 0, 100% 100%, 8px 100%, 0 calc(100% - 8px)); }
-.sel b { font: 700 18px/1 var(--display); }
-.chip { display: inline-block; font: 500 11px/1 var(--mono); padding: 4px 6px 3px; border-radius: 2px; background: var(--sel); color: var(--sel-ink); white-space: nowrap; }
-.chip.ghost { background: transparent; color: var(--ink-2); border: 1px dashed var(--rule); }
-
-/* Thesis */
-.three { row-gap: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
-.three > div { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 8px; align-content: start; border-top: 3px solid var(--ink); padding-top: 14px; }
-@supports not (grid-template-rows: subgrid) { .three > div { grid-template-rows: none; } }
-.three .k { font: 500 12px/1 var(--mono); color: var(--accent); letter-spacing: .06em; text-transform: uppercase; }
-.three.four { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
-.three.four > div { grid-row: span 4; }
-.formula { font: 500 13px/1.45 var(--mono); background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 10px; }
-.flow > div { position: relative; }
-@media (min-width: 980px) { .flow > div:not(:last-child)::after { content: "→"; position: absolute; right: -22px; top: 6px; font: 700 18px/1 var(--display); color: var(--ink-2); } }
-
-/* Explainers: charts and the worked example */
-.explain { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-.card { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 18px 20px; display: grid; gap: 12px; align-content: start; }
-.card h3 { font-size: 18px; }
-.card svg { width: 100%; height: auto; display: block; }
-.card svg text { font-family: var(--mono); font-size: 11px; fill: var(--ink-2); }
-.card svg .strong { fill: var(--ink); font-weight: 500; }
-.wx { display: grid; gap: 12px; }
-.wx-pick { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; font-size: 14px; }
-select { font: 500 13px/1 var(--mono); padding: 7px 8px; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 3px; }
-.wx table td { vertical-align: middle; }
-.wx .mini { height: 10px; background: color-mix(in srgb, var(--rule) 55%, transparent); border-radius: 2px; overflow: hidden; min-width: 80px; }
-.wx .mini span { display: block; height: 100%; background: var(--p-pain); }
-.wx tr.total td { border-top: 1px solid var(--ink); font-weight: 600; }
-.wx tr.mult td { color: var(--accent); }
-.sig-w { display: grid; grid-template-columns: minmax(80px, 1fr) 42px; gap: 8px; align-items: center; }
-.sig-w output { font: 500 13px var(--mono); text-align: right; font-variant-numeric: tabular-nums; }
-
-/* Tiers */
-.tierbox { display: grid; gap: 16px; }
-.tier-rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
-.tier-rules > div { display: flex; gap: 12px; align-items: start; background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 12px 14px; font-size: 14px; }
-.tier-rules .tier { flex: none; }
-.strip { position: relative; height: 154px; background: var(--card); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
-.strip .zone { position: absolute; top: 0; bottom: 22px; border-right: 1px dashed var(--ink-2); }
-.strip .zone span { position: absolute; left: 8px; top: 8px; font: 500 11px/1 var(--mono); color: var(--ink-2); letter-spacing: .04em; text-transform: uppercase; }
-.strip .zone.za { background: color-mix(in srgb, var(--accent) 12%, transparent); border-right: 0; }
-.strip .zone.zb { background: color-mix(in srgb, var(--accent) 5%, transparent); }
-.strip .dot { position: absolute; width: 13px; height: 13px; margin: -6.5px 0 0 -6.5px; border-radius: 50%; background: var(--ink); border: 2px solid var(--ink); cursor: pointer; padding: 0; }
-.strip .dot.thin { background: var(--card); }
-.strip .dot.on { border-color: var(--accent); background: var(--accent); }
-.strip .dot.thin.on { background: var(--card); }
-.strip .flag { position: absolute; font: 500 11px/1.2 var(--mono); color: var(--accent); white-space: nowrap; transform: translateX(-50%); }
-.strip .axis-x { position: absolute; left: 0; right: 0; bottom: 0; height: 22px; border-top: 1px solid var(--rule); }
-.strip .axis-x span { position: absolute; bottom: 5px; transform: translateX(-50%); font: 400 10px/1 var(--mono); color: var(--ink-2); }
-.tier-why { font-size: 14px; background: var(--card); border-left: 3px solid var(--accent); padding: 8px 12px; border-radius: 2px; }
-
-/* Theme switch */
-.theme { margin-left: auto; font: 500 12px/1 var(--mono); padding: 8px 10px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); color: var(--ink); cursor: pointer; white-space: nowrap; }
-.theme:hover { border-color: var(--ink-2); }
-
-/* Pipeline: every row shares one column template, so labels, bars, numbers and shares line up across both groups */
-.funnel { display: grid; gap: 12px; }
-.funnel h3 { padding-top: 10px; border-top: 1px solid var(--rule); }
-.funnel .f-head + h3 { border-top: 0; padding-top: 0; }
-.f-row { display: grid; grid-template-columns: 220px minmax(0, 1fr) 64px 170px; gap: 16px; align-items: center; font-size: 14px; }
-.f-row b { font: 700 18px/1 var(--display); font-variant-numeric: tabular-nums; text-align: right; }
-.f-row.last .bar-fill { background: var(--accent); }
-.f-head { font: 500 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
-.f-head span:nth-child(3) { text-align: right; }
-@media (max-width: 640px) {
-  .f-row { grid-template-columns: minmax(0, 1fr) 56px; gap: 6px 12px; }
-  .f-row .bar-track { grid-column: 1 / -1; grid-row: 2; }
-  .f-row .drop { grid-column: 1 / -1; grid-row: 3; }
-  .f-head { display: none; }
-}
-.bar-row { display: grid; grid-template-columns: 1fr; gap: 4px; }
-.bar-row .lbl { display: flex; justify-content: space-between; font-size: 14px; }
-.bar-row .lbl b { font: 700 18px/1 var(--display); font-variant-numeric: tabular-nums; }
-.bar-track { height: 14px; background: color-mix(in srgb, var(--rule) 55%, transparent); border-radius: 2px; overflow: hidden; }
-.bar-fill { height: 100%; background: var(--ink); border-radius: 2px; }
-.bar-row.last .bar-fill { background: var(--accent); }
-.drop { font: 400 12px/1 var(--mono); color: var(--ink-2); padding-left: 2px; }
-
-/* Signals */
-.sig-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 32px; align-items: start; }
-@media (max-width: 860px) { .sig-grid { grid-template-columns: 1fr; } }
-.table-scroll { overflow-x: auto; }
-table { border-collapse: collapse; width: 100%; font-size: 14px; }
-th { text-align: left; font: 500 11px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); padding: 8px 10px; border-bottom: 1px solid var(--ink); }
-td { padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: top; }
-#sig-body td:first-child { white-space: nowrap; }
-td.w { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
-.pill-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 8px; vertical-align: -1px; }
-.panel { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; padding: 20px; display: grid; gap: 16px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 112px); }
-.slider { display: grid; gap: 6px; }
-.slider label { display: flex; justify-content: space-between; font-size: 14px; font-weight: 500; }
-.slider output { font-family: var(--mono); font-variant-numeric: tabular-nums; }
-input[type=range] { width: 100%; accent-color: var(--accent); }
-.btn { font: 500 13px/1 var(--mono); padding: 9px 12px; border: 1px solid var(--ink); background: transparent; color: var(--ink); border-radius: 3px; cursor: pointer; justify-self: start; }
+.wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.page { display: grid; gap: 64px; }
+.block { display: grid; gap: 20px; }
+.head { display: grid; gap: 10px; max-width: var(--measure); }
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(var(--min, 240px), 1fr)); }
+.card { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 20px; display: grid; gap: 10px; align-content: start; }
+.card p { font-size: var(--fs-small); color: var(--ink-2); }
+.card.sub { grid-template-rows: subgrid; grid-row: span var(--rows, 3); row-gap: 10px; }
+@supports not (grid-template-rows: subgrid) { .card.sub { grid-template-rows: none; } }
+.stat b { display: block; font: 800 var(--fs-num)/1 var(--display); color: var(--ink); }
+.stat span { font-size: var(--fs-small); color: var(--ink-2); }
+.formula { font: 500 13px/1.5 var(--mono); background: var(--tint); border-radius: 6px; padding: 8px 10px; color: var(--ink); }
+.btn { font: 500 var(--fs-small)/1 var(--body); padding: 10px 14px; border: 1px solid var(--ink); background: transparent; color: var(--ink); border-radius: 6px; cursor: pointer; }
 .btn:hover { background: var(--ink); color: var(--paper); }
-
-/* Ranking */
-.rank-head { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: end; justify-content: space-between; }
-.legend { display: flex; flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--ink-2); }
-.board { display: grid; gap: 2px; }
-.row { display: grid; grid-template-columns: 34px minmax(140px, 1.1fr) 46px minmax(160px, 2fr) 52px 54px; gap: 12px; align-items: center; padding: 9px 10px; border-radius: 4px; cursor: pointer; background: transparent; border: 0; color: inherit; text-align: left; font: inherit; width: 100%; }
-.row:hover, .row.on { background: var(--card); }
-.row.on { box-shadow: inset 3px 0 0 var(--accent); }
-.row .r { font: 500 13px/1 var(--mono); color: var(--ink-2); font-variant-numeric: tabular-nums; }
-.row .f { font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.row .f small { display: block; font: 400 11px/1.3 var(--mono); color: var(--ink-2); }
-.tier { font: 700 12px/1 var(--mono); padding: 5px 0; width: 30px; text-align: center; border-radius: 3px; }
+.btn[disabled] { opacity: .4; cursor: default; } .btn[disabled]:hover { background: transparent; color: var(--ink); }
+.next { display: flex; justify-content: flex-end; border-top: 1px solid var(--rule); padding-top: 20px; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: 0; }
+.chip { display: inline-block; font: 500 12px/1 var(--body); padding: 4px 7px; border-radius: 3px; background: var(--sel); color: var(--sel-ink); white-space: nowrap; text-decoration: none; }
+.chip.ghost { background: transparent; color: var(--ink-2); border: 1px dashed var(--rule); }
+a.chip:hover { outline: 1px solid var(--sel-ink); }
+.tier { display: inline-grid; place-items: center; font: 700 12px/1 var(--body); width: 26px; height: 22px; border-radius: 4px; flex: none; }
 .tier.A { background: var(--accent); color: #fff; }
 .tier.B { background: var(--accent-soft); color: var(--accent); }
 .tier.C { border: 1px solid var(--rule); color: var(--ink-2); }
-.stack { height: 16px; display: flex; background: color-mix(in srgb, var(--rule) 45%, transparent); border-radius: 2px; overflow: hidden; }
-.stack span { height: 100%; transition: width .4s ease; }
-.row .s { font: 700 17px/1 var(--display); font-variant-numeric: tabular-nums; text-align: right; }
-.row .d { font: 500 12px/1 var(--mono); text-align: right; font-variant-numeric: tabular-nums; }
-.d.up { color: var(--good); } .d.down { color: var(--crit); }
-.cut { font: 500 11px/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); border-top: 1px dashed var(--accent); padding: 8px 10px 4px; }
-.row.out { opacity: .55; }
-.axis { display: grid; grid-template-columns: 34px minmax(140px, 1.1fr) 46px minmax(160px, 2fr) 52px 54px; gap: 12px; padding: 0 10px; }
-.axis .ticks { position: relative; height: 16px; font: 400 10px/1 var(--mono); color: var(--ink-2); }
-.axis .ticks span { position: absolute; transform: translateX(-50%); }
+
+/* Navigation */
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--paper); }
+nav.rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(6px); border-bottom: 1px solid var(--rule); }
+.tasks, .subtabs { display: flex; align-items: center; overflow-x: auto; scrollbar-width: none; }
+.tasks { gap: 4px; padding-block: 12px 10px; }
+.logo { font: 800 16px/1 var(--display); white-space: nowrap; margin-right: 16px; }
+.task { font: 500 13px/1 var(--body); padding: 9px 12px; border-radius: 6px; border: 0; background: transparent; color: var(--ink-2); white-space: nowrap; }
+.task.on { background: var(--ink); color: var(--paper); }
+.task[aria-disabled="true"] { opacity: .65; }
+.theme { margin-left: auto; font: 500 13px/1 var(--body); padding: 8px 12px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); color: var(--ink); cursor: pointer; white-space: nowrap; }
+.subtabs { gap: 2px; border-top: 1px solid var(--rule); }
+.subtabs button { font: 500 var(--fs-small)/1 var(--body); padding: 13px 12px 11px; background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--ink-2); cursor: pointer; white-space: nowrap; }
+.subtabs button:hover { color: var(--ink); }
+.subtabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.panel-tab { padding-block: 48px 72px; min-height: 70vh; }
+
+/* Summary: fund cards */
+.fund { cursor: pointer; text-align: left; font: inherit; color: inherit; }
+.fund:hover { border-color: var(--ink-2); }
+.fund .top { display: flex; gap: 10px; align-items: baseline; }
+.fund .rank { font: 500 var(--fs-label)/1 var(--mono); color: var(--ink-2); }
+.fund .score { margin-left: auto; font: 800 22px/1 var(--display); font-variant-numeric: tabular-nums; }
+.fund h3 { font-size: 17px; }
+
+/* Method: funnel on one shared column grid */
+.funnel { display: grid; gap: 10px; }
+.f-row { display: grid; grid-template-columns: 220px minmax(0, 1fr) 64px 150px; gap: 16px; align-items: center; font-size: var(--fs-small); }
+.f-row b { font: 700 18px/1 var(--display); text-align: right; font-variant-numeric: tabular-nums; }
+.f-row .keep { color: var(--ink-2); }
+.f-group { padding-top: 12px; border-top: 1px solid var(--rule); }
+.f-group:first-of-type { border-top: 0; padding-top: 0; }
+.track { height: 12px; background: var(--tint); border-radius: 3px; overflow: hidden; }
+.fill { height: 100%; background: var(--ink); border-radius: 3px; }
+.f-row.last .fill { background: var(--accent); }
 @media (max-width: 640px) {
-  .row, .axis { grid-template-columns: 26px minmax(0, 1fr) 34px 44px; }
+  .f-row { grid-template-columns: minmax(0, 1fr) 56px; gap: 6px 12px; }
+  .f-row .track { grid-column: 1 / -1; grid-row: 2; }
+  .f-row .keep { grid-column: 1 / -1; grid-row: 3; }
+  .f-head { display: none; }
+}
+.card svg { width: 100%; height: auto; display: block; }
+.card svg text { font: 500 11px var(--mono); fill: var(--ink-2); }
+.card svg .strong { fill: var(--ink); }
+
+/* Tables */
+.table-scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: var(--fs-small); }
+th { text-align: left; font: 500 var(--fs-label)/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); padding: 8px 10px; border-bottom: 1px solid var(--ink); }
+td { padding: 9px 10px; border-bottom: 1px solid var(--rule); vertical-align: middle; }
+td.r, th.r { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.p { white-space: nowrap; font-weight: 600; }
+tr.total td { border-top: 1px solid var(--ink); font-weight: 600; }
+tr.mult td { color: var(--accent); }
+.mini { height: 10px; background: var(--tint); border-radius: 3px; overflow: hidden; min-width: 70px; }
+.mini span { display: block; height: 100%; background: var(--p-pain); }
+select { font: 500 var(--fs-small)/1 var(--body); padding: 7px 8px; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; }
+
+/* Ranking */
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--ink-2); align-items: center; }
+.bar-head { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
+.board { display: grid; gap: 2px; }
+.row, .axis { display: grid; grid-template-columns: 30px minmax(150px, 1.1fr) 30px minmax(160px, 2fr) 48px 40px; gap: 12px; align-items: center; padding: 8px 10px; }
+.row { border-radius: 6px; cursor: pointer; background: transparent; border: 0; color: inherit; text-align: left; font: inherit; width: 100%; }
+.row:hover, .row.on { background: var(--card); }
+.row.on { box-shadow: inset 3px 0 0 var(--accent); }
+.row.out { opacity: .5; }
+.row .r { font: 500 var(--fs-label)/1 var(--mono); color: var(--ink-2); }
+.row .f { font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row .f small { display: block; font: 400 12px/1.3 var(--body); color: var(--ink-2); }
+.row .s { font: 800 17px/1 var(--display); text-align: right; font-variant-numeric: tabular-nums; }
+.row .d { font: 500 12px/1 var(--body); text-align: right; color: var(--ink-2); }
+.d.up { color: var(--p-access); } .d.down { color: var(--accent); }
+.stack { height: 14px; display: flex; background: var(--tint); border-radius: 3px; overflow: hidden; }
+.stack span { height: 100%; transition: width .4s ease; }
+.axis { padding-block: 0; font: 500 11px/1 var(--mono); color: var(--ink-2); }
+.axis .ticks { position: relative; height: 14px; }
+.axis .ticks span { position: absolute; transform: translateX(-50%); }
+.cut { font: 500 var(--fs-label)/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); border-top: 1px dashed var(--accent); padding: 8px 10px 4px; }
+@media (max-width: 640px) {
+  .row, .axis { grid-template-columns: 24px minmax(0, 1fr) 28px 44px; }
   .row .stackcell, .row .d, .axis .ticks, .axis .sp { display: none; }
 }
+.tune { display: grid; gap: 18px; }
+.sliders { display: grid; gap: 14px 24px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+.slider { display: grid; gap: 4px; }
+.slider label { display: flex; justify-content: space-between; font-size: var(--fs-small); font-weight: 500; }
+.slider output, .sig-w output { font: 500 13px var(--body); font-variant-numeric: tabular-nums; }
+input[type=range] { width: 100%; accent-color: var(--accent); }
+.sig-w { display: grid; grid-template-columns: minmax(90px, 1fr) 40px; gap: 8px; align-items: center; }
+.sig-w output { text-align: right; }
+details summary { cursor: pointer; font-weight: 500; font-size: var(--fs-small); }
+
+/* Tier strip */
+.strip { position: relative; height: 172px; background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; }
+.zone { position: absolute; top: 0; bottom: 22px; border-right: 1px dashed var(--ink-2); }
+.zone span { position: absolute; left: 8px; top: 8px; font: 500 11px/1 var(--mono); color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
+.zone span i { font-style: normal; }
+@media (max-width: 640px) { .zone span .long { display: none; } }
+.zone.zb { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+.zone.za { background: color-mix(in srgb, var(--accent) 13%, transparent); border-right: 0; }
+.pin { position: absolute; width: 13px; height: 13px; margin: -6.5px 0 0 -6.5px; border-radius: 50%; background: var(--ink); border: 2px solid var(--ink); cursor: pointer; padding: 0; }
+.pin.thin { background: var(--card); }
+.pin.on { border-color: var(--accent); background: var(--accent); }
+.pin.thin.on { background: var(--card); }
+.flag { position: absolute; font: 500 11px/1.2 var(--mono); color: var(--accent); white-space: nowrap; transform: translateX(-50%); }
+.axis-x { position: absolute; left: 0; right: 0; bottom: 0; height: 22px; border-top: 1px solid var(--rule); }
+.axis-x span { position: absolute; bottom: 5px; transform: translateX(-50%); font: 500 10px/1 var(--mono); color: var(--ink-2); }
 
 /* Map */
-.map-box { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; position: relative; }
+.map-box { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; position: relative; }
 #map-svg { display: block; width: 100%; height: 620px; }
 @media (max-width: 640px) { #map-svg { height: 480px; } }
 .map-note { position: absolute; left: 14px; bottom: 12px; right: 14px; font-size: 13px; color: var(--ink-2); pointer-events: none; }
-.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--paper); font-size: 13px; padding: 8px 10px; border-radius: 4px; max-width: 260px; display: none; }
-
-/* Dossier */
-.dossier { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 32px; align-items: start; }
-@media (max-width: 860px) { .dossier { grid-template-columns: 1fr; } }
-.dos-head { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: baseline; }
-.dos-head h3 { font-size: clamp(28px, 4vw, 38px); font-weight: 800; }
-.why { font-size: 17px; max-width: var(--measure); }
-.pillars { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
-@media (max-width: 520px) { .pillars { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-.pillars div { border-top: 3px solid; padding-top: 8px; display: grid; gap: 2px; }
-.pillars b { font: 700 24px/1 var(--display); font-variant-numeric: tabular-nums; }
-.pillars span { font-size: 12px; color: var(--ink-2); }
-.brand-list { display: grid; gap: 0; }
-.bi { display: grid; gap: 6px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
-.bi .top { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; }
-.bi .top b { font-size: 16px; }
-.bi .chips { display: flex; flex-wrap: wrap; gap: 5px; }
-.bi .trig { font-size: 13px; color: var(--ink-2); }
-.bi .blurb { font-size: 14px; color: var(--ink-2); margin-top: -2px; }
-.about { font-size: 15px; color: var(--ink-2); margin-top: -8px; }
-.key { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12px; color: var(--ink-2); padding: 8px 10px; background: var(--card); border: 1px solid var(--rule); border-radius: 4px; margin-bottom: 4px; }
-.key > span { display: inline-flex; gap: 6px; align-items: center; }
-.status, span.chip { cursor: help; }
-a.chip { text-decoration: none; }
-a.chip:hover { outline: 1px solid var(--sel-ink); }
-.status { font: 500 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
-.status.current { color: var(--good); } .status.unknown { color: var(--ink-2); } .status.exited_recent { color: var(--warn); } .status.exited_old { color: var(--crit); }
-.side { display: grid; gap: 18px; font-size: 14px; }
-.side ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
-
-/* Limits */
-.limits { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
-.limits > div { display: grid; gap: 10px; align-content: start; border-top: 3px solid var(--ink); padding-top: 14px; }
-.coverage { display: grid; gap: 8px; }
-footer { padding-block: 40px 56px; font-size: 14px; color: var(--ink-2); }
-footer .wrap { display: grid; gap: 8px; }
-
-
-/* Tabs */
-nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
-.tasks, .subtabs { display: flex; gap: 6px; align-items: center; overflow-x: auto; scrollbar-width: none; }
-.tasks { padding-block: 12px 10px; gap: 4px; }
-.tasks .logo { margin-right: 18px; }
-.task { font: 600 13px/1 var(--body); padding: 9px 12px; border-radius: 4px; border: 1px solid transparent; background: transparent; color: var(--ink-2); white-space: nowrap; cursor: pointer; }
-.task.on { background: var(--ink); color: var(--paper); }
-.task[aria-disabled="true"] { cursor: default; opacity: .7; }
-.task .soon { font: 500 10px/1 var(--mono); text-transform: uppercase; letter-spacing: .06em; margin-left: 6px; color: var(--accent); }
-.subtabs { gap: 2px; border-top: 1px solid var(--rule); }
-.subtabs button { font: 500 13px/1 var(--mono); padding: 13px 12px 11px; background: transparent; border: 0; border-bottom: 2px solid transparent; color: var(--ink-2); cursor: pointer; white-space: nowrap; }
-.subtabs button:hover { color: var(--ink); }
-.subtabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
-.panel-tab { border-bottom: 0; padding-block: 48px 64px; min-height: 70vh; }
-.panel-tab .hero { padding-block: 8px 48px; }
-.next { display: flex; justify-content: flex-end; border-top: 1px solid var(--rule); padding-top: 20px; }
-
-/* Side drawer: the dossier opens beside Ranking and Map instead of switching tabs */
-.drawer { position: fixed; top: 0; right: 0; bottom: 0; z-index: 30; width: min(560px, 100vw); background: var(--paper); border-left: 1px solid var(--rule); box-shadow: -18px 0 40px -24px rgb(0 0 0 / .35); transform: translateX(105%); transition: transform .25s ease; overflow-y: auto; overscroll-behavior: contain; visibility: hidden; }
-.drawer.open { transform: none; visibility: visible; }
-@media (min-width: 1100px) { body.drawer-on .panel-tab, body.drawer-on footer, body.drawer-on nav.rail { padding-right: min(560px, 100vw); } }
-.drawer-bar { position: sticky; top: 0; z-index: 1; display: flex; gap: 8px; align-items: center; padding: 12px 20px; padding-top: max(12px, env(safe-area-inset-top, 0px)); background: var(--paper); border-bottom: 1px solid var(--rule); }
-.drawer-bar .grow { flex: 1; }
-.drawer-bar .x { font: 400 22px/1 var(--body); width: 36px; height: 36px; border: 1px solid var(--rule); border-radius: 3px; background: var(--card); color: var(--ink); cursor: pointer; }
-.drawer-body { padding: 22px 20px 40px; display: grid; gap: 22px; }
-.drawer .dossier { grid-template-columns: 1fr; gap: 24px; }
-.drawer .dos-head h3 { font-size: 30px; }
-.btn[disabled] { opacity: .4; cursor: default; }
-.btn[disabled]:hover { background: transparent; color: var(--ink); }
-
-/* Map takeaways double as highlight filters */
-.takeaways { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; }
-.takeaways button { display: grid; grid-row: span 3; grid-template-rows: subgrid; row-gap: 6px; align-content: start; text-align: left; font: inherit; color: inherit; background: var(--card); border: 1px solid var(--rule); border-top: 3px solid var(--ink); border-radius: 4px; padding: 14px 16px; cursor: pointer; }
-.takeaways button:hover { border-color: var(--ink-2); }
-.takeaways button[aria-pressed="true"] { border-color: var(--accent); border-top-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-.takeaways b { font: 800 30px/1 var(--display); font-variant-numeric: tabular-nums; }
-.takeaways h3 { font-size: 17px; }
-.takeaways p { font-size: 14px; color: var(--ink-2); }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--paper); font-size: 13px; padding: 8px 10px; border-radius: 6px; max-width: 260px; display: none; }
+.take { cursor: pointer; text-align: left; font: inherit; color: inherit; border-top: 3px solid var(--ink); }
+.take:hover { border-color: var(--ink-2); border-top-color: var(--ink); }
+.take[aria-pressed="true"] { border-color: var(--accent); border-top-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.take b { font: 800 var(--fs-num)/1 var(--display); }
 .map-tools { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; justify-content: space-between; }
 
+/* Dossier drawer */
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; z-index: 30; width: min(560px, 100vw); background: var(--paper); border-left: 1px solid var(--rule); box-shadow: -18px 0 40px -24px rgb(0 0 0 / .35); transform: translateX(105%); transition: transform .25s ease; overflow-y: auto; overscroll-behavior: contain; visibility: hidden; }
+.drawer.open { transform: none; visibility: visible; }
+@media (min-width: 1100px) { body.drawer-on .panel-tab, body.drawer-on nav.rail { padding-right: min(560px, 100vw); } }
+.drawer-bar { position: sticky; top: 0; z-index: 1; display: flex; gap: 8px; align-items: center; padding: 12px 20px; padding-top: max(12px, env(safe-area-inset-top, 0px)); background: var(--paper); border-bottom: 1px solid var(--rule); }
+.drawer-bar .grow { flex: 1; }
+.drawer-bar .x { font: 400 22px/1 var(--body); width: 36px; height: 36px; border: 1px solid var(--rule); border-radius: 6px; background: var(--card); color: var(--ink); cursor: pointer; }
+.drawer-body { padding: 24px 20px 48px; display: grid; gap: 22px; }
+.dos-head { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; }
+.dos-head h2 { font-size: 30px; }
+.facts { font-size: var(--fs-small); color: var(--ink-2); }
+.callout { font-size: var(--fs-small); background: var(--card); border-left: 3px solid var(--accent); padding: 10px 12px; border-radius: 0 6px 6px 0; }
+.pillars { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.pillars div { border-top: 3px solid; padding-top: 8px; display: grid; gap: 2px; }
+.pillars b { font: 800 24px/1 var(--display); font-variant-numeric: tabular-nums; }
+.pillars span { font-size: 12px; color: var(--ink-2); }
+.bi { display: grid; gap: 6px; padding: 14px 0; border-bottom: 1px solid var(--rule); font-size: var(--fs-small); }
+.bi .top { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; }
+.bi .top b { font-size: var(--fs-body); }
+.bi .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.bi p { color: var(--ink-2); }
+.status { font: 500 var(--fs-label)/1 var(--body); cursor: help; }
+.status.current { color: var(--p-access); } .status.unknown { color: var(--ink-2); }
+.hot { color: var(--accent); font-weight: 600; }
+.side { display: grid; gap: 16px; font-size: var(--fs-small); }
+.side ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+
+footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-2); border-top: 1px solid var(--rule); }
 @media (prefers-reduced-motion: reduce) { .stack span, .drawer { transition: none; } }
 </style>
 
@@ -285,138 +224,145 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   <div class="tasks" role="tablist" aria-label="Tasks">
     <span class="logo">Warm Doors UK</span>
     <button type="button" class="task on" role="tab" aria-selected="true">1.1 Investor shortlist</button>
-    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming next">1.2 Two-fund experiment <span class="soon">next</span></button>
-    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">1.3 Scaling the motion <span class="soon">later</span></button>
-    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">2 Creative play <span class="soon">later</span></button>
+    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming next">1.2 Two-fund experiment</button>
+    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">1.3 Scaling the motion</button>
+    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">2 Creative play</button>
     <button type="button" class="theme" id="theme" aria-label="Switch between day and night mode"></button>
   </div>
   <div class="subtabs" role="tablist" aria-label="Investor shortlist sections" id="subtabs">
-    <button type="button" role="tab" data-tab="overview">Overview</button>
-    <button type="button" role="tab" data-tab="signals">Signals</button>
+    <button type="button" role="tab" data-tab="summary">Summary</button>
+    <button type="button" role="tab" data-tab="method">Method</button>
     <button type="button" role="tab" data-tab="ranking">Ranking</button>
     <button type="button" role="tab" data-tab="map">Map</button>
-    <button type="button" role="tab" data-tab="limits">Limits</button>
+    <button type="button" role="tab" data-tab="notes">Data notes</button>
   </div>
 </div></nav>
 
-<section id="overview" class="panel-tab" role="tabpanel"><div class="hero"><div class="wrap" style="display:grid;gap:26px">
-  <p class="eyebrow">Procuros · UK go-to-market · Task 1.1 · data as of <span id="asof"></span></p>
-  <h1>Twenty <em>warm doors</em> into UK grocery.</h1>
-  <p class="lede">I ranked the UK <strong>VC and PE funds</strong> that can introduce Procuros to the grocery brands that need EDI most. Every number on this site traces back to a scraped page, and every step from raw portfolios to the shortlist is explained below.</p>
-  <div class="ticket" id="ticket"></div>
-</div></div>
-
-<div class="wrap">
-  <h2>Why go through investors</h2>
-  <div class="three">
-    <div><span class="k">Trust</span><h3>An intro beats a cold sequence</h3><p class="muted">A portfolio partner recommending a vendor carries the weight of a board seat. Founders take that meeting.</p></div>
-    <div><span class="k">Density</span><h3>One relationship, many brands</h3><p class="muted">A single fund can hold 5 to 16 UK grocery brands. Win the partner once and the intros compound.</p></div>
-    <div><span class="k">Timing</span><h3>Money changes the ops stack</h3><p class="muted">New rounds and buyouts come with 100-day plans: new retailers, new ERP, new pressure on order processing. That is Procuros' window.</p></div>
+<section id="summary" class="panel-tab" role="tabpanel"><div class="wrap page">
+  <div class="block">
+    <p class="label">Procuros · UK go-to-market · Task 1.1 · data as of <span id="asof"></span></p>
+    <h1>Twenty <em>warm doors</em> into UK grocery.</h1>
+    <p class="lede">Which UK VC and PE funds can introduce Procuros to the grocery brands that need EDI most? I read <span data-n="vcpe"></span> fund portfolios, found the UK grocery brands inside them, checked each brand for buying signals and ranked the funds on one formula. Every number traces back to a source page.</p>
+    <div class="grid" style="--min:170px" id="stats"></div>
   </div>
 
-  <div class="prose" style="margin-top:28px">
-    <p class="eyebrow">How the data was built</p>
-    <h2>From <span id="n-seeded"></span> funds to a shortlist of 20</h2>
-    <p class="muted">Each bar is drawn to scale within its group, and the right-hand column shows how much of the step before survives. Only VC and PE funds are ranked: corporate venture arms, a public development bank and crowdfunding listings were removed.</p>
+  <div class="block">
+    <div class="head"><h2>The funds to call first</h2>
+      <p class="lede">Tier A and B, in ranked order. Each card shows the brands that make the fund worth calling. Select one for the full dossier.</p></div>
+    <div class="grid" style="--min:250px" id="top-cards"></div>
   </div>
-  <div class="funnel" id="funnel"></div>
-  <div class="three four">
-    <div><span class="k">1 · Scrape</span><h3>Read every portfolio</h3><p class="muted">Fund sites, sitemaps and profile pages. Plain HTTP first, a headless browser only for JavaScript-heavy sites.</p><p class="muted mono" style="font-size:12px">3,710 companies</p></div>
-    <div><span class="k">2 · Classify</span><h3>Keep UK grocery brands</h3><p class="muted">Keyword rules over names and descriptions, then a manual pass to keep UK packaged food, drink, snack, frozen and pet brands.</p><p class="muted mono" style="font-size:12px">390 → 109 brands</p></div>
-    <div><span class="k">3 · Enrich</span><h3>Look for buying signals</h3><p class="muted">Retailer product pages, careers pages and job boards, Companies House filings and 24 months of trade news.</p><p class="muted mono" style="font-size:12px">5 sources per brand</p></div>
-    <div><span class="k">4 · Score</span><h3>Rank the funds</h3><p class="muted">Sixteen signals roll up into four pillars and one score out of 100. The Signals tab shows every step of the maths.</p><p class="muted mono" style="font-size:12px">16 signals → 1 score</p></div>
+
+  <div class="block">
+    <div class="head"><h2>Why go through investors</h2></div>
+    <div class="grid" style="--min:250px">
+      <div class="card sub"><p class="label">Trust</p><h3>An intro beats a cold sequence</h3><p>A portfolio partner recommending a vendor carries the weight of a board seat. Founders take that meeting.</p></div>
+      <div class="card sub"><p class="label">Density</p><h3>One relationship, many brands</h3><p>A single fund can hold up to 16 target brands. Win the partner once and the intros compound.</p></div>
+      <div class="card sub"><p class="label">Timing</p><h3>Money changes the ops stack</h3><p>New rounds and buyouts come with new retailers, new systems and more orders. That is when EDI becomes urgent.</p></div>
+    </div>
   </div>
-  <div class="next"><button type="button" class="btn" data-go="signals">Next: Signals →</button></div>
+  <div class="next"><button type="button" class="btn" data-go="method">Next: how the ranking is built →</button></div>
 </div></section>
 
-<section id="signals" class="panel-tab" role="tabpanel" hidden><div class="wrap">
-  <div class="prose">
-    <p class="eyebrow">Scoring logic</p>
-    <h2>Four pillars, sixteen signals</h2>
-    <p class="muted">I score every fund on the same formula, so the ranking can be checked and argued with. This tab walks through it in four steps, shows what happens when a brand has more than one signal, and lets you change every weight.</p>
+<section id="method" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <div class="head"><p class="label">Method</p><h2>From <span data-n="seeded"></span> funds to a shortlist of 20</h2>
+      <p class="lede">Each bar is drawn to scale within its group. A <b>target brand</b> is one the fund still holds, that isn't already a Procuros customer, and that sits under £100m revenue.</p></div>
+    <div class="funnel" id="funnel"></div>
   </div>
 
-  <div class="three four flow">
-    <div><span class="k">Step 1 · Scale</span><h3>Each signal becomes 0 to 1</h3><p class="formula">best fund = 1 · worst = 0</p><p class="muted">Counts such as brands held are log-scaled first, so one 16-brand portfolio doesn't flatten everyone else.</p></div>
-    <div><span class="k">Step 2 · Pillars</span><h3>Signals add up into four pillars</h3><p class="formula">pillar = Σ weight × signal</p><p class="muted">Each pillar is a weighted sum of its signals; the weights inside a pillar add up to 100%.</p></div>
-    <div><span class="k">Step 3 · Score</span><h3>Pillars add up into one score</h3><p class="formula" id="formula-score"></p><p class="muted">Access and strategic value are scaled down for funds with fewer than three live brands: reach is worth little without brands to reach.</p></div>
-    <div><span class="k">Step 4 · Tier</span><h3>The score sets the tier</h3><p class="formula">A ≥ 38 and 3+ brands · B ≥ 30</p><p class="muted">The Ranking tab shows each fund on the tier scale and why it landed where it did.</p></div>
+  <div class="block">
+    <div class="head"><h2>Four steps from signal to tier</h2>
+      <p class="lede">Every fund is scored on the same formula, so the ranking can be checked and argued with.</p></div>
+    <div class="grid" style="--min:230px">
+      <div class="card sub" style="--rows:4"><p class="label">1 · Scale</p><h3>Each signal becomes 0 to 1</h3><p class="formula">best fund = 1, worst = 0</p><p>Counts are log-scaled first, so one 16-brand portfolio doesn't flatten everyone else.</p></div>
+      <div class="card sub" style="--rows:4"><p class="label">2 · Pillars</p><h3>Signals add up into four pillars</h3><p class="formula">pillar = Σ weight × signal</p><p>Fit, pain, access and strategic value. The weights inside each pillar add up to 100%.</p></div>
+      <div class="card sub" style="--rows:4"><p class="label">3 · Score</p><h3>Pillars add up into one score</h3><p class="formula" id="formula-score"></p><p>Access and strategic value scale down for funds with fewer than 3 target brands: reach is worth little without brands to reach.</p></div>
+      <div class="card sub" style="--rows:4"><p class="label">4 · Tier</p><h3>The score sets the tier</h3><p class="formula">A: 38+ and 3+ brands · B: 30+</p><p>Both lines sit in natural gaps between scores. The Ranking tab shows every fund on that scale.</p></div>
+    </div>
   </div>
 
-  <div class="prose" style="margin-top:12px">
-    <h2>When a brand shows more than one signal</h2>
-    <p class="muted">Brand pain is where most of the signals live. Two rules decide how several signals combine: older news counts for less, and signals that land close together count for more, because that overlap is the moment a brand is most likely to buy.</p>
-  </div>
-  <div class="explain">
-    <div class="card"><p class="eyebrow">Rule 1 · Recency</p><h3>News loses half its weight every 9 months</h3><div id="decay"></div><p class="muted" style="font-size:14px">A story from this month counts in full. One from 18 months ago counts a quarter. Anything older than 24 months isn't counted. Open job ads are live today, so they don't decay.</p></div>
-    <div class="card"><p class="eyebrow">Rule 2 · Stacking</p><h3>Signals in the same 12 months multiply</h3><div id="stackchart"></div><p class="muted" style="font-size:14px">I count four kinds of trigger: a new listing, a funding round, ops hiring and export news. Each extra trigger inside 12 months adds 25% to the brand's pain, up to 1.5×, so one very busy brand can't dominate its fund.</p></div>
-  </div>
-  <div class="card wx" id="worked"></div>
-
-  <div class="prose" style="margin-top:12px">
-    <h2>Change the weights</h2>
-    <p class="muted">Every signal has its own slider, and so does every pillar. Weights inside a pillar are rescaled to add up to 100%, and so are the pillar weights. The worked example above and the ranking update as you move them.</p>
-  </div>
-  <div class="sig-grid">
+  <div class="block">
+    <div class="head"><h2>The 16 signals</h2>
+      <p class="lede">What each pillar measures, where the data comes from, and how much it weighs. The weights can be changed on the Ranking tab.</p></div>
     <div class="table-scroll"><table>
-      <thead><tr><th>Pillar</th><th>Signal</th><th>Source</th><th style="min-width:150px">Weight in pillar</th></tr></thead>
+      <thead><tr><th>Pillar</th><th>Signal</th><th>Source</th><th class="r">Weight</th></tr></thead>
       <tbody id="sig-body"></tbody>
     </table></div>
-    <form class="panel" id="weights" onsubmit="return false">
-      <h3>Pillar weights</h3>
-      <div id="sliders" style="display:grid;gap:14px"></div>
-      <p class="muted" style="font-size:13px">Pillar weights are rescaled to add up to 100%.</p>
-      <button type="button" class="btn" id="reset">Reset every weight</button>
-    </form>
   </div>
-  <div class="next"><button type="button" class="btn" data-go="ranking">Next: Ranking →</button></div>
-</div></section>
 
-<section id="ranking" class="panel-tab" role="tabpanel" hidden><div class="wrap">
-  <div class="rank-head">
-    <div class="prose"><p class="eyebrow">Result</p><h2>The ranking</h2>
-      <p class="muted">Funds holding at least one live UK grocery brand. Bar segments show what each pillar adds to the score. Select a fund to see its dossier alongside the ranking.</p></div>
-    <div class="legend" id="legend"></div>
-  </div>
-  <div class="tierbox">
-    <h3>How tiers work</h3>
-    <div class="tier-rules">
-      <div><span class="tier A">A</span><span>Score of <b>38 or more</b> <i>and</i> at least <b>3 live brands</b>. Call these first: one partner opens several doors.</span></div>
-      <div><span class="tier B">B</span><span>Score of <b>30 or more</b>, or a high score with fewer than 3 live brands. Worth an intro, but it won't compound.</span></div>
-      <div><span class="tier C">C</span><span>Score <b>below 30</b>. A reserve bench: few brands, thin signals, or both.</span></div>
+  <div class="block">
+    <div class="head"><h2>When a brand shows more than one signal</h2>
+      <p class="lede">Most signals describe brand pain. Two rules decide how several of them combine: older news counts for less, and signals that land close together count for more, because that overlap is when a brand is most likely to buy.</p></div>
+    <div class="grid" style="--min:300px">
+      <div class="card"><p class="label">Rule 1 · Recency</p><h3>News loses half its weight every 9 months</h3><div id="decay"></div><p>A story from this month counts in full, one from 18 months ago counts a quarter, and anything older than 24 months isn't counted. Open job ads are live, so they don't decay.</p></div>
+      <div class="card"><p class="label">Rule 2 · Stacking</p><h3>Triggers in the same 12 months multiply</h3><div id="stackchart"></div><p>Four kinds of trigger count: a new listing, a funding round, ops hiring and export news. Each extra one adds 25% to the brand's pain, capped at 1.5×.</p></div>
     </div>
-    <div class="strip" id="strip" role="img" aria-label="Shortlisted funds placed on the score scale with tier zones"></div>
-    <p class="muted" style="font-size:14px" id="tier-note"></p>
+    <div class="card" id="worked"></div>
   </div>
-  <div>
-    <div class="axis" aria-hidden="true"><span></span><span></span><span class="sp"></span><div class="ticks" id="ticks"></div><span></span><span></span></div>
-    <div class="board" id="board"></div>
-  </div>
-  <div class="next"><button type="button" class="btn" data-go="map">Next: Map →</button></div>
+  <div class="next"><button type="button" class="btn" data-go="ranking">Next: the ranking →</button></div>
 </div></section>
 
-<section id="map" class="panel-tab" role="tabpanel" hidden><div class="wrap">
-  <div class="prose">
-    <p class="eyebrow">The network</p>
-    <h2>Who sits behind which brand</h2>
-    <p class="muted">Each dark circle is a shortlisted fund, sized by score. Each dot is a UK grocery brand it backs, coloured by how many major grocers stock it. Six things stand out; select one to highlight it on the map, and select it again to clear.</p>
+<section id="ranking" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <div class="head"><p class="label">Result</p><h2>All 20 funds, ranked</h2>
+      <p class="lede">100 would mean the best fund on all 16 signals. No fund is, so the top score is in the 50s: read the scores as a ranking, not a grade.</p></div>
+    <div class="grid" style="--min:250px">
+      <div class="card" style="grid-template-columns:auto 1fr;align-items:start"><span class="tier A">A</span><p><b>Score 38+ and at least 3 target brands.</b> Call first: one relationship opens several doors.</p></div>
+      <div class="card" style="grid-template-columns:auto 1fr;align-items:start"><span class="tier B">B</span><p><b>Score 30+, or a high score with fewer than 3 brands.</b> Worth an intro, but it won't compound.</p></div>
+      <div class="card" style="grid-template-columns:auto 1fr;align-items:start"><span class="tier C">C</span><p><b>Score below 30.</b> Reserve bench: few brands, thin signals, or both.</p></div>
+    </div>
+    <div class="strip" id="strip" role="img" aria-label="Shortlisted funds on the score scale with the tier zones"></div>
+    <p class="small muted" id="tier-note"></p>
   </div>
-  <div class="takeaways" id="takeaways"></div>
-  <div class="map-box">
-    <svg id="map-svg" role="img" aria-label="Network of funds and the UK grocery brands they back"></svg>
-    <div class="tip" id="tip"></div>
-    <p class="map-note">Drag to rearrange. Select a fund to see its dossier alongside.</p>
+
+  <div class="block">
+    <div class="bar-head"><div class="legend" id="legend"></div><button type="button" class="btn" id="tune-btn" aria-expanded="false">Adjust weights</button></div>
+    <div class="card tune" id="tune" hidden>
+      <div class="sliders" id="sliders"></div>
+      <details><summary>Weights of the signals inside each pillar</summary>
+        <div class="table-scroll" style="margin-top:10px"><table><tbody id="sig-sliders"></tbody></table></div></details>
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><button type="button" class="btn" id="reset">Reset every weight</button>
+        <p class="small muted">Weights rescale to add up to 100%. Arrows show how far each fund moved.</p></div>
+    </div>
+    <div>
+      <div class="axis" aria-hidden="true"><span></span><span></span><span class="sp"></span><div class="ticks" id="ticks"></div><span></span><span></span></div>
+      <div class="board" id="board"></div>
+    </div>
   </div>
-  <div class="map-tools"><div class="legend" id="map-legend"></div><button type="button" class="btn" id="map-reset" hidden>Show everything</button></div>
-  <div class="next"><button type="button" class="btn" data-go="limits">Next: Limits →</button></div>
+  <div class="next"><button type="button" class="btn" data-go="map">Next: the map →</button></div>
 </div></section>
 
-<section id="limits" class="panel-tab" role="tabpanel" hidden><div class="wrap">
-  <div class="prose"><p class="eyebrow">Read with care</p><h2>What the data can and can't tell you</h2></div>
-  <div class="limits">
-    <div><h3>Coverage</h3><div class="coverage" id="coverage"></div></div>
-    <div><h3>Known gaps</h3><p class="muted">Most small UK companies file abbreviated accounts without turnover, so size comes from the accounts type filed at Companies House (micro, small, medium, full or group), with retail reach as the fallback. A missing retailer means no product page, Open Food Facts entry or stockist list confirmed one; manufacturers and own-label makers rightly have none. Job boards add little: most of these brands hire through LinkedIn or recruiters. Scores run low because these signals are sparse: read them as a ranking, not a grade.</p></div>
-    <div><h3>Sites that couldn't be read</h3><ul class="muted" id="failed" style="margin:0;padding-left:18px;display:grid;gap:4px;font-size:14px"></ul></div>
+<section id="map" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <div class="head"><p class="label">The network</p><h2>Who sits behind which brand</h2>
+      <p class="lede">Dark circles are the 20 funds, sized by score. Small dots are their target brands, coloured by how many major grocers stock them. Select a finding to highlight it; select it again to clear.</p></div>
+    <div class="grid" style="--min:300px" id="takeaways"></div>
+    <div class="map-box">
+      <svg id="map-svg" role="img" aria-label="Network of shortlisted funds and the target brands they hold"></svg>
+      <div class="tip" id="tip"></div>
+      <p class="map-note">Drag to rearrange. Select a fund for its dossier.</p>
+    </div>
+    <div class="map-tools"><div class="legend" id="map-legend"></div><button type="button" class="btn" id="map-reset" hidden>Show everything</button></div>
+  </div>
+  <div class="next"><button type="button" class="btn" data-go="notes">Next: data notes →</button></div>
+</div></section>
+
+<section id="notes" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <div class="head"><p class="label">Data notes</p><h2>What counts, and how far to trust it</h2></div>
+    <div class="grid" style="--min:300px">
+      <div class="card"><h3>What counts as a door</h3><p>A brand counts only if the fund still holds it, it isn't already a Procuros customer, and it sits under £100m revenue.</p><div id="set-aside" style="display:grid;gap:8px"></div></div>
+      <div class="card"><h3>Coverage of the <span data-n="targets"></span> target brands</h3><div id="coverage" style="display:grid;gap:10px"></div></div>
+      <div class="card"><h3>Judgement calls</h3><p>These are my calls rather than scraped data, and they're labelled wherever they appear:</p>
+        <ul class="small muted" style="margin:0;padding-left:18px;display:grid;gap:4px">
+          <li>Fund size and stage, one of the four access signals.</li>
+          <li>Which brands are over £100m revenue.</li>
+          <li>The 9-month half-life for news and the 1.5× stacking cap.</li>
+          <li>The tier lines, placed in natural gaps between scores.</li>
+        </ul></div>
+      <div class="card"><h3>Known gaps</h3><p>Most small UK companies don't publish turnover, so size comes from the accounts type filed at Companies House, with retail reach as the fallback. A missing retailer means none was confirmed, not that the brand isn't stocked. Job boards add little: these brands mostly hire through LinkedIn and recruiters.</p></div>
+      <div class="card"><h3>Sites that couldn't be read</h3><ul class="small muted" id="failed" style="margin:0;padding-left:18px;display:grid;gap:4px"></ul></div>
+    </div>
   </div>
 </div></section>
 
@@ -430,10 +376,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
   <div class="drawer-body" id="drawer-body"></div>
 </aside>
 
-<footer><div class="wrap">
-  <p>Built for the Procuros GTM Engineering case study. Data scraped on <span id="asof2"></span>; every record keeps its source URL in the <a href="https://github.com/linimeanie/procuros-engine">procuros-engine repository</a>.</p>
-  <p>Retailer chips are styled after UK shelf-edge labels.</p>
-</div></footer>
+<footer><div class="wrap">Built for the Procuros GTM Engineering case study. Data scraped on <span id="asof2"></span>; every record keeps its source URL in the <a href="https://github.com/linimeanie/procuros-engine">procuros-engine repository</a>.</div></footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script>
@@ -454,94 +397,40 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
 })();
 (async function () {
   const D = await fetch("data.json").then(r => r.json());
-  const TABS = ["overview", "signals", "ranking", "map", "limits"];
+  const C = D.config;
+  const TABS = ["summary", "method", "ranking", "map", "notes"];
   const PILLARS = [
     { key: "fit", label: "Portfolio fit", color: "var(--p-fit)" },
     { key: "pain", label: "Brand pain", color: "var(--p-pain)" },
     { key: "access", label: "Accessibility", color: "var(--p-access)" },
     { key: "strategic", label: "Strategic value", color: "var(--p-strat)" },
   ];
-  const DEFAULT_W = { ...D.config.pillars };
-  let W = { ...DEFAULT_W };
   const fmtInt = d3.format(",");
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
+  const pretty = n => n.replace("dash-water", "DASH Water");
+  const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+  const list = a => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a[a.length - 1] : a.join("");
+  const short = n => n.replace(/ (Investments|Capital Partners|Capital|Partners|Ventures|Private Equity)$/, "");
   document.getElementById("asof").textContent = D.as_of;
   document.getElementById("asof2").textContent = D.as_of;
 
   const universe = D.funds.filter(f => f.live > 0);
   const brandsByName = Object.fromEntries(D.brands.map(b => [b.name, b]));
-
-  // Ticket
   const FN = Object.fromEntries(D.funnel.map(x => [x.label, x.value]));
-  document.getElementById("ticket").innerHTML = [
-    [FN["VC and PE funds only"], "VC and PE funds"], [fmtInt(FN["Portfolio companies"]), "portfolio companies"], [FN["UK grocery brands kept"], "UK grocery brands"], [20, "warm doors"],
-  ].map(([v, l]) => `<span class="sel"><b class="num">${v}</b>${l}</span>`).join("");
-  document.getElementById("n-seeded").textContent = FN["Funds seeded"];
+  const N = { seeded: FN["Funds seeded"], vcpe: FN["VC and PE funds only"], targets: FN["Target brands"] };
+  document.querySelectorAll("[data-n]").forEach(el => el.textContent = N[el.dataset.n]);
 
-  // Pipeline: two groups, each drawn to its own scale, on one shared column grid
-  const STAGES = [
-    ["Funds", [["Funds seeded", "Funds seeded"], ["VC and PE funds only", "VC and PE funds only"], ["Portfolios read", "Portfolios read"],
-      ["Funds holding a live brand", "Hold a live UK grocery brand"], ["Shortlist", "Shortlist"]]],
-    ["Companies", [["Portfolio companies", "Portfolio companies found"], ["Food & drink candidates", "Food and drink candidates"], ["UK grocery brands kept", "UK grocery brands kept"]]],
-  ];
-  document.getElementById("funnel").innerHTML = `<div class="f-row f-head" aria-hidden="true"><span>Stage</span><span>To scale</span><span>Count</span><span>Kept from step before</span></div>` +
-    STAGES.map(([h, rows]) => `<h3>${h}</h3>` + rows.map(([k, l], i) => `<div class="f-row ${i === rows.length - 1 ? "last" : ""}">
-      <span>${l}</span><div class="bar-track"><div class="bar-fill" style="width:${(100 * FN[k] / FN[rows[0][0]]).toFixed(1)}%"></div></div>
-      <b>${fmtInt(FN[k])}</b><span class="drop">${i ? Math.round(100 * FN[k] / FN[rows[i - 1][0]]) + "% kept" : "starting point"}</span></div>`).join("")).join("");
-
-  // Signal table
-  const SIG = {
-    fit: [["icp_count", "UK grocery brands held (quality-weighted)", "Portfolio pages + brand checks"], ["fmcg_share", "Share of portfolio that is grocery", "Portfolio pages"], ["avg_brand_fit", "Average brand fit (retail reach, size, category)", "Stockist pages, trade press"], ["recent_deals", "Grocery deals in the last 24 months", "Trade press"]],
-    pain: [["listings", "New retailer listings", "The Grocer, Grocery Gazette, brand news"], ["funding", "Funding round or acquisition", "Trade press"], ["ops_hiring", "Ops, supply-chain or order-processing roles open", "Careers pages"], ["momentum", "News volume (growth proxy)", "News search"], ["expansion", "Export or new-market news", "Trade press"]],
-    access: [["platform_team", "Named portfolio-ops or value-creation people", "Fund team pages"], ["community", "Founder community and events", "Fund sites"], ["size_stage", "Fund size and stage (smaller is easier to reach)", "Desk research"], ["vendor_openness", "Partner or perks programme", "Fund sites"]],
-    strategic: [["procuros_overlap", "Already backs a Procuros customer", "Portfolio vs. customer list"], ["brand_halo", "Category leaders other brands copy", "Retail reach"], ["ecosystem", "Accelerators and programmes", "Fund sites"]],
-  };
-  const C = D.config;
+  // ---------- Scoring, mirroring scripts/scoring/score.py (brand pain is rebuilt here so the pain sliders reach it)
+  const DEFAULT_W = { ...C.pillars };
+  let W = { ...DEFAULT_W };
   const SW0 = Object.fromEntries(PILLARS.map(p => [p.key, { ...C[p.key] }]));
   let SW = JSON.parse(JSON.stringify(SW0));
-  document.getElementById("sig-body").innerHTML = PILLARS.map(p => SIG[p.key].map((s, i) => `<tr>
-    <td>${i === 0 ? `<span class="pill-dot" style="background:${p.color}"></span><b>${p.label}</b>` : ""}</td>
-    <td>${s[1]}</td><td class="muted">${s[2]}</td>
-    <td><div class="sig-w"><input type="range" min="0" max="100" step="5" data-p="${p.key}" data-k="${s[0]}" value="${Math.round(100 * SW0[p.key][s[0]])}" aria-label="Weight of ${esc(s[1])} within ${p.label}"><output id="sw-${p.key}-${s[0]}"></output></div></td></tr>`).join("")).join("");
-  const sigInputs = [...document.querySelectorAll("#sig-body input")];
-  const readSW = () => {
-    PILLARS.forEach(p => {
-      const ins = sigInputs.filter(x => x.dataset.p === p.key);
-      const sum = ins.reduce((a, x) => a + +x.value, 0);
-      ins.forEach(x => {
-        SW[p.key][x.dataset.k] = sum ? +x.value / sum : 1 / ins.length;
-        document.getElementById(`sw-${p.key}-${x.dataset.k}`).textContent = Math.round(100 * SW[p.key][x.dataset.k]) + "%";
-      });
-    });
-  };
-  document.getElementById("sig-body").addEventListener("input", () => { readSW(); render(); renderWorked(); });
-
-  // Sliders
-  const sl = document.getElementById("sliders");
-  PILLARS.forEach(p => sl.insertAdjacentHTML("beforeend", `<div class="slider">
-    <label for="w-${p.key}"><span><span class="pill-dot" style="background:${p.color}"></span>${p.label}</span><output id="o-${p.key}"></output></label>
-    <input type="range" id="w-${p.key}" min="0" max="100" step="5" value="${Math.round(100 * W[p.key])}"></div>`));
-  const readW = () => {
-    const raw = Object.fromEntries(PILLARS.map(p => [p.key, +document.getElementById("w-" + p.key).value]));
-    const sum = Object.values(raw).reduce((a, b) => a + b, 0) || 1;
-    W = Object.fromEntries(Object.entries(raw).map(([k, v]) => [k, v / sum]));
-    PILLARS.forEach(p => document.getElementById("o-" + p.key).textContent = Math.round(100 * W[p.key]) + "%");
-    document.getElementById("formula-score").textContent = "score = 100 × (" + PILLARS.map(p => Math.round(100 * W[p.key]) + "% " + p.key).join(" + ") + ")";
-  };
-  sl.addEventListener("input", () => { readW(); render(); });
-  document.getElementById("reset").addEventListener("click", () => {
-    PILLARS.forEach(p => document.getElementById("w-" + p.key).value = Math.round(100 * DEFAULT_W[p.key]));
-    sigInputs.forEach(x => x.value = Math.round(100 * SW0[x.dataset.p][x.dataset.k]));
-    readW(); readSW(); render(); renderWorked();
-  });
-
-  // Scoring, mirroring scripts/scoring/score.py. Brand pain is rebuilt here so the pain sliders reach it.
   const mult = k => Math.min(1 + C.stack.bonus_per_extra_signal * Math.max(k - 1, 0), C.stack.max_multiplier);
   function brandPain(B) {
     const base = Object.entries(SW.pain).reduce((a, [k, w]) => a + w * ((B.pain_parts || {})[k] ?? 0), 0);
     const m = mult((B.stack || []).length);
-    return { base, m, pain: Math.round(1000 * Math.min(base * m, 1)) / 1000 };  // rounded like score.py, so default scores match exactly
+    return { base, m, pain: Math.round(1000 * Math.min(base * m, 1)) / 1000 };  // rounded like score.py
   }
   function painTop(fd) {
     const xs = fd.brands.map(b => { const B = brandsByName[b.brand]; return (B ? brandPain(B).pain : b.pain) * C.status_weight[b.status]; })
@@ -549,9 +438,8 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     return xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0;
   }
   function pillarsOf(fd) {
-    const n = fd.n;
-    const sum = (wts) => Object.entries(wts).reduce((a, [k, w]) => a + w * (n[k] ?? 0), 0);
-    const gate = Math.min(fd.live / C.gate_brands, 1);  // exact, not the rounded fd.gate
+    const sum = wts => Object.entries(wts).reduce((a, [k, w]) => a + w * (fd.n[k] ?? 0), 0);
+    const gate = Math.min(fd.live / C.gate_brands, 1);
     return { fit: sum(SW.fit), pain: painTop(fd), access: sum(SW.access) * gate, strategic: sum(SW.strategic) * gate };
   }
   function scoreAll(weights) {
@@ -564,42 +452,91 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
       return { fd, p, parts, score, tier };
     }).sort((a, b) => b.score - a.score);
   }
-  const baseRank = Object.fromEntries(scoreAll(DEFAULT_W).map((r, i) => [r.fd.name, i + 1]));
+  const BASE = scoreAll(DEFAULT_W);
+  const baseRank = Object.fromEntries(BASE.map((r, i) => [r.fd.name, i + 1]));
 
-  document.getElementById("legend").innerHTML = PILLARS.map(p => `<span><span class="pill-dot" style="background:${p.color}"></span>${p.label}</span>`).join("");
-  const AX = 60;
-  document.getElementById("ticks").innerHTML = [0, 20, 40, 60].map(v => `<span style="left:${100 * v / AX}%">${v}</span>`).join("");
+  // ---------- Shared bits of copy
+  const topBrands = (fd, n = 3) => [...fd.brands].sort((a, b) => b.retailers.length - a.retailers.length || b.pain - a.pain).slice(0, n);
+  const STACK_LABEL = { listings: "new listing", funding: "funding", ops_hiring: "ops hiring", expansion: "export" };
+  function tierWhy(r) {
+    const t = C.tiers, s = r.score.toFixed(1), br = plural(r.fd.live, "target brand");
+    if (r.tier === "A") return `Tier A: a score of ${s} clears the A line of ${t.A.min_score}, and ${br} meet the minimum of ${t.A.min_brands}.`;
+    if (r.score >= t.A.min_score) return `Tier B, not A: the score of ${s} clears the A line of ${t.A.min_score}, but it holds ${br} and Tier A needs ${t.A.min_brands}. One relationship should open several doors.`;
+    if (r.tier === "B") return `Tier B: a score of ${s} sits between the B line of ${t.B.min_score} and the A line of ${t.A.min_score}.`;
+    return `Tier C: a score of ${s} is below the B line of ${t.B.min_score}.`;
+  }
 
-  // Rule 1 chart: the recency curve
+  // ---------- Summary
+  const nAB = BASE.slice(0, 20).filter(r => r.tier !== "C").length;
+  document.getElementById("stats").innerHTML = [
+    [N.vcpe, "VC and PE funds read"], [fmtInt(FN["Portfolio companies"]), "portfolio companies checked"],
+    [N.targets, "target grocery brands found"], [nAB, "funds to call first"],
+  ].map(([v, l]) => `<div class="card stat"><b>${v}</b><span>${l}</span></div>`).join("");
+  document.getElementById("top-cards").innerHTML = BASE.slice(0, nAB).map((r, i) => {
+    const fd = r.fd, bs = topBrands(fd).map(b => pretty(b.brand));
+    const extra = fd.overlap.length ? `Already backs Procuros customer${fd.overlap.length > 1 ? "s" : ""} ${list(fd.overlap)}.`
+      : fd.people.length ? `Intro route: ${fd.people[0].name}, ${fd.people[0].title}.` : fd.about;
+    return `<button type="button" class="card sub fund" style="--rows:4" data-n="${esc(fd.name)}">
+      <div class="top"><span class="rank">#${i + 1}</span><span class="tier ${r.tier}">${r.tier}</span><span class="score">${r.score.toFixed(1)}</span></div>
+      <h3>${esc(fd.name)}</h3>
+      <p><b>${fd.type} · ${plural(fd.live, "target brand")}</b><br>incl. ${esc(list(bs))}</p>
+      <p>${esc(extra)}</p></button>`;
+  }).join("");
+  document.querySelectorAll("#top-cards .fund").forEach(b => b.addEventListener("click", () => select(b.dataset.n, true)));
+
+  // ---------- Method: funnel
+  const STAGES = [
+    ["Funds", [["Funds seeded", "Funds seeded"], ["VC and PE funds only", "VC and PE funds only"], ["Portfolios read", "Portfolios read"],
+      ["Funds holding a live brand", "Hold a target brand"], ["Shortlist", "Shortlist"]]],
+    ["Brands", [["Portfolio companies", "Portfolio companies"], ["Food & drink candidates", "Food and drink candidates"],
+      ["UK grocery brands kept", "UK grocery brands"], ["Target brands", "Target brands"]]],
+  ];
+  document.getElementById("funnel").innerHTML = `<div class="f-row f-head label" aria-hidden="true"><span>Stage</span><span>To scale</span><span style="text-align:right">Count</span><span>Kept</span></div>` +
+    STAGES.map(([h, rows]) => `<div class="funnel f-group"><h3>${h}</h3>` + rows.map(([k, l], i) => `<div class="f-row ${i === rows.length - 1 ? "last" : ""}">
+      <span>${l}</span><div class="track"><div class="fill" style="width:${(100 * FN[k] / FN[rows[0][0]]).toFixed(1)}%"></div></div>
+      <b>${fmtInt(FN[k])}</b><span class="keep">${i ? Math.round(100 * FN[k] / FN[rows[i - 1][0]]) + "% of step before" : "start"}</span></div>`).join("") + `</div>`).join("");
+
+  // ---------- Method: signal table
+  const SIG = {
+    fit: [["icp_count", "Target brands held, weighted by how well each fits", "Portfolio pages, brand checks"], ["fmcg_share", "Share of the portfolio that is grocery", "Portfolio pages"], ["avg_brand_fit", "Average brand fit: retail reach, size, category", "Retailer pages, Companies House"], ["recent_deals", "Grocery deals in the last 24 months", "Trade press"]],
+    pain: [["listings", "New retailer listings", "The Grocer, Grocery Gazette"], ["funding", "Funding round or acquisition", "Trade press, Companies House"], ["ops_hiring", "Ops or supply-chain roles open", "Careers pages, job boards"], ["momentum", "Volume of recent news", "News search"], ["expansion", "Export or new-market news", "Trade press"]],
+    access: [["platform_team", "Named portfolio-ops or value-creation people", "Fund team pages"], ["community", "Founder community and events", "Fund sites"], ["size_stage", "Fund size and stage (smaller is easier to reach)", "Judgement"], ["vendor_openness", "Partner or perks programme", "Fund sites"]],
+    strategic: [["procuros_overlap", "Already backs a Procuros customer", "Customer list"], ["brand_halo", "Category leaders other brands copy", "Retail reach"], ["ecosystem", "Accelerators and programmes", "Fund sites"]],
+  };
+  const sigRows = (cell) => PILLARS.map(p => SIG[p.key].map((s, i) => `<tr>
+    <td class="p">${i === 0 ? `<span class="dot" style="background:${p.color}"></span>${p.label} · ${Math.round(100 * DEFAULT_W[p.key])}%` : ""}</td>
+    <td>${s[1]}</td>${cell(p, s)}</tr>`).join("")).join("");
+  document.getElementById("sig-body").innerHTML = sigRows((p, s) => `<td class="muted">${s[2]}</td><td class="r">${Math.round(100 * SW0[p.key][s[0]])}%</td>`);
+
+  // ---------- Method: rule charts
   (function decayChart() {
     const hl = C.recency_half_life_months, X = m => 44 + m * 12, Y = w => 20 + (1 - w) * 110;
     const pts = d3.range(0, 24.01, 0.5).map(m => `${X(m).toFixed(1)},${Y(0.5 ** (m / hl)).toFixed(1)}`).join(" ");
-    const marks = [0, 9, 18, 24].map(m => ({ m, w: 0.5 ** (m / hl) }));
     document.getElementById("decay").innerHTML = `<svg viewBox="0 0 360 172" role="img" aria-label="A news story's weight halves every ${hl} months">
       ${[0, 0.5, 1].map(w => `<line x1="44" x2="332" y1="${Y(w)}" y2="${Y(w)}" style="stroke:var(--rule)"/><text x="36" y="${Y(w) + 4}" text-anchor="end">${w * 100}%</text>`).join("")}
       ${[0, 6, 12, 18, 24].map(m => `<text x="${X(m)}" y="150" text-anchor="middle">${m}</text>`).join("")}
       <text x="188" y="168" text-anchor="middle">months since the story</text>
       <polyline points="${pts}" fill="none" style="stroke:var(--p-pain)" stroke-width="2.5"/>
-      ${marks.map(d => `<circle cx="${X(d.m)}" cy="${Y(d.w)}" r="4" style="fill:var(--p-pain)"/><text class="strong" x="${X(d.m) + (d.m === 24 ? -6 : 7)}" y="${Y(d.w) - 8}" text-anchor="${d.m === 24 ? "end" : "start"}">${Math.round(100 * d.w)}%</text>`).join("")}
+      ${[0, 9, 18, 24].map(m => { const w = 0.5 ** (m / hl); return `<circle cx="${X(m)}" cy="${Y(w)}" r="4" style="fill:var(--p-pain)"/><text class="strong" x="${X(m) + (m === 24 ? -6 : 7)}" y="${Y(w) - 8}" text-anchor="${m === 24 ? "end" : "start"}">${Math.round(100 * w)}%</text>`; }).join("")}
     </svg>`;
   })();
-  // Rule 2 chart: the stacking multiplier
   (function stackChart() {
-    const ks = [1, 2, 3, 4], Y = v => 130 - (v / 1.6) * 110, bw = 52;
-    document.getElementById("stackchart").innerHTML = `<svg viewBox="0 0 360 172" role="img" aria-label="Pain multiplier by number of triggers in 12 months, capped at ${C.stack.max_multiplier} times">
-      <line x1="30" x2="340" y1="${Y(C.stack.max_multiplier)}" y2="${Y(C.stack.max_multiplier)}" style="stroke:var(--ink-2)" stroke-dasharray="4 4"/>
-      <text x="30" y="${Y(C.stack.max_multiplier) - 6}">cap</text>
+    const cap = C.stack.max_multiplier, Y = v => 130 - (v / 1.6) * 110, bw = 52;
+    document.getElementById("stackchart").innerHTML = `<svg viewBox="0 0 360 172" role="img" aria-label="Pain multiplier by number of triggers in 12 months, capped at ${cap} times">
+      <line x1="30" x2="340" y1="${Y(cap)}" y2="${Y(cap)}" style="stroke:var(--ink-2)" stroke-dasharray="4 4"/><text x="30" y="${Y(cap) - 6}">cap</text>
       <line x1="30" x2="340" y1="130" y2="130" style="stroke:var(--rule)"/>
-      ${ks.map((k, i) => { const x = 50 + i * 76, v = mult(k); return `<rect x="${x}" y="${Y(v)}" width="${bw}" height="${130 - Y(v)}" rx="2" style="fill:var(--p-pain)" fill-opacity="${0.35 + 0.2 * i}"/>
+      ${[1, 2, 3, 4].map((k, i) => { const x = 50 + i * 76, v = mult(k); return `<rect x="${x}" y="${Y(v)}" width="${bw}" height="${130 - Y(v)}" rx="2" style="fill:var(--p-pain)" fill-opacity="${0.35 + 0.2 * i}"/>
         <text class="strong" x="${x + bw / 2}" y="${Y(v) - 6}" text-anchor="middle">${v.toFixed(2)}×</text>
-        <text x="${x + bw / 2}" y="150" text-anchor="middle">${k === 4 ? "4" : k} trigger${k > 1 ? "s" : ""}</text>`; }).join("")}
+        <text x="${x + bw / 2}" y="150" text-anchor="middle">${plural(k, "trigger")}</text>`; }).join("")}
       <text x="188" y="168" text-anchor="middle">triggers within 12 months</text>
     </svg>`;
   })();
-  // Worked example: one real brand, step by step, with the current weights
-  const PAIN_LABEL = { listings: "New retailer listings", funding: "Funding or acquisition", ops_hiring: "Ops or supply-chain hiring", momentum: "News momentum", expansion: "Export or new markets" };
+
+  // ---------- Method: worked example with the current weights
+  const PAIN_LABEL = { listings: "New retailer listings", funding: "Funding or acquisition", ops_hiring: "Ops or supply-chain hiring", momentum: "Volume of recent news", expansion: "Export or new markets" };
   const PAIN_CAP = { listings: "2 recent stories = full marks", funding: "2 recent stories = full marks", ops_hiring: "3 open roles = full marks", momentum: "6 recent stories = full marks", expansion: "1 recent story = full marks" };
-  const stacked = D.brands.filter(b => (b.stack || []).length > 1).sort((a, b) => b.pain - a.pain);
+  const targetNames = new Set(universe.flatMap(fd => fd.brands.map(b => b.brand)));
+  const stacked = D.brands.filter(b => targetNames.has(b.name) && (b.stack || []).length > 1).sort((a, b) => b.pain - a.pain);
   let wxName = stacked.length ? stacked[0].name : null;
   const ageM = d => Math.max((Date.parse(D.as_of) - Date.parse(d)) / 864e5 / 30.4, 0);
   function renderWorked() {
@@ -609,56 +546,92 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     const backers = universe.filter(fd => fd.brands.some(b => b.brand === B.name));
     const rows = Object.keys(SW.pain).map(k => {
       const v = (B.pain_parts || {})[k] ?? 0, w = SW.pain[k], pts = v * w, on = (B.stack || []).includes(k);
-      return `<tr><td>${PAIN_LABEL[k]}${on ? ` <span class="chip" title="Active within the last 12 months, so it counts towards stacking">trigger</span>` : ""}<br><span class="muted" style="font-size:12px">${PAIN_CAP[k]}</span></td>
-        <td class="w">${v.toFixed(2)}</td><td class="w">× ${Math.round(100 * w)}%</td><td class="w">= ${pts.toFixed(3)}</td>
+      return `<tr><td>${PAIN_LABEL[k]}${on ? ` <span class="chip" title="Active in the last 12 months, so it counts towards stacking">trigger</span>` : ""}<br><span class="muted" style="font-size:12px">${PAIN_CAP[k]}</span></td>
+        <td class="r">${v.toFixed(2)}</td><td class="r">× ${Math.round(100 * w)}%</td><td class="r">= ${pts.toFixed(3)}</td>
         <td><div class="mini"><span style="width:${maxW ? (100 * pts / maxW).toFixed(1) : 0}%"></span></div></td></tr>`;
     }).join("");
-    const trig = (B.triggers || []).map(t => `<li>${esc(t.date.slice(0, 7))} · <a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.headline)}</a> <span class="mono muted">counts ${Math.round(100 * 0.5 ** (ageM(t.date) / C.recency_half_life_months))}%</span></li>`).join("");
-    el.innerHTML = `<div class="wx-pick"><p class="eyebrow">Worked example</p><label>Brand with stacked signals:
-        <select id="wx-sel">${stacked.map(b => `<option${b.name === wxName ? " selected" : ""}>${esc(b.name)}</option>`).join("")}</select></label></div>
-      <h3>${esc(B.name)}${B.blurb ? ` <span class="muted" style="font:400 15px var(--body)">· ${esc(B.blurb)}</span>` : ""}</h3>
-      ${trig ? `<div><p class="muted" style="font-size:14px">Its latest trade stories, and how much each still counts after recency decay:</p><ul style="margin:6px 0 0;padding-left:18px;font-size:14px;display:grid;gap:4px">${trig}</ul></div>` : ""}
+    const trig = (B.triggers || []).map(t => `<li>${esc(t.date.slice(0, 7))} · <a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.headline)}</a> <span class="muted">· counts ${Math.round(100 * 0.5 ** (ageM(t.date) / C.recency_half_life_months))}%</span></li>`).join("");
+    el.innerHTML = `<div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center"><p class="label">Worked example</p>
+        <label class="small">Brand: <select id="wx-sel">${stacked.map(b => `<option${b.name === wxName ? " selected" : ""}>${esc(pretty(b.name))}</option>`).join("")}</select></label></div>
+      <h3>${esc(pretty(B.name))}${B.blurb ? ` <span class="muted" style="font:400 15px var(--body)">· ${esc(B.blurb)}</span>` : ""}</h3>
+      ${trig ? `<div class="small"><p>Its latest trade stories, and how much each still counts after recency decay:</p><ul style="margin:6px 0 0;padding-left:18px;display:grid;gap:4px">${trig}</ul></div>` : ""}
       <div class="table-scroll"><table>
-        <thead><tr><th>Signal</th><th style="text-align:right">Value 0–1</th><th style="text-align:right">Weight</th><th style="text-align:right">Points</th><th></th></tr></thead>
+        <thead><tr><th>Signal</th><th class="r">Value 0–1</th><th class="r">Weight</th><th class="r">Points</th><th></th></tr></thead>
         <tbody>${rows}
-          <tr class="total"><td>Base pain (sum of points)</td><td></td><td></td><td class="w">${bp.base.toFixed(3)}</td><td></td></tr>
-          <tr class="mult"><td>Stacking: ${(B.stack || []).length} triggers within 12 months (${(B.stack || []).map(k => STACK_LABEL[k]).join(" + ")})</td><td></td><td></td><td class="w">× ${bp.m.toFixed(2)}</td><td></td></tr>
-          <tr class="total"><td>Brand pain = base × multiplier, capped at 1</td><td></td><td></td><td class="w">${bp.pain.toFixed(3)}</td><td></td></tr>
+          <tr class="total"><td>Base pain: the sum of the points</td><td></td><td></td><td class="r">${bp.base.toFixed(3)}</td><td></td></tr>
+          <tr class="mult"><td>Stacking: ${plural((B.stack || []).length, "trigger")} within 12 months (${(B.stack || []).map(k => STACK_LABEL[k]).join(" + ")})</td><td></td><td></td><td class="r">× ${bp.m.toFixed(2)}</td><td></td></tr>
+          <tr class="total"><td>Brand pain: base × multiplier, capped at 1</td><td></td><td></td><td class="r">${bp.pain.toFixed(3)}</td><td></td></tr>
         </tbody></table></div>
-      <p class="muted" style="font-size:14px">From brand to fund: a fund's pain pillar is the average of its ${C.pain_top_n} most painful brands, each multiplied by its holding weight (${C.status_weight.current} still held, ${C.status_weight.unknown} not confirmed, ${C.status_weight.exited_recent} sold in the last 24 months, ${C.status_weight.exited_old} sold earlier).
-        ${backers.length ? `${esc(B.name)} sits with ${backers.map(fd => `<b>${esc(fd.name)}</b> (pain pillar ${Math.round(100 * painTop(fd))} / 100)`).join(", ")}.` : ""}</p>`;
-    document.getElementById("wx-sel").addEventListener("change", e => { wxName = e.target.value; renderWorked(); });
+      <p>A fund's pain pillar is the average of its ${C.pain_top_n} most painful target brands, discounted to ${Math.round(100 * C.status_weight.unknown)}% when the fund doesn't confirm it still holds the brand.
+        ${backers.length ? `${esc(pretty(B.name))} is held by ${backers.map(fd => `<b>${esc(fd.name)}</b> (pain pillar ${Math.round(100 * painTop(fd))}/100)`).join(" and ")}.` : ""}</p>`;
+    document.getElementById("wx-sel").addEventListener("change", e => { wxName = stacked[e.target.selectedIndex].name; renderWorked(); });
   }
 
-  // Tiers: why each fund lands where it does
-  function tierWhy(r) {
-    const t = C.tiers, s = r.score.toFixed(1), n = r.fd.live, br = n + " live brand" + (n === 1 ? "" : "s");
-    if (r.tier === "A") return `Tier A: a score of ${s} clears the A line of ${t.A.min_score}, and ${br} meet the minimum of ${t.A.min_brands}.`;
-    if (r.score >= t.A.min_score) return `Tier B, not A: the score of ${s} clears the A line of ${t.A.min_score}, but Tier A also needs ${t.A.min_brands} live brands and this fund holds ${br}. One partner relationship should open several doors.`;
-    if (r.tier === "B") return `Tier B: a score of ${s} sits between the B line of ${t.B.min_score} and the A line of ${t.A.min_score}.`;
-    return `Tier C: a score of ${s} is below the B line of ${t.B.min_score}.`;
+  // ---------- Ranking: weights panel
+  const sl = document.getElementById("sliders");
+  sl.innerHTML = PILLARS.map(p => `<div class="slider">
+    <label for="w-${p.key}"><span><span class="dot" style="background:${p.color}"></span>${p.label}</span><output id="o-${p.key}"></output></label>
+    <input type="range" id="w-${p.key}" min="0" max="100" step="5" value="${Math.round(100 * W[p.key])}"></div>`).join("");
+  document.getElementById("sig-sliders").innerHTML = sigRows((p, s) => `<td style="width:42%"><div class="sig-w"><input type="range" min="0" max="100" step="5" data-p="${p.key}" data-k="${s[0]}" value="${Math.round(100 * SW0[p.key][s[0]])}" aria-label="Weight of ${esc(s[1])}"><output id="sw-${p.key}-${s[0]}"></output></div></td>`);
+  const sigInputs = [...document.querySelectorAll("#sig-sliders input")];
+  function readW() {
+    const raw = Object.fromEntries(PILLARS.map(p => [p.key, +document.getElementById("w-" + p.key).value]));
+    const sum = Object.values(raw).reduce((a, b) => a + b, 0) || 1;
+    W = Object.fromEntries(Object.entries(raw).map(([k, v]) => [k, v / sum]));
+    PILLARS.forEach(p => document.getElementById("o-" + p.key).textContent = Math.round(100 * W[p.key]) + "%");
+    document.getElementById("formula-score").textContent = "score = 100 × (" + PILLARS.map(p => Math.round(100 * W[p.key]) + "% " + p.key).join(" + ") + ")";
   }
+  function readSW() {
+    PILLARS.forEach(p => {
+      const ins = sigInputs.filter(x => x.dataset.p === p.key), sum = ins.reduce((a, x) => a + +x.value, 0);
+      ins.forEach(x => {
+        SW[p.key][x.dataset.k] = sum ? +x.value / sum : 1 / ins.length;
+        document.getElementById(`sw-${p.key}-${x.dataset.k}`).textContent = Math.round(100 * SW[p.key][x.dataset.k]) + "%";
+      });
+    });
+  }
+  sl.addEventListener("input", () => { readW(); render(); });
+  document.getElementById("sig-sliders").addEventListener("input", () => { readSW(); render(); renderWorked(); });
+  document.getElementById("reset").addEventListener("click", () => {
+    PILLARS.forEach(p => document.getElementById("w-" + p.key).value = Math.round(100 * DEFAULT_W[p.key]));
+    sigInputs.forEach(x => x.value = Math.round(100 * SW0[x.dataset.p][x.dataset.k]));
+    readW(); readSW(); render(); renderWorked();
+  });
+  const tuneBtn = document.getElementById("tune-btn");
+  tuneBtn.addEventListener("click", () => {
+    const t = document.getElementById("tune"); t.hidden = !t.hidden;
+    tuneBtn.setAttribute("aria-expanded", String(!t.hidden)); tuneBtn.textContent = t.hidden ? "Adjust weights" : "Hide weights";
+  });
+
+  // ---------- Ranking: tier strip and board
+  document.getElementById("legend").innerHTML = PILLARS.map(p => `<span><span class="dot" style="background:${p.color}"></span>${p.label}</span>`).join("") + `<span>· bar = what each pillar adds</span>`;
+  const AX = 60;
+  document.getElementById("ticks").innerHTML = [0, 20, 40, 60].map(v => `<span style="left:${100 * v / AX}%">${v}</span>`).join("");
+  // Where the tier lines sit relative to the gaps between scores, at the default weights
+  const gaps = BASE.slice(0, 12).map((r, i, a) => i ? { hi: a[i - 1].score, lo: r.score } : null).filter(Boolean);
+  const gapAt = line => gaps.find(g => g.hi >= line && g.lo < line);
   function renderStrip() {
     const t = C.tiers, MAX = 60, pct = v => `calc(16px + (100% - 32px) * ${(Math.min(v, MAX) / MAX).toFixed(4)})`;
     const top20 = current.slice(0, 20), lanes = [];
-    const dots = [...top20].sort((a, b) => a.score - b.score).map(r => {
-      let lane = lanes.findIndex(x => r.score - x > 2.4); if (lane < 0) lane = lanes.length; if (lane > 3) lane = 3;
+    const pins = [...top20].sort((a, b) => a.score - b.score).map(r => {
+      let lane = lanes.findIndex(x => r.score - x > 2.4); if (lane < 0) lane = Math.min(lanes.length, 3);
       lanes[lane] = r.score;
-      return { r, top: 34 + lane * 20 };
+      return { r, y: 36 + lane * 20 };
     });
     const odd = top20.filter(r => r.score >= t.A.min_score && r.fd.live < t.A.min_brands);
     document.getElementById("strip").innerHTML = `
-      <div class="zone" style="left:0;width:${pct(t.B.min_score)}"><span>C · below ${t.B.min_score}</span></div>
-      <div class="zone zb" style="left:${pct(t.B.min_score)};width:calc((100% - 32px) * ${((t.A.min_score - t.B.min_score) / MAX).toFixed(4)})"><span>B · ${t.B.min_score}+</span></div>
-      <div class="zone za" style="left:${pct(t.A.min_score)};right:0"><span>A · ${t.A.min_score}+ and ${t.A.min_brands}+ brands</span></div>
-      ${dots.map(d => `<button type="button" class="dot ${d.r.fd.live < t.A.min_brands ? "thin" : ""} ${selected === d.r.fd.name ? "on" : ""}" style="left:${pct(d.r.score)};top:${d.top}px" data-n="${esc(d.r.fd.name)}" title="${esc(d.r.fd.name)} · ${d.r.score.toFixed(1)} · ${d.r.fd.live} live brand${d.r.fd.live === 1 ? "" : "s"} · Tier ${d.r.tier}" aria-label="${esc(d.r.fd.name)}, Tier ${d.r.tier}"></button>`).join("")}
-      ${dots.filter(d => odd.includes(d.r)).map(d => `<span class="flag" style="left:${pct(d.r.score)};top:112px">↑ ${esc(d.r.fd.name.split(" ")[0])}: ${d.r.fd.live} brands</span>`).join("")}
+      <div class="zone" style="left:0;width:${pct(t.B.min_score)}"><span>C<i class="long"> · below ${t.B.min_score}</i></span></div>
+      <div class="zone zb" style="left:${pct(t.B.min_score)};width:calc((100% - 32px) * ${((t.A.min_score - t.B.min_score) / MAX).toFixed(4)})"><span>B<i class="long"> · ${t.B.min_score}+</i></span></div>
+      <div class="zone za" style="left:${pct(t.A.min_score)};right:0"><span>A<i class="long"> · ${t.A.min_score}+ and ${t.A.min_brands}+ brands</i></span></div>
+      ${pins.map(d => `<button type="button" class="pin ${d.r.fd.live < t.A.min_brands ? "thin" : ""} ${selected === d.r.fd.name ? "on" : ""}" style="left:${pct(d.r.score)};top:${d.y}px" data-n="${esc(d.r.fd.name)}" title="${esc(d.r.fd.name)} · ${d.r.score.toFixed(1)} · ${plural(d.r.fd.live, "target brand")} · Tier ${d.r.tier}" aria-label="${esc(d.r.fd.name)}, Tier ${d.r.tier}"></button>`).join("")}
+      ${pins.filter(d => odd.includes(d.r)).map(d => `<span class="flag" style="left:${pct(d.r.score)};top:124px">↑ ${esc(d.r.fd.name.split(" ")[0])}: ${plural(d.r.fd.live, "brand")}</span>`).join("")}
       <div class="axis-x">${[0, 10, 20, 30, 40, 50, 60].map(v => `<span style="left:${pct(v)}">${v}</span>`).join("")}</div>`;
-    document.querySelectorAll("#strip .dot").forEach(b => b.addEventListener("click", () => select(b.dataset.n, "ranking")));
-    document.getElementById("tier-note").innerHTML = `Each dot is a shortlisted fund placed by its score; filled dots hold ${t.A.min_brands} or more live brands, hollow dots fewer. ` +
-      (odd.length ? odd.map(r => `<b>${esc(r.fd.name)}</b> scores ${r.score.toFixed(1)}, above the A line, but holds ${r.fd.live} live brand${r.fd.live === 1 ? "" : "s"}, so it is Tier B.`).join(" ") + " Its brands are strong; there just aren't enough of them for one relationship to compound." : "");
+    document.querySelectorAll("#strip .pin").forEach(b => b.addEventListener("click", () => select(b.dataset.n, true)));
+    const gA = gapAt(t.A.min_score), gB = gapAt(t.B.min_score);
+    document.getElementById("tier-note").innerHTML = `Each dot is a shortlisted fund placed by its score; filled dots hold ${t.A.min_brands} or more target brands, hollow dots fewer.` +
+      (gA && gB ? ` The A line sits in the gap between ${gA.hi.toFixed(1)} and ${gA.lo.toFixed(1)}, and the B line in the gap between ${gB.hi.toFixed(1)} and ${gB.lo.toFixed(1)}.` : "") +
+      odd.map(r => ` <b>${esc(r.fd.name)}</b> scores ${r.score.toFixed(1)}, above the A line, but holds ${plural(r.fd.live, "target brand")}, so it is Tier B.`).join("");
   }
-
   let selected = null, current = [];
   function render() {
     current = scoreAll(W);
@@ -671,12 +644,12 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
       btn.type = "button";
       btn.className = "row" + (i >= 20 ? " out" : "") + (selected === r.fd.name ? " on" : "");
       btn.innerHTML = `<span class="r">${i + 1}</span>
-        <span class="f">${esc(r.fd.name)}<small>${esc(r.fd.type)} · ${r.fd.live} live brand${r.fd.live === 1 ? "" : "s"}</small></span>
+        <span class="f">${esc(r.fd.name)}<small>${r.fd.type} · ${plural(r.fd.live, "target brand")}</small></span>
         <span class="tier ${r.tier}">${r.tier}</span>
         <span class="stackcell"><span class="stack" title="${PILLARS.map(p => p.label + " " + r.parts[p.key].toFixed(1)).join(" · ")}">${PILLARS.map(p => `<span style="width:${(100 * r.parts[p.key] / AX).toFixed(2)}%;background:${p.color}"></span>`).join("")}</span></span>
         <span class="s">${r.score.toFixed(1)}</span>
-        <span class="d ${delta > 0 ? "up" : delta < 0 ? "down" : ""}">${delta > 0 ? "▲" + delta : delta < 0 ? "▼" + -delta : "–"}</span>`;
-      btn.addEventListener("click", () => select(r.fd.name, "ranking"));
+        <span class="d ${delta > 0 ? "up" : delta < 0 ? "down" : ""}">${delta > 0 ? "▲" + delta : delta < 0 ? "▼" + -delta : ""}</span>`;
+      btn.addEventListener("click", () => select(r.fd.name, true));
       board.appendChild(btn);
     });
     renderStrip();
@@ -684,85 +657,58 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     if (window.__resizeMap) window.__resizeMap();
   }
 
-  // Dossier
-  const STATUS_LABEL = { current: "Still held", unknown: "Holding not confirmed", exited_recent: "Sold < 24 months ago", exited_old: "Sold earlier" };
-  const STATUS_TIP = {
-    current: "The fund's site or recent news shows it still holds a stake.",
-    unknown: "The fund lists this brand but doesn't say whether it still holds a stake.",
-    exited_recent: "The fund sold its stake in the last 24 months; the relationship is still warm.",
-    exited_old: "The fund sold its stake more than 24 months ago; not counted in the score.",
-  };
+  // ---------- Dossier
+  const STATUS_LABEL = { current: "Still held", unknown: "Holding not confirmed" };
+  const STATUS_TIP = { current: "The fund's site, recent news or Companies House shows it still holds a stake.", unknown: `The fund lists the brand but doesn't say whether it still holds a stake, so it counts at ${Math.round(100 * C.status_weight.unknown)}%.` };
   const RB = D.retailer_blurbs || {};
-  const SIZE_LABEL = band => !band ? "accounts size not stated" : band.startsWith("full") ? "files full accounts (usually medium or large)"
-    : band.startsWith("group") ? "files group accounts (usually medium or large)" : band.startsWith("dormant") ? "dormant entity (trades elsewhere)"
+  const SIZE_LABEL = band => !band ? "" : band.startsWith("full") ? "files full accounts (usually medium or large)"
+    : band.startsWith("group") ? "files group accounts (usually medium or large)" : band.startsWith("dormant") ? "trades through another entity"
     : band.startsWith("audit-exemption") ? "subsidiary of a larger group" : band;
-  const STACK_LABEL = { listings: "new listing", funding: "funding", ops_hiring: "ops hiring", expansion: "export" };
   let drawerOpen = false;
-  function select(name, where) {
-    selected = name;
-    render();
-    if (where) openDrawer();
-    paintMap();
-  }
+  function select(name, open) { selected = name; render(); if (open) openDrawer(); paintMap(); }
   function dossierHTML(r) {
     const fd = r.fd, rank = current.indexOf(r) + 1;
-    const pillars = PILLARS.map(p =>
-      `<div style="border-color:${p.color}"><b>${Math.round(100 * r.p[p.key])}</b><span>${p.label} (0–100)</span></div>`).join("");
-    const order = { current: 0, unknown: 1, exited_recent: 2, exited_old: 3 };
-    const bs = [...fd.brands].sort((a, b) => order[a.status] - order[b.status] || b.retailers.length - a.retailers.length);
+    const pillars = PILLARS.map(p => `<div style="border-color:${p.color}"><b>${Math.round(100 * r.p[p.key])}</b><span>${p.label}</span></div>`).join("");
+    const bs = [...fd.brands].sort((a, b) => (a.status === "current" ? 0 : 1) - (b.status === "current" ? 0 : 1) || b.retailers.length - a.retailers.length);
     const brands = bs.map(b => {
-      const B = brandsByName[b.brand] || {};
-      const trig = (B.triggers || [])[0];
+      const B = brandsByName[b.brand] || {}, trig = (B.triggers || [])[0], ch = B.companies_house;
       const ops = (B.ops_roles || []).slice(0, 2).map(o => o.title).join(", ");
-      return `<div class="bi"><div class="top"><b>${B.website ? `<a href="${esc(B.website)}" target="_blank" rel="noopener">${esc(b.brand.replace("dash-water", "DASH Water"))}</a>` : esc(b.brand)}</b>
-          <span class="status ${b.status}" title="${esc(STATUS_TIP[b.status] + (b.status_source && b.status_source !== "portfolio page" ? " Source: " + b.status_source : ""))}">${STATUS_LABEL[b.status]}</span></div>
-        ${B.blurb ? `<p class="blurb">${esc(B.blurb)}</p>` : ""}
-        <div class="chips">${b.retailers.length ? b.retailers.map(x => { const proof = ((B.retailers || []).find(r => r.name === x) || {}).source_url;
-          return proof ? `<a class="chip" href="${esc(proof)}" target="_blank" rel="noopener" title="${esc(x + (RB[x] ? ": " + RB[x] : "") + " · open the proof")}">${esc(x)}</a>` : `<span class="chip" title="${esc(x + (RB[x] ? ": " + RB[x] : ""))}">${esc(x)}</span>`; }).join("") : `<span class="chip ghost">no UK retailer found</span>`}</div>
-        ${B.companies_house ? `<p class="trig">Companies House: <a href="${esc(B.companies_house.url)}" target="_blank" rel="noopener">${esc(B.companies_house.company_name || "")}</a> · ${esc(SIZE_LABEL(B.companies_house.size_band))}${B.companies_house.share_allotments_24m ? ` · ${B.companies_house.share_allotments_24m} share issue${B.companies_house.share_allotments_24m > 1 ? "s" : ""} in 24 months` : ""}${B.companies_house.charges_24m ? ` · new debt facility` : ""}</p>` : ""}
-        ${trig ? `<p class="trig">${esc(trig.date.slice(0, 7))} · <a href="${esc(trig.url)}" target="_blank" rel="noopener">${esc(trig.headline)}</a> <span class="mono">(${esc(host(trig.url))})</span></p>` : ""}
-        ${ops ? `<p class="trig">Hiring: ${esc(ops)}</p>` : ""}
-        ${(B.stack || []).length > 1 ? `<p class="trig"><b style="color:var(--accent)">Stacked triggers:</b> ${B.stack.map(k => STACK_LABEL[k]).join(" + ")} in the last 12 months</p>` : ""}</div>`;
+      return `<div class="bi"><div class="top"><b>${B.website ? `<a href="${esc(B.website)}" target="_blank" rel="noopener">${esc(pretty(b.brand))}</a>` : esc(pretty(b.brand))}</b>
+          <span class="status ${b.status}" title="${esc(STATUS_TIP[b.status] + (b.status_source && b.status_source !== "portfolio page" ? " Source: " + b.status_source : ""))}">${STATUS_LABEL[b.status] || ""}</span>
+          ${(B.stack || []).length > 1 ? `<span class="hot" title="Triggers in the last 12 months">${B.stack.map(k => STACK_LABEL[k]).join(" + ")}</span>` : ""}</div>
+        ${B.blurb ? `<p>${esc(B.blurb)}</p>` : ""}
+        <div class="chips">${b.retailers.length ? b.retailers.map(x => { const proof = ((B.retailers || []).find(q => q.name === x) || {}).source_url, tip = esc(x + (RB[x] ? ": " + RB[x] : ""));
+          return proof ? `<a class="chip" href="${esc(proof)}" target="_blank" rel="noopener" title="${tip} · open the proof">${esc(x)}</a>` : `<span class="chip" title="${tip}">${esc(x)}</span>`; }).join("") : `<span class="chip ghost">no UK retailer confirmed</span>`}</div>
+        ${ch ? `<p>Companies House: <a href="${esc(ch.url)}" target="_blank" rel="noopener">${esc(ch.company_name || "")}</a>${SIZE_LABEL(ch.size_band) ? " · " + esc(SIZE_LABEL(ch.size_band)) : ""}${ch.share_allotments_24m ? ` · ${plural(ch.share_allotments_24m, "share issue")} in 24 months` : ""}${ch.charges_24m ? " · new debt facility" : ""}</p>` : ""}
+        ${trig ? `<p>${esc(trig.date.slice(0, 7))} · <a href="${esc(trig.url)}" target="_blank" rel="noopener">${esc(trig.headline)}</a></p>` : ""}
+        ${ops ? `<p>Hiring: ${esc(ops)}</p>` : ""}</div>`;
     }).join("");
     const side = [];
-    if (fd.people.length) side.push(`<div><p class="eyebrow">Named contacts</p><ul>${fd.people.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>, <span class="muted">${esc(p.title)}</span></li>`).join("")}</ul></div>`);
-    if (fd.overlap.length) side.push(`<div><p class="eyebrow">Procuros customers already backed</p><p>${fd.overlap.map(esc).join(", ")}</p></div>`);
-    if (fd.community.length) side.push(`<div><p class="eyebrow">Community signals</p><ul>${fd.community.map(c => `<li><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.text)}</a></li>`).join("")}</ul></div>`);
-    side.push(`<div><p class="eyebrow">Sources</p><ul>${[fd.website, ...fd.portfolio_urls].filter(Boolean).map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u) + new URL(u).pathname.replace(/\/$/, ""))}</a></li>`).join("")}</ul>
-      <p class="muted" style="font-size:13px;margin-top:6px">Portfolio read: ${esc(fd.scrape)}.</p></div>`);
-    return `<p class="eyebrow">Fund dossier</p><div class="dos-head"><h3>${esc(fd.name)}</h3><span class="tier ${r.tier}">${r.tier}</span>
-        <span class="mono muted">#${rank} · ${r.score.toFixed(1)} / 100 · ${esc(fd.type)} · ${fmtInt(fd.companies)} portfolio companies · <span title="How many of the 16 signals have any data for this fund. Low coverage means a low score may be missing data, not a weak fund.">data on ${fd.coverage}/16 signals</span></span></div>
-      ${fd.about ? `<p class="about">${esc(fd.about)}</p>` : ""}
-      <p class="tier-why">${esc(tierWhy(r))}</p>
-      <div style="display:grid;gap:6px"><p class="eyebrow">Why this fund</p><p class="why">${esc(fd.why)}</p></div>
+    if (fd.people.length) side.push(`<div><p class="label">Who to ask for the intro</p><ul>${fd.people.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>, <span class="muted">${esc(p.title)}</span></li>`).join("")}</ul></div>`);
+    if (fd.overlap.length) side.push(`<div><p class="label">Procuros customers it already backs</p><p>${esc(list(fd.overlap))}: a reference the founder can call.</p></div>`);
+    if (fd.set_aside.length) side.push(`<div><p class="label">Not counted</p><ul>${fd.set_aside.map(x => `<li>${esc(pretty(x.brand))} <span class="muted">· ${esc(x.reason)}</span></li>`).join("")}</ul></div>`);
+    side.push(`<div><p class="label">Sources</p><ul>${[fd.website, ...fd.portfolio_urls].filter(Boolean).map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u) + new URL(u).pathname.replace(/\/$/, ""))}</a></li>`).join("")}</ul></div>`);
+    return `<div class="dos-head"><h2>${esc(fd.name)}</h2><span class="tier ${r.tier}">${r.tier}</span></div>
+      <p class="facts">#${rank} of ${current.length} · score ${r.score.toFixed(1)} · ${fd.type} · ${plural(fd.live, "target brand")} · data on ${fd.coverage} of 16 signals${fd.about ? `<br>${esc(fd.about)}` : ""}</p>
+      <p class="callout">${esc(tierWhy(r))}</p>
       <div class="pillars">${pillars}</div>
-      <div class="dossier">
-        <div style="min-width:0"><p class="eyebrow" style="margin-bottom:8px">UK grocery brands in the portfolio</p>
-          <div class="key"><span><span class="chip">Tesco</span> = UK retailer that sells the brand; click for the product page that proves it</span><span><span class="status unknown">Holding</span> = whether the fund still owns a stake</span></div>
-          <div class="brand-list">${brands}</div></div>
-        <aside class="side">${side.join("")}</aside>
-      </div>`;
+      <div style="display:grid;gap:4px"><p class="label">Target brands</p><div>${brands}</div></div>
+      <div class="side">${side.join("")}</div>`;
   }
   function renderDossier(name) {
-    const r = current.find(x => x.fd.name === name); if (!r) return;
-    const html = dossierHTML(r);
-    if (drawerOpen) {
-      document.getElementById("drawer-body").innerHTML = html;
-      const i = current.indexOf(r);
-      document.getElementById("dr-prev").disabled = i === 0;
-      document.getElementById("dr-next").disabled = i === current.length - 1;
-    }
+    const r = current.find(x => x.fd.name === name); if (!r || !drawerOpen) return;
+    document.getElementById("drawer-body").innerHTML = dossierHTML(r);
+    const i = current.indexOf(r);
+    document.getElementById("dr-prev").disabled = i === 0;
+    document.getElementById("dr-next").disabled = i === current.length - 1;
   }
-
-  // Drawer
   const drawer = document.getElementById("drawer");
   let opener = null;
   function openDrawer() {
     if (!drawerOpen) opener = document.activeElement;
     drawerOpen = true;
     drawer.classList.add("open"); drawer.setAttribute("aria-hidden", "false"); document.body.classList.add("drawer-on"); size();
-    renderDossier(selected);
-    drawer.scrollTop = 0;
+    renderDossier(selected); drawer.scrollTop = 0;
     document.getElementById("dr-close").focus({ preventScroll: true });
   }
   function closeDrawer() {
@@ -782,41 +728,46 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     else if (drawer.contains(document.activeElement) && (e.key === "ArrowUp" || e.key === "ArrowDown")) { e.preventDefault(); step(e.key === "ArrowUp" ? -1 : 1); }
   });
 
-  // Limits
-  const s = D.stats, nb = FN["UK grocery brands kept"];
+  // ---------- Data notes
+  const s = D.stats, nt = s.targets;
+  const SA = s.set_aside;
+  document.getElementById("set-aside").innerHTML = [
+    [SA["sold"], "fund–brand links set aside because the fund has sold the brand"],
+    [SA["already a Procuros customer"], "set aside because the brand already uses Procuros (Tony's Chocolonely, Truestart)"],
+    [SA["over the £100m"], "set aside as over £100m revenue (Hovis, innocent, Fever-Tree and others)"],
+  ].map(([v, l]) => `<p><b class="num">${v}</b> ${l}</p>`).join("");
   document.getElementById("coverage").innerHTML = [
-    [s.brands_with_retailers, "brands have a major UK retailer confirmed by a product page, Open Food Facts or the brand's stockist list"],
-    [s.brands_with_ch, "brands matched to their Companies House record (size, share issues, charges)"],
-    [s.brands_with_ops, "brands have open ops or supply-chain roles"],
-    [s.brands_with_news, "brands have trade or press coverage in the last 24 months"],
-  ].map(([v, l]) => `<div class="bar-row"><div class="lbl"><span>${l}</span><b>${v}<span class="muted" style="font:400 13px var(--mono)"> / ${nb}</span></b></div>
-    <div class="bar-track"><div class="bar-fill" style="width:${(100 * v / nb).toFixed(1)}%"></div></div></div>`).join("");
-  document.getElementById("failed").innerHTML = D.failed.map(x => `<li><b>${esc(x.name)}</b>: ${esc(x.note || x.status)}</li>`).join("");
+    [s.brands_with_retailers, "have a major UK retailer confirmed by a product page or stockist list"],
+    [s.brands_with_ch, "are matched to Companies House (size, share issues, new debt)"],
+    [s.brands_with_news, "have trade or press coverage in the last 24 months"],
+    [s.brands_stacked, "show 2 or more triggers in the last 12 months"],
+    [s.brands_with_ops, "have open ops or supply-chain roles"],
+  ].map(([v, l]) => `<div style="display:grid;gap:4px"><p><b class="num">${v}</b> ${l}</p><div class="track"><div class="fill" style="width:${(100 * v / nt).toFixed(1)}%"></div></div></div>`).join("");
+  document.getElementById("failed").innerHTML = D.failed.filter(x => !/crowd|seedrs|angel/i.test(x.name) && !/ZX|Distill|SnackFutures/.test(x.name))
+    .map(x => `<li><b>${esc(x.name)}</b>: ${esc(/\s/.test((x.note || "").trim()) ? x.note.split(/[.;(]/)[0] : "site didn't respond to the scraper")}</li>`).join("");
 
-  // Network map
+  // ---------- Map (colours are CSS variables set as styles, so it follows the day / night switch)
   const svg = d3.select("#map-svg"), tip = document.getElementById("tip");
-  // Colours are CSS variables set as styles, so the map follows the day / night switch without redrawing
   const reachColor = k => ["var(--rule)", "var(--sel)", "var(--accent)"][k >= 3 ? 2 : k >= 1 ? 1 : 0];
-  document.getElementById("map-legend").innerHTML = [["0 grocers named", "--rule"], ["1–2 grocers", "--sel"], ["3+ grocers", "--accent"]]
-    .map(([l, t]) => `<span><span class="pill-dot" style="background:var(${t});border:1px solid var(--ink-2)"></span>${l}</span>`).join("");
-  const top = scoreAll(DEFAULT_W).slice(0, 20), topNames = new Set(top.map(r => r.fd.name));
+  document.getElementById("map-legend").innerHTML = [["no grocer confirmed", "--rule"], ["1–2 major grocers", "--sel"], ["3+ major grocers", "--accent"]]
+    .map(([l, t]) => `<span><span class="dot" style="background:var(${t});border:1px solid var(--ink-2)"></span>${l}</span>`).join("");
+  const top = BASE.slice(0, 20);
   const nodes = [], links = [], seen = new Map();
   top.forEach(r => nodes.push({ id: "f:" + r.fd.name, name: r.fd.name, kind: "fund", score: r.score, live: r.fd.live, about: r.fd.about }));
-  top.forEach(r => r.fd.brands.filter(b => b.status !== "exited_old").forEach(b => {
+  top.forEach(r => r.fd.brands.forEach(b => {
     if (!seen.has(b.brand)) { const n = { id: "b:" + b.brand, name: b.brand, kind: "brand", blurb: (brandsByName[b.brand] || {}).blurb, reach: b.retailers.length, retailers: b.retailers, backers: 0 }; seen.set(b.brand, n); nodes.push(n); }
     seen.get(b.brand).backers++;
     links.push({ source: "f:" + r.fd.name, target: "b:" + b.brand });
   }));
   const rFund = d3.scaleSqrt().domain([0, 50]).range([6, 26]);
   const sim = d3.forceSimulation(nodes)
-    .force("link", d3.forceLink(links).id(d => d.id).distance(d => 46).strength(0.7))
+    .force("link", d3.forceLink(links).id(d => d.id).distance(46).strength(0.7))
     .force("charge", d3.forceManyBody().strength(d => d.kind === "fund" ? -260 : -40))
     .force("collide", d3.forceCollide(d => d.kind === "fund" ? rFund(d.score) + 6 : 7))
     .force("x", d3.forceX()).force("y", d3.forceY());
   const gLinks = svg.append("g").style("stroke", "var(--rule)").attr("stroke-width", 1.2);
-  const gNodes = svg.append("g");
   const lk = gLinks.selectAll("line").data(links).join("line");
-  const nd = gNodes.selectAll("g").data(nodes).join("g").style("cursor", d => d.kind === "fund" ? "pointer" : "grab");
+  const nd = svg.append("g").selectAll("g").data(nodes).join("g").style("cursor", d => d.kind === "fund" ? "pointer" : "grab");
   nd.append("circle")
     .attr("r", d => d.kind === "fund" ? rFund(d.score) : (d.backers > 1 ? 7 : 5))
     .style("fill", d => d.kind === "fund" ? "var(--ink)" : reachColor(d.reach))
@@ -824,17 +775,17 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     .attr("stroke-width", d => d.kind === "brand" && d.backers > 1 ? 2 : 1);
   nd.filter(d => d.kind === "fund").append("text").text(d => d.name.replace(/ \(.*\)/, ""))
     .attr("text-anchor", "middle").attr("dy", d => rFund(d.score) + 13)
-    .attr("font-family", "IBM Plex Mono, monospace").attr("font-size", 11).style("fill", "var(--ink)").attr("paint-order", "stroke")
+    .attr("font-family", "IBM Plex Sans, sans-serif").attr("font-size", 12).attr("font-weight", 500).style("fill", "var(--ink)").attr("paint-order", "stroke")
     .style("stroke", "var(--card)").attr("stroke-width", 3);
   nd.on("mousemove", (ev, d) => {
     const box = document.querySelector(".map-box").getBoundingClientRect();
     tip.style.display = "block";
     tip.style.left = Math.min(ev.clientX - box.left + 12, box.width - 270) + "px";
     tip.style.top = (ev.clientY - box.top + 12) + "px";
-    tip.innerHTML = d.kind === "fund" ? `<b>${esc(d.name)}</b><br>${esc(d.about || "")}${d.about ? "<br>" : ""}score ${d.score.toFixed(1)} · ${d.live} live brands`
-      : `<b>${esc(d.name.replace("dash-water", "DASH Water"))}</b>${d.blurb ? "<br>" + esc(d.blurb) : ""}<br>${d.retailers.length ? "Sold at " + esc(d.retailers.join(", ")) : "no stockist found yet"}${d.backers > 1 ? `<br>${d.backers} shortlisted backers` : ""}`;
+    tip.innerHTML = d.kind === "fund" ? `<b>${esc(d.name)}</b><br>${d.about ? esc(d.about) + "<br>" : ""}score ${d.score.toFixed(1)} · ${plural(d.live, "target brand")}`
+      : `<b>${esc(pretty(d.name))}</b>${d.blurb ? "<br>" + esc(d.blurb) : ""}<br>${d.retailers.length ? "Sold at " + esc(d.retailers.join(", ")) : "no retailer confirmed"}${d.backers > 1 ? `<br>${d.backers} shortlisted backers` : ""}`;
   }).on("mouseleave", () => tip.style.display = "none")
-    .on("click", (ev, d) => { if (d.kind === "fund") select(d.name, "map"); });
+    .on("click", (ev, d) => { if (d.kind === "fund") select(d.name, true); });
   nd.call(d3.drag()
     .on("start", (ev, d) => { if (!ev.active) sim.alphaTarget(0.2).restart(); d.fx = d.x; d.fy = d.y; })
     .on("drag", (ev, d) => { d.fx = ev.x; d.fy = ev.y; })
@@ -854,46 +805,42 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     lk.attr("x1", d => d.source.x).attr("y1", d => d.source.y).attr("x2", d => d.target.x).attr("y2", d => d.target.y);
     nd.attr("transform", d => `translate(${d.x},${d.y})`);
   });
-  // Takeaways, computed from the graph so they stay true when the data changes
+
+  // Six findings, all computed from the graph so they stay true when the data changes
   const brandNodes = nodes.filter(n => n.kind === "brand");
-  const fundBrands = new Map(top.map(r => [r.fd.name, new Set(links.filter(l => l.source === "f:" + r.fd.name || l.source.id === "f:" + r.fd.name).map(l => (l.target.id || l.target).slice(2)))]));
-  const shared = brandNodes.filter(n => n.backers > 1);
-  const sharedNames = new Set(shared.map(n => n.name));
+  const fundBrands = new Map(top.map(r => [r.fd.name, new Set(r.fd.brands.map(b => b.brand))]));
+  const shared = brandNodes.filter(n => n.backers > 1), sharedNames = new Set(shared.map(n => n.name));
   const clusterFunds = top.filter(r => [...fundBrands.get(r.fd.name)].some(b => sharedNames.has(b))).map(r => r.fd.name);
   const islands = top.filter(r => !clusterFunds.includes(r.fd.name)).map(r => r.fd.name);
   const reach3 = brandNodes.filter(n => n.reach >= 3);
   const biggest = top.map(r => ({ name: r.fd.name, n: fundBrands.get(r.fd.name).size, r3: [...fundBrands.get(r.fd.name)].filter(b => seen.get(b).reach >= 3).length })).sort((a, b) => b.n - a.n)[0];
-  const short = n => n.replace(/ (Investments|Capital Partners|Capital|Partners|Ventures|Private Equity)$/, "");
-  const list = a => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a[a.length - 1] : a.join("");
-  const FOCUS = {
-    shared: { num: shared.length, title: "brands have two or three shortlisted backers",
-      text: `${list(shared.map(n => n.name.replace("dash-water", "DASH Water")))} tie ${clusterFunds.length} funds into one cluster. Those founders can be reached through either investor, which makes the cluster the natural place to test two funds side by side.`,
-      brand: n => n.backers > 1, fund: f => clusterFunds.includes(f) },
-    islands: { num: islands.length, title: "of 20 funds share no brand with another",
-      text: `Most doors are separate: ${list(islands.slice(0, 3).map(short))} and the rest each lead to their own brands. Coverage grows with the number of fund relationships, not through one syndicate.`,
-      brand: n => islands.some(f => fundBrands.get(f).has(n.name)), fund: f => islands.includes(f) },
-    reach: { num: reach3.length, title: `of ${brandNodes.length} brands are stocked by 3+ major grocers`,
-      text: `A big portfolio isn't the same as big brands. ${short(biggest.name)} backs the most (${biggest.n}) but ${biggest.r3 ? "only " + biggest.r3 : "none"} at three or more grocers, the brands most likely to face EDI mandates today.`,
-      brand: n => n.reach >= 3, fund: f => [...fundBrands.get(f)].some(b => seen.get(b).reach >= 3) },
-  };
-  // Three more, from the dossiers: proof points, named contacts, and brands in a buying moment
-  const pretty = n => n.replace("dash-water", "DASH Water");
-  const custFunds = top.filter(r => r.fd.overlap.length), custBrands = new Set(custFunds.flatMap(r => r.fd.overlap));
-  if (custFunds.length) FOCUS.customers = { num: custFunds.length, title: `fund${custFunds.length === 1 ? " already backs" : "s already back"} a Procuros customer`,
-    text: `${list(custFunds.map(r => short(r.fd.name)))} back${custFunds.length === 1 ? "s" : ""} ${list([...custBrands])}. An intro from there comes with a reference the founder can call, which is why JamJar is in the Task 1.2 pair.`,
-    brand: n => custBrands.has(n.name), fund: f => custFunds.some(r => r.fd.name === f) };
+  const custFunds = top.filter(r => r.fd.overlap.length), custSet = new Set(custFunds.map(r => r.fd.name));
   const named = top.filter(r => r.fd.people.length);
-  FOCUS.contacts = { num: named.length, title: "of 20 funds name a platform or portfolio-ops person",
-    text: `${list(named.slice(0, 4).map(r => short(r.fd.name)))}${named.length > 4 ? " and others" : ""} list someone whose job is helping portfolio companies. That person is the one to ask for the intro; the rest need a partner-level ask.`,
-    brand: n => named.some(r => fundBrands.get(r.fd.name).has(n.name)), fund: f => named.some(r => r.fd.name === f) };
   const hot = brandNodes.filter(n => ((brandsByName[n.name] || {}).stack || []).length > 1);
   const hotFunds = top.filter(r => hot.some(n => fundBrands.get(r.fd.name).has(n.name))).map(r => r.fd.name);
-  FOCUS.hot = { num: hot.length, title: "brands show 2+ triggers in the last 12 months",
-    text: `${list(hot.slice(0, 4).map(n => pretty(n.name)))}${hot.length > 4 ? " and more" : ""} are in a buying moment right now. They sit with ${hotFunds.length} of the 20 funds, so those intros are the most time-sensitive.`,
-    brand: n => hot.includes(n), fund: f => hotFunds.includes(f) };
+  const FOCUS = {
+    shared: { num: shared.length, title: "brands have two or three shortlisted backers",
+      text: `${list(shared.map(n => pretty(n.name)))} tie ${clusterFunds.length} funds together. Those founders can be reached through either investor.`,
+      brand: n => n.backers > 1, fund: f => clusterFunds.includes(f) },
+    islands: { num: islands.length, title: "of 20 funds share no brand with another",
+      text: `${list(islands.slice(0, 3).map(short))} and the rest each lead to their own brands, so coverage grows with every fund relationship.`,
+      brand: n => islands.some(f => fundBrands.get(f).has(n.name)), fund: f => islands.includes(f) },
+    reach: { num: reach3.length, title: `of ${brandNodes.length} brands behind the top 20 are stocked by 3+ major grocers`,
+      text: `These face retailer EDI mandates first. A big portfolio isn't the same as big brands: ${short(biggest.name)} holds the most (${biggest.n}), ${biggest.r3 ? "only " + biggest.r3 : "none"} at three or more grocers.`,
+      brand: n => n.reach >= 3, fund: f => [...fundBrands.get(f)].some(b => seen.get(b).reach >= 3) },
+    hot: { num: hot.length, title: "brands show 2+ triggers in the last 12 months",
+      text: `${list(hot.slice(0, 3).map(n => pretty(n.name)))}${hot.length > 3 ? " and others" : ""} are in a buying moment now. They sit with ${hotFunds.length} of the 20 funds.`,
+      brand: n => hot.includes(n), fund: f => hotFunds.includes(f) },
+    contacts: { num: named.length, title: "of 20 funds name a platform or portfolio-ops person",
+      text: `${list(named.slice(0, 3).map(r => short(r.fd.name)))}${named.length > 3 ? " and others" : ""} list someone whose job is helping portfolio companies: the person to ask for the intro.`,
+      brand: n => named.some(r => fundBrands.get(r.fd.name).has(n.name)), fund: f => named.some(r => r.fd.name === f) },
+    customers: { num: custFunds.length, title: `fund${custFunds.length === 1 ? " already backs" : "s already back"} a Procuros customer`,
+      text: custFunds.length ? `${list(custFunds.map(r => short(r.fd.name)))} back${custFunds.length === 1 ? "s" : ""} ${list([...new Set(custFunds.flatMap(r => r.fd.overlap))])}, so an intro comes with a reference the founder can call.` : "None of the 20 funds backs a current Procuros customer.",
+      brand: n => [...custSet].some(f => fundBrands.get(f).has(n.name)), fund: f => custSet.has(f) },
+  };
   let focus = null;
   const tk = document.getElementById("takeaways");
-  tk.innerHTML = Object.entries(FOCUS).map(([k, v]) => `<button type="button" data-k="${k}" aria-pressed="false"><b>${v.num}</b><h3>${v.title}</h3><p>${esc(v.text)}</p></button>`).join("");
+  tk.innerHTML = Object.entries(FOCUS).map(([k, v]) => `<button type="button" class="card sub take" data-k="${k}" aria-pressed="false"><b>${v.num}</b><h3>${v.title}</h3><p>${esc(v.text)}</p></button>`).join("");
   tk.querySelectorAll("button").forEach(b => b.addEventListener("click", () => setFocus(focus === b.dataset.k ? null : b.dataset.k)));
   document.getElementById("map-reset").addEventListener("click", () => setFocus(null));
   function setFocus(k) {
@@ -902,7 +849,6 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     document.getElementById("map-reset").hidden = !k;
     paintMap();
   }
-  // Highlight: an open dossier wins over a takeaway; everything else fades back
   function paintMap() {
     let onB, onF;
     if (drawerOpen && selected && fundBrands.has(selected)) { const set = fundBrands.get(selected); onB = n => set.has(n.name); onF = f => f === selected; }
@@ -911,29 +857,22 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     nd.transition().duration(200).style("opacity", d => lit(d) ? 1 : 0.14);
     lk.transition().duration(200).style("opacity", d => !onB || (onF(d.source.name) && onB(d.target)) ? 1 : 0.08);
   }
-  window.paintMap = paintMap;
-
   window.addEventListener("resize", size);
   window.__resizeMap = () => sim.alpha(Math.max(sim.alpha(), 0.02)).restart();
   size();
 
-  readW();
-  readSW();
-  render();
-  renderWorked();
-  select(scoreAll(DEFAULT_W)[0].fd.name);
+  // ---------- Start
+  readW(); readSW(); render(); renderWorked();
+  selected = BASE[0].fd.name; render();
   function showTab(id) {
-    if (!TABS.includes(id)) id = "overview";
+    if (!TABS.includes(id)) id = "summary";
     TABS.forEach(t => {
       document.getElementById(t).hidden = t !== id;
       const b = document.querySelector(`#subtabs [data-tab="${t}"]`);
-      b.setAttribute("aria-selected", String(t === id));
-      b.tabIndex = t === id ? 0 : -1;
+      b.setAttribute("aria-selected", String(t === id)); b.tabIndex = t === id ? 0 : -1;
     });
     try { history.replaceState(null, "", "#" + id); } catch (e) {}
     if (id === "map") size();
-    const on = document.querySelector(`#subtabs [data-tab="${id}"]`);
-    on.scrollIntoView({ block: "nearest", inline: "nearest" });
     window.scrollTo({ top: 0 });
   }
   window.showTab = showTab;
@@ -945,7 +884,7 @@ nav.rail .wrap { display: grid; gap: 0; padding-block: 0; overflow: visible; }
     showTab(nx); document.querySelector(`#subtabs [data-tab="${nx}"]`).focus();
   });
   document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.go)));
-  const h = (location.hash || "#overview").slice(1);
-  showTab({ dossier: "ranking", thesis: "overview", pipeline: "overview" }[h] || h);
+  const h = (location.hash || "#summary").slice(1);
+  showTab({ overview: "summary", thesis: "summary", pipeline: "method", signals: "method", dossier: "ranking", limits: "notes" }[h] || h);
 })();
 </script>

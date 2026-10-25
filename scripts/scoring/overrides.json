@@ -293,5 +293,15 @@
     "Development Bank of Wales": 0.7,
     "Ascension": 1.0,
     "Unilever Ventures": 0.5
+  },
+  "over_icp_size": {
+    "_note": "Desk judgement: brands well above the £100m revenue ceiling of the ICP.",
+    "Hovis": "national bread brand, several hundred £m",
+    "innocent": "Coca-Cola owned, several hundred £m",
+    "Fever-Tree": "listed company, several hundred £m",
+    "Quorn Foods": "global meat-alternative group, £200m+",
+    "Bright Blue Foods": "own-label cake maker, turnover over £200m per its profile",
+    "Addo Food Group": "chilled food group, £200m+",
+    "Kettle Foods": "national crisp brand, over £100m"
   }
 }
