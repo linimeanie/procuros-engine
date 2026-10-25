@@ -94,5 +94,39 @@
     "window_months": 12,
     "bonus_per_extra_signal": 0.25,
     "max_multiplier": 1.5
+  },
+  "shortlist_size": 20,
+  "pairs": {
+    "brand_fit": {
+      "reach": 0.35,
+      "why_now": 0.35,
+      "size": 0.15,
+      "uk": 0.15
+    },
+    "why_now": {
+      "listings": 0.35,
+      "funding": 0.3,
+      "ops_hiring": 0.2,
+      "expansion": 0.15
+    },
+    "intro_path": {
+      "listed": 0.1,
+      "board": 0.4,
+      "ops_person": 0.2,
+      "support": 0.1,
+      "held": 0.2
+    },
+    "strong_path": 0.6,
+    "good_path": 0.35,
+    "qualified_pair": 20,
+    "aggregate_decay": [
+      1,
+      0.5,
+      0.25
+    ],
+    "tiers": {
+      "A": 30,
+      "B": 20
+    }
   }
 }

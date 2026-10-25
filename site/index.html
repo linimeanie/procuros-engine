@@ -152,56 +152,82 @@ tr.mult td { color: var(--accent); }
 }
 select { font: 500 var(--fs-small)/1 var(--body); padding: 7px 8px; background: var(--paper); color: var(--ink); border: 1px solid var(--rule); border-radius: 6px; }
 
-/* Ranking */
-.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--ink-2); align-items: center; }
-.bar-head { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; }
-.board { display: grid; gap: 2px; }
-.row, .axis { display: grid; grid-template-columns: 30px minmax(150px, 1.1fr) 30px minmax(160px, 2fr) 48px 40px; gap: 12px; align-items: center; padding: 8px 10px; }
-.row { border-radius: 6px; cursor: pointer; background: transparent; border: 0; color: inherit; text-align: left; font: inherit; width: 100%; }
-.row:hover, .row.on { background: var(--card); }
-.row.on { box-shadow: inset 3px 0 0 var(--accent); }
-.row.out { opacity: .5; }
-.row .r { font: 500 var(--fs-label)/1 var(--mono); color: var(--ink-2); }
-.row .f { font-weight: 600; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.row .f small { display: block; font: 400 12px/1.3 var(--body); color: var(--ink-2); }
-.row .s { font: 800 17px/1 var(--display); text-align: right; font-variant-numeric: tabular-nums; }
-.row .d { font: 500 12px/1 var(--body); text-align: right; color: var(--ink-2); }
-.d.up { color: var(--p-access); } .d.down { color: var(--accent); }
-.stack { height: 14px; display: flex; background: var(--tint); border-radius: 3px; overflow: hidden; }
-.stack span { height: 100%; transition: width .4s ease; }
-.axis { padding-block: 0; font: 500 11px/1 var(--mono); color: var(--ink-2); }
-.axis .ticks { position: relative; height: 14px; }
-.axis .ticks span { position: absolute; transform: translateX(-50%); }
-.cut { font: 500 var(--fs-label)/1 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); border-top: 1px dashed var(--accent); padding: 8px 10px 4px; }
-@media (max-width: 640px) {
-  .row, .axis { grid-template-columns: 24px minmax(0, 1fr) 28px 44px; }
-  .row .stackcell, .row .d, .axis .ticks, .axis .sp { display: none; }
+/* Shortlist rows */
+.sl { display: grid; gap: 10px; }
+.sl-group { display: grid; gap: 10px; }
+.sl-group > .label { padding-top: 8px; }
+.opp-row { display: grid; grid-template-columns: 34px minmax(170px, 1.1fr) minmax(0, 1.6fr) minmax(0, 1.3fr) 64px; gap: 18px; align-items: start;
+  background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 16px 18px; cursor: pointer; text-align: left; font: inherit; color: inherit; width: 100%; }
+.opp-row:hover { border-color: var(--ink-2); }
+.opp-row.on { box-shadow: inset 3px 0 0 var(--accent); }
+.opp-row .rk { font: 500 var(--fs-label)/1.6 var(--mono); color: var(--ink-2); }
+.opp-row .nm { display: grid; gap: 6px; align-content: start; }
+.opp-row .nm b { font: 700 17px/1.2 var(--display); }
+.opp-row .nm small { font-size: 13px; color: var(--ink-2); }
+.opp-row .why, .opp-row .todo { font-size: var(--fs-small); color: var(--ink-2); display: grid; gap: 6px; align-content: start; }
+.opp-row .why b, .opp-row .todo b { color: var(--ink); font-weight: 600; }
+.opp-row .sc { font: 800 22px/1 var(--display); text-align: right; font-variant-numeric: tabular-nums; }
+.opp-row .sc small { display: block; font: 400 12px/1.4 var(--body); color: var(--ink-2); margin-top: 4px; }
+.col-head { display: grid; grid-template-columns: 34px minmax(170px, 1.1fr) minmax(0, 1.6fr) minmax(0, 1.3fr) 64px; gap: 18px; padding: 0 19px; }
+.col-head span:last-child { text-align: right; }
+@media (max-width: 860px) {
+  .opp-row { grid-template-columns: 28px minmax(0, 1fr) 56px; gap: 10px 12px; }
+  .opp-row .why, .opp-row .todo { grid-column: 2 / -1; }
+  .opp-row .sc { grid-column: 3; grid-row: 1; }
+  .col-head { display: none; }
 }
-.tune { display: grid; gap: 18px; }
-.sliders { display: grid; gap: 14px 24px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-.slider { display: grid; gap: 4px; }
-.slider label { display: flex; justify-content: space-between; font-size: var(--fs-small); font-weight: 500; }
-.slider output, .sig-w output { font: 500 13px var(--body); font-variant-numeric: tabular-nums; }
-input[type=range] { width: 100%; accent-color: var(--accent); }
-.sig-w { display: grid; grid-template-columns: minmax(90px, 1fr) 40px; gap: 8px; align-items: center; }
-.sig-w output { text-align: right; }
-details summary { cursor: pointer; font-weight: 500; font-size: var(--fs-small); }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.bdg { font: 500 12px/1 var(--body); padding: 4px 7px; border-radius: 3px; border: 1px solid var(--rule); color: var(--ink-2); white-space: nowrap; }
+.bdg.Strong, .bdg.High { border-color: var(--p-access); color: var(--p-access); }
+.bdg.Good, .bdg.Medium { border-color: var(--ink-2); color: var(--ink); }
+.bdg.Weak, .bdg.Low { border-style: dashed; }
+.state { font: 500 11px/1 var(--mono); text-transform: uppercase; letter-spacing: .05em; padding: 3px 5px; border-radius: 3px; white-space: nowrap; }
+.state.confirmed { background: color-mix(in srgb, var(--p-access) 16%, transparent); color: var(--p-access); }
+.state.assumed { background: var(--accent-soft); color: var(--accent); }
+.state.none, .state.unknown, .state.unobs { background: var(--tint); color: var(--ink-2); }
 
-/* Tier strip */
-.strip { position: relative; height: 172px; background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; }
-.zone { position: absolute; top: 0; bottom: 22px; border-right: 1px dashed var(--ink-2); }
-.zone span { position: absolute; left: 8px; top: 8px; font: 500 11px/1 var(--mono); color: var(--ink-2); text-transform: uppercase; letter-spacing: .04em; white-space: nowrap; }
-.zone span i { font-style: normal; }
-@media (max-width: 640px) { .zone span .long { display: none; } }
-.zone.zb { background: color-mix(in srgb, var(--accent) 6%, transparent); }
-.zone.za { background: color-mix(in srgb, var(--accent) 13%, transparent); border-right: 0; }
-.pin { position: absolute; width: 13px; height: 13px; margin: -6.5px 0 0 -6.5px; border-radius: 50%; background: var(--ink); border: 2px solid var(--ink); cursor: pointer; padding: 0; }
-.pin.thin { background: var(--card); }
-.pin.on { border-color: var(--accent); background: var(--accent); }
-.pin.thin.on { background: var(--card); }
-.flag { position: absolute; font: 500 11px/1.2 var(--mono); color: var(--accent); white-space: nowrap; transform: translateX(-50%); }
-.axis-x { position: absolute; left: 0; right: 0; bottom: 0; height: 22px; border-top: 1px solid var(--rule); }
-.axis-x span { position: absolute; bottom: 5px; transform: translateX(-50%); font: 500 10px/1 var(--mono); color: var(--ink-2); }
+/* Opportunity scatter */
+.scatter-box { position: relative; background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 12px; }
+.scatter-box svg { width: 100%; height: auto; display: block; }
+.scatter-box svg text { font: 500 12px var(--mono); fill: var(--ink-2); }
+.scatter-box svg .q { font: 600 13px var(--body); fill: var(--ink); }
+.scatter-box svg circle { cursor: pointer; }
+@media (max-width: 640px) { .scatter-box svg text { font-size: 17px; } .scatter-box svg .q { font-size: 18px; } }
+.pairs { display: grid; gap: 2px; }
+.pair { display: grid; grid-template-columns: 30px minmax(0, 1.5fr) minmax(90px, 1fr) minmax(90px, 1fr) 54px 76px; gap: 12px; align-items: center; padding: 9px 10px; border-radius: 6px; cursor: pointer; background: transparent; border: 0; color: inherit; text-align: left; font: inherit; width: 100%; }
+.pair:hover { background: var(--card); }
+.pair .r { font: 500 var(--fs-label)/1 var(--mono); color: var(--ink-2); }
+.pair .t { min-width: 0; font-size: var(--fs-small); }
+.pair .t b { display: block; font-size: var(--fs-body); }
+.pair .s { font: 800 17px/1 var(--display); text-align: right; font-variant-numeric: tabular-nums; }
+.pair.phead { cursor: default; padding-block: 0; font: 500 var(--fs-label)/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); }
+.pair.phead:hover { background: transparent; }
+.hbar { display: block; height: 10px; background: var(--tint); border-radius: 3px; overflow: hidden; }
+.hbar span { display: block; height: 100%; border-radius: 3px; }
+@media (max-width: 640px) {
+  .pair { grid-template-columns: 24px minmax(0, 1fr) 48px; }
+  .pair .hb, .pair .bd { display: none; }
+}
+.filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.fbtn { font: 500 13px/1 var(--body); padding: 8px 12px; border: 1px solid var(--rule); border-radius: 999px; background: var(--card); color: var(--ink); cursor: pointer; }
+.fbtn[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+/* Entities */
+.chain { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 12px; align-items: stretch; }
+.chain .arrow { align-self: center; font: 700 22px/1 var(--display); color: var(--ink-2); }
+@media (max-width: 760px) { .chain { grid-template-columns: 1fr; } .chain .arrow { transform: rotate(90deg); justify-self: center; } }
+
+/* Dossier pair cards */
+.pc { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 14px 16px; display: grid; gap: 10px; font-size: var(--fs-small); }
+.pc .top { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }
+.pc .top b { font: 700 17px/1.2 var(--display); }
+.pc .top .s { margin-left: auto; font: 800 20px/1 var(--display); font-variant-numeric: tabular-nums; }
+.ev { display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 6px 12px; align-items: baseline; }
+.ev > span:nth-child(odd) { color: var(--ink-2); }
+.ev .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.steps { margin: 0; padding-left: 20px; display: grid; gap: 6px; font-size: var(--fs-small); }
+.side { display: grid; gap: 16px; font-size: var(--fs-small); }
+.side ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
 
 /* Map */
 .map-box { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; position: relative; }
@@ -244,7 +270,6 @@ details summary { cursor: pointer; font-weight: 500; font-size: var(--fs-small);
 .side ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
 
 footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-2); border-top: 1px solid var(--rule); }
-@media (prefers-reduced-motion: reduce) { .stack span, .drawer { transition: none; } }
 </style>
 </head>
 <body>
@@ -260,9 +285,9 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <button type="button" class="theme" id="theme" aria-label="Switch between day and night mode"></button>
   </div>
   <div class="subtabs" role="tablist" aria-label="Investor shortlist sections" id="subtabs">
-    <button type="button" role="tab" data-tab="summary">Summary</button>
+    <button type="button" role="tab" data-tab="summary">Shortlist</button>
+    <button type="button" role="tab" data-tab="opps">Opportunities</button>
     <button type="button" role="tab" data-tab="method">Method</button>
-    <button type="button" role="tab" data-tab="ranking">Ranking</button>
     <button type="button" role="tab" data-tab="map">Map</button>
     <button type="button" role="tab" data-tab="notes">Data notes</button>
   </div>
@@ -272,92 +297,104 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block">
     <p class="label">Procuros · UK go-to-market · Task 1.1 · data as of <span id="asof"></span></p>
     <h1>Twenty <em>warm doors</em> into UK grocery.</h1>
-    <p class="lede">Which UK VC and PE funds can introduce Procuros to the grocery brands that need EDI most? I read <span data-n="vcpe"></span> fund portfolios, found the UK grocery brands inside them, checked each brand for buying signals and ranked the funds on one formula. Every number traces back to a source page.</p>
+    <p class="lede">The 20 UK VC and PE funds best placed to introduce Procuros to grocery brands that need EDI. Each fund is here for a named brand it backs and a route to someone who can make the intro. Every claim links to its source.</p>
     <div class="grid" style="--min:170px" id="stats"></div>
   </div>
 
   <div class="block">
-    <div class="head"><h2>The funds to call first</h2>
-      <p class="lede">Tier A and B, in ranked order. Each card shows the brands that make the fund worth calling. Select one for the full dossier.</p></div>
-    <div class="grid" style="--min:250px" id="top-cards"></div>
+    <div class="head"><h2>The shortlist</h2>
+      <p class="lede">Ranked by the strength of each fund's best intro opportunities. Select a fund for its brands, evidence and next steps.</p></div>
+    <div class="col-head label" aria-hidden="true"><span>#</span><span>Fund</span><span>Why it's selected</span><span>Next step</span><span>Score</span></div>
+    <div class="sl" id="shortlist"></div>
+    <div class="card" id="dropped"></div>
   </div>
+  <div class="next"><button type="button" class="btn" data-go="opps">Next: every intro opportunity →</button></div>
+</div></section>
 
+<section id="opps" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
-    <div class="head"><h2>Why go through investors</h2></div>
-    <div class="grid" style="--min:250px">
-      <div class="card sub"><p class="label">Trust</p><h3>An intro beats a cold sequence</h3><p>A portfolio partner recommending a vendor carries the weight of a board seat. Founders take that meeting.</p></div>
-      <div class="card sub"><p class="label">Density</p><h3>One relationship, many brands</h3><p>A single fund can hold up to 16 target brands. Win the partner once and the intros compound.</p></div>
-      <div class="card sub"><p class="label">Timing</p><h3>Money changes the ops stack</h3><p>New rounds and buyouts come with new retailers, new systems and more orders. That is when EDI becomes urgent.</p></div>
-    </div>
+    <div class="head"><p class="label">Opportunities</p><h2>Rank the opportunity, not just the fund</h2>
+      <p class="lede">An opportunity is one fund introducing Procuros to one brand. It's only worth pursuing when the brand needs EDI <b>and</b> the fund can actually make the intro, so its score multiplies the two.</p></div>
+    <div class="scatter-box"><div id="scatter"></div></div>
+    <p class="small muted" id="scatter-note"></p>
   </div>
-  <div class="next"><button type="button" class="btn" data-go="method">Next: how the ranking is built →</button></div>
+  <div class="block">
+    <div class="bar-head"><h3 id="pairs-title"></h3>
+      <div class="filters" id="filters"></div></div>
+    <div class="pairs" id="pairs"></div>
+  </div>
+  <div class="next"><button type="button" class="btn" data-go="method">Next: how it's scored →</button></div>
 </div></section>
 
 <section id="method" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
-    <div class="head"><p class="label">Method</p><h2>From <span data-n="seeded"></span> funds to a shortlist of 20</h2>
+    <div class="head"><p class="label">Method</p><h2>Three questions, in order</h2>
+      <p class="lede">Every fund–brand pair is assessed first. The 20 funds are whatever the strongest pairs add up to.</p></div>
+    <div class="chain">
+      <div class="card"><p class="label">1 · Fund</p><h3>Can it make a credible intro?</h3><p>A named person on the brand's board, a portfolio-ops contact, a support programme, a holding it confirms.</p></div>
+      <span class="arrow" aria-hidden="true">→</span>
+      <div class="card"><p class="label">2 · Brand</p><h3>Does it fit the ICP, in the UK?</h3><p>Sold through several UK grocers, changing fast, the right size and a UK company. Only observed evidence counts.</p></div>
+      <span class="arrow" aria-hidden="true">→</span>
+      <div class="card"><p class="label">3 · Opportunity</p><h3>Who to ask, why now, what for?</h3><p>The pair score, the person to ask, the trigger to lead with and the first thing to verify.</p></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>From <span data-n="seeded"></span> funds to 20</h2>
       <p class="lede">Each bar is drawn to scale within its group. A <b>target brand</b> is one the fund still holds, that isn't already a Procuros customer, and that sits under £100m revenue.</p></div>
     <div class="funnel" id="funnel"></div>
   </div>
 
   <div class="block">
-    <div class="head"><h2>Four steps from signal to tier</h2>
-      <p class="lede">Every fund is scored on the same formula, so the ranking can be checked and argued with.</p></div>
-    <div class="grid" style="--min:230px">
-      <div class="card sub" style="--rows:4"><p class="label">1 · Scale</p><h3>Each signal becomes 0 to 1</h3><p class="formula">best fund = 1, worst = 0</p><p>Counts are log-scaled first, so one 16-brand portfolio doesn't flatten everyone else.</p></div>
-      <div class="card sub" style="--rows:4"><p class="label">2 · Pillars</p><h3>Signals add up into four pillars</h3><p class="formula">pillar = Σ weight × signal</p><p>Fit, pain, access and strategic value. The weights inside each pillar add up to 100%.</p></div>
-      <div class="card sub" style="--rows:4"><p class="label">3 · Score</p><h3>Pillars add up into one score</h3><p class="formula" id="formula-score"></p><p>Access and strategic value scale down for funds with fewer than 3 target brands: reach is worth little without brands to reach.</p></div>
-      <div class="card sub" style="--rows:4"><p class="label">4 · Tier</p><h3>The score sets the tier</h3><p class="formula">A: 38+ and 3+ brands · B: 30+</p><p>Both lines sit in natural gaps between scores. The Ranking tab shows every fund on that scale.</p></div>
-    </div>
-  </div>
-
-  <div class="block">
-    <div class="head"><h2>The 16 signals</h2>
-      <p class="lede">What each pillar measures, where the data comes from, and how much it weighs. The weights can be changed on the Ranking tab.</p></div>
+    <div class="head"><h2>Brand fit: what an ICP brand looks like</h2>
+      <p class="lede">Procuros automates order, delivery and invoice documents between suppliers and retailers. The brands that need it sell through several grocers and are changing fast. Each part below is marked as confirmed (a source shows it), assumed (inferred from something else) or not observable.</p></div>
     <div class="table-scroll"><table>
-      <thead><tr><th>Pillar</th><th>Signal</th><th>Source</th><th class="r">Weight</th></tr></thead>
-      <tbody id="sig-body"></tbody>
+      <thead><tr><th>Part</th><th>What it measures</th><th>Evidence</th><th class="r">Weight</th></tr></thead>
+      <tbody id="fit-body"></tbody>
     </table></div>
+    <p class="small muted">No double counting: retail reach is where a brand sells today, why-now is what changed in the last 24 months. The old "volume of news" signal is gone because it counted the same stories twice.</p>
   </div>
 
   <div class="block">
-    <div class="head"><h2>When a brand shows more than one signal</h2>
-      <p class="lede">Most signals describe brand pain. Two rules decide how several of them combine: older news counts for less, and signals that land close together count for more, because that overlap is when a brand is most likely to buy.</p></div>
+    <div class="head"><h2>Why now: two rules for recent events</h2>
+      <p class="lede">New listings, funding, ops hiring and export news each mark a moment when order volumes and retailer connections grow. Older news counts for less, and events that land close together count for more.</p></div>
     <div class="grid" style="--min:300px">
       <div class="card"><p class="label">Rule 1 · Recency</p><h3>News loses half its weight every 9 months</h3><div id="decay"></div><p>A story from this month counts in full, one from 18 months ago counts a quarter, and anything older than 24 months isn't counted. Open job ads are live, so they don't decay.</p></div>
-      <div class="card"><p class="label">Rule 2 · Stacking</p><h3>Triggers in the same 12 months multiply</h3><div id="stackchart"></div><p>Four kinds of trigger count: a new listing, a funding round, ops hiring and export news. Each extra one adds 25% to the brand's pain, capped at 1.5×.</p></div>
+      <div class="card"><p class="label">Rule 2 · Stacking</p><h3>Events in the same 12 months multiply</h3><div id="stackchart"></div><p>Each extra kind of event in the same 12 months adds 25% to the brand's why-now score, capped at 1.5×.</p></div>
     </div>
-    <div class="card" id="worked"></div>
   </div>
-  <div class="next"><button type="button" class="btn" data-go="ranking">Next: the ranking →</button></div>
-</div></section>
 
-<section id="ranking" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
-    <div class="head"><p class="label">Result</p><h2>All 20 funds, ranked</h2>
-      <p class="lede">100 would mean the best fund on all 16 signals. No fund is, so the top score is in the 50s: read the scores as a ranking, not a grade.</p></div>
+    <div class="head"><h2>Intro path: can the fund open the door?</h2>
+      <p class="lede">Points for each piece of evidence that the fund can reach the brand's decision-makers. A fund that lists a brand but shows no route scores 10 out of 100.</p></div>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Evidence</th><th>Where it comes from</th><th class="r">Points</th></tr></thead>
+      <tbody id="path-body"></tbody>
+    </table></div>
+    <p class="small muted" id="path-bands"></p>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>From pairs to the 20 funds</h2></div>
     <div class="grid" style="--min:250px">
-      <div class="card" style="grid-template-columns:auto 1fr;align-items:start"><span class="tier A">A</span><p><b>Score 38+ and at least 3 target brands.</b> Call first: one relationship opens several doors.</p></div>
-      <div class="card" style="grid-template-columns:auto 1fr;align-items:start"><span class="tier B">B</span><p><b>Score 30+, or a high score with fewer than 3 brands.</b> Worth an intro, but it won't compound.</p></div>
-      <div class="card" style="grid-template-columns:auto 1fr;align-items:start"><span class="tier C">C</span><p><b>Score below 30.</b> Reserve bench: few brands, thin signals, or both.</p></div>
+      <div class="card sub" style="--rows:3"><p class="label">Pair score</p><p class="formula">pair = 100 × brand fit × intro path</p><p>Multiplying means either side at zero sinks the pair: a perfect brand with no route is worth as little as a great route to the wrong brand.</p></div>
+      <div class="card sub" style="--rows:3"><p class="label">Fund score</p><p class="formula" id="agg-formula"></p><p>Best pair counts fully, the second half, the third a quarter. Depth helps, but only on top of quality: four strong pairs beat fifteen weak ones.</p></div>
+      <div class="card sub" style="--rows:3"><p class="label">Groups</p><p class="formula" id="tier-formula"></p><p>Call first needs two pairs worth pursuing (pair score <span data-n="qual"></span>+), so one relationship opens more than one door.</p></div>
     </div>
-    <div class="strip" id="strip" role="img" aria-label="Shortlisted funds on the score scale with the tier zones"></div>
-    <p class="small muted" id="tier-note"></p>
   </div>
 
   <div class="block">
-    <div class="bar-head"><div class="legend" id="legend"></div><button type="button" class="btn" id="tune-btn" aria-expanded="false">Adjust weights</button></div>
-    <div class="card tune" id="tune" hidden>
-      <div class="sliders" id="sliders"></div>
-      <details><summary>Weights of the signals inside each pillar</summary>
-        <div class="table-scroll" style="margin-top:10px"><table><tbody id="sig-sliders"></tbody></table></div></details>
-      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap"><button type="button" class="btn" id="reset">Reset every weight</button>
-        <p class="small muted">Weights rescale to add up to 100%. Arrows show how far each fund moved.</p></div>
-    </div>
-    <div>
-      <div class="axis" aria-hidden="true"><span></span><span></span><span class="sp"></span><div class="ticks" id="ticks"></div><span></span><span></span></div>
-      <div class="board" id="board"></div>
-    </div>
+    <div class="head"><h2>Does the weighting change the answer?</h2>
+      <p class="lede">The ranking was rerun under other reasonable weightings. If the same funds come out on top every time, the shortlist doesn't depend on my exact numbers.</p></div>
+    <div class="table-scroll"><table>
+      <thead><tr><th>Scenario</th><th class="r">Same funds in the 20</th><th class="r" id="first-head"></th></tr></thead>
+      <tbody id="sens-body"></tbody>
+    </table></div>
+    <p class="small muted">Each fund's dossier shows the best and worst rank it reached across these scenarios.</p>
+  </div>
+
+  <div class="block">
+    <div class="card" id="worked"></div>
   </div>
   <div class="next"><button type="button" class="btn" data-go="map">Next: the map →</button></div>
 </div></section>
@@ -365,7 +402,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 <section id="map" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
     <div class="head"><p class="label">The network</p><h2>Who sits behind which brand</h2>
-      <p class="lede">Dark circles are the 20 funds, sized by score. Small dots are their target brands, coloured by how many major grocers stock them. Select a finding to highlight it; select it again to clear.</p></div>
+      <p class="lede">Not geography: dark circles are the 20 funds, sized by score, and small dots are their target brands, coloured by how many major grocers stock them. It shows where brands are shared and where each fund leads somewhere new. Select a finding to highlight it.</p></div>
     <div class="grid" style="--min:300px" id="takeaways"></div>
     <div class="map-box">
       <svg id="map-svg" role="img" aria-label="Network of shortlisted funds and the target brands they hold"></svg>
@@ -383,14 +420,21 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="grid" style="--min:300px">
       <div class="card"><h3>What counts as a door</h3><p>A brand counts only if the fund still holds it, it isn't already a Procuros customer, and it sits under £100m revenue.</p><div id="set-aside" style="display:grid;gap:8px"></div></div>
       <div class="card"><h3>Coverage of the <span data-n="targets"></span> target brands</h3><div id="coverage" style="display:grid;gap:10px"></div></div>
-      <div class="card"><h3>Judgement calls</h3><p>These are my calls rather than scraped data, and they're labelled wherever they appear:</p>
+      <div class="card"><h3>Low score or missing data?</h3><p>Every piece of evidence carries a state, so the two can be told apart:</p>
+        <div style="display:grid;gap:8px" class="small">
+          <p><span class="state confirmed">Confirmed</span> a source shows it, and the link is in the dossier.</p>
+          <p><span class="state assumed">Assumed</span> inferred from something else, such as size from retail reach.</p>
+          <p><span class="state none">Checked, none found</span> looked for and not there. It scores zero.</p>
+          <p><span class="state unobs">Not observable</span> no public source exists, such as how a brand processes orders today. It isn't scored; it's a question for the first call.</p>
+        </div></div>
+      <div class="card"><h3>Judgement calls</h3><p>These are my calls rather than scraped data:</p>
         <ul class="small muted" style="margin:0;padding-left:18px;display:grid;gap:4px">
-          <li>Fund size and stage, one of the four access signals.</li>
+          <li>The weights for brand fit and the points for intro path. The Method tab shows the answer barely moves when they change.</li>
           <li>Which brands are over £100m revenue.</li>
           <li>The 9-month half-life for news and the 1.5× stacking cap.</li>
-          <li>The tier lines, placed in natural gaps between scores.</li>
+          <li>The group lines for Call first and Next.</li>
         </ul></div>
-      <div class="card"><h3>Known gaps</h3><p>Most small UK companies don't publish turnover, so size comes from the accounts type filed at Companies House, with retail reach as the fallback. A missing retailer means none was confirmed, not that the brand isn't stocked. Job boards add little: these brands mostly hire through LinkedIn and recruiters.</p></div>
+      <div class="card"><h3>Known gaps</h3><p>Most small UK companies don't publish turnover, so size comes from the accounts type filed at Companies House, with retail reach as the stand-in. A board link needs the person's name on both the fund's team page and the brand's Companies House officer list, so a partner missing from the team page is missed. Job boards add little: these brands mostly hire through LinkedIn and recruiters.</p></div>
       <div class="card"><h3>Sites that couldn't be read</h3><ul class="small muted" id="failed" style="margin:0;padding-left:18px;display:grid;gap:4px"></ul></div>
     </div>
   </div>
@@ -427,116 +471,136 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 })();
 (async function () {
   const D = await fetch("data.json").then(r => r.json());
-  const C = D.config;
-  const TABS = ["summary", "method", "ranking", "map", "notes"];
-  const PILLARS = [
-    { key: "fit", label: "Portfolio fit", color: "var(--p-fit)" },
-    { key: "pain", label: "Brand pain", color: "var(--p-pain)" },
-    { key: "access", label: "Accessibility", color: "var(--p-access)" },
-    { key: "strategic", label: "Strategic value", color: "var(--p-strat)" },
-  ];
+  const C = D.config, P = C.pairs;
+  const TABS = ["summary", "opps", "method", "map", "notes"];
   const fmtInt = d3.format(",");
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
   const pretty = n => n.replace("dash-water", "DASH Water");
-  const plural = (n, w) => `${n} ${w}${n === 1 ? "" : "s"}`;
+  const plural = (n, w) => `${n} ${n === 1 ? w : w.endsWith("y") ? w.slice(0, -1) + "ies" : w + "s"}`;
   const list = a => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a[a.length - 1] : a.join("");
-  const short = n => n.replace(/ (Investments|Capital Partners|Capital|Partners|Ventures|Private Equity)$/, "");
+  const short = n => n.replace(/ \(.*\)/, "").replace(/ (Investments|Capital Partners|Capital|Partners|Ventures|Private Equity)$/, "");
+  const link = (u, t) => u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>` : esc(t);
   document.getElementById("asof").textContent = D.as_of;
   document.getElementById("asof2").textContent = D.as_of;
 
-  const universe = D.funds.filter(f => f.live > 0);
+  const FUNDS = D.funds, SHORT = FUNDS.filter(f => f.selected);
   const brandsByName = Object.fromEntries(D.brands.map(b => [b.name, b]));
+  const PAIRS = FUNDS.flatMap(f => f.pairs.map(p => ({ ...p, fund: f.fund, f }))).sort((a, b) => b.score - a.score);
   const FN = Object.fromEntries(D.funnel.map(x => [x.label, x.value]));
-  const N = { seeded: FN["Funds seeded"], vcpe: FN["VC and PE funds only"], targets: FN["Target brands"] };
+  const N = { seeded: FN["Funds seeded"], vcpe: FN["VC and PE funds only"], targets: FN["Target brands"], qual: P.qualified_pair };
   document.querySelectorAll("[data-n]").forEach(el => el.textContent = N[el.dataset.n]);
+  const GROUP = { A: "Call first", B: "Next", C: "Bench" };
+  const FIT_LABEL = { reach: "Retail reach", why_now: "Why now", size: "Size", uk: "UK company" };
+  const PATH_LABEL = { listed: "Listed in the fund's portfolio", board: "Fund person on the brand's board", ops_person: "Named portfolio-ops contact", support: "Portfolio support programme", held: "Holding confirmed" };
+  const STATE = { confirmed: ["confirmed", "Confirmed"], assumed: ["assumed", "Assumed"], "checked, none found": ["none", "None found"], unknown: ["unknown", "Unknown"], "not observable": ["unobs", "Not observable"], unconfirmed: ["assumed", "Unconfirmed"] };
+  const stateTag = s => { const [c, l] = STATE[s] || ["unknown", s]; return `<span class="state ${c}">${l}</span>`; };
+  const route = p => p.intro.board_people.length ? `${p.intro.board_people[0].name}, on the board`
+    : p.intro.ops_people.length ? `${p.intro.ops_people[0].name}, ${p.intro.ops_people[0].title}`
+    : p.intro.fund_entity.length ? "Fund on the register, partner not named" : "No named route yet";
 
-  // ---------- Scoring, mirroring scripts/scoring/score.py (brand pain is rebuilt here so the pain sliders reach it)
-  const DEFAULT_W = { ...C.pillars };
-  let W = { ...DEFAULT_W };
-  const SW0 = Object.fromEntries(PILLARS.map(p => [p.key, { ...C[p.key] }]));
-  let SW = JSON.parse(JSON.stringify(SW0));
-  const mult = k => Math.min(1 + C.stack.bonus_per_extra_signal * Math.max(k - 1, 0), C.stack.max_multiplier);
-  function brandPain(B) {
-    const base = Object.entries(SW.pain).reduce((a, [k, w]) => a + w * ((B.pain_parts || {})[k] ?? 0), 0);
-    const m = mult((B.stack || []).length);
-    return { base, m, pain: Math.round(1000 * Math.min(base * m, 1)) / 1000 };  // rounded like score.py
-  }
-  function painTop(fd) {
-    const xs = fd.brands.map(b => { const B = brandsByName[b.brand]; return (B ? brandPain(B).pain : b.pain) * C.status_weight[b.status]; })
-      .sort((a, b) => b - a).slice(0, C.pain_top_n);
-    return xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0;
-  }
-  function pillarsOf(fd) {
-    const sum = wts => Object.entries(wts).reduce((a, [k, w]) => a + w * (fd.n[k] ?? 0), 0);
-    const gate = Math.min(fd.live / C.gate_brands, 1);
-    return { fit: sum(SW.fit), pain: painTop(fd), access: sum(SW.access) * gate, strategic: sum(SW.strategic) * gate };
-  }
-  function scoreAll(weights) {
-    const t = C.tiers;
-    return universe.map(fd => {
-      const p = pillarsOf(fd);
-      const parts = Object.fromEntries(PILLARS.map(x => [x.key, 100 * weights[x.key] * p[x.key]]));
-      const score = Object.values(parts).reduce((a, b) => a + b, 0);
-      const tier = score >= t.A.min_score && fd.live >= t.A.min_brands ? "A" : score >= t.B.min_score ? "B" : "C";
-      return { fd, p, parts, score, tier };
-    }).sort((a, b) => b.score - a.score);
-  }
-  const BASE = scoreAll(DEFAULT_W);
-  const baseRank = Object.fromEntries(BASE.map((r, i) => [r.fd.name, i + 1]));
-
-  // ---------- Shared bits of copy
-  const topBrands = (fd, n = 3) => [...fd.brands].sort((a, b) => b.retailers.length - a.retailers.length || b.pain - a.pain).slice(0, n);
-  const STACK_LABEL = { listings: "new listing", funding: "funding", ops_hiring: "ops hiring", expansion: "export" };
-  function tierWhy(r) {
-    const t = C.tiers, s = r.score.toFixed(1), br = plural(r.fd.live, "target brand");
-    if (r.tier === "A") return `Tier A: a score of ${s} clears the A line of ${t.A.min_score}, and ${br} meet the minimum of ${t.A.min_brands}.`;
-    if (r.score >= t.A.min_score) return `Tier B, not A: the score of ${s} clears the A line of ${t.A.min_score}, but it holds ${br} and Tier A needs ${t.A.min_brands}. One relationship should open several doors.`;
-    if (r.tier === "B") return `Tier B: a score of ${s} sits between the B line of ${t.B.min_score} and the A line of ${t.A.min_score}.`;
-    return `Tier C: a score of ${s} is below the B line of ${t.B.min_score}.`;
-  }
-
-  // ---------- Summary
-  const nAB = BASE.slice(0, 20).filter(r => r.tier !== "C").length;
+  // ---------- Shortlist
+  const nBoard = PAIRS.filter(p => p.intro.board_people.length).length;
   document.getElementById("stats").innerHTML = [
-    [N.vcpe, "VC and PE funds read"], [fmtInt(FN["Portfolio companies"]), "portfolio companies checked"],
-    [N.targets, "target grocery brands found"], [nAB, "funds to call first"],
+    [N.vcpe, "VC and PE fund portfolios read"], [N.targets, "target grocery brands inside them"],
+    [PAIRS.length, "fund–brand intro opportunities scored"], [nBoard, "with a fund person on the brand's board"],
   ].map(([v, l]) => `<div class="card stat"><b>${v}</b><span>${l}</span></div>`).join("");
-  document.getElementById("top-cards").innerHTML = BASE.slice(0, nAB).map((r, i) => {
-    const fd = r.fd, bs = topBrands(fd).map(b => pretty(b.brand));
-    const extra = fd.overlap.length ? `Already backs Procuros customer${fd.overlap.length > 1 ? "s" : ""} ${list(fd.overlap)}.`
-      : fd.people.length ? `Intro route: ${fd.people[0].name}, ${fd.people[0].title}.` : fd.about;
-    return `<button type="button" class="card sub fund" style="--rows:4" data-n="${esc(fd.name)}">
-      <div class="top"><span class="rank">#${i + 1}</span><span class="tier ${r.tier}">${r.tier}</span><span class="score">${r.score.toFixed(1)}</span></div>
-      <h3>${esc(fd.name)}</h3>
-      <p><b>${fd.type} · ${plural(fd.live, "target brand")}</b><br>incl. ${esc(list(bs))}</p>
-      <p>${esc(extra)}</p></button>`;
+  function rowHTML(f) {
+    const best = f.pairs[0], steps = f.next_steps;
+    const brands = f.pairs.slice(0, 3).map(p => esc(pretty(p.brand))).join(", ") + (f.pairs.length > 3 ? ` +${f.pairs.length - 3}` : "");
+    return `<button type="button" class="opp-row" data-f="${esc(f.fund)}">
+      <span class="rk">${f.rank}</span>
+      <span class="nm"><b>${esc(f.fund)}</b><small>${f.fund_type} · ${plural(f.pairs.length, "target brand")}: ${brands}</small>
+        <span class="badges"><span class="bdg ${best.intro.strength}">${best.intro.strength} route</span><span class="bdg ${best.confidence}">${best.confidence} confidence</span></span></span>
+      <span class="why">${esc(f.rationale)}</span>
+      <span class="todo"><b>${esc(steps.find(s => !/^(Confirm|Check|Lead)/.test(s)) || steps[0])}</b>${steps.filter(s => /^(Confirm|Check)/.test(s)).map(s => `<span>Before that: ${esc(s.charAt(0).toLowerCase() + s.slice(1))}</span>`).join("")}</span>
+      <span class="sc">${f.score.toFixed(1)}<small>${f.tier !== "-" ? GROUP[f.tier] : ""}</small></span></button>`;
+  }
+  document.getElementById("shortlist").innerHTML = ["A", "B", "C"].map(t => {
+    const fs = SHORT.filter(f => f.tier === t);
+    const note = { A: `Score ${P.tiers.A}+ with at least two opportunities worth pursuing`, B: `Score ${P.tiers.B}+: one strong opportunity`, C: "In the 20, but the route or the brand fit is thin" }[t];
+    return fs.length ? `<div class="sl-group"><p class="label">${GROUP[t]} · ${note}</p>${fs.map(rowHTML).join("")}</div>` : "";
   }).join("");
-  document.querySelectorAll("#top-cards .fund").forEach(b => b.addEventListener("click", () => select(b.dataset.n, true)));
+  const dropped = FUNDS.filter(f => !f.selected);
+  document.getElementById("dropped").innerHTML = `<h3>Why not the other ${plural(dropped.length, "fund")}</h3>
+    <p>Only ${FN["Funds holding a target brand"]} of the ${N.vcpe} funds back a brand that fits, so the real filter is the target-brand test. The ranking sets the order and who to call first. ${dropped.map(f => `<b>${esc(f.fund)}</b> (${f.score.toFixed(1)}) backs ${list(f.pairs.map(p => esc(pretty(p.brand))))} with ${f.pairs[0].intro.strength.toLowerCase()} routes and thin brand evidence.`).join(" ")}</p>`;
+  document.querySelectorAll(".opp-row").forEach(b => b.addEventListener("click", () => select(b.dataset.f)));
 
-  // ---------- Method: funnel
-  const STAGES = [
-    ["Funds", [["Funds seeded", "Funds seeded"], ["VC and PE funds only", "VC and PE funds only"], ["Portfolios read", "Portfolios read"],
-      ["Funds holding a live brand", "Hold a target brand"], ["Shortlist", "Shortlist"]]],
-    ["Brands", [["Portfolio companies", "Portfolio companies"], ["Food & drink candidates", "Food and drink candidates"],
-      ["UK grocery brands kept", "UK grocery brands"], ["Target brands", "Target brands"]]],
+  // ---------- Opportunities: scatter and list
+  (function scatter() {
+    const W = 760, H = 420, L = 56, R = 744, T = 20, B = 360;
+    const X = v => L + v * (R - L), Y = v => B - v * (B - T);
+    const fx = 0.5, py = P.strong_path;
+    const dots = PAIRS.map(p => `<circle cx="${X(p.fit.fit).toFixed(1)}" cy="${Y(p.intro.path).toFixed(1)}" r="${p.f.selected ? 6 : 4}" data-f="${esc(p.fund)}"
+      style="fill:${p.score >= P.qualified_pair ? "var(--accent)" : "var(--ink-2)"};stroke:var(--card)" stroke-width="1.5" fill-opacity="${p.f.selected ? .9 : .4}"><title>${esc(p.fund)} → ${esc(pretty(p.brand))} · pair ${p.score.toFixed(1)}</title></circle>`).join("");
+    const lab = "";
+    document.getElementById("scatter").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Each intro opportunity placed by brand fit and intro path strength">
+      <rect x="${X(fx)}" y="${T}" width="${R - X(fx)}" height="${Y(py) - T}" style="fill:color-mix(in srgb, var(--accent) 9%, transparent)"/>
+      ${[0, .25, .5, .75, 1].map(v => `<line x1="${L}" x2="${R}" y1="${Y(v)}" y2="${Y(v)}" style="stroke:var(--rule)"/><text x="${L - 8}" y="${Y(v) + 4}" text-anchor="end">${v * 100}</text>
+        <line x1="${X(v)}" x2="${X(v)}" y1="${T}" y2="${B}" style="stroke:var(--rule)"/><text x="${X(v)}" y="${B + 18}" text-anchor="middle">${v * 100}</text>`).join("")}
+      <line x1="${X(fx)}" x2="${X(fx)}" y1="${T}" y2="${B}" style="stroke:var(--ink-2)" stroke-dasharray="4 4"/>
+      <line x1="${L}" x2="${R}" y1="${Y(py)}" y2="${Y(py)}" style="stroke:var(--ink-2)" stroke-dasharray="4 4"/>
+      <text class="q" x="${R - 8}" y="${T + 18}" text-anchor="end">Ready to ask</text>
+      <text class="q" x="${L + 8}" y="${T + 18}">Route, weak need</text>
+      <text class="q" x="${R - 8}" y="${B - 10}" text-anchor="end">Good brand, no route yet</text>
+      <text class="q" x="${L + 8}" y="${B - 10}">Low priority</text>
+      ${dots}${lab}
+      <text x="${(L + R) / 2}" y="${B + 40}" text-anchor="middle">brand fit (0–100) →</text>
+      <text x="14" y="${(T + B) / 2}" text-anchor="middle" transform="rotate(-90 14 ${(T + B) / 2})">intro path →</text>
+    </svg>`;
+    document.querySelectorAll("#scatter circle").forEach(c => c.addEventListener("click", () => select(c.dataset.f)));
+    const ready = PAIRS.filter(p => p.fit.fit >= fx && p.intro.path >= py), noroute = PAIRS.filter(p => p.fit.fit >= fx && p.intro.path < py);
+    document.getElementById("scatter-note").innerHTML = `Each dot is one fund–brand pair; orange dots score ${P.qualified_pair}+ and are worth pursuing, larger dots belong to the shortlisted 20. Hover a dot for the pair, select it for the fund. <b>${ready.length}</b> pairs are ready to ask: a strong brand and a strong route. <b>${noroute.length}</b> have a good brand but no proven route yet, which is where the next round of research should go.`;
+  })();
+  const FILTERS = { all: ["All", () => true], ready: ["Worth pursuing", p => p.score >= P.qualified_pair], board: ["Board link", p => p.intro.board_people.length > 0], high: ["High confidence", p => p.confidence === "High"] };
+  let filt = "ready";
+  function renderPairs() {
+    const ps = PAIRS.filter(FILTERS[filt][1]);
+    document.getElementById("pairs-title").textContent = `${plural(ps.length, "opportunity")}${filt === "all" ? "" : " · " + FILTERS[filt][0].toLowerCase()}`;
+    document.getElementById("filters").innerHTML = Object.entries(FILTERS).map(([k, [l]]) => `<button type="button" class="fbtn" data-k="${k}" aria-pressed="${k === filt}">${l}</button>`).join("");
+    document.querySelectorAll("#filters .fbtn").forEach(b => b.addEventListener("click", () => { filt = b.dataset.k; renderPairs(); }));
+    document.getElementById("pairs").innerHTML = `<div class="pair phead" aria-hidden="true"><span>#</span><span>Fund → brand · who to ask</span><span class="hb">Brand fit</span><span class="hb">Intro path</span><span style="text-align:right">Pair</span><span class="bd">Confidence</span></div>` +
+      ps.map((p, i) => `<button type="button" class="pair" data-f="${esc(p.fund)}"><span class="r">${i + 1}</span>
+        <span class="t"><b>${esc(short(p.fund))} → ${esc(pretty(p.brand))}</b><span class="muted">${esc(route(p))}</span></span>
+        <span class="hb"><span class="hbar"><span style="width:${(100 * p.fit.fit).toFixed(0)}%;background:var(--p-fit)"></span></span></span>
+        <span class="hb"><span class="hbar"><span style="width:${(100 * p.intro.path).toFixed(0)}%;background:var(--p-access)"></span></span></span>
+        <span class="s">${p.score.toFixed(1)}</span><span class="bd"><span class="bdg ${p.confidence}">${p.confidence}</span></span></button>`).join("");
+    document.querySelectorAll("#pairs .pair[data-f]").forEach(b => b.addEventListener("click", () => select(b.dataset.f)));
+  }
+  renderPairs();
+
+  // ---------- Method
+  const fw = P.brand_fit, pw = P.intro_path;
+  document.getElementById("fit-body").innerHTML = [
+    ["reach", "Major UK grocers stocking it now (4 or more = full marks)", "Retailer product pages and stockist lists", "Confirmed"],
+    ["why_now", "New listings, funding, ops hiring and export news in the last 24 months", "Trade press, Companies House filings, job boards", "Confirmed"],
+    ["size", "Inside the £3m–£100m band", "Companies House accounts type; retail reach when no accounts match", "Confirmed or assumed"],
+    ["uk", "Trades through a UK company", "Companies House match; UK retailers when no match", "Confirmed or assumed"],
+    [null, "Manual order, invoice and delivery-note handling", "No public source", "Not observable: ask on the first call"],
+  ].map(([k, m, s, e]) => `<tr><td class="p">${k ? FIT_LABEL[k] : "Manual processes"}</td><td>${m}</td><td class="muted">${s}<br><span class="small">${e}</span></td><td class="r">${k ? Math.round(100 * fw[k]) + "%" : "not scored"}</td></tr>`).join("");
+  document.getElementById("path-body").innerHTML = [
+    ["board", "A person on the fund's team page is a director of the brand at Companies House. Half points if only the fund itself is a shareholder or corporate director"],
+    ["ops_person", "A portfolio-ops, value-creation or talent person named on the fund's team page"],
+    ["held", "The fund's site, news or Companies House shows it still holds the stake"],
+    ["support", "Events, founder community, perks or a partner programme on the fund's site"],
+    ["listed", "The brand appears in the fund's published portfolio"],
+  ].map(([k, s]) => `<tr><td class="p">${PATH_LABEL[k]}</td><td class="muted">${s}</td><td class="r">${Math.round(100 * pw[k])}</td></tr>`).join("");
+  document.getElementById("path-bands").textContent = `Strong route: ${Math.round(100 * P.strong_path)}+ points. Good: ${Math.round(100 * P.good_path)}–${Math.round(100 * P.strong_path) - 1}. Weak: below ${Math.round(100 * P.good_path)}.`;
+  const dec = P.aggregate_decay;
+  document.getElementById("agg-formula").textContent = `fund = (best + ${dec[1]} × 2nd + ${dec[2]} × 3rd) ÷ ${dec.reduce((a, b) => a + b, 0)}`;
+  document.getElementById("tier-formula").textContent = `Call first: ${P.tiers.A}+ and 2 pairs · Next: ${P.tiers.B}+`;
+  document.getElementById("first-head").textContent = `Same ${D.first_group} call-first funds`;
+  document.getElementById("sens-body").innerHTML = D.sensitivity.map(s => `<tr><td>${esc(s.scenario)}</td><td class="r">${s.same_in_top} of ${C.shortlist_size}</td><td class="r">${s.same_in_first} of ${D.first_group}</td></tr>`).join("");
+
+  // Funnel
+  const groups = [
+    ["Funds", [["Funds seeded", "Funds seeded"], ["VC and PE funds only", "VC and PE funds only"], ["Portfolios read", "Portfolios read"], ["Hold a target brand", "Funds holding a target brand"], ["Shortlist", "Shortlist"]]],
+    ["Brands", [["Portfolio companies", "Portfolio companies"], ["Food and drink candidates", "Food & drink candidates"], ["UK grocery brands", "UK grocery brands kept"], ["Target brands", "Target brands"]]],
   ];
-  document.getElementById("funnel").innerHTML = `<div class="f-row f-head label" aria-hidden="true"><span>Stage</span><span>To scale</span><span style="text-align:right">Count</span><span>Kept</span></div>` +
-    STAGES.map(([h, rows]) => `<div class="funnel f-group"><h3>${h}</h3>` + rows.map(([k, l], i) => `<div class="f-row ${i === rows.length - 1 ? "last" : ""}">
-      <span>${l}</span><div class="track"><div class="fill" style="width:${(100 * FN[k] / FN[rows[0][0]]).toFixed(1)}%"></div></div>
-      <b>${fmtInt(FN[k])}</b><span class="keep">${i ? Math.round(100 * FN[k] / FN[rows[i - 1][0]]) + "% of step before" : "start"}</span></div>`).join("") + `</div>`).join("");
-
-  // ---------- Method: signal table
-  const SIG = {
-    fit: [["icp_count", "Target brands held, weighted by how well each fits", "Portfolio pages, brand checks"], ["fmcg_share", "Share of the portfolio that is grocery", "Portfolio pages"], ["avg_brand_fit", "Average brand fit: retail reach, size, category", "Retailer pages, Companies House"], ["recent_deals", "Grocery deals in the last 24 months", "Trade press"]],
-    pain: [["listings", "New retailer listings", "The Grocer, Grocery Gazette"], ["funding", "Funding round or acquisition", "Trade press, Companies House"], ["ops_hiring", "Ops or supply-chain roles open", "Careers pages, job boards"], ["momentum", "Volume of recent news", "News search"], ["expansion", "Export or new-market news", "Trade press"]],
-    access: [["platform_team", "Named portfolio-ops or value-creation people", "Fund team pages"], ["community", "Founder community and events", "Fund sites"], ["size_stage", "Fund size and stage (smaller is easier to reach)", "Judgement"], ["vendor_openness", "Partner or perks programme", "Fund sites"]],
-    strategic: [["procuros_overlap", "Already backs a Procuros customer", "Customer list"], ["brand_halo", "Category leaders other brands copy", "Retail reach"], ["ecosystem", "Accelerators and programmes", "Fund sites"]],
-  };
-  const sigRows = (cell) => PILLARS.map(p => SIG[p.key].map((s, i) => `<tr>
-    <td class="p">${i === 0 ? `<span class="dot" style="background:${p.color}"></span>${p.label} · ${Math.round(100 * DEFAULT_W[p.key])}%` : ""}</td>
-    <td>${s[1]}</td>${cell(p, s)}</tr>`).join("")).join("");
-  document.getElementById("sig-body").innerHTML = sigRows((p, s) => `<td class="muted">${s[2]}</td><td class="r">${Math.round(100 * SW0[p.key][s[0]])}%</td>`);
+  document.getElementById("funnel").innerHTML = `<div class="f-row f-head label"><span>Stage</span><span>To scale</span><span style="text-align:right">Count</span><span>Kept</span></div>` +
+    groups.map(([g, rows]) => `<div class="f-group" style="display:grid;gap:10px"><h3>${g}</h3>` + rows.map(([l, k], i) => `<div class="f-row${i === rows.length - 1 ? " last" : ""}"><span>${l}</span>
+      <div class="track"><div class="fill" style="width:${(100 * FN[k] / FN[rows[0][1]]).toFixed(1)}%"></div></div>
+      <b>${fmtInt(FN[k])}</b><span class="keep">${i ? Math.round(100 * FN[k] / FN[rows[i - 1][1]]) + "% of step before" : "start"}</span></div>`).join("") + `</div>`).join("");
 
   // ---------- Method: rule charts
   (function decayChart() {
@@ -584,193 +648,78 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="legend small"><span><i class="sw" style="background:var(--p-pain);opacity:.28"></i>the brand's base pain</span><span><i class="sw" style="background:var(--p-pain)"></i>stacking bonus</span></div>`;
   })();
 
-  // ---------- Method: worked example with the current weights
-  const PAIN_LABEL = { listings: "New retailer listings", funding: "Funding or acquisition", ops_hiring: "Ops or supply-chain hiring", momentum: "Volume of recent news", expansion: "Export or new markets" };
-  const PAIN_CAP = { listings: "2 recent stories = full marks", funding: "2 recent stories = full marks", ops_hiring: "3 open roles = full marks", momentum: "6 recent stories = full marks", expansion: "1 recent story = full marks" };
-  const targetNames = new Set(universe.flatMap(fd => fd.brands.map(b => b.brand)));
-  const stacked = D.brands.filter(b => targetNames.has(b.name) && (b.stack || []).length > 1).sort((a, b) => b.pain - a.pain);
-  let wxName = stacked.length ? stacked[0].name : null;
-  const ageM = d => Math.max((Date.parse(D.as_of) - Date.parse(d)) / 864e5 / 30.4, 0);
+  // ---------- Method: worked example, one pair from data to score
+  let wx = Math.max(PAIRS.findIndex(p => p.intro.board_people.length && p.confidence === "High"), 0);
   function renderWorked() {
-    const el = document.getElementById("worked");
-    if (!wxName) { el.hidden = true; return; }
-    const B = brandsByName[wxName], bp = brandPain(B), maxW = Math.max(...Object.values(SW.pain)), keys = Object.keys(SW.pain);
-    const shade = i => `opacity:${(1 - i * 0.17).toFixed(2)}`;
-    const SC = 1.2;
-    const backers = universe.filter(fd => fd.brands.some(b => b.brand === B.name));
-    const rows = keys.map((k, i) => {
-      const v = (B.pain_parts || {})[k] ?? 0, w = SW.pain[k], pts = v * w, on = (B.stack || []).includes(k);
-      return `<tr><td><i class="sw" style="background:var(--p-pain);${shade(i)}"></i>${PAIN_LABEL[k]}${on ? ` <span class="chip" title="Active in the last 12 months, so it counts towards stacking">trigger</span>` : ""}<br><span class="muted" style="font-size:12px">${PAIN_CAP[k]}</span></td>
-        <td class="r">${v.toFixed(2)}</td><td class="r">× ${Math.round(100 * w)}%</td><td class="r">= ${pts.toFixed(3)}</td>
-        <td><div class="mini" style="width:${maxW ? (100 * w / maxW).toFixed(1) : 0}%" title="${pts.toFixed(3)} of a possible ${w.toFixed(2)}"><span style="width:${w ? (100 * v).toFixed(1) : 0}%;${shade(i)}"></span></div></td></tr>`;
-    }).join("");
-    const trig = (B.triggers || []).map(t => `<li>${esc(t.date.slice(0, 7))} · <a href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.headline)}</a> <span class="muted">· counts ${Math.round(100 * 0.5 ** (ageM(t.date) / C.recency_half_life_months))}%</span></li>`).join("");
-    el.innerHTML = `<div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center"><p class="label">Worked example</p>
-        <label class="small">Brand: <select id="wx-sel">${stacked.map(b => `<option${b.name === wxName ? " selected" : ""}>${esc(pretty(b.name))}</option>`).join("")}</select></label></div>
-      <h3>${esc(pretty(B.name))}${B.blurb ? ` <span class="muted" style="font:400 15px var(--body)">· ${esc(B.blurb)}</span>` : ""}</h3>
-      ${trig ? `<div class="small"><p>Its latest trade stories, and how much each still counts after recency decay:</p><ul style="margin:6px 0 0;padding-left:18px;display:grid;gap:4px">${trig}</ul></div>` : ""}
+    const p = PAIRS[wx], fit = p.fit, ip = p.intro;
+    const fitRows = Object.keys(fw).map(k => `<tr><td>${FIT_LABEL[k]} ${stateTag(fit.evidence[k].state)}</td><td class="r">${fit.parts[k].toFixed(2)}</td><td class="r">× ${Math.round(100 * fw[k])}%</td><td class="r">= ${(fit.parts[k] * fw[k]).toFixed(3)}</td></tr>`).join("");
+    const pathRows = Object.keys(pw).map(k => `<tr><td>${PATH_LABEL[k]}</td><td class="r">${ip.parts[k] ? "yes" : "no"}</td><td class="r"></td><td class="r">+ ${ip.parts[k].toFixed(2)}</td></tr>`).join("");
+    document.getElementById("worked").innerHTML = `<div style="display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center"><p class="label">Worked example</p>
+        <label class="small">Opportunity: <select id="wx-sel">${PAIRS.slice(0, 30).map((q, i) => `<option value="${i}"${i === wx ? " selected" : ""}>${esc(short(q.fund))} → ${esc(pretty(q.brand))}</option>`).join("")}</select></label></div>
+      <h3>${esc(p.fund)} → ${esc(pretty(p.brand))}</h3>
       <div class="table-scroll"><table class="wx">
-        <thead><tr><th>Signal</th><th class="r">Value 0–1</th><th class="r">Weight</th><th class="r">Points</th><th style="min-width:120px">Earned of possible</th></tr></thead>
-        <tbody>${rows}
-          <tr class="total"><td>Base pain: the sum of the points</td><td></td><td></td><td class="r">${bp.base.toFixed(3)}</td><td></td></tr>
-          <tr class="mult"><td>Stacking: ${plural((B.stack || []).length, "trigger")} within 12 months (${(B.stack || []).map(k => STACK_LABEL[k]).join(" + ")})</td><td></td><td></td><td class="r">× ${bp.m.toFixed(2)}</td><td></td></tr>
-          <tr class="total"><td>Brand pain: base × multiplier, capped at 1</td><td></td><td></td><td class="r">${bp.pain.toFixed(3)}</td><td></td></tr>
-        </tbody></table></div>
-      <p class="small muted">In the last column the grey track is the most a signal can add (its weight), and the fill is what this brand earned.</p>
-      <div class="build" aria-label="How the points add up to brand pain">
-        <p class="label">How it adds up, on a scale where 1 is maximum pain</p>
-        <div class="b-row"><span class="b-lab">Base pain</span><div class="b-track">${keys.map((k, i) => { const pts = ((B.pain_parts || {})[k] ?? 0) * SW.pain[k]; return pts > 0 ? `<span style="width:${(100 * pts / SC).toFixed(2)}%;background:var(--p-pain);${shade(i)}" title="${PAIN_LABEL[k]} ${pts.toFixed(3)}"></span>` : ""; }).join("")}<i class="capline"></i></div><b class="b-val">${bp.base.toFixed(3)}</b></div>
-        <div class="b-row"><span class="b-lab">× ${bp.m.toFixed(2)} stacking</span><div class="b-track"><span style="width:${(100 * bp.base / SC).toFixed(2)}%;background:var(--p-pain);opacity:.28"></span><span class="bonus" style="width:${(100 * (bp.base * bp.m - bp.base) / SC).toFixed(2)}%"></span><i class="capline"></i></div><b class="b-val">${(bp.base * bp.m).toFixed(3)}</b></div>
-        <div class="b-row"><span class="b-lab">Brand pain</span><div class="b-track"><span style="width:${(100 * bp.pain / SC).toFixed(2)}%;background:var(--p-pain)"></span><i class="capline"></i></div><b class="b-val">${bp.pain.toFixed(3)}</b></div>
-        <div class="b-row b-axis"><span></span><div class="b-ticks">${[0, 0.25, 0.5, 0.75, 1].map(v => `<span class="${v % 0.5 ? "minor" : ""}" style="left:${(100 * v / SC).toFixed(2)}%">${v === 1 ? "1 · cap" : v}</span>`).join("")}</div><span></span></div>
-      </div>
-      <p>A fund's pain pillar is the average of its ${C.pain_top_n} most painful target brands, discounted to ${Math.round(100 * C.status_weight.unknown)}% when the fund doesn't confirm it still holds the brand.
-        ${backers.length ? `${esc(pretty(B.name))} is held by ${backers.map(fd => `<b>${esc(fd.name)}</b> (pain pillar ${Math.round(100 * painTop(fd))}/100)`).join(" and ")}.` : ""}</p>`;
-    document.getElementById("wx-sel").addEventListener("change", e => { wxName = stacked[e.target.selectedIndex].name; renderWorked(); });
+        <thead><tr><th>Brand fit</th><th class="r">Value</th><th class="r">Weight</th><th class="r">Points</th></tr></thead>
+        <tbody>${fitRows}<tr class="total"><td>Brand fit</td><td></td><td></td><td class="r">${fit.fit.toFixed(3)}</td></tr></tbody></table></div>
+      <div class="table-scroll"><table class="wx">
+        <thead><tr><th>Intro path</th><th class="r">Found</th><th class="r"></th><th class="r">Points</th></tr></thead>
+        <tbody>${pathRows}<tr class="total"><td>Intro path</td><td></td><td></td><td class="r">${ip.path.toFixed(2)}</td></tr></tbody></table></div>
+      <p class="formula">pair = 100 × ${fit.fit.toFixed(3)} × ${ip.path.toFixed(2)} = ${p.score.toFixed(1)}</p>
+      <p>${esc(route(p))}. ${ip.board_people.length ? `Companies House lists them as a director of ${esc(pretty(p.brand))} and the fund's team page lists them too.` : ""}</p>`;
+    document.getElementById("wx-sel").addEventListener("change", e => { wx = +e.target.value; renderWorked(); });
   }
-
-  // ---------- Ranking: weights panel
-  const sl = document.getElementById("sliders");
-  sl.innerHTML = PILLARS.map(p => `<div class="slider">
-    <label for="w-${p.key}"><span><span class="dot" style="background:${p.color}"></span>${p.label}</span><output id="o-${p.key}"></output></label>
-    <input type="range" id="w-${p.key}" min="0" max="100" step="5" value="${Math.round(100 * W[p.key])}"></div>`).join("");
-  document.getElementById("sig-sliders").innerHTML = sigRows((p, s) => `<td style="width:42%"><div class="sig-w"><input type="range" min="0" max="100" step="5" data-p="${p.key}" data-k="${s[0]}" value="${Math.round(100 * SW0[p.key][s[0]])}" aria-label="Weight of ${esc(s[1])}"><output id="sw-${p.key}-${s[0]}"></output></div></td>`);
-  const sigInputs = [...document.querySelectorAll("#sig-sliders input")];
-  function readW() {
-    const raw = Object.fromEntries(PILLARS.map(p => [p.key, +document.getElementById("w-" + p.key).value]));
-    const sum = Object.values(raw).reduce((a, b) => a + b, 0) || 1;
-    W = Object.fromEntries(Object.entries(raw).map(([k, v]) => [k, v / sum]));
-    PILLARS.forEach(p => document.getElementById("o-" + p.key).textContent = Math.round(100 * W[p.key]) + "%");
-    document.getElementById("formula-score").textContent = "score = 100 × (" + PILLARS.map(p => Math.round(100 * W[p.key]) + "% " + p.key).join(" + ") + ")";
-  }
-  function readSW() {
-    PILLARS.forEach(p => {
-      const ins = sigInputs.filter(x => x.dataset.p === p.key), sum = ins.reduce((a, x) => a + +x.value, 0);
-      ins.forEach(x => {
-        SW[p.key][x.dataset.k] = sum ? +x.value / sum : 1 / ins.length;
-        document.getElementById(`sw-${p.key}-${x.dataset.k}`).textContent = Math.round(100 * SW[p.key][x.dataset.k]) + "%";
-      });
-    });
-  }
-  sl.addEventListener("input", () => { readW(); render(); });
-  document.getElementById("sig-sliders").addEventListener("input", () => { readSW(); render(); renderWorked(); });
-  document.getElementById("reset").addEventListener("click", () => {
-    PILLARS.forEach(p => document.getElementById("w-" + p.key).value = Math.round(100 * DEFAULT_W[p.key]));
-    sigInputs.forEach(x => x.value = Math.round(100 * SW0[x.dataset.p][x.dataset.k]));
-    readW(); readSW(); render(); renderWorked();
-  });
-  const tuneBtn = document.getElementById("tune-btn");
-  tuneBtn.addEventListener("click", () => {
-    const t = document.getElementById("tune"); t.hidden = !t.hidden;
-    tuneBtn.setAttribute("aria-expanded", String(!t.hidden)); tuneBtn.textContent = t.hidden ? "Adjust weights" : "Hide weights";
-  });
-
-  // ---------- Ranking: tier strip and board
-  document.getElementById("legend").innerHTML = PILLARS.map(p => `<span><span class="dot" style="background:${p.color}"></span>${p.label}</span>`).join("") + `<span>· bar = what each pillar adds</span>`;
-  const AX = 60;
-  document.getElementById("ticks").innerHTML = [0, 20, 40, 60].map(v => `<span style="left:${100 * v / AX}%">${v}</span>`).join("");
-  // Where the tier lines sit relative to the gaps between scores, at the default weights
-  const gaps = BASE.slice(0, 12).map((r, i, a) => i ? { hi: a[i - 1].score, lo: r.score } : null).filter(Boolean);
-  const gapAt = line => gaps.find(g => g.hi >= line && g.lo < line);
-  function renderStrip() {
-    const t = C.tiers, MAX = 60, pct = v => `calc(16px + (100% - 32px) * ${(Math.min(v, MAX) / MAX).toFixed(4)})`;
-    const top20 = current.slice(0, 20), lanes = [];
-    const pins = [...top20].sort((a, b) => a.score - b.score).map(r => {
-      let lane = lanes.findIndex(x => r.score - x > 2.4); if (lane < 0) lane = Math.min(lanes.length, 3);
-      lanes[lane] = r.score;
-      return { r, y: 36 + lane * 20 };
-    });
-    const odd = top20.filter(r => r.score >= t.A.min_score && r.fd.live < t.A.min_brands);
-    document.getElementById("strip").innerHTML = `
-      <div class="zone" style="left:0;width:${pct(t.B.min_score)}"><span>C<i class="long"> · below ${t.B.min_score}</i></span></div>
-      <div class="zone zb" style="left:${pct(t.B.min_score)};width:calc((100% - 32px) * ${((t.A.min_score - t.B.min_score) / MAX).toFixed(4)})"><span>B<i class="long"> · ${t.B.min_score}+</i></span></div>
-      <div class="zone za" style="left:${pct(t.A.min_score)};right:0"><span>A<i class="long"> · ${t.A.min_score}+ and ${t.A.min_brands}+ brands</i></span></div>
-      ${pins.map(d => `<button type="button" class="pin ${d.r.fd.live < t.A.min_brands ? "thin" : ""} ${selected === d.r.fd.name ? "on" : ""}" style="left:${pct(d.r.score)};top:${d.y}px" data-n="${esc(d.r.fd.name)}" title="${esc(d.r.fd.name)} · ${d.r.score.toFixed(1)} · ${plural(d.r.fd.live, "target brand")} · Tier ${d.r.tier}" aria-label="${esc(d.r.fd.name)}, Tier ${d.r.tier}"></button>`).join("")}
-      ${pins.filter(d => odd.includes(d.r)).map(d => `<span class="flag" style="left:${pct(d.r.score)};top:124px">↑ ${esc(d.r.fd.name.split(" ")[0])}: ${plural(d.r.fd.live, "brand")}</span>`).join("")}
-      <div class="axis-x">${[0, 10, 20, 30, 40, 50, 60].map(v => `<span style="left:${pct(v)}">${v}</span>`).join("")}</div>`;
-    document.querySelectorAll("#strip .pin").forEach(b => b.addEventListener("click", () => select(b.dataset.n, true)));
-    const gA = gapAt(t.A.min_score), gB = gapAt(t.B.min_score);
-    document.getElementById("tier-note").innerHTML = `Each dot is a shortlisted fund placed by its score; filled dots hold ${t.A.min_brands} or more target brands, hollow dots fewer.` +
-      (gA && gB ? ` The A line sits in the gap between ${gA.hi.toFixed(1)} and ${gA.lo.toFixed(1)}, and the B line in the gap between ${gB.hi.toFixed(1)} and ${gB.lo.toFixed(1)}.` : "") +
-      odd.map(r => ` <b>${esc(r.fd.name)}</b> scores ${r.score.toFixed(1)}, above the A line, but holds ${plural(r.fd.live, "target brand")}, so it is Tier B.`).join("");
-  }
-  let selected = null, current = [];
-  function render() {
-    current = scoreAll(W);
-    const board = document.getElementById("board");
-    board.innerHTML = "";
-    current.forEach((r, i) => {
-      if (i === 20) board.insertAdjacentHTML("beforeend", `<div class="cut">Shortlist cut-off · below this line, not in the top 20</div>`);
-      const delta = baseRank[r.fd.name] - (i + 1);
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "row" + (i >= 20 ? " out" : "") + (selected === r.fd.name ? " on" : "");
-      btn.innerHTML = `<span class="r">${i + 1}</span>
-        <span class="f">${esc(r.fd.name)}<small>${r.fd.type} · ${plural(r.fd.live, "target brand")}</small></span>
-        <span class="tier ${r.tier}">${r.tier}</span>
-        <span class="stackcell"><span class="stack" title="${PILLARS.map(p => p.label + " " + r.parts[p.key].toFixed(1)).join(" · ")}">${PILLARS.map(p => `<span style="width:${(100 * r.parts[p.key] / AX).toFixed(2)}%;background:${p.color}"></span>`).join("")}</span></span>
-        <span class="s">${r.score.toFixed(1)}</span>
-        <span class="d ${delta > 0 ? "up" : delta < 0 ? "down" : ""}">${delta > 0 ? "▲" + delta : delta < 0 ? "▼" + -delta : ""}</span>`;
-      btn.addEventListener("click", () => select(r.fd.name, true));
-      board.appendChild(btn);
-    });
-    renderStrip();
-    if (selected) renderDossier(selected);
-    if (window.__resizeMap) window.__resizeMap();
-  }
+  renderWorked();
 
   // ---------- Dossier
-  const STATUS_LABEL = { current: "Still held", unknown: "Holding not confirmed" };
-  const STATUS_TIP = { current: "The fund's site, recent news or Companies House shows it still holds a stake.", unknown: `The fund lists the brand but doesn't say whether it still holds a stake, so it counts at ${Math.round(100 * C.status_weight.unknown)}%.` };
-  const RB = D.retailer_blurbs || {};
-  const SIZE_LABEL = band => !band ? "" : band.startsWith("full") ? "files full accounts (usually medium or large)"
-    : band.startsWith("group") ? "files group accounts (usually medium or large)" : band.startsWith("dormant") ? "trades through another entity"
-    : band.startsWith("audit-exemption") ? "subsidiary of a larger group" : band;
-  let drawerOpen = false;
-  function select(name, open) { selected = name; render(); if (open) openDrawer(); paintMap(); }
-  function dossierHTML(r) {
-    const fd = r.fd, rank = current.indexOf(r) + 1;
-    const pillars = PILLARS.map(p => `<div style="border-color:${p.color}"><b>${Math.round(100 * r.p[p.key])}</b><span>${p.label}</span></div>`).join("");
-    const bs = [...fd.brands].sort((a, b) => (a.status === "current" ? 0 : 1) - (b.status === "current" ? 0 : 1) || b.retailers.length - a.retailers.length);
-    const brands = bs.map(b => {
-      const B = brandsByName[b.brand] || {}, trig = (B.triggers || [])[0], ch = B.companies_house;
-      const ops = (B.ops_roles || []).slice(0, 2).map(o => o.title).join(", ");
-      return `<div class="bi"><div class="top"><b>${B.website ? `<a href="${esc(B.website)}" target="_blank" rel="noopener">${esc(pretty(b.brand))}</a>` : esc(pretty(b.brand))}</b>
-          <span class="status ${b.status}" title="${esc(STATUS_TIP[b.status] + (b.status_source && b.status_source !== "portfolio page" ? " Source: " + b.status_source : ""))}">${STATUS_LABEL[b.status] || ""}</span>
-          ${(B.stack || []).length > 1 ? `<span class="hot" title="Triggers in the last 12 months">${B.stack.map(k => STACK_LABEL[k]).join(" + ")}</span>` : ""}</div>
-        ${B.blurb ? `<p>${esc(B.blurb)}</p>` : ""}
-        <div class="chips">${b.retailers.length ? b.retailers.map(x => { const proof = ((B.retailers || []).find(q => q.name === x) || {}).source_url, tip = esc(x + (RB[x] ? ": " + RB[x] : ""));
-          return proof ? `<a class="chip" href="${esc(proof)}" target="_blank" rel="noopener" title="${tip} · open the proof">${esc(x)}</a>` : `<span class="chip" title="${tip}">${esc(x)}</span>`; }).join("") : `<span class="chip ghost">no UK retailer confirmed</span>`}</div>
-        ${ch ? `<p>Companies House: <a href="${esc(ch.url)}" target="_blank" rel="noopener">${esc(ch.company_name || "")}</a>${SIZE_LABEL(ch.size_band) ? " · " + esc(SIZE_LABEL(ch.size_band)) : ""}${ch.share_allotments_24m ? ` · ${plural(ch.share_allotments_24m, "share issue")} in 24 months` : ""}${ch.charges_24m ? " · new debt facility" : ""}</p>` : ""}
-        ${trig ? `<p>${esc(trig.date.slice(0, 7))} · <a href="${esc(trig.url)}" target="_blank" rel="noopener">${esc(trig.headline)}</a></p>` : ""}
-        ${ops ? `<p>Hiring: ${esc(ops)}</p>` : ""}</div>`;
-    }).join("");
-    const side = [];
-    if (fd.people.length) side.push(`<div><p class="label">Who to ask for the intro</p><ul>${fd.people.map(p => `<li><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.name)}</a>, <span class="muted">${esc(p.title)}</span></li>`).join("")}</ul></div>`);
-    if (fd.overlap.length) side.push(`<div><p class="label">Procuros customers it already backs</p><p>${esc(list(fd.overlap))}: a reference the founder can call.</p></div>`);
-    if (fd.set_aside.length) side.push(`<div><p class="label">Not counted</p><ul>${fd.set_aside.map(x => `<li>${esc(pretty(x.brand))} <span class="muted">· ${esc(x.reason)}</span></li>`).join("")}</ul></div>`);
-    side.push(`<div><p class="label">Sources</p><ul>${[fd.website, ...fd.portfolio_urls].filter(Boolean).map(u => `<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(host(u) + new URL(u).pathname.replace(/\/$/, ""))}</a></li>`).join("")}</ul></div>`);
-    return `<div class="dos-head"><h2>${esc(fd.name)}</h2><span class="tier ${r.tier}">${r.tier}</span></div>
-      <p class="facts">#${rank} of ${current.length} · score ${r.score.toFixed(1)} · ${fd.type} · ${plural(fd.live, "target brand")} · data on ${fd.coverage} of 16 signals${fd.about ? `<br>${esc(fd.about)}` : ""}</p>
-      <p class="callout">${esc(tierWhy(r))}</p>
-      <div class="pillars">${pillars}</div>
-      <div style="display:grid;gap:4px"><p class="label">Target brands</p><div>${brands}</div></div>
-      <div class="side">${side.join("")}</div>`;
+  let selected = null, drawerOpen = false;
+  function select(name) { selected = name; document.querySelectorAll(".opp-row").forEach(b => b.classList.toggle("on", b.dataset.f === name)); openDrawer(); paintMap(); }
+  function pairCard(p) {
+    const ev = p.fit.evidence, ip = p.intro, B = brandsByName[p.brand] || {};
+    const retail = ev.reach.items.length ? ev.reach.items.map(r => `<a class="chip" href="${esc(r.url)}" target="_blank" rel="noopener" title="Open the proof">${esc(r.name)}</a>`).join("") : `<span class="chip ghost">none confirmed</span>`;
+    const now = ev.why_now.items.slice(0, 3).map(t => `<span>${t.date ? esc(t.date.slice(0, 7)) + " · " : ""}${link(t.url, t.text)}</span>`).join("<br>") || "none found in 24 months";
+    const who = [
+      ...ip.board_people.map(x => `${link(x.url, x.name)}, director of ${esc(pretty(p.brand))}${x.since ? " since " + esc(x.since.slice(0, 4)) : ""}${x.team_page ? ` · ${link(x.team_page, "on the fund's team page")}` : ""}`),
+      ...(ip.board_people.length ? [] : ip.fund_entity.map(x => `${link(x.url, x.name)} · ${esc(x.role)}`)),
+      ...ip.ops_people.map(x => `${link(x.url, x.name)}, ${esc(x.title)}`),
+    ];
+    return `<div class="pc"><div class="top"><b>${B.website ? link(B.website, pretty(p.brand)) : esc(pretty(p.brand))}</b>
+        <span class="bdg ${ip.strength}">${ip.strength} route</span><span class="bdg ${p.confidence}">${p.confidence} confidence</span><span class="s">${p.score.toFixed(1)}</span></div>
+      ${B.blurb ? `<p class="muted">${esc(B.blurb)}</p>` : ""}
+      <div class="ev">
+        <span>Retail reach</span><span class="chips">${stateTag(ev.reach.state)} ${retail}</span>
+        <span>Why now</span><span>${stateTag(ev.why_now.state)} ${now}</span>
+        <span>Size</span><span>${stateTag(ev.size.state)} ${ev.size.url && ev.size.state === "confirmed" ? link(ev.size.url, ev.size.note) : esc(ev.size.note)}</span>
+        <span>UK company</span><span>${stateTag(ev.uk.state)} ${ev.uk.url && ev.uk.state === "confirmed" ? link(ev.uk.url, ev.uk.note) : esc(ev.uk.note)}</span>
+        <span>Manual processes</span><span>${stateTag("not observable")} ask on the first call</span>
+        <span>Holding</span><span>${stateTag(ip.held.state)} ${esc(ip.held.source.length > 120 ? ip.held.source.slice(0, 117) + "…" : ip.held.source)}</span>
+        <span>Who to ask</span><span>${who.length ? who.join("<br>") : "No named route yet: find the deal partner"}</span>
+      </div></div>`;
   }
-  function renderDossier(name) {
-    const r = current.find(x => x.fd.name === name); if (!r || !drawerOpen) return;
-    document.getElementById("drawer-body").innerHTML = dossierHTML(r);
-    const i = current.indexOf(r);
-    document.getElementById("dr-prev").disabled = i === 0;
-    document.getElementById("dr-next").disabled = i === current.length - 1;
+  function dossierHTML(f) {
+    const side = [];
+    if (f.procuros_overlap.length) side.push(`<div><p class="label">Procuros customers it already backs</p><p>${esc(list(f.procuros_overlap))}: a reference the founder can call.</p></div>`);
+    if (f.set_aside.length) side.push(`<div><p class="label">Not counted</p><ul>${f.set_aside.map(x => `<li>${esc(pretty(x.brand))} <span class="muted">· ${esc(x.reason)}</span></li>`).join("")}</ul></div>`);
+    if (f.support.length) side.push(`<div><p class="label">Portfolio support it shows</p><ul>${f.support.map(c => `<li>${link(c.url, c.text)}</li>`).join("")}</ul></div>`);
+    side.push(`<div><p class="label">Sources</p><ul>${[f.website, ...(f.portfolio_urls || [])].filter(Boolean).map(u => `<li>${link(u, host(u) + new URL(u).pathname.replace(/\/$/, ""))}</li>`).join("")}</ul></div>`);
+    return `<div class="dos-head"><h2>${esc(f.fund)}</h2>${f.tier !== "-" ? `<span class="tier ${f.tier}">${f.tier}</span>` : ""}</div>
+      <p class="facts">${f.selected ? `#${f.rank} of ${C.shortlist_size}` : "Not in the 20"} · score ${f.score.toFixed(1)} · ${f.fund_type} · ${plural(f.pairs.length, "target brand")} · rank ${f.rank_range[0] === f.rank_range[1] ? "unchanged" : `between ${f.rank_range[0]} and ${f.rank_range[1]}`} across the weight tests${f.about ? `<br>${esc(f.about)}` : ""}</p>
+      <p class="callout">${esc(f.rationale)}</p>
+      <div><p class="label">Next steps</p><ol class="steps">${f.next_steps.map(s => `<li>${esc(s)}</li>`).join("")}</ol></div>
+      <div style="display:grid;gap:10px"><p class="label">Intro opportunities, best first</p>${f.pairs.map(pairCard).join("")}</div>
+      <div class="side">${side.join("")}</div>`;
   }
   const drawer = document.getElementById("drawer");
   let opener = null;
+  function renderDossier() {
+    const i = FUNDS.findIndex(f => f.fund === selected); if (i < 0 || !drawerOpen) return;
+    document.getElementById("drawer-body").innerHTML = dossierHTML(FUNDS[i]);
+    document.getElementById("dr-prev").disabled = i === 0;
+    document.getElementById("dr-next").disabled = i === FUNDS.length - 1;
+  }
   function openDrawer() {
     if (!drawerOpen) opener = document.activeElement;
     drawerOpen = true;
     drawer.classList.add("open"); drawer.setAttribute("aria-hidden", "false"); document.body.classList.add("drawer-on"); size();
-    renderDossier(selected); drawer.scrollTop = 0;
+    renderDossier(); drawer.scrollTop = 0;
     document.getElementById("dr-close").focus({ preventScroll: true });
   }
   function closeDrawer() {
@@ -780,7 +729,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     paintMap();
     if (opener && opener.isConnected) opener.focus({ preventScroll: true });
   }
-  const step = d => { const i = current.findIndex(x => x.fd.name === selected); const r = current[i + d]; if (r) select(r.fd.name, true); };
+  const step = d => { const i = FUNDS.findIndex(f => f.fund === selected); const f = FUNDS[i + d]; if (f) select(f.fund); };
   document.getElementById("dr-prev").addEventListener("click", () => step(-1));
   document.getElementById("dr-next").addEventListener("click", () => step(1));
   document.getElementById("dr-close").addEventListener("click", closeDrawer);
@@ -791,8 +740,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   });
 
   // ---------- Data notes
-  const s = D.stats, nt = s.targets;
-  const SA = s.set_aside;
+  const s = D.stats, nt = s.targets, SA = s.set_aside;
   document.getElementById("set-aside").innerHTML = [
     [SA["sold"], "fund–brand links set aside because the fund has sold the brand"],
     [SA["already a Procuros customer"], "set aside because the brand already uses Procuros (Tony's Chocolonely, Truestart)"],
@@ -800,14 +748,18 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   ].map(([v, l]) => `<p><b class="num">${v}</b> ${l}</p>`).join("");
   document.getElementById("coverage").innerHTML = [
     [s.brands_with_retailers, "have a major UK retailer confirmed by a product page or stockist list"],
-    [s.brands_with_ch, "are matched to Companies House (size, share issues, new debt)"],
+    [s.brands_with_ch, "are matched to a UK company at Companies House"],
     [s.brands_with_news, "have trade or press coverage in the last 24 months"],
-    [s.brands_stacked, "show 2 or more triggers in the last 12 months"],
+    [new Set(PAIRS.filter(p => p.intro.board_people.length).map(p => p.brand)).size, "have a director who is also on the backing fund's team page"],
     [s.brands_with_ops, "have open ops or supply-chain roles"],
   ].map(([v, l]) => `<div style="display:grid;gap:4px"><p><b class="num">${v}</b> ${l}</p><div class="track"><div class="fill" style="width:${(100 * v / nt).toFixed(1)}%"></div></div></div>`).join("");
   document.getElementById("failed").innerHTML = D.failed.filter(x => !/crowd|seedrs|angel/i.test(x.name) && !/ZX|Distill|SnackFutures/.test(x.name))
     .map(x => `<li><b>${esc(x.name)}</b>: ${esc(/\s/.test((x.note || "").trim()) ? x.note.split(/[.;(]/)[0] : "site didn't respond to the scraper")}</li>`).join("");
 
+  // ---------- Map
+  const BASE = SHORT.map(f => ({ score: f.score, fd: { name: f.fund, live: f.pairs.length, about: f.about, overlap: f.procuros_overlap,
+    people: f.pairs.some(p => p.intro.board_people.length || p.intro.ops_people.length) ? [1] : [],
+    brands: f.pairs.map(p => ({ brand: p.brand, retailers: p.fit.evidence.reach.items.map(r => r.name) })) } }));
   // ---------- Map (colours are CSS variables set as styles, so it follows the day / night switch)
   const svg = d3.select("#map-svg"), tip = document.getElementById("tip");
   const reachColor = k => ["var(--rule)", "var(--sel)", "var(--accent)"][k >= 3 ? 2 : k >= 1 ? 1 : 0];
@@ -893,8 +845,8 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     hot: { num: hot.length, title: "brands show 2+ triggers in the last 12 months",
       text: `${list(hot.slice(0, 3).map(n => pretty(n.name)))}${hot.length > 3 ? " and others" : ""} are in a buying moment now. They sit with ${hotFunds.length} of the 20 funds.`,
       brand: n => hot.includes(n), fund: f => hotFunds.includes(f) },
-    contacts: { num: named.length, title: "of 20 funds name a platform or portfolio-ops person",
-      text: `${list(named.slice(0, 3).map(r => short(r.fd.name)))}${named.length > 3 ? " and others" : ""} list someone whose job is helping portfolio companies: the person to ask for the intro.`,
+    contacts: { num: named.length, title: "of 20 funds have a named person who can make the intro",
+      text: `${list(named.slice(0, 3).map(r => short(r.fd.name)))}${named.length > 3 ? " and others" : ""} have a director on one of their brands' boards or a portfolio-ops contact: the person to ask.`,
       brand: n => named.some(r => fundBrands.get(r.fd.name).has(n.name)), fund: f => named.some(r => r.fd.name === f) },
     customers: { num: custFunds.length, title: `fund${custFunds.length === 1 ? " already backs" : "s already back"} a Procuros customer`,
       text: custFunds.length ? `${list(custFunds.map(r => short(r.fd.name)))} back${custFunds.length === 1 ? "s" : ""} ${list([...new Set(custFunds.flatMap(r => r.fd.overlap))])}, so an intro comes with a reference the founder can call.` : "None of the 20 funds backs a current Procuros customer.",
@@ -923,9 +875,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   window.__resizeMap = () => sim.alpha(Math.max(sim.alpha(), 0.02)).restart();
   size();
 
-  // ---------- Start
-  readW(); readSW(); render(); renderWorked();
-  selected = BASE[0].fd.name; render();
+  // ---------- Tabs
   function showTab(id) {
     if (!TABS.includes(id)) id = "summary";
     TABS.forEach(t => {
@@ -947,7 +897,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   });
   document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.go)));
   const h = (location.hash || "#summary").slice(1);
-  showTab({ overview: "summary", thesis: "summary", pipeline: "method", signals: "method", dossier: "ranking", limits: "notes" }[h] || h);
+  showTab({ overview: "summary", thesis: "summary", ranking: "opps", pipeline: "method", signals: "method", dossier: "opps", limits: "notes" }[h] || h);
 })();
 </script>
 
