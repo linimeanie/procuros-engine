@@ -28,8 +28,14 @@ FOOD_CONTEXT = re.compile(r"\b(brand|food|drink|snack|launch|range|listing|stock
                           r"invest|acquir|deal|sales|growth|pet|beer|coffee|soda|crisps|chocolate|vegan|plant)\w*", re.I)
 LISTING_RE = re.compile(r"\b(listing|listed|lands|launch(es|ed)? (in|into|at)|rolls? out|enters|secures .* (deal|listing)|"
                         r"stock(ed|s)? (in|by|at)|shelves|nationwide)\b", re.I)
-FUNDING_RE = re.compile(r"\b(rais|fund|invest|backing|backed|round|seed|series [a-d]|crowdfund|stake|acquir|buy|bought|"
-                        r"deal|merge|takeover|sold)\w*", re.I)
+# Bare "fund" matched "innocent funds regenerative agriculture projects" and bare "buy" matched
+# "the One I'd Buy Every Time", so both are narrowed to their transactional forms.
+FUNDING_RE = re.compile(r"\b(rais|funding|fundrais|invest|backing|backed|round|seed|series [a-d]|crowdfund|stake|"
+                        r"acquir|bought|buyout|buy-out|deal|merge|takeover|sold)\w*", re.I)
+# Consumer reviews, taste tests, round-ups and interviews are not business events, however many
+# funding-ish words their headlines contain.
+NOT_EVENT_RE = re.compile(r"\b(review|reviewed|i tried|we tried|tried \d+|taste test|best \d+|top \d+|round-?up|"
+                          r"comparison|compared|versus|vs\.?|recipe|how to|interview|guilty|favourite|favorite)\b", re.I)
 EXPORT_RE = re.compile(r"\b(export|international|US|USA|Europe|overseas|global|expan)\w*", re.I)
 AMBIGUOUS = {"STOCKED", "Pure", "THIS", "Sneak", "Graze", "Grounded", "Punchy", "Ingenious", "MOTH", "Runa", "Griddle",
              "Reformed", "Freja", "All Things", "Some Grub", "Hovis"}
@@ -163,11 +169,12 @@ def build_brands(brands):
             named = [g for g, rx in GROCER_RE.items() if rx.search(head)]
             for g in named:
                 retail.setdefault(g, n["url"])
-            if named or LISTING_RE.search(head) or n.get("type") == "retailer_listing" and n["trade_press"]:
+            event = not NOT_EVENT_RE.search(head)  # a review that mentions a grocer is not a new listing
+            if event and (named or LISTING_RE.search(head) or n.get("type") == "retailer_listing" and n["trade_press"]):
                 listing_news.append(n)
-            if FUNDING_RE.search(head) or n.get("type") in ("funding", "acquisition"):
+            if event and (FUNDING_RE.search(head) or n.get("type") in ("funding", "acquisition")):
                 funding_news.append(n)
-            if n.get("type") == "export" or EXPORT_RE.search(head):
+            if event and (n.get("type") == "export" or EXPORT_RE.search(head)):
                 export_news.append(n)
         ch = CH.get(b["brand"])
         if ch:

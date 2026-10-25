@@ -57,6 +57,14 @@ def uk_fit(b):
     return 0.2, "unknown", "no UK entity or UK retailer found"
 
 
+def source_label(n):
+    """Where a signal came from, so a filing and a blog post don't look alike in the evidence list."""
+    if n.get("source") == "companies_house":
+        return "Companies House"
+    m = re.search(r"https?://(?:www\.)?([^/]+)", n.get("url") or "")
+    return m.group(1) if m else ""
+
+
 def why_now(b):
     """Recent change, not current state: new listings, money in, ops hiring, new markets. Volume of news is left out
     because it re-counts the same events."""
@@ -76,9 +84,20 @@ def brand_fit(b):
     size, size_ev, size_note = size_fit(b)
     uk, uk_ev, uk_note = uk_fit(b)
     fit = w["reach"] * reach + w["why_now"] * now + w["size"] * size + w["uk"] * uk
-    trig = sorted([n for n in b["listing_news"] + b["funding_news"] + b["export_news"] if n["trade_press"]],
-                  key=lambda n: n["date_parsed"], reverse=True)
-    trig = list({n["date_parsed"][:7]: n for n in reversed(trig)}.values())[::-1]  # one story per month: outlets re-run the same news
+    # Everything that scored is shown, with its source. Filtering the evidence list to trade press while scoring
+    # every signal meant Companies House filings were counted and then hidden, so the dossier read
+    # "checked, none found" next to a non-zero score.
+    tagged = [(kind, n) for kind, lst in (("listings", b["listing_news"]), ("funding", b["funding_news"]),
+                                          ("expansion", b["export_news"])) for n in lst]
+    tagged.sort(key=lambda kn: kn[1]["date_parsed"], reverse=True)
+    seen, seen_urls, trig = set(), set(), []
+    for kind, n in tagged:  # one item per month per signal per source type: outlets re-run the same news
+        key = (kind, n.get("source") == "companies_house", n["date_parsed"][:7])
+        if key in seen or n["url"] in seen_urls:  # one story can be both a listing and a funding event
+            continue
+        seen.add(key)
+        seen_urls.add(n["url"])
+        trig.append(n)
     return {
         "fit": round(fit, 3),
         "parts": {"reach": round(reach, 3), "why_now": now, "size": size, "uk": uk},
@@ -86,9 +105,12 @@ def brand_fit(b):
         "evidence": {
             "reach": {"state": "confirmed" if b["retailers"] else "checked, none found",
                       "items": [{"name": r["name"], "url": r["source_url"]} for r in b["retailers"]]},
-            "why_now": {"state": "confirmed" if trig or b["ops_roles"] else "checked, none found",
-                        "items": [{"date": n["date_parsed"][:10], "text": n["headline"], "url": n["url"]} for n in trig[:3]]
-                                 + [{"date": None, "text": f"Hiring: {r['title']}", "url": r.get("url")} for r in b["ops_roles"][:2]]},
+            # State follows the score, not the display list: if any part scored above zero, something was found.
+            "why_now": {"state": "confirmed" if any(v > 0 for v in parts.values()) else "checked, none found",
+                        "items": [{"date": n["date_parsed"][:10], "text": n["headline"], "url": n["url"],
+                                   "source": source_label(n)} for n in trig[:3]]
+                                 + [{"date": None, "text": f"Hiring: {r['title']}", "url": r.get("url"),
+                                     "source": "job board"} for r in b["ops_roles"][:2]]},
             "size": {"state": size_ev, "note": size_note, "url": (b.get("companies_house") or {}).get("url")},
             "uk": {"state": uk_ev, "note": uk_note, "url": (b.get("companies_house") or {}).get("url")},
             "manual_process": {"state": "not observable", "note": "No public source shows how orders and invoices are handled; ask on the call."},
@@ -171,8 +193,14 @@ def next_step(f, best):
     return steps
 
 
+def is_qualified(x):
+    """Worth pursuing needs a score AND a person to ask: a pair with nobody named is not an intro route,
+    however well the brand fits."""
+    return x["score"] >= P["qualified_pair"] and bool(x["intro"]["board_people"] or x["intro"]["ops_people"])
+
+
 def rationale(f, pairs):
-    good = [x for x in pairs if x["score"] >= P["qualified_pair"]][:3] or pairs[:1]
+    good = [x for x in pairs if x["qualified"]][:3] or pairs[:1]
     names = []
     for x in good:
         r = [i["name"] for i in x["fit"]["evidence"]["reach"]["items"]][:2]
@@ -209,11 +237,13 @@ def main():
             fit, path = brand_fit(b), intro_path(f, fb)
             pairs.append({"brand": fb["brand"], "score": round(100 * fit["fit"] * path["path"], 1), "fit": fit, "intro": path,
                           "confidence": confidence(fit, path), "fund_source": (b.get("fund_sources") or [None])[0]})
+        for x in pairs:
+            x["qualified"] = is_qualified(x)
         pairs.sort(key=lambda x: -x["score"])
         d = P["aggregate_decay"]
         score = round(sum(w * x["score"] for w, x in zip(d, pairs)) / sum(d), 1)
         rows.append({"fund": f["fund"], "fund_type": f["fund_type"], "score": score, "pairs": pairs,
-                     "qualified": sum(1 for x in pairs if x["score"] >= P["qualified_pair"]),
+                     "qualified": sum(1 for x in pairs if x["qualified"]),
                      "set_aside": f.get("set_aside", []), "procuros_overlap": sorted(set(f["evidence"]["procuros_overlap"])),
                      "ops_people": f["evidence"]["platform_people"][:3], "support": (f["evidence"]["community"] + f["evidence"]["vendor"])[:3]})
     rows.sort(key=lambda r: -r["score"])

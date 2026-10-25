@@ -205,7 +205,7 @@
    "signals_total": 16
   },
   "rank": 1,
-  "why": "8 UK grocery brands held now or exited <24m, incl. Northern Monk (Morrisons/Tesco/Ocado), All Things (Ocado/Asda/Morrisons), Freja (Tesco/Ocado/Holland & Barrett); recent trigger: Northern Monk: \"Russell Bisset: how Northern Monk is keeping the faith\" (2025-05); named portfolio/platform contact: Tom Curling (Operating Partner)."
+  "why": "8 UK grocery brands still held, incl. Northern Monk (Morrisons/Tesco/Ocado), All Things (Ocado/Asda/Morrisons), Freja (Tesco/Ocado/Holland & Barrett); recent trigger: Northern Monk: \"Russell Bisset: how Northern Monk is keeping the faith\" (2025-05); named portfolio/platform contact: Tom Curling (Operating Partner)."
  },
  {
   "fund": "Veg Capital",
@@ -263,7 +263,7 @@
     "status": "unknown",
     "status_source": "portfolio page",
     "fit": 1.0,
-    "pain": 0.144,
+    "pain": 0.119,
     "retailers": [
      "Tesco",
      "Sainsbury's",
@@ -328,7 +328,7 @@
    "fmcg_share": 0.4027777777777778,
    "avg_brand_fit": 0.7969999999999999,
    "recent_deals": 2,
-   "pain_top": 0.22568000000000002,
+   "pain_top": 0.22143000000000002,
    "platform_team": 0,
    "community": 0,
    "size_stage": 1.0,
@@ -350,7 +350,7 @@
   "gate": 1.0,
   "pillars": {
    "fit": 0.888,
-   "pain": 0.226,
+   "pain": 0.221,
    "access": 0.15,
    "strategic": 0.263
   },
@@ -359,7 +359,7 @@
    "fmcg_share": 1.0,
    "avg_brand_fit": 0.797,
    "recent_deals": 1.0,
-   "pain_top": 0.22568,
+   "pain_top": 0.22143,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 1.0,
@@ -368,7 +368,7 @@
    "brand_halo": 0.875,
    "ecosystem": 0.0
   },
-  "score": 47.9,
+  "score": 47.8,
   "live_brand_count": 8,
   "tier": "A",
   "coverage": {
@@ -377,238 +377,7 @@
    "signals_total": 16
   },
   "rank": 2,
-  "why": "8 UK grocery brands held now or exited <24m, incl. OGGS (Tesco/Sainsbury's/Asda), THIS (Tesco/Sainsbury's/Asda), Mister Free'd (Sainsbury's/Waitrose/Ocado); recent trigger: OGGS: \"My Alternative CV: Oggs CEO Hannah Carter on dyslexia, buyer meetings and animal welfare\" (2025-01)."
- },
- {
-  "fund": "SFC Capital",
-  "fund_type": "VC",
-  "website": "https://sfccapital.com",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://portal.sfccapital.com/portfolio"
-  ],
-  "company_count": 436,
-  "brands": [
-   {
-    "brand": "Free Soul",
-    "status": "current",
-    "status_source": "partial exit only, fund still holds: SFC Capital Partially Exits Free Soul 29 Jul 2026 · SFC Capital announces a partial exit from Free Soul with a 3.9x return, highlighting the (2026) (https://sfccapital.com/blog/free-soul-partial-exit)",
-    "fit": 0.92,
-    "pain": 0.589,
-    "retailers": [
-     "Boots",
-     "Holland & Barrett",
-     "Tesco",
-     "Ocado",
-     "Waitrose",
-     "Sainsbury's"
-    ]
-   },
-   {
-    "brand": "Olly's",
-    "status": "current",
-    "status_source": "portfolio card says partial exit (still holds): Partial Exit Olly's Naturally delicious snacks designed to feed your feel good. www.ollys-ollys.com (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.9,
-    "pain": 0.024,
-    "retailers": [
-     "Tesco",
-     "Sainsbury's",
-     "Ocado",
-     "Waitrose",
-     "Asda"
-    ]
-   },
-   {
-    "brand": "G Spot",
-    "status": "current",
-    "status_source": "fund invested recently, no exit found: invested in G Spot (2026) (https://pitchbook.com/profiles/company/528824-35)",
-    "fit": 0.812,
-    "pain": 0.732,
-    "retailers": [
-     "Ocado",
-     "Sainsbury's",
-     "M&S"
-    ]
-   },
-   {
-    "brand": "Ingenious",
-    "status": "current",
-    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.27,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Sweet Joe's",
-    "status": "current",
-    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.512,
-    "pain": 0.0,
-    "retailers": [
-     "Asda"
-    ]
-   },
-   {
-    "brand": "Griddle",
-    "status": "current",
-    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Hunter & Gather",
-    "status": "current",
-    "status_source": "partial exit only, fund still holds: Hunter & Gather: 12.3x partial exit for SFC Angel Fund SEIS - Wealth Club 13 Aug 2026 · SFC Capital recently announced its partial exit of n (2026) (https://www.wealthclub.co.uk/news-and-insights/hunter-gather-123x-partial-exit-for-sfc-angel-fund-seis/)",
-    "fit": 0.9,
-    "pain": 0.374,
-    "retailers": [
-     "Waitrose",
-     "Ocado",
-     "Holland & Barrett",
-     "Tesco"
-    ]
-   },
-   {
-    "brand": "Punchy",
-    "status": "current",
-    "status_source": "fund invested recently, no exit found: Invest, and SFC Capital have invested in Punchy (2026) (https://pitchbook.com/profiles/company/226810-72)",
-    "fit": 0.9,
-    "pain": 0.221,
-    "retailers": [
-     "Ocado",
-     "Holland & Barrett",
-     "Boots",
-     "Sainsbury's",
-     "Waitrose"
-    ]
-   },
-   {
-    "brand": "ON Beer",
-    "status": "current",
-    "status_source": "fund invested recently, no exit found: invested in ON Beer (2026) (https://pitchbook.com/profiles/company/937238-23)",
-    "fit": 0.35,
-    "pain": 0.1,
-    "retailers": []
-   },
-   {
-    "brand": "Some Grub",
-    "status": "current",
-    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.438,
-    "pain": 0.064,
-    "retailers": [
-     "Co-op"
-    ]
-   },
-   {
-    "brand": "Gusto Snacks",
-    "status": "current",
-    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.438,
-    "pain": 0.038,
-    "retailers": [
-     "Holland & Barrett"
-    ]
-   },
-   {
-    "brand": "Naturelly Jelly Juice",
-    "status": "current",
-    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Oteas",
-    "status": "current",
-    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Hope & Glory",
-    "status": "current",
-    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   },
-   {
-    "brand": "Solo Coffee",
-    "status": "current",
-    "status_source": "fund invested recently, no exit found: invested in Solo Coffee (2026) (https://pitchbook.com/profiles/company/234578-71)",
-    "fit": 0.562,
-    "pain": 0.248,
-    "retailers": [
-     "Tesco"
-    ]
-   },
-   {
-    "brand": "TOSS",
-    "status": "current",
-    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
-    "fit": 0.35,
-    "pain": 0.0,
-    "retailers": []
-   }
-  ],
-  "raw": {
-   "icp_count": 8.752,
-   "fmcg_share": 0.03669724770642202,
-   "avg_brand_fit": 0.547,
-   "recent_deals": 2,
-   "pain_top": 0.4328,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 1.0,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 6,
-   "ecosystem": 0
-  },
-  "set_aside": [],
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": [
-    "Free Soul"
-   ]
-  },
-  "gate": 1.0,
-  "pillars": {
-   "fit": 0.728,
-   "pain": 0.433,
-   "access": 0.15,
-   "strategic": 0.225
-  },
-  "normalised": {
-   "icp_count": 1.0,
-   "fmcg_share": 0.09111,
-   "avg_brand_fit": 0.547,
-   "recent_deals": 1.0,
-   "pain_top": 0.4328,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 1.0,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.75,
-   "ecosystem": 0.0
-  },
-  "score": 47.3,
-  "live_brand_count": 16,
-  "tier": "A",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": 10,
-   "signals_total": 16
-  },
-  "rank": 3,
-  "why": "16 UK grocery brands held now or exited <24m, incl. Free Soul (Boots/Holland & Barrett/Tesco), Punchy (Ocado/Holland & Barrett/Boots), Olly's (Tesco/Sainsbury's/Ocado); recent trigger: Free Soul: \"Free Soul lands in more than 60 Boots stores nationwide\" (2025-09)."
+  "why": "8 UK grocery brands still held, incl. OGGS (Tesco/Sainsbury's/Asda), THIS (Tesco/Sainsbury's/Asda), Mister Free'd (Sainsbury's/Waitrose/Ocado); recent trigger: One Planet Pizza: \"One Planet Pizza Enters Frozen Ready Meals With Three-Dish Asda Exclusive\" (2026-10)."
  },
  {
   "fund": "Maven Capital Partners",
@@ -806,151 +575,8 @@
    "signals_with_data": 12,
    "signals_total": 16
   },
-  "rank": 4,
-  "why": "2 UK grocery brands held now or exited <24m, incl. Tom Parker Creamery (Sainsbury's/Ocado/Waitrose), Tiba Tempeh (Sainsbury's/Waitrose/Ocado); recent trigger: Tom Parker Creamery: \"Tom Parker Creamery expands range with Golden Milk\" (2026-10); named portfolio/platform contact: Carl Edgehill (Portfolio Director)."
- },
- {
-  "fund": "Piper",
-  "fund_type": "PE",
-  "website": "https://piper.co.uk",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://piper.co.uk/our-brands/"
-  ],
-  "company_count": 44,
-  "brands": [
-   {
-    "brand": "Borough Broth",
-    "status": "current",
-    "status_source": "Companies House PSC: Piper Private Equity Fund Vii Lp (https://find-and-update.company-information.service.gov.uk/company/09590728/persons-with-significant-control)",
-    "fit": 1.0,
-    "pain": 0.838,
-    "retailers": [
-     "Sainsbury's",
-     "Tesco",
-     "Waitrose",
-     "Ocado"
-    ]
-   },
-   {
-    "brand": "Wild Nutrition",
-    "status": "current",
-    "status_source": "Companies House PSC: Piper Vi Gp Llp (https://find-and-update.company-information.service.gov.uk/company/08022597/persons-with-significant-control)",
-    "fit": 0.82,
-    "pain": 0.213,
-    "retailers": [
-     "Holland & Barrett",
-     "Boots",
-     "Ocado",
-     "Sainsbury's"
-    ]
-   },
-   {
-    "brand": "Reeve the Baker",
-    "status": "current",
-    "status_source": "portfolio page",
-    "fit": 0.55,
-    "pain": 0.12,
-    "retailers": []
-   }
-  ],
-  "raw": {
-   "icp_count": 2.37,
-   "fmcg_share": 0.06818181818181818,
-   "avg_brand_fit": 0.79,
-   "recent_deals": 2,
-   "pain_top": 0.39033333333333337,
-   "platform_team": 1,
-   "community": 1,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 4,
-   "ecosystem": 0
-  },
-  "set_aside": [
-   {
-    "brand": "PROPER SNACKS",
-    "reason": "sold",
-    "status": "exited_old"
-   },
-   {
-    "brand": "Mindful Chef",
-    "reason": "sold",
-    "status": "exited_old"
-   },
-   {
-    "brand": "Barking Heads",
-    "reason": "sold",
-    "status": "exited_old"
-   },
-   {
-    "brand": "Forthglade",
-    "reason": "sold",
-    "status": "exited_old"
-   },
-   {
-    "brand": "Bottlegreen",
-    "reason": "sold",
-    "status": "exited_old"
-   },
-   {
-    "brand": "Maximuscle",
-    "reason": "sold",
-    "status": "exited_old"
-   }
-  ],
-  "evidence": {
-   "platform_people": [
-    {
-     "name": "Annabel Feather",
-     "title": "Associate Partner, Talent",
-     "url": "https://piper.co.uk/our-team/"
-    }
-   ],
-   "community": [
-    {
-     "text": "Founder stories",
-     "url": "https://piper.co.uk/founder-stories"
-    }
-   ],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": [
-    "Borough Broth"
-   ]
-  },
-  "gate": 1.0,
-  "pillars": {
-   "fit": 0.582,
-   "pain": 0.39,
-   "access": 0.338,
-   "strategic": 0.15
-  },
-  "normalised": {
-   "icp_count": 0.533448,
-   "fmcg_share": 0.169279,
-   "avg_brand_fit": 0.79,
-   "recent_deals": 1.0,
-   "pain_top": 0.390333,
-   "platform_team": 0.333333,
-   "community": 0.333333,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.5,
-   "ecosystem": 0.0
-  },
-  "score": 43.3,
-  "live_brand_count": 3,
-  "tier": "A",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": 12,
-   "signals_total": 16
-  },
-  "rank": 5,
-  "why": "3 UK grocery brands held now or exited <24m, incl. Borough Broth (Sainsbury's/Tesco/Waitrose), Wild Nutrition (Holland & Barrett/Boots/Ocado), Reeve the Baker; recent trigger: Borough Broth: \"Borough Broth secures £7.5m investment to expand organic range\" (2025-12); named portfolio/platform contact: Annabel Feather (Associate Partner, Talent)."
+  "rank": 3,
+  "why": "2 UK grocery brands still held, incl. Tom Parker Creamery (Sainsbury's/Ocado/Waitrose), Tiba Tempeh (Sainsbury's/Waitrose/Ocado); recent trigger: Tom Parker Creamery: \"Tom Parker Creamery expands range with Golden Milk\" (2026-10); named portfolio/platform contact: Carl Edgehill (Portfolio Director)."
  },
  {
   "fund": "BGF",
@@ -1116,8 +742,380 @@
    "signals_with_data": 14,
    "signals_total": 16
   },
+  "rank": 4,
+  "why": "4 UK grocery brands still held, incl. THIS (Tesco/Sainsbury's/Asda), Scrumbles (Tesco/Sainsbury's/Asda), Joe & Seph’s (Ocado/Waitrose); recent trigger: Joe & Seph’s: \"Joe & Seph’s lands £100k Saudi supermarket deal with government backing\" (2026-09); named portfolio/platform contact: Andrew Taylor (Value Creation)."
+ },
+ {
+  "fund": "SFC Capital",
+  "fund_type": "VC",
+  "website": "https://sfccapital.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://portal.sfccapital.com/portfolio"
+  ],
+  "company_count": 436,
+  "brands": [
+   {
+    "brand": "Free Soul",
+    "status": "current",
+    "status_source": "partial exit only, fund still holds: SFC Capital Partially Exits Free Soul 29 Jul 2026 · SFC Capital announces a partial exit from Free Soul with a 3.9x return, highlighting the (2026) (https://sfccapital.com/blog/free-soul-partial-exit)",
+    "fit": 0.92,
+    "pain": 0.412,
+    "retailers": [
+     "Boots",
+     "Holland & Barrett",
+     "Tesco",
+     "Ocado",
+     "Waitrose",
+     "Sainsbury's"
+    ]
+   },
+   {
+    "brand": "Olly's",
+    "status": "current",
+    "status_source": "portfolio card says partial exit (still holds): Partial Exit Olly's Naturally delicious snacks designed to feed your feel good. www.ollys-ollys.com (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.9,
+    "pain": 0.024,
+    "retailers": [
+     "Tesco",
+     "Sainsbury's",
+     "Ocado",
+     "Waitrose",
+     "Asda"
+    ]
+   },
+   {
+    "brand": "G Spot",
+    "status": "current",
+    "status_source": "fund invested recently, no exit found: invested in G Spot (2026) (https://pitchbook.com/profiles/company/528824-35)",
+    "fit": 0.812,
+    "pain": 0.47,
+    "retailers": [
+     "Ocado",
+     "Sainsbury's",
+     "M&S"
+    ]
+   },
+   {
+    "brand": "Ingenious",
+    "status": "current",
+    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.27,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Sweet Joe's",
+    "status": "current",
+    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.512,
+    "pain": 0.0,
+    "retailers": [
+     "Asda"
+    ]
+   },
+   {
+    "brand": "Griddle",
+    "status": "current",
+    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Hunter & Gather",
+    "status": "current",
+    "status_source": "partial exit only, fund still holds: Hunter & Gather: 12.3x partial exit for SFC Angel Fund SEIS - Wealth Club 13 Aug 2026 · SFC Capital recently announced its partial exit of n (2026) (https://www.wealthclub.co.uk/news-and-insights/hunter-gather-123x-partial-exit-for-sfc-angel-fund-seis/)",
+    "fit": 0.9,
+    "pain": 0.374,
+    "retailers": [
+     "Waitrose",
+     "Ocado",
+     "Holland & Barrett",
+     "Tesco"
+    ]
+   },
+   {
+    "brand": "Punchy",
+    "status": "current",
+    "status_source": "fund invested recently, no exit found: Invest, and SFC Capital have invested in Punchy (2026) (https://pitchbook.com/profiles/company/226810-72)",
+    "fit": 0.9,
+    "pain": 0.221,
+    "retailers": [
+     "Ocado",
+     "Holland & Barrett",
+     "Boots",
+     "Sainsbury's",
+     "Waitrose"
+    ]
+   },
+   {
+    "brand": "ON Beer",
+    "status": "current",
+    "status_source": "fund invested recently, no exit found: invested in ON Beer (2026) (https://pitchbook.com/profiles/company/937238-23)",
+    "fit": 0.35,
+    "pain": 0.1,
+    "retailers": []
+   },
+   {
+    "brand": "Some Grub",
+    "status": "current",
+    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.438,
+    "pain": 0.064,
+    "retailers": [
+     "Co-op"
+    ]
+   },
+   {
+    "brand": "Gusto Snacks",
+    "status": "current",
+    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.438,
+    "pain": 0.038,
+    "retailers": [
+     "Holland & Barrett"
+    ]
+   },
+   {
+    "brand": "Naturelly Jelly Juice",
+    "status": "current",
+    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Oteas",
+    "status": "current",
+    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Hope & Glory",
+    "status": "current",
+    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   },
+   {
+    "brand": "Solo Coffee",
+    "status": "current",
+    "status_source": "fund invested recently, no exit found: invested in Solo Coffee (2026) (https://pitchbook.com/profiles/company/234578-71)",
+    "fit": 0.562,
+    "pain": 0.248,
+    "retailers": [
+     "Tesco"
+    ]
+   },
+   {
+    "brand": "TOSS",
+    "status": "current",
+    "status_source": "on portfolio page without exit label (page labels exits elsewhere) (https://portal.sfccapital.com/portfolio)",
+    "fit": 0.35,
+    "pain": 0.0,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 8.752,
+   "fmcg_share": 0.03669724770642202,
+   "avg_brand_fit": 0.547,
+   "recent_deals": 1,
+   "pain_top": 0.345,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 6,
+   "ecosystem": 0
+  },
+  "set_aside": [],
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.672,
+   "pain": 0.345,
+   "access": 0.15,
+   "strategic": 0.225
+  },
+  "normalised": {
+   "icp_count": 1.0,
+   "fmcg_share": 0.09111,
+   "avg_brand_fit": 0.547,
+   "recent_deals": 0.63093,
+   "pain_top": 0.345,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 1.0,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.75,
+   "ecosystem": 0.0
+  },
+  "score": 42.5,
+  "live_brand_count": 16,
+  "tier": "A",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 10,
+   "signals_total": 16
+  },
+  "rank": 5,
+  "why": "16 UK grocery brands still held, incl. Free Soul (Boots/Holland & Barrett/Tesco), Punchy (Ocado/Holland & Barrett/Boots), Olly's (Tesco/Sainsbury's/Ocado); recent trigger: Free Soul: \"Free Soul lands in more than 60 Boots stores nationwide\" (2025-09)."
+ },
+ {
+  "fund": "Piper",
+  "fund_type": "PE",
+  "website": "https://piper.co.uk",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://piper.co.uk/our-brands/"
+  ],
+  "company_count": 44,
+  "brands": [
+   {
+    "brand": "Borough Broth",
+    "status": "current",
+    "status_source": "Companies House PSC: Piper Private Equity Fund Vii Lp (https://find-and-update.company-information.service.gov.uk/company/09590728/persons-with-significant-control)",
+    "fit": 1.0,
+    "pain": 0.838,
+    "retailers": [
+     "Sainsbury's",
+     "Tesco",
+     "Waitrose",
+     "Ocado"
+    ]
+   },
+   {
+    "brand": "Wild Nutrition",
+    "status": "current",
+    "status_source": "Companies House PSC: Piper Vi Gp Llp (https://find-and-update.company-information.service.gov.uk/company/08022597/persons-with-significant-control)",
+    "fit": 0.82,
+    "pain": 0.092,
+    "retailers": [
+     "Holland & Barrett",
+     "Boots",
+     "Ocado",
+     "Sainsbury's"
+    ]
+   },
+   {
+    "brand": "Reeve the Baker",
+    "status": "current",
+    "status_source": "portfolio page",
+    "fit": 0.55,
+    "pain": 0.12,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 2.37,
+   "fmcg_share": 0.06818181818181818,
+   "avg_brand_fit": 0.79,
+   "recent_deals": 2,
+   "pain_top": 0.35000000000000003,
+   "platform_team": 1,
+   "community": 1,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 4,
+   "ecosystem": 0
+  },
+  "set_aside": [
+   {
+    "brand": "PROPER SNACKS",
+    "reason": "sold",
+    "status": "exited_old"
+   },
+   {
+    "brand": "Mindful Chef",
+    "reason": "sold",
+    "status": "exited_old"
+   },
+   {
+    "brand": "Barking Heads",
+    "reason": "sold",
+    "status": "exited_old"
+   },
+   {
+    "brand": "Forthglade",
+    "reason": "sold",
+    "status": "exited_old"
+   },
+   {
+    "brand": "Bottlegreen",
+    "reason": "sold",
+    "status": "exited_old"
+   },
+   {
+    "brand": "Maximuscle",
+    "reason": "sold",
+    "status": "exited_old"
+   }
+  ],
+  "evidence": {
+   "platform_people": [
+    {
+     "name": "Annabel Feather",
+     "title": "Associate Partner, Talent",
+     "url": "https://piper.co.uk/our-team/"
+    }
+   ],
+   "community": [
+    {
+     "text": "Founder stories",
+     "url": "https://piper.co.uk/founder-stories"
+    }
+   ],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": [
+    "Borough Broth"
+   ]
+  },
+  "gate": 1.0,
+  "pillars": {
+   "fit": 0.582,
+   "pain": 0.35,
+   "access": 0.338,
+   "strategic": 0.15
+  },
+  "normalised": {
+   "icp_count": 0.533448,
+   "fmcg_share": 0.169279,
+   "avg_brand_fit": 0.79,
+   "recent_deals": 1.0,
+   "pain_top": 0.35,
+   "platform_team": 0.333333,
+   "community": 0.333333,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.5,
+   "ecosystem": 0.0
+  },
+  "score": 42.0,
+  "live_brand_count": 3,
+  "tier": "A",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 12,
+   "signals_total": 16
+  },
   "rank": 6,
-  "why": "4 UK grocery brands held now or exited <24m, incl. THIS (Tesco/Sainsbury's/Asda), Scrumbles (Tesco/Sainsbury's/Asda), Joe & Seph’s (Ocado/Waitrose); recent trigger: Joe & Seph’s: \"Joe & Seph’s lands £100k Saudi supermarket deal with government backing\" (2026-09); named portfolio/platform contact: Andrew Taylor (Value Creation)."
+  "why": "3 UK grocery brands still held, incl. Borough Broth (Sainsbury's/Tesco/Waitrose), Wild Nutrition (Holland & Barrett/Boots/Ocado), Reeve the Baker; recent trigger: Borough Broth: \"Borough Broth secures £7.5m investment to expand organic range\" (2025-12); named portfolio/platform contact: Annabel Feather (Associate Partner, Talent)."
  },
  {
   "fund": "JamJar Investments",
@@ -1208,7 +1206,7 @@
     "status": "current",
     "status_source": "fund invested recently, no exit found: invested in Popchips (2026) (https://pitchbook.com/profiles/company/231130-81)",
     "fit": 0.9,
-    "pain": 0.206,
+    "pain": 0.082,
     "retailers": [
      "Tesco",
      "Asda",
@@ -1225,7 +1223,7 @@
    "fmcg_share": 0.07922077922077922,
    "avg_brand_fit": 0.7293032786885245,
    "recent_deals": 0,
-   "pain_top": 0.22803,
+   "pain_top": 0.20323000000000002,
    "platform_team": 0,
    "community": 0,
    "size_stage": 1.0,
@@ -1274,7 +1272,7 @@
   "gate": 1.0,
   "pillars": {
    "fit": 0.52,
-   "pain": 0.228,
+   "pain": 0.203,
    "access": 0.15,
    "strategic": 0.663
   },
@@ -1283,7 +1281,7 @@
    "fmcg_share": 0.196686,
    "avg_brand_fit": 0.729303,
    "recent_deals": 0.0,
-   "pain_top": 0.22803,
+   "pain_top": 0.20323,
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 1.0,
@@ -1292,7 +1290,7 @@
    "brand_halo": 0.875,
    "ecosystem": 0.0
   },
-  "score": 37.3,
+  "score": 36.5,
   "live_brand_count": 7,
   "tier": "B",
   "coverage": {
@@ -1301,7 +1299,7 @@
    "signals_total": 16
   },
   "rank": 7,
-  "why": "7 UK grocery brands held now or exited <24m, incl. Popchips (Tesco/Asda/Sainsbury's), Lucky Saint (Tesco/Waitrose/Ocado), XOXO (Co-op/Ocado/Sainsbury's); recent trigger: XOXO: \"Xoxo Soda secures £4m funding and expands into national UK retail\" (2025-04); already backs Procuros customer Tony's Chocolonely, Truestart."
+  "why": "7 UK grocery brands still held, incl. Popchips (Tesco/Asda/Sainsbury's), Lucky Saint (Tesco/Waitrose/Ocado), XOXO (Co-op/Ocado/Sainsbury's); recent trigger: XOXO: \"Xoxo Soda secures £4m funding and expands into national UK retail\" (2025-04); already backs Procuros customer Tony's Chocolonely, Truestart."
  },
  {
   "fund": "Five Seasons Ventures",
@@ -1422,7 +1420,7 @@
    "signals_total": 16
   },
   "rank": 8,
-  "why": "4 UK grocery brands held now or exited <24m, incl. THIS (Tesco/Sainsbury's/Asda), dash-water (Tesco/Sainsbury's/Waitrose), Space Goods (Holland & Barrett/Sainsbury's/Tesco)."
+  "why": "4 UK grocery brands still held, incl. THIS (Tesco/Sainsbury's/Asda), dash-water (Tesco/Sainsbury's/Waitrose), Space Goods (Holland & Barrett/Sainsbury's/Tesco)."
  },
  {
   "fund": "Beringea",
@@ -1533,7 +1531,7 @@
    "signals_total": 16
   },
   "rank": 9,
-  "why": "3 UK grocery brands held now or exited <24m, incl. MOTH (Tesco/Sainsbury's/Asda), Lucky Saint (Tesco/Waitrose/Ocado), dash-water (Tesco/Sainsbury's/Waitrose)."
+  "why": "3 UK grocery brands still held, incl. MOTH (Tesco/Sainsbury's/Asda), Lucky Saint (Tesco/Waitrose/Ocado), dash-water (Tesco/Sainsbury's/Waitrose)."
  },
  {
   "fund": "Exponent",
@@ -1659,7 +1657,7 @@
    "signals_total": 16
   },
   "rank": 10,
-  "why": "3 UK grocery brands held now or exited <24m, incl. PROPER SNACKS (Ocado/Sainsbury's/Asda), Vibrant Foods (Asda/Tesco/Sainsbury's), Gü (Tesco/Co-op/Sainsbury's); recent trigger: Vibrant Foods: \"Vibrant Foods turnaround plan shows green shoots\" (2025-10)."
+  "why": "3 UK grocery brands still held, incl. PROPER SNACKS (Ocado/Sainsbury's/Asda), Vibrant Foods (Asda/Tesco/Sainsbury's), Gü (Tesco/Co-op/Sainsbury's); recent trigger: Vibrant Foods: \"Vibrant Foods turnaround plan shows green shoots\" (2025-10)."
  },
  {
   "fund": "Pembroke VCT",
@@ -1797,7 +1795,7 @@
    "signals_total": 16
   },
   "rank": 11,
-  "why": "1 UK grocery brand held now or exited <24m, incl. Hackney Gelato (Sainsbury's/Waitrose/Ocado); named portfolio/platform contact: Adrian Harris (Portfolio Director)."
+  "why": "1 UK grocery brand still held, incl. Hackney Gelato (Sainsbury's/Waitrose/Ocado); named portfolio/platform contact: Adrian Harris (Portfolio Director)."
  },
  {
   "fund": "Felix Capital",
@@ -1886,7 +1884,7 @@
    "signals_total": 16
   },
   "rank": 12,
-  "why": "2 UK grocery brands held now or exited <24m, incl. PerfectTed (Tesco/Ocado/Holland & Barrett), Pure; recent trigger: PerfectTed: \"PerfectTed secures blockbuster valuation in seven-figure VC investment round\" (2025-09)."
+  "why": "2 UK grocery brands still held, incl. PerfectTed (Tesco/Ocado/Holland & Barrett), Pure; recent trigger: PerfectTed: \"PerfectTed secures blockbuster valuation in seven-figure VC investment round\" (2025-09)."
  },
  {
   "fund": "Puma Private Equity",
@@ -2005,89 +2003,7 @@
    "signals_total": 16
   },
   "rank": 13,
-  "why": "3 UK grocery brands held now or exited <24m, incl. MOTH (Tesco/Sainsbury's/Asda), LOVE CORN (Sainsbury's/Ocado/Tesco), Lucky Saint (Tesco/Waitrose/Ocado)."
- },
- {
-  "fund": "The Craftory",
-  "fund_type": "VC",
-  "website": "https://www.thecraftory.io",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://www.thecraftory.io/investments"
-  ],
-  "company_count": 13,
-  "brands": [
-   {
-    "brand": "HIPPEAS",
-    "status": "unknown",
-    "status_source": "portfolio page",
-    "fit": 0.9,
-    "pain": 0.269,
-    "retailers": [
-     "Tesco",
-     "Ocado",
-     "Morrisons",
-     "Asda",
-     "Sainsbury's",
-     "Waitrose"
-    ]
-   }
-  ],
-  "raw": {
-   "icp_count": 0.765,
-   "fmcg_share": 0.06538461538461539,
-   "avg_brand_fit": 0.9,
-   "recent_deals": 1,
-   "pain_top": 0.22865000000000002,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 6,
-   "ecosystem": 0
-  },
-  "set_aside": [],
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": [
-    "HIPPEAS"
-   ]
-  },
-  "gate": 0.33,
-  "pillars": {
-   "fit": 0.419,
-   "pain": 0.229,
-   "access": 0.035,
-   "strategic": 0.075
-  },
-  "normalised": {
-   "icp_count": 0.249465,
-   "fmcg_share": 0.162334,
-   "avg_brand_fit": 0.9,
-   "recent_deals": 0.63093,
-   "pain_top": 0.22865,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.7,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.75,
-   "ecosystem": 0.0
-  },
-  "score": 25.1,
-  "live_brand_count": 1,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": 8,
-   "signals_total": 16
-  },
-  "rank": 14,
-  "why": "1 UK grocery brand held now or exited <24m, incl. HIPPEAS (Tesco/Ocado/Morrisons)."
+  "why": "3 UK grocery brands still held, incl. MOTH (Tesco/Sainsbury's/Asda), LOVE CORN (Sainsbury's/Ocado/Tesco), Lucky Saint (Tesco/Waitrose/Ocado)."
  },
  {
   "fund": "LDC",
@@ -2212,8 +2128,8 @@
    "signals_with_data": 9,
    "signals_total": 16
   },
-  "rank": 15,
-  "why": "1 UK grocery brand held now or exited <24m, incl. Bramble Foods; recent trigger: Bramble Foods: \"UK’s Bramble Foods Group snaps up Whitakers Chocolates\" (2025-01); named portfolio/platform contact: Andy Holman (Portfolio Director)."
+  "rank": 14,
+  "why": "1 UK grocery brand still held, incl. Bramble Foods; recent trigger: Bramble Foods: \"UK’s Bramble Foods Group snaps up Whitakers Chocolates\" (2025-01); named portfolio/platform contact: Andy Holman (Portfolio Director)."
  },
  {
   "fund": "Gresham House Ventures",
@@ -2336,8 +2252,90 @@
    "signals_with_data": 10,
    "signals_total": 16
   },
+  "rank": 15,
+  "why": "2 UK grocery brands still held, incl. Bella & Duke (Sainsbury's/Waitrose), Parsley Box; named portfolio/platform contact: Simon Bursell (Portfolio Director)."
+ },
+ {
+  "fund": "The Craftory",
+  "fund_type": "VC",
+  "website": "https://www.thecraftory.io",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://www.thecraftory.io/investments"
+  ],
+  "company_count": 13,
+  "brands": [
+   {
+    "brand": "HIPPEAS",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.9,
+    "pain": 0.172,
+    "retailers": [
+     "Tesco",
+     "Ocado",
+     "Morrisons",
+     "Asda",
+     "Sainsbury's",
+     "Waitrose"
+    ]
+   }
+  ],
+  "raw": {
+   "icp_count": 0.765,
+   "fmcg_share": 0.06538461538461539,
+   "avg_brand_fit": 0.9,
+   "recent_deals": 1,
+   "pain_top": 0.1462,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 6,
+   "ecosystem": 0
+  },
+  "set_aside": [],
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": [
+    "HIPPEAS"
+   ]
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.419,
+   "pain": 0.146,
+   "access": 0.035,
+   "strategic": 0.075
+  },
+  "normalised": {
+   "icp_count": 0.249465,
+   "fmcg_share": 0.162334,
+   "avg_brand_fit": 0.9,
+   "recent_deals": 0.63093,
+   "pain_top": 0.1462,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.7,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.75,
+   "ecosystem": 0.0
+  },
+  "score": 22.6,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 8,
+   "signals_total": 16
+  },
   "rank": 16,
-  "why": "2 UK grocery brands held now or exited <24m, incl. Bella & Duke (Sainsbury's/Waitrose), Parsley Box; named portfolio/platform contact: Simon Bursell (Portfolio Director)."
+  "why": "1 UK grocery brand still held, incl. HIPPEAS (Tesco/Ocado/Morrisons)."
  },
  {
   "fund": "Inverleith",
@@ -2424,7 +2422,7 @@
    "signals_total": 16
   },
   "rank": 17,
-  "why": "2 UK grocery brands held now or exited <24m, incl. Good Hemp (Waitrose/Sainsbury's/Tesco), EDEN MILL St Andrews (Sainsbury's)."
+  "why": "2 UK grocery brands still held, incl. Good Hemp (Waitrose/Sainsbury's/Tesco), EDEN MILL St Andrews (Sainsbury's)."
  },
  {
   "fund": "Ascension",
@@ -2516,7 +2514,7 @@
    "signals_total": 16
   },
   "rank": 18,
-  "why": "1 UK grocery brand held now or exited <24m, incl. Better Nature (Tesco/Asda/Ocado); recent trigger: Better Nature: \"Tempeh Brand Better Nature Launches at Hundreds of REWE Stores Across Germany\" (2025-04); named portfolio/platform contact: Romha Berhane (Portfolio Manager)."
+  "why": "1 UK grocery brand still held, incl. Better Nature (Tesco/Asda/Ocado); recent trigger: Better Nature: \"Tempeh Brand Better Nature Launches at Hundreds of REWE Stores Across Germany\" (2025-04); named portfolio/platform contact: Romha Berhane (Portfolio Manager)."
  },
  {
   "fund": "Big Idea Ventures",
@@ -2617,7 +2615,7 @@
    "signals_total": 16
   },
   "rank": 19,
-  "why": "2 UK grocery brands held now or exited <24m, incl. Little Bandits (Asda), The Good Pulse Co."
+  "why": "2 UK grocery brands still held, incl. Little Bandits (Asda), The Good Pulse Co."
  },
  {
   "fund": "Livingbridge",
@@ -2706,7 +2704,7 @@
    "signals_total": 16
   },
   "rank": 20,
-  "why": "1 UK grocery brand held now or exited <24m, incl. Absolute Collagen (Boots)."
+  "why": "1 UK grocery brand still held, incl. Absolute Collagen (Boots)."
  },
  {
   "fund": "True (TrueCapital)",
@@ -2790,7 +2788,7 @@
    "signals_total": 16
   },
   "rank": 21,
-  "why": "2 UK grocery brands held now or exited <24m, incl. Sneak (Tesco), seriouspig; recent trigger: Sneak: \"Sneak Energy lands additional listings across Bestway\" (2026-06)."
+  "why": "2 UK grocery brands still held, incl. Sneak (Tesco), seriouspig; recent trigger: Sneak: \"Sneak Energy lands additional listings across Bestway\" (2026-06)."
  },
  {
   "fund": "CapVest",
@@ -2863,7 +2861,7 @@
    "signals_total": 16
   },
   "rank": 22,
-  "why": "1 UK grocery brand held now or exited <24m, incl. ipn."
+  "why": "1 UK grocery brand still held, incl. ipn."
  },
  {
   "fund": "Inflexion",

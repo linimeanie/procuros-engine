@@ -3711,24 +3711,7 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [
-   {
-    "date": "24 Jul 2025",
-    "headline": "innocent Drinks funds regenerative agriculture projects in produce supply chains",
-    "url": "https://www.edie.net/innocent-drinks-funds-regenerative-agriculture-projects-in-produce-supply-chains/",
-    "type": "other",
-    "date_parsed": "2025-07-24",
-    "trade_press": false
-   },
-   {
-    "date": "29 Jul 2026",
-    "headline": "Innocent Drinks picks fruit and veg projects for £1m Farmer Innovation Fund",
-    "url": "https://www.businessgreen.com/news/4533538/innocent-drinks-picks-fruit-veg-projects-farmer-innovation-fund",
-    "type": "other",
-    "date_parsed": "2026-07-29",
-    "trade_press": false
-   }
-  ],
+  "funding_news": [],
   "export_news": [
    {
     "date": "2 Mar 2026",
@@ -3743,17 +3726,16 @@
   "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.5581871062320871,
+   "funding": 0.0,
    "ops_hiring": 0.0,
    "momentum": 0.5788648159168873,
    "expansion": 0.5499707896537189
   },
   "stack": [
-   "funding",
    "expansion"
   ],
-  "pain_base": 0.281,
-  "pain": 0.352
+  "pain_base": 0.142,
+  "pain": 0.142
  },
  {
   "brand": "Humantra",
@@ -4537,31 +4519,20 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [
-   {
-    "date": "2026-10-23 (approx, from '1 day ago')",
-    "headline": "I never feel guilty eating these Popchips’ 100-calorie delights",
-    "url": "https://nypost.com/2026/10/23/shopping/looking-for-a-healthy-potato-chip-popchips-have-50-less-fat/",
-    "type": "funding",
-    "date_parsed": "2026-10-23",
-    "trade_press": false
-   }
-  ],
+  "funding_news": [],
   "export_news": [],
   "size_proxy": 1.0,
   "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.49873488687737444,
+   "funding": 0.0,
    "ops_hiring": 0.0,
    "momentum": 0.5433388496841299,
    "expansion": 0
   },
-  "stack": [
-   "funding"
-  ],
-  "pain_base": 0.206,
-  "pain": 0.206
+  "stack": [],
+  "pain_base": 0.082,
+  "pain": 0.082
  },
  {
   "brand": "Purity Soft Drinks",
@@ -6244,31 +6215,20 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [
-   {
-    "date": "2026-10-10 (approx, from '2 weeks ago')",
-    "headline": "Wild Nutrition Magnesium Review UK: Nutritionist",
-    "url": "https://balancejournal.co/wellness/wild-nutrition-magnesium-review",
-    "type": "funding",
-    "date_parsed": "2026-10-10",
-    "trade_press": false
-   }
-  ],
+  "funding_news": [],
   "export_news": [],
   "size_proxy": 1.0,
   "fit": 0.82,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.482576781584995,
+   "funding": 0.0,
    "ops_hiring": 0.0,
    "momentum": 0.6155913435998024,
    "expansion": 0
   },
-  "stack": [
-   "funding"
-  ],
-  "pain_base": 0.213,
-  "pain": 0.213
+  "stack": [],
+  "pain_base": 0.092,
+  "pain": 0.092
  },
  {
   "brand": "Mindful Chef",
@@ -6330,31 +6290,20 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [
-   {
-    "date": "21 Apr 2026",
-    "headline": "Meal box kits : a comparison of the 5 most popular subscriptions",
-    "url": "https://www.moneysavingexpert.com/team-blog/2026/04/meal-box-comparison-hellofresh-vs-gousto-vs-green-chef-vs-mindful-chef-vs-planthood/",
-    "type": "funding",
-    "date_parsed": "2026-04-21",
-    "trade_press": false
-   }
-  ],
+  "funding_news": [],
   "export_news": [],
   "size_proxy": 1.0,
   "fit": 0.518,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.31212059026985045,
+   "funding": 0.0,
    "ops_hiring": 0.0,
    "momentum": 0.33865380535897177,
    "expansion": 0
   },
-  "stack": [
-   "funding"
-  ],
-  "pain_base": 0.129,
-  "pain": 0.129
+  "stack": [],
+  "pain_base": 0.051,
+  "pain": 0.051
  },
  {
   "brand": "Barking Heads",
@@ -7025,27 +6974,11 @@
   ],
   "funding_news": [
    {
-    "date": "14 Aug 2026",
-    "headline": "New 3.9x partial exit for SFC±s SEIS fund – read more",
-    "url": "https://www.wealthclub.co.uk/news-and-insights/39x-partial-exit-of-free-soul-for-sfc-angel-fund-seis/",
-    "type": "other",
-    "date_parsed": "2026-08-14",
-    "trade_press": false
-   },
-   {
     "date": "29 Aug 2026",
     "headline": "Free Soul: the thriving women’s health brand investors scoffed at",
     "url": "https://www.thetimes.com/business/entrepreneurs/article/free-soul-womens-health-sb0qnpbbh",
     "type": "other",
     "date_parsed": "2026-08-29",
-    "trade_press": false
-   },
-   {
-    "date": "17 Sept 2025",
-    "headline": "I Tried The Free Soul Mango Greens For 4 Weeks: My Verdict",
-    "url": "https://www.marieclaire.co.uk/life/health-fitness/free-soul-mango-greens-powder",
-    "type": "funding",
-    "date_parsed": "2025-09-17",
     "trade_press": false
    }
   ],
@@ -7054,7 +6987,7 @@
   "fit": 0.92,
   "pain_parts": {
    "listings": 0.17428643163261467,
-   "funding": 1,
+   "funding": 0.4338660597944872,
    "ops_hiring": 0.3333333333333333,
    "momentum": 0.6796161617280211,
    "expansion": 0
@@ -7063,8 +6996,8 @@
    "funding",
    "ops_hiring"
   ],
-  "pain_base": 0.471,
-  "pain": 0.589
+  "pain_base": 0.329,
+  "pain": 0.412
  },
  {
   "brand": "Olly's",
@@ -7249,14 +7182,6 @@
     "type": "funding",
     "date_parsed": "2026-08-01",
     "trade_press": false
-   },
-   {
-    "date": "5 Aug 2026",
-    "headline": "Interview: G Spot CEO on the Gillian Anderson drinks brand’s M&S debut",
-    "url": "https://www.retailgazette.co.uk/blog/2026/08/interview-g-spot-ceo/",
-    "type": "funding",
-    "date_parsed": "2026-08-05",
-    "trade_press": false
    }
   ],
   "funding_news": [
@@ -7285,14 +7210,6 @@
     "trade_press": true
    },
    {
-    "date": "5 Aug 2026",
-    "headline": "Interview: G Spot CEO on the Gillian Anderson drinks brand’s M&S debut",
-    "url": "https://www.retailgazette.co.uk/blog/2026/08/interview-g-spot-ceo/",
-    "type": "funding",
-    "date_parsed": "2026-08-05",
-    "trade_press": false
-   },
-   {
     "date": "8 Nov 2024",
     "headline": "Heineken backs Gillian Anderson’s G Spot functional drinks",
     "url": "https://www.just-drinks.com/news/heineken-buys-stake-in-gillian-andersons-g-spot-functional-drinks/",
@@ -7305,8 +7222,8 @@
   "size_proxy": 1.0,
   "fit": 0.812,
   "pain_parts": {
-   "listings": 0.9090111936987415,
-   "funding": 1,
+   "listings": 0.5007392487027522,
+   "funding": 0.6499177309091619,
    "ops_hiring": 0.0,
    "momentum": 0.41966131482036434,
    "expansion": 0
@@ -7315,8 +7232,8 @@
    "listings",
    "funding"
   ],
-  "pain_base": 0.586,
-  "pain": 0.732
+  "pain_base": 0.376,
+  "pain": 0.47
  },
  {
   "brand": "Ingenious",
@@ -8507,16 +8424,7 @@
    }
   ],
   "listing_news": [],
-  "funding_news": [
-   {
-    "date": "22 Jan 2025",
-    "headline": "My Alternative CV: Oggs CEO Hannah Carter on dyslexia, buyer meetings and animal welfare",
-    "url": "https://www.thegrocer.co.uk/profiles/oggs-ceo-hannah-carter-on-dyslexia-buyer-meetings-and-animal-welfare/700073.article",
-    "type": "other",
-    "date_parsed": "2025-01-22",
-    "trade_press": true
-   }
-  ],
+  "funding_news": [],
   "export_news": [
    {
     "date": "16 Jan 2025",
@@ -8531,7 +8439,7 @@
   "fit": 1.0,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.09881122234899756,
+   "funding": 0.0,
    "ops_hiring": 0.3333333333333333,
    "momentum": 0.21889526269045576,
    "expansion": 0.1946411816341117
@@ -8539,8 +8447,8 @@
   "stack": [
    "ops_hiring"
   ],
-  "pain_base": 0.144,
-  "pain": 0.144
+  "pain_base": 0.119,
+  "pain": 0.119
  },
  {
   "brand": "Grounded",
@@ -8880,14 +8788,6 @@
   "listing_news": [],
   "funding_news": [
    {
-    "date": "14 Jul 2026",
-    "headline": "I Tried 12 Hippeas Flavors—Here’s the One I’d Buy Every Time",
-    "url": "https://parade.com/food/best-hippeas-flavors",
-    "type": "other",
-    "date_parsed": "2026-07-14",
-    "trade_press": false
-   },
-   {
     "date": "9 Mar 2026",
     "headline": "Beyond the yellow sea: How LOVE evolved the Hippeas identity for a high-stakes retail environment",
     "url": "https://www.designweek.co.uk/beyond-the-yellow-sea-how-love-evolved-the-hippeas-identity-for-a-high-stakes-retail-environment/",
@@ -8901,7 +8801,7 @@
   "fit": 0.9,
   "pain_parts": {
    "listings": 0.0,
-   "funding": 0.6660447064421404,
+   "funding": 0.27990549134386056,
    "ops_hiring": 0.0,
    "momentum": 0.6833415379486044,
    "expansion": 0
@@ -8909,8 +8809,8 @@
   "stack": [
    "funding"
   ],
-  "pain_base": 0.269,
-  "pain": 0.269
+  "pain_base": 0.172,
+  "pain": 0.172
  },
  {
   "brand": "PerfectTed",
