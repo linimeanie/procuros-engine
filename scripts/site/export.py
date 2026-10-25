@@ -22,11 +22,13 @@ for b in brands:
     out_brands.append({
         "name": b["brand"], "website": b.get("website"), "description": (b.get("description") or "")[:220],
         "blurb": blurbs["brands"].get(b["brand"], ""),
-        "funds": b["funds"], "category": b["category"], "fit": b["fit"], "pain": b["pain"],
-        "pain_parts": b["pain_parts"], "size_proxy": b["size_proxy"], "stack": b["stack"],
+        # pain, pain_parts and news_count are not exported. The site scores why-now from pairs.py, which has
+        # no momentum term, so publishing a momentum field and a raw news count next to the claim that the
+        # volume-of-news signal was removed made the data file contradict the page.
+        "funds": b["funds"], "category": b["category"], "size_proxy": b["size_proxy"], "stack": b["stack"],
         "retailers": b["retailers"], "ops_roles": b["ops_roles"][:5], "companies_house": b.get("companies_house"),
         "triggers": [news_item(n) for n in trig[:3]],
-        "news_count": len(b["news"]), "fund_sources": b["fund_sources"][:3],
+        "fund_sources": b["fund_sources"][:3],
     })
 
 out_funds = []
