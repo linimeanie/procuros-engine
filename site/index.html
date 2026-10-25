@@ -53,8 +53,15 @@ b, strong { font-weight: 600; color: var(--ink); }
 .wrap { max-width: 1120px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 .page { display: grid; gap: 64px; }
 .block { display: grid; gap: 20px; }
+/* Grid items default to min-width:auto, so a wide table's min-content pushed its ancestors past the
+   viewport and the whole page scrolled sideways on a phone instead of just the table. */
+.page > *, .block > * { min-width: 0; }
+/* Evidence values include raw Companies House URLs with no spaces in them. "anywhere" (not break-word)
+   is what actually reduces min-content, which is what a grid track measures. */
+.pc .ev > span, .pc .ev a { overflow-wrap: anywhere; }
 .head { display: grid; gap: 10px; max-width: var(--measure); }
-.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(var(--min, 240px), 1fr)); }
+/* min() so a wide --min collapses on a narrow screen instead of forcing the page to scroll sideways. */
+.grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(var(--min, 240px), 100%), 1fr)); }
 .card { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 20px; display: grid; gap: 10px; align-content: start; }
 .card p { font-size: var(--fs-small); color: var(--ink-2); }
 .card.sub { grid-template-rows: subgrid; grid-row: span var(--rows, 3); row-gap: 10px; }
@@ -223,6 +230,43 @@ select { font: 500 var(--fs-small)/1 var(--body); padding: 7px 8px; background: 
 /* Entities */
 .chain { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 12px; align-items: stretch; }
 .chain .arrow { align-self: center; font: 700 22px/1 var(--display); color: var(--ink-2); }
+
+/* Second section archetype. Every other block on the page runs label → heading → lede → grid of cards;
+   this one is a single assertion with its reason beside it, no card and no grid. Used only at the points
+   where the argument turns, so the page has two rhythms instead of one. */
+.statement { border-top: 2px solid var(--ink); padding-top: 20px; display: grid; gap: 12px; }
+.statement .claim { font-family: var(--display); font-weight: 800; font-size: clamp(23px, 2.9vw, 32px);
+  line-height: 1.15; letter-spacing: -0.02em; text-wrap: balance; }
+.statement .claim em { font-style: normal; color: var(--accent); }
+.statement .because { color: var(--ink-2); max-width: 52ch; }
+.statement .because + .because { margin-top: 10px; }
+@media (min-width: 820px) { .statement { grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; } }
+
+/* Answer and evidence read differently. The tabs that justify the shortlist sit on a tinted ground with
+   quieter headings and unfilled cards; the answer itself keeps the page background and full weight. On the
+   answer tab the ground changes partway down, which is where the deliverable stops and the workings start. */
+[data-reg="evidence"] { background: var(--tint); border-top: 1px solid var(--rule); }
+[data-reg="evidence"] > .wrap { padding-block: 40px 8px; }
+[data-reg="evidence"] h2 { font-size: clamp(22px, 2.3vw, 27px); }
+[data-reg="evidence"] .card { background: transparent; }
+[data-reg="evidence"] .statement { border-top-color: var(--ink-2); }
+
+/* Risks are not three equal things: the one that would actually stop the lane leads. */
+.risks { display: grid; gap: 16px; }
+@media (min-width: 760px) { .risks { grid-template-columns: 1.5fr 1fr; }
+  .risks > :first-child { grid-row: span 2; }
+  .risks > :first-child h3 { font-size: 22px; }
+  .risks > :first-child p { font-size: var(--fs-body); } }
+
+/* A compact strip for secondary measures: same information, not another row of cards. */
+.strip { display: grid; gap: 0; border: 1px solid var(--rule); border-radius: var(--radius); overflow: hidden; }
+.strip > div { padding: 14px 16px; border-top: 1px solid var(--rule); display: grid; gap: 4px; }
+.strip > div:first-child { border-top: 0; }
+.strip h3 { font: 500 var(--fs-label)/1.2 var(--mono); letter-spacing: .07em; text-transform: uppercase; color: var(--accent); }
+.strip p { font-size: var(--fs-small); color: var(--ink-2); }
+@media (min-width: 760px) { .strip { grid-auto-flow: column; grid-auto-columns: 1fr; }
+  .strip > div { border-top: 0; border-left: 1px solid var(--rule); }
+  .strip > div:first-child { border-left: 0; } }
 @media (max-width: 760px) { .chain { grid-template-columns: 1fr; } .chain .arrow { transform: rotate(90deg); justify-self: center; } }
 
 /* Dossier pair cards */
@@ -351,6 +395,14 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="card" id="dropped"></div>
   </div>
 
+  <div class="block statement">
+    <p class="claim">Only <span data-n="holding"></span> of <span data-n="vcpe"></span> funds back a brand that fits. <em>The ranking never had much to decide.</em></p>
+    <div>
+      <p class="because">The scoring looks like the hard part and isn't. Most UK VC and PE funds hold no grocery brand under £100m that Procuros could sell to, so they were out before any weighting was applied. What the ranking adds is the order to work in and who to call first — not the selection.</p>
+      <p class="because">It is also why the bottom of the list is soft. By rank eighteen the scores are in single figures, and tightening one news classifier while building this page was enough to swap #20 and #21.</p>
+    </div>
+  </div>
+
   <div class="block">
     <div class="head"><p class="label">Second lens</p><h2>The best door is not always the best doorman</h2>
       <p class="lede">Everything above scores the <b>door</b>: does the brand need Procuros, and is there a route to it. It says nothing about whether the fund is set up to broker a vendor introduction at all. That is a different question with different evidence — a portfolio-operations team, a founder community, and whether the fund has already watched Procuros work. Ranked by that instead, the order changes.</p></div>
@@ -363,7 +415,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
 </div></section>
 
-<section id="opps" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+<section id="opps" data-reg="evidence" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
     <div class="head"><p class="label">Opportunities</p><h2>Rank the opportunity, not just the fund</h2>
       <p class="lede">An opportunity is one fund introducing Procuros to one brand. It's only worth pursuing when the brand needs EDI <b>and</b> the fund can actually make the intro, so its score multiplies the two.</p></div>
@@ -378,7 +430,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="next"><button type="button" class="btn" data-go="method">Next: how it was built →</button></div>
 </div></section>
 
-<section id="method" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+<section id="method" data-reg="evidence" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
     <div class="head"><p class="label">How it was built</p><h2>The unit is a door, not a fund</h2>
       <p class="lede">A fund is not an opportunity. A fund <em>plus a particular brand</em> is. So every fund–brand pair was assessed on its own, and the ranking of funds is simply what their strongest pairs add up to. That one choice decides everything else below.</p></div>
@@ -448,10 +500,19 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block">
     <div class="card" id="worked"></div>
   </div>
+
+  <div class="block statement">
+    <p class="claim">Nothing above observes the thing that actually matters.</p>
+    <div>
+      <p class="because">Whether a brand keys its orders in by hand is not public. No filing records it, no trade story reports it, and no stockist page implies it. Every signal on this page — how many grocers, how recently something changed, what size the accounts suggest — is a proxy for a fact none of them can see.</p>
+      <p class="because">That is not a hole to apologise for, it is the reason the first call is fifteen minutes and starts with <i>how do orders from each grocer arrive today</i>. The model's job is to decide whose fifteen minutes are worth asking for. It cannot do the asking.</p>
+    </div>
+  </div>
+
   <div class="next"><button type="button" class="btn" data-go="notes">Next: what to trust →</button></div>
 </div></section>
 
-<section id="notes" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+<section id="notes" data-reg="evidence" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
     <div class="head"><p class="label">What to trust</p><h2>Where this is solid, and where it isn't</h2>
       <p class="lede">The ranking is only worth as much as the evidence under it, and that evidence is uneven. This says which parts are sourced, which are inferred, which are my judgement, and which could not be seen at all. The last group is the one to ask about on the first call.</p></div>
@@ -478,7 +539,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   </div>
 </div></section>
 
-<section id="map" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+<section id="map" data-reg="evidence" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
   <div class="block">
     <div class="head"><p class="label">The network</p><h2>Who sits behind which brand</h2>
       <p class="lede">Not geography: dark circles are the 20 funds, sized by score, and small dots are their target brands, coloured by how many major grocers stock them. It shows where brands are shared and where each fund leads somewhere new. Select a finding to highlight it.</p></div>
@@ -619,10 +680,10 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   <div class="block">
     <div class="head"><h2>What could go wrong</h2></div>
-    <div class="grid" style="--min:260px">
-      <div class="card"><h3>Talent isn't the right team</h3><p>Annabel's team may not own operations tooling. If so, ask her who does, and don't pitch her.</p></div>
-      <div class="card"><h3>Borough Broth is busy</h3><p>It raised in December and is hiring in operations. Time the call for once that hire has started, because they'll be the user.</p></div>
-      <div class="card"><h3>No name for Wild Nutrition</h3><p>Piper's fund entities control it, but no Piper person is on the board. That intro has to go through Annabel or Rory.</p></div>
+    <div class="risks">
+      <div class="card"><h3>Talent isn't the right team</h3><p>The whole portfolio offer rests on Annabel being able to put something in front of every management team. If her remit is hiring rather than operations tooling, the offer has no distribution and the lane collapses to a single ask — which is the other lane. The first email is therefore written to find out, not to pitch: it asks whether this is worth passing on, and who owns it if not.</p></div>
+      <div class="card"><h3>Borough Broth is busy</h3><p>It raised in December and is hiring in operations. Time the call for after that hire starts, because they will be the user.</p></div>
+      <div class="card"><h3>No name for Wild Nutrition</h3><p>Piper's fund entities control it, but no Piper person sits on the board. That intro has to go through Annabel or Rory.</p></div>
     </div>
   </div>
 </div></section>
@@ -683,10 +744,10 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   <div class="block">
     <div class="head"><h2>What could go wrong</h2></div>
-    <div class="grid" style="--min:260px">
-      <div class="card"><h3>Luke isn't close to operations</h3><p>A board director knows the founders but not always who runs orders. The blurb asks the founder to pick the person.</p></div>
-      <div class="card"><h3>A single point of failure</h3><p>Everything rests on one brand. If Tom Parker says no, we use the no as a reason to ask Carl about Tiba Tempeh, and say why the first one didn't fit.</p></div>
-      <div class="card"><h3>It may already have a provider</h3><p>With five grocers, Tom Parker may already use an EDI provider. That's still a useful call: switching is a sale too, and it tells us about the category.</p></div>
+    <div class="risks">
+      <div class="card"><h3>Everything rests on one brand</h3><p>One ask, one director, one company. If Tom Parker says no the lane has nothing else running, and six weeks produce a single data point. That is the cost of the variant being tested, so the plan treats a no as the next ask rather than the end: we report back to Luke with what the brand actually said, and use that as the reason to raise Tiba Tempeh with Carl. A refusal with a reason attached is still worth more than silence.</p></div>
+      <div class="card"><h3>Luke isn't close to operations</h3><p>A board director knows the founders, not always who runs orders. The blurb asks the founder to pick the person.</p></div>
+      <div class="card"><h3>It may already have a provider</h3><p>With five grocers, Tom Parker may already run EDI through someone. Still a useful call: switching is a sale, and it tells us what the category already buys.</p></div>
     </div>
   </div>
   <div class="next"><button type="button" class="btn" data-go="score">Next: the scorecard →</button></div>
@@ -706,16 +767,24 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
         <tr><td class="p">Qualified</td><td>The brand handles orders or invoices by hand for two or more grocers, and the decision-maker was on the call</td><td>Day 42</td><td class="r">1</td><td class="r">1</td></tr>
       </tbody>
     </table></div>
-    <div class="grid" style="--min:240px">
-      <div class="card"><h3>Speed</h3><p>Days from the first email to the first intro. This is where we expect the single ask to win.</p></div>
-      <div class="card"><h3>Effort</h3><p>Hours spent per intro, counting prep. A portfolio offer costs more to build, so it has to earn more intros to be worth it.</p></div>
-      <div class="card"><h3>Repeat</h3><p>Whether the fund offers a second intro without being asked. That's the best sign a fund will scale as a channel.</p></div>
+    <div class="strip">
+      <div><h3>Speed</h3><p>Days from first email to first intro. Where we expect the single ask to win.</p></div>
+      <div><h3>Effort</h3><p>Hours per intro, prep included. A portfolio offer costs more to build, so it has to earn more.</p></div>
+      <div><h3>Repeat</h3><p>Whether a fund offers a second intro unasked. The best sign it works as a channel.</p></div>
+    </div>
+  </div>
+
+  <div class="block statement">
+    <p class="claim">Two funds cannot prove a pattern. <em>They can kill one.</em></p>
+    <div>
+      <p class="because">One PE firm and one VC firm is a sample of one per arm, and the two lanes differ in more than the thing being tested: different people, different brands, three target brands against two, two intros asked against one. If Piper's lane wins, that is not evidence that portfolio-wide offers beat single asks.</p>
+      <p class="because">So the read-out below is not written to crown a winner. It is written to rule things out: whether a fund will forward anything at all, what reason they give when they won't, and whether a brand with five grocers turns out to be keying orders in by hand. Those answers hold whichever lane produces them, and they are what Task 1.3 needs.</p>
     </div>
   </div>
 
   <div class="block">
     <div class="head"><h2>Kill criteria</h2><p class="lede">When to stop a lane, decided now so we don't argue about it later.</p></div>
-    <div class="grid" style="--min:250px">
+    <div class="grid" style="--min:400px">
       <div class="card kill"><p class="label">Silence</p><h3>No reply by day 14</h3><p>If no contact has replied after two touches each, stop that fund. Start #3 Active Partners in the same lane, through Spencer Skinner on Northern Monk's board.</p></div>
       <div class="card kill"><p class="label">Stalled</p><h3>No intro 14 days after the meeting</h3><p>Stop asking. Write down the reason they gave, because it's the most useful data the test produces.</p></div>
       <div class="card kill"><p class="label">Wrong brand fit</p><h3>The first two brand calls don't need us</h3><p>If their orders already flow automatically, our brand-fit assumption is wrong for this kind of brand. Fix the scoring before Task 1.3.</p></div>
@@ -725,10 +794,9 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   <div class="block">
     <div class="head"><h2>The read-out on 11 December</h2></div>
-    <div class="grid" style="--min:300px">
-      <div class="card"><h3>How we pick the winner</h3><p>The lane with more qualified brands wins. If it's a tie, the one with the faster first intro wins, and if that's tied too, the one that cost fewer hours per intro. The winning lane becomes the default motion in Task 1.3.</p></div>
-      <div class="card"><h3>What two funds can't prove</h3><p>This is one PE and one VC firm, with different people and brands. It points a direction but it isn't proof. That's why we log every touch: date, fund, contact, channel, lane, outcome and the reason given.</p></div>
-      <div class="card"><h3>If both lanes fail</h3><p>Then the route isn't the problem. The offer or the brand-fit assumption is, and we go back to the brand calls before scaling anything.</p></div>
+    <div class="grid" style="--min:320px">
+      <div class="card"><h3>What we take forward</h3><p>The lane that produced a qualified brand faster and for fewer hours becomes the starting point for Task 1.3 — as a starting point, not a conclusion. Every touch is logged either way: date, fund, contact, channel, lane, outcome and the reason given. The reasons are the part worth having.</p></div>
+      <div class="card"><h3>If both lanes fail</h3><p>Then the route isn't the problem. The offer or the brand-fit assumption is, and we go back to the brand calls before scaling anything to anyone.</p></div>
     </div>
   </div>
 </div></section>
@@ -842,7 +910,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   const margin = lastIn && firstOut ? Math.abs(lastIn.score - firstOut.score).toFixed(1) : null;
   document.getElementById("dropped").innerHTML = `<h3>Why not the other ${plural(dropped.length, "fund")}</h3>
     <p>Only ${FN["Funds holding a target brand"]} of the ${N.vcpe} funds back a brand that fits, so the real filter is the target-brand test, not the ranking. ${dropped.map(f => `<b>${esc(f.fund)}</b> (${Math.round(f.score)}) backs ${list(f.pairs.map(p => esc(pretty(p.brand))))} with ${f.pairs[0].intro.strength.toLowerCase()} routes and thin brand evidence.`).join(" ")}</p>
-    ${margin !== null ? `<p><b>How little the cut-off means:</b> ${esc(short(lastIn.fund))} is twentieth on ${Math.round(lastIn.score)} and ${esc(short(firstOut.fund))} is twenty-first on ${Math.round(firstOut.score)} — ${margin} of a point apart. Tightening one news classifier while building this page was enough to swap them. Treat the bottom of this list as a tie, not a ranking.</p>` : ""}`;
+    ${margin !== null ? `<p><b>How little the cut-off means:</b> ${esc(short(lastIn.fund))} is twentieth on ${lastIn.score.toFixed(1)} and ${esc(short(firstOut.fund))} is twenty-first on ${firstOut.score.toFixed(1)} — ${margin} of a point apart, which is why these two are the only scores on the page shown to a decimal. Tightening one news classifier while building this page was enough to swap them. Treat the bottom of this list as a tie, not a ranking.</p>` : ""}`;
   document.querySelectorAll(".opp-row").forEach(b => b.addEventListener("click", () => select(b.dataset.f)));
 
   // ---------- Second lens: can the fund broker at all? (access + strategic pillars, already computed by score.py)
