@@ -56,6 +56,19 @@ b, strong { font-weight: 600; color: var(--ink); }
    is what actually reduces min-content, which is what a grid track measures. */
 .pc .ev > span, .pc .ev a { overflow-wrap: anywhere; }
 .head { display: grid; gap: 10px; max-width: var(--measure-wide); }
+/* On a wide screen, put the heading and its lede side by side so the pair fills the same width as the table
+   or chart underneath. Stacked, the lede stopped short of the right edge and read as cut off; stretched to
+   full width it would run to about 125 characters a line, which is well past comfortable. Two columns give
+   both: the block is flush with the content below it and each column stays around 60 to 75 characters.
+   Only heads that actually have a lede are split, so a bare heading is not left with an empty column. */
+@media (min-width: 900px) {
+  .head:has(.lede) { grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    column-gap: 48px; max-width: none; align-items: start; }
+  .head:has(.lede) > .label,
+  .head:has(.lede) > h2,
+  .head:has(.lede) > h3 { grid-column: 1; }
+  .head:has(.lede) > .lede { grid-column: 2; max-width: none; }
+}
 /* min() so a wide --min collapses on a narrow screen instead of forcing the page to scroll sideways. */
 .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(var(--min, 240px), 100%), 1fr)); }
 .card { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 20px; display: grid; gap: 10px; align-content: start; }
