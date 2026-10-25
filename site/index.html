@@ -269,6 +269,37 @@ select { font: 500 var(--fs-small)/1 var(--body); padding: 7px 8px; background: 
 .side { display: grid; gap: 16px; font-size: var(--fs-small); }
 .side ul { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
 
+
+/* Task 1.2 */
+table.cmp td:first-child { font: 500 var(--fs-label)/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--ink-2); white-space: nowrap; vertical-align: top; }
+table.cmp td, table.lanes td, table.sc-t td { vertical-align: top; }
+table.cmp th:not(:first-child), table.cmp td:not(:first-child) { width: 44%; }
+table.lanes td.p, table.sc-t td.p { white-space: nowrap; }
+.motion { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); counter-reset: m; }
+.motion li { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 14px; display: grid; gap: 6px; align-content: start; font-size: var(--fs-small); color: var(--ink-2); }
+.motion li:nth-child(2), .motion li:nth-child(4) { border-color: var(--accent); box-shadow: inset 0 3px 0 var(--accent); }
+.motion .n { font: 800 22px/1 var(--display); color: var(--ink); }
+.motion b { font: 700 16px/1.2 var(--display); }
+.rcheck { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 20px; display: grid; gap: 16px; max-width: 860px; }
+.rcheck .rc-top { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; justify-content: space-between; border-bottom: 1px solid var(--ink); padding-bottom: 10px; }
+.rcheck .rc-top b { font: 700 20px/1.2 var(--display); }
+.rcheck ul, .rcheck ol { margin: 6px 0 0; padding-left: 20px; display: grid; gap: 4px; font-size: var(--fs-small); }
+.rcheck .two { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); font-size: var(--fs-small); }
+.seq { display: grid; border-top: 1px solid var(--ink); }
+.seq-row { display: grid; grid-template-columns: 120px 110px minmax(0, 1fr); gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--rule); font-size: var(--fs-small); align-items: baseline; }
+.seq-row .d { font: 500 var(--fs-label)/1.4 var(--mono); letter-spacing: .04em; text-transform: uppercase; color: var(--ink-2); }
+.seq-row .ch { font-weight: 600; }
+@media (max-width: 640px) {
+  .seq-row { grid-template-columns: 96px minmax(0, 1fr); gap: 4px 12px; }
+  .seq-row > span:last-child { grid-column: 2; }
+  table.cmp td:first-child { white-space: normal; }
+}
+.mail { background: var(--card); border: 1px solid var(--rule); border-radius: var(--radius); padding: 18px; display: grid; gap: 10px; align-content: start; font-size: var(--fs-small); }
+.mail .subj { font-weight: 600; }
+.mail .body { display: grid; gap: 8px; border-left: 2px solid var(--rule); padding-left: 12px; }
+.mail .copy { justify-self: start; padding: 6px 12px; }
+.kill { border-top: 3px solid var(--accent); }
+
 footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-2); border-top: 1px solid var(--rule); }
 </style>
 </head>
@@ -278,18 +309,22 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 <nav class="rail" aria-label="Case study"><div class="wrap">
   <div class="tasks" role="tablist" aria-label="Tasks">
     <span class="logo">Warm Doors UK</span>
-    <button type="button" class="task on" role="tab" aria-selected="true">1.1 Investor shortlist</button>
-    <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming next">1.2 Two-fund experiment</button>
+    <button type="button" class="task on" role="tab" aria-selected="true" data-task="t11" data-first="summary">1.1 Investor shortlist</button>
+    <button type="button" class="task" role="tab" aria-selected="false" data-task="t12" data-first="exp">1.2 Two-fund experiment</button>
     <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">1.3 Scaling the motion</button>
     <button type="button" class="task" role="tab" aria-selected="false" aria-disabled="true" title="Coming later">2 Creative play</button>
     <button type="button" class="theme" id="theme" aria-label="Switch between day and night mode"></button>
   </div>
-  <div class="subtabs" role="tablist" aria-label="Investor shortlist sections" id="subtabs">
-    <button type="button" role="tab" data-tab="summary">Shortlist</button>
-    <button type="button" role="tab" data-tab="opps">Opportunities</button>
-    <button type="button" role="tab" data-tab="method">Method</button>
-    <button type="button" role="tab" data-tab="map">Map</button>
-    <button type="button" role="tab" data-tab="notes">Data notes</button>
+  <div class="subtabs" role="tablist" aria-label="Sections" id="subtabs">
+    <button type="button" role="tab" data-tab="summary" data-task="t11">Shortlist</button>
+    <button type="button" role="tab" data-tab="opps" data-task="t11">Opportunities</button>
+    <button type="button" role="tab" data-tab="method" data-task="t11">Method</button>
+    <button type="button" role="tab" data-tab="map" data-task="t11">Map</button>
+    <button type="button" role="tab" data-tab="notes" data-task="t11">Data notes</button>
+    <button type="button" role="tab" data-tab="exp" data-task="t12" hidden>The test</button>
+    <button type="button" role="tab" data-tab="piper" data-task="t12" hidden>Piper · PE</button>
+    <button type="button" role="tab" data-tab="maven" data-task="t12" hidden>Maven · VC</button>
+    <button type="button" role="tab" data-tab="score" data-task="t12" hidden>Scorecard</button>
   </div>
 </div></nav>
 
@@ -440,6 +475,248 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   </div>
 </div></section>
 
+<section id="exp" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <p class="label">Procuros · UK go-to-market · Task 1.2 · six weeks from 2 November 2026</p>
+    <h1>Two funds, <em>two ways in</em>.</h1>
+    <p class="lede">We run the motion on the top two funds from the shortlist: Piper, a private equity firm, and Maven, a venture investor. The goal is the same for both: warm intros to grocery brands that need EDI. One thing differs on purpose, and that's how we ask.</p>
+    <div class="grid" style="--min:170px" id="x-stats"></div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>Why these two</h2>
+      <p class="lede">They're #1 and #2 on the shortlist, both have a fund person sitting on a target brand's board, and one is PE while the other is VC, which is the contrast the brief asks for.</p></div>
+    <div class="grid" style="--min:300px" id="x-why"></div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>The one thing we change</h2>
+      <p class="lede">Piper only backs consumer brands and has a team for portfolio talent, so we offer something to the whole portfolio. Consumer is a small slice of Maven's 155 companies, so a portfolio offer would be noise there. Instead we make one specific ask through the board director.</p></div>
+    <div class="table-scroll"><table class="cmp">
+      <thead><tr><th></th><th>Piper · private equity</th><th>Maven · venture</th></tr></thead>
+      <tbody>
+        <tr><td>Approach</td><td><b>Portfolio offer.</b> Give every grocery brand a free retailer check, then ask for intros.</td><td><b>One brand, one ask.</b> Ask for a single intro, earn the next one with the result.</td></tr>
+        <tr><td>First contact</td><td>Annabel Feather (Associate Partner, Talent), then Rory Gibbs on Borough Broth's board</td><td>Luke Matthews on Tom Parker Creamery's board, with Carl Edgehill (Portfolio Director) as the backup</td></tr>
+        <tr><td>Give first</td><td>Retailer checks for Borough Broth, Wild Nutrition and Reeve the Baker, plus a 30-minute session for portfolio ops leads</td><td>One retailer check, for Tom Parker Creamery</td></tr>
+        <tr><td>The ask</td><td>Intros to two brands and a slot to share the checks with the portfolio</td><td>One intro to whoever runs orders or finance at Tom Parker Creamery</td></tr>
+        <tr><td>Lead brand</td><td>Borough Broth: £7.5m from Piper, four grocers, hiring in operations</td><td>Tom Parker Creamery: five grocers, Golden Milk launched on 19 October</td></tr>
+        <tr><td>Expand to</td><td>Wild Nutrition, then Reeve the Baker</td><td>Tiba Tempeh, only after the first intro has gone well</td></tr>
+      </tbody>
+    </table></div>
+    <p class="callout"><b>What we're testing:</b> when a fund mostly backs consumer brands, a portfolio-wide offer earns more intros than a single ask. When consumer brands are a small part of the fund, a single, specific ask through the board director gets to an intro faster. The answer decides which version Task 1.3 scales.</p>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>The motion, step by step</h2>
+      <p class="lede">Both funds go through the same six steps. Only step 2 and step 4 differ between them.</p></div>
+    <ol class="motion">
+      <li><span class="n">1</span><b>Trigger</b><span>A dated reason to write now: a raise, a new listing, a new range.</span></li>
+      <li><span class="n">2</span><b>Give first</b><span>A retailer check the fund can pass on whether or not anyone buys.</span></li>
+      <li><span class="n">3</span><b>Fund contact</b><span>The board director or portfolio lead we found in Task 1.1.</span></li>
+      <li><span class="n">4</span><b>Intro ask</b><span>A short blurb they can forward. The brand opts in before we're connected.</span></li>
+      <li><span class="n">5</span><b>Brand call</b><span>15 minutes with whoever runs orders or finance, to find out how orders and invoices are handled.</span></li>
+      <li><span class="n">6</span><b>Close the loop</b><span>A proposal if it fits, and a note back to the fund either way.</span></li>
+    </ol>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>What we give first: the retailer check</h2>
+      <p class="lede">One page per brand, built from evidence we already collected for Task 1.1. It shows which grocers the brand sells through, what it trades with them and what to ask. It's useful to the brand even if they never talk to us, and that's why a fund will forward it.</p></div>
+    <div class="filters" id="rc-pick" role="group" aria-label="Choose a brand"></div>
+    <div class="rcheck" id="rcheck"></div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>Six weeks, two lanes</h2>
+      <p class="lede">Both funds start the same week, so news and season affect both the same way.</p></div>
+    <div class="table-scroll"><table class="lanes">
+      <thead><tr><th>Week</th><th>Piper</th><th>Maven</th></tr></thead>
+      <tbody>
+        <tr><td class="p">0 · 26–30 Oct</td><td>Build three retailer checks. Look for mutual LinkedIn connections to Annabel and Rory.</td><td>Build the Tom Parker Creamery check. Look for a mutual connection to Luke.</td></tr>
+        <tr><td class="p">1 · 2–6 Nov</td><td>Email Annabel with the portfolio offer. Connect with Rory, then email him the Borough Broth check.</td><td>Email Luke with the one ask. Connect on LinkedIn.</td></tr>
+        <tr><td class="p">2 · 9–13 Nov</td><td>Follow up with Annabel. A 20-minute call with Piper.</td><td>Follow up with Luke. If he's silent, write to Carl Edgehill on day 10.</td></tr>
+        <tr><td class="p">3 · 16–20 Nov</td><td>Piper forwards the intro blurb to Borough Broth and Wild Nutrition.</td><td>The intro to Tom Parker Creamery.</td></tr>
+        <tr><td class="p">4 · 23–27 Nov</td><td>Brand calls.</td><td>Brand call with Tom Parker. Report back to Luke, then ask about Tiba Tempeh.</td></tr>
+        <tr><td class="p">5–6 · 30 Nov–11 Dec</td><td>Portfolio session for Piper's ops leads. Proposals to the brands that fit.</td><td>Proposal to Tom Parker. Tiba Tempeh call.</td></tr>
+        <tr><td class="p">11 Dec</td><td colspan="2">Read-out: compare both lanes against the scorecard and pick the version for Task 1.3.</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+  <div class="next"><button type="button" class="btn" data-go="piper">Next: the Piper playbook →</button></div>
+</div></section>
+
+<section id="piper" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <div class="head"><p class="label">Task 1.2 · Fund 1 of 2 · Private equity · portfolio offer</p><h2>Piper: offer the whole portfolio</h2>
+      <p class="lede">Piper only backs consumer brands, and three of its holdings are target brands. We give the portfolio something useful first, then ask for two intros.</p></div>
+    <div class="grid" style="--min:250px">
+      <div class="card"><p class="label">Contact 1 · portfolio offer</p><h3><a href="https://piper.co.uk/our-team/" target="_blank" rel="noopener">Annabel Feather</a></h3><p>Associate Partner, Talent. She works with the management teams across the portfolio, so she can share an offer with all of them at once.</p></div>
+      <div class="card"><p class="label">Contact 2 · Borough Broth</p><h3><a href="https://find-and-update.company-information.service.gov.uk/company/09590728/officers" target="_blank" rel="noopener">Rory Gibbs</a></h3><p>Became a director of Borough Broth on 25 November 2025, the same day Piper Fund VII became a person with significant control. He's the deal lead, so he can make the intro himself.</p></div>
+      <div class="card"><p class="label">Later · Reeve the Baker</p><h3><a href="https://find-and-update.company-information.service.gov.uk/company/02088228/officers" target="_blank" rel="noopener">Harry Williams</a></h3><p>Joined Reeve the Baker's board on 30 September 2026, Piper's newest deal. We hold him for week 4, once the first brand call has gone well.</p></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>Sequence, day by day</h2></div>
+    <div class="seq">
+      <div class="seq-row"><span class="d">Days −5 to 0</span><span class="ch">Prep</span><span>Build retailer checks for Borough Broth, Wild Nutrition and Reeve the Baker. Look for a mutual LinkedIn connection to Annabel and Rory, and a Procuros grocery customer we can name as a reference.</span></div>
+      <div class="seq-row"><span class="d">Day 1</span><span class="ch">Email</span><span>Annabel: the portfolio offer, with the Borough Broth check attached as an example (draft A1).</span></div>
+      <div class="seq-row"><span class="d">Day 2</span><span class="ch">LinkedIn</span><span>Connect with Rory with no pitch, mentioning Borough Broth's raise.</span></div>
+      <div class="seq-row"><span class="d">Day 4</span><span class="ch">Email</span><span>Rory: the Borough Broth check and one ask (draft A2).</span></div>
+      <div class="seq-row"><span class="d">Day 8</span><span class="ch">Email</span><span>Follow up with Annabel and add one new thing: the Reeve the Baker check, since it's Piper's newest brand.</span></div>
+      <div class="seq-row"><span class="d">Days 10–14</span><span class="ch">Call</span><span>20 minutes with Piper. Walk through the checks, ask for intros to Borough Broth and Wild Nutrition, and offer the portfolio session.</span></div>
+      <div class="seq-row"><span class="d">Day 15</span><span class="ch">Intro</span><span>Send Piper the forwardable blurb for each brand (draft A3). Each brand opts in before we're connected.</span></div>
+      <div class="seq-row"><span class="d">Days 15–28</span><span class="ch">Brand calls</span><span>15 minutes each with whoever runs orders or finance. Ask how orders arrive today, who keys them in and how many hours that takes each week.</span></div>
+      <div class="seq-row"><span class="d">Days 29–42</span><span class="ch">Close</span><span>A 30-minute session for Piper's portfolio ops leads, proposals to the brands that fit and a short note to Annabel and Rory on what happened.</span></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>Drafts</h2><p class="lede">Short, specific and built on facts we can link to. They make no promises about pricing or what a retailer requires.</p></div>
+    <div class="grid" style="--min:320px">
+      <div class="mail" data-mail><p class="label">A1 · Email to Annabel Feather · day 1</p>
+        <p class="subj">Subject: A free retailer check for Piper's grocery brands</p>
+        <div class="body"><p>Hi Annabel,</p>
+        <p>I'm working on Procuros' UK launch. We connect consumer brands to their retailers' EDI, so orders, delivery notes and invoices move between a grocer and the brand's own system without anyone keying them in.</p>
+        <p>Several Piper brands sell through the big grocers. Borough Broth is in Sainsbury's, Tesco, Waitrose and Ocado, and Wild Nutrition is in Holland &amp; Barrett, Boots, Ocado and Sainsbury's. That's usually the point where order admin starts eating someone's week.</p>
+        <p>I've made a one-page retailer check for Borough Broth (attached). It covers which grocers it trades with, the documents each one exchanges and the questions worth asking about how they're handled today. I'd like to do the same for every Piper brand in grocery, for free, and the teams keep them whether or not they ever talk to us.</p>
+        <p>Would 20 minutes in the next fortnight help you decide if it's worth passing on?</p></div>
+        <button type="button" class="btn copy">Copy</button></div>
+      <div class="mail" data-mail><p class="label">A2 · Email to Rory Gibbs · day 4</p>
+        <p class="subj">Subject: Borough Broth's retailers</p>
+        <div class="body"><p>Hi Rory,</p>
+        <p>Congratulations on the Borough Broth investment. Four grocers and a growing range usually means a lot of purchase orders and invoices handled by hand.</p>
+        <p>Procuros connects a brand's own system to its retailers' EDI so that paperwork flows on its own. I've put together a short check of what Borough Broth exchanges with each of its grocers (attached).</p>
+        <p>Would you introduce me to whoever runs operations or finance there? I'll keep it to 15 minutes, and if it isn't a fit I'll tell them so.</p></div>
+        <button type="button" class="btn copy">Copy</button></div>
+      <div class="mail" data-mail><p class="label">A3 · Blurb for Piper to forward · day 15</p>
+        <div class="body"><p>Hi [founder], [name] at Procuros helps grocery brands connect to their retailers' EDI, so orders and invoices from Tesco, Sainsbury's and others go straight into your own system. They've made a short check of Borough Broth's retailers, which is attached and yours to keep. They'd like 15 minutes with whoever runs orders. Shall I connect you?</p></div>
+        <button type="button" class="btn copy">Copy</button></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>The brands, with the evidence</h2></div>
+    <div style="display:grid;gap:10px" id="piper-brands"></div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>What could go wrong</h2></div>
+    <div class="grid" style="--min:260px">
+      <div class="card"><h3>Talent isn't the right team</h3><p>Annabel's team may not own operations tooling. If so, ask her who does, and don't pitch her.</p></div>
+      <div class="card"><h3>Borough Broth is busy</h3><p>It raised in December and is hiring in operations. Time the call for once that hire has started, because they'll be the user.</p></div>
+      <div class="card"><h3>No name for Wild Nutrition</h3><p>Piper's fund entities control it, but no Piper person is on the board. That intro has to go through Annabel or Rory.</p></div>
+    </div>
+  </div>
+  <div class="next"><button type="button" class="btn" data-go="maven">Next: the Maven playbook →</button></div>
+</div></section>
+
+<section id="maven" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <div class="head"><p class="label">Task 1.2 · Fund 2 of 2 · Venture · one specific ask</p><h2>Maven: one brand, one ask</h2>
+      <p class="lede">Maven backs 155 companies across many sectors, and only two are target brands. A portfolio offer would get lost, so we ask the board director for one intro and use the result to earn the next.</p></div>
+    <div class="grid" style="--min:250px">
+      <div class="card"><p class="label">Contact 1 · Tom Parker Creamery</p><h3><a href="https://find-and-update.company-information.service.gov.uk/company/10397498/officers" target="_blank" rel="noopener">Luke Matthews</a></h3><p>A director of Tom Parker Creamery since 14 August 2024, and on <a href="https://www.mavencp.com/our-team" target="_blank" rel="noopener">Maven's team page</a>. He knows the founders and can make the intro in one email.</p></div>
+      <div class="card"><p class="label">Backup, then Tiba Tempeh</p><h3><a href="https://www.mavencp.com/our-team" target="_blank" rel="noopener">Carl Edgehill</a></h3><p>Portfolio Director. Maven talks publicly about <a href="https://www.mavencp.com/maven-video-resources/the-benefits-of-active-portfolio-management-with-bright-network" target="_blank" rel="noopener">active portfolio management</a>, so he's the one to approach if Luke is silent, and the route to Tiba Tempeh.</p></div>
+      <div class="card"><p class="label">Not contacted in the test</p><h3>Catherine Earl and Chris Lawlor</h3><p>Portfolio Managers. They're held back so the Maven lane stays one ask to one or two people, which is the variant we're testing.</p></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>Sequence, day by day</h2></div>
+    <div class="seq">
+      <div class="seq-row"><span class="d">Days −5 to 0</span><span class="ch">Prep</span><span>Build the Tom Parker Creamery retailer check. Hold the Tiba Tempeh one back. Look for a mutual connection to Luke.</span></div>
+      <div class="seq-row"><span class="d">Day 1</span><span class="ch">Email</span><span>Luke: Golden Milk as the reason to write, the check attached and one ask (draft B1).</span></div>
+      <div class="seq-row"><span class="d">Day 3</span><span class="ch">LinkedIn</span><span>Connect with Luke with a one-line note and no pitch.</span></div>
+      <div class="seq-row"><span class="d">Day 7</span><span class="ch">Email</span><span>Reply on the same thread with one new fact, such as a fresh listing or range news, and the same ask.</span></div>
+      <div class="seq-row"><span class="d">Day 10</span><span class="ch">Email</span><span>If Luke hasn't replied after two touches, send Carl the same single ask (draft B2).</span></div>
+      <div class="seq-row"><span class="d">Days 10–14</span><span class="ch">Intro</span><span>Maven forwards the blurb (draft B3), and Tom Parker opts in.</span></div>
+      <div class="seq-row"><span class="d">Days 15–21</span><span class="ch">Brand call</span><span>15 minutes with whoever runs orders or finance at Tom Parker Creamery.</span></div>
+      <div class="seq-row"><span class="d">Day 22</span><span class="ch">Report back</span><span>A two-line note to Luke on how it went. Only then ask Carl whether Tiba Tempeh would value the same.</span></div>
+      <div class="seq-row"><span class="d">Days 29–42</span><span class="ch">Close</span><span>A proposal to Tom Parker if it fits, and the Tiba Tempeh call.</span></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>Drafts</h2></div>
+    <div class="grid" style="--min:320px">
+      <div class="mail" data-mail><p class="label">B1 · Email to Luke Matthews · day 1</p>
+        <p class="subj">Subject: Tom Parker Creamery and Golden Milk</p>
+        <div class="body"><p>Hi Luke,</p>
+        <p>Congratulations on Golden Milk. Tom Parker Creamery now sells through Sainsbury's, Tesco, Waitrose, Morrisons and Ocado, and every new line adds orders, delivery notes and invoices to handle with each of them.</p>
+        <p>Procuros connects a brand's own system to its retailers' EDI so that paperwork flows without anyone keying it in. I've made a one-page check of what Tom Parker exchanges with each of its five grocers (attached).</p>
+        <p>One ask: would you introduce me to whoever runs orders or finance at Tom Parker? 15 minutes, and if it's not a fit I'll tell them so.</p></div>
+        <button type="button" class="btn copy">Copy</button></div>
+      <div class="mail" data-mail><p class="label">B2 · Email to Carl Edgehill · day 10, only if Luke is silent</p>
+        <p class="subj">Subject: One intro in Maven's consumer portfolio</p>
+        <div class="body"><p>Hi Carl,</p>
+        <p>I wrote to Luke last week about Tom Parker Creamery. Inboxes are full, so I'm trying you as Portfolio Director.</p>
+        <p>Tom Parker sells through five UK grocers and has just added a new range. Procuros connects brands like it to their retailers' EDI, so orders and invoices stop being keyed by hand. The attached one-page check is theirs to keep either way.</p>
+        <p>Could you introduce me to whoever runs orders or finance there? 15 minutes is all I'd ask for.</p></div>
+        <button type="button" class="btn copy">Copy</button></div>
+      <div class="mail" data-mail><p class="label">B3 · Blurb for Maven to forward</p>
+        <div class="body"><p>Hi [founder], [name] at Procuros helps grocery brands connect to their retailers' EDI, so orders and invoices from Sainsbury's, Tesco and the rest go straight into your own system. They've put together a short check of Tom Parker's five grocers, which is attached and yours to keep. They'd like 15 minutes with whoever runs orders. Shall I connect you?</p></div>
+        <button type="button" class="btn copy">Copy</button></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>The brands, with the evidence</h2></div>
+    <div style="display:grid;gap:10px" id="maven-brands"></div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>What could go wrong</h2></div>
+    <div class="grid" style="--min:260px">
+      <div class="card"><h3>Luke isn't close to operations</h3><p>A board director knows the founders but not always who runs orders. The blurb asks the founder to pick the person.</p></div>
+      <div class="card"><h3>A single point of failure</h3><p>Everything rests on one brand. If Tom Parker says no, we use the no as a reason to ask Carl about Tiba Tempeh, and say why the first one didn't fit.</p></div>
+      <div class="card"><h3>It may already have a provider</h3><p>With five grocers, Tom Parker may already use an EDI provider. That's still a useful call: switching is a sale too, and it tells us about the category.</p></div>
+    </div>
+  </div>
+  <div class="next"><button type="button" class="btn" data-go="score">Next: the scorecard →</button></div>
+</div></section>
+
+<section id="score" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <div class="head"><p class="label">Task 1.2 · Scorecard</p><h2>How we'll know it worked</h2>
+      <p class="lede">Every stage has a number to hit and a date to hit it by. The early stages tell us quickly whether a lane is alive. The last one tells us whether it made money.</p></div>
+    <div class="table-scroll"><table class="sc-t">
+      <thead><tr><th>Stage</th><th>What we count</th><th>By</th><th class="r">Piper target</th><th class="r">Maven target</th></tr></thead>
+      <tbody>
+        <tr><td class="p">Reply</td><td>A fund contact replies to us</td><td>Day 7</td><td class="r">1 of 2</td><td class="r">1 of 1</td></tr>
+        <tr><td class="p">Fund meeting</td><td>A call or a clear yes by email</td><td>Day 14</td><td class="r">1</td><td class="r">1</td></tr>
+        <tr><td class="p">Intros</td><td>The brand opts in and we're connected</td><td>Day 28</td><td class="r">2</td><td class="r">1</td></tr>
+        <tr><td class="p">Brand calls</td><td>A call held with whoever runs orders or finance</td><td>Day 35</td><td class="r">2</td><td class="r">1</td></tr>
+        <tr><td class="p">Qualified</td><td>The brand handles orders or invoices by hand for two or more grocers, and the decision-maker was on the call</td><td>Day 42</td><td class="r">1</td><td class="r">1</td></tr>
+      </tbody>
+    </table></div>
+    <div class="grid" style="--min:240px">
+      <div class="card"><h3>Speed</h3><p>Days from the first email to the first intro. This is where we expect the single ask to win.</p></div>
+      <div class="card"><h3>Effort</h3><p>Hours spent per intro, counting prep. A portfolio offer costs more to build, so it has to earn more intros to be worth it.</p></div>
+      <div class="card"><h3>Repeat</h3><p>Whether the fund offers a second intro without being asked. That's the best sign a fund will scale as a channel.</p></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>Kill criteria</h2><p class="lede">When to stop a lane, decided now so we don't argue about it later.</p></div>
+    <div class="grid" style="--min:250px">
+      <div class="card kill"><p class="label">Silence</p><h3>No reply by day 14</h3><p>If no contact has replied after two touches each, stop that fund. Start #3 Active Partners in the same lane, through Spencer Skinner on Northern Monk's board.</p></div>
+      <div class="card kill"><p class="label">Stalled</p><h3>No intro 14 days after the meeting</h3><p>Stop asking. Write down the reason they gave, because it's the most useful data the test produces.</p></div>
+      <div class="card kill"><p class="label">Wrong brand fit</p><h3>The first two brand calls don't need us</h3><p>If their orders already flow automatically, our brand-fit assumption is wrong for this kind of brand. Fix the scoring before Task 1.3.</p></div>
+      <div class="card kill"><p class="label">Relationship</p><h3>Anyone asks us to stop</h3><p>If a fund or founder says the intro felt pushed, stop at once and apologise. The fund is worth more than one brand.</p></div>
+    </div>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>The read-out on 11 December</h2></div>
+    <div class="grid" style="--min:300px">
+      <div class="card"><h3>How we pick the winner</h3><p>The lane with more qualified brands wins. If it's a tie, the one with the faster first intro wins, and if that's tied too, the one that cost fewer hours per intro. The winning lane becomes the default motion in Task 1.3.</p></div>
+      <div class="card"><h3>What two funds can't prove</h3><p>This is one PE and one VC firm, with different people and brands. It points a direction but it isn't proof. That's why we log every touch: date, fund, contact, channel, lane, outcome and the reason given.</p></div>
+      <div class="card"><h3>If both lanes fail</h3><p>Then the route isn't the problem. The offer or the brand-fit assumption is, and we go back to the brand calls before scaling anything.</p></div>
+    </div>
+  </div>
+</div></section>
+
 <aside class="drawer" id="drawer" role="dialog" aria-label="Fund dossier" aria-hidden="true">
   <div class="drawer-bar">
     <button type="button" class="btn" id="dr-prev" aria-label="Previous fund in the ranking">↑ Prev</button>
@@ -472,7 +749,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 (async function () {
   const D = await fetch("data.json").then(r => r.json());
   const C = D.config, P = C.pairs;
-  const TABS = ["summary", "opps", "method", "map", "notes"];
+  const TABS = ["summary", "opps", "method", "map", "notes", "exp", "piper", "maven", "score"];
   const fmtInt = d3.format(",");
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const host = u => { try { return new URL(u).hostname.replace(/^www\./, ""); } catch { return ""; } };
@@ -875,14 +1152,65 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   window.__resizeMap = () => sim.alpha(Math.max(sim.alpha(), 0.02)).restart();
   size();
 
+
+  // ---------- Task 1.2: two-fund experiment
+  const XF = ["Piper", "Maven Capital Partners"].map(n => FUNDS.find(f => f.fund === n)).filter(Boolean);
+  const xBrands = XF.flatMap(f => f.pairs);
+  document.getElementById("x-stats").innerHTML = [
+    [XF.length, "funds, one PE and one VC"], [xBrands.length, "target brands between them"],
+    [5, "named people to contact"], [6, "weeks, ending 11 December"],
+  ].map(([v, l]) => `<div class="card stat"><b>${v}</b><span>${l}</span></div>`).join("");
+  document.getElementById("x-why").innerHTML = XF.map(f => {
+    const b = f.pairs[0], bp = b.intro.board_people[0];
+    const rr = f.rank_range[0] === f.rank_range[1] ? `#${f.rank} in every weight test` : `between #${f.rank_range[0]} and #${f.rank_range[1]} in every weight test`;
+    return `<button type="button" class="card fund" data-x="${esc(f.fund)}"><div class="top"><span class="rank">#${f.rank}</span><h3>${esc(f.fund)}</h3><span class="score">${f.score.toFixed(1)}</span></div>
+      <p>${esc(f.fund_type)} · ${esc(f.about || "")} · ${rr}</p>
+      <p>Best opportunity: <b>${esc(b.brand)}</b> (${b.score.toFixed(1)}), with ${plural(b.fit.evidence.reach.items.length, "grocer")} confirmed${bp ? ` and ${esc(bp.name)} on its board since ${esc(bp.since.slice(0, 7))}` : ""}.</p>
+      <p class="small">Open the full dossier →</p></button>`;
+  }).join("");
+  document.querySelectorAll("[data-x]").forEach(b => b.addEventListener("click", () => select(b.dataset.x)));
+
+  const QUESTIONS = ["How do orders from each grocer arrive today: a portal, email or an EDI provider?", "Who keys them in, and how many hours a week does that take?",
+    "Have any invoices been rejected or paid late because of a mismatch?", "Which system holds your orders: an ERP, Shopify or a spreadsheet?", "Which listing or range is coming next?"];
+  let rcOn = xBrands[0] && xBrands[0].brand;
+  function renderCheck() {
+    const p = xBrands.find(x => x.brand === rcOn); if (!p) return;
+    const ev = p.fit.evidence, f = XF.find(x => x.pairs.includes(p));
+    const rows = ev.reach.items.map(r => `<tr><td class="p">${esc(r.name)}</td><td>${esc(D.retailer_blurbs[r.name] || "Retailer")}</td><td>${link(r.url, host(r.url))}</td></tr>`).join("");
+    const now = ev.why_now.items.slice(0, 3).map(t => `<li>${t.date ? esc(t.date.slice(0, 7)) + " · " : ""}${link(t.url, t.text)}</li>`).join("");
+    document.getElementById("rcheck").innerHTML = `<div class="rc-top"><b>Retailer check · ${esc(pretty(p.brand))}</b><span class="label">via ${esc(short(f.fund))} · built ${esc(D.as_of)}</span></div>
+      ${rows ? `<div><p class="label">Where it sells</p><div class="table-scroll"><table><thead><tr><th>Retailer</th><th>Type</th><th>Proof</th></tr></thead><tbody>${rows}</tbody></table></div></div>`
+        : `<p class="small muted">No grocery listing confirmed yet. The first question is which grocers it supplies, directly or through a wholesaler.</p>`}
+      <p class="small">With each grocer a supplier usually trades three documents: the <b>order</b> coming in, then the <b>delivery note</b> and the <b>invoice</b> going out. ${rows ? `For ${esc(pretty(p.brand))} that's ${ev.reach.items.length * 3} document streams to keep in step.` : ""}</p>
+      <div class="two"><div><p class="label">What's changed lately</p>${now ? `<ul>${now}</ul>` : `<p class="muted">No dated news in the last 24 months.</p>`}</div>
+        <div><p class="label">Size</p><p>${esc(ev.size.note)}</p></div></div>
+      <div><p class="label">Questions for the first call</p><ol>${QUESTIONS.map(q => `<li>${esc(q)}</li>`).join("")}</ol></div>`;
+    document.querySelectorAll("#rc-pick .fbtn").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.b === rcOn)));
+  }
+  document.getElementById("rc-pick").innerHTML = xBrands.map(p => `<button type="button" class="fbtn" data-b="${esc(p.brand)}" aria-pressed="false">${esc(pretty(p.brand))}</button>`).join("");
+  document.querySelectorAll("#rc-pick .fbtn").forEach(b => b.addEventListener("click", () => { rcOn = b.dataset.b; renderCheck(); }));
+  renderCheck();
+  document.getElementById("piper-brands").innerHTML = (XF[0] ? XF[0].pairs : []).map(pairCard).join("");
+  document.getElementById("maven-brands").innerHTML = (XF[1] ? XF[1].pairs : []).map(pairCard).join("");
+  document.querySelectorAll("[data-mail] .copy").forEach(b => b.addEventListener("click", async () => {
+    const m = b.closest("[data-mail]"), s = m.querySelector(".subj");
+    const text = (s ? s.textContent + "\n\n" : "") + [...m.querySelectorAll(".body p")].map(p => p.textContent).join("\n\n");
+    try { await navigator.clipboard.writeText(text); b.textContent = "Copied"; } catch (e) { b.textContent = "Select and copy"; }
+    setTimeout(() => { b.textContent = "Copy"; }, 1600);
+  }));
+
   // ---------- Tabs
+  const taskOf = t => document.querySelector(`#subtabs [data-tab="${t}"]`).dataset.task;
   function showTab(id) {
     if (!TABS.includes(id)) id = "summary";
+    const task = taskOf(id);
     TABS.forEach(t => {
       document.getElementById(t).hidden = t !== id;
       const b = document.querySelector(`#subtabs [data-tab="${t}"]`);
+      b.hidden = b.dataset.task !== task;
       b.setAttribute("aria-selected", String(t === id)); b.tabIndex = t === id ? 0 : -1;
     });
+    document.querySelectorAll(".task[data-task]").forEach(b => { const on = b.dataset.task === task; b.classList.toggle("on", on); b.setAttribute("aria-selected", String(on)); });
     try { history.replaceState(null, "", "#" + id); } catch (e) {}
     if (id === "map") size();
     window.scrollTo({ top: 0 });
@@ -891,10 +1219,11 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   document.querySelectorAll("#subtabs button").forEach(b => b.addEventListener("click", () => showTab(b.dataset.tab)));
   document.getElementById("subtabs").addEventListener("keydown", e => {
     if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
-    const cur = TABS.findIndex(t => !document.getElementById(t).hidden);
-    const nx = TABS[(cur + (e.key === "ArrowRight" ? 1 : TABS.length - 1)) % TABS.length];
+    const cur = TABS.find(t => !document.getElementById(t).hidden), set = TABS.filter(t => taskOf(t) === taskOf(cur)), i = set.indexOf(cur);
+    const nx = set[(i + (e.key === "ArrowRight" ? 1 : set.length - 1)) % set.length];
     showTab(nx); document.querySelector(`#subtabs [data-tab="${nx}"]`).focus();
   });
+  document.querySelectorAll(".task[data-task]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.first)));
   document.querySelectorAll("[data-go]").forEach(b => b.addEventListener("click", () => showTab(b.dataset.go)));
   const h = (location.hash || "#summary").slice(1);
   showTab({ overview: "summary", thesis: "summary", ranking: "opps", pipeline: "method", signals: "method", dossier: "opps", limits: "notes" }[h] || h);
