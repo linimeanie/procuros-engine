@@ -3965,7 +3965,7 @@
    "set_aside": [
     {
      "brand": "Fever-Tree",
-     "reason": "over the £100m ICP band (listed company, several hundred £m)",
+     "reason": "sold",
      "status": "exited_old"
     },
     {
@@ -3975,7 +3975,7 @@
     },
     {
      "brand": "Addo Food Group",
-     "reason": "over the £100m ICP band (chilled food group, £200m+)",
+     "reason": "sold",
      "status": "exited_old"
     },
     {
@@ -4365,7 +4365,7 @@
     },
     {
      "brand": "Quorn Foods",
-     "reason": "over the £100m ICP band (global meat-alternative group, £200m+)",
+     "reason": "sold",
      "status": "exited_old"
     }
    ],
@@ -7608,7 +7608,7 @@
     },
     {
      "brand": "innocent",
-     "reason": "over the £100m ICP band (Coca-Cola owned, several hundred £m)",
+     "reason": "sold",
      "status": "exited_old"
     },
     {
@@ -8340,6 +8340,113 @@
    ]
   },
   {
+   "fund": "Endless",
+   "fund_type": "PE",
+   "score": 1.9,
+   "pairs": [
+    {
+     "brand": "Bright Blue Foods",
+     "score": 3.3,
+     "fit": {
+      "fit": 0.328,
+      "parts": {
+       "reach": 0.0,
+       "why_now": 0.08,
+       "size": 1.0,
+       "uk": 1.0
+      },
+      "why_now_parts": {
+       "listings": 0.0,
+       "funding": 0.265,
+       "ops_hiring": 0.0,
+       "expansion": 0
+      },
+      "stack_mult": 1.0,
+      "stack": [
+       "funding"
+      ],
+      "evidence": {
+       "reach": {
+        "state": "checked, none found",
+        "items": []
+       },
+       "why_now": {
+        "state": "confirmed",
+        "items": [
+         {
+          "date": "2026-02-16",
+          "text": "New charge (debt facility) filed at Companies House",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/08211695/filing-history/MzUwNTIwMTU0M2FkaXF6a2N4",
+          "source": "Companies House"
+         }
+        ]
+       },
+       "size": {
+        "state": "confirmed",
+        "note": "files full or group accounts (usually £10m+ turnover)",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08211695"
+       },
+       "uk": {
+        "state": "confirmed",
+        "note": "UK company BRIGHT BLUE FOODS LIMITED (08211695)",
+        "url": "https://find-and-update.company-information.service.gov.uk/company/08211695"
+       },
+       "manual_process": {
+        "state": "not observable",
+        "note": "No public source shows how orders and invoices are handled; ask on the call."
+       }
+      }
+     },
+     "intro": {
+      "path": 0.1,
+      "strength": "Weak",
+      "parts": {
+       "listed": 0.1,
+       "board": 0.0,
+       "ops_person": 0.0,
+       "support": 0.0,
+       "held": 0.0
+      },
+      "board_people": [],
+      "fund_entity": [],
+      "ops_people": [],
+      "support": [],
+      "held": {
+       "state": "unconfirmed",
+       "source": "portfolio page"
+      }
+     },
+     "confidence": "Medium",
+     "fund_source": "https://endlessllp.com/investments/bright-blue-food/",
+     "qualified": false
+    }
+   ],
+   "qualified": 0,
+   "set_aside": [
+    {
+     "brand": "Hovis",
+     "reason": "sold",
+     "status": "exited_recent"
+    }
+   ],
+   "procuros_overlap": [],
+   "ops_people": [],
+   "support": [],
+   "rank": 22,
+   "selected": false,
+   "tier": "-",
+   "rationale": "Backs Bright Blue Foods; no named route yet, so the first job is finding the deal partner.",
+   "next_steps": [
+    "Confirm Endless still holds Bright Blue Foods.",
+    "Find the deal partner for Bright Blue Foods and look for a mutual connection.",
+    "Lead with: New charge (debt facility) filed at Companies House (2026-02)."
+   ],
+   "rank_range": [
+    22,
+    22
+   ]
+  },
+  {
    "fund": "CapVest",
    "fund_type": "PE",
    "score": 0.5,
@@ -8417,7 +8524,7 @@
    "procuros_overlap": [],
    "ops_people": [],
    "support": [],
-   "rank": 22,
+   "rank": 23,
    "selected": false,
    "tier": "-",
    "rationale": "Backs ipn; no named route yet, so the first job is finding the deal partner.",
@@ -8427,8 +8534,8 @@
     "Find the deal partner for ipn and look for a mutual connection."
    ],
    "rank_range": [
-    22,
-    22
+    23,
+    23
    ]
   }
  ],
@@ -8663,6 +8770,11 @@
    "fund": "The Craftory",
    "score": 3.1,
    "why": "Backs HIPPEAS (Tesco, Ocado); no named route yet, so the first job is finding the deal partner."
+  },
+  {
+   "fund": "Endless",
+   "score": 1.9,
+   "why": "Backs Bright Blue Foods; no named route yet, so the first job is finding the deal partner."
   },
   {
    "fund": "CapVest",

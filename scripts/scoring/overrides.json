@@ -295,13 +295,6 @@
     "Unilever Ventures": 0.5
   },
   "over_icp_size": {
-    "_note": "Desk judgement: brands well above the £100m revenue ceiling of the ICP.",
-    "Hovis": "national bread brand, several hundred £m",
-    "innocent": "Coca-Cola owned, several hundred £m",
-    "Fever-Tree": "listed company, several hundred £m",
-    "Quorn Foods": "global meat-alternative group, £200m+",
-    "Bright Blue Foods": "own-label cake maker, turnover over £200m per its profile",
-    "Addo Food Group": "chilled food group, £200m+",
-    "Kettle Foods": "national crisp brand, over £100m"
+    "_note": "Empty on purpose. This held seven brands judged to be above the ICP's revenue ceiling: Hovis, innocent, Fever-Tree, Quorn Foods, Bright Blue Foods, Addo Food Group and Kettle Foods. Removing them from this list changes the fund ranking by nothing, because six of the seven had already been exited by the fund holding them and were removed by the holding test regardless. Only Bright Blue Foods was a live holding, and it scores 3 against a qualifying bar of 20. Companies House publishes accounts type rather than turnover, so a ceiling cannot be derived the way the floor can, and a list of names applied by recognition will always miss the brands nobody recognises. The observation is more useful than the rule: investors do not still hold brands that large."
   }
 }

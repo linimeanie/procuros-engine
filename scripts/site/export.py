@@ -84,6 +84,6 @@ data = {"as_of": cfg["as_of"], "config": {k: cfg[k] for k in ("pairs", "stack", 
                   "pairs_confirmed": sum(1 for f in funds for b in f["brands"] if b["status"] != "unknown"),
                   "pairs_total": sum(len(f["brands"]) for f in funds),
                   "set_aside": {r: sum(1 for f in funds for x in f.get("set_aside", []) if x["reason"].startswith(r))
-                                for r in ("already a Procuros customer", "over the £100m", "sold")}}}
+                                for r in ("already a Procuros customer", "sold")}}}
 (ROOT / "site/data.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 print({k: v for k, v in data["stats"].items()}, [x["value"] for x in funnel], len(out_funds))
