@@ -1240,7 +1240,7 @@
    },
    {
     "brand": "innocent",
-    "reason": "over the £100m ICP band (Coca-Cola owned, several hundred £m)",
+    "reason": "sold",
     "status": "exited_old"
    },
    {
@@ -1611,7 +1611,7 @@
    },
    {
     "brand": "Quorn Foods",
-    "reason": "over the £100m ICP band (global meat-alternative group, £200m+)",
+    "reason": "sold",
     "status": "exited_old"
    }
   ],
@@ -2057,7 +2057,7 @@
   "set_aside": [
    {
     "brand": "Fever-Tree",
-    "reason": "over the £100m ICP band (listed company, several hundred £m)",
+    "reason": "sold",
     "status": "exited_old"
    },
    {
@@ -2067,7 +2067,7 @@
    },
    {
     "brand": "Addo Food Group",
-    "reason": "over the £100m ICP band (chilled food group, £200m+)",
+    "reason": "sold",
     "status": "exited_old"
    },
    {
@@ -2791,6 +2791,86 @@
   "why": "2 UK grocery brands still held, incl. Sneak (Tesco), seriouspig; recent trigger: Sneak: \"Sneak Energy lands additional listings across Bestway\" (2026-06)."
  },
  {
+  "fund": "Endless",
+  "fund_type": "PE",
+  "website": "https://endlessllp.com",
+  "scrape_status": "ok",
+  "portfolio_urls": [
+   "https://endlessllp.com/investments/",
+   "https://endlessllp.com/"
+  ],
+  "company_count": 15,
+  "brands": [
+   {
+    "brand": "Bright Blue Foods",
+    "status": "unknown",
+    "status_source": "portfolio page",
+    "fit": 0.51,
+    "pain": 0.066,
+    "retailers": []
+   }
+  ],
+  "raw": {
+   "icp_count": 0.4335,
+   "fmcg_share": 0.056666666666666664,
+   "avg_brand_fit": 0.51,
+   "recent_deals": 0,
+   "pain_top": 0.056100000000000004,
+   "platform_team": 0,
+   "community": 0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0,
+   "brand_halo": 0,
+   "ecosystem": 0
+  },
+  "set_aside": [
+   {
+    "brand": "Hovis",
+    "reason": "sold",
+    "status": "exited_recent"
+   }
+  ],
+  "evidence": {
+   "platform_people": [],
+   "community": [],
+   "vendor": [],
+   "procuros_overlap": [],
+   "recent_deal_brands": []
+  },
+  "gate": 0.33,
+  "pillars": {
+   "fit": 0.201,
+   "pain": 0.056,
+   "access": 0.025,
+   "strategic": 0.0
+  },
+  "normalised": {
+   "icp_count": 0.158122,
+   "fmcg_share": 0.14069,
+   "avg_brand_fit": 0.51,
+   "recent_deals": 0.0,
+   "pain_top": 0.0561,
+   "platform_team": 0.0,
+   "community": 0.0,
+   "size_stage": 0.5,
+   "vendor_openness": 0.0,
+   "procuros_overlap": 0.0,
+   "brand_halo": 0.0,
+   "ecosystem": 0.0
+  },
+  "score": 10.2,
+  "live_brand_count": 1,
+  "tier": "C",
+  "coverage": {
+   "scrape_status": "ok",
+   "signals_with_data": 5,
+   "signals_total": 16
+  },
+  "rank": 22,
+  "why": "1 UK grocery brand still held, incl. Bright Blue Foods."
+ },
+ {
   "fund": "CapVest",
   "fund_type": "PE",
   "website": "https://www.capvest.com",
@@ -2860,7 +2940,7 @@
    "signals_with_data": 4,
    "signals_total": 16
   },
-  "rank": 22,
+  "rank": 23,
   "why": "1 UK grocery brand still held, incl. ipn."
  },
  {
@@ -2929,7 +3009,7 @@
    "signals_with_data": 2,
    "signals_total": 16
   },
-  "rank": 23,
+  "rank": 24,
   "why": "."
  },
  {
@@ -3057,7 +3137,7 @@
    "signals_with_data": 4,
    "signals_total": 16
   },
-  "rank": 24,
+  "rank": 25,
   "why": "named portfolio/platform contact: Nigel Moss (Portfolio Director)."
  },
  {
@@ -3168,7 +3248,7 @@
    "signals_with_data": 3,
    "signals_total": 16
   },
-  "rank": 25,
+  "rank": 26,
   "why": "named portfolio/platform contact: Adam Milner (Portfolio Director, Leeds)."
  },
  {
@@ -3234,7 +3314,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 26,
+  "rank": 27,
   "why": "."
  },
  {
@@ -3320,7 +3400,7 @@
    "signals_with_data": 3,
    "signals_total": 16
   },
-  "rank": 27,
+  "rank": 28,
   "why": "named portfolio/platform contact: Derek Knowles (Head of Operations)."
  },
  {
@@ -3384,7 +3464,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 28,
+  "rank": 29,
   "why": "."
  },
  {
@@ -3448,7 +3528,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 29,
+  "rank": 30,
   "why": "."
  },
  {
@@ -3512,7 +3592,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 30,
+  "rank": 31,
   "why": "."
  },
  {
@@ -3587,7 +3667,7 @@
    "signals_with_data": 2,
    "signals_total": 16
   },
-  "rank": 31,
+  "rank": 32,
   "why": "named portfolio/platform contact: Angus Abbott (Portfolio Director)."
  },
  {
@@ -3651,7 +3731,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 32,
+  "rank": 33,
   "why": "."
  },
  {
@@ -3736,7 +3816,7 @@
    "signals_with_data": 1,
    "signals_total": 16
   },
-  "rank": 33,
+  "rank": 34,
   "why": "."
  },
  {
@@ -3800,7 +3880,7 @@
    "signals_with_data": 0,
    "signals_total": 16
   },
-  "rank": 34,
+  "rank": 35,
   "why": "."
  },
  {
@@ -3830,7 +3910,7 @@
   "set_aside": [
    {
     "brand": "Kettle Foods",
-    "reason": "over the £100m ICP band (national crisp brand, over £100m)",
+    "reason": "sold",
     "status": "exited_old"
    },
    {
@@ -3862,82 +3942,6 @@
    "platform_team": 0.0,
    "community": 0.0,
    "size_stage": 0.3,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0.0,
-   "brand_halo": 0.0,
-   "ecosystem": 0.0
-  },
-  "score": 0.0,
-  "live_brand_count": 0,
-  "tier": "C",
-  "coverage": {
-   "scrape_status": "ok",
-   "signals_with_data": 1,
-   "signals_total": 16
-  },
-  "rank": 35,
-  "why": "."
- },
- {
-  "fund": "Endless",
-  "fund_type": "PE",
-  "website": "https://endlessllp.com",
-  "scrape_status": "ok",
-  "portfolio_urls": [
-   "https://endlessllp.com/investments/",
-   "https://endlessllp.com/"
-  ],
-  "company_count": 15,
-  "brands": [],
-  "raw": {
-   "icp_count": 0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0,
-   "recent_deals": 0,
-   "pain_top": 0,
-   "platform_team": 0,
-   "community": 0,
-   "size_stage": 0.5,
-   "vendor_openness": 0.0,
-   "procuros_overlap": 0,
-   "brand_halo": 0,
-   "ecosystem": 0
-  },
-  "set_aside": [
-   {
-    "brand": "Bright Blue Foods",
-    "reason": "over the £100m ICP band (own-label cake maker, turnover over £200m per its profile)",
-    "status": "unknown"
-   },
-   {
-    "brand": "Hovis",
-    "reason": "over the £100m ICP band (national bread brand, several hundred £m)",
-    "status": "exited_recent"
-   }
-  ],
-  "evidence": {
-   "platform_people": [],
-   "community": [],
-   "vendor": [],
-   "procuros_overlap": [],
-   "recent_deal_brands": []
-  },
-  "gate": 0.0,
-  "pillars": {
-   "fit": 0.0,
-   "pain": 0,
-   "access": 0.0,
-   "strategic": 0.0
-  },
-  "normalised": {
-   "icp_count": 0.0,
-   "fmcg_share": 0.0,
-   "avg_brand_fit": 0.0,
-   "recent_deals": 0.0,
-   "pain_top": 0,
-   "platform_team": 0.0,
-   "community": 0.0,
-   "size_stage": 0.5,
    "vendor_openness": 0.0,
    "procuros_overlap": 0.0,
    "brand_halo": 0.0,

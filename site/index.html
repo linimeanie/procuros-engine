@@ -421,7 +421,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   <div class="block statement">
     <p class="claim">Only <span data-n="holding"></span> of <span data-n="vcpe"></span> funds back a brand that fits. <em>The ranking never had much to decide.</em></p>
     <div>
-      <p class="because">The scoring looks like the hard part and isn't. Most UK VC and PE funds hold no grocery brand under £100m that Procuros could sell to, so they were out before any weighting was applied. What the ranking adds is the order to work in and who to call first, not the selection.</p>
+      <p class="because">The scoring looks like the hard part and isn't. Most UK VC and PE funds hold no UK grocery brand at all that Procuros could sell to, so they were out before any weighting was applied. What the ranking adds is the order to work in and who to call first, not the selection.</p>
       <p class="because">It is also why the bottom of the list is soft. By rank eighteen the scores are in single figures, and #20 and #21 sit a tenth of a point apart, which is closer than the evidence behind them can resolve.</p>
     </div>
   </div>
@@ -468,7 +468,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   <div class="block">
     <div class="head"><h2>From <span data-n="seeded"></span> funds to <span data-n="worth"></span> doors</h2>
-      <p class="lede">Each bar is drawn to scale within its group. A <b>target brand</b> is one the fund still holds, that isn't already a Procuros customer, and that sits under £100m revenue. The drop that matters is the fourth row: most funds fail on having a fitting brand at all, long before any score is applied.</p></div>
+      <p class="lede">Each bar is drawn to scale within its group. A <b>target brand</b> is one the fund still holds and that isn't already a Procuros customer. No revenue ceiling is applied, for the reason given under what to trust. The drop that matters is the fourth row: most funds fail on having a fitting brand at all, long before any score is applied.</p></div>
     <div class="funnel" id="funnel"></div>
   </div>
 
@@ -512,7 +512,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
 
   <div class="block">
     <div class="head"><h2>Does the weighting change the answer?</h2>
-      <p class="lede">The ranking was rerun under other reasonable weightings. Asking whether the same funds stay in the 20 would prove nothing, because only 22 funds hold a fitting brand at all. What matters is whether the <b>order</b> holds, so each row reports the largest rank move that weighting causes. The call-first group is stable; the middle of the table is not.</p></div>
+      <p class="lede">The ranking was rerun under other reasonable weightings. Asking whether the same funds stay in the 20 would prove nothing, because only <span data-n="holding"></span> funds hold a fitting brand at all. What matters is whether the <b>order</b> holds, so each row reports the largest rank move that weighting causes. The call-first group is stable; the middle of the table is not.</p></div>
     <div class="table-scroll"><table>
       <thead><tr><th>Scenario</th><th>What changed</th><th class="r" id="first-head"></th><th class="r">Biggest rank move</th></tr></thead>
       <tbody id="sens-body"></tbody>
@@ -540,7 +540,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="head"><p class="label">What to trust</p><h2>Where this is solid, and where it isn't</h2>
       <p class="lede">The ranking is only worth as much as the evidence under it, and that evidence is uneven. This says which parts are sourced, which are inferred, which are my judgement, and which could not be seen at all. The last group is the one to ask about on the first call.</p></div>
     <div class="grid" style="--min:300px">
-      <div class="card"><h3>What counts as a door</h3><p>A brand counts only if the fund still holds it, it isn't already a Procuros customer, and it sits under £100m revenue.</p><div id="set-aside" style="display:grid;gap:8px"></div></div>
+      <div class="card"><h3>What counts as a door</h3><p>A brand counts only if the fund still holds it and it isn't already a Procuros customer. <b>There is no revenue ceiling</b>, because none is needed. Of the seven brands I could identify as clearly above the ICP band, six had already been exited by the fund holding them, so the holding test removes those anyway. The seventh, Bright Blue Foods, is still held and scores 3 against a qualifying bar of 20. Applying a ceiling as well changed the ranking by nothing. Companies House publishes accounts type rather than turnover, so a ceiling cannot be derived the way the floor can, and a list of names applied by recognition would only ever catch the brands someone recognised. The useful version is the observation rather than the rule: investors do not still hold brands that large.</p><div id="set-aside" style="display:grid;gap:8px"></div></div>
       <div class="card"><h3>Coverage of the <span data-n="targets"></span> target brands</h3><div id="coverage" style="display:grid;gap:10px"></div></div>
       <div class="card"><h3>Low score or missing data?</h3><p>Every piece of evidence carries a state, so the two can be told apart:</p>
         <div style="display:grid;gap:8px" class="small">
@@ -552,7 +552,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
       <div class="card"><h3>Judgement calls</h3><p>These are my calls rather than scraped data:</p>
         <ul class="small muted" style="margin:0;padding-left:18px;display:grid;gap:4px">
           <li>The weights for brand fit and the points for intro path. The call-first group survives every weighting tested; the middle of the table does not, and the Method tab reports how far each scenario moves it.</li>
-          <li>Which brands are over £100m revenue.</li>
+          <li>Where the size bands sit: micro filers score low as below the band, and full or group accounts are treated as uncertain rather than large.</li>
           <li>The 9-month half-life for news and the 1.5× stacking cap.</li>
           <li>The group lines for Call first and Next.</li>
         </ul></div>
@@ -855,7 +855,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <div class="table-scroll"><table>
       <thead><tr><th>Per 100 UK VC and PE funds researched</th><th class="r">Count</th><th>Where the number comes from</th></tr></thead>
       <tbody>
-        <tr><td class="p">Hold at least one brand that fits</td><td class="r">38</td><td class="muted">Measured · 22 of the 58 funds read</td></tr>
+        <tr><td class="p">Hold at least one brand that fits</td><td class="r">40</td><td class="muted">Measured · 23 of the 58 funds read</td></tr>
         <tr><td class="p">Have both a score and a named person to ask</td><td class="r">17</td><td class="muted">Measured · 10 of 58</td></tr>
         <tr><td class="p">Introduction asks worth making</td><td class="r">40</td><td class="muted">Measured · 23 qualified pairs across 58 funds</td></tr>
         <tr style="border-top:2px solid var(--ink)"><td class="p">Introductions, if half the asks are forwarded</td><td class="r">20</td><td class="muted">Assumed · the forward-rate target in Task 1.2</td></tr>
@@ -1214,7 +1214,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   document.getElementById("fit-body").innerHTML = [
     ["reach", "Major UK grocers stocking it now (4 or more = full marks)", "Retailer product pages and stockist lists", "Confirmed"],
     ["why_now", "New listings, funding, ops hiring and export news in the last 24 months", "Trade press, Companies House filings, job boards", "Confirmed"],
-    ["size", "Inside the £3m–£100m band", "Companies House accounts type; retail reach when no accounts match", "Confirmed or assumed"],
+    ["size", "Big enough to feel the pain, small enough to decide quickly", "Companies House accounts type; retail reach when no accounts match", "Confirmed or assumed"],
     ["uk", "Trades through a UK company", "Companies House match; UK retailers when no match", "Confirmed or assumed"],
     [null, "Manual order, invoice and delivery-note handling", "No public source", "Not observable: ask on the first call"],
   ].map(([k, m, s, e]) => `<tr><td class="p">${k ? FIT_LABEL[k] : "Manual processes"}</td><td>${m}</td><td class="muted">${s}<br><span class="small">${e}</span></td><td class="r">${k ? Math.round(100 * fw[k]) + "%" : "not scored"}</td></tr>`).join("");
@@ -1231,7 +1231,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   document.getElementById("agg-formula").textContent = `fund = (best + ${dec[1]} × 2nd + ${dec[2]} × 3rd) ÷ ${dec.reduce((a, b) => a + b, 0)}`;
   document.getElementById("tier-formula").textContent = `Call first: ${P.tiers.A}+ and 2 pairs · Next: ${P.tiers.B}+`;
   document.getElementById("first-head").textContent = `Call-first group held (of ${D.first_group})`;
-  // "Same funds in the 20" is near-forced when only 22 funds hold a target brand at all, so it proves nothing.
+  // "Same funds in the 20" is near-forced when so few funds hold a target brand at all, so it proves nothing.
   // What moves is the order: report the largest displacement each weighting causes instead.
   const baseOrder = SHORT.map(f => f.fund);
   document.getElementById("sens-body").innerHTML = D.sensitivity.map(s => {
@@ -1402,7 +1402,6 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   document.getElementById("set-aside").innerHTML = [
     [SA["sold"], "fund–brand links set aside because the fund has sold the brand"],
     [SA["already a Procuros customer"], "set aside because the brand already uses Procuros (Tony's Chocolonely, TrueStart)"],
-    [SA["over the £100m"], "set aside as over £100m revenue (Hovis, innocent, Fever-Tree and others)"],
   ].map(([v, l]) => `<p><b class="num">${v}</b> ${l}</p>`).join("");
   document.getElementById("coverage").innerHTML = [
     [s.brands_with_retailers, "have a major UK retailer confirmed by a product page or stockist list"],

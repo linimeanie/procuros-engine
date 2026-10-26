@@ -289,9 +289,13 @@ def score_funds(funds, brands):
         overlap = [m["brand"]["brand"] for m in mine if is_customer(m) and m["status"] in ("current", "unknown")]
         set_aside = []
         for m in mine:
+            # Sold is tested before any size judgement. The other order reported brands as "over the £100m
+            # band" when the fund had already exited them, which made a hand-written list look like it was
+            # doing seven brands' worth of filtering when the holding test had removed six of them anyway.
             why_out = ("already a Procuros customer" if is_customer(m)
+                       else "sold" if m["status"] in ("exited_recent", "exited_old")
                        else f"over the £100m ICP band ({OVR['over_icp_size'][m['brand']['brand']]})" if m["brand"]["brand"] in OVR["over_icp_size"]
-                       else "sold" if m["status"] in ("exited_recent", "exited_old") else None)
+                       else None)
             if why_out:
                 set_aside.append({"brand": m["brand"]["brand"], "reason": why_out, "status": m["status"]})
         out_names = {x["brand"] for x in set_aside}
