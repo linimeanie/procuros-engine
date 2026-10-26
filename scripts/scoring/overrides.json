@@ -296,5 +296,16 @@
   },
   "over_icp_size": {
     "_note": "Empty on purpose. This held seven brands judged to be above the ICP's revenue ceiling: Hovis, innocent, Fever-Tree, Quorn Foods, Bright Blue Foods, Addo Food Group and Kettle Foods. Removing them from this list changes the fund ranking by nothing, because six of the seven had already been exited by the fund holding them and were removed by the holding test regardless. Only Bright Blue Foods was a live holding, and it scores 3 against a qualifying bar of 20. Companies House publishes accounts type rather than turnover, so a ceiling cannot be derived the way the floor can, and a list of names applied by recognition will always miss the brands nobody recognises. The observation is more useful than the rule: investors do not still hold brands that large."
+  },
+  "replace_people": {
+    "_note": "Portfolio contact chosen by hand, replacing the scraped one.",
+    "Piper": [
+      {
+        "name": "Dan Stern",
+        "title": "Partner",
+        "url": "https://www.crunchbase.com/person/dan-stern",
+        "source": "https://www.unquote.com/uk/news/3022879/piper-promotes-stern"
+      }
+    ]
   }
 }
