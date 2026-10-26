@@ -304,6 +304,8 @@ def score_funds(funds, brands):
                   if PLATFORM_TITLE.search(p.get("title", "")) and not NOT_A_NAME.search(p.get("name", ""))
                   and "investor relations" not in p.get("title", "").lower()]
         seen = set(); people = [p for p in people if not (p["name"] in seen or seen.add(p["name"]))]
+        if f["fund"] in OVR.get("replace_people", {}):
+            people = [{"name": x["name"], "title": x["title"], "url": x["url"]} for x in OVR["replace_people"][f["fund"]]]
         comm = [c for c in f.get("community_signals", []) if COMMUNITY_RE.search(c.get("text", ""))]
         vendor = [c for c in f.get("community_signals", []) if VENDOR_RE.search(c.get("text", ""))]
         eco = [c for c in f.get("community_signals", []) if ECOSYSTEM_RE.search(c.get("text", ""))]
