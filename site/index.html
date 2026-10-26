@@ -373,6 +373,40 @@ table.lanes td.p, table.sc-t td.p { white-space: nowrap; }
 .kill { border-top: 3px solid var(--accent); }
 
 footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-2); border-top: 1px solid var(--rule); }
+
+/* Under the hood: a four-column pipeline (sources -> scripts -> data -> numbers) with SVG connectors drawn over it */
+.hood-nums { display: flex; flex-wrap: wrap; gap: 8px; }
+.hood-nums button { font: 500 var(--fs-small)/1.2 var(--body); padding: 9px 12px; border: 1px solid var(--rule); background: var(--card); color: var(--ink); border-radius: 999px; cursor: pointer; display: inline-flex; gap: 8px; align-items: baseline; }
+.hood-nums button b { font: 800 18px/1 var(--display); }
+.hood-nums button[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.hood-wrap { position: relative; }
+.hood-lines { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.hood-lines path { fill: none; stroke: var(--rule); stroke-width: 1.5; transition: stroke .15s, opacity .15s; }
+.hood-lines path.on { stroke: var(--accent); stroke-width: 2.5; }
+.hood-wrap.lit .hood-lines path:not(.on) { opacity: .25; }
+.hood-cols { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px; }
+.hood-col { display: grid; gap: 10px; align-content: start; }
+.hood-col > .label { padding-bottom: 4px; }
+.hood-node { text-align: left; font: 400 13px/1.35 var(--body); padding: 10px 12px; border: 1px solid var(--rule); border-left: 3px solid var(--k, var(--rule)); background: var(--card); color: var(--ink-2); border-radius: 6px; cursor: pointer; display: grid; gap: 2px; transition: opacity .15s, border-color .15s, background .15s; }
+.hood-node b { font: 600 14px/1.25 var(--body); color: var(--ink); }
+.hood-node.k-src { --k: var(--p-fit); } .hood-node.k-py { --k: var(--p-access); } .hood-node.k-data { --k: var(--p-strat); } .hood-node.k-num { --k: var(--accent); }
+.hood-node.k-num b { font: 800 20px/1.1 var(--display); }
+.hood-node.manual::after { content: "includes a manual step"; font: 500 10px/1.2 var(--mono); letter-spacing: .05em; text-transform: uppercase; color: var(--accent); margin-top: 4px; }
+.hood-wrap.lit .hood-node:not(.on) { opacity: .35; }
+.hood-node.on { border-color: var(--accent); }
+.hood-node.sel { background: var(--accent-soft); }
+.hood-detail { min-height: 120px; }
+.hood-detail h3 { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.hood-detail .kv { display: grid; grid-template-columns: 120px 1fr; gap: 6px 14px; font-size: var(--fs-small); }
+.hood-detail .kv dt { color: var(--ink-2); font: 500 var(--fs-label)/1.6 var(--mono); text-transform: uppercase; letter-spacing: .05em; }
+.hood-detail .kv dd { margin: 0; color: var(--ink); }
+.hood-t td { font-size: var(--fs-small); vertical-align: top; }
+.hood-t td:first-child { font-family: var(--mono); white-space: nowrap; color: var(--ink); }
+@media (max-width: 860px) {
+  .hood-cols { grid-template-columns: 1fr; gap: 24px; }
+  .hood-lines { display: none; }
+  .hood-detail .kv { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -391,6 +425,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
     <button type="button" role="tab" data-tab="summary" data-task="t11">The answer</button>
     <button type="button" role="tab" data-tab="method" data-task="t11">How it was built</button>
     <button type="button" role="tab" data-tab="notes" data-task="t11">What to trust</button>
+    <button type="button" role="tab" data-tab="hood" data-task="t11">Under the hood</button>
     <button type="button" role="tab" data-tab="exp" data-task="t12" hidden>The test</button>
     <button type="button" role="tab" data-tab="play" data-task="t12" hidden>Playbooks</button>
     <button type="button" role="tab" data-tab="score" data-task="t12" hidden>Scorecard</button>
@@ -1021,6 +1056,43 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   </div>
 </div></section>
 
+<section id="hood" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <p class="label">Procuros · UK go-to-market · Task 1.1 · under the hood</p>
+    <h1>Every number has <em>a path back to a source</em>.</h1>
+    <p class="lede">Seven public sources, ten Python scripts, a dozen data files, one site. Select a number to light up exactly where it came from, or select any box to see what it does, what went in and out, and where it is strong or weak.</p>
+  </div>
+
+  <div class="block">
+    <div class="head"><h2>Where does this number come from?</h2>
+      <p class="lede">Each of these appears somewhere on the site. Selecting one highlights every source, script and file upstream of it, and says which steps were a person rather than code.</p></div>
+    <div class="hood-nums" id="hood-nums" role="group" aria-label="Numbers on the site"></div>
+  </div>
+
+  <div class="block">
+    <div class="hood-wrap" id="hood-wrap">
+      <svg class="hood-lines" id="hood-lines" aria-hidden="true"></svg>
+      <div class="hood-cols" id="hood-cols"></div>
+    </div>
+    <div class="card hood-detail" id="hood-detail" aria-live="polite"></div>
+  </div>
+</div></section>
+
+<section id="hood-more" class="panel-tab" role="tabpanel" hidden><div class="wrap page">
+  <div class="block">
+    <div class="head"><h2>Each script: what it does well, and where it is weak</h2>
+      <p class="lede">The weak points are the ones to raise before anyone else does. Most of them are the reason a number on this site is a floor rather than a full count.</p></div>
+    <div class="table-scroll"><table class="hood-t">
+      <thead><tr><th>Script</th><th>What it does</th><th>Strong</th><th>Weak</th></tr></thead>
+      <tbody id="hood-scripts"></tbody>
+    </table></div>
+  </div>
+  <div class="block">
+    <div class="head"><h2>What it took</h2></div>
+    <div class="grid" style="--min:200px" id="hood-cost"></div>
+  </div>
+</div></section>
+
 <aside class="drawer" id="drawer" role="dialog" aria-label="Fund dossier" aria-hidden="true">
   <div class="drawer-bar">
     <button type="button" class="btn" id="dr-prev" aria-label="Previous fund in the ranking">↑ Prev</button>
@@ -1055,7 +1127,7 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   const C = D.config, P = C.pairs;
   // Six tabs, nine sections: a tab can own more than one section, so the ranking and the pairs behind it
   // read as one argument instead of two views of the same data.
-  const PANELS = { summary: ["summary", "opps"], method: ["method"], notes: ["notes", "map"],
+  const PANELS = { summary: ["summary", "opps"], method: ["method"], notes: ["notes", "map"], hood: ["hood", "hood-more"],
                    exp: ["exp"], play: ["piper", "maven"], score: ["score"],
                    protect: ["protect"], breaks: ["breaks"], supper: ["supper"] };
   const TABS = Object.keys(PANELS);
@@ -1637,6 +1709,192 @@ footer { padding-block: 32px 56px; font-size: var(--fs-small); color: var(--ink-
   // Old links keep working after the nine sections were folded into six tabs.
   showTab({ overview: "summary", thesis: "summary", ranking: "summary", pipeline: "method", signals: "method",
             dossier: "summary", limits: "notes", opps: "summary", map: "notes", piper: "play", maven: "play" }[h] || h);
+})();
+</script>
+<script>
+// Under the hood: pipeline diagram (sources -> scripts -> data -> numbers), number tracer and script table.
+// Counts are taken from the repo's data files as of the scrape; "manual" marks a step a person did, not code.
+(function () {
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const COLS = [["src", "Sources"], ["py", "Scripts"], ["data", "Data files"], ["num", "Numbers on the site"]];
+  const N = [
+    // Sources
+    { id: "s-fund", c: "src", t: "Fund websites", s: "66 funds: portfolio pages, sitemaps, team pages",
+      d: "Each fund's own site. Portfolio list pages (following pagination) and sitemaps give the company profile URLs; team pages give the people.", io: "In: 66 hand-picked fund domains · Out: portfolio and team HTML" },
+    { id: "s-fc", c: "src", t: "Firecrawl", s: "scrape · map · search, 285 calls",
+      d: "Used only when plain HTTP failed: JavaScript-rendered pages, Cloudflare walls, sitemap discovery (map) and web search for brand websites, news and retailer listings.", io: "176 searches, 90 scrapes, 19 maps logged · about 425 of 1,000 credits" },
+    { id: "s-brand", c: "src", t: "Brand websites", s: "homepages, stockist and careers pages",
+      d: "Each brand's own site: which retailers it names, which roles it is hiring, and any ERP or EDI terms.", io: "Up to 2 stockist and 2 careers links per brand" },
+    { id: "s-news", c: "src", t: "Trade press", s: "The Grocer, FoodBev, Food Manufacture…",
+      d: "News from the last 24 months via Firecrawl search, typed as funding, acquisition, retailer listing, export or ERP.", io: "Only counted if the headline names the brand" },
+    { id: "s-off", c: "src", t: "Open Food Facts", s: "free product database",
+      d: "The public product database's 'stores' field: an independent check of which UK grocers stock a brand, at no credit cost.", io: "55 retailer listings confirmed here" },
+    { id: "s-ats", c: "src", t: "Job boards", s: "Workable, Greenhouse, Lever +6",
+      d: "Public applicant-tracking feeds, found from the brand's careers page or by guessing its board name.", io: "Plain HTTP only, no credits" },
+    { id: "s-ch", c: "src", t: "Companies House", s: "the UK register, free API",
+      d: "The official UK company register: accounts type (size), share allotments and charges (funding), officers and people with significant control (who sits on the board).", io: "Dated and authoritative, often months ahead of the press" },
+    // Scripts
+    { id: "p-1", c: "py", t: "step1.py", s: "read fund portfolios", src: ["s-fund", "s-fc"],
+      d: "Finds each fund's portfolio, pulls every company profile (name, description, website, status, year) and the fund's portfolio-support people.", io: "In: fund sites · Out: funds.jsonl" },
+    { id: "p-2", c: "py", t: "step2.py", s: "find food brands, enrich them", src: ["d-funds", "s-brand", "s-news", "s-fc"], manual: true,
+      d: "A keyword classifier flags food and drink companies, then each brand's own site and the news are read for retailers, ops roles and ERP terms. The 390 candidates were cut to 118 by hand.", io: "In: funds.jsonl · Out: grocery_candidates.json, brands.jsonl" },
+    { id: "p-3", c: "py", t: "step3.py", s: "verify retailers, check holdings", src: ["d-brands", "s-off", "s-fc", "s-brand"],
+      d: "Second pass: confirms which UK grocers stock each brand (Open Food Facts first, then retailer-site search) and whether the fund still holds it.", io: "Out: retail_check.jsonl, status_check.jsonl" },
+    { id: "p-4", c: "py", t: "step4.py", s: "hiring signals", src: ["d-brands", "s-ats"],
+      d: "Reads public job feeds for operations, supply-chain and order-processing roles, and notes ERP or EDI tools they name.", io: "Out: jobs_check.jsonl" },
+    { id: "p-5", c: "py", t: "step5.py", s: "Companies House facts", src: ["d-brands", "s-ch"],
+      d: "Matches each brand to its registered company, then reads size band, share allotments and charges in the last 24 months, and whether the fund appears on the register.", io: "Out: companies_house.jsonl" },
+    { id: "p-6", c: "py", t: "step6.py", s: "who sits on the board", src: ["d-ch", "s-fund", "s-ch"],
+      d: "A board link is a Companies House officer whose name also appears on the backing fund's team page. That is how Rory Gibbs and Luke Matthews were found.", io: "Out: intro_paths.jsonl" },
+    { id: "p-score", c: "py", t: "score.py", s: "score brands and funds", src: ["d-funds", "d-brands", "d-retail", "d-jobs", "d-ch", "d-ovr"], manual: true,
+      d: "Turns the evidence into brand fit and why-now scores (9-month news half-life, stacking capped at 1.5×), applies the documented overrides, and sets sold holdings and existing customers aside.", io: "Out: brands_scored.json, funds_scored.json" },
+    { id: "p-pairs", c: "py", t: "pairs.py", s: "score every fund × brand pair", src: ["d-scored", "d-ip"],
+      d: "Pair score = 100 × brand fit × intro path, so a weak side drags the pair down. A fund's score is its best pair, plus half its second and a quarter of its third. Also reruns the ranking under eight weightings.", io: "Out: opportunities.json, shortlist.csv" },
+    { id: "p-site", c: "py", t: "export.py + build.py", s: "build this site", src: ["d-opps"],
+      d: "Bundles the scored files into data.json and wraps the page into the static site. No number on the site is typed in by hand except the 1.3 economics.", io: "Out: site/data.json, index.html" },
+    // Data
+    { id: "d-funds", c: "data", t: "funds.jsonl", s: "66 funds · 3,710 companies", src: ["p-1"],
+      d: "One line per fund: type, portfolio URLs, scrape status, portfolio-support people, community programmes and every company found, each with the URL it came from.", io: "Plus companies_page_text.jsonl (2,403 profile pages)" },
+    { id: "d-cands", c: "data", t: "grocery_candidates.json", s: "390 food & drink candidates", src: ["p-2"],
+      d: "Everything the keyword classifier flagged, kept so the manual cut can be re-checked.", io: "" },
+    { id: "d-brands", c: "data", t: "brands.jsonl", s: "118 brands, enriched", src: ["p-2"], manual: true,
+      d: "The hand-reviewed brands with retailers, ops roles, news and ERP mentions. 11 wrong website matches were rejected by hand.", io: "" },
+    { id: "d-retail", c: "data", t: "retail_check + status_check", s: "76 brands with a grocer · 84 holdings", src: ["p-3"],
+      d: "Retailer evidence per brand (289 from search, 55 from Open Food Facts, 8 from brand sites) and holding status per fund (35 current, 3 exited, 46 unknown).", io: "" },
+    { id: "d-jobs", c: "data", t: "jobs_check.jsonl", s: "6 job boards found of 110", src: ["p-4"],
+      d: "Live ops roles per brand. Thin: these brands mostly hire through LinkedIn and recruiters.", io: "" },
+    { id: "d-ch", c: "data", t: "companies_house.jsonl", s: "110 brands · 76 matched well", src: ["p-5"],
+      d: "Registered company, match confidence (50 high, 26 medium), size band, share allotments, charges, fund links.", io: "" },
+    { id: "d-ip", c: "data", t: "intro_paths.jsonl", s: "77 pairs · 11 board people", src: ["p-6"],
+      d: "For each fund × brand pair: the team pages read, the officers checked, and any board person or fund entity found.", io: "" },
+    { id: "d-ovr", c: "data", t: "overrides.json + config.json", s: "curation and weights", manual: true,
+      d: "Every hand decision in one place: brands dropped or added (with sources), exit statuses, fund size and stage, Piper's contact. config.json holds every weight and threshold.", io: "Judgement, written down so it can be argued with" },
+    { id: "d-scored", c: "data", t: "brands_scored + funds_scored", s: "109 brands · 70 targets", src: ["p-score"],
+      d: "Each brand's fit, why-now, retailers and evidence; each fund's brands and signals.", io: "" },
+    { id: "d-opps", c: "data", t: "opportunities.json", s: "78 pairs · 20 funds shortlisted", src: ["p-pairs"],
+      d: "Every pair with its score, route, next step and confidence, and the fund ranking with its sensitivity range.", io: "" },
+    // Numbers
+    { id: "n-66", c: "num", v: "66 → 58 → 55", t: "funds seeded, VC/PE, read", src: ["d-funds"], manual: true, on: "1.1 · How it was built",
+      d: "66 funds were picked by hand. Corporate VCs, crowdfunding listings and the development bank were set aside, leaving 58; 55 portfolios could be read." },
+    { id: "n-3710", c: "num", v: "3,710", t: "portfolio companies", src: ["d-funds"], on: "1.1 · How it was built · 1.3",
+      d: "Every company step1.py found across the 55 portfolios." },
+    { id: "n-390", c: "num", v: "390", t: "food & drink candidates", src: ["d-cands"], on: "1.1 · How it was built",
+      d: "What the keyword classifier flagged before any human review." },
+    { id: "n-109", c: "num", v: "109", t: "UK grocery brands", src: ["d-scored"], manual: true, on: "1.1 · 1.3",
+      d: "The 118 hand-reviewed brands, less Angel Investment Network listings and 3 non-ICP brands dropped in overrides.json." },
+    { id: "n-70", c: "num", v: "70", t: "target brands", src: ["d-scored"], on: "1.1 · 1.3",
+      d: "Still held by the fund and not already a Procuros customer: 32 sold holdings and 3 existing customers were set aside." },
+    { id: "n-78", c: "num", v: "78 → 23", t: "pairs scored → strong asks", src: ["d-opps"], on: "1.1 · 1.3",
+      d: "Every fund × target brand pair, and the 23 that clear the qualifying bar (pair score 20 or more)." },
+    { id: "n-20", c: "num", v: "20", t: "funds shortlisted", src: ["d-opps"], on: "1.1 · The answer",
+      d: "23 funds hold a target brand; the top 20 by fund score make the shortlist. Piper and Maven are #1 and #2." },
+    { id: "n-90", c: "num", v: "90 → ~17", t: "brands → customers", src: ["d-scored", "d-funds"], manual: true, on: "1.3 · What to protect",
+      d: "70 grocery targets plus 20 beauty, wellness, home and pet brands found by a keyword search of funds.jsonl and checked by hand, then the warm-intro rates (70% forward, 90% call, 60% qualify, 50% buy). The rates are assumptions; Task 1.2 replaces them." },
+  ];
+  const BY = Object.fromEntries(N.map(n => [n.id, n]));
+  const EDGES = N.flatMap(n => (n.src || []).map(s => [s, n.id]));
+  // downstream edges from data nodes that feed scripts are already listed via script.src
+
+  const cols = document.getElementById("hood-cols"), wrap = document.getElementById("hood-wrap"), svg = document.getElementById("hood-lines");
+  if (!cols) return;
+  cols.innerHTML = COLS.map(([k, name]) => `<div class="hood-col"><p class="label">${name}</p>${N.filter(n => n.c === k).map(n =>
+    `<button type="button" class="hood-node k-${k}${n.manual ? " manual" : ""}" data-id="${n.id}">${n.v ? `<b>${esc(n.v)}</b><span>${esc(n.t)}</span>` : `<b>${esc(n.t)}</b><span>${esc(n.s)}</span>`}</button>`).join("")}</div>`).join("");
+
+  function upstream(id) {
+    const seen = new Set([id]), stack = [id];
+    while (stack.length) { const x = stack.pop(); (BY[x].src || []).forEach(s => { if (!seen.has(s)) { seen.add(s); stack.push(s); } }); }
+    return seen;
+  }
+  function downstream(id) {
+    const seen = new Set([id]), stack = [id];
+    while (stack.length) { const x = stack.pop(); EDGES.filter(e => e[0] === x).forEach(([, t]) => { if (!seen.has(t)) { seen.add(t); stack.push(t); } }); }
+    return seen;
+  }
+
+  function draw() {
+    const r0 = wrap.getBoundingClientRect();
+    if (!r0.width || getComputedStyle(svg).display === "none") return;
+    svg.setAttribute("viewBox", `0 0 ${r0.width} ${r0.height}`);
+    svg.innerHTML = EDGES.map(([a, b]) => {
+      const A = cols.querySelector(`[data-id="${a}"]`).getBoundingClientRect(), B = cols.querySelector(`[data-id="${b}"]`).getBoundingClientRect();
+      let x1, y1 = A.top + A.height / 2 - r0.top, x2, y2 = B.top + B.height / 2 - r0.top;
+      if (A.left < B.left - 5) { x1 = A.right - r0.left; x2 = B.left - r0.left; }
+      else { x1 = A.left - r0.left; x2 = B.right - r0.left; } // data file feeding a script in the column to its left
+      const dx = Math.max(24, Math.abs(x2 - x1) / 2) * (x2 >= x1 ? 1 : -1);
+      return `<path data-e="${a}|${b}" d="M${x1},${y1} C${x1 + dx},${y1} ${x2 - dx},${y2} ${x2},${y2}"/>`;
+    }).join("");
+    paint();
+  }
+
+  let lit = null, sel = null;
+  function paint() {
+    wrap.classList.toggle("lit", !!lit);
+    cols.querySelectorAll(".hood-node").forEach(b => { b.classList.toggle("on", !!lit && lit.has(b.dataset.id)); b.classList.toggle("sel", b.dataset.id === sel); });
+    svg.querySelectorAll("path").forEach(p => { const [a, b] = p.dataset.e.split("|"); p.classList.toggle("on", !!lit && lit.has(a) && lit.has(b)); });
+    document.querySelectorAll("#hood-nums button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.id === sel)));
+  }
+
+  const detail = document.getElementById("hood-detail");
+  function show(id) {
+    const n = BY[id]; sel = id;
+    lit = n.c === "num" ? upstream(id) : new Set([...upstream(id), ...downstream(id)]);
+    const ups = [...upstream(id)].filter(x => x !== id), manual = ups.concat(id).filter(x => BY[x].manual).map(x => BY[x].t);
+    const srcs = ups.filter(x => BY[x].c === "src").map(x => BY[x].t), pys = ups.filter(x => BY[x].c === "py").map(x => BY[x].t);
+    const row = (k, v) => v ? `<dt>${k}</dt><dd>${v}</dd>` : "";
+    detail.innerHTML = `<p class="label">${{ src: "Source", py: "Script", data: "Data file", num: "Number on the site" }[n.c]}</p>
+      <h3>${n.v ? `<span>${esc(n.v)}</span> ` : ""}<span>${esc(n.v ? n.t : n.t)}</span></h3>
+      <p>${esc(n.d)}</p>
+      <dl class="kv">${row("Detail", esc(n.io || n.s || ""))}${row("Shown in", esc(n.on || ""))}
+        ${row("Sources behind it", esc(srcs.join(", ")))}${row("Scripts behind it", esc(pys.join(" → ")))}
+        ${row("Manual steps", esc(manual.join("; ")))}</dl>`;
+    paint();
+  }
+  function clear() { lit = null; sel = null; paint(); detail.innerHTML = `<p class="label">Nothing selected</p><p>Select a number above or any box in the diagram. Boxes marked <b>includes a manual step</b> are where a person reviewed or decided something rather than code.</p>`; }
+
+  cols.addEventListener("click", e => { const b = e.target.closest(".hood-node"); if (!b) return; b.dataset.id === sel ? clear() : show(b.dataset.id); });
+  document.getElementById("hood-nums").innerHTML = N.filter(n => n.c === "num").map(n => `<button type="button" data-id="${n.id}" aria-pressed="false"><b>${esc(n.v)}</b>${esc(n.t)}</button>`).join("");
+  document.getElementById("hood-nums").addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; b.dataset.id === sel ? clear() : show(b.dataset.id); });
+  clear();
+  if (window.ResizeObserver) new ResizeObserver(draw).observe(wrap); else window.addEventListener("resize", draw);
+
+  // ---------- Script table
+  const S = [
+    ["fx.py", "Fetch helper used by every scraper: plain HTTP first, Firecrawl only as a fallback, everything cached on disk and logged.",
+     "Kept Firecrawl to about 425 credits by trying free HTTP first. 4,873 requests logged with status, so every fetch can be audited.",
+     "Paths are hard-coded to one laptop. Firecrawl is throttled to about 8 calls a minute, so a full rerun is slow."],
+    ["step1.py", "Reads each fund's portfolio: list pages, pagination, sitemaps, profile pages; plus team pages for portfolio-support people.",
+     "A URL pattern per fund, and anything repeated on most of a fund's pages is treated as page furniture and dropped, so names and descriptions are clean.",
+     "JavaScript-only sites fail (L Catterton, Cairngorm) or come back partial (Livingbridge, Mercia). People are found by job-title keywords, which is why partners such as Dan Stern were missed."],
+    ["step2.py", "Flags food and drink companies by keyword, then enriches each brand from its own site and the news.",
+     "A wide keyword net with explicit exclusions (restaurants, SaaS, ag-tech) catches nearly everything; a person then makes the final cut.",
+     "Keywords cannot tell a funding round from a product review. Retailers only count if the brand's own site names them. 11 brand websites were matched wrongly and fixed by hand."],
+    ["step3.py", "Confirms which UK grocers stock each brand, and whether each fund still holds it.",
+     "Free Open Food Facts first, then retailer search, under a hard credit budget. Retailer evidence comes from outside the brand's own marketing.",
+     "Open Food Facts coverage is patchy. Holding status stayed unknown for 46 of 84 holdings."],
+    ["step4.py", "Looks for live ops and supply-chain roles on nine public job-board platforms.",
+     "No credits; real, dated job ads; notes ERP and EDI tools named in them.",
+     "Only 6 of 110 brands had a board it could find. These brands mostly hire through LinkedIn and recruiters, which it cannot see."],
+    ["step5.py", "Matches each brand to Companies House and reads size, funding filings and fund links.",
+     "Authoritative and dated: a share allotment is often filed months before anyone writes about the raise.",
+     "Name matching is imperfect (34 of 110 low or no match). Accounts type is a coarse size band, not turnover."],
+    ["step6.py", "Finds board links: an officer of the brand whose name is also on the fund's team page.",
+     "Hard evidence that a named person can make the introduction. It found Rory Gibbs and Luke Matthews.",
+     "Misses anyone not on the team page, and team pages rendered by JavaScript. 11 board people across 77 pairs."],
+    ["score.py", "Turns evidence into brand fit and why-now, and scores funds.",
+     "Every signal keeps its source URL. Recency decay and a stacking cap stop old or repeated news from inflating a brand. Hand decisions live in overrides.json, not in code.",
+     "The weights are judgement. Fund size and stage are desk knowledge, low confidence."],
+    ["pairs.py", "Scores every fund × brand pair and rolls the pairs up into the fund ranking.",
+     "Multiplying fit by intro path means a weak side drags a pair down. Eight sensitivity scenarios show the top four funds do not move.",
+     "Both halves have a floor, so a score alone does not mean there is a person to ask. The bottom of the ranking is soft."],
+    ["export.py, build.py", "Builds data.json and the static site.",
+     "No server and no build step; every number on the site traces back to data.json.",
+     "A snapshot of 24 October 2026; nothing refreshes unless the scripts are rerun. The 1.3 economics are written into the page rather than computed."],
+  ];
+  document.getElementById("hood-scripts").innerHTML = S.map(r => `<tr>${r.map(c => `<td>${esc(c)}</td>`).join("")}</tr>`).join("");
+  document.getElementById("hood-cost").innerHTML = [
+    ["1 day", "scraped on 24 October 2026"], ["4,873", "web requests, 94% plain HTTP"], ["~425", "Firecrawl credits of about 1,000"],
+    ["10", "Python scripts, about 2,900 lines"], ["£0", "data cost: every other source is free"],
+  ].map(([v, t]) => `<div class="card"><p class="num" style="font:800 var(--fs-num)/1 var(--display)">${v}</p><p>${t}</p></div>`).join("");
 })();
 </script>
 
